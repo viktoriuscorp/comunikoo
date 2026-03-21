@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencia Shopify | Expertos en Tiendas Shopify — Comunikoo</title>
+<meta name="description" content="Agencia Shopify especializada en diseño, desarrollo y optimización de tiendas online. +85 proyectos. Migración, Shopify Plus y soporte continuo. Presupuesto sin compromiso.">
+<link rel="canonical" href="https://comunikoo.es/servicios/agencia-shopify/">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#001e40",
+        "primary-container": "#003366",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#799dd6",
+        "secondary": "#904d00",
+        "secondary-container": "#fd8b00",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#603100",
+        "surface": "#f8f9fa",
+        "surface-container": "#edeeef",
+        "surface-container-low": "#f3f4f5",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#43474f",
+        "outline": "#737780",
+        "outline-variant": "#c3c6d1",
+        "tertiary-container": "#592300",
+        "on-tertiary-container": "#d8885c",
+        "error": "#ba1a1a",
+        "on-background": "#191c1d",
+      },
+      fontFamily: {
+        "headline": ["Manrope", "system-ui", "sans-serif"],
+        "body": ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem"},
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ── Container (PeterLead style: 1100px max, always centered) ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Section blocks with clear separation ── */
+.sec-block { padding: 4.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 5.5rem 0; } }
+
+/* ── Cards: white, shadow, uniform, centered content ── */
+.svc-card { background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); text-align: center; transition: all .25s ease; }
+.svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
+.svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
+.svc-card p { font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }
+
+/* ── Card grid: always symmetric ── */
+.card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 860px; }
+.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr 1fr !important; max-width: 100% !important; gap: .75rem !important; }
+  .card-grid.g2 { grid-template-columns: 1fr 1fr !important; }
+  .svc-card { padding: 1.25rem 1rem !important; }
+  .svc-card h3 { font-size: .8rem !important; }
+  .svc-card p { font-size: .72rem !important; }
+  .svc-card .svc-icon { width: 44px !important; height: 44px !important; }
+  .sec-block { padding: 3rem 0 !important; }
+  .sec-heading h2 { font-size: 1.3rem !important; }
+  .sec-intro { font-size: .88rem !important; }
+  .prose-block { font-size: .85rem !important; }
+  .prose-block h3 { font-size: .95rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+}
+
+/* Nav pills scrollable on mobile */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Hero responsive */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.5rem !important; }
+  .font-headline.text-4xl { font-size: 1.75rem !important; }
+}
+
+/* ── Prose: text always inside container, left-aligned, readable ── */
+.prose-block { max-width: 720px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
+.prose-block p { font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }
+.prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }
+.prose-block strong { color: #001e40; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading ── */
+.sec-heading { text-align: center; margin-bottom: 2.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.65rem; font-weight: 800; color: #001e40; margin: 0; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2rem; } }
+.sec-heading .bar { width: 50px; height: 3px; background: #fd8b00; margin: .75rem auto 0; border-radius: 2px; }
+
+/* ── Intro paragraph (always centered, narrower) ── */
+.sec-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; font-size: .95rem; line-height: 1.7; color: #43474f; }
+</style>
+<meta property="og:title" content="Agencia Shopify | Expertos en Tiendas Shopify — Comunikoo">
+<meta property="og:description" content="Agencia Shopify especializada en diseño, desarrollo y optimización de tiendas online. +85 proyectos. Migración, Shopify Plus y soporte continuo. Presupuesto sin compromiso.">
+<meta property="og:url" content="https://comunikoo.es/servicios/agencia-shopify/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Agencia Shopify","description":"Agencia Shopify especializada en diseño, desarrollo y optimización de tiendas online. +85 proyectos. Migración, Shopify Plus y soporte continuo. Presupuesto sin compromiso.","provider":{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015"},"areaServed":{"@type":"Country","name":"España"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta crear una tienda Shopify con una agencia?","acceptedAnswer":{"@type":"Answer","text":"Nuestros proyectos de tienda Shopify parten desde 2.800€ para tiendas estándar con diseño personalizado, hasta 8.000€+ para proyectos con desarrollo custom, integraciones avanzadas o Shopify Plus. El precio incluye diseño, desarrollo, configuración, SEO técnico y formación."}},{"@type":"Question","name":"¿Cuánto tiempo se tarda en crear una tienda Shopify?","acceptedAnswer":{"@type":"Answer","text":"El plazo estándar es de 4 a 8 semanas según la complejidad. Una tienda con diseño personalizado y funcionalidades estándar se completa en unas 5-6 semanas. Proyectos más complejos con integraciones custom pueden requerir 8-12 semanas."}},{"@type":"Question","name":"¿Puedo migrar mi tienda de WooCommerce o PrestaShop a Shopify?","acceptedAnswer":{"@type":"Answer","text":"Sí. Nos encargamos de toda la migración: productos, clientes, pedidos históricos, redirecciones de URLs y diseño. Utilizamos herramientas profesionales para garantizar que no se pierda ningún dato y que el SEO se mantenga intacto."}},{"@type":"Question","name":"¿Qué plan de Shopify necesito?","acceptedAnswer":{"@type":"Answer","text":"Para la mayoría de tiendas, el plan Shopify Basic (36€/mes) o Shopify (99€/mes) es suficiente. Si procesas más de 500 pedidos al día o necesitas funcionalidades enterprise, recomendamos Shopify Plus. Te asesoramos para elegir el plan óptimo según tu volumen y necesidades."}},{"@type":"Question","name":"¿Shopify es bueno para el SEO?","acceptedAnswer":{"@type":"Answer","text":"Shopify ha mejorado mucho su SEO en los últimos años. Permite personalizar URLs, meta tags, alt texts y datos estructurados. Tiene algunas limitaciones (estructura de URLs fija para colecciones, por ejemplo), pero con una agencia especializada como Comunikoo se pueden optimizar para posicionar igual de bien que cualquier otra plataforma."}},{"@type":"Question","name":"¿Puedo vender en varios idiomas con Shopify?","acceptedAnswer":{"@type":"Answer","text":"Sí. Shopify Markets permite configurar tu tienda en múltiples idiomas y monedas. Podemos configurar tu tienda para vender en España, Europa y Latinoamérica con precios localizados, idiomas nativos y dominios o subcarpetas por país."}},{"@type":"Question","name":"¿Qué pasa si necesito una funcionalidad que Shopify no tiene?","acceptedAnswer":{"@type":"Answer","text":"Shopify tiene más de 8.000 apps en su marketplace que cubren casi cualquier necesidad. Si aun así necesitas algo específico, desarrollamos funcionalidades custom usando las APIs de Shopify. Si es técnicamente posible, lo hacemos."}},{"@type":"Question","name":"¿Shopify cobra comisión por venta?","acceptedAnswer":{"@type":"Answer","text":"Solo si no usas Shopify Payments como pasarela de pago. Con Shopify Payments, no hay comisión adicional de Shopify (solo la tarifa estándar del procesador de pagos, que es del 1,5-2%). Si usas una pasarela externa, Shopify cobra entre 0,5% y 2% adicional según tu plan."}}]}
+</script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl text-primary">close</span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><span class="text-primary font-semibold">Agencia Shopify</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">Agencia Shopify</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-3xl mx-auto">Agencia Shopify — Diseñamos Tiendas Que Venden De Verdad</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Somos una agencia Shopify especializada en crear y optimizar tiendas online que convierten. Más de 85 proyectos Shopify completados con una tasa de conversión media del 3,2%. Diseño a medida, migraciones sin riesgo y soporte continuo.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Presupuesto gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+<!-- Decorative circles -->
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+85</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">tiendas Shopify lanzadas</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">3,2%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">conversión media</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+210%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">aumento ventas medio</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">1,4s</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">velocidad de carga</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NAV PILLS -->
+<section class="py-5 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[64px] bg-surface/95 backdrop-blur-md z-30">
+<div class="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center">
+<a href="#por-que" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué Shopify</a>
+<a href="#servicios" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Servicios</a>
+<a href="#proceso" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Proceso</a>
+<a href="#resultados" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
+<a href="#diferencias" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué nosotros</a>
+<a href="#faq" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+
+</div>
+</section>
+
+<!-- CONTENT BLOCKS -->
+
+<section id="por-que" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué Shopify es la plataforma ecommerce líder mundial?</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>Shopify en cifras que importan</h3><p>Los datos hablan por sí solos:.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>¿Cuándo elegir Shopify para tu tienda online?</h3><p>Shopify es la opción ideal si:.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="servicios" class="bg-[#f4f6fa] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Nuestros servicios como agencia Shopify</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Diseño y desarrollo de tiendas Shopify</h3><p>Creamos tiendas Shopify a medida con diseño profesional orientado a conversión.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">location_on</span></div><h3>Migración a Shopify desde otras plataformas</h3><p>¿Tienes una tienda en WooCommerce, PrestaShop, Magento u otra plataforma?</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">insights</span></div><h3>Optimización de tiendas Shopify existentes</h3><p>Si ya tienes una tienda Shopify pero no rinde como debería, la analizamos y optimizamos.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">build</span></div><h3>Shopify Plus para empresas de alto volumen</h3><p>Para marcas que procesan más de 500 pedidos al día o necesitan funcionalidades enterprise, trabajamos con Shopify Plus.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">trending_up</span></div><h3>Desarrollo de apps y funcionalidades custom</h3><p>Cuando las apps del marketplace no cubren tu necesidad, desarrollamos funcionalidades a medida usando las APIs de Shopify.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Diseño y desarrollo de tiendas Shopify — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Creamos tiendas Shopify a medida con diseño profesional orientado a conversión. No usamos plantillas sin personalizar — cada proyecto se adapta a tu marca, tu catálogo y tu cliente ideal.</p>
+<ul>
+<li>Diseño UX/UI personalizado en Figma</li>
+<li>Desarrollo con Shopify 2.0 y secciones dinámicas</li>
+<li>Temas custom con Liquid, HTML, CSS y JavaScript</li>
+<li>Configuración de colecciones, variantes y metafields</li>
+<li>Integración de apps esenciales (reviews, upsell, email)</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">location_on</span> Migración a Shopify desde otras plataformas — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>¿Tienes una tienda en WooCommerce, PrestaShop, Magento u otra plataforma? <strong>Nos encargamos de toda la migración</strong> sin que pierdas ni un dato ni una posición en Google:</p>
+<ul>
+<li>Migración completa de productos, clientes y pedidos históricos</li>
+<li>Redirecciones 301 de todas las URLs para preservar el SEO</li>
+<li>Migración de diseño o rediseño completo</li>
+<li>Verificación post-migración con testing exhaustivo</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">insights</span> Optimización de tiendas Shopify existentes — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Si ya tienes una tienda Shopify pero no rinde como debería, la analizamos y optimizamos:</p>
+<ul>
+<li>Auditoría de velocidad y rendimiento</li>
+<li>Optimización de la tasa de conversión (CRO)</li>
+<li>Mejora de la experiencia móvil</li>
+<li>Optimización SEO on-page y técnico</li>
+<li>Revisión y limpieza de apps innecesarias que ralentizan tu tienda</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">build</span> Shopify Plus para empresas de alto volumen — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Para marcas que procesan más de 500 pedidos al día o necesitan funcionalidades enterprise, trabajamos con <strong>Shopify Plus</strong>: checkout personalizable, automatizaciones avanzadas con Shopify Flow, Launchpad para lanzamientos y acceso a APIs exclusivas.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">trending_up</span> Desarrollo de apps y funcionalidades custom — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Cuando las apps del marketplace no cubren tu necesidad, <strong>desarrollamos funcionalidades a medida</strong> usando las APIs de Shopify: integraciones con ERP, configuradores de producto, calculadoras de precio, suscripciones personalizadas y cualquier lógica de negocio que necesites.</p></div>
+</details>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Presupuesto gratis →</a></div>
+</div>
+</section>
+
+<section id="proceso" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Cómo trabajamos tu proyecto Shopify paso a paso</h2><div class="bar"></div></div>
+
+<div class="card-grid g4"><div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">01</div>
+<h3>Descubrimiento y estrategia</h3>
+<p>Analizamos tu negocio, tus competidores y tu público objetivo.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">02</div>
+<h3>Diseño UX/UI y prototipado</h3>
+<p>Diseñamos wireframes y prototipos navegables en Figma.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">03</div>
+<h3>Desarrollo y configuración</h3>
+<p>Desarrollamos tu tienda en un entorno de desarrollo Shopify.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">04</div>
+<h3>Testing, formación y lanzamiento</h3>
+<p>Testing completo: pedidos de prueba, velocidad, SEO técnico, responsive, accesibilidad.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="resultados" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Resultados reales de nuestros proyectos Shopify</h2><div class="bar"></div></div>
+
+<div class="card-grid g4" style="margin-bottom:2.5rem"><div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+85</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tiendas Shopify lanzadas</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">3,2%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tasa de conversión media</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+210%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio en ventas tras rediseño</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">1,4s</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tiempo medio de carga</p></div>
+</div><div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Marca de moda sostenible — De 0 a 4.200 pedidos/mes</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una marca de moda sostenible que lanzó su primera tienda online con nosotros en Shopify:</p>
+<ul>
+<li><strong>4.200 pedidos mensuales</strong> a los 8 meses del lanzamiento</li>
+<li>Tasa de conversión del <strong>3,8%</strong> (media del sector: 1,5%)</li>
+<li><strong>67% del tráfico</strong> desde dispositivos móviles con conversión superior a desktop</li>
+<li>Integración perfecta con su almacén y sistema de envíos</li>
+</ul></div></div>
+<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Ecommerce de suplementos — Migración de WooCommerce a Shopify</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una tienda de suplementos deportivos que migró de WooCommerce a Shopify por problemas de rendimiento:</p>
+<ul>
+<li>Velocidad de carga reducida de <strong>4,2s a 1,3s</strong></li>
+<li>Tasa de conversión subió del <strong>1,2% al 2,8%</strong></li>
+<li>Cero caídas en <strong>Black Friday</strong> (facturó 48.000€ en un día)</li>
+<li>Coste de mantenimiento técnico reducido un <strong>60%</strong></li>
+</ul>
+
+<p style="margin-top:var(--space-6)"><em>"Migrar a Shopify con Comunikoo fue la mejor decisión para nuestro negocio. Dejamos de preocuparnos por la tecnología y nos centramos en vender."</em></p>
+<p class="text-muted">— Daniel Torres, CEO, tienda de suplementos deportivos, Madrid</p></div></div>
+<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.05);border-left:4px solid #fd8b00">
+<p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"Migrar a Shopify con Comunikoo fue la mejor decisión para nuestro negocio. Dejamos de preocuparnos por la tecnología y nos centramos en vender."</p>
+<p style="font-size:.8rem;color:#737780;margin:0">— De 0 a 4.200 pedidos/mes</h3>
+<p>Una marca de moda sostenible que lanzó su primera tienda online con nosotros en Shopify:</p></div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Presupuesto gratis →</a></div>
+</div>
+</section>
+
+<section id="diferencias" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué elegir Comunikoo como tu agencia Shopify?</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>Especialistas en Shopify, no generalistas</h3><p>No hacemos "un poco de todo".</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>Enfoque en conversión, no solo en diseño</h3><p>Diseñamos tiendas que venden.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">tune</span></div><h3>Soporte continuo post-lanzamiento</h3><p>Tu tienda no termina el día del lanzamiento.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">link</span></div><h3>Visión 360: diseño + SEO + marketing</h3><p>No solo diseñamos tu tienda — podemos encargarnos del SEO, Google Ads, email marketing y publicidad en redes sociales.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Precios transparentes y competitivos</h3><p>Presupuesto cerrado antes de empezar.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">search</span> Especialistas en Shopify, no generalistas — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No hacemos "un poco de todo". <strong>Shopify es una de nuestras plataformas core</strong> y nuestro equipo domina Liquid, las APIs de Shopify, Shopify 2.0 y el ecosistema de apps. Eso se traduce en proyectos más rápidos, mejor ejecutados y con menos problemas.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">edit_note</span> Enfoque en conversión, no solo en diseño — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Diseñamos tiendas que venden. Cada decisión de diseño y desarrollo está respaldada por <strong>datos de comportamiento y mejores prácticas de CRO</strong>. No es casualidad que nuestras tiendas conviertan un 80% por encima de la media del sector.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">tune</span> Soporte continuo post-lanzamiento — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Tu tienda no termina el día del lanzamiento. Incluimos <strong>3 meses de soporte</strong> y ofrecemos planes de mantenimiento y evolución continua. Estamos ahí cuando necesitas añadir funcionalidades, resolver incidencias o preparar campañas importantes.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">link</span> Visión 360: diseño + SEO + marketing — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No solo diseñamos tu tienda — podemos encargarnos del <strong>SEO, Google Ads, email marketing y publicidad en redes sociales</strong>. Tener un único partner que entiende tu negocio de forma integral es más eficiente y genera mejores resultados que coordinar múltiples agencias.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Precios transparentes y competitivos — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Presupuesto cerrado antes de empezar. Nuestros proyectos Shopify parten desde <strong>2.800€</strong> para tiendas estándar y desde <strong>8.000€</strong> para proyectos custom avanzados. Sin letra pequeña, sin extras inesperados.</p></div>
+</details>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta crear una tienda Shopify con una agencia?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Nuestros proyectos de tienda Shopify parten desde 2.800€ para tiendas estándar con diseño personalizado, hasta 8.000€+ para proyectos con desarrollo custom, integraciones avanzadas o Shopify Plus. El precio incluye diseño, desarrollo, configuración, SEO técnico y formación.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto tiempo se tarda en crear una tienda Shopify?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">El plazo estándar es de 4 a 8 semanas según la complejidad. Una tienda con diseño personalizado y funcionalidades estándar se completa en unas 5-6 semanas. Proyectos más complejos con integraciones custom pueden requerir 8-12 semanas.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo migrar mi tienda de WooCommerce o PrestaShop a Shopify?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Nos encargamos de toda la migración: productos, clientes, pedidos históricos, redirecciones de URLs y diseño. Utilizamos herramientas profesionales para garantizar que no se pierda ningún dato y que el SEO se mantenga intacto.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué plan de Shopify necesito?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Para la mayoría de tiendas, el plan Shopify Basic (36€/mes) o Shopify (99€/mes) es suficiente. Si procesas más de 500 pedidos al día o necesitas funcionalidades enterprise, recomendamos Shopify Plus. Te asesoramos para elegir el plan óptimo según tu volumen y necesidades.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Shopify es bueno para el SEO?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Shopify ha mejorado mucho su SEO en los últimos años. Permite personalizar URLs, meta tags, alt texts y datos estructurados. Tiene algunas limitaciones (estructura de URLs fija para colecciones, por ejemplo), pero con una agencia especializada como Comunikoo se pueden optimizar para posicionar igual de bien que cualquier otra plataforma.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo vender en varios idiomas con Shopify?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Shopify Markets permite configurar tu tienda en múltiples idiomas y monedas. Podemos configurar tu tienda para vender en España, Europa y Latinoamérica con precios localizados, idiomas nativos y dominios o subcarpetas por país.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué pasa si necesito una funcionalidad que Shopify no tiene?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Shopify tiene más de 8.000 apps en su marketplace que cubren casi cualquier necesidad. Si aun así necesitas algo específico, desarrollamos funcionalidades custom usando las APIs de Shopify. Si es técnicamente posible, lo hacemos.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Shopify cobra comisión por venta?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Solo si no usas Shopify Payments como pasarela de pago. Con Shopify Payments, no hay comisión adicional de Shopify (solo la tarifa estándar del procesador de pagos, que es del 1,5-2%). Si usas una pasarela externa, Shopify cobra entre 0,5% y 2% adicional según tu plan.</p>
+</details>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="bg-[#f4f6fa] sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../servicios/agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">search</span>
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../servicios/diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">web</span>
+<h3 style="font-size:.8rem">Diseño Web</h3>
+</a>
+<a href="../../servicios/agencia-google-ads/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">ads_click</span>
+<h3 style="font-size:.8rem">Google Ads</h3>
+</a>
+<a href="../../servicios/community-manager/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">share</span>
+<h3 style="font-size:.8rem">Community Manager</h3>
+</a>
+<a href="../../servicios/tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">shopping_cart</span>
+<h3 style="font-size:.8rem">Tiendas Online</h3>
+</a>
+<a href="../../servicios/email-marketing/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">mail</span>
+<h3 style="font-size:.8rem">Email Marketing</h3>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres crear o mejorar tu tienda Shopify?</h2>
+<p class="text-on-primary-container text-base mb-8">Cuéntanos tu proyecto y te enviamos una propuesta personalizada. Presupuesto cerrado, sin compromiso.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Solicita presupuesto Shopify</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
+<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

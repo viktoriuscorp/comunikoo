@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publicidad en Google | Gestión Profesional de Google Ads — Comunikoo</title>
+<meta name="description" content="Publicidad en Google gestionada por especialistas certificados. ROAS medio de 5,6x, más de 5M€ gestionados. Auditoría gratuita. Sin permanencia.">
+<link rel="canonical" href="https://comunikoo.es/servicios/publicidad-en-google/">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#001e40",
+        "primary-container": "#003366",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#799dd6",
+        "secondary": "#904d00",
+        "secondary-container": "#fd8b00",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#603100",
+        "surface": "#f8f9fa",
+        "surface-container": "#edeeef",
+        "surface-container-low": "#f3f4f5",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#43474f",
+        "outline": "#737780",
+        "outline-variant": "#c3c6d1",
+        "tertiary-container": "#592300",
+        "on-tertiary-container": "#d8885c",
+        "error": "#ba1a1a",
+        "on-background": "#191c1d",
+      },
+      fontFamily: {
+        "headline": ["Manrope", "system-ui", "sans-serif"],
+        "body": ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem"},
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ── Container (PeterLead style: 1100px max, always centered) ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Section blocks with clear separation ── */
+.sec-block { padding: 4.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 5.5rem 0; } }
+
+/* ── Cards: white, shadow, uniform, centered content ── */
+.svc-card { background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); text-align: center; transition: all .25s ease; }
+.svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
+.svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
+.svc-card p { font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }
+
+/* ── Card grid: always symmetric ── */
+.card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 860px; }
+.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr 1fr !important; max-width: 100% !important; gap: .75rem !important; }
+  .card-grid.g2 { grid-template-columns: 1fr 1fr !important; }
+  .svc-card { padding: 1.25rem 1rem !important; }
+  .svc-card h3 { font-size: .8rem !important; }
+  .svc-card p { font-size: .72rem !important; }
+  .svc-card .svc-icon { width: 44px !important; height: 44px !important; }
+  .sec-block { padding: 3rem 0 !important; }
+  .sec-heading h2 { font-size: 1.3rem !important; }
+  .sec-intro { font-size: .88rem !important; }
+  .prose-block { font-size: .85rem !important; }
+  .prose-block h3 { font-size: .95rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+}
+
+/* Nav pills scrollable on mobile */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Hero responsive */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.5rem !important; }
+  .font-headline.text-4xl { font-size: 1.75rem !important; }
+}
+
+/* ── Prose: text always inside container, left-aligned, readable ── */
+.prose-block { max-width: 720px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
+.prose-block p { font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }
+.prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }
+.prose-block strong { color: #001e40; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading ── */
+.sec-heading { text-align: center; margin-bottom: 2.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.65rem; font-weight: 800; color: #001e40; margin: 0; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2rem; } }
+.sec-heading .bar { width: 50px; height: 3px; background: #fd8b00; margin: .75rem auto 0; border-radius: 2px; }
+
+/* ── Intro paragraph (always centered, narrower) ── */
+.sec-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; font-size: .95rem; line-height: 1.7; color: #43474f; }
+</style>
+<meta property="og:title" content="Publicidad en Google | Gestión Profesional de Google Ads — Comunikoo">
+<meta property="og:description" content="Publicidad en Google gestionada por especialistas certificados. ROAS medio de 5,6x, más de 5M€ gestionados. Auditoría gratuita. Sin permanencia.">
+<meta property="og:url" content="https://comunikoo.es/servicios/publicidad-en-google/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Publicidad en Google","description":"Publicidad en Google gestionada por especialistas certificados. ROAS medio de 5,6x, más de 5M€ gestionados. Auditoría gratuita. Sin permanencia.","provider":{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015"},"areaServed":{"@type":"Country","name":"España"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta la publicidad en Google?","acceptedAnswer":{"@type":"Answer","text":"El coste de la publicidad en Google depende de tu sector y competencia. El CPC medio en España varía entre 0,30€ y 5€ según el sector. Nuestros honorarios de gestión empiezan desde 390€/mes para presupuestos de hasta 2.000€. Recomendamos un presupuesto publicitario mínimo de 500€/mes."}},{"@type":"Question","name":"¿Cuánto tarda la publicidad en Google en dar resultados?","acceptedAnswer":{"@type":"Answer","text":"Los primeros resultados (clics, visitas, primeras conversiones) se ven desde el primer día. La optimización completa de las campañas requiere 2-4 semanas. Los mejores resultados se alcanzan a partir del segundo mes, cuando hay suficientes datos para optimizar las pujas, keywords y anuncios."}},{"@type":"Question","name":"¿La publicidad en Google funciona para mi negocio?","acceptedAnswer":{"@type":"Answer","text":"Si tus clientes buscan en Google lo que tú vendes, la publicidad en Google funciona para tu negocio. Es eficaz para servicios profesionales, ecommerce, negocios locales, B2B y prácticamente cualquier sector. En la consulta gratuita evaluamos el potencial de tu mercado en Google."}},{"@type":"Question","name":"¿Qué diferencia hay entre publicidad en Google y SEO?","acceptedAnswer":{"@type":"Answer","text":"La publicidad en Google (SEM) son anuncios de pago que aparecen inmediatamente en los resultados. El SEO es el posicionamiento orgánico, sin coste por clic pero con resultados a medio-largo plazo. Lo ideal es combinar ambos: Google Ads para el corto plazo y SEO para el largo plazo."}},{"@type":"Question","name":"¿Necesito una web para hacer publicidad en Google?","acceptedAnswer":{"@type":"Answer","text":"Sí, necesitas al menos una página de destino (landing page) donde dirigir a los usuarios que hacen clic en tus anuncios. Si no tienes web, podemos crear landing pages de alto rendimiento como parte de nuestro servicio. Para negocios locales, también es posible usar la ficha de Google Business Profile."}},{"@type":"Question","name":"¿Puedo hacer publicidad en Google con poco presupuesto?","acceptedAnswer":{"@type":"Answer","text":"Sí. Google Ads permite controlar el presupuesto al céntimo. Puedes empezar con 300-500€/mes y escalar según resultados. Lo importante es que el presupuesto sea suficiente para tu sector: en sectores muy competitivos (seguros, legal), necesitarás más presupuesto que en sectores con menos competencia."}},{"@type":"Question","name":"¿Cómo sé si mi publicidad en Google está funcionando?","acceptedAnswer":{"@type":"Answer","text":"En Comunikoo tienes acceso a un dashboard en tiempo real donde ves: inversión, clics, conversiones, coste por conversión y ROAS. Además, reunión mensual con tu especialista. Las métricas clave son el CPA (coste por adquisición) y el ROAS (retorno sobre inversión publicitaria)."}},{"@type":"Question","name":"¿Qué pasa si dejo de invertir en publicidad en Google?","acceptedAnswer":{"@type":"Answer","text":"Los anuncios dejan de aparecer inmediatamente. A diferencia del SEO, la publicidad en Google no genera resultados residuales — solo funciona mientras inviertes. Por eso recomendamos combinar Google Ads con SEO para tener tanto resultados inmediatos como tráfico sostenible a largo plazo."}}]}
+</script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl text-primary">close</span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><span class="text-primary font-semibold">Publicidad en Google</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">Publicidad en Google</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-3xl mx-auto">Publicidad en Google — Anuncios que Generan Clientes Reales</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Gestionamos tu publicidad en Google con especialistas certificados como Google Partner. ROAS medio de 5,6x, reducción media del CPA del 44% y más de 5 millones de euros gestionados. Auditoría gratuita de tu cuenta, sin permanencia.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+<!-- Decorative circles -->
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">5,6x</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">ROAS medio</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">5M€+</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">inversión gestionada</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">-44%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">reducción media CPA</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">97%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">clientes satisfechos</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NAV PILLS -->
+<section class="py-5 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[64px] bg-surface/95 backdrop-blur-md z-30">
+<div class="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center">
+<a href="#que-es" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Publicidad en Google</a>
+<a href="#tipos" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Tipos de campaña</a>
+<a href="#proceso" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Proceso</a>
+<a href="#resultados" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
+<a href="#diferencias" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué nosotros</a>
+<a href="#faq" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+
+</div>
+</section>
+
+<!-- CONTENT BLOCKS -->
+
+<section id="que-es" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Qué es la publicidad en Google y cómo funciona?</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>¿Por qué invertir en publicidad en Google?</h3><p>Google procesa más de 8.500 millones de búsquedas al día.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>Publicidad en Google vs. publicidad en redes sociales</h3><p>La diferencia fundamental es la intención del usuario.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="tipos" class="bg-[#f4f6fa] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Tipos de publicidad en Google que gestionamos</h2><div class="bar"></div></div>
+
+<div class="card-grid g6"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Anuncios de búsqueda (Search Ads)</h3><p>Los clásicos anuncios de texto que aparecen en los primeros resultados de Google cuando alguien busca una keyword relacionada con tu negocio.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">location_on</span></div><h3>Google Shopping</h3><p>Fichas de producto con imagen.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">insights</span></div><h3>Publicidad en YouTube</h3><p>Anuncios en vídeo antes, durante o después de los vídeos de YouTube.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">build</span></div><h3>Red de Display</h3><p>Banners y anuncios visuales en más de 2 millones de sitios web, apps y Gmail.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">trending_up</span></div><h3>Performance Max</h3><p>El tipo de campaña más avanzado de Google.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">verified</span></div><h3>Google Maps y publicidad local</h3><p>Anuncios que aparecen cuando los usuarios buscan negocios en Google Maps.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Anuncios de búsqueda (Search Ads) — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Los clásicos anuncios de texto que aparecen en los <strong>primeros resultados de Google</strong> cuando alguien busca una keyword relacionada con tu negocio. El formato más efectivo para captar demanda activa. Solo pagas cuando alguien hace clic en tu anuncio.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">location_on</span> Google Shopping — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Fichas de producto con <strong>imagen, precio y nombre de la tienda</strong> que aparecen en los resultados de búsqueda y en la pestaña de Shopping. Imprescindible para ecommerce. Los usuarios ven el precio antes de hacer clic, lo que pre-cualifica el tráfico y mejora la tasa de conversión.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">insights</span> Publicidad en YouTube — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Anuncios en vídeo antes, durante o después de los vídeos de YouTube. Formatos: <strong>TrueView (saltable), bumper (6s), in-feed y Video Action</strong>. CPVs desde 0,01€. Excelente para branding y también para generación de leads con las campañas de acción.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">build</span> Red de Display — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Banners y anuncios visuales en <strong>más de 2 millones de sitios web, apps y Gmail</strong>. Ideal para remarketing (recordar tu marca a quienes ya te visitaron) y para generar notoriedad en audiencias nuevas. CPMs competitivos a partir de 2-3€.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">trending_up</span> Performance Max — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El tipo de campaña más avanzado de Google, que utiliza <strong>inteligencia artificial para distribuir tu presupuesto</strong> entre todos los canales de Google (Search, Shopping, Display, YouTube, Gmail, Maps, Discover). Resultados potentes pero requiere experiencia para configurarse correctamente.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">verified</span> Google Maps y publicidad local — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Anuncios que aparecen cuando los usuarios buscan negocios en Google Maps. <strong>Imprescindible para negocios con ubicación física</strong>: restaurantes, clínicas, tiendas, talleres, etc. Apareces destacado sobre la competencia cuando un cliente potencial busca cerca de ti.</p></div>
+</details>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría gratis →</a></div>
+</div>
+</section>
+
+<section id="proceso" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Cómo gestionamos tu publicidad en Google paso a paso</h2><div class="bar"></div></div>
+
+<div class="card-grid g4"><div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">01</div>
+<h3>Análisis y estrategia gratuita</h3>
+<p>Analizamos tu negocio, tu competencia en Google y las oportunidades de tu mercado.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">02</div>
+<h3>Configuración profesional</h3>
+<p>Creamos o reestructuramos tu cuenta de Google Ads.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">03</div>
+<h3>Lanzamiento y optimización</h3>
+<p>Lanzamos las campañas con una fase de aprendizaje controlada.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">04</div>
+<h3>Reporting y escalado</h3>
+<p>Dashboard en tiempo real con las métricas que importan.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="resultados" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Resultados de nuestra gestión de publicidad en Google</h2><div class="bar"></div></div>
+
+<div class="card-grid g4" style="margin-bottom:2.5rem"><div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">5,6x</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">ROAS medio</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">-44%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">reducción media del CPA</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+220%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio de conversiones</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">97%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">clientes satisfechos</p></div>
+</div><div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Red de clínicas veterinarias — 380 citas/mes a 8€/cita</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una red de clínicas veterinarias con 4 centros necesitaba captar nuevos clientes:</p>
+<ul>
+<li><strong>380 citas mensuales</strong> generadas desde publicidad en Google</li>
+<li>Coste por cita de <strong>8€</strong> (ticket medio por visita: 85€)</li>
+<li><strong>ROAS de 10,6x</strong> sobre la inversión publicitaria</li>
+<li>Publicidad en Google Maps generó el <strong>45% de las citas</strong> a un coste un 60% menor</li>
+</ul></div></div>
+<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Ecommerce de electrónica — De 15.000€ a 95.000€/mes en ventas</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Un ecommerce de electrónica de consumo con un catálogo de 2.000+ productos:</p>
+<ul>
+<li>Ventas desde Google escalaron de 15.000€ a <strong>95.000€/mes</strong></li>
+<li><strong>ROAS de 7,2x</strong> sostenido durante 8 meses</li>
+<li>Google Shopping generó el <strong>72% de la facturación</strong></li>
+<li>Performance Max aportó un <strong>+28% de ventas incrementales</strong></li>
+</ul>
+
+<p style="margin-top:var(--space-6)"><em>"La publicidad en Google gestionada por Comunikoo pasó de ser un gasto a ser nuestra inversión más rentable. Cada euro invertido nos devuelve más de 7."</em></p>
+<p class="text-muted">— Miguel Fernández, CEO, ecommerce de electrónica</p></div></div>
+<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.05);border-left:4px solid #fd8b00">
+<p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"La publicidad en Google gestionada por Comunikoo pasó de ser un gasto a ser nuestra inversión más rentable. Cada euro invertido nos devuelve más de 7."</p>
+<p style="font-size:.8rem;color:#737780;margin:0">— 380 citas/mes a 8€/cita</h3>
+<p>Una red de clínicas veterinarias con 4 centros necesitaba captar nuevos clientes:</p></div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría gratis →</a></div>
+</div>
+</section>
+
+<section id="diferencias" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué gestionar tu publicidad en Google con Comunikoo?</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>Google Partner certificado</h3><p>Comunikoo es Google Partner, una certificación que solo el 3% de las agencias en España tienen.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>Especialistas senior dedicados</h3><p>Tu publicidad en Google la gestiona un especialista con más de 5 años de experiencia, no un junior.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">tune</span></div><h3>Sin permanencia — resultados o te vas</h3><p>Contrato mes a mes.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">link</span></div><h3>Optimización de todo el embudo</h3><p>No nos limitamos a los anuncios.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Tecnología y automatización avanzada</h3><p>Usamos scripts personalizados de Google Ads.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">search</span> Google Partner certificado — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Comunikoo es <strong>Google Partner</strong>, una certificación que solo el 3% de las agencias en España tienen. Google ha verificado nuestro nivel de competencia, el volumen de inversión que gestionamos y el rendimiento de las cuentas de nuestros clientes.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">edit_note</span> Especialistas senior dedicados — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Tu publicidad en Google la gestiona un <strong>especialista con más de 5 años de experiencia</strong>, no un junior. Cada especialista gestiona un máximo de 15 cuentas para garantizar dedicación y calidad. Hablas directamente con quien toca tu cuenta.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">tune</span> Sin permanencia — resultados o te vas — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Contrato mes a mes. Sin penalización por cancelación. Tu cuenta de Google Ads es tuya y tienes <strong>acceso total en todo momento</strong>. El 96% de nuestros clientes continúan tras el primer año — porque funciona, no porque estén atados.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">link</span> Optimización de todo el embudo — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No nos limitamos a los anuncios. Nuestro equipo optimiza <strong>landing pages, formularios, ofertas y procesos de compra</strong> para maximizar la tasa de conversión. De nada sirve traer tráfico si la web no convierte.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Tecnología y automatización avanzada — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Usamos <strong>scripts personalizados de Google Ads, herramientas de automatización y dashboards en tiempo real</strong> para gestionar las campañas de forma más eficiente. Alertas automáticas de anomalías, optimización de pujas por hora y redistribución inteligente de presupuesto.</p></div>
+</details>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta la publicidad en Google?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">El coste de la publicidad en Google depende de tu sector y competencia. El CPC medio en España varía entre 0,30€ y 5€ según el sector. Nuestros honorarios de gestión empiezan desde 390€/mes para presupuestos de hasta 2.000€. Recomendamos un presupuesto publicitario mínimo de 500€/mes.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto tarda la publicidad en Google en dar resultados?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Los primeros resultados (clics, visitas, primeras conversiones) se ven desde el primer día. La optimización completa de las campañas requiere 2-4 semanas. Los mejores resultados se alcanzan a partir del segundo mes, cuando hay suficientes datos para optimizar las pujas, keywords y anuncios.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿La publicidad en Google funciona para mi negocio?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Si tus clientes buscan en Google lo que tú vendes, la publicidad en Google funciona para tu negocio. Es eficaz para servicios profesionales, ecommerce, negocios locales, B2B y prácticamente cualquier sector. En la consulta gratuita evaluamos el potencial de tu mercado en Google.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué diferencia hay entre publicidad en Google y SEO?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">La publicidad en Google (SEM) son anuncios de pago que aparecen inmediatamente en los resultados. El SEO es el posicionamiento orgánico, sin coste por clic pero con resultados a medio-largo plazo. Lo ideal es combinar ambos: Google Ads para el corto plazo y SEO para el largo plazo.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Necesito una web para hacer publicidad en Google?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí, necesitas al menos una página de destino (landing page) donde dirigir a los usuarios que hacen clic en tus anuncios. Si no tienes web, podemos crear landing pages de alto rendimiento como parte de nuestro servicio. Para negocios locales, también es posible usar la ficha de Google Business Profile.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo hacer publicidad en Google con poco presupuesto?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Google Ads permite controlar el presupuesto al céntimo. Puedes empezar con 300-500€/mes y escalar según resultados. Lo importante es que el presupuesto sea suficiente para tu sector: en sectores muy competitivos (seguros, legal), necesitarás más presupuesto que en sectores con menos competencia.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cómo sé si mi publicidad en Google está funcionando?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">En Comunikoo tienes acceso a un dashboard en tiempo real donde ves: inversión, clics, conversiones, coste por conversión y ROAS. Además, reunión mensual con tu especialista. Las métricas clave son el CPA (coste por adquisición) y el ROAS (retorno sobre inversión publicitaria).</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué pasa si dejo de invertir en publicidad en Google?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Los anuncios dejan de aparecer inmediatamente. A diferencia del SEO, la publicidad en Google no genera resultados residuales — solo funciona mientras inviertes. Por eso recomendamos combinar Google Ads con SEO para tener tanto resultados inmediatos como tráfico sostenible a largo plazo.</p>
+</details>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="bg-[#f4f6fa] sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../servicios/agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">search</span>
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../servicios/diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">web</span>
+<h3 style="font-size:.8rem">Diseño Web</h3>
+</a>
+<a href="../../servicios/agencia-google-ads/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">ads_click</span>
+<h3 style="font-size:.8rem">Google Ads</h3>
+</a>
+<a href="../../servicios/community-manager/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">share</span>
+<h3 style="font-size:.8rem">Community Manager</h3>
+</a>
+<a href="../../servicios/tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">shopping_cart</span>
+<h3 style="font-size:.8rem">Tiendas Online</h3>
+</a>
+<a href="../../servicios/email-marketing/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">mail</span>
+<h3 style="font-size:.8rem">Email Marketing</h3>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que tu publicidad en Google genere más por menos?</h2>
+<p class="text-on-primary-container text-base mb-8">Solicita una auditoría gratuita. Analizaremos tus campañas (o tu mercado si empiezas de cero) y te diremos exactamente cómo mejorar tu retorno.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Solicita tu auditoría gratuita</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
+<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

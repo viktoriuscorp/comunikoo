@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter para Empresas | Diseño, Contenido y Estrategia</title>
+<meta name="description" content="Servicio de newsletter para empresas. Creamos newsletters profesionales con contenido de valor, diseño atractivo y estrategia de fidelización que genera resultados.">
+<link rel="canonical" href="https://comunikoo.es/servicios/email-marketing/newsletter-empresas/">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#001e40",
+        "primary-container": "#003366",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#799dd6",
+        "secondary": "#904d00",
+        "secondary-container": "#fd8b00",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#603100",
+        "surface": "#f8f9fa",
+        "surface-container": "#edeeef",
+        "surface-container-low": "#f3f4f5",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#43474f",
+        "outline": "#737780",
+        "outline-variant": "#c3c6d1",
+        "tertiary-container": "#592300",
+        "on-tertiary-container": "#d8885c",
+        "error": "#ba1a1a",
+        "on-background": "#191c1d",
+      },
+      fontFamily: {
+        "headline": ["Manrope", "system-ui", "sans-serif"],
+        "body": ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem"},
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ── Container (PeterLead style: 1100px max, always centered) ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Section blocks with clear separation ── */
+.sec-block { padding: 4.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 5.5rem 0; } }
+
+/* ── Cards: white, shadow, uniform, centered content ── */
+.svc-card { background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); text-align: center; transition: all .25s ease; }
+.svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
+.svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
+.svc-card p { font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }
+
+/* ── Card grid: always symmetric ── */
+.card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 860px; }
+.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr 1fr !important; max-width: 100% !important; gap: .75rem !important; }
+  .card-grid.g2 { grid-template-columns: 1fr 1fr !important; }
+  .svc-card { padding: 1.25rem 1rem !important; }
+  .svc-card h3 { font-size: .8rem !important; }
+  .svc-card p { font-size: .72rem !important; }
+  .svc-card .svc-icon { width: 44px !important; height: 44px !important; }
+  .sec-block { padding: 3rem 0 !important; }
+  .sec-heading h2 { font-size: 1.3rem !important; }
+  .sec-intro { font-size: .88rem !important; }
+  .prose-block { font-size: .85rem !important; }
+  .prose-block h3 { font-size: .95rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+}
+
+/* Nav pills scrollable on mobile */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Hero responsive */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.5rem !important; }
+  .font-headline.text-4xl { font-size: 1.75rem !important; }
+}
+
+/* ── Prose: text always inside container, left-aligned, readable ── */
+.prose-block { max-width: 720px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
+.prose-block p { font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }
+.prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }
+.prose-block strong { color: #001e40; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading ── */
+.sec-heading { text-align: center; margin-bottom: 2.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.65rem; font-weight: 800; color: #001e40; margin: 0; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2rem; } }
+.sec-heading .bar { width: 50px; height: 3px; background: #fd8b00; margin: .75rem auto 0; border-radius: 2px; }
+
+/* ── Intro paragraph (always centered, narrower) ── */
+.sec-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; font-size: .95rem; line-height: 1.7; color: #43474f; }
+</style>
+<meta property="og:title" content="Newsletter para Empresas | Diseño, Contenido y Estrategia">
+<meta property="og:description" content="Servicio de newsletter para empresas. Creamos newsletters profesionales con contenido de valor, diseño atractivo y estrategia de fidelización que genera resultados.">
+<meta property="og:url" content="https://comunikoo.es/servicios/email-marketing/newsletter-empresas/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Newsletter Empresas","description":"Servicio de newsletter para empresas. Creamos newsletters profesionales con contenido de valor, diseño atractivo y estrategia de fidelización que genera resultados.","provider":{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015"},"areaServed":{"@type":"Country","name":"España"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Con qué frecuencia debería enviar mi newsletter?","acceptedAnswer":{"@type":"Answer","text":"Depende de tu negocio y capacidad de generar contenido de valor. Para la mayoría de empresas, una frecuencia quincenal es ideal. Lo más importante es la constancia: es mejor enviar una newsletter quincenal de calidad que una semanal mediocre."}},{"@type":"Question","name":"¿Cuántos suscriptores necesito para que merezca la pena?","acceptedAnswer":{"@type":"Answer","text":"Incluso con 100 suscriptores merece la pena empezar. La newsletter construye relaciones a largo plazo y su valor crece exponencialmente con el tamaño de la lista. Además, diseñamos estrategias de captación para hacer crecer tu lista desde el primer día."}},{"@type":"Question","name":"¿Quién escribe el contenido de la newsletter?","acceptedAnswer":{"@type":"Answer","text":"Nuestro equipo de copywriters redacta todo el contenido, adaptándose a tu tono de voz y sector. Trabajamos con un sistema de aprobación: te enviamos el borrador, tú revisas y apruebas antes del envío."}},{"@type":"Question","name":"¿Cómo evito que mis emails acaben en spam?","acceptedAnswer":{"@type":"Answer","text":"Configuramos correctamente los registros SPF, DKIM y DMARC, utilizamos prácticas de envío éticas (doble opt-in, limpieza de lista), mantenemos una frecuencia consistente y creamos contenido de valor que genera interacción. Todo esto mejora tu reputación de remitente."}},{"@type":"Question","name":"¿Puedo ver resultados de newsletters que hayáis creado?","acceptedAnswer":{"@type":"Answer","text":"Sí. En una consulta gratuita compartimos casos de estudio de newsletters que gestionamos con métricas reales de apertura, clics y conversión. Nuestros clientes mantienen tasas de apertura medias del 30-40 %, muy por encima del benchmark del sector."}}]}
+</script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/linkbuilding/index.html">Linkbuilding</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/google-shopping/index.html">Google Shopping</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../servicios/branding/index.html">Branding</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../../nosotros/index.html">Nosotros</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl text-primary">close</span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><a href="../../../servicios/email-marketing/index.html" class="hover:text-secondary-container">Email Marketing</a><span class="mx-2">›</span><span class="text-primary font-semibold">Newsletter Empresas</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">Newsletter Empresas</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-3xl mx-auto">Newsletter para Empresas: El Canal Directo que Fideliza y Vende</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">La newsletter sigue siendo uno de los canales más efectivos para mantener una relación directa con tu audiencia. A diferencia de las redes sociales, tu lista de suscriptores es tuya y no depende de ningún algoritmo. En Comunikoo diseñamos, redactamos y enviamos newsletters que tu audiencia espera con ganas de abrir.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../../contacto/index.html">Auditoría gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+<!-- Decorative circles -->
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">30-40%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">Tasa de apertura de nuestros clientes</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">42:1</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">ROI del email marketing</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">98%+</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">Tasa de entregabilidad objetivo</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NAV PILLS -->
+<section class="py-5 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[64px] bg-surface/95 backdrop-blur-md z-30">
+<div class="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center">
+<a href="#por-que-newsletter" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué newsletter</a>
+<a href="#estrategia-newsletter" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Estrategia</a>
+<a href="#diseno-newsletter" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Diseño</a>
+<a href="#metricas-newsletter" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Métricas</a>
+<a href="#faq" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+
+</div>
+</section>
+
+<!-- CONTENT BLOCKS -->
+
+<section id="por-que-newsletter" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué tu empresa necesita una newsletter?</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>Ventajas de la newsletter frente a otros canales</h3><p></p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>¿Para qué tipo de empresas funciona?</h3><p>La newsletter funciona para cualquier empresa que quiera construir una relación a largo plazo con su audiencia.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="estrategia-newsletter" class="bg-[#f4f6fa] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Estrategia de newsletter: frecuencia, contenido y formato</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">1</div><h3>Frecuencia de envío</h3><p>La frecuencia ideal depende de tu capacidad de generar contenido de valor y las expectativas de tu audiencia.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">2</div><h3>Estructura de contenido</h3><p>Definimos una estructura consistente que tu audiencia aprenda a reconocer:.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Frecuencia de envío — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>La frecuencia ideal depende de tu capacidad de generar contenido de valor y las expectativas de tu audiencia:</p>
+                <ul>
+                    <li><strong>Semanal:</strong> ideal para medios, ecommerce y empresas con contenido abundante. Genera el mayor engagement.</li>
+                    <li><strong>Quincenal:</strong> el equilibrio perfecto para la mayoría de empresas. Suficiente frecuencia para mantener la relación sin saturar.</li>
+                    <li><strong>Mensual:</strong> mínimo recomendable. Funciona bien para empresas B2B con contenido denso y de largo recorrido.</li>
+                </ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">location_on</span> Estructura de contenido — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Definimos una estructura consistente que tu audiencia aprenda a reconocer:</p>
+                <ul>
+                    <li><strong>Sección principal:</strong> artículo, noticia o reflexión de valor que justifica la apertura del email.</li>
+                    <li><strong>Contenido secundario:</strong> links a recursos, herramientas o artículos relevantes del sector.</li>
+                    <li><strong>CTA comercial:</strong> una llamada a la acción sutil que conecte con tus servicios o productos.</li>
+                    <li><strong>Toque personal:</strong> una pregunta, reflexión o anécdota que humanice la comunicación.</li>
+                </ul></div>
+</details>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../../contacto/index.html">
+Auditoría gratis →</a></div>
+</div>
+</section>
+
+<section id="diseno-newsletter" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Diseño de newsletter profesional que se ve bien en todas partes</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">1</div><h3>Principios de diseño que aplicamos</h3><p></p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">2</div><h3>Compatibilidad con clientes de correo</h3><p>El email HTML es una de las áreas más desafiantes del diseño web.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">trending_up</span> Principios de diseño que aplicamos — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><ul>
+                    <li><strong>Mobile-first:</strong> más del 60 % de los emails se abren en móvil. Diseñamos primero para pantallas pequeñas.</li>
+                    <li><strong>Ancho máximo de 600px:</strong> el estándar que garantiza visualización correcta en todos los clientes de correo.</li>
+                    <li><strong>Jerarquía visual clara:</strong> el lector debe entender el contenido en 3 segundos de escaneo.</li>
+                    <li><strong>Botones grandes y claros:</strong> CTAs fáciles de pulsar en pantallas táctiles (mínimo 44x44 px).</li>
+                    <li><strong>Peso optimizado:</strong> imágenes comprimidas y código limpio para carga rápida.</li>
+                </ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">verified</span> Compatibilidad con clientes de correo — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El email HTML es una de las áreas más desafiantes del diseño web. Nuestras newsletters se testean en:</p>
+                <ul>
+                    <li><strong>Gmail</strong> (web y app), <strong>Outlook</strong> (2019, 365, web), <strong>Apple Mail</strong>, <strong>Yahoo Mail</strong> y <strong>Thunderbird</strong>.</li>
+                    <li><strong>Modo oscuro:</strong> diseñamos teniendo en cuenta el dark mode de Gmail y Apple Mail para que los colores y logos se vean correctamente.</li>
+                </ul>
+                <p>Creamos <strong>plantillas reutilizables</strong> en tu plataforma de email marketing para que mantener la coherencia visual sea sencillo en cada envío.</p></div>
+</details>
+</div>
+
+</div>
+</section>
+
+<section id="metricas-newsletter" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Métricas y optimización de tu newsletter</h2><div class="bar"></div></div>
+
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">1</div><h3>Métricas clave</h3><p></p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">2</div><h3>Optimización continua</h3><p></p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">timeline</span> Métricas clave — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><ul>
+                    <li><strong>Tasa de apertura:</strong> porcentaje de suscriptores que abren el email. Benchmark: 20-25 %. Nuestro objetivo: 30 %+.</li>
+                    <li><strong>Tasa de clics (CTR):</strong> porcentaje que hace clic en algún enlace. Benchmark: 2-5 %. Nuestro objetivo: 5 %+.</li>
+                    <li><strong>Tasa de baja:</strong> debe mantenerse por debajo del 0,5 % por envío.</li>
+                    <li><strong>Tasa de entregabilidad:</strong> porcentaje de emails que llegan a la bandeja de entrada (no a spam). Objetivo: 98 %+.</li>
+                    <li><strong>Conversiones:</strong> ventas, solicitudes o acciones generadas directamente desde la newsletter.</li>
+                </ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">star</span> Optimización continua — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><ul>
+                    <li><strong>A/B testing de asuntos:</strong> probamos diferentes líneas de asunto para maximizar la tasa de apertura.</li>
+                    <li><strong>Análisis de contenido:</strong> identificamos qué secciones generan más clics para replicar el éxito.</li>
+                    <li><strong>Limpieza de lista:</strong> eliminamos suscriptores inactivos periódicamente para mantener la salud de la lista y mejorar la entregabilidad.</li>
+                    <li><strong>Segmentación progresiva:</strong> refinamos los segmentos con cada envío para una personalización cada vez mayor.</li>
+                </ul></div>
+</details>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../../contacto/index.html">
+Auditoría gratis →</a></div>
+</div>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Con qué frecuencia debería enviar mi newsletter?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Depende de tu negocio y capacidad de generar contenido de valor. Para la mayoría de empresas, una frecuencia quincenal es ideal. Lo más importante es la constancia: es mejor enviar una newsletter quincenal de calidad que una semanal mediocre.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuántos suscriptores necesito para que merezca la pena?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Incluso con 100 suscriptores merece la pena empezar. La newsletter construye relaciones a largo plazo y su valor crece exponencialmente con el tamaño de la lista. Además, diseñamos estrategias de captación para hacer crecer tu lista desde el primer día.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Quién escribe el contenido de la newsletter?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Nuestro equipo de copywriters redacta todo el contenido, adaptándose a tu tono de voz y sector. Trabajamos con un sistema de aprobación: te enviamos el borrador, tú revisas y apruebas antes del envío.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cómo evito que mis emails acaben en spam?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Configuramos correctamente los registros SPF, DKIM y DMARC, utilizamos prácticas de envío éticas (doble opt-in, limpieza de lista), mantenemos una frecuencia consistente y creamos contenido de valor que genera interacción. Todo esto mejora tu reputación de remitente.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo ver resultados de newsletters que hayáis creado?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. En una consulta gratuita compartimos casos de estudio de newsletters que gestionamos con métricas reales de apertura, clics y conversión. Nuestros clientes mantienen tasas de apertura medias del 30-40 %, muy por encima del benchmark del sector.</p>
+</details>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="sec-block" style="background:#edf1f7">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Más sobre Email Marketing</h2><div class="bar"></div></div>
+<div class="card-grid g3"><a href="../../../servicios/email-marketing/automatizacion-email/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<h3 style="font-size:.8rem">Automatización Email</h3>
+</a>
+<a href="../../../servicios/email-marketing/email-marketing-mailchimp/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<h3 style="font-size:.8rem">Mailchimp</h3>
+</a>
+</div>
+<div style="text-align:center;margin-top:1.5rem">
+<a style="font-family:Manrope,sans-serif;font-weight:700;font-size:.85rem;color:#001e40;text-decoration:none" href="../../../servicios/email-marketing/index.html">← Volver a Email Marketing</a>
+</div>
+</div>
+</section>
+
+
+<section class="bg-[#f4f6fa] sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../../servicios/agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">search</span>
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../../servicios/diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">web</span>
+<h3 style="font-size:.8rem">Diseño Web</h3>
+</a>
+<a href="../../../servicios/agencia-google-ads/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">ads_click</span>
+<h3 style="font-size:.8rem">Google Ads</h3>
+</a>
+<a href="../../../servicios/community-manager/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">share</span>
+<h3 style="font-size:.8rem">Community Manager</h3>
+</a>
+<a href="../../../servicios/tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">shopping_cart</span>
+<h3 style="font-size:.8rem">Tiendas Online</h3>
+</a>
+<a href="../../../servicios/email-marketing/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">mail</span>
+<h3 style="font-size:.8rem">Email Marketing</h3>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres una newsletter que tu audiencia espere con ganas?</h2>
+<p class="text-on-primary-container text-base mb-8">Solicita tu auditoría gratuita. Sin compromiso.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../../contacto/index.html">Solicitar plan de newsletter</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
+<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

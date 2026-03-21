@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRO Ecommerce | Optimización de Conversión Tiendas Online — Comunikoo</title>
+<meta name="description" content="CRO para ecommerce: aumenta tu tasa de conversión una media del 47%. Auditoría CRO, A/B testing, optimización de checkout y fichas de producto. Sin permanencia.">
+<link rel="canonical" href="https://comunikoo.es/servicios/cro-ecommerce/">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#001e40",
+        "primary-container": "#003366",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#799dd6",
+        "secondary": "#904d00",
+        "secondary-container": "#fd8b00",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#603100",
+        "surface": "#f8f9fa",
+        "surface-container": "#edeeef",
+        "surface-container-low": "#f3f4f5",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#43474f",
+        "outline": "#737780",
+        "outline-variant": "#c3c6d1",
+        "tertiary-container": "#592300",
+        "on-tertiary-container": "#d8885c",
+        "error": "#ba1a1a",
+        "on-background": "#191c1d",
+      },
+      fontFamily: {
+        "headline": ["Manrope", "system-ui", "sans-serif"],
+        "body": ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem"},
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ── Container (PeterLead style: 1100px max, always centered) ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Section blocks with clear separation ── */
+.sec-block { padding: 4.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 5.5rem 0; } }
+
+/* ── Cards: white, shadow, uniform, centered content ── */
+.svc-card { background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); text-align: center; transition: all .25s ease; }
+.svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
+.svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
+.svc-card p { font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }
+
+/* ── Card grid: always symmetric ── */
+.card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 860px; }
+.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr 1fr !important; max-width: 100% !important; gap: .75rem !important; }
+  .card-grid.g2 { grid-template-columns: 1fr 1fr !important; }
+  .svc-card { padding: 1.25rem 1rem !important; }
+  .svc-card h3 { font-size: .8rem !important; }
+  .svc-card p { font-size: .72rem !important; }
+  .svc-card .svc-icon { width: 44px !important; height: 44px !important; }
+  .sec-block { padding: 3rem 0 !important; }
+  .sec-heading h2 { font-size: 1.3rem !important; }
+  .sec-intro { font-size: .88rem !important; }
+  .prose-block { font-size: .85rem !important; }
+  .prose-block h3 { font-size: .95rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+}
+
+/* Nav pills scrollable on mobile */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Hero responsive */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.5rem !important; }
+  .font-headline.text-4xl { font-size: 1.75rem !important; }
+}
+
+/* ── Prose: text always inside container, left-aligned, readable ── */
+.prose-block { max-width: 720px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
+.prose-block p { font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }
+.prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }
+.prose-block strong { color: #001e40; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading ── */
+.sec-heading { text-align: center; margin-bottom: 2.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.65rem; font-weight: 800; color: #001e40; margin: 0; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2rem; } }
+.sec-heading .bar { width: 50px; height: 3px; background: #fd8b00; margin: .75rem auto 0; border-radius: 2px; }
+
+/* ── Intro paragraph (always centered, narrower) ── */
+.sec-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; font-size: .95rem; line-height: 1.7; color: #43474f; }
+</style>
+<meta property="og:title" content="CRO Ecommerce | Optimización de Conversión Tiendas Online — Comunikoo">
+<meta property="og:description" content="CRO para ecommerce: aumenta tu tasa de conversión una media del 47%. Auditoría CRO, A/B testing, optimización de checkout y fichas de producto. Sin permanencia.">
+<meta property="og:url" content="https://comunikoo.es/servicios/cro-ecommerce/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"CRO Ecommerce","description":"CRO para ecommerce: aumenta tu tasa de conversión una media del 47%. Auditoría CRO, A/B testing, optimización de checkout y fichas de producto. Sin permanencia.","provider":{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015"},"areaServed":{"@type":"Country","name":"España"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta un servicio de CRO para ecommerce?","acceptedAnswer":{"@type":"Answer","text":"Nuestro servicio de CRO ecommerce parte desde 790€/mes para auditoría + optimizaciones priorizadas, hasta 1.490€/mes para programa completo con A/B testing continuo, mapas de calor, análisis mensual y reuniones de revisión. El ROI suele ser positivo desde el segundo mes."}},{"@type":"Question","name":"¿Cuánto tarda el CRO en dar resultados?","acceptedAnswer":{"@type":"Answer","text":"Los quick wins (mejoras evidentes de usabilidad, checkout, velocidad) se implementan en las primeras 2-4 semanas y su impacto se ve casi inmediatamente. Los tests A/B necesitan entre 2 y 4 semanas de duración para alcanzar significancia estadística. Un programa completo de CRO muestra mejoras consistentes a partir del segundo o tercer mes."}},{"@type":"Question","name":"¿Qué tasa de conversión puedo esperar?","acceptedAnswer":{"@type":"Answer","text":"Depende de tu sector y punto de partida. La media en ecommerce España es del 1,5-2%. Nuestros clientes suelen alcanzar tasas del 2,5-3,5% después de un programa de CRO de 6 meses. Algunas tiendas con productos de nicho y buen tráfico cualificado alcanzan el 4-5%."}},{"@type":"Question","name":"¿Necesito mucho tráfico para hacer CRO?","acceptedAnswer":{"@type":"Answer","text":"Para A/B testing con significancia estadística, necesitas al menos 10.000 visitantes mensuales. Con menos tráfico, aplicamos mejoras basadas en mejores prácticas probadas, análisis heurístico y datos cualitativos (mapas de calor, grabaciones). El enfoque cambia, pero los resultados siguen siendo significativos."}},{"@type":"Question","name":"¿CRO y diseño web son lo mismo?","acceptedAnswer":{"@type":"Answer","text":"No. El diseño web se centra en la estética y la estructura. El CRO se centra en que cada elemento de la web contribuya a la conversión, basándose en datos de comportamiento real de los usuarios. Un buen diseño no garantiza buena conversión. El CRO optimiza el diseño existente para maximizar las ventas."}},{"@type":"Question","name":"¿El CRO afecta al SEO?","acceptedAnswer":{"@type":"Answer","text":"Si se hace bien, el CRO mejora el SEO. Google valora las señales de experiencia de usuario: velocidad de carga, tiempo en página, tasa de rebote y Core Web Vitals. Un CRO bien ejecutado mejora todos estos indicadores. Coordinamos cualquier cambio con tu estrategia SEO para evitar conflictos."}},{"@type":"Question","name":"¿Qué herramientas usáis para CRO?","acceptedAnswer":{"@type":"Answer","text":"Usamos GA4 para análisis cuantitativo, Hotjar y Microsoft Clarity para mapas de calor y grabaciones, VWO o Google Optimize para A/B testing, y herramientas de encuestas in-site para feedback cualitativo. Todo integrado en un proceso de investigación y experimentación continua."}},{"@type":"Question","name":"¿El CRO funciona con cualquier plataforma ecommerce?","acceptedAnswer":{"@type":"Answer","text":"Sí. Trabajamos con Shopify, WooCommerce, PrestaShop y cualquier otra plataforma ecommerce. Las herramientas de CRO (mapas de calor, A/B testing) son independientes de la plataforma. Adaptamos la implementación técnica a cada caso."}}]}
+</script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl text-primary">close</span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><span class="text-primary font-semibold">CRO Ecommerce</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">CRO Ecommerce</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-3xl mx-auto">CRO Ecommerce — Convierte Más Visitantes en Clientes</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Aumentamos la tasa de conversión de tiendas online una media del 47%. Auditoría CRO completa, A/B testing, optimización de checkout y fichas de producto. Más de 35 proyectos de CRO ecommerce con impacto medible en facturación.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Auditoría CRO gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+<!-- Decorative circles -->
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+47%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">aumento medio conversión</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+35</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">proyectos CRO ecommerce</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">-28%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">menos abandono carrito</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+22%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">aumento ticket medio</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NAV PILLS -->
+<section class="py-5 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[64px] bg-surface/95 backdrop-blur-md z-30">
+<div class="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center">
+<a href="#por-que" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué CRO</a>
+<a href="#servicios" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Servicios CRO</a>
+<a href="#proceso" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Proceso</a>
+<a href="#resultados" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
+<a href="#diferencias" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué nosotros</a>
+<a href="#faq" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+
+</div>
+</section>
+
+<!-- CONTENT BLOCKS -->
+
+<section id="por-que" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué el CRO es la palanca más rentable para tu ecommerce?</h2><div class="bar"></div></div>
+
+<div class="card-grid g3"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>El impacto real del CRO en números</h3><p>Imaginemos una tienda online con estos datos:.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>¿Por qué la tasa de conversión es tan baja en ecommerce?</h3><p>La tasa de conversión media en ecommerce en España es del 1,5-2%.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">tune</span></div><h3>CRO para ecommerce: no es lo mismo que CRO genérico</h3><p>El CRO para tiendas online tiene sus propias particularidades.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="servicios" class="bg-[#f4f6fa] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Nuestros servicios de CRO para ecommerce</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Auditoría CRO completa</h3><p>El primer paso es entender qué está fallando.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">location_on</span></div><h3>Optimización de fichas de producto</h3><p>La ficha de producto es donde se toma la decisión de compra.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">insights</span></div><h3>Optimización del checkout</h3><p>El 69,82% de los carritos se abandonan.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">build</span></div><h3>A/B testing y experimentación</h3><p>No nos basamos en opiniones — tomamos decisiones con datos.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">trending_up</span></div><h3>Optimización de la experiencia móvil</h3><p>Con el 73% del tráfico ecommerce viniendo del móvil, la experiencia móvil es la experiencia.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Auditoría CRO completa — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El primer paso es entender qué está fallando. Nuestra auditoría CRO incluye:</p>
+<ul>
+<li><strong>Análisis de datos de GA4</strong>: embudos de conversión, páginas de salida, comportamiento por dispositivo</li>
+<li><strong>Mapas de calor y grabaciones de sesión</strong> (Hotjar, Microsoft Clarity): dónde hacen clic, hasta dónde hacen scroll, qué ignoran</li>
+<li><strong>Análisis heurístico</strong>: evaluación experta de usabilidad, confianza, claridad y motivación</li>
+<li><strong>Análisis del checkout</strong>: identificación de cada punto de abandono en el proceso de compra</li>
+<li><strong>Benchmarking competitivo</strong>: cómo se comparan tus métricas con las del sector</li>
+</ul>
+<p>El resultado es un informe con los <strong>problemas prioritarios y las hipótesis de mejora</strong> ordenadas por impacto potencial.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">location_on</span> Optimización de fichas de producto — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>La ficha de producto es donde se toma la decisión de compra. Optimizamos:</p>
+<ul>
+<li>Estructura de la información: lo más importante, primero</li>
+<li>Galería de imágenes: zoom, 360, vídeo de producto</li>
+<li>Descripciones persuasivas que resuelven objeciones</li>
+<li>Social proof: reseñas, valoraciones, fotos de clientes</li>
+<li>Urgencia y escasez: stock limitado, contador de tiempo</li>
+<li>Cross-selling y upselling inteligente</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">insights</span> Optimización del checkout — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El <strong>69,82% de los carritos se abandonan</strong>. Reducimos esa cifra optimizando cada paso:</p>
+<ul>
+<li>Checkout simplificado: menos pasos, menos campos, menos fricciones</li>
+<li>Guest checkout (compra sin registro obligatorio)</li>
+<li>Múltiples métodos de pago (Bizum, PayPal, financiación)</li>
+<li>Indicadores de progreso y costes transparentes</li>
+<li>Sellos de confianza y política de devoluciones visible</li>
+<li>Optimización del checkout en móvil</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">build</span> A/B testing y experimentación — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No nos basamos en opiniones — <strong>tomamos decisiones con datos</strong>. Diseñamos y ejecutamos tests A/B rigurosos:</p>
+<ul>
+<li>Tests con significancia estadística (mínimo 95% de confianza)</li>
+<li>Herramientas profesionales: Google Optimize, VWO, Convert</li>
+<li>Documentación de cada experimento: hipótesis, variantes, resultados y aprendizajes</li>
+<li>Roadmap de experimentación priorizado por impacto estimado</li>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">trending_up</span> Optimización de la experiencia móvil — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Con el 73% del tráfico ecommerce viniendo del móvil, <strong>la experiencia móvil es la experiencia</strong>. Optimizamos navegación, filtros, fichas de producto, carrito y checkout específicamente para pantallas pequeñas y uso táctil.</p></div>
+</details>
+</div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría CRO gratis →</a></div>
+</div>
+</section>
+
+<section id="proceso" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Nuestro proceso de optimización CRO para ecommerce</h2><div class="bar"></div></div>
+
+<div class="card-grid g4"><div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">01</div>
+<h3>Investigación y análisis</h3>
+<p>Recopilamos datos cuantitativos (GA4, embudos) y cualitativos (mapas de calor, grabaciones, encuestas).</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">02</div>
+<h3>Diseño de experimentos</h3>
+<p>Para cada hipótesis, diseñamos una variante (o varias) que testearemos contra la versión actual.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">03</div>
+<h3>Implementación y testing</h3>
+<p>Desarrollamos las variantes e implementamos los tests A/B.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">04</div>
+<h3>Análisis, implementación y repetición</h3>
+<p>Analizamos los resultados con rigor estadístico.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="resultados" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Resultados reales de CRO para tiendas online</h2><div class="bar"></div></div>
+
+<div class="card-grid g4" style="margin-bottom:2.5rem"><div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+47%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio en tasa de conversión</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+35</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">proyectos CRO ecommerce</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">-28%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">reducción media abandono carrito</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+22%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio ticket medio</p></div>
+</div><div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Tienda de suplementos — Conversión del 1,2% al 3,1%</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una tienda de suplementos deportivos con buen tráfico pero baja conversión:</p>
+<ul>
+<li>Tasa de conversión subió del <strong>1,2% al 3,1%</strong> (+158%)</li>
+<li>Ingresos mensuales aumentaron un <strong>162%</strong> sin aumentar la inversión en tráfico</li>
+<li>Abandono de carrito reducido del <strong>78% al 52%</strong></li>
+<li>Ticket medio subió un <strong>18%</strong> con upselling optimizado en ficha de producto</li>
+</ul>
+<p>Cambios clave: rediseño de fichas de producto con reseñas prominentes, checkout simplificado a 2 pasos, Bizum como opción de pago y guest checkout activado.</p></div></div>
+<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Ecommerce de decoración — +89% de ingresos desde móvil</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una tienda de decoración donde el 68% del tráfico era móvil pero la conversión en móvil era un 70% inferior a desktop:</p>
+<ul>
+<li>Conversión móvil mejoró un <strong>94%</strong></li>
+<li>Ingresos desde móvil aumentaron un <strong>89%</strong></li>
+<li>Tiempo medio de navegación en móvil subió un <strong>34%</strong></li>
+<li>Scroll en fichas de producto aumentó un <strong>45%</strong></li>
+</ul>
+
+<p style="margin-top:var(--space-6)"><em>"Estábamos gastando miles en publicidad para llevar tráfico a una tienda que no convertía. Comunikoo arregló el embudo y ahora cada euro invertido rinde el doble."</em></p>
+<p class="text-muted">— Marcos Díaz, CEO, tienda de suplementos deportivos, Valencia</p></div></div>
+<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.05);border-left:4px solid #fd8b00">
+<p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"Estábamos gastando miles en publicidad para llevar tráfico a una tienda que no convertía. Comunikoo arregló el embudo y ahora cada euro invertido rinde el doble."</p>
+<p style="font-size:.8rem;color:#737780;margin:0">— Conversión del 1,2% al 3,1%</h3>
+<p>Una tienda de suplementos deportivos con buen tráfico pero baja conversión:</p></div>
+<div style="text-align:center;margin-top:2.5rem">
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría CRO gratis →</a></div>
+</div>
+</section>
+
+<section id="diferencias" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué Comunikoo para el CRO de tu ecommerce?</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>Enfoque científico, no opiniones</h3><p>No hacemos cambios porque "nos parece que queda mejor".</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">edit_note</span></div><h3>Especialistas en ecommerce</h3><p>Conocemos los patrones de compra online, las mejores prácticas de checkout.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">tune</span></div><h3>Impacto medible en facturación</h3><p>No medimos el éxito del CRO en "mejora de experiencia" ni en métricas blandas.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">link</span></div><h3>Integración con tu estrategia de marketing</h3><p>El CRO no funciona aislado.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">speed</span></div><h3>Sin permanencia, con resultados mensurables</h3><p>Sin contratos de permanencia.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">search</span> Enfoque científico, no opiniones — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No hacemos cambios porque "nos parece que queda mejor". <strong>Cada cambio se basa en datos y se valida con tests A/B</strong>. Si un test no gana con significancia estadística, no se implementa. Así de simple.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">edit_note</span> Especialistas en ecommerce — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Conocemos los patrones de compra online, las mejores prácticas de checkout, las dinámicas de fichas de producto y los flujos de navegación que convierten. <strong>No es lo mismo optimizar una landing de servicios que una tienda con 5.000 productos</strong>. Sabemos la diferencia.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">tune</span> Impacto medible en facturación — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No medimos el éxito del CRO en "mejora de experiencia" ni en métricas blandas. <strong>Medimos euros adicionales facturados</strong> como resultado directo de los cambios implementados. Cada mes puedes ver el impacto económico real del CRO.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">link</span> Integración con tu estrategia de marketing — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El CRO no funciona aislado. Un aumento en la conversión <strong>multiplica el rendimiento de todos tus canales de adquisición</strong>: Google Ads, SEO, email marketing y redes sociales rinden más cuando la web convierte mejor. Coordinamos el CRO con tus campañas de captación para maximizar el retorno global.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Sin permanencia, con resultados mensurables — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Sin contratos de permanencia. Cada mes ves el impacto de los cambios en tus métricas de negocio. <strong>Si no mejora tu conversión, no tiene sentido seguir</strong>. Pero nuestros clientes se quedan porque los números hablan.</p></div>
+</details>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta un servicio de CRO para ecommerce?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Nuestro servicio de CRO ecommerce parte desde 790€/mes para auditoría + optimizaciones priorizadas, hasta 1.490€/mes para programa completo con A/B testing continuo, mapas de calor, análisis mensual y reuniones de revisión. El ROI suele ser positivo desde el segundo mes.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto tarda el CRO en dar resultados?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Los quick wins (mejoras evidentes de usabilidad, checkout, velocidad) se implementan en las primeras 2-4 semanas y su impacto se ve casi inmediatamente. Los tests A/B necesitan entre 2 y 4 semanas de duración para alcanzar significancia estadística. Un programa completo de CRO muestra mejoras consistentes a partir del segundo o tercer mes.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué tasa de conversión puedo esperar?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Depende de tu sector y punto de partida. La media en ecommerce España es del 1,5-2%. Nuestros clientes suelen alcanzar tasas del 2,5-3,5% después de un programa de CRO de 6 meses. Algunas tiendas con productos de nicho y buen tráfico cualificado alcanzan el 4-5%.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Necesito mucho tráfico para hacer CRO?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Para A/B testing con significancia estadística, necesitas al menos 10.000 visitantes mensuales. Con menos tráfico, aplicamos mejoras basadas en mejores prácticas probadas, análisis heurístico y datos cualitativos (mapas de calor, grabaciones). El enfoque cambia, pero los resultados siguen siendo significativos.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿CRO y diseño web son lo mismo?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">No. El diseño web se centra en la estética y la estructura. El CRO se centra en que cada elemento de la web contribuya a la conversión, basándose en datos de comportamiento real de los usuarios. Un buen diseño no garantiza buena conversión. El CRO optimiza el diseño existente para maximizar las ventas.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿El CRO afecta al SEO?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Si se hace bien, el CRO mejora el SEO. Google valora las señales de experiencia de usuario: velocidad de carga, tiempo en página, tasa de rebote y Core Web Vitals. Un CRO bien ejecutado mejora todos estos indicadores. Coordinamos cualquier cambio con tu estrategia SEO para evitar conflictos.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué herramientas usáis para CRO?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Usamos GA4 para análisis cuantitativo, Hotjar y Microsoft Clarity para mapas de calor y grabaciones, VWO o Google Optimize para A/B testing, y herramientas de encuestas in-site para feedback cualitativo. Todo integrado en un proceso de investigación y experimentación continua.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿El CRO funciona con cualquier plataforma ecommerce?
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Trabajamos con Shopify, WooCommerce, PrestaShop y cualquier otra plataforma ecommerce. Las herramientas de CRO (mapas de calor, A/B testing) son independientes de la plataforma. Adaptamos la implementación técnica a cada caso.</p>
+</details>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="bg-[#f4f6fa] sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../servicios/agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">search</span>
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../servicios/diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">web</span>
+<h3 style="font-size:.8rem">Diseño Web</h3>
+</a>
+<a href="../../servicios/agencia-google-ads/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">ads_click</span>
+<h3 style="font-size:.8rem">Google Ads</h3>
+</a>
+<a href="../../servicios/community-manager/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">share</span>
+<h3 style="font-size:.8rem">Community Manager</h3>
+</a>
+<a href="../../servicios/tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">shopping_cart</span>
+<h3 style="font-size:.8rem">Tiendas Online</h3>
+</a>
+<a href="../../servicios/email-marketing/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">mail</span>
+<h3 style="font-size:.8rem">Email Marketing</h3>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que tu tienda convierta el doble?</h2>
+<p class="text-on-primary-container text-base mb-8">Analizamos tu funnel de conversión y te decimos exactamente dónde estás perdiendo ventas. Auditoría CRO gratuita.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Solicita tu auditoría CRO gratis</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
+<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>
