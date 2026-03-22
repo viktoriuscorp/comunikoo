@@ -27,6 +27,25 @@
 /marketing-ecommerce/ /marketing-para-ecommerce/ 301
 /marketing-inmobiliarias/ /marketing-para-inmobiliarias/ 301
 
+# URLs antiguas confirmadas del WordPress
+/agencia-meta-ads /servicios/agencia-meta-ads/ 301
+/agencia-meta-ads/ /servicios/agencia-meta-ads/ 301
+/agencia-facebook-ads /servicios/agencia-facebook-ads/ 301
+/agencia-facebook-ads/ /servicios/agencia-facebook-ads/ 301
+/agencia-seo-local /servicios/agencia-seo-local/ 301
+/agencia-seo-local/ /servicios/agencia-seo-local/ 301
+/agencia-google-ads-barcelona /google-ads-barcelona/ 301
+/agencia-google-ads-barcelona/ /google-ads-barcelona/ 301
+/diseño-web-barcelona /diseno-web-barcelona/ 301
+/diseño-web-barcelona/ /diseno-web-barcelona/ 301
+/diseno-web-barcelona /diseno-web-barcelona/ 301
+/diseño-web-corporativo /servicios/diseno-web-para-empresas/ 301
+/diseño-web-corporativo/ /servicios/diseno-web-para-empresas/ 301
+/diseno-web-corporativo /servicios/diseno-web-para-empresas/ 301
+/diseno-web-corporativo/ /servicios/diseno-web-para-empresas/ 301
+/experto-google-ads /servicios/experto-google-ads/ 301
+/experto-google-ads/ /servicios/experto-google-ads/ 301
+
 # Servicios (posibles variantes antiguas)
 /seo/ /servicios/agencia-seo/ 301
 /seo-barcelona/ /agencia-seo-barcelona/ 301
