@@ -2,7 +2,7 @@ SUBPAGES = {
     # ================================================================
     # 1. SEO ON PAGE
     # ================================================================
-    "/servicios/agencia-seo/seo-on-page/": {
+    "/agencia-seo/seo-on-page/": {
         "type": "service",
         "title": "SEO On Page: Optimizacion Interna de tu Web | Agencia SEO",
         "meta_desc": (
@@ -17,7 +17,7 @@ SUBPAGES = {
             "comprendan, indexen y posicionen tu contenido de forma eficaz. "
             "Sin una estructura on page solida, cualquier inversion en link building o contenidos pierde gran parte de su impacto."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {
@@ -185,7 +185,7 @@ SUBPAGES = {
     # ================================================================
     # 2. SEO OFF PAGE
     # ================================================================
-    "/servicios/agencia-seo/seo-off-page/": {
+    "/agencia-seo/seo-off-page/": {
         "type": "service",
         "title": "SEO Off Page: Link Building y Autoridad de Dominio | Agencia SEO",
         "meta_desc": (
@@ -201,7 +201,7 @@ SUBPAGES = {
             "Nuestra estrategia de link building se basa en conseguir enlaces naturales, relevantes y de alta "
             "autoridad que impulsen tu visibilidad organica de forma sostenible."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {
@@ -361,7 +361,7 @@ SUBPAGES = {
     # ================================================================
     # 3. SEO TECNICO
     # ================================================================
-    "/servicios/agencia-seo/seo-tecnico/": {
+    "/agencia-seo/seo-tecnico/": {
         "type": "service",
         "title": "SEO Tecnico: Rendimiento, Indexacion y Core Web Vitals | Agencia SEO",
         "meta_desc": (
@@ -377,7 +377,7 @@ SUBPAGES = {
             "Nuestro equipo de ingenieros SEO audita y optimiza cada aspecto tecnico para que los motores "
             "de busqueda accedan a tu contenido sin fricciones."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {
@@ -547,7 +547,7 @@ SUBPAGES = {
     # ================================================================
     # 4. KEYWORD RESEARCH
     # ================================================================
-    "/servicios/agencia-seo/keyword-research/": {
+    "/agencia-seo/keyword-research/": {
         "type": "service",
         "title": "Keyword Research Profesional: Investigacion de Palabras Clave | Agencia SEO",
         "meta_desc": (
@@ -563,7 +563,7 @@ SUBPAGES = {
             "Un keyword research superficial lleva a invertir recursos en terminos que no generan trafico "
             "cualificado ni conversiones."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {
@@ -715,7 +715,7 @@ SUBPAGES = {
     # ================================================================
     # 5. CONTENIDOS SEO
     # ================================================================
-    "/servicios/agencia-seo/contenidos-seo/": {
+    "/agencia-seo/contenidos-seo/": {
         "type": "service",
         "title": "Contenidos SEO: Estrategia de Contenidos para Posicionar | Agencia SEO",
         "meta_desc": (
@@ -731,7 +731,7 @@ SUBPAGES = {
             "Nuestra metodologia combina analisis de datos, redaccion experta y optimizacion tecnica para producir "
             "contenido que escala posiciones de forma sostenible."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {
@@ -899,7 +899,7 @@ SUBPAGES = {
     # ================================================================
     # 6. MIGRACION SEO
     # ================================================================
-    "/servicios/agencia-seo/migracion-seo/": {
+    "/agencia-seo/migracion-seo/": {
         "type": "service",
         "title": "Migracion SEO: Cambia sin Perder Posicionamiento | Agencia SEO",
         "meta_desc": (
@@ -914,7 +914,7 @@ SUBPAGES = {
             "SEO meticulosa para preservar el posicionamiento y la autoridad acumulada. "
             "Nuestro equipo ha gestionado mas de 150 migraciones con una tasa de recuperacion de trafico superior al 95%."
         ),
-        "parent": "/servicios/agencia-seo/",
+        "parent": "/agencia-seo/",
         "parent_name": "Agencia SEO",
         "sections": [
             {

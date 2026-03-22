@@ -253,7 +253,7 @@ def nav_html(current_url="/"):
 <div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-seo/')}">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-seo/')}">Agencia SEO</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-seo-local/')}">SEO Local</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/consultoria-seo/')}">Consultoría SEO</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/auditoria-seo/')}">Auditoría SEO</a>
@@ -262,16 +262,16 @@ def nav_html(current_url="/"):
 </div>
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/diseno-web/')}">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/diseno-web/')}">Diseño Web</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/diseno-web-wordpress/')}">WordPress</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/tienda-online/')}">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/tienda-online/')}">Tiendas Online</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/landing-pages/')}">Landing Pages</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/mantenimiento-web/')}">Mantenimiento Web</a>
 </div>
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-google-ads/')}">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-google-ads/')}">Google Ads</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-meta-ads/')}">Meta Ads</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/instagram-ads/')}">Instagram Ads</a>
@@ -281,9 +281,9 @@ def nav_html(current_url="/"):
 </div>
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/community-manager/')}">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/community-manager/')}">Community Manager</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/gestion-redes-sociales/')}">Gestión Redes</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/email-marketing/')}">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/email-marketing/')}">Email Marketing</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/marketing-de-contenidos/')}">Marketing Contenidos</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/branding/')}">Branding</a>
 </div>
@@ -350,23 +350,23 @@ def nav_html(current_url="/"):
 <summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
 <div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-seo/')}">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-seo/')}">Agencia SEO</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-seo-local/')}">SEO Local</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/consultoria-seo/')}">Consultoría SEO</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/posicionamiento-web/')}">Posicionamiento Web</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/diseno-web/')}">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/diseno-web/')}">Diseño Web</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/diseno-web-wordpress/')}">WordPress</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/tienda-online/')}">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/tienda-online/')}">Tiendas Online</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-google-ads/')}">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-google-ads/')}">Google Ads</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-meta-ads/')}">Meta Ads</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/instagram-ads/')}">Instagram Ads</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/community-manager/')}">Community Manager</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/email-marketing/')}">Email Marketing</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/community-manager/')}">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/email-marketing/')}">Email Marketing</a>
 </div>
 </details>
 
@@ -405,12 +405,12 @@ def footer_html(current_url="/"):
 </div>
 <div class="space-y-3">
 <h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/agencia-seo/')}">Agencia SEO</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/diseno-web/')}">Diseño Web</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/agencia-google-ads/')}">Google Ads</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/community-manager/')}">Community Manager</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/tienda-online/')}">Tiendas Online</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/email-marketing/')}">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-seo/')}">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/diseno-web/')}">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-google-ads/')}">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/community-manager/')}">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/tienda-online/')}">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/email-marketing/')}">Email Marketing</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/branding/')}">Branding</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
@@ -820,7 +820,7 @@ def build_service_page(page):
     # ── CONTEXTUAL RELATED SERVICES (by cluster) ──
     SERVICE_CLUSTERS = {
         'seo': [
-            ("Agencia SEO", "/servicios/agencia-seo/"),
+            ("Agencia SEO", "/agencia-seo/"),
             ("SEO Local", "/servicios/agencia-seo-local/"),
             ("Auditoría SEO", "/servicios/auditoria-seo/"),
             ("Consultoría SEO", "/servicios/consultoria-seo/"),
@@ -831,7 +831,7 @@ def build_service_page(page):
             ("Analítica Web", "/servicios/analitica-web/"),
         ],
         'web': [
-            ("Diseño Web", "/servicios/diseno-web/"),
+            ("Diseño Web", "/diseno-web/"),
             ("WordPress", "/servicios/diseno-web-wordpress/"),
             ("Desarrollo Web", "/servicios/desarrollo-web/"),
             ("Landing Pages", "/servicios/landing-pages/"),
@@ -841,7 +841,7 @@ def build_service_page(page):
             ("Optimización CRO", "/servicios/optimizacion-cro/"),
         ],
         'ads': [
-            ("Google Ads", "/servicios/agencia-google-ads/"),
+            ("Google Ads", "/agencia-google-ads/"),
             ("Facebook Ads", "/servicios/agencia-facebook-ads/"),
             ("Meta Ads", "/servicios/agencia-meta-ads/"),
             ("Instagram Ads", "/servicios/instagram-ads/"),
@@ -851,17 +851,17 @@ def build_service_page(page):
             ("Landing Pages", "/servicios/landing-pages/"),
         ],
         'social': [
-            ("Community Manager", "/servicios/community-manager/"),
+            ("Community Manager", "/community-manager/"),
             ("Gestión Redes", "/servicios/gestion-redes-sociales/"),
             ("Social Media", "/servicios/social-media-marketing/"),
             ("Publicidad Redes", "/servicios/publicidad-redes-sociales/"),
             ("Marketing Contenidos", "/servicios/marketing-de-contenidos/"),
             ("Inbound Marketing", "/servicios/inbound-marketing/"),
-            ("Email Marketing", "/servicios/email-marketing/"),
+            ("Email Marketing", "/email-marketing/"),
             ("Branding", "/servicios/branding/"),
         ],
         'ecommerce': [
-            ("Tienda Online", "/servicios/tienda-online/"),
+            ("Tienda Online", "/tienda-online/"),
             ("Agencia Ecommerce", "/servicios/agencia-ecommerce/"),
             ("Shopify", "/servicios/agencia-shopify/"),
             ("WooCommerce", "/servicios/agencia-woocommerce/"),
@@ -1269,12 +1269,12 @@ def build_vertical_page(page):
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4 text-center">Servicios de marketing digital para {p.get("sector_name", "tu sector")}</h2>
 <p class="text-on-surface-variant text-center max-w-2xl mx-auto mb-10">Combinamos diferentes canales de marketing digital para maximizar los resultados en tu sector.</p>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-<a href="{r('/servicios/agencia-seo/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO y Posicionamiento</h3><p style="font-size:.7rem">Posiciona tu negocio en Google</p></a>
+<a href="{r('/agencia-seo/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO y Posicionamiento</h3><p style="font-size:.7rem">Posiciona tu negocio en Google</p></a>
 <a href="{r('/servicios/agencia-seo-local/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO Local</h3><p style="font-size:.7rem">Google Maps y pack local</p></a>
-<a href="{r('/servicios/diseno-web/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Diseño Web</h3><p style="font-size:.7rem">Web profesional que convierte</p></a>
-<a href="{r('/servicios/agencia-google-ads/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Google Ads</h3><p style="font-size:.7rem">Clientes desde el primer día</p></a>
-<a href="{r('/servicios/community-manager/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Redes Sociales</h3><p style="font-size:.7rem">Contenido que conecta</p></a>
-<a href="{r('/servicios/email-marketing/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Email Marketing</h3><p style="font-size:.7rem">Fideliza y genera repetición</p></a>
+<a href="{r('/diseno-web/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Diseño Web</h3><p style="font-size:.7rem">Web profesional que convierte</p></a>
+<a href="{r('/agencia-google-ads/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Google Ads</h3><p style="font-size:.7rem">Clientes desde el primer día</p></a>
+<a href="{r('/community-manager/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Redes Sociales</h3><p style="font-size:.7rem">Contenido que conecta</p></a>
+<a href="{r('/email-marketing/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Email Marketing</h3><p style="font-size:.7rem">Fideliza y genera repetición</p></a>
 <a href="{r('/servicios/branding/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Branding</h3><p style="font-size:.7rem">Identidad de marca</p></a>
 <a href="{r('/servicios/optimizacion-cro/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">CRO</h3><p style="font-size:.7rem">Optimización de conversión</p></a>
 </div>
@@ -1443,7 +1443,7 @@ def build_home():
     all_services_grid = ''
 
     seo_services = [
-        ("Agencia SEO", "Posicionamiento web orgánico en Google", "/servicios/agencia-seo/"),
+        ("Agencia SEO", "Posicionamiento web orgánico en Google", "/agencia-seo/"),
         ("SEO Local", "Google Maps y pack local para negocios", "/servicios/agencia-seo-local/"),
         ("Consultoría SEO", "Asesoramiento estratégico SEO experto", "/servicios/consultoria-seo/"),
         ("Auditoría SEO", "Diagnóstico completo de tu web", "/servicios/auditoria-seo/"),
@@ -1453,7 +1453,7 @@ def build_home():
     ]
 
     web_services = [
-        ("Diseño Web", "Webs profesionales que convierten", "/servicios/diseno-web/"),
+        ("Diseño Web", "Webs profesionales que convierten", "/diseno-web/"),
         ("WordPress", "Diseño web en WordPress a medida", "/servicios/diseno-web-wordpress/"),
         ("Desarrollo Web", "Programación a medida y APIs", "/servicios/desarrollo-web/"),
         ("Landing Pages", "Páginas de alta conversión", "/servicios/landing-pages/"),
@@ -1465,7 +1465,7 @@ def build_home():
     ]
 
     ads_services = [
-        ("Google Ads", "Campañas rentables en Google", "/servicios/agencia-google-ads/"),
+        ("Google Ads", "Campañas rentables en Google", "/agencia-google-ads/"),
         ("Facebook Ads", "Publicidad en Facebook", "/servicios/agencia-facebook-ads/"),
         ("Meta Ads", "Ecosistema Meta completo", "/servicios/agencia-meta-ads/"),
         ("Instagram Ads", "Publicidad visual en Instagram", "/servicios/instagram-ads/"),
@@ -1477,7 +1477,7 @@ def build_home():
     ]
 
     ecommerce_services = [
-        ("Tiendas Online", "Ecommerce listo para vender", "/servicios/tienda-online/"),
+        ("Tiendas Online", "Ecommerce listo para vender", "/tienda-online/"),
         ("Agencia Ecommerce", "Estrategia 360 para tiendas", "/servicios/agencia-ecommerce/"),
         ("Diseño Tienda Online", "Ecommerce que enamora", "/servicios/diseno-tienda-online/"),
         ("Agencia Shopify", "Partner Shopify España", "/servicios/agencia-shopify/"),
@@ -1488,9 +1488,9 @@ def build_home():
     ]
 
     social_services = [
-        ("Community Manager", "Gestión profesional de redes", "/servicios/community-manager/"),
+        ("Community Manager", "Gestión profesional de redes", "/community-manager/"),
         ("Gestión Redes Sociales", "Estrategia y ejecución", "/servicios/gestion-redes-sociales/"),
-        ("Email Marketing", "Campañas con el mayor ROI", "/servicios/email-marketing/"),
+        ("Email Marketing", "Campañas con el mayor ROI", "/email-marketing/"),
         ("Marketing de Contenidos", "Contenido que posiciona", "/servicios/marketing-de-contenidos/"),
         ("Social Media Marketing", "Redes con ROI", "/servicios/social-media-marketing/"),
         ("Inbound Marketing", "Atrae clientes con valor", "/servicios/inbound-marketing/"),
@@ -1632,32 +1632,32 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <div class="h-1.5 w-24 bg-secondary-container mx-auto mt-6"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a href="{r('/servicios/agencia-seo/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/agencia-seo/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">search</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">SEO y Posicionamiento Web</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Posicionamos tu negocio en las primeras posiciones de Google con estrategia de SEO probada. Auditoría técnica, keyword research, contenidos optimizados y link building de calidad. El canal con mejor retorno a largo plazo para cualquier negocio.</p>
 </a>
-<a href="{r('/servicios/diseno-web/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/diseno-web/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">web</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Diseño Web Profesional</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Webs rápidas, bonitas y que convierten visitantes en clientes. Diseño responsive, optimizado para SEO y con experiencia de usuario pensada para vender. WordPress, desarrollo a medida y tiendas online.</p>
 </a>
-<a href="{r('/servicios/agencia-google-ads/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/agencia-google-ads/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">ads_click</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Google Ads y SEM</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Campañas de publicidad en Google rentables que generan clientes reales desde el primer día. Google Partner con más de 5.8 millones de euros gestionados en campañas. Búsqueda, Shopping, Display y YouTube.</p>
 </a>
-<a href="{r('/servicios/community-manager/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/community-manager/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">share</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Redes Sociales</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Community manager profesional, estrategia de contenido y publicidad en redes sociales. Instagram, Facebook, LinkedIn y TikTok. Contenido que conecta con tu audiencia y convierte seguidores en clientes.</p>
 </a>
-<a href="{r('/servicios/tienda-online/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/tienda-online/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">shopping_cart</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Tiendas Online</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Shopify, WooCommerce y PrestaShop. Creamos tiendas online profesionales listas para vender desde el día uno. Diseño orientado a conversión, pasarela de pago integrada y SEO para ecommerce.</p>
 </a>
-<a href="{r('/servicios/email-marketing/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/email-marketing/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">mail</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Email Marketing</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Automatizaciones, newsletters y campañas de email que convierten. El canal digital con mayor retorno de inversión. Segmentación avanzada, flows automatizados y diseño profesional.</p>
@@ -1870,7 +1870,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-8 text-center">¿Qué es una Agencia de Marketing Digital y Qué Hace?</h2>
 <div class="prose prose-lg max-w-none text-on-surface-variant leading-relaxed [&_p]:mb-4 [&_strong]:text-on-surface">
 <p>Una <strong>agencia de marketing digital</strong> es una empresa especializada en ayudar a negocios a crecer a través de canales online. A diferencia de las agencias de publicidad tradicional, una agencia de marketing digital trabaja exclusivamente en el entorno digital: buscadores como Google, redes sociales, email, páginas web y plataformas de publicidad online.</p>
-<p>Los principales servicios que ofrece una <strong>agencia de marketing digital en Barcelona</strong> como Comunikoo incluyen el <a href="{r('/servicios/agencia-seo/')}">posicionamiento SEO</a> para aparecer en los primeros resultados de Google de forma orgánica, el <a href="{r('/servicios/diseno-web/')}">diseño web profesional</a> orientado a conversión, las <a href="{r('/servicios/agencia-google-ads/')}">campañas de Google Ads</a> para generar clientes de forma inmediata, la <a href="{r('/servicios/community-manager/')}">gestión de redes sociales</a> para construir comunidad y marca, y el <a href="{r('/servicios/email-marketing/')}">email marketing</a> para fidelizar y recuperar clientes.</p>
+<p>Los principales servicios que ofrece una <strong>agencia de marketing digital en Barcelona</strong> como Comunikoo incluyen el <a href="{r('/agencia-seo/')}">posicionamiento SEO</a> para aparecer en los primeros resultados de Google de forma orgánica, el <a href="{r('/diseno-web/')}">diseño web profesional</a> orientado a conversión, las <a href="{r('/agencia-google-ads/')}">campañas de Google Ads</a> para generar clientes de forma inmediata, la <a href="{r('/community-manager/')}">gestión de redes sociales</a> para construir comunidad y marca, y el <a href="{r('/email-marketing/')}">email marketing</a> para fidelizar y recuperar clientes.</p>
 <p>El valor de contratar una agencia de marketing digital frente a hacerlo internamente radica en la especialización, la experiencia acumulada en múltiples proyectos y sectores, y el acceso a herramientas profesionales que de otra forma tendrían un coste prohibitivo. Una buena agencia de marketing digital no solo ejecuta acciones, sino que diseña una <a href="{r('/servicios/estrategia-digital/')}">estrategia digital</a> integral que alinea todos los canales hacia los objetivos de negocio del cliente.</p>
 <p>En el contexto actual, donde más del 90 por ciento de los procesos de compra empiezan con una búsqueda en Google, contar con una agencia de marketing digital competente no es un lujo: es una necesidad para cualquier empresa que quiera competir. Desde pymes locales que necesitan <a href="{r('/servicios/agencia-seo-local/')}">SEO local</a> hasta <a href="{r('/marketing-para-ecommerce/')}">tiendas online</a> que buscan escalar sus ventas, el marketing digital es el motor de crecimiento más potente y medible que existe.</p>
 <p>Comunikoo es una agencia de marketing digital en Barcelona con más de 487 proyectos completados, un 98 por ciento de satisfacción y un enfoque radical en resultados medibles. Trabajamos sin permanencia, con dashboard en tiempo real y un equipo senior que conoce tu sector. Si buscas una <strong>agencia de marketing digital</strong> que hable el idioma de tu negocio y no solo de métricas, <a href="{r('/contacto/')}">contacta con nosotros</a>.</p>
@@ -1980,24 +1980,24 @@ def build_services_index():
     r = lambda target: rel(target, current_url)
 
     services_list = [
-        ("Agencia SEO", "Posicionamiento web orgánico", "/servicios/agencia-seo/"),
+        ("Agencia SEO", "Posicionamiento web orgánico", "/agencia-seo/"),
         ("SEO Local", "Google Maps y pack local", "/servicios/agencia-seo-local/"),
         ("Consultoría SEO", "Asesoramiento estratégico", "/servicios/consultoria-seo/"),
         ("Auditoría SEO", "Diagnóstico completo", "/servicios/auditoria-seo/"),
         ("Posicionamiento Web", "Primeras posiciones", "/servicios/posicionamiento-web/"),
         ("Linkbuilding", "Backlinks de calidad", "/servicios/linkbuilding/"),
-        ("Diseño Web", "Webs profesionales", "/servicios/diseno-web/"),
+        ("Diseño Web", "Webs profesionales", "/diseno-web/"),
         ("Diseño WordPress", "WordPress a medida", "/servicios/diseno-web-wordpress/"),
-        ("Tiendas Online", "Ecommerce que vende", "/servicios/tienda-online/"),
+        ("Tiendas Online", "Ecommerce que vende", "/tienda-online/"),
         ("Desarrollo Web", "Programación a medida", "/servicios/desarrollo-web/"),
         ("Landing Pages", "Páginas de conversión", "/servicios/landing-pages/"),
         ("Mantenimiento Web", "Soporte técnico", "/servicios/mantenimiento-web/"),
-        ("Google Ads", "Campañas rentables", "/servicios/agencia-google-ads/"),
+        ("Google Ads", "Campañas rentables", "/agencia-google-ads/"),
         ("Facebook Ads", "Publicidad en Facebook", "/servicios/agencia-facebook-ads/"),
         ("Meta Ads", "Ecosistema Meta completo", "/servicios/agencia-meta-ads/"),
         ("Instagram Ads", "Publicidad visual", "/servicios/instagram-ads/"),
-        ("Community Manager", "Gestión de redes", "/servicios/community-manager/"),
-        ("Email Marketing", "El canal con más ROI", "/servicios/email-marketing/"),
+        ("Community Manager", "Gestión de redes", "/community-manager/"),
+        ("Email Marketing", "El canal con más ROI", "/email-marketing/"),
         ("Branding", "Identidad de marca", "/servicios/branding/"),
         ("CRO", "Optimización conversión", "/servicios/optimizacion-cro/"),
     ]
@@ -2082,12 +2082,12 @@ def build_blog_index():
 <div class="max-w-5xl mx-auto text-center">
 <h2 class="font-headline font-bold text-xl text-primary mb-8">Nuestros servicios de marketing digital</h2>
 <div class="flex flex-wrap justify-center gap-3">
-<a href="{r('/servicios/agencia-seo/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">SEO</a>
-<a href="{r('/servicios/diseno-web/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Diseño Web</a>
-<a href="{r('/servicios/agencia-google-ads/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Google Ads</a>
-<a href="{r('/servicios/community-manager/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Redes Sociales</a>
-<a href="{r('/servicios/tienda-online/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Tiendas Online</a>
-<a href="{r('/servicios/email-marketing/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Email Marketing</a>
+<a href="{r('/agencia-seo/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">SEO</a>
+<a href="{r('/diseno-web/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Diseño Web</a>
+<a href="{r('/agencia-google-ads/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Google Ads</a>
+<a href="{r('/community-manager/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Redes Sociales</a>
+<a href="{r('/tienda-online/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Tiendas Online</a>
+<a href="{r('/email-marketing/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Email Marketing</a>
 </div>
 </div>
 </section>

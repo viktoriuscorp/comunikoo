@@ -87,7 +87,7 @@ def header_html():
 <div class="nav-dropdown">
 <div class="nav-dropdown-col">
 <h4>SEO</h4>
-<a href="/servicios/agencia-seo/">Agencia SEO</a>
+<a href="/agencia-seo/">Agencia SEO</a>
 <a href="/servicios/agencia-seo-local/">SEO Local</a>
 <a href="/servicios/consultoria-seo/">Consultoría SEO</a>
 <a href="/servicios/auditoria-seo/">Auditoría SEO</a>
@@ -96,9 +96,9 @@ def header_html():
 </div>
 <div class="nav-dropdown-col">
 <h4>Diseño Web</h4>
-<a href="/servicios/diseno-web/">Diseño Web</a>
+<a href="/diseno-web/">Diseño Web</a>
 <a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a>
-<a href="/servicios/tienda-online/">Tiendas Online</a>
+<a href="/tienda-online/">Tiendas Online</a>
 <a href="/servicios/desarrollo-web/">Desarrollo Web</a>
 <a href="/servicios/landing-pages/">Landing Pages</a>
 <a href="/servicios/mantenimiento-web/">Mantenimiento Web</a>
@@ -106,7 +106,7 @@ def header_html():
 </div>
 <div class="nav-dropdown-col">
 <h4>Publicidad</h4>
-<a href="/servicios/agencia-google-ads/">Google Ads</a>
+<a href="/agencia-google-ads/">Google Ads</a>
 <a href="/servicios/agencia-facebook-ads/">Facebook Ads</a>
 <a href="/servicios/instagram-ads/">Instagram Ads</a>
 <a href="/servicios/agencia-meta-ads/">Meta Ads</a>
@@ -116,10 +116,10 @@ def header_html():
 </div>
 <div class="nav-dropdown-col">
 <h4>Redes Sociales</h4>
-<a href="/servicios/community-manager/">Community Manager</a>
+<a href="/community-manager/">Community Manager</a>
 <a href="/servicios/gestion-redes-sociales/">Gestión Redes</a>
 <a href="/servicios/marketing-de-contenidos/">Marketing Contenidos</a>
-<a href="/servicios/email-marketing/">Email Marketing</a>
+<a href="/email-marketing/">Email Marketing</a>
 </div>
 </div>
 </li>
@@ -171,11 +171,11 @@ def mobile_nav_html():
 <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
 <ul>
 <li><a href="/servicios/">Servicios</a></li>
-<li><a href="/servicios/agencia-seo/">Agencia SEO</a></li>
-<li><a href="/servicios/diseno-web/">Diseño Web</a></li>
-<li><a href="/servicios/agencia-google-ads/">Google Ads</a></li>
-<li><a href="/servicios/community-manager/">Community Manager</a></li>
-<li><a href="/servicios/tienda-online/">Tiendas Online</a></li>
+<li><a href="/agencia-seo/">Agencia SEO</a></li>
+<li><a href="/diseno-web/">Diseño Web</a></li>
+<li><a href="/agencia-google-ads/">Google Ads</a></li>
+<li><a href="/community-manager/">Community Manager</a></li>
+<li><a href="/tienda-online/">Tiendas Online</a></li>
 <li><a href="#">Sectores</a></li>
 <li><a href="/blog/">Blog</a></li>
 <li><a href="/nosotros/">Nosotros</a></li>
@@ -199,15 +199,15 @@ def footer_html():
 <div>
 <h4>Servicios</h4>
 <ul>
-<li><a href="/servicios/agencia-seo/">Agencia SEO</a></li>
+<li><a href="/agencia-seo/">Agencia SEO</a></li>
 <li><a href="/servicios/agencia-seo-local/">SEO Local</a></li>
-<li><a href="/servicios/diseno-web/">Diseño Web</a></li>
+<li><a href="/diseno-web/">Diseño Web</a></li>
 <li><a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a></li>
-<li><a href="/servicios/tienda-online/">Tiendas Online</a></li>
-<li><a href="/servicios/agencia-google-ads/">Google Ads</a></li>
+<li><a href="/tienda-online/">Tiendas Online</a></li>
+<li><a href="/agencia-google-ads/">Google Ads</a></li>
 <li><a href="/servicios/agencia-facebook-ads/">Facebook Ads</a></li>
-<li><a href="/servicios/community-manager/">Community Manager</a></li>
-<li><a href="/servicios/email-marketing/">Email Marketing</a></li>
+<li><a href="/community-manager/">Community Manager</a></li>
+<li><a href="/email-marketing/">Email Marketing</a></li>
 <li><a href="/servicios/branding/">Branding</a></li>
 </ul>
 </div>
@@ -363,7 +363,7 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanen
 <h2 class="mt-0">Todo lo que tu negocio necesita para<br><span class="text-gradient">dominar el mundo digital</span></h2>
 </div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)" class="bento-services">
-<a href="/servicios/agencia-seo/" class="card" style="grid-row:span 2;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between">
+<a href="/agencia-seo/" class="card" style="grid-row:span 2;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between">
 <div>
 <div class="feature-icon">S</div>
 <h3>SEO y Posicionamiento Web</h3>
@@ -371,7 +371,7 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanen
 </div>
 <span class="link-arrow" style="margin-top:var(--s4)">Explorar servicio</span>
 </a>
-<a href="/servicios/diseno-web/" class="card" style="text-decoration:none">
+<a href="/diseno-web/" class="card" style="text-decoration:none">
 <div class="feature-icon">W</div>
 <h3>Diseño Web & WordPress</h3>
 <p>Webs rápidas y que venden. Sin plantillas genéricas.</p>
@@ -383,13 +383,13 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanen
 <p>Shopify, WooCommerce, PrestaShop. Ecommerce que vende.</p>
 <span class="link-arrow" style="margin-top:var(--s3)">Ver más</span>
 </a>
-<a href="/servicios/agencia-google-ads/" class="card" style="text-decoration:none">
+<a href="/agencia-google-ads/" class="card" style="text-decoration:none">
 <div class="feature-icon">A</div>
 <h3>Google Ads & SEM</h3>
 <p>Campañas rentables. Cada euro invertido, medido.</p>
 <span class="link-arrow" style="margin-top:var(--s3)">Ver más</span>
 </a>
-<a href="/servicios/community-manager/" class="card" style="text-decoration:none">
+<a href="/community-manager/" class="card" style="text-decoration:none">
 <div class="feature-icon">R</div>
 <h3>Redes Sociales</h3>
 <p>Community manager, social ads y contenido que convierte.</p>
@@ -842,7 +842,7 @@ ALL_PAGES = []
 
 # --- SILO 1: SEO ---
 ALL_PAGES.append(svc(
-    "/servicios/agencia-seo/",
+    "/agencia-seo/",
     "Agencia SEO | Expertos en Posicionamiento Web — Comunikoo",
     "Agencia SEO especializada en resultados. Aumentamos tu tráfico orgánico y ventas con estrategia SEO personalizada. Auditoría gratuita. Sin permanencia.",
     "Agencia SEO — Posicionamos Tu Negocio en el Top de Google",
@@ -877,7 +877,7 @@ ALL_PAGES.append(svc("/servicios/linkbuilding/", "Linkbuilding Profesional | Bac
 
 # --- SILO 2: DISEÑO WEB (shortened for brevity — all follow same pattern) ---
 for pg in [
-    ("/servicios/diseno-web/", "Diseño Web Profesional | Webs que Convierten — Comunikoo", "Diseño web profesional enfocado en ventas. Webs rápidas, responsive y optimizadas para SEO. Presupuesto sin compromiso.", "Diseño Web Profesional — Creamos Webs que Generan Negocio", "Diseño Web"),
+    ("/diseno-web/", "Diseño Web Profesional | Webs que Convierten — Comunikoo", "Diseño web profesional enfocado en ventas. Webs rápidas, responsive y optimizadas para SEO. Presupuesto sin compromiso.", "Diseño Web Profesional — Creamos Webs que Generan Negocio", "Diseño Web"),
     ("/servicios/diseno-web-wordpress/", "Diseño Web WordPress | Webs Profesionales — Comunikoo", "Diseño web en WordPress a medida. Webs rápidas, editables y optimizadas para SEO. Sin plantillas genéricas.", "Diseño Web WordPress — Webs Profesionales, Rápidas y Autogestionables", "Diseño WordPress"),
     ("/servicios/agencia-wordpress/", "Agencia WordPress | Desarrollo Especializado — Comunikoo", "Agencia WordPress con +200 proyectos. Diseño, desarrollo, plugins a medida y soporte.", "Agencia WordPress — Tu Partner Especializado en WordPress", "Agencia WordPress"),
     ("/servicios/programador-wordpress/", "Programador WordPress | Desarrollo a Medida — Comunikoo", "Programadores WordPress expertos. Desarrollo a medida, plugins custom e integraciones API.", "Programador WordPress — Desarrollo a Medida Sin Límites Técnicos", "Programador WordPress"),
@@ -894,7 +894,7 @@ for pg in [
 # --- SILO 2B: ECOMMERCE ---
 for pg in [
     ("/servicios/agencia-ecommerce/", "Agencia Ecommerce | Tiendas Online — Comunikoo", "Agencia ecommerce: diseño, SEO, campañas y CRO para tiendas online. Shopify, WooCommerce y PrestaShop.", "Agencia Ecommerce — Creamos, Optimizamos y Escalamos Tu Tienda Online", "Agencia Ecommerce"),
-    ("/servicios/tienda-online/", "Crear Tienda Online | Ecommerce Profesional — Comunikoo", "Creamos tu tienda online profesional lista para vender. Diseño, pasarela de pago y SEO incluidos.", "Tienda Online — Tu Ecommerce Listo para Vender desde el Día 1", "Tienda Online"),
+    ("/tienda-online/", "Crear Tienda Online | Ecommerce Profesional — Comunikoo", "Creamos tu tienda online profesional lista para vender. Diseño, pasarela de pago y SEO incluidos.", "Tienda Online — Tu Ecommerce Listo para Vender desde el Día 1", "Tienda Online"),
     ("/servicios/diseno-tienda-online/", "Diseño Tienda Online | Ecommerce que Vende — Comunikoo", "Diseño de tienda online orientado a conversión. UX/UI que enamora y convierte.", "Diseño de Tienda Online — Un Ecommerce que Enamora y Convierte", "Diseño Tienda Online"),
     ("/servicios/seo-para-ecommerce/", "SEO para Ecommerce | Posiciona Tu Tienda — Comunikoo", "SEO especializado para tiendas online. Posicionamos tus productos y categorías en Google.", "SEO para Ecommerce — Posiciona Tu Tienda y Multiplica Ventas", "SEO Ecommerce"),
     ("/servicios/agencia-shopify/", "Agencia Shopify | Partner Shopify España — Comunikoo", "Agencia Shopify Partner. Diseño, desarrollo, migración y optimización de tiendas Shopify.", "Agencia Shopify — Tu Partner para Crear y Escalar en Shopify", "Agencia Shopify"),
@@ -909,7 +909,7 @@ for pg in [
 
 # --- SILO 3: PUBLICIDAD DIGITAL ---
 for pg in [
-    ("/servicios/agencia-google-ads/", "Agencia Google Ads | Campañas Rentables — Comunikoo", "Agencia Google Ads certificada. Campañas rentables que generan clientes reales. Google Partner. Sin permanencia.", "Agencia Google Ads — Campañas Rentables que Generan Clientes Reales", "Agencia Google Ads"),
+    ("/agencia-google-ads/", "Agencia Google Ads | Campañas Rentables — Comunikoo", "Agencia Google Ads certificada. Campañas rentables que generan clientes reales. Google Partner. Sin permanencia.", "Agencia Google Ads — Campañas Rentables que Generan Clientes Reales", "Agencia Google Ads"),
     ("/servicios/experto-google-ads/", "Experto Google Ads | Especialista Certificado — Comunikoo", "Expertos Google Ads con certificaciones oficiales y +10 años de experiencia.", "Experto Google Ads — Especialistas que Hacen Rendir Tu Inversión", "Experto Google Ads"),
     ("/servicios/consultor-google-ads/", "Consultor Google Ads | Asesoría SEM — Comunikoo", "Consultoría Google Ads: auditoría, estrategia y formación para tu equipo.", "Consultor Google Ads — Asesoría Estratégica para Tus Campañas", "Consultor Google Ads"),
     ("/servicios/freelance-google-ads/", "Freelance Google Ads | Trato Directo — Comunikoo", "Freelance Google Ads: gestión con trato directo, sin intermediarios.", "Freelance Google Ads — Trato Directo, Flexibilidad y Resultados", "Freelance Google Ads"),
@@ -926,11 +926,11 @@ for pg in [
 
 # --- SILO 4: REDES SOCIALES ---
 for pg in [
-    ("/servicios/community-manager/", "Community Manager Profesional | Gestión Redes — Comunikoo", "Community Manager profesional para tu empresa. Contenido, gestión de comunidad y crecimiento. Desde 350€/mes.", "Community Manager — Gestión Profesional de Tus Redes Sociales", "Community Manager"),
+    ("/community-manager/", "Community Manager Profesional | Gestión Redes — Comunikoo", "Community Manager profesional para tu empresa. Contenido, gestión de comunidad y crecimiento. Desde 350€/mes.", "Community Manager — Gestión Profesional de Tus Redes Sociales", "Community Manager"),
     ("/servicios/gestion-redes-sociales/", "Gestión de Redes Sociales | Estrategia + Ejecución — Comunikoo", "Servicio integral de gestión de redes sociales: estrategia, contenido y análisis.", "Gestión de Redes Sociales — Estrategia y Resultados para Tu Marca", "Gestión Redes"),
     ("/servicios/social-media-marketing/", "Social Media Marketing | Redes con ROI — Comunikoo", "Social media marketing orientado a resultados. Convierte tus redes en canal de ventas.", "Social Media Marketing — Convierte Tus Redes en Canal de Ventas", "Social Media"),
     ("/servicios/marketing-de-contenidos/", "Marketing de Contenidos | Contenido que Posiciona — Comunikoo", "Marketing de contenidos: blog, vídeo, infografías y lead magnets que atraen y convierten.", "Marketing de Contenidos — Atrae, Posiciona y Convierte", "Marketing Contenidos"),
-    ("/servicios/email-marketing/", "Email Marketing | Campañas que Generan Ventas — Comunikoo", "Email marketing profesional: newsletter, automatizaciones y campañas. El canal con mayor ROI.", "Email Marketing — El Canal con Mayor ROI del Marketing Digital", "Email Marketing"),
+    ("/email-marketing/", "Email Marketing | Campañas que Generan Ventas — Comunikoo", "Email marketing profesional: newsletter, automatizaciones y campañas. El canal con mayor ROI.", "Email Marketing — El Canal con Mayor ROI del Marketing Digital", "Email Marketing"),
     ("/servicios/inbound-marketing/", "Inbound Marketing | Atrae Clientes con Valor — Comunikoo", "Inbound marketing: atraemos clientes con contenido, SEO, email y automatización.", "Inbound Marketing — Atrae Clientes con Valor", "Inbound Marketing"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio profesional con resultados medibles y reporting mensual.", sections=[sec("que-es", "Qué es", f"¿Qué es {pg[4].lower()} y por qué lo necesitas?"), sec("servicios", "Servicios", f"Nuestros servicios de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito")], faqs=[("¿Cuánto cuesta este servicio?", "Solicita presupuesto personalizado sin compromiso."), ("¿En cuánto tiempo veo resultados?", "Depende del servicio y tu punto de partida. Te informamos con plazos realistas."), ("¿Puedo cancelar cuando quiera?", "Sí, sin permanencia.")]))
@@ -1069,7 +1069,7 @@ STATIC_PAGES = [
 # ============================================================
 
 def url_to_path(url):
-    """Convert URL to file path: /servicios/agencia-seo/ -> servicios/agencia-seo/index.html"""
+    """Convert URL to file path: /agencia-seo/ -> servicios/agencia-seo/index.html"""
     if url == '/':
         return 'index.html'
     clean = url.strip('/')

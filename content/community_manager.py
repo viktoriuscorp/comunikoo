@@ -1,4 +1,4 @@
-# Content for /servicios/community-manager/
+# Content for /community-manager/
 # Full SEO content targeting "community manager" (9,900 searches/month Spain)
 
 SECTIONS = [
@@ -188,7 +188,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/community-manager/",
+    "url": "/community-manager/",
     "title": "Community Manager Profesional | Gestión de Redes para Empresas — Comunikoo",
     "meta_desc": "Community Manager profesional para tu empresa. Creamos contenido, gestionamos tu comunidad y hacemos crecer tus redes. Planes desde 350€/mes.",
     "h1": "Community Manager — Gestión Profesional de Tus Redes Sociales",

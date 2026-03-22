@@ -35,7 +35,7 @@ SECTIONS = [
 <p>Ofrecemos un servicio 360 para tiendas online: desde la creación hasta el crecimiento. No somos una agencia que solo diseña tu tienda y desaparece — te acompañamos en cada fase del negocio.</p>
 
 <h3>Diseño y desarrollo de tienda online</h3>
-<p>Creamos <strong>tiendas online profesionales en Shopify, WooCommerce y PrestaShop</strong> con diseño UX/UI orientado a conversión. Fichas de producto persuasivas, checkout optimizado, catálogo con filtros avanzados, pasarelas de pago integradas y experiencia mobile-first. <a href="/servicios/tienda-online/">Ver nuestro servicio de tienda online</a>.</p>
+<p>Creamos <strong>tiendas online profesionales en Shopify, WooCommerce y PrestaShop</strong> con diseño UX/UI orientado a conversión. Fichas de producto persuasivas, checkout optimizado, catálogo con filtros avanzados, pasarelas de pago integradas y experiencia mobile-first. <a href="/tienda-online/">Ver nuestro servicio de tienda online</a>.</p>
 
 <h3>SEO para ecommerce</h3>
 <p>Posicionamos tus productos y categorías en Google para que <strong>recibas tráfico orgánico cualificado sin pagar por clic</strong>. Keyword research para ecommerce, optimización de fichas de producto, arquitectura de categorías, contenido SEO, link building y SEO técnico especializado en tiendas online. <a href="/servicios/seo-para-ecommerce/">Ver nuestro servicio de SEO para ecommerce</a>.</p>

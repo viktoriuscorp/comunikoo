@@ -87,7 +87,7 @@ SECTIONS = [
 
 <p><strong>Facebook Ads</strong> es mejor cuando necesitas generar demanda, dar a conocer un producto nuevo o llegar a audiencias que no te están buscando activamente pero encajan con tu perfil de cliente. Es demanda generada: tú impactas al usuario con tu propuesta. Ideal para ecommerce, lanzamientos, marcas de consumo y captación de leads.</p>
 
-<p>La <strong>estrategia óptima para la mayoría de negocios combina ambos canales</strong>: Google Ads para captar demanda existente y Facebook Ads para generar nueva demanda y remarketing. En Comunikoo gestionamos ambos canales y distribuimos el presupuesto según dónde genera mayor retorno para tu negocio. <a href="/servicios/agencia-google-ads/">Ver nuestro servicio de Google Ads</a>.</p>
+<p>La <strong>estrategia óptima para la mayoría de negocios combina ambos canales</strong>: Google Ads para captar demanda existente y Facebook Ads para generar nueva demanda y remarketing. En Comunikoo gestionamos ambos canales y distribuimos el presupuesto según dónde genera mayor retorno para tu negocio. <a href="/agencia-google-ads/">Ver nuestro servicio de Google Ads</a>.</p>
 """
     },
 ]

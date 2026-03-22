@@ -2,14 +2,14 @@ SUBPAGES = {
     # ========================================================================
     # 1. CAMPANAS SEARCH
     # ========================================================================
-    "/servicios/agencia-google-ads/campanas-search/": {
+    "/agencia-google-ads/campanas-search/": {
         "type": "service",
         "title": "Campanas Search Google Ads | Agencia Certificada SEM",
         "meta_desc": "Expertos en campanas search Google Ads. Gestionamos tus anuncios de busqueda con estrategias de pujas, palabras clave negativas y extensiones para maximizar tu ROI.",
         "h1": "Campanas Search en Google Ads: Llega a Clientes que Buscan tus Productos",
         "h1_short": "Campanas Search Google Ads",
         "intro": "Las campanas de search en Google Ads son la forma mas directa de conectar con usuarios que buscan activamente tus productos o servicios. Con una estrategia de palabras clave bien definida, pujas optimizadas y anuncios relevantes, convertimos cada clic en una oportunidad de negocio real. Nuestro equipo certificado por Google gestiona cada detalle para que obtengas el maximo rendimiento de tu inversion publicitaria.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {
@@ -142,14 +142,14 @@ SUBPAGES = {
     # ========================================================================
     # 2. CAMPANAS DISPLAY
     # ========================================================================
-    "/servicios/agencia-google-ads/campanas-display/": {
+    "/agencia-google-ads/campanas-display/": {
         "type": "service",
         "title": "Campanas Display Google Ads | Publicidad en Red de Display",
         "meta_desc": "Creamos campanas display en Google Ads con banners y anuncios responsive. Segmentacion por audiencias, remarketing y ubicaciones para maximizar tu visibilidad.",
         "h1": "Campanas Display en Google Ads: Visibilidad Masiva con Segmentacion Precisa",
         "h1_short": "Campanas Display Google Ads",
         "intro": "La Red de Display de Google alcanza al 90% de los usuarios de internet a traves de millones de sitios web, aplicaciones y videos. Nuestras campanas display combinan creatividades visuales impactantes con una segmentacion avanzada por audiencias para que tu marca llegue al publico adecuado en el momento oportuno. Generamos notoriedad de marca, captamos nuevos clientes potenciales y reforzamos tu presencia digital con resultados medibles.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {
@@ -263,14 +263,14 @@ SUBPAGES = {
     # ========================================================================
     # 3. CAMPANAS SHOPPING
     # ========================================================================
-    "/servicios/agencia-google-ads/campanas-shopping/": {
+    "/agencia-google-ads/campanas-shopping/": {
         "type": "service",
         "title": "Google Shopping | Campanas de Shopping en Google Ads",
         "meta_desc": "Gestionamos tus campanas de Google Shopping: optimizacion de feed de productos, Merchant Center y estrategias de puja para maximizar ventas de tu ecommerce.",
         "h1": "Campanas de Google Shopping: Vende Mas con Anuncios de Producto",
         "h1_short": "Google Shopping",
         "intro": "Las campanas de Google Shopping muestran tus productos con imagen, precio y nombre directamente en los resultados de busqueda, generando clics altamente cualificados de usuarios listos para comprar. Como agencia especializada, gestionamos todo el proceso: desde la configuracion de Google Merchant Center hasta la optimizacion continua de tu feed de productos y tus estrategias de puja para maximizar el ROAS de tu ecommerce.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {
@@ -384,14 +384,14 @@ SUBPAGES = {
     # ========================================================================
     # 4. CAMPANAS PERFORMANCE MAX
     # ========================================================================
-    "/servicios/agencia-google-ads/campanas-performance-max/": {
+    "/agencia-google-ads/campanas-performance-max/": {
         "type": "service",
         "title": "Performance Max Google Ads | Campanas PMax Optimizadas",
         "meta_desc": "Expertos en campanas Performance Max de Google Ads. Configuramos asset groups, audience signals y objetivos de conversion para maximizar resultados con IA.",
         "h1": "Campanas Performance Max: La Potencia de la IA de Google al Servicio de tu Negocio",
         "h1_short": "Performance Max",
         "intro": "Performance Max es el tipo de campana mas avanzado de Google Ads, impulsado por inteligencia artificial para mostrar tus anuncios en todos los canales de Google: Search, Display, YouTube, Gmail, Discover y Maps. Como agencia especializada, configuramos y optimizamos tus campanas PMax con estrategia, datos y creatividad para que la automatizacion de Google trabaje a favor de tus objetivos de negocio.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {
@@ -512,14 +512,14 @@ SUBPAGES = {
     # ========================================================================
     # 5. REMARKETING
     # ========================================================================
-    "/servicios/agencia-google-ads/remarketing/": {
+    "/agencia-google-ads/remarketing/": {
         "type": "service",
         "title": "Remarketing Google Ads | Agencia de Retargeting Certificada",
         "meta_desc": "Especialistas en remarketing Google Ads: listas de remarketing, remarketing dinamico, RLSA y segmentacion avanzada. Recupera visitantes y multiplica conversiones.",
         "h1": "Remarketing en Google Ads: Recupera Visitantes y Multiplica tus Conversiones",
         "h1_short": "Remarketing Google Ads",
         "intro": "El remarketing en Google Ads es la estrategia que te permite volver a impactar a usuarios que ya han visitado tu sitio web o interactuado con tu marca, mostrandoles anuncios personalizados mientras navegan por otros sitios, ven videos en YouTube o buscan en Google. Es una de las tacticas con mayor retorno de inversion porque te diriges a personas que ya conocen tu marca y han mostrado interes previo.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {
@@ -636,14 +636,14 @@ SUBPAGES = {
     # ========================================================================
     # 6. CAMPANAS YOUTUBE
     # ========================================================================
-    "/servicios/agencia-google-ads/campanas-youtube/": {
+    "/agencia-google-ads/campanas-youtube/": {
         "type": "service",
         "title": "Publicidad en YouTube | Campanas de Video Google Ads",
         "meta_desc": "Agencia de publicidad en YouTube: anuncios TrueView, bumper ads, YouTube Shorts. Segmentacion avanzada y CPV optimizado para maximizar el impacto de tus videos.",
         "h1": "Publicidad en YouTube: Conecta con tu Audiencia a traves del Video",
         "h1_short": "Publicidad YouTube",
         "intro": "YouTube es la segunda plataforma de busqueda mas grande del mundo y el principal destino de consumo de video online en Espana, con mas de 37 millones de usuarios mensuales. Nuestras campanas de publicidad en YouTube combinan formatos de video de alto impacto con segmentacion precisa para generar notoriedad de marca, consideracion y conversiones directas a un coste altamente competitivo.",
-        "parent": "/servicios/agencia-google-ads/",
+        "parent": "/agencia-google-ads/",
         "parent_name": "Agencia Google Ads",
         "sections": [
             {

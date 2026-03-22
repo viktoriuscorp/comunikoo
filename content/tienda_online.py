@@ -1,4 +1,4 @@
-# Content for /servicios/tienda-online/
+# Content for /tienda-online/
 # Full SEO content targeting "tienda online" (8,100 searches/month Spain)
 
 SECTIONS = [
@@ -160,7 +160,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/tienda-online/",
+    "url": "/tienda-online/",
     "title": "Crear Tienda Online | Diseño de Tiendas Online Profesionales — Comunikoo",
     "meta_desc": "Creamos tu tienda online profesional lista para vender. Diseño, pasarela de pago, catálogo y SEO incluidos. Tu ecommerce en 4-6 semanas.",
     "h1": "Tienda Online — Creamos Tu Ecommerce Listo para Vender desde el Día 1",

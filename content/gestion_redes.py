@@ -62,7 +62,7 @@ SECTIONS = [
 <p>Es una pregunta frecuente y la respuesta depende de lo que busques:</p>
 
 <h3>CM: ejecución táctica del día a día</h3>
-<p>Un <strong>community manager</strong> se enfoca en la ejecución diaria: crear contenido, publicar, responder comentarios y mensajes, y mantener activa tu presencia en redes. Es un rol táctico, ideal si ya tienes una estrategia definida y necesitas a alguien que la ejecute de forma constante. <a href="/servicios/community-manager/">Ver nuestro servicio de community manager</a>.</p>
+<p>Un <strong>community manager</strong> se enfoca en la ejecución diaria: crear contenido, publicar, responder comentarios y mensajes, y mantener activa tu presencia en redes. Es un rol táctico, ideal si ya tienes una estrategia definida y necesitas a alguien que la ejecute de forma constante. <a href="/community-manager/">Ver nuestro servicio de community manager</a>.</p>
 
 <h3>Gestión de redes: servicio estratégico integral</h3>
 <p>La <strong>gestión de redes sociales</strong> incluye la parte estratégica que va más allá del día a día: definición de estrategia, análisis de mercado y competencia, planificación a largo plazo, campañas especiales, análisis de resultados con insights accionables y optimización continua. Es un servicio más completo que incluye el rol del community manager pero lo enmarca dentro de una estrategia de negocio.</p>

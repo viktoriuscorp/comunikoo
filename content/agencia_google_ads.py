@@ -1,4 +1,4 @@
-# Content for /servicios/agencia-google-ads/
+# Content for /agencia-google-ads/
 # Full SEO content targeting "agencia google ads" (2,400 searches/month Spain)
 
 SECTIONS = [
@@ -151,7 +151,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/agencia-google-ads/",
+    "url": "/agencia-google-ads/",
     "title": "Agencia Google Ads | Expertos en SEM y Campañas Rentables — Comunikoo",
     "meta_desc": "Agencia Google Ads certificada. Creamos campañas rentables que generan clientes reales. Google Partner. Sin permanencia. Auditoría de cuenta gratuita.",
     "h1": "Agencia Google Ads — Campañas Rentables que Generan Clientes Reales",

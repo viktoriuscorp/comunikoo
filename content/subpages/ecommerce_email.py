@@ -481,13 +481,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 5. Automatización de Email Marketing
     # ─────────────────────────────────────────────
-    "/servicios/email-marketing/automatizacion-email/": {
+    "/email-marketing/automatizacion-email/": {
         "title": "Automatización de Email Marketing | Flows, Triggers y Nurturing",
         "meta_desc": "Servicio de automatización de email marketing. Diseñamos flows automáticos, secuencias de nurturing y triggers que venden mientras tú duermes.",
         "h1": "Automatización de Email Marketing: Emails que Venden Mientras Tú Duermes",
         "h1_short": "Automatización Email",
         "intro": "La automatización de email marketing te permite enviar el mensaje correcto, a la persona correcta, en el momento correcto, de forma completamente automática. Es el canal con mayor ROI del marketing digital y la herramienta más potente para convertir leads en clientes y clientes en compradores recurrentes.",
-        "parent": "/servicios/email-marketing/",
+        "parent": "/email-marketing/",
         "parent_name": "Email Marketing",
         "type": "service",
         "sections": [
@@ -595,13 +595,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 6. Newsletter para Empresas
     # ─────────────────────────────────────────────
-    "/servicios/email-marketing/newsletter-empresas/": {
+    "/email-marketing/newsletter-empresas/": {
         "title": "Newsletter para Empresas | Diseño, Contenido y Estrategia",
         "meta_desc": "Servicio de newsletter para empresas. Creamos newsletters profesionales con contenido de valor, diseño atractivo y estrategia de fidelización que genera resultados.",
         "h1": "Newsletter para Empresas: El Canal Directo que Fideliza y Vende",
         "h1_short": "Newsletter Empresas",
         "intro": "La newsletter sigue siendo uno de los canales más efectivos para mantener una relación directa con tu audiencia. A diferencia de las redes sociales, tu lista de suscriptores es tuya y no depende de ningún algoritmo. En Comunikoo diseñamos, redactamos y enviamos newsletters que tu audiencia espera con ganas de abrir.",
-        "parent": "/servicios/email-marketing/",
+        "parent": "/email-marketing/",
         "parent_name": "Email Marketing",
         "type": "service",
         "sections": [
@@ -717,13 +717,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 7. Email Marketing con Mailchimp
     # ─────────────────────────────────────────────
-    "/servicios/email-marketing/email-marketing-mailchimp/": {
+    "/email-marketing/email-marketing-mailchimp/": {
         "title": "Email Marketing con Mailchimp | Setup, Plantillas y Automatización",
         "meta_desc": "Servicio de email marketing con Mailchimp. Configuración profesional, plantillas personalizadas, segmentación avanzada e integraciones para maximizar resultados.",
         "h1": "Email Marketing con Mailchimp: Configuración Profesional para Resultados Reales",
         "h1_short": "Mailchimp",
         "intro": "Mailchimp es la plataforma de email marketing más utilizada del mundo, con más de 12 millones de usuarios. Pero tener una cuenta de Mailchimp no es lo mismo que sacarle el máximo partido. En Comunikoo configuramos, personalizamos y optimizamos tu Mailchimp para que cada email genere resultados medibles para tu negocio.",
-        "parent": "/servicios/email-marketing/",
+        "parent": "/email-marketing/",
         "parent_name": "Email Marketing",
         "type": "service",
         "sections": [

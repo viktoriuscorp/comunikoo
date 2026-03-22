@@ -42,7 +42,7 @@ SECTIONS = [
 <p>Una estrategia digital completa integra múltiples canales y disciplinas bajo un mismo plan. Estos son los pilares que trabajamos:</p>
 
 <h3>Posicionamiento SEO</h3>
-<p>El <strong>53% del tráfico web proviene de búsquedas orgánicas</strong>. El SEO es la base de cualquier estrategia digital porque genera tráfico constante, cualificado y sin coste por clic. Definimos la estrategia de keywords, la arquitectura de contenidos y el plan de link building alineados con tus objetivos de negocio. <a href="/servicios/agencia-seo/">Ver nuestro servicio de SEO</a>.</p>
+<p>El <strong>53% del tráfico web proviene de búsquedas orgánicas</strong>. El SEO es la base de cualquier estrategia digital porque genera tráfico constante, cualificado y sin coste por clic. Definimos la estrategia de keywords, la arquitectura de contenidos y el plan de link building alineados con tus objetivos de negocio. <a href="/agencia-seo/">Ver nuestro servicio de SEO</a>.</p>
 
 <h3>Publicidad digital (SEM + Social Ads)</h3>
 <p>Mientras el SEO construye resultados a medio plazo, la publicidad digital genera <strong>resultados inmediatos</strong>. Diseñamos la combinación óptima de Google Ads, Meta Ads, LinkedIn Ads y otras plataformas según tu mercado y tu audiencia. <a href="/servicios/publicidad-en-google/">Ver publicidad en Google</a>.</p>

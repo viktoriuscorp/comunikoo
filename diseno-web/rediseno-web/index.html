@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-WCHWH6J2KC';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WCHWH6J2KC')},3000);</script>
+<title>Rediseño Web Profesional | Moderniza Tu Web Sin Perder SEO</title>
+<meta name="description" content="Servicio de rediseño web profesional. Modernizamos tu página web manteniendo el posicionamiento SEO, mejorando la experiencia de usuario y aumentando conversiones.">
+<link rel="canonical" href="https://comunikoo.es/diseno-web/rediseno-web/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+
+<style>
+.icon-inline { display: inline-flex; align-items: center; vertical-align: middle; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ── Container (PeterLead style: 1100px max, always centered) ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* ── Section blocks with clear separation ── */
+.sec-block { padding: 4.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 5.5rem 0; } }
+
+/* ── Cards: white, shadow, uniform, centered content ── */
+.svc-card { background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); border: 1px solid rgba(0,0,0,.06); text-align: center; transition: all .25s ease; }
+.svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.12); border-color: rgba(0,0,0,.1); transform: translateY(-2px); }
+.svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
+.svc-card p { font-size: .78rem; line-height: 1.7; color: #43474f; margin: 0; }
+
+/* ── Card grid: always symmetric ── */
+.card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 580px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; max-width: 860px; }
+.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 860px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1rem !important; }
+  .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
+  .svc-card { padding: 1.5rem 1.25rem !important; }
+  .svc-card h3 { font-size: .95rem !important; }
+  .svc-card p { font-size: .85rem !important; line-height: 1.6 !important; }
+  .svc-card .svc-icon { width: 48px !important; height: 48px !important; }
+  .sec-block { padding: 2.5rem 0 !important; }
+  .sec-heading h2 { font-size: 1.4rem !important; }
+  .sec-intro { font-size: .9rem !important; }
+  .prose-block { font-size: .9rem !important; }
+  .prose-block h3 { font-size: 1rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:repeat"] { grid-template-columns: 1fr !important; }
+  [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+}
+
+/* Nav pills scrollable on mobile */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Hero & body text responsive */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.5rem !important; }
+  .font-headline.text-4xl { font-size: 1.75rem !important; }
+  p.text-base { font-size: .95rem !important; }
+  p.text-lg { font-size: 1rem !important; }
+}
+
+/* ── Prose: text always inside container, left-aligned, readable ── */
+.prose-block { max-width: 720px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
+.prose-block p { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: 1rem; }
+.prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .5rem; }
+.prose-block strong { color: #001e40; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading ── */
+.sec-heading { text-align: center; margin-bottom: 2.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.65rem; font-weight: 800; color: #001e40; margin: 0; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2rem; } }
+.sec-heading .bar { width: 50px; height: 3px; background: #fd8b00; margin: .75rem auto 0; border-radius: 2px; }
+
+/* ── Intro paragraph (always centered, narrower) ── */
+.sec-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; font-size: .95rem; line-height: 1.7; color: #43474f; }
+</style>
+<meta property="og:title" content="Rediseño Web Profesional | Moderniza Tu Web Sin Perder SEO">
+<meta property="og:description" content="Servicio de rediseño web profesional. Modernizamos tu página web manteniendo el posicionamiento SEO, mejorando la experiencia de usuario y aumentando conversiones.">
+<meta property="og:url" content="https://comunikoo.es/diseno-web/rediseno-web/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Rediseño Web","description":"Servicio de rediseño web profesional. Modernizamos tu página web manteniendo el posicionamiento SEO, mejorando la experiencia de usuario y aumentando conversiones.","provider":{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015"},"areaServed":{"@type":"Country","name":"España"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Perderé posicionamiento SEO con un rediseño web?","acceptedAnswer":{"@type":"Answer","text":"No, si el rediseño se ejecuta correctamente. En Comunikoo implementamos un protocolo de migración SEO exhaustivo que incluye mapeo de redirecciones, conservación de contenido posicionado y monitorización post-lanzamiento. Nuestros clientes mantienen o mejoran sus posiciones."}},{"@type":"Question","name":"¿Cuánto tiempo tarda un rediseño web?","acceptedAnswer":{"@type":"Answer","text":"Un rediseño web completo suele tardar entre 6 y 12 semanas, dependiendo del tamaño del sitio, la complejidad técnica y el volumen de contenidos a migrar."}},{"@type":"Question","name":"¿Puedo cambiar de CMS durante el rediseño?","acceptedAnswer":{"@type":"Answer","text":"Sí. Realizamos migraciones entre plataformas (por ejemplo, de Joomla a WordPress, o de WordPress a una solución headless) como parte del rediseño, siempre con un plan de migración SEO detallado."}},{"@type":"Question","name":"¿Qué pasa con el contenido de mi web actual?","acceptedAnswer":{"@type":"Answer","text":"Todo el contenido valioso se migra a la nueva web. Además, lo revisamos y optimizamos para mejorar el SEO y la experiencia de usuario. El contenido obsoleto o irrelevante se archiva o se elimina de forma controlada."}},{"@type":"Question","name":"¿Cuánto cuesta rediseñar una web?","acceptedAnswer":{"@type":"Answer","text":"El precio depende del tamaño del sitio, las funcionalidades requeridas y la complejidad de la migración. Ofrecemos presupuestos cerrados y transparentes. Solicita una consulta gratuita para obtener una propuesta adaptada a tu caso."}}]}
+</script>
+</head>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../blog/index.html">Blog</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
+</button>
+</div>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../blog/index.html">Blog</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><a href="../../diseno-web/index.html" class="hover:text-secondary-container">Diseño Web</a><span class="mx-2">›</span><span class="text-primary font-semibold">Rediseño Web</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">Rediseño Web</span>
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">Rediseño Web: Moderniza Tu Web Sin Perder Ni Una Posición en Google</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">¿Tu web tiene más de 3 años, se ve anticuada o no genera los resultados que esperas? Un rediseño web profesional puede transformar tu presencia digital. Pero cuidado: un rediseño mal ejecutado puede destruir tu posicionamiento SEO. En Comunikoo modernizamos tu web protegiendo cada posición que has ganado en Google.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
+</div>
+</div>
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- PAIN POINTS — Conexión emocional -->
+<section id="problema" class="bg-[#fdf6f3] py-16 px-6 lg:px-8 scroll-mt-20">
+<div style="max-width:700px;margin:0 auto">
+<p style="text-align:center;font-family:Manrope,sans-serif;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#c0392b;margin-bottom:1rem">¿Te identificas con alguno de estos problemas?</p>
+<div style="display:flex;flex-direction:column;gap:1.5rem">
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web no transmite la profesionalidad de tu negocio</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Los visitantes juzgan tu empresa en 3 segundos. Una web anticuada genera desconfianza y pierdes clientes antes de que lean una sola línea.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web es lenta y los usuarios se van</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">El 53% de los usuarios abandona si la web tarda más de 3 segundos en cargar. Google también te penaliza por ello.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web no genera contactos ni ventas</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Tener visitas sin conversiones es quemar dinero. Tu web debe estar diseñada para vender, no solo para informar.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Dependes de un técnico para cada pequeño cambio</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Cada vez que quieres cambiar un texto o subir una imagen, tienes que esperar días y pagar. Eso se acabó.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">No sabes por dónde empezar con tu web</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Briefing, diseño, desarrollo, textos, SEO, hosting... Te acompañamos en todo el proceso sin que tengas que preocuparte de nada.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SOLUTION BRIDGE — De problema a solución -->
+<section class="bg-primary py-14 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Una web profesional no es un gasto, es tu mejor comercial — trabaja para ti 24/7, 365 días al año. Diseñamos webs que transmiten confianza en 3 segundos, cargan en menos de 2 y convierten visitantes en clientes reales.</h2>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="../../contacto/index.html">Cuéntanos tu caso →</a>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">45%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">Más conversiones tras rediseño</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">0%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">Pérdida de SEO con nuestro método</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">60%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">Mejora en velocidad de carga</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NAV PILLS -->
+<section class="py-5 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[64px] bg-surface/95 backdrop-blur-md z-30">
+<div class="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center">
+<a href="#cuando-redisenar" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Cuándo rediseñar</a>
+<a href="#migracion-seo" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Migración SEO</a>
+<a href="#que-incluye" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Qué incluye</a>
+<a href="#resultados-rediseno" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
+<a href="#faq" class="px-4 py-2 rounded-full bg-surface-container-lowest border border-outline-variant/10 text-xs font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+
+</div>
+</section>
+
+<!-- CONTENT BLOCKS -->
+
+<section id="cuando-redisenar" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Cuándo es el momento de rediseñar tu web?</h2><div class="bar"></div></div>
+
+<div class="card-grid g1"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>Señales de que necesitas un rediseño web</h3><p>Si te identificas con 2 o más de estos puntos, tu web está frenando el crecimiento de tu negocio.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="migracion-seo" class="bg-[#f4f6fa] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Migración SEO: el paso crítico que muchos ignoran</h2><div class="bar"></div></div>
+
+<div class="prose-block">
+                <p>El mayor riesgo de un rediseño web es perder el <strong>posicionamiento SEO</strong> que has construido durante años. En Comunikoo tratamos la migración SEO como la prioridad número uno del proyecto:</p>
+                <h3>Nuestro protocolo de migración SEO</h3>
+                <ul>
+                    <li><strong>Auditoría SEO previa:</strong> rastreamos todas las URLs indexadas, analizamos backlinks, identificamos las páginas con más tráfico y documentamos el estado actual.</li>
+                    <li><strong>Mapa de redirecciones 301:</strong> creamos un mapa exhaustivo de redirecciones para que ninguna URL antigua devuelva un error 404.</li>
+                    <li><strong>Conservación de contenido posicionado:</strong> los textos que ya posicionan se mantienen o se mejoran, nunca se eliminan.</li>
+                    <li><strong>Estructura de URLs optimizada:</strong> si cambiamos URLs, seguimos las mejores prácticas SEO y configuramos las redirecciones correspondientes.</li>
+                    <li><strong>Monitorización post-lanzamiento:</strong> vigilamos Search Console, posiciones y tráfico orgánico durante las semanas posteriores al lanzamiento.</li>
+                </ul>
+                <p>Un rediseño web sin plan de migración SEO puede provocar una caída del <strong>30-70 % del tráfico orgánico</strong>. Con nuestro protocolo, nuestros clientes mantienen o mejoran sus posiciones tras el rediseño.</p>
+                </div>
+<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
+<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Solicita tu auditoría gratuita — sin compromiso</p>
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría gratis →</a>
+</div>
+</div>
+</section>
+
+<section id="que-incluye" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Qué incluye nuestro servicio de rediseño web?</h2><div class="bar"></div></div>
+
+<div class="card-grid g4"><div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">1</div><h3>Análisis y estrategia</h3><p>Auditamos tu web actual (rendimiento, UX.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">2</div><h3>Nuevo diseño UX/UI</h3><p>Rediseñamos la experiencia completa.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">3</div><h3>Desarrollo técnico</h3><p>Maquetamos con código moderno, optimizado para velocidad, SEO y accesibilidad.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#001e40;color:#fff">4</div><h3>Migración de contenidos</h3><p>Trasladamos todos los contenidos existentes, optimizamos los textos y las imágenes.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span> Análisis y estrategia — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Auditamos tu web actual (rendimiento, UX, SEO, contenido), analizamos tu competencia y definimos los objetivos del rediseño con métricas concretas.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5Z"/></svg></span> Nuevo diseño UX/UI — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Rediseñamos la experiencia completa: nueva arquitectura de información, wireframes, diseño visual actualizado y prototipos interactivos en Figma.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.7 1-1.8.5-2.5-.5-.7-1.6-.8-2.4-.5z"/><path d="M12 13l-1-1"/><path d="M15 10l-1-1"/><path d="M6 22c0-4 4-8 12-12C22 6 22 2 22 2S18 2 14 6c-4 8-8 12-12 12z"/></svg></span> Desarrollo técnico — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Maquetamos con código moderno, optimizado para velocidad, SEO y accesibilidad. Actualizamos el CMS a la última versión estable si es necesario.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V22h6v-4.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8z"/><path d="M10 17h4"/></svg></span> Migración de contenidos — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Trasladamos todos los contenidos existentes, optimizamos los textos y las imágenes, y nos aseguramos de que nada se pierda en el proceso.</p>
+                <ul>
+                    <li><strong>Redirecciones 301</strong> de todas las URLs que cambien.</li>
+                    <li><strong>Testing exhaustivo</strong> en todos los navegadores y dispositivos.</li>
+                    <li><strong>Formación</strong> para que gestiones la nueva web con autonomía.</li>
+                    <li><strong>Soporte post-lanzamiento</strong> durante 3 meses incluido.</li>
+                </ul></div>
+</details>
+</div>
+
+</div>
+</section>
+
+<section id="resultados-rediseno" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Resultados reales de nuestros proyectos de rediseño</h2><div class="bar"></div></div>
+
+<div class="prose-block">
+                <p>El rediseño web es una de las inversiones con mayor impacto en los resultados de un negocio digital:</p>
+                <ul>
+                    <li><strong>Incremento medio del 45 % en tasa de conversión</strong> tras el rediseño gracias a una mejor experiencia de usuario y CTAs más eficaces.</li>
+                    <li><strong>Mejora del 60 % en velocidad de carga,</strong> con impacto directo en el posicionamiento y la satisfacción del usuario.</li>
+                    <li><strong>Reducción del 35 % en tasa de rebote</strong> gracias a un diseño moderno y navegación intuitiva.</li>
+                    <li><strong>Mantenimiento o mejora del tráfico orgánico</strong> gracias a nuestro protocolo de migración SEO.</li>
+                </ul>
+                <p>Un ejemplo reciente: rediseñamos la web de una empresa de servicios B2B que llevaba 5 años sin actualizar. En los 3 meses posteriores al lanzamiento, las solicitudes de presupuesto aumentaron un <strong>120 %</strong> y el tiempo medio de permanencia se duplicó.</p>
+                </div>
+<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
+<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Habla con un experto sobre tu proyecto</p>
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
+Auditoría gratis →</a>
+</div>
+</div>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Perderé posicionamiento SEO con un rediseño web?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">No, si el rediseño se ejecuta correctamente. En Comunikoo implementamos un protocolo de migración SEO exhaustivo que incluye mapeo de redirecciones, conservación de contenido posicionado y monitorización post-lanzamiento. Nuestros clientes mantienen o mejoran sus posiciones.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto tiempo tarda un rediseño web?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Un rediseño web completo suele tardar entre 6 y 12 semanas, dependiendo del tamaño del sitio, la complejidad técnica y el volumen de contenidos a migrar.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo cambiar de CMS durante el rediseño?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Realizamos migraciones entre plataformas (por ejemplo, de Joomla a WordPress, o de WordPress a una solución headless) como parte del rediseño, siempre con un plan de migración SEO detallado.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Qué pasa con el contenido de mi web actual?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Todo el contenido valioso se migra a la nueva web. Además, lo revisamos y optimizamos para mejorar el SEO y la experiencia de usuario. El contenido obsoleto o irrelevante se archiva o se elimina de forma controlada.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta rediseñar una web?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">El precio depende del tamaño del sitio, las funcionalidades requeridas y la complejidad de la migración. Ofrecemos presupuestos cerrados y transparentes. Solicita una consulta gratuita para obtener una propuesta adaptada a tu caso.</p>
+</details>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="sec-block" style="background:#edf1f7">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Más sobre Diseño Web</h2><div class="bar"></div></div>
+<div class="card-grid g3"><a href="../../diseno-web/diseno-web-corporativo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+<h3 style="font-size:.8rem">Diseño Web Corporativo</h3>
+</a>
+<a href="../../diseno-web/diseno-web-responsive/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+<h3 style="font-size:.8rem">Diseño Web Responsive</h3>
+</a>
+<a href="../../diseno-web/diseno-ux-ui/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+<h3 style="font-size:.8rem">Diseño UX UI</h3>
+</a>
+<a href="../../diseno-web/diseno-web-one-page/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+<h3 style="font-size:.8rem">Diseño Web One Page</h3>
+</a>
+</div>
+<div style="text-align:center;margin-top:1.5rem">
+<a style="font-family:Manrope,sans-serif;font-weight:700;font-size:.85rem;color:#001e40;text-decoration:none" href="../../diseno-web/index.html">← Volver a Diseño Web</a>
+</div>
+</div>
+</section>
+
+
+<section class="bg-[#f4f6fa] sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Diseño Web</h3>
+</a>
+<a href="../../servicios/diseno-web-wordpress/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">WordPress</h3>
+</a>
+<a href="../../servicios/desarrollo-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Desarrollo Web</h3>
+</a>
+<a href="../../servicios/landing-pages/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Landing Pages</h3>
+</a>
+<a href="../../agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../servicios/agencia-seo-local/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">SEO Local</h3>
+</a>
+
+</div>
+<div style="margin-top:2.5rem">
+<div class="sec-heading"><h2 style="font-size:1.1rem">Sectores donde aplicamos este servicio</h2><div class="bar"></div></div>
+<div class="card-grid g6" style="margin-top:1.5rem">
+<a href="../../marketing-para-restaurantes/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Restaurantes</h3>
+</a>
+<a href="../../marketing-para-hoteles/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Hoteles</h3>
+</a>
+<a href="../../marketing-para-clinicas-dentales/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Clínicas Dentales</h3>
+</a>
+<a href="../../marketing-para-clinicas-esteticas/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Clínicas Estéticas</h3>
+</a>
+<a href="../../marketing-para-abogados/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Abogados</h3>
+</a>
+<a href="../../marketing-para-inmobiliarias/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Inmobiliarias</h3>
+</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA FINAL — Detalle de lo que incluye -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">Da el primer paso</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Tu web necesita una renovación? Hablemos</h2>
+<p class="text-on-primary-container text-base mb-6">Solicita tu auditoría gratuita. Sin compromiso.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-md mx-auto mb-8 text-left">
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Análisis completo de tu situación</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Estudio de tu competencia</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
+</div>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Solicitar consulta de rediseño gratuita →</a>
+<p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
+</div>
+</section>
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

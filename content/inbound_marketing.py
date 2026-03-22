@@ -161,7 +161,7 @@ SECTIONS = [
 <p>Estamos certificados en <strong>HubSpot, ActiveCampaign y Google Analytics</strong>. Implementamos y gestionamos la plataforma de automatización más adecuada para tu negocio y presupuesto, desde soluciones gratuitas hasta enterprise.</p>
 
 <h3>SEO + Inbound integrado</h3>
-<p>Como agencia SEO, garantizamos que todo el contenido de inbound esté <strong>optimizado para posicionar en Google</strong>. No creamos contenido bonito que nadie encuentra — creamos contenido que atrae tráfico orgánico cualificado mes tras mes. <a href="/servicios/agencia-seo/">Ver nuestro servicio de SEO</a>.</p>
+<p>Como agencia SEO, garantizamos que todo el contenido de inbound esté <strong>optimizado para posicionar en Google</strong>. No creamos contenido bonito que nadie encuentra — creamos contenido que atrae tráfico orgánico cualificado mes tras mes. <a href="/agencia-seo/">Ver nuestro servicio de SEO</a>.</p>
 
 <h3>Enfoque en métricas de negocio</h3>
 <p>No medimos éxito en descargas o suscriptores vanity. <strong>Medimos en MQLs, SQLs, oportunidades comerciales y clientes generados</strong>. Cada pieza de contenido, cada email y cada landing page tiene un objetivo de negocio medible.</p>

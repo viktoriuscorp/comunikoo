@@ -2,13 +2,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 1. Diseño Web Corporativo
     # ─────────────────────────────────────────────
-    "/servicios/diseno-web/diseno-web-corporativo/": {
+    "/diseno-web/diseno-web-corporativo/": {
         "title": "Diseño Web Corporativo | Páginas Web Profesionales para Empresas",
         "meta_desc": "Servicio de diseño web corporativo a medida. Creamos páginas web profesionales que refuerzan tu imagen de marca, generan confianza y captan clientes.",
         "h1": "Diseño Web Corporativo: La Imagen Digital que Tu Empresa Merece",
         "h1_short": "Diseño Web Corporativo",
         "intro": "Tu página web es la primera impresión que muchos clientes potenciales tendrán de tu negocio. Un diseño web corporativo profesional transmite credibilidad, refuerza tu identidad de marca y convierte visitantes en oportunidades reales de negocio. En Comunikoo diseñamos webs corporativas que trabajan las 24 horas para tu empresa.",
-        "parent": "/servicios/diseno-web/",
+        "parent": "/diseno-web/",
         "parent_name": "Diseño Web",
         "type": "service",
         "sections": [
@@ -112,13 +112,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 2. Diseño Web Responsive
     # ─────────────────────────────────────────────
-    "/servicios/diseno-web/diseno-web-responsive/": {
+    "/diseno-web/diseno-web-responsive/": {
         "title": "Diseño Web Responsive | Webs Adaptables a Todos los Dispositivos",
         "meta_desc": "Diseño web responsive profesional. Creamos páginas web adaptables a móvil, tablet y escritorio, optimizadas para Core Web Vitals y experiencia de usuario.",
         "h1": "Diseño Web Responsive: Tu Web Perfecta en Cualquier Pantalla",
         "h1_short": "Diseño Web Responsive",
         "intro": "Más del 60 % del tráfico web en España proviene de dispositivos móviles. Si tu web no se adapta perfectamente a cada pantalla, estás perdiendo clientes y posiciones en Google. El diseño web responsive no es una opción: es una necesidad para competir en el entorno digital actual.",
-        "parent": "/servicios/diseno-web/",
+        "parent": "/diseno-web/",
         "parent_name": "Diseño Web",
         "type": "service",
         "sections": [
@@ -218,13 +218,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 3. Diseño UX/UI
     # ─────────────────────────────────────────────
-    "/servicios/diseno-web/diseno-ux-ui/": {
+    "/diseno-web/diseno-ux-ui/": {
         "title": "Diseño UX UI | Experiencia de Usuario e Interfaz Profesional",
         "meta_desc": "Servicio de diseño UX UI profesional. Wireframes, prototipos y diseño de interfaces que mejoran la experiencia de usuario y aumentan las conversiones.",
         "h1": "Diseño UX UI: Interfaces que Enamoran y Convierten",
         "h1_short": "Diseño UX UI",
         "intro": "El diseño UX UI es la disciplina que determina si un visitante se queda en tu web o se va a la competencia. Una interfaz bonita no es suficiente: necesitas una experiencia de usuario fluida, intuitiva y orientada a que tus visitantes realicen las acciones que importan para tu negocio.",
-        "parent": "/servicios/diseno-web/",
+        "parent": "/diseno-web/",
         "parent_name": "Diseño Web",
         "type": "service",
         "sections": [
@@ -329,13 +329,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 4. Rediseño Web
     # ─────────────────────────────────────────────
-    "/servicios/diseno-web/rediseno-web/": {
+    "/diseno-web/rediseno-web/": {
         "title": "Rediseño Web Profesional | Moderniza Tu Web Sin Perder SEO",
         "meta_desc": "Servicio de rediseño web profesional. Modernizamos tu página web manteniendo el posicionamiento SEO, mejorando la experiencia de usuario y aumentando conversiones.",
         "h1": "Rediseño Web: Moderniza Tu Web Sin Perder Ni Una Posición en Google",
         "h1_short": "Rediseño Web",
         "intro": "¿Tu web tiene más de 3 años, se ve anticuada o no genera los resultados que esperas? Un rediseño web profesional puede transformar tu presencia digital. Pero cuidado: un rediseño mal ejecutado puede destruir tu posicionamiento SEO. En Comunikoo modernizamos tu web protegiendo cada posición que has ganado en Google.",
-        "parent": "/servicios/diseno-web/",
+        "parent": "/diseno-web/",
         "parent_name": "Diseño Web",
         "type": "service",
         "sections": [
@@ -437,13 +437,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 5. Diseño Web One Page
     # ─────────────────────────────────────────────
-    "/servicios/diseno-web/diseno-web-one-page/": {
+    "/diseno-web/diseno-web-one-page/": {
         "title": "Diseño Web One Page | Landing Pages de Alta Conversión",
         "meta_desc": "Diseño web one page profesional. Creamos landing pages y webs de una sola página optimizadas para la conversión, con scroll fluido y llamadas a la acción estratégicas.",
         "h1": "Diseño Web One Page: Una Sola Página, Máxima Conversión",
         "h1_short": "Diseño Web One Page",
         "intro": "El diseño web one page concentra toda la información en una única página con scroll vertical. Es la solución perfecta para negocios que necesitan una web directa, impactante y enfocada en una sola acción de conversión. Menos páginas, más resultados.",
-        "parent": "/servicios/diseno-web/",
+        "parent": "/diseno-web/",
         "parent_name": "Diseño Web",
         "type": "service",
         "sections": [

@@ -1,4 +1,4 @@
-# Content for /servicios/email-marketing/
+# Content for /email-marketing/
 # Full SEO content targeting "email marketing" (6,600 searches/month Spain)
 
 SECTIONS = [
@@ -121,7 +121,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/email-marketing/",
+    "url": "/email-marketing/",
     "title": "Email Marketing | Campañas de Email que Generan Ventas — Comunikoo",
     "meta_desc": "Email marketing profesional: newsletter, automatizaciones, lead nurturing y campañas de venta. El canal con mayor ROI del marketing digital.",
     "h1": "Email Marketing — El Canal con Mayor ROI del Marketing Digital",

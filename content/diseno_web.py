@@ -1,4 +1,4 @@
-# Content for /servicios/diseno-web/
+# Content for /diseno-web/
 # Full SEO content targeting "diseño web" (12,100 searches/month Spain)
 
 SECTIONS = [
@@ -38,7 +38,7 @@ SECTIONS = [
 <p>Tu <strong>web corporativa es tu carta de presentación digital</strong>. Diseñamos páginas web para empresas que transmiten profesionalidad, generan confianza y captan leads cualificados. Incluye páginas de servicios, equipo, casos de éxito, blog y formularios de contacto optimizados. Cada web corporativa se diseña alineada con tu identidad de marca.</p>
 
 <h3>Tienda online / ecommerce</h3>
-<p>Creamos <strong>tiendas online profesionales en Shopify, WooCommerce y PrestaShop</strong> que están listas para vender desde el día 1. Diseño de fichas de producto persuasivas, checkout optimizado para reducir el abandono de carrito, pasarela de pago integrada y gestión de inventario. <a href="/servicios/tienda-online/">Ver nuestro servicio de tienda online</a>.</p>
+<p>Creamos <strong>tiendas online profesionales en Shopify, WooCommerce y PrestaShop</strong> que están listas para vender desde el día 1. Diseño de fichas de producto persuasivas, checkout optimizado para reducir el abandono de carrito, pasarela de pago integrada y gestión de inventario. <a href="/tienda-online/">Ver nuestro servicio de tienda online</a>.</p>
 
 <h3>Landing pages de alta conversión</h3>
 <p>Las landing pages son páginas diseñadas con un único objetivo: convertir. Ya sea para campañas de Google Ads, Facebook Ads o captación de leads, <strong>diseñamos landing pages que alcanzan tasas de conversión de hasta el 12%</strong>, frente al 2-3% de media del sector. Diseño sin distracciones, propuesta de valor clara y CTAs irresistibles.</p>
@@ -193,7 +193,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/diseno-web/",
+    "url": "/diseno-web/",
     "title": "Diseño Web Profesional | Webs que Convierten Visitas en Clientes — Comunikoo",
     "meta_desc": "Diseño web profesional enfocado en ventas. Webs rápidas, responsive y optimizadas para SEO. Diseño a medida para tu negocio. Presupuesto sin compromiso.",
     "h1": "Diseño Web Profesional — Creamos Webs que Generan Negocio",

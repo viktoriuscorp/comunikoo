@@ -47,14 +47,10 @@
 /experto-google-ads/ /servicios/experto-google-ads/ 301
 
 # Servicios (posibles variantes antiguas)
-/seo/ /servicios/agencia-seo/ 301
+/seo/ /agencia-seo/ 301
 /seo-barcelona/ /agencia-seo-barcelona/ 301
 /seo-local/ /servicios/agencia-seo-local/ 301
-/google-ads/ /servicios/agencia-google-ads/ 301
-/diseno-web/ /servicios/diseno-web/ 301
-/community-manager/ /servicios/community-manager/ 301
-/tienda-online/ /servicios/tienda-online/ 301
-/email-marketing/ /servicios/email-marketing/ 301
+/google-ads/ /agencia-google-ads/ 301
 /posicionamiento-web/ /servicios/posicionamiento-web/ 301
 /publicidad-google/ /servicios/publicidad-en-google/ 301
 /facebook-ads/ /servicios/agencia-facebook-ads/ 301
@@ -62,6 +58,20 @@
 /wordpress/ /servicios/diseno-web-wordpress/ 301
 /branding/ /servicios/branding/ 301
 /redes-sociales/ /servicios/gestion-redes-sociales/ 301
+
+# Pillar services moved from /servicios/ to root level
+/servicios/agencia-seo/ /agencia-seo/ 301
+/servicios/agencia-seo/* /agencia-seo/:splat 301
+/servicios/diseno-web/ /diseno-web/ 301
+/servicios/diseno-web/* /diseno-web/:splat 301
+/servicios/agencia-google-ads/ /agencia-google-ads/ 301
+/servicios/agencia-google-ads/* /agencia-google-ads/:splat 301
+/servicios/community-manager/ /community-manager/ 301
+/servicios/community-manager/* /community-manager/:splat 301
+/servicios/tienda-online/ /tienda-online/ 301
+/servicios/tienda-online/* /tienda-online/:splat 301
+/servicios/email-marketing/ /email-marketing/ 301
+/servicios/email-marketing/* /email-marketing/:splat 301
 
 # Páginas genéricas
 /about/ /nosotros/ 301

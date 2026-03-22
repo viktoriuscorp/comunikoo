@@ -2,13 +2,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 1. Gestión de Instagram para Empresas
     # ─────────────────────────────────────────────
-    "/servicios/community-manager/gestion-instagram/": {
+    "/community-manager/gestion-instagram/": {
         "title": "Gestión de Instagram para Empresas | Community Manager Profesional",
         "meta_desc": "Servicio profesional de gestión de Instagram para empresas. Feed estratégico, stories, reels y hashtags optimizados para aumentar seguidores y generar clientes.",
         "h1": "Gestión de Instagram para Empresas: Convierte Seguidores en Clientes",
         "h1_short": "Gestión Instagram Empresa",
         "intro": "Instagram es la red social con mayor impacto visual y una de las plataformas más potentes para conectar con tu público objetivo. Pero gestionar Instagram de forma profesional requiere estrategia, constancia y conocimiento del algoritmo. En Comunikoo nos encargamos de todo para que tú te centres en tu negocio.",
-        "parent": "/servicios/community-manager/",
+        "parent": "/community-manager/",
         "parent_name": "Community Manager",
         "type": "service",
         "sections": [
@@ -112,13 +112,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 2. Gestión de LinkedIn para Empresas
     # ─────────────────────────────────────────────
-    "/servicios/community-manager/gestion-linkedin/": {
+    "/community-manager/gestion-linkedin/": {
         "title": "Gestión de LinkedIn para Empresas | Marketing B2B Profesional",
         "meta_desc": "Gestión profesional de LinkedIn para empresas. Estrategia B2B, contenido profesional, networking y generación de leads cualificados en la red social corporativa.",
         "h1": "Gestión de LinkedIn para Empresas: Genera Leads B2B de Calidad",
         "h1_short": "Gestión LinkedIn Empresa",
         "intro": "LinkedIn es la red social profesional por excelencia y la plataforma más eficaz para la generación de leads B2B. Con más de 18 millones de usuarios en España, es el lugar donde se toman las decisiones de negocio. En Comunikoo gestionamos tu presencia en LinkedIn para posicionarte como referente de tu sector.",
-        "parent": "/servicios/community-manager/",
+        "parent": "/community-manager/",
         "parent_name": "Community Manager",
         "type": "service",
         "sections": [
@@ -217,13 +217,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 3. Gestión de TikTok para Empresas
     # ─────────────────────────────────────────────
-    "/servicios/community-manager/gestion-tiktok/": {
+    "/community-manager/gestion-tiktok/": {
         "title": "Gestión de TikTok para Empresas | Alcance Orgánico Masivo",
         "meta_desc": "Gestión profesional de TikTok para empresas. Creamos vídeos cortos virales, aprovechamos tendencias y generamos alcance orgánico masivo para tu marca.",
         "h1": "Gestión de TikTok para Empresas: Alcance Orgánico que Ninguna Otra Red Ofrece",
         "h1_short": "Gestión TikTok Empresa",
         "intro": "TikTok ya no es solo una red para adolescentes. Con más de 18 millones de usuarios activos en España y un algoritmo que premia el contenido de calidad sobre el número de seguidores, es la plataforma con mayor potencial de alcance orgánico para empresas. En Comunikoo creamos contenido TikTok que posiciona tu marca frente a miles de clientes potenciales.",
-        "parent": "/servicios/community-manager/",
+        "parent": "/community-manager/",
         "parent_name": "Community Manager",
         "type": "service",
         "sections": [
@@ -321,13 +321,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 4. Creación de Contenido para Redes Sociales
     # ─────────────────────────────────────────────
-    "/servicios/community-manager/creacion-contenido-redes/": {
+    "/community-manager/creacion-contenido-redes/": {
         "title": "Creación de Contenido para Redes Sociales | Diseño y Estrategia",
         "meta_desc": "Servicio profesional de creación de contenido para redes sociales. Calendarios editoriales, diseño gráfico, vídeo y copywriting para todas las plataformas.",
         "h1": "Creación de Contenido para Redes Sociales: Diseño, Vídeo y Copywriting Profesional",
         "h1_short": "Creación Contenido Redes",
         "intro": "El contenido es el combustible de tus redes sociales. Sin publicaciones de calidad, constantes y estratégicas, tu presencia digital se estanca. En Comunikoo creamos todo el contenido que necesitas: desde el diseño gráfico hasta los textos persuasivos y los vídeos que captan la atención.",
-        "parent": "/servicios/community-manager/",
+        "parent": "/community-manager/",
         "parent_name": "Community Manager",
         "type": "service",
         "sections": [
@@ -437,13 +437,13 @@ SUBPAGES = {
     # ─────────────────────────────────────────────
     # 5. Estrategia de Redes Sociales
     # ─────────────────────────────────────────────
-    "/servicios/community-manager/estrategia-redes-sociales/": {
+    "/community-manager/estrategia-redes-sociales/": {
         "title": "Estrategia de Redes Sociales | Plan Social Media Profesional",
         "meta_desc": "Diseñamos tu estrategia de redes sociales con objetivos claros, KPIs medibles y un plan de acción para cada plataforma. Consultoría social media profesional.",
         "h1": "Estrategia de Redes Sociales: El Plan que Tu Marca Necesita para Crecer",
         "h1_short": "Estrategia Redes Sociales",
         "intro": "Publicar en redes sociales sin una estrategia definida es malgastar tiempo y recursos. Una estrategia de redes sociales profesional define qué publicar, dónde, cuándo y por qué, alineando cada acción con tus objetivos de negocio. En Comunikoo diseñamos planes social media que convierten tu inversión en resultados medibles.",
-        "parent": "/servicios/community-manager/",
+        "parent": "/community-manager/",
         "parent_name": "Community Manager",
         "type": "service",
         "sections": [

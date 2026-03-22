@@ -1,4 +1,4 @@
-# Content for /servicios/agencia-seo/
+# Content for /agencia-seo/
 # Full SEO content targeting "agencia SEO" (4,400 searches/month Spain)
 
 SECTIONS = [
@@ -212,7 +212,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/agencia-seo/",
+    "url": "/agencia-seo/",
     "title": "Agencia SEO | Expertos en Posicionamiento Web — Comunikoo",
     "meta_desc": "Agencia SEO en Barcelona especializada en resultados. Aumentamos tu tráfico orgánico y ventas con estrategia SEO personalizada. Auditoría gratuita. Sin permanencia.",
     "h1": "Agencia SEO — Posicionamos Tu Negocio en el Top de Google",
