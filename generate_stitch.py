@@ -182,7 +182,7 @@ def head_html(title, meta_desc, canonical, schema=""):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 {TAILWIND_CONFIG}
 <style>
 .icon-inline {{ display: inline-flex; align-items: center; vertical-align: middle; }}
