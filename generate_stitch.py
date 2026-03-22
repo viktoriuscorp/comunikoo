@@ -1009,29 +1009,64 @@ def build_service_page(page):
     # ── PAIN POINTS (dynamic by service cluster) ──
     PAIN_POINTS = {
         'seo': [
-            ("Tu competencia aparece en Google antes que tú", "Cada día que no trabajas tu SEO, tus competidores captan los clientes que deberían ser tuyos."),
-            ("Inviertes en una web pero no genera visitas", "Tener una web bonita sin SEO es como tener una tienda en un callejón sin salida."),
-            ("Dependes de los anuncios para tener visibilidad", "Cuando dejas de pagar, desapareces. El SEO genera tráfico constante sin coste por clic."),
+            # Avatar: empresario que ve a su competencia por delante
+            ("Tu competencia aparece en Google antes que tú", "Cada día que no trabajas tu SEO, tus competidores captan los clientes que deberían ser tuyos. Y una vez se posicionan, adelantarlos es más difícil."),
+            # Avatar: el que tiene web pero no le llega tráfico
+            ("Inviertes en una web pero no genera visitas", "Tener una web bonita sin SEO es como tener una tienda en un callejón sin salida. Nadie la encuentra."),
+            # Avatar: el que depende de ads y quiere reducir costes
+            ("Dependes de los anuncios para tener visibilidad", "Cuando dejas de pagar, desapareces. El SEO genera tráfico constante sin coste por clic — y el retorno crece cada mes."),
+            # Avatar: el que ya contrató una agencia y no funcionó
+            ("Ya probaste con otra agencia SEO y no funcionó", "La mayoría de agencias venden humo con informes bonitos. Nosotros medimos en leads y ventas, no en impresiones."),
+            # Avatar: el autónomo/pyme con presupuesto ajustado
+            ("Crees que el SEO solo es para empresas grandes", "El SEO local permite a negocios pequeños competir de tú a tú con grandes marcas en su zona. Y con menos inversión de lo que piensas."),
         ],
         'web': [
-            ("Tu web no transmite la profesionalidad de tu negocio", "Los visitantes juzgan tu empresa en 3 segundos. Una web anticuada genera desconfianza."),
-            ("Tu web es lenta y los usuarios se van", "El 53% de los usuarios abandona si la web tarda más de 3 segundos en cargar."),
-            ("Tu web no genera contactos ni ventas", "Tener visitas sin conversiones es quemar dinero. Tu web debe estar diseñada para vender."),
+            # Avatar: el que tiene web antigua
+            ("Tu web no transmite la profesionalidad de tu negocio", "Los visitantes juzgan tu empresa en 3 segundos. Una web anticuada genera desconfianza y pierdes clientes antes de que lean una sola línea."),
+            # Avatar: el frustrado con la velocidad
+            ("Tu web es lenta y los usuarios se van", "El 53% de los usuarios abandona si la web tarda más de 3 segundos en cargar. Google también te penaliza por ello."),
+            # Avatar: el que tiene visitas pero no convierte
+            ("Tu web no genera contactos ni ventas", "Tener visitas sin conversiones es quemar dinero. Tu web debe estar diseñada para vender, no solo para informar."),
+            # Avatar: el que no puede actualizar su web
+            ("Dependes de un técnico para cada pequeño cambio", "Cada vez que quieres cambiar un texto o subir una imagen, tienes que esperar días y pagar. Eso se acabó."),
+            # Avatar: el que necesita web nueva desde cero
+            ("No sabes por dónde empezar con tu web", "Briefing, diseño, desarrollo, textos, SEO, hosting... Te acompañamos en todo el proceso sin que tengas que preocuparte de nada."),
         ],
         'ads': [
-            ("Gastas en publicidad pero no ves retorno", "Sin optimización profesional, podrías estar tirando el 40-60% de tu presupuesto publicitario."),
-            ("No sabes si tu inversión en ads es rentable", "Si no mides cada euro invertido, estás tomando decisiones a ciegas."),
-            ("Tu competencia aparece antes que tú en Google Ads", "Con la estrategia correcta, puedes superar a competidores con más presupuesto que tú."),
+            # Avatar: el que gasta sin retorno
+            ("Gastas en publicidad pero no ves retorno", "Sin optimización profesional, podrías estar tirando el 40-60% de tu presupuesto publicitario en clics que nunca convierten."),
+            # Avatar: el que no mide resultados
+            ("No sabes si tu inversión en ads es rentable", "Si no mides cada euro invertido con tracking de conversiones, estás tomando decisiones a ciegas."),
+            # Avatar: el que compite contra grandes presupuestos
+            ("Tu competencia aparece antes que tú en Google Ads", "No gana quien más gasta, sino quien mejor optimiza. Con la estrategia correcta, puedes superar a competidores con más presupuesto."),
+            # Avatar: el que gestiona campañas él mismo
+            ("Gestionas las campañas tú mismo y no tienes tiempo", "Google Ads cambia constantemente. Sin dedicación diaria y conocimiento actualizado, tu rendimiento cae y tu coste sube."),
+            # Avatar: el que tuvo mala experiencia
+            ("Tu anterior agencia no te daba explicaciones claras", "Tienes derecho a entender exactamente en qué se gasta tu dinero. Dashboard en tiempo real y reporting transparente."),
         ],
         'social': [
-            ("Publicas en redes pero no generas clientes", "Tener seguidores no es tener clientes. Necesitas una estrategia que convierta."),
-            ("No tienes tiempo para gestionar tus redes", "Publicar sin estrategia es peor que no publicar. Cada post debe tener un objetivo."),
-            ("Tu marca no conecta con tu audiencia online", "Las redes sociales son conversación, no escaparate. Si no conectas, no vendes."),
+            # Avatar: el que publica sin resultados
+            ("Publicas en redes pero no generas clientes", "Tener seguidores no es tener clientes. Necesitas una estrategia que convierta likes en leads y leads en ventas."),
+            # Avatar: el empresario sin tiempo
+            ("No tienes tiempo para gestionar tus redes", "Tu negocio te necesita vendiendo y gestionando, no pensando qué publicar en Instagram a las 7 de la tarde."),
+            # Avatar: el que no conecta con su público
+            ("Tu marca no conecta con tu audiencia online", "Las redes sociales son conversación, no escaparate. Si solo hablas de ti, nadie te escucha."),
+            # Avatar: el que no sabe qué publicar
+            ("Te quedas en blanco sin saber qué contenido crear", "Creamos un calendario editorial completo con contenido estratégico que atrae, educa y convierte a tu cliente ideal."),
+            # Avatar: el que publica pero no crece
+            ("Llevas meses publicando y tus seguidores no crecen", "Crecer orgánicamente requiere estrategia de hashtags, colaboraciones, contenido viral y publicidad segmentada. No solo constancia."),
         ],
         'ecommerce': [
-            ("Tu tienda online no vende lo que debería", "El 97% de los visitantes se van sin comprar. Con CRO y SEO cambiamos eso."),
-            ("Dependes de marketplaces y pagas comisiones altas", "Amazon y otros se llevan un 15-30% de cada venta. Tu tienda propia te da el control."),
-            ("No sabes por qué los usuarios abandonan el carrito", "El 70% de los carritos se abandonan. Hay soluciones concretas para recuperarlos."),
+            # Avatar: el que tiene tienda pero no vende
+            ("Tu tienda online no vende lo que debería", "El 97% de los visitantes se van sin comprar. Con optimización de fichas, CRO y SEO cambiamos esa cifra."),
+            # Avatar: el que depende de Amazon
+            ("Dependes de marketplaces y pagas comisiones altas", "Amazon y otros se llevan un 15-30% de cada venta. Tu tienda propia te da el control, el margen y los datos de tus clientes."),
+            # Avatar: el que pierde ventas por abandonos
+            ("No sabes por qué los usuarios abandonan el carrito", "El 70% de los carritos se abandonan. Con automatizaciones de email y optimización del checkout, recuperamos una parte significativa."),
+            # Avatar: el que no sabe qué plataforma elegir
+            ("No sabes si elegir Shopify, WooCommerce o PrestaShop", "Cada plataforma tiene sus ventajas según tu caso. Te asesoramos para que elijas la que mejor se adapta a tu negocio y presupuesto."),
+            # Avatar: el que vende pero no escala
+            ("Vendes pero no consigues escalar tu facturación", "Escalar un ecommerce requiere SEO, publicidad, email marketing y logística optimizada trabajando en conjunto. No canales sueltos."),
         ],
     }
 
