@@ -810,12 +810,20 @@ def build_service_page(page):
             else:
                 body_html = f'<div class="prose-block">{raw_html}</div>'
 
-        # ── MID CTA ──
+        # ── MID CTA (after every 2nd section for max conversions) ──
         mid_cta = ''
-        if i == 1 or i == 3:
-            mid_cta = f'''<div style="text-align:center;margin-top:2.5rem">
-<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.88rem;text-decoration:none" href="{r('/contacto/')}">
-{p.get("cta_button_short", "Auditoría gratis")} →</a></div>'''
+        if i % 2 == 1:
+            cta_msgs = [
+                "Solicita tu auditoría gratuita — sin compromiso",
+                "Habla con un experto sobre tu proyecto",
+                "Descubre qué podemos hacer por tu negocio",
+            ]
+            msg = cta_msgs[(i // 2) % len(cta_msgs)]
+            mid_cta = f'''<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
+<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">{msg}</p>
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="{r('/contacto/')}">
+{p.get("cta_button_short", "Auditoría gratis")} →</a>
+</div>'''
 
         content_blocks += f'''
 <section id="{s["id"]}" class="{bg} sec-block scroll-mt-20">
@@ -942,7 +950,7 @@ def build_service_page(page):
 <div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
 {breadcrumbs}
 <span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">{p["h1_short"]}</span>
-<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-3xl mx-auto">{p["h1"]}</h1>
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
 <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
@@ -1062,7 +1070,7 @@ def build_vertical_page(page):
 <!-- HERO -->
 <section class="px-6 lg:px-8 max-w-7xl mx-auto py-16 lg:py-24 text-center">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-xs uppercase tracking-widest mb-6">{p.get("sector_name", "Sector").title()}</span>
-<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <p class="font-headline font-extrabold text-xl md:text-2xl text-secondary-container mt-8">{p.get("hook_stat", "")}</p>
 <a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95 mt-8" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
