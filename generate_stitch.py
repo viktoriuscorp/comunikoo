@@ -1503,6 +1503,17 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </div>
 </section>
 
+<!-- CTA 1: PAIN POINT — ¿Tu competencia te está ganando? -->
+<section class="bg-primary py-16 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">¿Te suena esto?</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Tu competencia aparece en Google antes que tú. Tus clientes potenciales los encuentran a ellos, no a ti.</h2>
+<p class="text-on-primary-container text-base mb-8 max-w-xl mx-auto">Cada día que pasa sin una estrategia digital, estás regalando clientes. Nosotros lo cambiamos.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
+<p class="text-on-primary-container/60 text-xs mt-4">Sin compromiso. Te respondemos en menos de 24h.</p>
+</div>
+</section>
+
 <!-- SERVICES MAIN 6 -->
 <section class="py-28 px-6 lg:px-8 max-w-7xl mx-auto">
 <div class="mb-16 text-center max-w-3xl mx-auto">
@@ -1541,6 +1552,22 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Email Marketing</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Automatizaciones, newsletters y campañas de email que convierten. El canal digital con mayor retorno de inversión. Segmentación avanzada, flows automatizados y diseño profesional.</p>
 </a>
+</div>
+</section>
+
+<!-- CTA 2: BENEFIT — Resultados en semanas -->
+<section class="py-16 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto bg-[#f0f4ff] rounded-2xl p-10 md:p-14 text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4">¿Quieres saber exactamente qué está fallando en tu marketing digital?</h2>
+<p class="text-on-surface-variant text-base max-w-xl mx-auto mb-6">Te hacemos una auditoría completa de tu web, tu SEO, tu publicidad y tus redes sociales. Gratis. Sin letra pequeña. En 48h tienes un informe con acciones concretas para mejorar.</p>
+<div class="flex flex-wrap gap-4 justify-center">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6 mt-6 text-xs text-on-surface-variant">
+<span class="flex items-center gap-1">✓ Sin compromiso</span>
+<span class="flex items-center gap-1">✓ Respuesta en 24h</span>
+<span class="flex items-center gap-1">✓ Sin permanencia</span>
+</div>
 </div>
 </section>
 
@@ -1611,6 +1638,19 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </div>
 </section>
 
+<!-- CTA 3: URGENCY — No pierdas más tiempo -->
+<section class="bg-primary py-16 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1 text-center md:text-left">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-3">Cada mes sin estrategia digital es dinero que pierdes</h2>
+<p class="text-on-primary-container text-base">Mientras tú dudas, tu competencia está captando los clientes que deberían ser tuyos. Empezamos en menos de 48 horas.</p>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95 whitespace-nowrap" href="{r('/contacto/')}">Empezar ahora →</a>
+</div>
+</div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="py-24 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-7xl mx-auto">
@@ -1666,6 +1706,16 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-surface-variant text-lg leading-relaxed">Descubre el catálogo completo de servicios de marketing digital que ofrecemos en Comunikoo. Cada servicio está diseñado para impulsar un aspecto específico de tu presencia online. Puedes contratar servicios individuales o combinarlos en una estrategia integral.</p>
 </div>
 {all_services_grid}
+</section>
+
+<!-- CTA 4: SOCIAL PROOF — Únete a +487 empresas -->
+<section class="py-16 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="font-headline font-black text-5xl md:text-6xl text-primary mb-4">487+</p>
+<h2 class="font-headline font-bold text-2xl text-primary mb-4">empresas ya han confiado en nosotros para hacer crecer su negocio</h2>
+<p class="text-on-surface-variant text-base mb-8 max-w-xl mx-auto">Desde startups hasta empresas consolidadas. En más de 30 sectores diferentes. ¿Será el tuyo el siguiente caso de éxito?</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero ser el próximo caso de éxito</a>
+</div>
 </section>
 
 <!-- SECTORS -->
@@ -1726,15 +1776,21 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA FINAL — Full conversion block -->
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-white mb-4">¿Listo para que tu negocio domine Google?</h2>
-<p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu web y tu competencia sin compromiso. Te presentamos un plan de acción personalizado para hacer crecer tu negocio con marketing digital.</p>
-<div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
-<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="{r('/contacto/')}">Contactar</a>
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">Da el primer paso</p>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-white mb-4">Tu auditoría gratuita incluye:</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto mb-8 text-left">
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Análisis SEO completo de tu web</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Estudio de tu competencia</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Oportunidades de mejora con impacto</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Plan de acción personalizado</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Estimación de resultados a 6 meses</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Sin compromiso ni permanencia</p>
 </div>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
+<p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24 horas. Sin llamadas no deseadas.</p>
 </div>
 </section>
 </main>
