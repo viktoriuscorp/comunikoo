@@ -169,7 +169,7 @@ details summary::-webkit-details-marker {{ display: none; }}
 .svc-card:hover {{ box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }}
 .svc-card .svc-icon {{ width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }}
 .svc-card h3 {{ font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }}
-.svc-card p {{ font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }}
+.svc-card p {{ font-size: .78rem; line-height: 1.7; color: #43474f; margin: 0; }}
 
 /* ── Card grid: always symmetric ── */
 .card-grid {{ display: grid; gap: 1.25rem; margin: 0 auto; }}
@@ -204,18 +204,20 @@ details summary::-webkit-details-marker {{ display: none; }}
 .scrollbar-hide {{ -ms-overflow-style: none; scrollbar-width: none; }}
 .scrollbar-hide::-webkit-scrollbar {{ display: none; }}
 
-/* Hero responsive */
+/* Hero & body text responsive */
 @media(max-width:767px) {{
   .font-headline.text-3xl {{ font-size: 1.5rem !important; }}
   .font-headline.text-4xl {{ font-size: 1.75rem !important; }}
+  p.text-base {{ font-size: .95rem !important; }}
+  p.text-lg {{ font-size: 1rem !important; }}
 }}
 
 /* ── Prose: text always inside container, left-aligned, readable ── */
 .prose-block {{ max-width: 720px; margin: 0 auto; }}
 .prose-block h3 {{ font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }}
-.prose-block p {{ font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }}
+.prose-block p {{ font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: 1rem; }}
 .prose-block ul {{ padding-left: 1.25rem; margin: 1rem 0; }}
-.prose-block li {{ font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }}
+.prose-block li {{ font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .5rem; }}
 .prose-block strong {{ color: #001e40; font-weight: 600; }}
 .prose-block a {{ color: #904d00; text-decoration: underline; text-underline-offset: 2px; }}
 .prose-block a:hover {{ color: #fd8b00; }}
@@ -766,7 +768,7 @@ def build_service_page(page):
                 intro_html = ''
                 clean = re.sub(r'</?p>', '', intro).strip()
                 body_html = f'''<div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:900px;margin:0 auto" class="{flip}">
-<div class="prose-block" style="max-width:none;margin:0"><p style="font-size:.95rem;line-height:1.75;color:#43474f">{clean}</p></div>
+<div class="prose-block" style="max-width:none;margin:0"><p style="font-size:.95rem;line-height:1.7;color:#43474f">{clean}</p></div>
 <div>{svg}</div>
 </div>
 <style>@media(max-width:767px){{[style*="grid-template-columns:1fr 1fr"]{{grid-template-columns:1fr!important}}}}</style>'''
@@ -1293,16 +1295,16 @@ def build_home():
 <main class="pt-20 overflow-x-hidden">
 
 <!-- HERO -->
-<section class="relative min-h-[80vh] flex items-center px-6 lg:px-8 max-w-7xl mx-auto py-20 lg:py-32">
-<div class="max-w-4xl">
+<section class="relative min-h-[80vh] flex items-center justify-center px-6 lg:px-8 max-w-7xl mx-auto py-20 lg:py-32">
+<div class="max-w-4xl mx-auto text-center">
 <span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-bold text-xs uppercase tracking-widest mb-6">Agencia de Marketing Digital en Barcelona · Google Partner</span>
-<h1 class="font-headline font-extrabold text-3xl md:text-5xl lg:text-6xl text-primary leading-[1.1] tracking-tight max-w-3xl">
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight">
 Agencia de Marketing Digital en Barcelona — <span class="text-secondary-container">Resultados Medibles, Sin Permanencia</span>
 </h1>
-<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mt-6 leading-relaxed">
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">
 Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Google Ads y redes sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación. Sin permanencia. Dashboard en tiempo real.
 </p>
-<div class="flex flex-wrap gap-4 mt-8">
+<div class="flex flex-wrap gap-4 mt-8 justify-center">
 <a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
 <a class="px-10 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-surface-container-low transition-all" href="{r('/servicios/')}">Ver servicios</a>
 </div>

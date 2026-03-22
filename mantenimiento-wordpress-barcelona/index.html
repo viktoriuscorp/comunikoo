@@ -36,7 +36,7 @@ details summary::-webkit-details-marker { display: none; }
 .svc-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
 .svc-card .svc-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }
 .svc-card h3 { font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }
-.svc-card p { font-size: .78rem; line-height: 1.65; color: #43474f; margin: 0; }
+.svc-card p { font-size: .78rem; line-height: 1.7; color: #43474f; margin: 0; }
 
 /* ── Card grid: always symmetric ── */
 .card-grid { display: grid; gap: 1.25rem; margin: 0 auto; }
@@ -71,18 +71,20 @@ details summary::-webkit-details-marker { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 
-/* Hero responsive */
+/* Hero & body text responsive */
 @media(max-width:767px) {
   .font-headline.text-3xl { font-size: 1.5rem !important; }
   .font-headline.text-4xl { font-size: 1.75rem !important; }
+  p.text-base { font-size: .95rem !important; }
+  p.text-lg { font-size: 1rem !important; }
 }
 
 /* ── Prose: text always inside container, left-aligned, readable ── */
 .prose-block { max-width: 720px; margin: 0 auto; }
 .prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
-.prose-block p { font-size: .9rem; line-height: 1.8; color: #43474f; margin-bottom: 1rem; }
+.prose-block p { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: 1rem; }
 .prose-block ul { padding-left: 1.25rem; margin: 1rem 0; }
-.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .4rem; }
+.prose-block li { font-size: .9rem; line-height: 1.7; color: #43474f; margin-bottom: .5rem; }
 .prose-block strong { color: #001e40; font-weight: 600; }
 .prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
 .prose-block a:hover { color: #fd8b00; }
