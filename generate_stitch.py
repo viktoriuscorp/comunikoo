@@ -123,45 +123,8 @@ def load_content_pages():
     return pages, verticals, profiles, subpages
 
 # ============================================================
-# TAILWIND CONFIG (inline)
-# ============================================================
-TAILWIND_CONFIG = '''<script>
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#001e40",
-        "primary-container": "#003366",
-        "on-primary": "#ffffff",
-        "on-primary-container": "#799dd6",
-        "secondary": "#904d00",
-        "secondary-container": "#fd8b00",
-        "on-secondary": "#ffffff",
-        "on-secondary-container": "#603100",
-        "surface": "#f8f9fa",
-        "surface-container": "#edeeef",
-        "surface-container-low": "#f3f4f5",
-        "surface-container-high": "#e7e8e9",
-        "surface-container-lowest": "#ffffff",
-        "on-surface": "#191c1d",
-        "on-surface-variant": "#43474f",
-        "outline": "#737780",
-        "outline-variant": "#c3c6d1",
-        "tertiary-container": "#592300",
-        "on-tertiary-container": "#d8885c",
-        "error": "#ba1a1a",
-        "on-background": "#191c1d",
-      },
-      fontFamily: {
-        "headline": ["Manrope", "system-ui", "sans-serif"],
-        "body": ["Inter", "system-ui", "sans-serif"],
-      },
-      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem"},
-    },
-  },
-}
-</script>'''
+# TAILWIND CONFIG — now compiled locally, no CDN needed
+TAILWIND_CONFIG = ''  # Kept for compatibility, CSS is in /css/style.css
 
 # ============================================================
 # HTML TEMPLATES
@@ -177,10 +140,9 @@ def head_html(title, meta_desc, canonical, schema=""):
 <title>{title}</title>
 <meta name="description" content="{meta_desc}">
 <link rel="canonical" href="https://comunikoo.es{canonical}">
-<link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="CSSPLACEHOLDER">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 {TAILWIND_CONFIG}
@@ -1796,6 +1758,14 @@ def _replace_material_icons(html):
 
 def write_page(path, html):
     html = _replace_material_icons(html)
+    # Replace CSS placeholder with correct relative path
+    css_rel = rel('/css/style.css', path).replace('/index.html', '')
+    if path == '/':
+        css_rel = 'css/style.css'
+    else:
+        depth = len([p for p in path.strip('/').split('/') if p])
+        css_rel = '../' * depth + 'css/style.css'
+    html = html.replace('CSSPLACEHOLDER', css_rel)
     out = OUTPUT_DIR / path.strip('/') / 'index.html' if path != '/' else OUTPUT_DIR / 'index.html'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding='utf-8')
