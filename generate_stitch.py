@@ -515,6 +515,89 @@ def local_business_schema(city, service_name):
 
 
 # ============================================================
+# AUTO INTERNAL LINKING SYSTEM (module level)
+# ============================================================
+import re as _re
+
+LINK_MAP = [
+    ("agencia SEO", "/agencia-seo/"), ("agencia de SEO", "/agencia-seo/"), ("posicionamiento SEO", "/agencia-seo/"), ("estrategia SEO", "/agencia-seo/"),
+    ("diseño web", "/diseno-web/"), ("diseño de páginas web", "/diseno-web/"), ("desarrollo web", "/servicios/desarrollo-web/"),
+    ("Google Ads", "/agencia-google-ads/"), ("campañas de Google", "/agencia-google-ads/"), ("publicidad en Google", "/servicios/publicidad-en-google/"),
+    ("community manager", "/community-manager/"), ("gestión de redes sociales", "/servicios/gestion-redes-sociales/"), ("redes sociales", "/servicios/gestion-redes-sociales/"),
+    ("tienda online", "/tienda-online/"), ("tiendas online", "/tienda-online/"), ("ecommerce", "/servicios/agencia-ecommerce/"),
+    ("email marketing", "/email-marketing/"), ("marketing por email", "/email-marketing/"),
+    ("SEO on page", "/agencia-seo/seo-on-page/"), ("SEO on-page", "/agencia-seo/seo-on-page/"),
+    ("SEO off page", "/agencia-seo/seo-off-page/"), ("SEO off-page", "/agencia-seo/seo-off-page/"),
+    ("link building", "/servicios/linkbuilding/"), ("linkbuilding", "/servicios/linkbuilding/"), ("backlinks", "/servicios/linkbuilding/"),
+    ("SEO técnico", "/agencia-seo/seo-tecnico/"), ("keyword research", "/agencia-seo/keyword-research/"), ("palabras clave", "/agencia-seo/keyword-research/"),
+    ("contenidos SEO", "/agencia-seo/contenidos-seo/"), ("migración SEO", "/agencia-seo/migracion-seo/"),
+    ("auditoría SEO", "/servicios/auditoria-seo/"), ("consultoría SEO", "/servicios/consultoria-seo/"),
+    ("SEO local", "/servicios/agencia-seo-local/"), ("posicionamiento web", "/servicios/posicionamiento-web/"), ("posicionamiento en Google", "/servicios/posicionamiento-web/"),
+    ("campañas de búsqueda", "/agencia-google-ads/campanas-search/"), ("campañas de display", "/agencia-google-ads/campanas-display/"),
+    ("Google Shopping", "/servicios/google-shopping/"), ("Performance Max", "/agencia-google-ads/campanas-performance-max/"),
+    ("remarketing", "/agencia-google-ads/remarketing/"), ("retargeting", "/agencia-google-ads/remarketing/"),
+    ("Facebook Ads", "/servicios/agencia-facebook-ads/"), ("Meta Ads", "/servicios/agencia-meta-ads/"),
+    ("Instagram Ads", "/servicios/instagram-ads/"), ("YouTube Ads", "/servicios/youtube-ads/"), ("publicidad en redes", "/servicios/publicidad-redes-sociales/"),
+    ("WordPress", "/servicios/diseno-web-wordpress/"), ("landing page", "/servicios/landing-pages/"), ("landing pages", "/servicios/landing-pages/"),
+    ("mantenimiento web", "/servicios/mantenimiento-web/"), ("diseño web corporativo", "/diseno-web/diseno-web-corporativo/"),
+    ("diseño responsive", "/diseno-web/diseno-web-responsive/"), ("diseño UX", "/diseno-web/diseno-ux-ui/"),
+    ("experiencia de usuario", "/diseno-web/diseno-ux-ui/"), ("rediseño web", "/diseno-web/rediseno-web/"),
+    ("Instagram", "/community-manager/gestion-instagram/"), ("LinkedIn", "/community-manager/gestion-linkedin/"), ("TikTok", "/community-manager/gestion-tiktok/"),
+    ("creación de contenido", "/community-manager/creacion-contenido-redes/"), ("estrategia de redes", "/community-manager/estrategia-redes-sociales/"),
+    ("marketing de contenidos", "/servicios/marketing-de-contenidos/"), ("inbound marketing", "/servicios/inbound-marketing/"), ("branding", "/servicios/branding/"),
+    ("Shopify", "/servicios/agencia-shopify/"), ("WooCommerce", "/servicios/agencia-woocommerce/"), ("PrestaShop", "/servicios/agencia-prestashop/"),
+    ("ficha de producto", "/servicios/agencia-ecommerce/optimizacion-ficha-producto/"), ("SEO para ecommerce", "/servicios/seo-para-ecommerce/"),
+    ("CRO", "/servicios/optimizacion-cro/"), ("optimización de conversión", "/servicios/optimizacion-cro/"),
+    ("automatización de email", "/email-marketing/automatizacion-email/"), ("newsletter", "/email-marketing/newsletter-empresas/"), ("Mailchimp", "/email-marketing/email-marketing-mailchimp/"),
+    ("analítica web", "/servicios/analitica-web/"), ("estrategia digital", "/servicios/estrategia-digital/"),
+    ("Google Business Profile", "/servicios/agencia-seo-local/"), ("Google Maps", "/servicios/agencia-seo-local/"),
+    ("marketing para restaurantes", "/marketing-para-restaurantes/"), ("marketing para hoteles", "/marketing-para-hoteles/"),
+    ("marketing para clínicas dentales", "/marketing-para-clinicas-dentales/"), ("marketing para abogados", "/marketing-para-abogados/"),
+    ("marketing para inmobiliarias", "/marketing-para-inmobiliarias/"), ("marketing para ecommerce", "/marketing-para-ecommerce/"),
+    ("marketing para gimnasios", "/marketing-para-gimnasios/"),
+    ("agencia SEO Barcelona", "/agencia-seo-barcelona/"), ("agencia SEO Madrid", "/agencia-seo-madrid/"),
+    ("diseño web Barcelona", "/diseno-web-barcelona/"), ("diseño web Madrid", "/diseno-web-madrid/"),
+    ("Google Ads Barcelona", "/google-ads-barcelona/"), ("Google Ads Madrid", "/google-ads-madrid/"),
+]
+
+def auto_link(html, current_url, max_links=8):
+    """Inject contextual internal links into HTML content."""
+    if not html:
+        return html
+    linked = 0
+    used_urls = set()
+    for keyword, target_url in LINK_MAP:
+        if linked >= max_links:
+            break
+        if target_url == current_url or target_url in used_urls:
+            continue
+        if current_url.startswith(target_url) and len(current_url) > len(target_url):
+            pass  # Allow linking to parent
+        elif target_url.startswith(current_url) and len(target_url) > len(current_url):
+            pass  # Allow linking to children
+        elif target_url == current_url:
+            continue
+        pattern = _re.compile(r'(?<!["\'/\w])(' + _re.escape(keyword) + r')(?!["\w])', _re.IGNORECASE)
+        parts = _re.split(r'(<a\b[^>]*>.*?</a>)', html, flags=_re.DOTALL)
+        new_parts = []
+        replaced = False
+        for part in parts:
+            if part.startswith('<a ') or part.startswith('<a\t') or part.startswith('<a>'):
+                new_parts.append(part)
+            elif not replaced and pattern.search(part):
+                part = pattern.sub(f'<a href="{target_url}" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">\\1</a>', part, count=1)
+                replaced = True
+                new_parts.append(part)
+            else:
+                new_parts.append(part)
+        if replaced:
+            html = ''.join(new_parts)
+            linked += 1
+            used_urls.add(target_url)
+    return html
+
+
+# ============================================================
 # SERVICE PAGE BUILDER
 # ============================================================
 def build_service_page(page):
@@ -632,7 +715,7 @@ def build_service_page(page):
 
     content_blocks = ''
     for i, s in enumerate(sections_data):
-        raw_html = s.get('html', '<p>Contenido en desarrollo.</p>')
+        raw_html = auto_link(s.get('html', '<p>Contenido en desarrollo.</p>'), current_url, max_links=3)
         intro, items = split_section(raw_html)
         bg = BG[i % len(BG)]
         n = len(items)
@@ -1199,12 +1282,13 @@ def build_vertical_page(page):
 
     services_cards = ''
     for svc in p.get('services', []):
+        linked_desc = auto_link(svc["desc"], current_url, max_links=2)
         services_cards += f'''<div class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">star</span>
 </div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">{svc["title"]}</h3>
-<p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">{svc["desc"]}</p>
+<p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">{linked_desc}</p>
 </div>\n'''
 
     faq_section = ''
@@ -1362,40 +1446,136 @@ def build_geo_page(page):
 </div>
 </section>'''
 
+    svc_name = p['service_name']
+    svc_name_lower = svc_name.lower()
+    parent_url = p.get('parent_service_url', '/agencia-seo/')
+
+    # Dynamic local content based on service type and city
+    CITY_DATA = {
+        'Barcelona': {
+            'demonym': 'barcelonés', 'region': 'Cataluña',
+            'business_desc': 'Barcelona es la capital económica del Mediterráneo y uno de los mercados más competitivos de España. Con más de 600.000 empresas activas, destacar en el entorno digital requiere una estrategia profesional y un equipo que conozca el tejido empresarial local.',
+            'why_local': f'Conocemos el mercado {svc_name_lower} en Barcelona como nadie: la competencia de cada sector, las búsquedas más frecuentes de los barceloneses, las zonas con mayor demanda y las particularidades del consumidor catalán. No es lo mismo posicionar un negocio en el Eixample que en Gràcia o en el 22@.',
+            'advantage': 'Reuniones presenciales en nuestra oficina de Barcelona, conocimiento profundo del ecosistema empresarial catalán y experiencia directa con negocios en cada barrio de la ciudad.',
+        },
+        'Madrid': {
+            'demonym': 'madrileño', 'region': 'Comunidad de Madrid',
+            'business_desc': 'Madrid es el mayor mercado empresarial de España, con más de 500.000 empresas y una competencia digital feroz. Posicionar tu negocio en la capital requiere una estrategia agresiva, conocimiento del mercado local y un equipo con experiencia probada.',
+            'why_local': f'Entendemos las dinámicas del mercado {svc_name_lower} en Madrid: la intensidad competitiva, los patrones de búsqueda de los madrileños, las diferencias entre zonas (Chamberí, Salamanca, Chamartín, Arganzuela) y el perfil del consumidor capitalino.',
+            'advantage': 'Atención personalizada con reuniones presenciales y virtuales, conocimiento del ecosistema empresarial madrileño y resultados probados con empresas de la capital.',
+        }
+    }
+    cd = CITY_DATA.get(city, CITY_DATA['Barcelona'])
+
+    # Generate 3 content sections with real local value
+    local_section_1 = auto_link(f'''<p>{cd["business_desc"]}</p>
+<p>En Comunikoo llevamos años ayudando a empresas de {city} a crecer con {svc_name_lower}. Nuestro equipo combina experiencia técnica con conocimiento local para diseñar estrategias que funcionan específicamente en el mercado {cd["demonym"]}.</p>''', current_url, max_links=3)
+
+    local_section_2 = auto_link(f'''<p>{cd["why_local"]}</p>
+<p>Trabajamos con negocios de todos los tamaños en {city}: desde autónomos y startups hasta pymes consolidadas y grandes empresas. Cada proyecto recibe una estrategia personalizada basada en datos reales del mercado local, análisis de competencia directa y objetivos de negocio específicos.</p>
+<p>Nuestros clientes en {city} obtienen resultados medibles: más tráfico cualificado, más leads, más ventas. Sin permanencia y con dashboard en tiempo real para que veas la evolución de tu proyecto en todo momento.</p>''', current_url, max_links=3)
+
+    local_section_3 = auto_link(f'''<p><strong>{cd["advantage"]}</strong></p>
+<p>No somos una agencia genérica que aplica la misma plantilla a todos los clientes. Cada negocio en {city} tiene sus particularidades, su competencia y sus oportunidades. Por eso empezamos siempre con una auditoría gratuita donde analizamos tu situación actual, tu mercado y tus competidores directos en {city}.</p>
+<p>A partir de ahí, diseñamos un plan de acción con acciones priorizadas por impacto y presupuesto. Tú decides hasta dónde quieres llegar — nosotros te mostramos el camino más eficiente para conseguirlo.</p>''', current_url, max_links=2)
+
+    # Zone cards instead of just text
+    zone_list = p.get('zones', [])
+    zone_cards = ''
+    for z in zone_list:
+        zone_cards += f'<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">{z}</span>\n'
+
     body = f'''<body class="bg-surface font-body text-on-background">
 ''' + nav_html(current_url) + f'''
 <main class="pt-20">
 {breadcrumbs}
 
-<section class="px-6 lg:px-8 max-w-7xl mx-auto py-16 lg:py-24 text-center">
-<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-bold text-xs uppercase tracking-widest mb-6">{city}</span>
-<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.1] tracking-tighter max-w-4xl mx-auto">{p["h1"]}</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
-<p class="text-on-surface-variant mt-4">Barcelona, España · <a href="mailto:hola@comunikoo.es" class="text-secondary-container">hola@comunikoo.es</a></p>
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-[#f4f6fa] to-surface px-6 lg:px-8">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mb-6">{svc_name} en {city}</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{auto_link(p.get("intro", ""), current_url, max_links=2)}</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita en {city}</a>
+<a class="px-8 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-white transition-all" href="{r(parent_url)}">Ver servicio completo</a>
+</div>
+</div>
 </section>
 
-<section class="py-16 px-6 lg:px-8 bg-surface-container-low">
-<div class="max-w-7xl mx-auto">
-<h2 class="font-headline font-extrabold text-3xl text-primary mb-8 text-center">Nuestros servicios en {city}</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- STATS -->
+<section class="bg-surface-container-low py-14">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">+320%</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">tráfico medio</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">487</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">proyectos</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">98%</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">satisfacción</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-secondary-container">0€</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">permanencia</p></div>
+</div>
+</div>
+</section>
+
+<!-- WHY LOCAL -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué elegir una agencia de {svc_name_lower} en {city}?</h2><div class="bar"></div></div>
+<div class="prose-block">{local_section_1}</div>
+</div>
+</section>
+
+<!-- SERVICES IN CITY -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Servicios de {svc_name} en {city}</h2><div class="bar"></div></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
 {services_links}
 </div>
 </div>
 </section>
 
-<section class="py-16 px-6 lg:px-8">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="font-headline font-extrabold text-2xl text-primary mb-4">Zonas de {city} donde trabajamos</h2>
-<p class="text-on-surface-variant">{zones}</p>
+<!-- CTA MID -->
+<section class="py-16 px-6 lg:px-8 bg-primary">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-headline font-bold text-2xl text-white mb-4">¿Necesitas {svc_name_lower} en {city}?</h2>
+<p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu proyecto. Sin compromiso.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">Solicitar auditoría gratis</a>
+</div>
+</section>
+
+<!-- LOCAL KNOWLEDGE -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Conocimiento local del mercado en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{local_section_2}</div>
+</div>
+</section>
+
+<!-- ZONES -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Zonas de {city} donde trabajamos</h2><div class="bar"></div></div>
+<div class="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
+{zone_cards}
+</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Ventajas de trabajar con Comunikoo en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{local_section_3}</div>
 </div>
 </section>
 
 {faq_section}
 
+<!-- CTA FINAL -->
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
-<h2 class="font-headline font-extrabold text-3xl text-white mb-6">¿Buscas {p["service_name"]} en {city}?</h2>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita presupuesto</a>
+<h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Buscas {svc_name_lower} en {city}?</h2>
+<p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu proyecto y te decimos exactamente qué hacer para crecer en {city}.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita — sin compromiso</a>
 </div>
 </section>
 </main>
