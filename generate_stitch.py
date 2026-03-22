@@ -1006,6 +1006,51 @@ def build_service_page(page):
 </div>
 </section>'''
 
+    # ── PAIN POINTS (dynamic by service cluster) ──
+    PAIN_POINTS = {
+        'seo': [
+            ("Tu competencia aparece en Google antes que tú", "Cada día que no trabajas tu SEO, tus competidores captan los clientes que deberían ser tuyos."),
+            ("Inviertes en una web pero no genera visitas", "Tener una web bonita sin SEO es como tener una tienda en un callejón sin salida."),
+            ("Dependes de los anuncios para tener visibilidad", "Cuando dejas de pagar, desapareces. El SEO genera tráfico constante sin coste por clic."),
+        ],
+        'web': [
+            ("Tu web no transmite la profesionalidad de tu negocio", "Los visitantes juzgan tu empresa en 3 segundos. Una web anticuada genera desconfianza."),
+            ("Tu web es lenta y los usuarios se van", "El 53% de los usuarios abandona si la web tarda más de 3 segundos en cargar."),
+            ("Tu web no genera contactos ni ventas", "Tener visitas sin conversiones es quemar dinero. Tu web debe estar diseñada para vender."),
+        ],
+        'ads': [
+            ("Gastas en publicidad pero no ves retorno", "Sin optimización profesional, podrías estar tirando el 40-60% de tu presupuesto publicitario."),
+            ("No sabes si tu inversión en ads es rentable", "Si no mides cada euro invertido, estás tomando decisiones a ciegas."),
+            ("Tu competencia aparece antes que tú en Google Ads", "Con la estrategia correcta, puedes superar a competidores con más presupuesto que tú."),
+        ],
+        'social': [
+            ("Publicas en redes pero no generas clientes", "Tener seguidores no es tener clientes. Necesitas una estrategia que convierta."),
+            ("No tienes tiempo para gestionar tus redes", "Publicar sin estrategia es peor que no publicar. Cada post debe tener un objetivo."),
+            ("Tu marca no conecta con tu audiencia online", "Las redes sociales son conversación, no escaparate. Si no conectas, no vendes."),
+        ],
+        'ecommerce': [
+            ("Tu tienda online no vende lo que debería", "El 97% de los visitantes se van sin comprar. Con CRO y SEO cambiamos eso."),
+            ("Dependes de marketplaces y pagas comisiones altas", "Amazon y otros se llevan un 15-30% de cada venta. Tu tienda propia te da el control."),
+            ("No sabes por qué los usuarios abandonan el carrito", "El 70% de los carritos se abandonan. Hay soluciones concretas para recuperarlos."),
+        ],
+    }
+
+    pain_points = PAIN_POINTS.get(cluster_key, PAIN_POINTS['seo'])
+
+    pain_html = ''
+    for pi, (pain_title, pain_desc) in enumerate(pain_points):
+        pain_html += f'''<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">{pain_title}</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">{pain_desc}</p>
+</div>
+</div>\n'''
+
+    # ── SOLUTION BRIDGE ──
+    service_short = p.get('h1_short', 'nuestro servicio')
+    solution_text = f'Con {service_short} de Comunikoo, estos problemas tienen solución. No prometemos magia — aplicamos metodología probada en +487 proyectos con resultados medibles desde el primer mes.'
+
     body = f'''<body class="bg-surface font-body text-on-background">
 ''' + nav_html(current_url) + f'''
 <main class="pt-20">
@@ -1019,12 +1064,30 @@ def build_service_page(page):
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
 <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
-<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="{r('/servicios/')}">Ver servicios</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
 </div>
 </div>
-<!-- Decorative circles -->
 <div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
 <div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- PAIN POINTS — Conexión emocional -->
+<section id="problema" class="bg-[#fdf6f3] py-16 px-6 lg:px-8 scroll-mt-20">
+<div style="max-width:700px;margin:0 auto">
+<p style="text-align:center;font-family:Manrope,sans-serif;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#c0392b;margin-bottom:1rem">¿Te identificas con alguno de estos problemas?</p>
+<div style="display:flex;flex-direction:column;gap:1.5rem">
+{pain_html}
+</div>
+</div>
+</section>
+
+<!-- SOLUTION BRIDGE — De problema a solución -->
+<section class="bg-primary py-14 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">{solution_text}</h2>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="{r('/contacto/')}">Cuéntanos tu caso →</a>
+</div>
 </section>
 
 <!-- STATS -->
@@ -1054,15 +1117,20 @@ def build_service_page(page):
 
 {related_section}
 
-<!-- CTA -->
+<!-- CTA FINAL — Detalle de lo que incluye -->
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">Da el primer paso</p>
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">{p.get("cta_title", "¿Empezamos?")}</h2>
-<p class="text-on-primary-container text-base mb-8">{p.get("cta_desc", "Solicita tu auditoría gratuita. Sin compromiso.")}</p>
-<div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
-<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="{r('/contacto/')}">Contactar</a>
+<p class="text-on-primary-container text-base mb-6">{p.get("cta_desc", "Solicita tu auditoría gratuita. Sin compromiso.")}</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-md mx-auto mb-8 text-left">
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Análisis completo de tu situación</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Estudio de tu competencia</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
 </div>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")} →</a>
+<p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
 </main>
