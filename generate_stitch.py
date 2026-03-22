@@ -1243,7 +1243,7 @@ def build_home():
     def render_service_category(cat_name, services):
         cards = ''
         for name, desc, url in services:
-            cards += f'<a href="{r(url)}" class="bg-surface-container-lowest p-5 rounded-xl hover:bg-primary group transition-all duration-300 no-underline"><h4 class="font-headline font-bold text-sm text-primary group-hover:text-white">{name}</h4><p class="text-xs text-on-surface-variant group-hover:text-white/70 mt-1">{desc}</p></a>\n'
+            cards += f'<a href="{r(url)}" class="bg-white p-5 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] hover:bg-primary hover:border-primary group transition-all duration-300 no-underline"><h4 class="font-headline font-bold text-sm text-primary group-hover:text-white">{name}</h4><p class="text-xs text-on-surface-variant group-hover:text-white/70 mt-1">{desc}</p></a>\n'
         return f'''<div class="mb-8">
 <h3 class="font-headline font-bold text-xl text-primary mb-4">{cat_name}</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
