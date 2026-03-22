@@ -1202,8 +1202,8 @@ def build_home():
          "En Comunikoo proporcionamos un dashboard en tiempo real donde puedes ver métricas clave: tráfico web, posiciones en Google, leads generados, coste por adquisición, tasa de conversión y retorno de inversión. Además, enviamos informes mensuales detallados con análisis y recomendaciones. Configuramos el tracking completo con Google Analytics 4 y Google Tag Manager para que cada euro invertido sea medible."),
         ("¿Trabajáis con empresas pequeñas?",
          "Sí, trabajamos con empresas de todos los tamaños: desde autónomos y startups hasta pymes y grandes empresas. Adaptamos la estrategia y el presupuesto a cada caso. Muchos de nuestros mejores casos de éxito son pequeñas empresas que han multiplicado su facturación gracias al marketing digital."),
-        ("¿Tenéis oficina en Barcelona?",
-         "Sí, tenemos oficina en Barcelona. Atendemos con cita previa tanto de forma presencial como por videoconferencia. También tenemos presencia activa en Madrid y trabajamos con clientes de toda España."),
+        ("¿Trabajáis con clientes de toda España?",
+         "Sí, aunque nuestra sede está en Barcelona, trabajamos con clientes de toda España. Atendemos tanto de forma presencial como por videoconferencia. Tenemos presencia activa en Barcelona y Madrid, y gestionamos proyectos en todas las comunidades autónomas."),
         ("¿Ofrecéis contrato sin permanencia?",
          "Sí, todos nuestros servicios son sin permanencia. Trabajamos mes a mes y nos ganamos tu confianza con resultados, no con contratos de larga duración. Puedes cancelar en cualquier momento con un preaviso de 30 días. El 98 por ciento de nuestros clientes renuevan porque ven resultados reales."),
     ]
