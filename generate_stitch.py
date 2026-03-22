@@ -1047,9 +1047,16 @@ def build_service_page(page):
 </div>
 </div>\n'''
 
-    # ── SOLUTION BRIDGE ──
+    # ── SOLUTION BRIDGE (unique per cluster) ──
     service_short = p.get('h1_short', 'nuestro servicio')
-    solution_text = f'Con {service_short} de Comunikoo, estos problemas tienen solución. No prometemos magia — aplicamos metodología probada en +487 proyectos con resultados medibles desde el primer mes.'
+    SOLUTION_TEXTS = {
+        'seo': f'El SEO no es suerte ni trucos — es estrategia, datos y ejecución constante. Nuestro equipo ha posicionado más de 487 proyectos en Google. Sabemos exactamente qué hacer para que tu negocio escale posiciones y capte el tráfico que tu competencia se lleva hoy.',
+        'web': f'Una web profesional no es un gasto, es tu mejor comercial — trabaja para ti 24/7, 365 días al año. Diseñamos webs que transmiten confianza en 3 segundos, cargan en menos de 2 y convierten visitantes en clientes reales.',
+        'ads': f'Cada euro que inviertes en publicidad debe volver multiplicado. Gestionamos más de 5.8 millones de euros en campañas con un enfoque obsesivo en el ROAS. Si tu publicidad no es rentable, cambiamos la estrategia hasta que lo sea.',
+        'social': f'Las redes sociales no van de publicar bonito — van de construir una comunidad que confíe en tu marca y compre. Convertimos seguidores en clientes con contenido estratégico, no aleatorio.',
+        'ecommerce': f'Tu tienda online puede facturar mucho más de lo que factura hoy. Optimizamos cada paso del funnel — desde que el usuario te encuentra hasta que completa la compra — para que cada visita cuente.',
+    }
+    solution_text = SOLUTION_TEXTS.get(cluster_key, f'Con {service_short} de Comunikoo transformamos estos problemas en oportunidades de crecimiento para tu negocio.')
 
     body = f'''<body class="bg-surface font-body text-on-background">
 ''' + nav_html(current_url) + f'''
