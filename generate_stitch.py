@@ -218,19 +218,20 @@ details summary::-webkit-details-marker {{ display: none; }}
 .card-grid.g5 > * {{ width: calc(33.33% - 1rem); min-width: 200px; }}
 .card-grid.g6 {{ grid-template-columns: repeat(3,1fr); max-width: 860px; }}
 @media(max-width:767px) {{
-  .card-grid {{ grid-template-columns: 1fr 1fr !important; max-width: 100% !important; gap: .75rem !important; }}
-  .card-grid.g2 {{ grid-template-columns: 1fr 1fr !important; }}
-  .svc-card {{ padding: 1.25rem 1rem !important; }}
-  .svc-card h3 {{ font-size: .8rem !important; }}
-  .svc-card p {{ font-size: .72rem !important; }}
-  .svc-card .svc-icon {{ width: 44px !important; height: 44px !important; }}
-  .sec-block {{ padding: 3rem 0 !important; }}
-  .sec-heading h2 {{ font-size: 1.3rem !important; }}
-  .sec-intro {{ font-size: .88rem !important; }}
-  .prose-block {{ font-size: .85rem !important; }}
-  .prose-block h3 {{ font-size: .95rem !important; }}
+  .card-grid {{ grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1rem !important; }}
+  .card-grid.g5 > * {{ width: 100% !important; min-width: 0 !important; }}
+  .svc-card {{ padding: 1.5rem 1.25rem !important; }}
+  .svc-card h3 {{ font-size: .95rem !important; }}
+  .svc-card p {{ font-size: .85rem !important; line-height: 1.6 !important; }}
+  .svc-card .svc-icon {{ width: 48px !important; height: 48px !important; }}
+  .sec-block {{ padding: 2.5rem 0 !important; }}
+  .sec-heading h2 {{ font-size: 1.4rem !important; }}
+  .sec-intro {{ font-size: .9rem !important; }}
+  .prose-block {{ font-size: .9rem !important; }}
+  .prose-block h3 {{ font-size: 1rem !important; }}
   .container {{ padding: 0 1.25rem !important; }}
   [style*="grid-template-columns:1fr 1fr"] {{ grid-template-columns: 1fr !important; }}
+  [style*="grid-template-columns:repeat"] {{ grid-template-columns: 1fr !important; }}
   [style*="display:grid;grid-template-columns:repeat"] {{ grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }}
 }}
 @media(max-width:400px) {{
