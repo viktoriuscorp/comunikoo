@@ -6,9 +6,11 @@
 <title>Diseño Web One Page | Landing Pages de Alta Conversión</title>
 <meta name="description" content="Diseño web one page profesional. Creamos landing pages y webs de una sola página optimizadas para la conversión, con scroll fluido y llamadas a la acción estratégicas.">
 <link rel="canonical" href="https://comunikoo.es/servicios/diseno-web/diseno-web-one-page/">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
 <script>
 tailwind.config = {
   darkMode: "class",
@@ -47,7 +49,7 @@ tailwind.config = {
 }
 </script>
 <style>
-.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.icon-inline { display: inline-flex; align-items: center; vertical-align: middle; }
 details summary { cursor: pointer; }
 details summary::-webkit-details-marker { display: none; }
 
@@ -231,7 +233,7 @@ details summary::-webkit-details-marker { display: none; }
 <a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../../contacto/index.html">Auditoría gratis</a>
 </div>
 <button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-<span class="material-symbols-outlined text-3xl">menu</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
 </button>
 </div>
 </nav>
@@ -239,13 +241,13 @@ details summary::-webkit-details-marker { display: none; }
 <div class="flex justify-between items-center px-6 py-5 border-b">
 <a href="../../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
 <button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
-<span class="material-symbols-outlined text-3xl text-primary">close</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
 </button>
 </div>
 <div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
 
 <details style="border-bottom:1px solid #e5e7eb">
-<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
 <div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../servicios/agencia-seo/index.html">Agencia SEO</a>
@@ -269,7 +271,7 @@ details summary::-webkit-details-marker { display: none; }
 </details>
 
 <details style="border-bottom:1px solid #e5e7eb">
-<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="material-symbols-outlined" style="font-size:1.2rem">expand_more</span></summary>
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
 <div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-restaurantes/index.html">Restaurantes</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../../marketing-para-hoteles/index.html">Hoteles</a>
@@ -300,7 +302,7 @@ details summary::-webkit-details-marker { display: none; }
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">El diseño web one page concentra toda la información en una única página con scroll vertical. Es la solución perfecta para negocios que necesitan una web directa, impactante y enfocada en una sola acción de conversión. Menos páginas, más resultados.</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
 <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../../contacto/index.html">Auditoría gratis</a>
-<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="../../../servicios/index.html">Ver servicios</a>
 </div>
 </div>
 <!-- Decorative circles -->
@@ -347,7 +349,7 @@ details summary::-webkit-details-marker { display: none; }
 <div class="container">
 <div class="sec-heading"><h2>¿Qué es una web one page y para quién es ideal?</h2><div class="bar"></div></div>
 
-<div class="card-grid g1"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">search</span></div><h3>¿Para quién es ideal una web one page?</h3><p>El diseño one page funciona especialmente bien cuando tienes un objetivo de conversión claro y quieres guiar al usuario directamente hacia él sin distracciones.</p></div>
+<div class="card-grid g1"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>¿Para quién es ideal una web one page?</h3><p>El diseño one page funciona especialmente bien cuando tienes un objetivo de conversión claro y quieres guiar al usuario directamente hacia él sin distracciones.</p></div>
 </div>
 
 </div>
@@ -362,12 +364,12 @@ details summary::-webkit-details-marker { display: none; }
 </div>
 <div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">speed</span> Narrativa controlada — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span> Narrativa controlada — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Tú decides el orden exacto en que el usuario consume la información. Puedes construir un argumentario persuasivo que lleve al visitante desde el problema hasta la solución, culminando con una llamada a la acción irresistible.</p></div>
 </details>
 <details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">location_on</span> Experiencia móvil nativa — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Experiencia móvil nativa — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El scroll vertical es el gesto más natural en dispositivos móviles. Una web one page se siente como una experiencia nativa en el smartphone, lo que mejora la usabilidad y las tasas de conversión.</p>
                 <ul>
                     <li><strong>Mayor tasa de conversión:</strong> al concentrar la atención en un solo objetivo, se eliminan las distracciones y fugas de navegación.</li>
@@ -388,35 +390,35 @@ Auditoría gratis →</a></div>
 <div class="container">
 <div class="sec-heading"><h2>Estructura ideal de una web one page que convierte</h2><div class="bar"></div></div>
 
-<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">trending_up</span></div><h3>1. Hero section con propuesta de valor</h3><p>La primera pantalla debe captar la atención en 3 segundos.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">verified</span></div><h3>2. Problema y solución</h3><p>Identifica el dolor del cliente y presenta tu solución.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">rocket_launch</span></div><h3>3. Servicios o beneficios</h3><p>Presenta de forma visual y concisa qué ofreces y por qué eres la mejor opción.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">psychology</span></div><h3>4. Prueba social</h3><p>Testimonios reales, logos de clientes, casos de éxito o cifras de resultados que generen confianza.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="material-symbols-outlined" style="color:#fd8b00;font-size:1.4rem">timeline</span></div><h3>5. CTA final y formulario de contacto</h3><p>Cierra con una llamada a la acción clara y un formulario simple.</p></div>
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span></div><h3>1. Hero section con propuesta de valor</h3><p>La primera pantalla debe captar la atención en 3 segundos.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5Z"/></svg></span></div><h3>2. Problema y solución</h3><p>Identifica el dolor del cliente y presenta tu solución.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.7 1-1.8.5-2.5-.5-.7-1.6-.8-2.4-.5z"/><path d="M12 13l-1-1"/><path d="M15 10l-1-1"/><path d="M6 22c0-4 4-8 12-12C22 6 22 2 22 2S18 2 14 6c-4 8-8 12-12 12z"/></svg></span></div><h3>3. Servicios o beneficios</h3><p>Presenta de forma visual y concisa qué ofreces y por qué eres la mejor opción.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V22h6v-4.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8z"/><path d="M10 17h4"/></svg></span></div><h3>4. Prueba social</h3><p>Testimonios reales, logos de clientes, casos de éxito o cifras de resultados que generen confianza.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 12 4-4 4 4 4-6"/></svg></span></div><h3>5. CTA final y formulario de contacto</h3><p>Cierra con una llamada a la acción clara y un formulario simple.</p></div>
 </div>
 <div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">trending_up</span> 1. Hero section con propuesta de valor — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span> 1. Hero section con propuesta de valor — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>La primera pantalla debe captar la atención en 3 segundos: titular potente, subtítulo explicativo, imagen/vídeo impactante y CTA principal visible sin hacer scroll.</p></div>
 </details>
 <details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">verified</span> 2. Problema y solución — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5Z"/></svg></span> 2. Problema y solución — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Identifica el dolor del cliente y presenta tu solución. Usa lenguaje emocional y concreto que conecte con las necesidades reales de tu público.</p></div>
 </details>
 <details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">rocket_launch</span> 3. Servicios o beneficios — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.7 1-1.8.5-2.5-.5-.7-1.6-.8-2.4-.5z"/><path d="M12 13l-1-1"/><path d="M15 10l-1-1"/><path d="M6 22c0-4 4-8 12-12C22 6 22 2 22 2S18 2 14 6c-4 8-8 12-12 12z"/></svg></span> 3. Servicios o beneficios — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Presenta de forma visual y concisa qué ofreces y por qué eres la mejor opción. Iconos, cifras y textos breves.</p></div>
 </details>
 <details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">psychology</span> 4. Prueba social — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V22h6v-4.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8z"/><path d="M10 17h4"/></svg></span> 4. Prueba social — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Testimonios reales, logos de clientes, casos de éxito o cifras de resultados que generen confianza.</p></div>
 </details>
 <details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
 <summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="material-symbols-outlined" style="color:#fd8b00;font-size:1rem">timeline</span> 5. CTA final y formulario de contacto — Leer más</summary>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 12 4-4 4 4 4-6"/></svg></span> 5. CTA final y formulario de contacto — Leer más</summary>
 <div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Cierra con una llamada a la acción clara y un formulario simple. Menos campos = más conversiones.</p>
                 <ul>
                     <li><strong>Navegación fija:</strong> menú sticky que permite saltar entre secciones.</li>
@@ -470,35 +472,35 @@ Auditoría gratis →</a></div>
 <details class="bg-surface-container-lowest p-6 rounded-xl group">
 <summary class="font-headline font-bold text-primary flex justify-between items-center">
 ¿Una web one page es buena para SEO?
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
 </summary>
 <p class="text-on-surface-variant mt-4 leading-relaxed">Una web one page tiene limitaciones para SEO ya que solo tiene una URL. Es ideal para campañas de pago (SEM) y branding, pero si necesitas posicionar múltiples palabras clave, recomendamos complementarla con un blog o páginas adicionales.</p>
 </details>
 <details class="bg-surface-container-lowest p-6 rounded-xl group">
 <summary class="font-headline font-bold text-primary flex justify-between items-center">
 ¿Cuánto cuesta una web one page?
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
 </summary>
 <p class="text-on-surface-variant mt-4 leading-relaxed">Al tener menor complejidad que una web multipágina, el coste es significativamente más bajo. Contacta con nosotros para un presupuesto personalizado según las funcionalidades que necesites.</p>
 </details>
 <details class="bg-surface-container-lowest p-6 rounded-xl group">
 <summary class="font-headline font-bold text-primary flex justify-between items-center">
 ¿Puedo ampliar mi web one page en el futuro?
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
 </summary>
 <p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Diseñamos las webs one page con una base técnica que permite ampliarlas a una web multipágina cuando tu negocio crezca y lo requiera.</p>
 </details>
 <details class="bg-surface-container-lowest p-6 rounded-xl group">
 <summary class="font-headline font-bold text-primary flex justify-between items-center">
 ¿Cuánto se tarda en crear una web one page?
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
 </summary>
 <p class="text-on-surface-variant mt-4 leading-relaxed">El plazo habitual es de 2 a 4 semanas, incluyendo diseño, desarrollo, contenidos y optimización. Es una de las opciones más rápidas para tener presencia digital profesional.</p>
 </details>
 <details class="bg-surface-container-lowest p-6 rounded-xl group">
 <summary class="font-headline font-bold text-primary flex justify-between items-center">
 ¿Una web one page funciona bien en móvil?
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
 </summary>
 <p class="text-on-surface-variant mt-4 leading-relaxed">Excepcionalmente bien. El scroll vertical es el gesto más natural en smartphones, por lo que la experiencia de usuario en móvil es excelente. De hecho, el formato one page nació pensando en la navegación móvil.</p>
 </details>
@@ -513,19 +515,19 @@ Auditoría gratis →</a></div>
 <div class="container">
 <div class="sec-heading"><h2 style="font-size:1.3rem">Más sobre Diseño Web</h2><div class="bar"></div></div>
 <div class="card-grid g3"><a href="../../../servicios/diseno-web/diseno-web-corporativo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
 <h3 style="font-size:.8rem">Diseño Web Corporativo</h3>
 </a>
 <a href="../../../servicios/diseno-web/diseno-web-responsive/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
 <h3 style="font-size:.8rem">Diseño Web Responsive</h3>
 </a>
 <a href="../../../servicios/diseno-web/diseno-ux-ui/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
 <h3 style="font-size:.8rem">Diseño UX UI</h3>
 </a>
 <a href="../../../servicios/diseno-web/rediseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.4rem;color:#fd8b00;margin-bottom:.4rem">arrow_forward</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
 <h3 style="font-size:.8rem">Rediseño Web</h3>
 </a>
 </div>
@@ -541,27 +543,27 @@ Auditoría gratis →</a></div>
 <div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
 <div class="card-grid g3">
 <a href="../../../servicios/agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">search</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
 <h3 style="font-size:.8rem">Agencia SEO</h3>
 </a>
 <a href="../../../servicios/diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">web</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
 <h3 style="font-size:.8rem">Diseño Web</h3>
 </a>
 <a href="../../../servicios/agencia-google-ads/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">ads_click</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
 <h3 style="font-size:.8rem">Google Ads</h3>
 </a>
 <a href="../../../servicios/community-manager/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">share</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
 <h3 style="font-size:.8rem">Community Manager</h3>
 </a>
 <a href="../../../servicios/tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">shopping_cart</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.1 2.1h3.5l2.6 12.5a2 2 0 0 0 2 1.5h7.7a2 2 0 0 0 2-1.5L22 7H6"/></svg></span>
 <h3 style="font-size:.8rem">Tiendas Online</h3>
 </a>
 <a href="../../../servicios/email-marketing/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">mail</span>
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
 <h3 style="font-size:.8rem">Email Marketing</h3>
 </a>
 
@@ -576,7 +578,7 @@ Auditoría gratis →</a></div>
 <p class="text-on-primary-container text-base mb-8">Solicita tu auditoría gratuita. Sin compromiso.</p>
 <div class="flex flex-wrap gap-4 justify-center">
 <a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../../../contacto/index.html">Solicitar presupuesto one page</a>
-<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="../../../contacto/index.html">Contactar</a>
 </div>
 </div>
 </section>
@@ -586,8 +588,6 @@ Auditoría gratis →</a></div>
 <div class="space-y-4 lg:col-span-1">
 <div class="text-xl font-black text-secondary-container">Comunikoo</div>
 <p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
-<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
 <p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
 </div>
 <div class="space-y-3">

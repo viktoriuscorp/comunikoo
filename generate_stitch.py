@@ -14,6 +14,53 @@ OUTPUT_DIR = BASE_DIR
 sys.path.insert(0, str(BASE_DIR))
 
 # ============================================================
+# SVG ICONS (replace Material Symbols — saves 1MB font download)
+# ============================================================
+SVG_ICONS = {
+    "search": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+    "web": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+    "ads_click": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg>',
+    "share": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg>',
+    "shopping_cart": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.1 2.1h3.5l2.6 12.5a2 2 0 0 0 2 1.5h7.7a2 2 0 0 0 2-1.5L22 7H6"/></svg>',
+    "mail": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>',
+    "arrow_forward": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
+    "expand_more": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>',
+    "menu": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>',
+    "close": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
+    "verified": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15 8.5 22 9.3 17 14 18.2 21 12 17.8 5.8 21 7 14 2 9.3 9 8.5Z"/></svg>',
+    "trending_up": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>',
+    "star": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg>',
+    "location_on": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>',
+    "groups": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    "schedule": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+    "dashboard": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>',
+    "lock_open": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>',
+    "call": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2z"/></svg>',
+    # Fallback icons used in ICONS list
+    "edit_note": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg>',
+    "tune": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg>',
+    "link": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg>',
+    "speed": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg>',
+    "insights": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-6"/></svg>',
+    "build": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.2 6.2a2.1 2.1 0 0 1-3-3l6.2-6.2a6 6 0 0 1 7.9-7.9z"/></svg>',
+    "rocket_launch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.7 1-1.8.5-2.5-.5-.7-1.6-.8-2.4-.5z"/><path d="M12 13l-1-1"/><path d="M15 10l-1-1"/><path d="M6 22c0-4 4-8 12-12C22 6 22 2 22 2S18 2 14 6c-4 8-8 12-12 12z"/></svg>',
+    "psychology": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V22h6v-4.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8z"/><path d="M10 17h4"/></svg>',
+    "timeline": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 12 4-4 4 4 4-6"/></svg>',
+    "workspace_premium": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.2 14.5 6 22l6-3 6 3-2.2-7.5"/></svg>',
+    "auto_awesome": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.3 17 14 18.5 21 12 17 5.5 21 7 14 2 9.3 9 9"/></svg>',
+}
+
+def icon(name, size=24, cls=""):
+    """Return SVG icon inline, replacing Material Symbols font."""
+    svg = SVG_ICONS.get(name, SVG_ICONS.get('star', ''))
+    # Adjust size
+    if size != 24:
+        svg = svg.replace('width="24"', f'width="{size}"').replace('height="24"', f'height="{size}"')
+    if cls:
+        svg = svg.replace('<svg ', f'<svg class="{cls}" ')
+    return svg
+
+# ============================================================
 # RELATIVE URL SYSTEM
 # ============================================================
 def rel(target_url, current_url):
@@ -129,12 +176,14 @@ def head_html(title, meta_desc, canonical, schema=""):
 <title>{title}</title>
 <meta name="description" content="{meta_desc}">
 <link rel="canonical" href="https://comunikoo.es{canonical}">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
 {TAILWIND_CONFIG}
 <style>
-.material-symbols-outlined {{ font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }}
+.icon-inline {{ display: inline-flex; align-items: center; vertical-align: middle; }}
 details summary {{ cursor: pointer; }}
 details summary::-webkit-details-marker {{ display: none; }}
 
@@ -383,8 +432,6 @@ def footer_html(current_url="/"):
 <div class="space-y-4 lg:col-span-1">
 <div class="text-xl font-black text-secondary-container">Comunikoo</div>
 <p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p class="text-on-primary-container text-sm">Aragó 4, Barcelona 08015</p>
-<p class="text-on-primary-container text-sm"><a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
 <p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
 </div>
 <div class="space-y-3">
@@ -897,7 +944,7 @@ def build_service_page(page):
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
 <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
-<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="tel:+34608721015">+34 608 721 015</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="{r('/servicios/')}">Ver servicios</a>
 </div>
 </div>
 <!-- Decorative circles -->
@@ -939,7 +986,7 @@ def build_service_page(page):
 <p class="text-on-primary-container text-base mb-8">{p.get("cta_desc", "Solicita tu auditoría gratuita. Sin compromiso.")}</p>
 <div class="flex flex-wrap gap-4 justify-center">
 <a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
-<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="{r('/contacto/')}">Contactar</a>
 </div>
 </div>
 </section>
@@ -1086,7 +1133,7 @@ def build_geo_page(page):
 <span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-bold text-xs uppercase tracking-widest mb-6">{city}</span>
 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.1] tracking-tighter max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
-<p class="text-on-surface-variant mt-4">{p.get("address", "Aragó 4, Barcelona 08015")} · <a href="tel:+34608721015" class="text-secondary-container">+34 608 721 015</a></p>
+<p class="text-on-surface-variant mt-4">Barcelona, España · <a href="mailto:hola@comunikoo.es" class="text-secondary-container">hola@comunikoo.es</a></p>
 </section>
 
 <section class="py-16 px-6 lg:px-8 bg-surface-container-low">
@@ -1145,7 +1192,7 @@ def build_home():
         ("¿Trabajáis con empresas pequeñas?",
          "Sí, trabajamos con empresas de todos los tamaños: desde autónomos y startups hasta pymes y grandes empresas. Adaptamos la estrategia y el presupuesto a cada caso. Muchos de nuestros mejores casos de éxito son pequeñas empresas que han multiplicado su facturación gracias al marketing digital."),
         ("¿Tenéis oficina en Barcelona?",
-         "Sí, nuestra oficina central está en Aragó 4, Barcelona 08015. Atendemos con cita previa tanto de forma presencial como por videoconferencia. También tenemos presencia activa en Madrid y trabajamos con clientes de toda España."),
+         "Sí, tenemos oficina en Barcelona. Atendemos con cita previa tanto de forma presencial como por videoconferencia. También tenemos presencia activa en Madrid y trabajamos con clientes de toda España."),
         ("¿Ofrecéis contrato sin permanencia?",
          "Sí, todos nuestros servicios son sin permanencia. Trabajamos mes a mes y nos ganamos tu confianza con resultados, no con contratos de larga duración. Puedes cancelar en cualquier momento con un preaviso de 30 días. El 98 por ciento de nuestros clientes renuevan porque ven resultados reales."),
     ]
@@ -1510,12 +1557,12 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <section class="py-28 px-6 lg:px-8 max-w-7xl mx-auto">
 <div class="text-center mb-16 max-w-3xl mx-auto">
 <h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-6">Agencia de Marketing Digital en Barcelona y Madrid</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">Nuestra sede central está en Barcelona, en la calle Aragó 4 del barrio del Eixample (08015). Desde aquí atendemos a clientes de toda el área metropolitana de Barcelona: Eixample, Gràcia, Sarrià-Sant Gervasi, Born, Poblenou (22@), Les Corts, Hospitalet de Llobregat, Badalona y Sant Cugat. También contamos con presencia activa en Madrid, donde damos servicio a empresas de toda la capital y su zona de influencia.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed">Nuestra sede central está en Barcelona, desde donde atendemos a clientes de toda el área metropolitana: Eixample, Gràcia, Sarrià-Sant Gervasi, Born, Poblenou (22@), Les Corts, Hospitalet de Llobregat, Badalona y Sant Cugat. También contamos con presencia activa en Madrid, donde damos servicio a empresas de toda la capital y su zona de influencia.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <a href="{r('/agencia-marketing-digital-barcelona/')}" class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all no-underline">
 <div class="font-headline font-extrabold text-4xl text-primary mb-2">Barcelona</div>
-<p class="text-on-surface-variant">Oficina central — Aragó 4, 08015</p>
+<p class="text-on-surface-variant">Oficina central — Barcelona</p>
 <p class="text-on-surface-variant text-sm mt-2">SEO, diseño web, Google Ads, redes sociales y todos nuestros servicios de marketing digital en Barcelona y área metropolitana.</p>
 </a>
 <a href="{r('/agencia-marketing-digital-madrid/')}" class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all no-underline">
@@ -1558,7 +1605,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu web y tu competencia sin compromiso. Te presentamos un plan de acción personalizado para hacer crecer tu negocio con marketing digital.</p>
 <div class="flex flex-wrap gap-4 justify-center">
 <a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
-<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="tel:+34608721015">+34 608 721 015</a>
+<a class="text-white font-bold px-10 py-4 rounded-lg border-2 border-white/20 hover:bg-white/10 transition-all" href="{r('/contacto/')}">Contactar</a>
 </div>
 </div>
 </section>
@@ -1618,10 +1665,9 @@ def build_contact_page():
 <h3 class="font-headline font-bold text-2xl mb-4 flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary-container">location_on</span> Oficina Barcelona
 </h3>
-<p class="text-on-primary-container text-lg leading-relaxed">Aragó 4<br>08015 Barcelona<br>España</p>
+<p class="text-on-primary-container text-lg leading-relaxed">Barcelona, España</p>
 </div>
 <div class="space-y-3">
-<p class="flex items-center gap-4 text-on-primary-container"><span class="material-symbols-outlined">call</span> <a href="tel:+34608721015" class="hover:text-white">+34 608 721 015</a></p>
 <p class="flex items-center gap-4 text-on-primary-container"><span class="material-symbols-outlined">mail</span> <a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
 <p class="flex items-center gap-4 text-on-primary-container"><span class="material-symbols-outlined">schedule</span> Lunes a Viernes, 9:00 - 20:00</p>
 </div>
@@ -1707,7 +1753,38 @@ def build_simple_page(title, meta_desc, url, h1, content_html_str):
 # ============================================================
 # MAIN GENERATOR
 # ============================================================
+import re as _re
+
+def _replace_material_icons(html):
+    """Replace <span class="material-symbols-outlined...">icon_name</span> with inline SVG."""
+    def _repl(m):
+        attrs = m.group(1)
+        icon_name = m.group(2).strip()
+        # Extract style/class info
+        style_match = _re.search(r'style="([^"]*)"', attrs)
+        style = style_match.group(1) if style_match else ''
+        # Get size from font-size in style
+        size = 24
+        size_match = _re.search(r'font-size:\s*([\d.]+)rem', style)
+        if size_match:
+            size = int(float(size_match.group(1)) * 16)
+        size_match2 = _re.search(r'text-(\d)xl', attrs)
+        if size_match2:
+            sizes = {'2': 24, '3': 30}
+            size = sizes.get(size_match2.group(1), 24)
+        svg = SVG_ICONS.get(icon_name, SVG_ICONS.get('star', ''))
+        if size != 24:
+            svg = svg.replace('width="24"', f'width="{size}"').replace('height="24"', f'height="{size}"')
+        # Preserve color style
+        color_style = ''
+        color_match = _re.search(r'color:\s*([^;"]+)', style)
+        if color_match:
+            color_style = f' style="color:{color_match.group(1)}"'
+        return f'<span class="icon-inline"{color_style}>{svg}</span>'
+    return _re.sub(r'<span class="material-symbols-outlined([^"]*)"[^>]*>([^<]+)</span>', _repl, html)
+
 def write_page(path, html):
+    html = _replace_material_icons(html)
     out = OUTPUT_DIR / path.strip('/') / 'index.html' if path != '/' else OUTPUT_DIR / 'index.html'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding='utf-8')
