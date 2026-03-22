@@ -165,8 +165,8 @@ details summary::-webkit-details-marker {{ display: none; }}
 @media(min-width:768px) {{ .sec-block {{ padding: 5.5rem 0; }} }}
 
 /* ── Cards: white, shadow, uniform, centered content ── */
-.svc-card {{ background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); text-align: center; transition: all .25s ease; }}
-.svc-card:hover {{ box-shadow: 0 6px 24px rgba(0,0,0,.1); transform: translateY(-2px); }}
+.svc-card {{ background: #fff; border-radius: 10px; padding: 2rem 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); border: 1px solid rgba(0,0,0,.06); text-align: center; transition: all .25s ease; }}
+.svc-card:hover {{ box-shadow: 0 6px 24px rgba(0,0,0,.12); border-color: rgba(0,0,0,.1); transform: translateY(-2px); }}
 .svc-card .svc-icon {{ width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.1rem; }}
 .svc-card h3 {{ font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 700; color: #001e40; margin-bottom: .4rem; }}
 .svc-card p {{ font-size: .78rem; line-height: 1.7; color: #43474f; margin: 0; }}
@@ -738,7 +738,7 @@ def build_service_page(page):
             # Cases as cards (from H3 items)
             if items:
                 for item in items:
-                    body_html += f'''<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 1px 6px rgba(0,0,0,.05);max-width:700px;margin:1.25rem auto">
+                    body_html += f'''<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
 <h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">{item["title"]}</h3>
 <div class="prose-block" style="max-width:none;margin:0">{item["body"]}</div></div>\n'''
 
@@ -748,7 +748,7 @@ def build_service_page(page):
             if quote_match:
                 quote = quote_match.group(1).strip()
                 author = author_match.group(1).strip() if author_match else ''
-                body_html += f'''<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.05);border-left:4px solid #fd8b00">
+                body_html += f'''<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);border-left:4px solid #fd8b00">
 <p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"{quote}"</p>
 <p style="font-size:.8rem;color:#737780;margin:0">— {author}</p></div>'''
 
@@ -989,7 +989,7 @@ def build_vertical_page(page):
 
     services_cards = ''
     for svc in p.get('services', []):
-        services_cards += f'''<div class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500">
+        services_cards += f'''<div class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">star</span>
 </div>
@@ -1358,32 +1358,32 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <div class="h-1.5 w-24 bg-secondary-container mx-auto mt-6"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a href="{r('/servicios/agencia-seo/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/agencia-seo/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">search</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">SEO y Posicionamiento Web</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Posicionamos tu negocio en las primeras posiciones de Google con estrategia de SEO probada. Auditoría técnica, keyword research, contenidos optimizados y link building de calidad. El canal con mejor retorno a largo plazo para cualquier negocio.</p>
 </a>
-<a href="{r('/servicios/diseno-web/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/diseno-web/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">web</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Diseño Web Profesional</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Webs rápidas, bonitas y que convierten visitantes en clientes. Diseño responsive, optimizado para SEO y con experiencia de usuario pensada para vender. WordPress, desarrollo a medida y tiendas online.</p>
 </a>
-<a href="{r('/servicios/agencia-google-ads/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/agencia-google-ads/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">ads_click</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Google Ads y SEM</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Campañas de publicidad en Google rentables que generan clientes reales desde el primer día. Google Partner con más de 5.8 millones de euros gestionados en campañas. Búsqueda, Shopping, Display y YouTube.</p>
 </a>
-<a href="{r('/servicios/community-manager/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/community-manager/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">share</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Redes Sociales</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Community manager profesional, estrategia de contenido y publicidad en redes sociales. Instagram, Facebook, LinkedIn y TikTok. Contenido que conecta con tu audiencia y convierte seguidores en clientes.</p>
 </a>
-<a href="{r('/servicios/tienda-online/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/tienda-online/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">shopping_cart</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Tiendas Online</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Shopify, WooCommerce y PrestaShop. Creamos tiendas online profesionales listas para vender desde el día uno. Diseño orientado a conversión, pasarela de pago integrada y SEO para ecommerce.</p>
 </a>
-<a href="{r('/servicios/email-marketing/')}" class="bg-surface-container-lowest p-8 rounded-xl group hover:bg-primary transition-all duration-500 no-underline">
+<a href="{r('/servicios/email-marketing/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">mail</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">Email Marketing</h3>
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Automatizaciones, newsletters y campañas de email que convierten. El canal digital con mayor retorno de inversión. Segmentación avanzada, flows automatizados y diseño profesional.</p>
