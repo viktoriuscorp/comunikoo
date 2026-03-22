@@ -329,6 +329,7 @@ def nav_html(current_url="/"):
 </div>
 </div>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/nosotros/')}">Nosotros</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/blog/')}">Blog</a>
 <a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratis</a>
 </div>
 <button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
@@ -385,6 +386,7 @@ def nav_html(current_url="/"):
 </details>
 
 <a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="{r('/nosotros/')}">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="{r('/blog/')}">Blog</a>
 <a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="{r('/contacto/')}">Contacto</a>
 
 <a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="{r('/contacto/')}">Auditoría gratuita</a>
@@ -815,24 +817,116 @@ def build_service_page(page):
 </section>'''
 
     # --- RELATED SERVICES (always 6 items → 3+3 symmetric) ---
-    all_related = [
-        ("Agencia SEO", "/servicios/agencia-seo/", "search"),
-        ("Diseño Web", "/servicios/diseno-web/", "web"),
-        ("Google Ads", "/servicios/agencia-google-ads/", "ads_click"),
-        ("Community Manager", "/servicios/community-manager/", "share"),
-        ("Tiendas Online", "/servicios/tienda-online/", "shopping_cart"),
-        ("Email Marketing", "/servicios/email-marketing/", "mail"),
-        ("SEO Local", "/servicios/agencia-seo-local/", "location_on"),
-        ("Facebook Ads", "/servicios/agencia-facebook-ads/", "thumb_up"),
-        ("WordPress", "/servicios/diseno-web-wordpress/", "code"),
-    ]
-    # Pick 6 that are NOT the current page
-    related_items = [item for item in all_related if item[1] != current_url][:6]
+    # ── CONTEXTUAL RELATED SERVICES (by cluster) ──
+    SERVICE_CLUSTERS = {
+        'seo': [
+            ("Agencia SEO", "/servicios/agencia-seo/"),
+            ("SEO Local", "/servicios/agencia-seo-local/"),
+            ("Auditoría SEO", "/servicios/auditoria-seo/"),
+            ("Consultoría SEO", "/servicios/consultoria-seo/"),
+            ("Posicionamiento Web", "/servicios/posicionamiento-web/"),
+            ("Linkbuilding", "/servicios/linkbuilding/"),
+            ("SEO Ecommerce", "/servicios/seo-para-ecommerce/"),
+            ("Marketing Contenidos", "/servicios/marketing-de-contenidos/"),
+            ("Analítica Web", "/servicios/analitica-web/"),
+        ],
+        'web': [
+            ("Diseño Web", "/servicios/diseno-web/"),
+            ("WordPress", "/servicios/diseno-web-wordpress/"),
+            ("Desarrollo Web", "/servicios/desarrollo-web/"),
+            ("Landing Pages", "/servicios/landing-pages/"),
+            ("Mantenimiento Web", "/servicios/mantenimiento-web/"),
+            ("Diseño a Medida", "/servicios/diseno-web-a-medida/"),
+            ("Web para Empresas", "/servicios/diseno-web-para-empresas/"),
+            ("Optimización CRO", "/servicios/optimizacion-cro/"),
+        ],
+        'ads': [
+            ("Google Ads", "/servicios/agencia-google-ads/"),
+            ("Facebook Ads", "/servicios/agencia-facebook-ads/"),
+            ("Meta Ads", "/servicios/agencia-meta-ads/"),
+            ("Instagram Ads", "/servicios/instagram-ads/"),
+            ("YouTube Ads", "/servicios/youtube-ads/"),
+            ("Publicidad Google", "/servicios/publicidad-en-google/"),
+            ("Google Shopping", "/servicios/google-shopping/"),
+            ("Landing Pages", "/servicios/landing-pages/"),
+        ],
+        'social': [
+            ("Community Manager", "/servicios/community-manager/"),
+            ("Gestión Redes", "/servicios/gestion-redes-sociales/"),
+            ("Social Media", "/servicios/social-media-marketing/"),
+            ("Publicidad Redes", "/servicios/publicidad-redes-sociales/"),
+            ("Marketing Contenidos", "/servicios/marketing-de-contenidos/"),
+            ("Inbound Marketing", "/servicios/inbound-marketing/"),
+            ("Email Marketing", "/servicios/email-marketing/"),
+            ("Branding", "/servicios/branding/"),
+        ],
+        'ecommerce': [
+            ("Tienda Online", "/servicios/tienda-online/"),
+            ("Agencia Ecommerce", "/servicios/agencia-ecommerce/"),
+            ("Shopify", "/servicios/agencia-shopify/"),
+            ("WooCommerce", "/servicios/agencia-woocommerce/"),
+            ("PrestaShop", "/servicios/agencia-prestashop/"),
+            ("SEO Ecommerce", "/servicios/seo-para-ecommerce/"),
+            ("Google Shopping", "/servicios/google-shopping/"),
+            ("Email Ecommerce", "/servicios/email-marketing-ecommerce/"),
+        ],
+    }
+
+    # Detect which cluster this service belongs to
+    url_lower = current_url.lower()
+    if any(k in url_lower for k in ['seo', 'posicionamiento', 'linkbuilding', 'auditoria']):
+        cluster_key = 'seo'
+    elif any(k in url_lower for k in ['diseno', 'wordpress', 'desarrollo', 'landing', 'mantenimiento', 'cro', 'web-a-medida', 'web-para-empresa']):
+        cluster_key = 'web'
+    elif any(k in url_lower for k in ['ads', 'sem', 'publicidad', 'shopping', 'youtube-ads']):
+        cluster_key = 'ads'
+    elif any(k in url_lower for k in ['community', 'redes', 'social', 'contenidos', 'inbound', 'branding']):
+        cluster_key = 'social'
+    elif any(k in url_lower for k in ['ecommerce', 'tienda', 'shopify', 'woocommerce', 'prestashop']):
+        cluster_key = 'ecommerce'
+    else:
+        cluster_key = 'seo'
+
+    # Get same-cluster services (excluding self) + 2 from another cluster
+    same_cluster = [(n, u) for n, u in SERVICE_CLUSTERS[cluster_key] if u != current_url][:4]
+    other_keys = [k for k in SERVICE_CLUSTERS if k != cluster_key]
+    cross_cluster = []
+    for ok in other_keys:
+        for n, u in SERVICE_CLUSTERS[ok]:
+            if u != current_url and (n, u) not in same_cluster:
+                cross_cluster.append((n, u))
+                if len(cross_cluster) >= 2:
+                    break
+        if len(cross_cluster) >= 2:
+            break
+    related_items = same_cluster + cross_cluster
+
     related_cards = ''
-    for name, url, icon in related_items:
+    for name, url in related_items:
         related_cards += f'''<a href="{r(url)}" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<span class="material-symbols-outlined" style="font-size:1.6rem;color:#001e40;margin-bottom:.5rem">{icon}</span>
 <h3 style="font-size:.8rem">{name}</h3>
+</a>\n'''
+
+    # ── VERTICAL LINKS (sectores donde se aplica este servicio) ──
+    VERTICAL_LINKS = [
+        ("Restaurantes", "/marketing-para-restaurantes/"),
+        ("Hoteles", "/marketing-para-hoteles/"),
+        ("Clínicas Dentales", "/marketing-para-clinicas-dentales/"),
+        ("Clínicas Estéticas", "/marketing-para-clinicas-esteticas/"),
+        ("Abogados", "/marketing-para-abogados/"),
+        ("Inmobiliarias", "/marketing-para-inmobiliarias/"),
+        ("Ecommerce", "/marketing-para-ecommerce/"),
+        ("Gimnasios", "/marketing-para-gimnasios/"),
+        ("Psicólogos", "/marketing-para-psicologos/"),
+        ("Empresas B2B", "/marketing-para-empresas-b2b/"),
+        ("Veterinarias", "/marketing-para-veterinarias/"),
+        ("Asesorías", "/marketing-para-asesorias/"),
+    ]
+    # Show 6 verticals
+    vert_cards = ''
+    for vn, vu in VERTICAL_LINKS[:6]:
+        vert_cards += f'''<a href="{r(vu)}" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">{vn}</h3>
 </a>\n'''
 
     related_section = f'''
@@ -841,6 +935,12 @@ def build_service_page(page):
 <div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
 <div class="card-grid g3">
 {related_cards}
+</div>
+<div style="margin-top:2.5rem">
+<div class="sec-heading"><h2 style="font-size:1.1rem">Sectores donde aplicamos este servicio</h2><div class="bar"></div></div>
+<div class="card-grid g6" style="margin-top:1.5rem">
+{vert_cards}
+</div>
 </div>
 </div>
 </section>'''
@@ -1052,6 +1152,59 @@ def build_vertical_page(page):
 </section>
 
 {testimonial}
+
+<!-- SERVICIOS RELACIONADOS PARA ESTE SECTOR -->
+<section class="py-20 px-6 lg:px-8 bg-[#f4f6fa]">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4 text-center">Servicios de marketing digital para {p.get("sector_name", "tu sector")}</h2>
+<p class="text-on-surface-variant text-center max-w-2xl mx-auto mb-10">Combinamos diferentes canales de marketing digital para maximizar los resultados en tu sector.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<a href="{r('/servicios/agencia-seo/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO y Posicionamiento</h3><p style="font-size:.7rem">Posiciona tu negocio en Google</p></a>
+<a href="{r('/servicios/agencia-seo-local/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO Local</h3><p style="font-size:.7rem">Google Maps y pack local</p></a>
+<a href="{r('/servicios/diseno-web/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Diseño Web</h3><p style="font-size:.7rem">Web profesional que convierte</p></a>
+<a href="{r('/servicios/agencia-google-ads/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Google Ads</h3><p style="font-size:.7rem">Clientes desde el primer día</p></a>
+<a href="{r('/servicios/community-manager/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Redes Sociales</h3><p style="font-size:.7rem">Contenido que conecta</p></a>
+<a href="{r('/servicios/email-marketing/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Email Marketing</h3><p style="font-size:.7rem">Fideliza y genera repetición</p></a>
+<a href="{r('/servicios/branding/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Branding</h3><p style="font-size:.7rem">Identidad de marca</p></a>
+<a href="{r('/servicios/optimizacion-cro/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">CRO</h3><p style="font-size:.7rem">Optimización de conversión</p></a>
+</div>
+</div>
+</section>
+
+<!-- OTROS SECTORES -->
+<section class="py-16 px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline font-bold text-xl text-primary mb-8 text-center">También trabajamos con otros sectores</h2>
+<div class="flex flex-wrap justify-center gap-3">'''
+
+    other_verticals = [
+        ("Restaurantes", "/marketing-para-restaurantes/"),
+        ("Hoteles", "/marketing-para-hoteles/"),
+        ("Clínicas Dentales", "/marketing-para-clinicas-dentales/"),
+        ("Clínicas Estéticas", "/marketing-para-clinicas-esteticas/"),
+        ("Abogados", "/marketing-para-abogados/"),
+        ("Inmobiliarias", "/marketing-para-inmobiliarias/"),
+        ("Ecommerce", "/marketing-para-ecommerce/"),
+        ("Gimnasios", "/marketing-para-gimnasios/"),
+        ("Psicólogos", "/marketing-para-psicologos/"),
+        ("B2B", "/marketing-para-empresas-b2b/"),
+        ("Veterinarias", "/marketing-para-veterinarias/"),
+        ("Asesorías", "/marketing-para-asesorias/"),
+        ("Academias", "/marketing-para-academias/"),
+        ("Autoescuelas", "/marketing-para-autoescuelas/"),
+        ("Reformas", "/marketing-para-empresas-de-reformas/"),
+        ("Talleres", "/marketing-para-talleres-de-coches/"),
+    ]
+    vert_pills = ''
+    for vn, vu in other_verticals:
+        if vu != current_url:
+            vert_pills += f'<a href="{r(vu)}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">{vn}</a>\n'
+
+    body_end = f'''{vert_pills}
+</div>
+</div>
+</section>
+
 {faq_section}
 
 <!-- CTA -->
@@ -1065,7 +1218,7 @@ def build_vertical_page(page):
 ''' + footer_html(current_url) + '''
 </body></html>'''
 
-    return head_html(p['title'], p.get('meta_desc', ''), p['url'], schema) + '\n' + body
+    return head_html(p['title'], p.get('meta_desc', ''), p['url'], schema) + '\n' + body + body_end
 
 
 # ============================================================
@@ -1708,6 +1861,76 @@ def build_services_index():
     return head_html("Servicios de Marketing Digital | Comunikoo", "Todos los servicios de marketing digital de Comunikoo: SEO, diseño web, Google Ads, redes sociales, ecommerce y más.", "/servicios/") + '\n' + body
 
 
+def build_blog_index():
+    current_url = "/blog/"
+    r = lambda target: rel(target, current_url)
+
+    # Placeholder articles — to be replaced with real content later
+    articles = [
+        ("Guía Completa de SEO para Pymes en 2026", "Todo lo que necesita saber una pequeña empresa para posicionar en Google este año. Desde la auditoría inicial hasta la estrategia de contenidos.", "seo", "Próximamente"),
+        ("Google Ads vs SEO: ¿Dónde Invertir Tu Presupuesto?", "Analizamos cuándo conviene invertir en publicidad de pago y cuándo en posicionamiento orgánico. Con datos reales de nuestros clientes.", "estrategia", "Próximamente"),
+        ("Cómo Elegir la Mejor Agencia de Marketing Digital", "Los 10 criterios que debes evaluar antes de contratar una agencia. Evita errores costosos y elige un partner que genere resultados.", "negocio", "Próximamente"),
+        ("SEO Local: Cómo Aparecer en Google Maps", "Guía paso a paso para posicionar tu negocio local en el pack de mapas de Google. Optimización de Google Business Profile incluida.", "seo-local", "Próximamente"),
+        ("Diseño Web que Convierte: 15 Principios de CRO", "Las claves de diseño web orientado a conversión que aplicamos en nuestros proyectos. Con ejemplos reales antes y después.", "diseno", "Próximamente"),
+        ("Email Marketing para Ecommerce: Automatizaciones que Venden", "Las 7 automatizaciones de email que toda tienda online debería tener activas. Recuperación de carrito, post-compra y más.", "ecommerce", "Próximamente"),
+    ]
+
+    CATS = {'seo': 'SEO', 'estrategia': 'Estrategia', 'negocio': 'Negocio', 'seo-local': 'SEO Local', 'diseno': 'Diseño Web', 'ecommerce': 'Ecommerce'}
+
+    cards = ''
+    for title, desc, cat, status in articles:
+        cat_label = CATS.get(cat, cat.title())
+        cards += f'''<div class="svc-card" style="text-align:left;padding:2rem">
+<span style="display:inline-block;padding:.25rem .75rem;border-radius:50px;background:#f0f4ff;color:#001e40;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:1rem">{cat_label}</span>
+<h3 style="font-size:1.1rem;margin-bottom:.5rem">{title}</h3>
+<p style="font-size:.85rem;line-height:1.7">{desc}</p>
+<p style="font-size:.75rem;color:#fd8b00;font-weight:700;margin-top:1rem">{status}</p>
+</div>\n'''
+
+    body = '''<body class="bg-surface font-body text-on-background">
+''' + nav_html(current_url) + f'''
+<main class="pt-20">
+
+<section class="py-24 px-6 lg:px-8 max-w-7xl mx-auto text-center">
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary mb-6">Blog de Marketing Digital</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto">Artículos, guías y recursos sobre SEO, Google Ads, diseño web, redes sociales y estrategia digital. Escrito por profesionales con experiencia real.</p>
+</section>
+
+<section class="pb-24 px-6 lg:px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+{cards}
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que apliquemos estas estrategias en tu negocio?</h2>
+<p class="text-on-primary-container text-base mb-8">Solicita tu auditoría gratuita y te mostramos qué podemos hacer por ti.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
+</div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="py-16 px-6 lg:px-8 bg-[#f4f6fa]">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="font-headline font-bold text-xl text-primary mb-8">Nuestros servicios de marketing digital</h2>
+<div class="flex flex-wrap justify-center gap-3">
+<a href="{r('/servicios/agencia-seo/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">SEO</a>
+<a href="{r('/servicios/diseno-web/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Diseño Web</a>
+<a href="{r('/servicios/agencia-google-ads/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Google Ads</a>
+<a href="{r('/servicios/community-manager/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Redes Sociales</a>
+<a href="{r('/servicios/tienda-online/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Tiendas Online</a>
+<a href="{r('/servicios/email-marketing/')}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">Email Marketing</a>
+</div>
+</div>
+</section>
+</main>
+''' + footer_html(current_url) + '''
+</body></html>'''
+    return head_html("Blog de Marketing Digital | Comunikoo", "Artículos, guías y recursos sobre SEO, Google Ads, diseño web y estrategia digital. Escrito por profesionales.", "/blog/") + '\n' + body
+
+
 def build_simple_page(title, meta_desc, url, h1, content_html_str):
     current_url = url
     body = '''<body class="bg-surface font-body text-on-background">
@@ -1800,6 +2023,10 @@ def main():
 
     # CONTACT
     write_page('/contacto/', build_contact_page())
+    count += 1
+
+    # BLOG
+    write_page('/blog/', build_blog_index())
     count += 1
 
     # GROUP SUB-PAGES by parent FIRST (before generating anything)
