@@ -1685,7 +1685,7 @@ def build_services_index():
 
     cards = ''
     for n, d, u in services_list:
-        cards += f'''<a href="{r(u)}" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-primary group transition-all duration-500 no-underline">
+        cards += f'''<a href="{r(u)}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] hover:bg-primary hover:border-primary group transition-all duration-500 no-underline">
 <h3 class="font-headline font-bold text-lg text-primary group-hover:text-white mb-2">{n}</h3>
 <p class="text-sm text-on-surface-variant group-hover:text-white/80">{d}</p>
 </a>\n'''
