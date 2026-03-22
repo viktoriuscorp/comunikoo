@@ -1,0 +1,60 @@
+# Redirects 301 — URLs antiguas del WordPress → URLs nuevas
+
+# URL encontrada en Google
+/agencia-marketing-restaurantes/ /marketing-para-restaurantes/ 301
+
+# URLs comunes de WordPress
+/wp-admin /contacto/ 301
+/wp-login.php /contacto/ 301
+/feed/ / 301
+/feed /  301
+/wp-content/* / 301
+/wp-includes/* / 301
+/xmlrpc.php / 301
+
+# Posibles URLs antiguas del WordPress (estructura típica)
+/agencia-marketing-hoteles/ /marketing-para-hoteles/ 301
+/agencia-marketing-clinicas/ /marketing-para-clinicas-dentales/ 301
+/agencia-marketing-abogados/ /marketing-para-abogados/ 301
+/agencia-marketing-inmobiliarias/ /marketing-para-inmobiliarias/ 301
+/agencia-marketing-gimnasios/ /marketing-para-gimnasios/ 301
+/agencia-marketing-ecommerce/ /marketing-para-ecommerce/ 301
+/agencia-marketing-dental/ /marketing-para-clinicas-dentales/ 301
+/marketing-restaurantes/ /marketing-para-restaurantes/ 301
+/marketing-hoteles/ /marketing-para-hoteles/ 301
+/marketing-abogados/ /marketing-para-abogados/ 301
+/marketing-clinicas-dentales/ /marketing-para-clinicas-dentales/ 301
+/marketing-ecommerce/ /marketing-para-ecommerce/ 301
+/marketing-inmobiliarias/ /marketing-para-inmobiliarias/ 301
+
+# Servicios (posibles variantes antiguas)
+/seo/ /servicios/agencia-seo/ 301
+/seo-barcelona/ /agencia-seo-barcelona/ 301
+/seo-local/ /servicios/agencia-seo-local/ 301
+/google-ads/ /servicios/agencia-google-ads/ 301
+/diseno-web/ /servicios/diseno-web/ 301
+/community-manager/ /servicios/community-manager/ 301
+/tienda-online/ /servicios/tienda-online/ 301
+/email-marketing/ /servicios/email-marketing/ 301
+/posicionamiento-web/ /servicios/posicionamiento-web/ 301
+/publicidad-google/ /servicios/publicidad-en-google/ 301
+/facebook-ads/ /servicios/agencia-facebook-ads/ 301
+/instagram-ads/ /servicios/instagram-ads/ 301
+/wordpress/ /servicios/diseno-web-wordpress/ 301
+/branding/ /servicios/branding/ 301
+/redes-sociales/ /servicios/gestion-redes-sociales/ 301
+
+# Páginas genéricas
+/about/ /nosotros/ 301
+/about-us/ /nosotros/ 301
+/sobre-nosotros/ /nosotros/ 301
+/quienes-somos/ /nosotros/ 301
+/contact/ /contacto/ 301
+/contacta/ /contacto/ 301
+/presupuesto/ /contacto/ 301
+/portfolio/ /nosotros/ 301
+/trabajos/ /nosotros/ 301
+/casos-de-exito/ /nosotros/ 301
+/privacidad/ /politica-de-privacidad/ 301
+/cookies/ /politica-de-cookies/ 301
+/legal/ /aviso-legal/ 301
