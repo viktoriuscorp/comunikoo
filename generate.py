@@ -1021,7 +1021,7 @@ for slug, svc_name, full_name in GEO_SERVICES_BCN:
     ALL_PAGES.append(geo(
         url,
         f"{full_name} | Expertos Locales — Comunikoo",
-        f"{full_name}. Equipo local en Barcelona. Resultados reales. Sin permanencia. Auditoría gratuita.",
+        f"{full_name} con equipo local en Barcelona. Estrategias personalizadas para el mercado barcelonés. +487 proyectos, 98% satisfacción. Sin permanencia. Auditoría gratuita.",
         f"{full_name} — Expertos Locales en la Ciudad Condal",
         full_name, f"Servicio de {svc_name.lower()} en Barcelona con equipo local y conocimiento del mercado barcelonés.",
         "Barcelona", svc_name, BCN_ZONES,
@@ -1041,7 +1041,7 @@ for slug, svc_name, full_name_bcn in GEO_SERVICES_BCN:
     ALL_PAGES.append(geo(
         url,
         f"{full_name} | Presencia en Madrid — Comunikoo",
-        f"{full_name}. Presencia activa en Madrid. Resultados reales. Sin permanencia.",
+        f"{full_name} con presencia activa en la capital. Expertos en el mercado madrileño. +487 proyectos, resultados medibles. Sin permanencia. Auditoría gratuita.",
         f"{full_name} — Presencia Activa en la Capital",
         full_name, f"Servicio de {svc_name.lower()} en Madrid con conocimiento del mercado madrileño.",
         "Madrid", svc_name, MAD_ZONES,
