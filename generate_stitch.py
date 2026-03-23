@@ -2120,62 +2120,288 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 # ============================================================
 # STATIC PAGES
 # ============================================================
-def build_contact_page():
-    current_url = "/contacto/"
+def build_about_page():
+    current_url = "/nosotros/"
     r = lambda target: rel(target, current_url)
-    schema = '''<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015","email":"hola@comunikoo.es"}
-</script>'''
     body = '''<body class="bg-surface font-body text-on-background">
 ''' + nav_html(current_url) + f'''
 <main class="pt-20">
-<section class="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
-<div class="bg-surface-container-lowest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl shadow-primary/5">
-<div class="p-10 md:p-16">
-<h1 class="font-headline font-extrabold text-4xl text-primary mb-2">Contacta con nosotros</h1>
-<p class="text-on-surface-variant mb-8">Cuéntanos tu proyecto. Te respondemos en menos de 24h.</p>
-<form class="space-y-5">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-<div class="space-y-2">
-<label class="text-sm font-bold text-primary uppercase tracking-wider">Nombre</label>
-<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Tu nombre" type="text">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-[#f4f6fa] to-surface px-6 lg:px-8">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mb-6">Sobre nosotros</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">La agencia de marketing digital en Barcelona que mide el éxito en ventas, no en likes</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Somos un equipo de profesionales senior obsesionados con una cosa: que tu inversión en marketing digital se traduzca en clientes reales y facturación. Sin humo, sin métricas vanidosas, sin permanencia.</p>
 </div>
-<div class="space-y-2">
-<label class="text-sm font-bold text-primary uppercase tracking-wider">Email</label>
-<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="tu@email.com" type="email">
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-bold text-primary uppercase tracking-wider">Teléfono</label>
-<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="+34 600 000 000" type="tel">
-</div>
-<div class="space-y-2">
-<label class="text-sm font-bold text-primary uppercase tracking-wider">Mensaje</label>
-<textarea class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Cuéntanos sobre tu proyecto..." rows="5"></textarea>
-</div>
-<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Enviar mensaje</button>
-</form>
-</div>
-<div class="bg-primary p-10 md:p-16 text-white flex flex-col justify-between">
-<div class="space-y-10">
-<div>
-<h3 class="font-headline font-bold text-2xl mb-4 flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary-container">location_on</span> Oficina Barcelona
-</h3>
-<p class="text-on-primary-container text-lg leading-relaxed">Barcelona, España</p>
-</div>
-<div class="space-y-3">
-<p class="flex items-center gap-4 text-on-primary-container"><span class="material-symbols-outlined">mail</span> <a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
-<p class="flex items-center gap-4 text-on-primary-container"><span class="material-symbols-outlined">schedule</span> Lunes a Viernes, 9:00 - 20:00</p>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface-container-low py-14">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">+487</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">proyectos completados</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">98%</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">clientes satisfechos</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">+5.8M€</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">gestionados en campañas</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-secondary-container">0€</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">permanencia</p></div>
 </div>
 </div>
+</section>
+
+<!-- NUESTRA HISTORIA -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Nuestra historia</h2><div class="bar"></div></div>
+<div class="prose-block">
+<p>Comunikoo nació de una frustración: ver cómo agencias de marketing digital prometían el mundo a sus clientes y entregaban informes bonitos con métricas que no significaban nada para el negocio. Impresiones, alcance, engagement... todo muy bonito, pero <strong>¿cuántos clientes nuevos generaste este mes?</strong></p>
+<p>Decidimos hacer las cosas de otra manera. Fundamos Comunikoo con una premisa simple: <strong>si no generamos resultados medibles, no merecemos tu confianza</strong>. Por eso trabajamos sin permanencia — nos ganamos tu confianza cada mes con números, no con contratos.</p>
+<p>Desde Barcelona, hemos ayudado a más de 487 empresas a crecer con <a href="{r('/agencia-seo/')}">SEO</a>, <a href="{r('/diseno-web/')}">diseño web</a>, <a href="{r('/agencia-google-ads/')}">Google Ads</a> y <a href="{r('/community-manager/')}">redes sociales</a>. Desde startups en el 22@ hasta pymes consolidadas en toda España. Cada proyecto nos ha enseñado algo que aplicamos en el siguiente.</p>
 </div>
+</div>
+</section>
+
+<!-- VALORES -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Lo que nos define</h2><div class="bar"></div></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+<div class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary-container text-2xl">visibility</span></div>
+<h3 class="font-headline font-bold text-lg text-primary mb-3">Transparencia radical</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dashboard en tiempo real con todas las métricas de tu proyecto. Sin PDFs bonitos a final de mes — acceso 24/7 a tus datos. Cada euro que inviertes, lo puedes rastrear.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary-container text-2xl">trending_up</span></div>
+<h3 class="font-headline font-bold text-lg text-primary mb-3">Obsesión por el ROI</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">No perseguimos métricas vanidosas. Medimos éxito en leads, ventas y facturación. Si una acción no genera retorno, la cambiamos. Así de simple.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center mx-auto mb-4"><span class="material-symbols-outlined text-secondary-container text-2xl">handshake</span></div>
+<h3 class="font-headline font-bold text-lg text-primary mb-3">Sin permanencia</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Trabajamos mes a mes. Si no estás contento, te vas. El 98% de nuestros clientes se quedan más de 12 meses — porque funciona, no porque estén obligados.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EQUIPO -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Un equipo senior dedicado a tu proyecto</h2><div class="bar"></div></div>
+<div class="prose-block">
+<p>En Comunikoo no hay becarios ni juniors aprendiendo con tu presupuesto. <strong>Cada proyecto lo gestiona un consultor senior con más de 5 años de experiencia</strong>, apoyado por especialistas en cada disciplina: SEO técnico, contenidos, diseño UX, Google Ads, redes sociales y analítica.</p>
+<p>Tu consultor conoce tu negocio, tu sector y tus competidores. Es tu interlocutor directo — sin comerciales intermediarios ni teléfonos rotos. Cuando llamas, hablas con quien realmente trabaja en tu proyecto.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto mt-12">
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-[#f4f6fa] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">search</span></div>
+<p class="font-headline font-bold text-sm text-primary">Consultores SEO</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-[#f4f6fa] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">ads_click</span></div>
+<p class="font-headline font-bold text-sm text-primary">Expertos SEM</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-[#f4f6fa] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">web</span></div>
+<p class="font-headline font-bold text-sm text-primary">Diseñadores Web</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 rounded-full bg-[#f4f6fa] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">share</span></div>
+<p class="font-headline font-bold text-sm text-primary">Social Media</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Cómo trabajamos</h2><div class="bar"></div></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+<div class="text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary text-white font-headline font-black text-xl flex items-center justify-center mx-auto mb-4">1</div>
+<h3 class="font-headline font-bold text-sm text-primary mb-2">Auditoría gratuita</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed">Analizamos tu web, competencia y mercado. Te entregamos un informe con oportunidades reales.</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary text-white font-headline font-black text-xl flex items-center justify-center mx-auto mb-4">2</div>
+<h3 class="font-headline font-bold text-sm text-primary mb-2">Estrategia a medida</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed">Plan de acción personalizado con objetivos claros, KPIs y calendario.</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary text-white font-headline font-black text-xl flex items-center justify-center mx-auto mb-4">3</div>
+<h3 class="font-headline font-bold text-sm text-primary mb-2">Ejecución senior</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed">Implementamos con equipo experto. Cada acción tiene un objetivo de negocio detrás.</p>
+</div>
+<div class="text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary text-white font-headline font-black text-xl flex items-center justify-center mx-auto mb-4">4</div>
+<h3 class="font-headline font-bold text-sm text-primary mb-2">Reporting en tiempo real</h3>
+<p class="text-on-surface-variant text-xs leading-relaxed">Dashboard 24/7 + reunión mensual. Ves resultados, no excusas.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTORES -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Sectores donde tenemos experiencia</h2><div class="bar"></div></div>
+<div class="sec-intro">Hemos trabajado con más de 30 sectores diferentes. Conocemos las particularidades de cada uno: su competencia, sus clientes y qué funciona para generar resultados.</div>
+<div class="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
+<a href="{r('/marketing-para-restaurantes/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Restaurantes</a>
+<a href="{r('/marketing-para-hoteles/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Hoteles</a>
+<a href="{r('/marketing-para-clinicas-dentales/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Clínicas Dentales</a>
+<a href="{r('/marketing-para-abogados/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Abogados</a>
+<a href="{r('/marketing-para-inmobiliarias/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Inmobiliarias</a>
+<a href="{r('/marketing-para-ecommerce/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Ecommerce</a>
+<a href="{r('/marketing-para-gimnasios/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Gimnasios</a>
+<a href="{r('/marketing-para-psicologos/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">Psicólogos</a>
+<a href="{r('/marketing-para-empresas-b2b/')}" class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04] hover:bg-primary hover:text-white transition-all">B2B</a>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-on-surface-variant shadow-sm border border-black/[.04]">Y +20 más</span>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Quieres conocernos?</h2>
+<p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita y descubre qué podemos hacer por tu negocio. Sin compromiso, sin permanencia.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita</a>
 </div>
 </section>
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
-    return head_html("Contacto | Comunikoo — Marketing Digital Barcelona", "Contacta con Comunikoo, agencia de marketing digital en Barcelona. Respuesta en menos de 24h. Auditoría gratuita sin compromiso. Llámanos o escríbenos.", "/contacto/", schema) + '\n' + body
+    return head_html("Nosotros | Comunikoo", "Conoce al equipo de Comunikoo, agencia de marketing digital en Barcelona. +487 proyectos, 98% satisfacción, equipo senior dedicado. Sin permanencia.", "/nosotros/") + '\n' + body
+
+
+def build_contact_page():
+    current_url = "/contacto/"
+    r = lambda target: rel(target, current_url)
+    schema = '''<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","email":"hola@comunikoo.es"}
+</script>'''
+    body = '''<body class="bg-surface font-body text-on-background">
+''' + nav_html(current_url) + f'''
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-[#f4f6fa] to-surface px-6 lg:px-8">
+<div class="max-w-7xl mx-auto py-12 lg:py-16 text-center">
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl text-primary leading-tight">¿Hablamos sobre tu proyecto?</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-xl mx-auto mt-4 leading-relaxed">Cuéntanos qué necesitas y te respondemos en menos de 24 horas con una propuesta personalizada. Sin compromiso.</p>
+</div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="px-6 lg:px-8 pb-8">
+<div class="max-w-3xl mx-auto flex flex-wrap justify-center gap-6">
+<div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary-container text-lg">check_circle</span> Respuesta en &lt;24h</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary-container text-lg">check_circle</span> Auditoría gratuita</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary-container text-lg">check_circle</span> Sin permanencia</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary-container text-lg">check_circle</span> +487 proyectos</div>
+</div>
+</section>
+
+<!-- FORM + INFO -->
+<section class="py-8 px-6 lg:px-8 max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl shadow-primary/5">
+<div class="p-10 md:p-14">
+<h2 class="font-headline font-bold text-2xl text-primary mb-2">Envíanos un mensaje</h2>
+<p class="text-on-surface-variant text-sm mb-8">Rellena el formulario y te contactamos con una propuesta a medida.</p>
+<form class="space-y-5" action="https://formspree.io/f/xdkopgvq" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">Nombre *</label>
+<input name="nombre" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Tu nombre" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">Email *</label>
+<input name="email" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="tu@email.com" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">Teléfono</label>
+<input name="telefono" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="+34 600 000 000" type="tel">
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">Web actual</label>
+<input name="web" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="tuweb.es" type="url">
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">¿En qué te podemos ayudar? *</label>
+<select name="servicio" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container">
+<option value="">Selecciona un servicio</option>
+<option>SEO y Posicionamiento Web</option>
+<option>Diseño Web</option>
+<option>Google Ads / SEM</option>
+<option>Redes Sociales</option>
+<option>Tienda Online / Ecommerce</option>
+<option>Email Marketing</option>
+<option>Estrategia Digital Completa</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-primary uppercase tracking-wider">Mensaje *</label>
+<textarea name="mensaje" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Cuéntanos sobre tu proyecto, tus objetivos y tu presupuesto aproximado..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Solicitar auditoría gratuita</button>
+<p class="text-xs text-on-surface-variant text-center">Al enviar aceptas nuestra <a href="{r('/politica-de-privacidad/')}" class="underline">política de privacidad</a>.</p>
+</form>
+</div>
+<div class="bg-primary p-10 md:p-14 text-white flex flex-col justify-between">
+<div class="space-y-10">
+<div>
+<h3 class="font-headline font-bold text-xl mb-6">¿Prefieres escribirnos directamente?</h3>
+<div class="space-y-4">
+<a href="mailto:hola@comunikoo.es" class="flex items-center gap-4 text-on-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined text-secondary-container">mail</span>
+<div><p class="font-bold text-white text-sm">Email</p><p class="text-on-primary-container text-sm">hola@comunikoo.es</p></div>
+</a>
+<div class="flex items-center gap-4 text-on-primary-container">
+<span class="material-symbols-outlined text-secondary-container">schedule</span>
+<div><p class="font-bold text-white text-sm">Horario</p><p class="text-on-primary-container text-sm">Lunes a Viernes, 9:00 - 20:00</p></div>
+</div>
+<div class="flex items-center gap-4 text-on-primary-container">
+<span class="material-symbols-outlined text-secondary-container">location_on</span>
+<div><p class="font-bold text-white text-sm">Ubicación</p><p class="text-on-primary-container text-sm">Barcelona, España</p></div>
+</div>
+</div>
+</div>
+<div class="bg-white/10 rounded-xl p-6 mt-8">
+<p class="text-white font-headline font-bold text-sm mb-2">¿Qué incluye la auditoría gratuita?</p>
+<ul class="text-on-primary-container text-sm space-y-2">
+<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Análisis de tu web y SEO actual</li>
+<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Estudio de tu competencia directa</li>
+<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Oportunidades de crecimiento identificadas</li>
+<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Propuesta personalizada con presupuesto</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container" style="max-width:700px">
+<div class="sec-heading"><h2>Preguntas frecuentes</h2><div class="bar"></div></div>
+{faq_html([
+    ("¿Cuánto tardáis en responder?", "Menos de 24 horas en días laborables. Normalmente respondemos en unas pocas horas con una propuesta inicial y un hueco para videollamada."),
+    ("¿La auditoría tiene algún coste?", "No, la auditoría inicial es 100% gratuita y sin compromiso. Analizamos tu web, tu competencia y te presentamos las oportunidades que vemos."),
+    ("¿Tengo que firmar contrato de permanencia?", "No. Trabajamos mes a mes. Si no estás contento con los resultados, puedes cancelar con 30 días de preaviso. Así de simple."),
+    ("¿Trabajáis con empresas de toda España?", "Sí. Nuestra oficina está en Barcelona pero trabajamos con clientes de toda España. Combinamos reuniones presenciales (cuando es posible) con videollamadas y comunicación fluida por email y chat."),
+])}
+</div>
+</section>
+</main>
+''' + footer_html(current_url) + '''
+</body></html>'''
+    return head_html("Contacto | Comunikoo", "Contacta con Comunikoo, agencia de marketing digital en Barcelona. Respuesta en menos de 24h. Auditoría gratuita sin compromiso. Llámanos o escríbenos.", "/contacto/", schema) + '\n' + body
 
 
 def build_services_index():
@@ -2393,6 +2619,8 @@ def main():
     # CONTACT
     write_page('/contacto/', build_contact_page())
     count += 1
+    write_page('/nosotros/', build_about_page())
+    count += 1
 
     # BLOG
     write_page('/blog/', build_blog_index())
@@ -2459,7 +2687,6 @@ def main():
 
     # STATIC PAGES
     for title, meta, url, h1, content in [
-        ("Nosotros | Comunikoo", "Conoce al equipo de Comunikoo, agencia de marketing digital en Barcelona. +487 proyectos, 98% satisfacción, equipo senior dedicado. Sin permanencia.", "/nosotros/", "Sobre Comunikoo", "<p>Somos una agencia de marketing digital con sede en Barcelona. Más de 487 proyectos completados y un 98% de clientes satisfechos nos avalan.</p><h2>Nuestra misión</h2><p>Ayudar a negocios a crecer de forma sostenible a través del marketing digital basado en datos y resultados medibles.</p><h2>Nuestros valores</h2><p><strong>Transparencia:</strong> Dashboard en tiempo real, sin contratos de permanencia.</p><p><strong>Resultados:</strong> Medimos éxito en leads, ventas y facturación.</p><p><strong>Especialización:</strong> Equipo senior con +5 años de experiencia cada uno.</p>"),
         ("Solicita Presupuesto | Comunikoo", "Pide presupuesto de marketing digital sin compromiso. SEO, diseño web, Google Ads, redes sociales. Respuesta en 24h. Auditoría gratuita incluida.", "/presupuesto/", "Solicita Presupuesto", "<p>Cuéntanos sobre tu proyecto y te enviaremos un presupuesto personalizado en menos de 24 horas. Sin compromiso ni permanencia.</p><h2>¿Qué incluye?</h2><p>Análisis inicial de tu situación, propuesta estratégica y presupuesto detallado. Todo sin coste.</p>"),
         ("Casos de Éxito | Comunikoo", "Descubre cómo hemos ayudado a +487 empresas a crecer con SEO, Google Ads y diseño web. Resultados reales y medibles. Mira nuestros casos.", "/casos-de-exito/", "Casos de Éxito", "<p>Más de 487 proyectos completados con un 98% de satisfacción. Estos son algunos de nuestros casos más destacados.</p>"),
         ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
