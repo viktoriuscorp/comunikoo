@@ -1297,7 +1297,7 @@ def build_vertical_page(page):
     p = page
     current_url = p['url']
     r = lambda target: rel(target, current_url)
-    faqs = p.get('faqs', [])
+    faqs = list(p.get('faqs', [])) + list(p.get('extra_faqs', []))
     faq_schema_tag = faq_schema(faqs) if faqs else ''
     schema = service_schema(p.get('h1_short', ''), p.get('meta_desc', ''))
     if faq_schema_tag:
@@ -1369,6 +1369,45 @@ def build_vertical_page(page):
 </div>
 </div>
 </section>
+
+{f"""
+<!-- SECTOR STATS -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>El sector de {p.get("sector_name", "tu sector")} en cifras</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(p.get("sector_stats", ""), current_url, max_links=3)}</div>
+</div>
+</section>
+""" if p.get("sector_stats") else ""}
+
+{f"""
+<!-- STRATEGY DETAILED -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Estrategia de marketing digital para {p.get("sector_name", "tu sector")}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(p.get("strategy_detailed", ""), current_url, max_links=5)}</div>
+</div>
+</section>
+""" if p.get("strategy_detailed") else ""}
+
+<!-- CTA MID -->
+<section class="py-16 px-6 lg:px-8 bg-primary">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-headline font-bold text-2xl text-white mb-4">{p.get("cta_title", "¿Empezamos?")}</h2>
+<p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu negocio. Sin compromiso.</p>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+</div>
+</section>
+
+{f"""
+<!-- CASE STUDY -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Caso de éxito: marketing para {p.get("sector_name", "tu sector")}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(p.get("case_study", ""), current_url, max_links=3)}</div>
+</div>
+</section>
+""" if p.get("case_study") else ""}
 
 {testimonial}
 
