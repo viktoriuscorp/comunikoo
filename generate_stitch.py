@@ -269,6 +269,8 @@ def nav_html(current_url="/"):
 <div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
 <a href="{r('/')}" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
 <div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/')}">Inicio</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/nosotros/')}">Nosotros</a>
 <div class="mega-trigger">
 <a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="{r('/servicios/')}">Servicios</a>
 <div class="mega-panel">
@@ -351,8 +353,6 @@ def nav_html(current_url="/"):
 </div>
 </div>
 </div>
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/')}">Inicio</a>
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/nosotros/')}">Nosotros</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/blog/')}">Blog</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/contacto/')}">Contacto</a>
 <a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratis</a>
