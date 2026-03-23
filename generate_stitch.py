@@ -351,6 +351,7 @@ def nav_html(current_url="/"):
 </div>
 </div>
 </div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/')}">Inicio</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/nosotros/')}">Nosotros</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/blog/')}">Blog</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/contacto/')}">Contacto</a>
@@ -2307,7 +2308,7 @@ def build_contact_page():
 
 <!-- FORM + INFO -->
 <section class="py-8 px-6 lg:px-8 max-w-7xl mx-auto">
-<div class="bg-surface-container-lowest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl shadow-primary/5">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-[3fr_2fr] shadow-2xl shadow-primary/5">
 <div class="p-10 md:p-14">
 <h2 class="font-headline font-bold text-2xl text-primary mb-2">Envíanos un mensaje</h2>
 <p class="text-on-surface-variant text-sm mb-8">Rellena el formulario y te contactamos con una propuesta a medida.</p>
