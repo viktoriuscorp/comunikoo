@@ -3,6 +3,12 @@
 # URL encontrada en Google
 /agencia-marketing-restaurantes/ /marketing-para-restaurantes/ 301
 
+# Posts antiguos del blog WordPress
+/seo-local-conseguir-clientes/ /servicios/agencia-seo-local/ 301
+/seo-local-conseguir-clientes /servicios/agencia-seo-local/ 301
+/seo-local-para-negocios/ /servicios/agencia-seo-local/ 301
+/seo-local-para-negocios /servicios/agencia-seo-local/ 301
+
 # URLs comunes de WordPress
 /wp-admin /contacto/ 301
 /wp-login.php /contacto/ 301
