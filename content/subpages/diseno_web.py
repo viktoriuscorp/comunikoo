@@ -3,7 +3,7 @@ SUBPAGES = {
     # 1. Diseño Web Corporativo
     # ─────────────────────────────────────────────
     "/diseno-web/diseno-web-corporativo/": {
-        "title": "Diseño Web Corporativo | Páginas Web Profesionales para Empresas",
+        "title": "Diseño Web Corporativo | Webs para Empresas",
         "meta_desc": "Servicio de diseño web corporativo a medida. Creamos páginas web profesionales que refuerzan tu imagen de marca, generan confianza y captan clientes.",
         "h1": "Diseño Web Corporativo: La Imagen Digital que Tu Empresa Merece",
         "h1_short": "Diseño Web Corporativo",
@@ -113,7 +113,7 @@ SUBPAGES = {
     # 2. Diseño Web Responsive
     # ─────────────────────────────────────────────
     "/diseno-web/diseno-web-responsive/": {
-        "title": "Diseño Web Responsive | Webs Adaptables a Todos los Dispositivos",
+        "title": "Diseño Web Responsive | Webs Adaptables",
         "meta_desc": "Diseño web responsive profesional. Creamos páginas web adaptables a móvil, tablet y escritorio, optimizadas para Core Web Vitals y experiencia de usuario.",
         "h1": "Diseño Web Responsive: Tu Web Perfecta en Cualquier Pantalla",
         "h1_short": "Diseño Web Responsive",

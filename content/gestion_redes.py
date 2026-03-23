@@ -129,7 +129,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/gestion-redes-sociales/",
-    "title": "Gestión de Redes Sociales para Empresas | Estrategia + Ejecución — Comunikoo",
+    "title": "Gestión de Redes Sociales | Estrategia + Ejecución",
     "meta_desc": "Servicio integral de gestión de redes sociales: estrategia, contenido, publicación y análisis. Haz crecer tu marca en redes. Planes a medida.",
     "h1": "Gestión de Redes Sociales — Estrategia, Contenido y Resultados para Tu Marca",
     "h1_short": "Gestión de Redes",

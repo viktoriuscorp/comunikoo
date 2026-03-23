@@ -204,7 +204,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/inbound-marketing/",
-    "title": "Inbound Marketing | Estrategia de Contenidos y Automatización — Comunikoo",
+    "title": "Inbound Marketing | Contenidos y Automatización",
     "meta_desc": "Inbound marketing profesional: contenido, SEO, lead nurturing y automatización. +340% de leads con un 61% menos de coste. Más de 35 estrategias implementadas.",
     "h1": "Inbound Marketing — Atrae Clientes con Contenido, No con Interrupciones",
     "h1_short": "Inbound Marketing",

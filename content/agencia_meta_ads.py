@@ -128,7 +128,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/agencia-meta-ads/",
-    "title": "Agencia Meta Ads | Publicidad en Facebook, Instagram y WhatsApp — Comunikoo",
+    "title": "Agencia Meta Ads | Facebook e Instagram Ads",
     "meta_desc": "Agencia Meta Ads: gestionamos campañas en todo el ecosistema Meta (Facebook + Instagram + WhatsApp + Audience Network). Resultados multicanal.",
     "h1": "Agencia Meta Ads — Publicidad en Todo el Ecosistema Meta",
     "h1_short": "Meta Ads",

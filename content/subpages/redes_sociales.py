@@ -3,7 +3,7 @@ SUBPAGES = {
     # 1. Gestión de Instagram para Empresas
     # ─────────────────────────────────────────────
     "/community-manager/gestion-instagram/": {
-        "title": "Gestión de Instagram para Empresas | Community Manager Profesional",
+        "title": "Gestión de Instagram para Empresas | Comunikoo",
         "meta_desc": "Servicio profesional de gestión de Instagram para empresas. Feed estratégico, stories, reels y hashtags optimizados para aumentar seguidores y generar clientes.",
         "h1": "Gestión de Instagram para Empresas: Convierte Seguidores en Clientes",
         "h1_short": "Gestión Instagram Empresa",
@@ -113,7 +113,7 @@ SUBPAGES = {
     # 2. Gestión de LinkedIn para Empresas
     # ─────────────────────────────────────────────
     "/community-manager/gestion-linkedin/": {
-        "title": "Gestión de LinkedIn para Empresas | Marketing B2B Profesional",
+        "title": "Gestión de LinkedIn para Empresas | Marketing B2B",
         "meta_desc": "Gestión profesional de LinkedIn para empresas. Estrategia B2B, contenido profesional, networking y generación de leads cualificados en la red social corporativa.",
         "h1": "Gestión de LinkedIn para Empresas: Genera Leads B2B de Calidad",
         "h1_short": "Gestión LinkedIn Empresa",
@@ -322,7 +322,7 @@ SUBPAGES = {
     # 4. Creación de Contenido para Redes Sociales
     # ─────────────────────────────────────────────
     "/community-manager/creacion-contenido-redes/": {
-        "title": "Creación de Contenido para Redes Sociales | Diseño y Estrategia",
+        "title": "Contenido para Redes Sociales | Diseño y Estrategia",
         "meta_desc": "Servicio profesional de creación de contenido para redes sociales. Calendarios editoriales, diseño gráfico, vídeo y copywriting para todas las plataformas.",
         "h1": "Creación de Contenido para Redes Sociales: Diseño, Vídeo y Copywriting Profesional",
         "h1_short": "Creación Contenido Redes",

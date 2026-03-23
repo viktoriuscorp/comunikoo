@@ -170,7 +170,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/agencia-ecommerce/",
-    "title": "Agencia Ecommerce | Creamos y Hacemos Crecer Tu Tienda Online — Comunikoo",
+    "title": "Agencia Ecommerce | Crece Tu Tienda Online",
     "meta_desc": "Agencia ecommerce especializada: diseño, SEO, campañas y CRO para tiendas online. Shopify, WooCommerce y PrestaShop. Aumentamos tus ventas online.",
     "h1": "Agencia Ecommerce — Creamos, Optimizamos y Escalamos Tu Tienda Online",
     "h1_short": "Agencia Ecommerce",

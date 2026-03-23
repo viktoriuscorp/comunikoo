@@ -194,7 +194,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/diseno-web/",
-    "title": "Diseño Web Profesional | Webs que Convierten Visitas en Clientes — Comunikoo",
+    "title": "Diseño Web Profesional | Webs que Convierten",
     "meta_desc": "Diseño web profesional enfocado en ventas. Webs rápidas, responsive y optimizadas para SEO. Diseño a medida para tu negocio. Presupuesto sin compromiso.",
     "h1": "Diseño Web Profesional — Creamos Webs que Generan Negocio",
     "h1_short": "Diseño Web",

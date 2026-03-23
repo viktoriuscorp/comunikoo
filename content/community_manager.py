@@ -189,7 +189,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/community-manager/",
-    "title": "Community Manager Profesional | Gestión de Redes para Empresas — Comunikoo",
+    "title": "Community Manager Profesional | Comunikoo",
     "meta_desc": "Community Manager profesional para tu empresa. Creamos contenido, gestionamos tu comunidad y hacemos crecer tus redes. Planes desde 350€/mes.",
     "h1": "Community Manager — Gestión Profesional de Tus Redes Sociales",
     "h1_short": "Community Manager",

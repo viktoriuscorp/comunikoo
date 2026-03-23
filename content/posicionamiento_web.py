@@ -164,7 +164,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/posicionamiento-web/",
-    "title": "Posicionamiento Web | Aparece en las Primeras Posiciones de Google — Comunikoo",
+    "title": "Posicionamiento Web | Top Google | Comunikoo",
     "meta_desc": "Servicio de posicionamiento web profesional. Te posicionamos en las primeras posiciones de Google con estrategia SEO probada. +300% tráfico orgánico.",
     "h1": "Posicionamiento Web — Lleva Tu Página a las Primeras Posiciones de Google",
     "h1_short": "Posicionamiento Web",

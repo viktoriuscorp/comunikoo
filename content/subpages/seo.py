@@ -187,7 +187,7 @@ SUBPAGES = {
     # ================================================================
     "/agencia-seo/seo-off-page/": {
         "type": "service",
-        "title": "SEO Off Page: Link Building y Autoridad de Dominio | Agencia SEO",
+        "title": "SEO Off Page: Link Building y Autoridad | SEO",
         "meta_desc": (
             "Estrategias profesionales de SEO off page: link building, digital PR, guest posting "
             "y gestion de perfil de enlaces. Aumenta la autoridad de tu dominio con enlaces de calidad."
@@ -363,7 +363,7 @@ SUBPAGES = {
     # ================================================================
     "/agencia-seo/seo-tecnico/": {
         "type": "service",
-        "title": "SEO Tecnico: Rendimiento, Indexacion y Core Web Vitals | Agencia SEO",
+        "title": "SEO Tecnico: Core Web Vitals e Indexacion",
         "meta_desc": (
             "Servicio de SEO tecnico avanzado. Optimizamos Core Web Vitals, velocidad de carga, "
             "rastreo, indexacion, hreflang, canonicals y renderizado JavaScript para potenciar tu web."
@@ -549,7 +549,7 @@ SUBPAGES = {
     # ================================================================
     "/agencia-seo/keyword-research/": {
         "type": "service",
-        "title": "Keyword Research Profesional: Investigacion de Palabras Clave | Agencia SEO",
+        "title": "Keyword Research | Investigacion de Palabras Clave",
         "meta_desc": (
             "Servicio profesional de keyword research. Analizamos intencion de busqueda, keywords long-tail, "
             "competencia y clustering para disenar la estrategia de contenidos que tu negocio necesita."
@@ -717,7 +717,7 @@ SUBPAGES = {
     # ================================================================
     "/agencia-seo/contenidos-seo/": {
         "type": "service",
-        "title": "Contenidos SEO: Estrategia de Contenidos para Posicionar | Agencia SEO",
+        "title": "Contenidos SEO: Estrategia para Posicionar",
         "meta_desc": (
             "Creamos contenidos SEO que posicionan y convierten. Estrategia de pillar pages, topic clusters, "
             "content briefs, E-E-A-T y actualizacion de contenidos para dominar tu sector en Google."
@@ -901,7 +901,7 @@ SUBPAGES = {
     # ================================================================
     "/agencia-seo/migracion-seo/": {
         "type": "service",
-        "title": "Migracion SEO: Cambia sin Perder Posicionamiento | Agencia SEO",
+        "title": "Migracion SEO: Cambia sin Perder Posiciones",
         "meta_desc": (
             "Servicio profesional de migracion SEO. Mapeo de URLs, redirecciones 301, auditoria pre y post "
             "migracion y monitorizacion para que tu cambio de plataforma no afecte al trafico organico."

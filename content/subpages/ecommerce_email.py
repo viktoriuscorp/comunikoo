@@ -7,7 +7,7 @@ SUBPAGES = {
     # 1. Shopify vs WooCommerce
     # ─────────────────────────────────────────────
     "/servicios/agencia-ecommerce/shopify-vs-woocommerce/": {
-        "title": "Shopify vs WooCommerce: Comparativa Completa para Elegir Tu Tienda Online",
+        "title": "Shopify vs WooCommerce: Comparativa Completa",
         "meta_desc": "Comparativa Shopify vs WooCommerce. Descubre las ventajas, desventajas, costes y cuál es la mejor plataforma ecommerce para tu negocio.",
         "h1": "Shopify vs WooCommerce: ¿Cuál Es la Mejor Plataforma para Tu Tienda Online?",
         "h1_short": "Shopify vs WooCommerce",
@@ -130,7 +130,7 @@ SUBPAGES = {
     # 2. Optimización de Ficha de Producto
     # ─────────────────────────────────────────────
     "/servicios/agencia-ecommerce/optimizacion-ficha-producto/": {
-        "title": "Optimización de Ficha de Producto | SEO y Conversión para Ecommerce",
+        "title": "Ficha de Producto | SEO y Conversión Ecommerce",
         "meta_desc": "Servicio de optimización de fichas de producto para ecommerce. Mejoramos títulos, descripciones, imágenes y SEO para aumentar visibilidad y ventas.",
         "h1": "Optimización de Fichas de Producto: Más Visibilidad, Más Ventas",
         "h1_short": "Optimizar Ficha Producto",
@@ -482,7 +482,7 @@ SUBPAGES = {
     # 5. Automatización de Email Marketing
     # ─────────────────────────────────────────────
     "/email-marketing/automatizacion-email/": {
-        "title": "Automatización de Email Marketing | Flows, Triggers y Nurturing",
+        "title": "Automatización Email Marketing | Flows y Triggers",
         "meta_desc": "Servicio de automatización de email marketing. Diseñamos flows automáticos, secuencias de nurturing y triggers que venden mientras tú duermes.",
         "h1": "Automatización de Email Marketing: Emails que Venden Mientras Tú Duermes",
         "h1_short": "Automatización Email",
@@ -718,7 +718,7 @@ SUBPAGES = {
     # 7. Email Marketing con Mailchimp
     # ─────────────────────────────────────────────
     "/email-marketing/email-marketing-mailchimp/": {
-        "title": "Email Marketing con Mailchimp | Setup, Plantillas y Automatización",
+        "title": "Email Marketing Mailchimp | Setup y Plantillas",
         "meta_desc": "Servicio de email marketing con Mailchimp. Configuración profesional, plantillas personalizadas, segmentación avanzada e integraciones para maximizar resultados.",
         "h1": "Email Marketing con Mailchimp: Configuración Profesional para Resultados Reales",
         "h1_short": "Mailchimp",

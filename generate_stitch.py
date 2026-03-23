@@ -130,7 +130,30 @@ TAILWIND_CONFIG = ''  # Kept for compatibility, CSS is in /css/style.css
 # HTML TEMPLATES
 # ============================================================
 
+def _truncate_title(title, max_len=60):
+    """Ensure title tag is at most max_len characters."""
+    if len(title) <= max_len:
+        return title
+    # Step 1: replace em-dash with pipe
+    if " — Comunikoo" in title:
+        title = title.replace(" — Comunikoo", " | Comunikoo")
+    if len(title) <= max_len:
+        return title
+    # Step 2: remove brand entirely
+    if " | Comunikoo" in title:
+        title = title.replace(" | Comunikoo", "")
+    if len(title) <= max_len:
+        return title
+    # Step 3: truncate at last space before max_len
+    truncated = title[:max_len]
+    last_space = truncated.rfind(' ')
+    if last_space > 0:
+        return truncated[:last_space]
+    return truncated
+
+
 def head_html(title, meta_desc, canonical, schema=""):
+    title = _truncate_title(title)
     return f'''<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -2088,7 +2111,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </body></html>'''
 
     return head_html(
-        "Agencia de Marketing Digital Barcelona | SEO, Diseño Web y Google Ads — Comunikoo",
+        "Agencia Marketing Digital Barcelona | Comunikoo",
         "Agencia de marketing digital en Barcelona. Expertos en SEO, diseño web, Google Ads y redes sociales. Resultados reales. Sin permanencia. Auditoría gratuita.",
         "/", schema
     ) + '\n' + body
@@ -2152,7 +2175,7 @@ def build_contact_page():
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
-    return head_html("Contacto | Comunikoo — Agencia de Marketing Digital Barcelona", "Contacta con Comunikoo. Agencia de marketing digital en Barcelona. Te respondemos en menos de 24h.", "/contacto/", schema) + '\n' + body
+    return head_html("Contacto | Comunikoo — Marketing Digital Barcelona", "Contacta con Comunikoo, agencia de marketing digital en Barcelona. Respuesta en menos de 24h. Auditoría gratuita sin compromiso. Llámanos o escríbenos.", "/contacto/", schema) + '\n' + body
 
 
 def build_services_index():
@@ -2204,7 +2227,7 @@ def build_services_index():
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
-    return head_html("Servicios de Marketing Digital | Comunikoo", "Todos los servicios de marketing digital de Comunikoo: SEO, diseño web, Google Ads, redes sociales, ecommerce y más.", "/servicios/") + '\n' + body
+    return head_html("Servicios de Marketing Digital | Comunikoo", "Servicios de marketing digital: SEO, diseño web, Google Ads, redes sociales, ecommerce y más. +487 proyectos. Sin permanencia. Pide tu auditoría gratis.", "/servicios/") + '\n' + body
 
 
 def build_blog_index():
@@ -2437,6 +2460,8 @@ def main():
     # STATIC PAGES
     for title, meta, url, h1, content in [
         ("Nosotros | Comunikoo", "Conoce al equipo de Comunikoo, agencia de marketing digital en Barcelona. +487 proyectos, 98% satisfacción, equipo senior dedicado. Sin permanencia.", "/nosotros/", "Sobre Comunikoo", "<p>Somos una agencia de marketing digital con sede en Barcelona. Más de 487 proyectos completados y un 98% de clientes satisfechos nos avalan.</p><h2>Nuestra misión</h2><p>Ayudar a negocios a crecer de forma sostenible a través del marketing digital basado en datos y resultados medibles.</p><h2>Nuestros valores</h2><p><strong>Transparencia:</strong> Dashboard en tiempo real, sin contratos de permanencia.</p><p><strong>Resultados:</strong> Medimos éxito en leads, ventas y facturación.</p><p><strong>Especialización:</strong> Equipo senior con +5 años de experiencia cada uno.</p>"),
+        ("Solicita Presupuesto | Comunikoo", "Pide presupuesto de marketing digital sin compromiso. SEO, diseño web, Google Ads, redes sociales. Respuesta en 24h. Auditoría gratuita incluida.", "/presupuesto/", "Solicita Presupuesto", "<p>Cuéntanos sobre tu proyecto y te enviaremos un presupuesto personalizado en menos de 24 horas. Sin compromiso ni permanencia.</p><h2>¿Qué incluye?</h2><p>Análisis inicial de tu situación, propuesta estratégica y presupuesto detallado. Todo sin coste.</p>"),
+        ("Casos de Éxito | Comunikoo", "Descubre cómo hemos ayudado a +487 empresas a crecer con SEO, Google Ads y diseño web. Resultados reales y medibles. Mira nuestros casos.", "/casos-de-exito/", "Casos de Éxito", "<p>Más de 487 proyectos completados con un 98% de satisfacción. Estos son algunos de nuestros casos más destacados.</p>"),
         ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
         ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es · +34 608 721 015</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
         ("Política de Cookies | Comunikoo", "Política de cookies de Comunikoo. Información sobre las cookies que utilizamos, sus finalidades y cómo gestionarlas.", "/politica-de-cookies/", "Política de Cookies", "<p>Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia de navegación y ofrecer contenidos de interés.</p><h2>¿Qué son las cookies?</h2><p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo al visitar un sitio web.</p><h2>Tipos de cookies que usamos</h2><p><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio.</p><p><strong>Cookies analíticas:</strong> nos ayudan a entender cómo interactúan los usuarios con el sitio (Google Analytics).</p>"),

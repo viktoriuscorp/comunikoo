@@ -879,8 +879,8 @@ ALL_PAGES.append(svc("/servicios/linkbuilding/", "Linkbuilding Profesional | Bac
 for pg in [
     ("/diseno-web/", "Diseño Web Profesional | Webs que Convierten — Comunikoo", "Diseño web profesional enfocado en ventas. Webs rápidas, responsive y optimizadas para SEO. Presupuesto sin compromiso.", "Diseño Web Profesional — Creamos Webs que Generan Negocio", "Diseño Web"),
     ("/servicios/diseno-web-wordpress/", "Diseño Web WordPress | Webs Profesionales — Comunikoo", "Diseño web en WordPress a medida. Webs rápidas, editables y optimizadas para SEO. Sin plantillas genéricas.", "Diseño Web WordPress — Webs Profesionales, Rápidas y Autogestionables", "Diseño WordPress"),
-    ("/servicios/agencia-wordpress/", "Agencia WordPress | Desarrollo Especializado — Comunikoo", "Agencia WordPress con +200 proyectos. Diseño, desarrollo, plugins a medida y soporte.", "Agencia WordPress — Tu Partner Especializado en WordPress", "Agencia WordPress"),
-    ("/servicios/programador-wordpress/", "Programador WordPress | Desarrollo a Medida — Comunikoo", "Programadores WordPress expertos. Desarrollo a medida, plugins custom e integraciones API.", "Programador WordPress — Desarrollo a Medida Sin Límites Técnicos", "Programador WordPress"),
+    ("/servicios/agencia-wordpress/", "Agencia WordPress | Desarrollo Especializado — Comunikoo", "Agencia WordPress con +200 proyectos completados. Diseño, desarrollo, plugins a medida, WPO y soporte técnico. Sin permanencia. Pide tu auditoría gratis.", "Agencia WordPress — Tu Partner Especializado en WordPress", "Agencia WordPress"),
+    ("/servicios/programador-wordpress/", "Programador WordPress | Desarrollo a Medida — Comunikoo", "Programadores WordPress senior. Desarrollo a medida, plugins custom, integraciones API y WPO avanzado. +200 proyectos. Presupuesto sin compromiso.", "Programador WordPress — Desarrollo a Medida Sin Límites Técnicos", "Programador WordPress"),
     ("/servicios/mantenimiento-wordpress/", "Mantenimiento WordPress | Soporte y Seguridad — Comunikoo", "Planes de mantenimiento WordPress: actualizaciones, seguridad, backups y soporte. Desde 99€/mes.", "Mantenimiento WordPress — Tu Web Siempre Segura y Actualizada", "Mantenimiento WordPress"),
     ("/servicios/diseno-web-a-medida/", "Diseño Web a Medida | Sin Plantillas — Comunikoo", "Diseño web a medida 100% personalizado. Sin plantillas, sin límites. Tu web única.", "Diseño Web a Medida — Tu Web Única, Diseñada Desde Cero", "Diseño Web a Medida"),
     ("/servicios/diseno-web-para-empresas/", "Diseño Web para Empresas | Webs Corporativas — Comunikoo", "Diseño web para empresas que genera confianza y clientes. Webs corporativas profesionales.", "Diseño Web para Empresas — La Web Corporativa que Tu Negocio Necesita", "Diseño Web Empresas"),
@@ -1021,7 +1021,7 @@ for slug, svc_name, full_name in GEO_SERVICES_BCN:
     ALL_PAGES.append(geo(
         url,
         f"{full_name} | Expertos Locales — Comunikoo",
-        f"{full_name} con equipo local en Barcelona. Estrategias personalizadas para el mercado barcelonés. +487 proyectos, 98% satisfacción. Sin permanencia. Auditoría gratuita.",
+        f"{full_name}: equipo local, resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.",
         f"{full_name} — Expertos Locales en la Ciudad Condal",
         full_name, f"Servicio de {svc_name.lower()} en Barcelona con equipo local y conocimiento del mercado barcelonés.",
         "Barcelona", svc_name, BCN_ZONES,
@@ -1041,7 +1041,7 @@ for slug, svc_name, full_name_bcn in GEO_SERVICES_BCN:
     ALL_PAGES.append(geo(
         url,
         f"{full_name} | Presencia en Madrid — Comunikoo",
-        f"{full_name} con presencia activa en la capital. Expertos en el mercado madrileño. +487 proyectos, resultados medibles. Sin permanencia. Auditoría gratuita.",
+        f"{full_name}: presencia activa, resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.",
         f"{full_name} — Presencia Activa en la Capital",
         full_name, f"Servicio de {svc_name.lower()} en Madrid con conocimiento del mercado madrileño.",
         "Madrid", svc_name, MAD_ZONES,

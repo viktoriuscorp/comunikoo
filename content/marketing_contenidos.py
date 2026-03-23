@@ -149,7 +149,7 @@ SIDEBAR_STATS = [
 
 PAGE_DATA = {
     "url": "/servicios/marketing-de-contenidos/",
-    "title": "Marketing de Contenidos | Contenido que Posiciona y Convierte — Comunikoo",
+    "title": "Marketing de Contenidos | Posiciona y Convierte",
     "meta_desc": "Marketing de contenidos: blog, vídeo, infografías y lead magnets que atraen, posicionan y convierten. Estrategia de contenidos a medida para tu marca.",
     "h1": "Marketing de Contenidos — Atrae, Posiciona y Convierte con Contenido Estratégico",
     "h1_short": "Marketing de Contenidos",
