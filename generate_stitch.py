@@ -353,6 +353,7 @@ def nav_html(current_url="/"):
 </div>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/nosotros/')}">Nosotros</a>
 <a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/blog/')}">Blog</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="{r('/contacto/')}">Contacto</a>
 <a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratis</a>
 </div>
 <button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
@@ -2353,34 +2354,32 @@ def build_contact_page():
 <p class="text-xs text-on-surface-variant text-center">Al enviar aceptas nuestra <a href="{r('/politica-de-privacidad/')}" class="underline">política de privacidad</a>.</p>
 </form>
 </div>
-<div class="bg-primary p-10 md:p-14 text-white flex flex-col justify-between">
-<div class="space-y-10">
+<div class="bg-primary p-10 md:p-14 lg:p-16 text-white flex flex-col justify-between">
 <div>
-<h3 class="font-headline font-bold text-xl mb-6">¿Prefieres escribirnos directamente?</h3>
-<div class="space-y-4">
-<a href="mailto:hola@comunikoo.es" class="flex items-center gap-4 text-on-primary-container hover:text-white transition-colors">
-<span class="material-symbols-outlined text-secondary-container">mail</span>
-<div><p class="font-bold text-white text-sm">Email</p><p class="text-on-primary-container text-sm">hola@comunikoo.es</p></div>
+<h3 class="font-headline font-bold text-xl mb-10">¿Prefieres escribirnos directamente?</h3>
+<div class="space-y-8">
+<a href="mailto:hola@comunikoo.es" class="flex items-center gap-5 text-on-primary-container hover:text-white transition-colors group">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-container/30 transition-colors"><span class="material-symbols-outlined text-secondary-container">mail</span></div>
+<div><p class="font-bold text-white text-sm">Email</p><p class="text-on-primary-container text-sm mt-0.5">hola@comunikoo.es</p></div>
 </a>
-<div class="flex items-center gap-4 text-on-primary-container">
-<span class="material-symbols-outlined text-secondary-container">schedule</span>
-<div><p class="font-bold text-white text-sm">Horario</p><p class="text-on-primary-container text-sm">Lunes a Viernes, 9:00 - 20:00</p></div>
+<div class="flex items-center gap-5 text-on-primary-container">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">schedule</span></div>
+<div><p class="font-bold text-white text-sm">Horario</p><p class="text-on-primary-container text-sm mt-0.5">Lunes a Viernes, 9:00 - 20:00</p></div>
 </div>
-<div class="flex items-center gap-4 text-on-primary-container">
-<span class="material-symbols-outlined text-secondary-container">location_on</span>
-<div><p class="font-bold text-white text-sm">Ubicación</p><p class="text-on-primary-container text-sm">Barcelona, España</p></div>
+<div class="flex items-center gap-5 text-on-primary-container">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">location_on</span></div>
+<div><p class="font-bold text-white text-sm">Ubicación</p><p class="text-on-primary-container text-sm mt-0.5">Barcelona, España</p></div>
 </div>
 </div>
 </div>
-<div class="bg-white/10 rounded-xl p-6 mt-8">
-<p class="text-white font-headline font-bold text-sm mb-2">¿Qué incluye la auditoría gratuita?</p>
-<ul class="text-on-primary-container text-sm space-y-2">
-<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Análisis de tu web y SEO actual</li>
-<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Estudio de tu competencia directa</li>
-<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Oportunidades de crecimiento identificadas</li>
-<li class="flex items-start gap-2"><span class="text-secondary-container mt-0.5">✓</span> Propuesta personalizada con presupuesto</li>
+<div class="bg-white/10 rounded-xl p-6 mt-12">
+<p class="text-white font-headline font-bold text-sm mb-4">¿Qué incluye la auditoría gratuita?</p>
+<ul class="text-on-primary-container text-sm space-y-3">
+<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Análisis de tu web y SEO actual</li>
+<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Estudio de tu competencia directa</li>
+<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Oportunidades de crecimiento</li>
+<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Propuesta personalizada con presupuesto</li>
 </ul>
-</div>
 </div>
 </div>
 </div>
