@@ -2025,8 +2025,9 @@ def build_geo_page(page):
     current_url = p['url']
     r = lambda target: rel(target, current_url)
     city = p['city']
-    faqs = p.get('faqs', [])
-    faq_schema_tag = faq_schema(faqs) if faqs else ''
+    faqs = list(p.get('faqs', []))
+    # Extra FAQs from geo_content will be added after geo_data is loaded
+    faq_schema_tag = ''  # Will be set later
     schema = local_business_schema(city, p['service_name'])
     if faq_schema_tag:
         schema += '\n' + faq_schema_tag
@@ -2052,6 +2053,34 @@ def build_geo_page(page):
     svc_name_lower = svc_name.lower()
     parent_url = p.get('parent_service_url', '/agencia-seo/')
 
+    # Load rich geo content
+    try:
+        from content.geo_content import GEO_CONTENT
+    except ImportError:
+        GEO_CONTENT = {}
+
+    # Map URL slug to geo content type
+    GEO_TYPE_MAP = {
+        'agencia-seo': 'seo', 'agencia-seo-local': 'seo_local',
+        'diseno-web': 'web', 'diseno-web-wordpress': 'wordpress',
+        'google-ads': 'ads', 'agencia-google-ads': 'ads',
+        'community-manager': 'social', 'gestion-redes-sociales': 'social',
+        'tienda-online': 'ecommerce', 'agencia-ecommerce': 'ecommerce',
+        'agencia-shopify': 'ecommerce', 'agencia-woocommerce': 'ecommerce',
+        'agencia-wordpress': 'wordpress', 'mantenimiento-wordpress': 'wordpress',
+        'programador-wordpress': 'wordpress',
+        'agencia-facebook-ads': 'facebook', 'agencia-meta-ads': 'facebook',
+        'consultor-google-ads': 'google_specialist', 'experto-google-ads': 'google_specialist',
+        'freelance-google-ads': 'google_specialist',
+        'desarrollo-web': 'other', 'diseno-tienda-online': 'other',
+        'google-shopping': 'other', 'seo-ecommerce': 'other',
+        'disenador-web': 'other',
+    }
+    # Extract slug from URL (e.g., /agencia-seo-barcelona/ → agencia-seo)
+    url_slug = current_url.strip('/').replace('-barcelona', '').replace('-madrid', '')
+    geo_type = GEO_TYPE_MAP.get(url_slug, 'other')
+    geo_data = GEO_CONTENT.get(geo_type, {}).get(city, {})
+
     # Dynamic local content based on service type and city
     CITY_DATA = {
         'Barcelona': {
@@ -2068,6 +2097,14 @@ def build_geo_page(page):
         }
     }
     cd = CITY_DATA.get(city, CITY_DATA['Barcelona'])
+
+    # Add extra FAQs from geo content
+    extra_geo_faqs = geo_data.get('extra_faqs', [])
+    if extra_geo_faqs:
+        faqs = faqs + list(extra_geo_faqs)
+    faq_schema_tag = faq_schema(faqs) if faqs else ''
+    if faq_schema_tag:
+        schema += '\n' + faq_schema_tag
 
     # Generate 3 content sections with real local value
     local_section_1 = auto_link(f'''<p>{cd["business_desc"]}</p>
@@ -2135,6 +2172,26 @@ def build_geo_page(page):
 </div>
 </section>
 
+{f"""
+<!-- MARKET ANALYSIS -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>El mercado de {svc_name_lower} en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(geo_data.get('market_analysis', ''), current_url, max_links=3)}</div>
+</div>
+</section>
+""" if geo_data.get('market_analysis') else ""}
+
+{f"""
+<!-- LOCAL STRATEGY -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Nuestra estrategia de {svc_name_lower} en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(geo_data.get('local_strategy', ''), current_url, max_links=4)}</div>
+</div>
+</section>
+""" if geo_data.get('local_strategy') else ""}
+
 <!-- CTA MID -->
 <section class="py-16 px-6 lg:px-8 bg-primary">
 <div class="max-w-2xl mx-auto text-center">
@@ -2144,11 +2201,32 @@ def build_geo_page(page):
 </div>
 </section>
 
+{f"""
+<!-- CASE STUDY LOCAL -->
+<section class="sec-block bg-[#f4f6fa]">
+<div class="container">
+<div class="sec-heading"><h2>Caso de éxito: {svc_name_lower} en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(geo_data.get('case_study', ''), current_url, max_links=2)}</div>
+</div>
+</section>
+""" if geo_data.get('case_study') else ""}
+
+{f"""
+<!-- DETAILED SERVICES -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Servicios de {svc_name_lower} en {city}</h2><div class="bar"></div></div>
+<div class="prose-block">{auto_link(geo_data.get('detailed_services', ''), current_url, max_links=3)}</div>
+</div>
+</section>
+""" if geo_data.get('detailed_services') else ""}
+
 <!-- LOCAL KNOWLEDGE -->
 <section class="sec-block">
 <div class="container">
 <div class="sec-heading"><h2>Conocimiento local del mercado en {city}</h2><div class="bar"></div></div>
 <div class="prose-block">{local_section_2}</div>
+{f'<div class="prose-block" style="margin-top:2rem">{auto_link(geo_data.get("why_local_matters", ""), current_url, max_links=2)}</div>' if geo_data.get('why_local_matters') else ''}
 </div>
 </section>
 
