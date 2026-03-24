@@ -696,6 +696,200 @@ def roi_calculator_html(current_url="/", context_type="general", context_name=""
 </section>'''
 
 
+def web_audit_html(current_url="/"):
+    """Web audit lead magnet — analyzes URL with PageSpeed API and shows results inline."""
+    r = lambda target: rel(target, current_url)
+    return f'''
+<section class="py-20 lg:py-24 px-6 lg:px-8 bg-[#0f172a]" id="auditoria-web">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#38bdf8] font-bold text-xs uppercase tracking-widest mb-4">Herramienta gratuita</span>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white">Auditoría Web Gratuita — Analiza Tu Web en 30 Segundos</h2>
+<p class="text-[#94a3b8] mt-3 max-w-xl mx-auto">Introduce la URL de tu web y te mostramos al instante: velocidad, SEO, mobile-friendly y puntos de mejora. Gratis, sin compromiso.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-2xl">
+<div class="space-y-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">URL de tu web *</label>
+<div class="flex gap-3 flex-wrap">
+<div class="flex-1 min-w-[200px] flex items-center bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg overflow-hidden">
+<span class="px-3 text-sm text-[#94a3b8] flex-shrink-0">https://</span>
+<input id="audit_url" type="text" class="w-full bg-transparent border-none px-1 py-3 text-sm focus:outline-none" placeholder="tuweb.es" required>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Email *</label>
+<input id="audit_email" type="email" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com" required>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Nombre</label>
+<input id="audit_name" type="text" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="Tu nombre">
+</div>
+</div>
+<button id="audit_btn" onclick="runAudit()" class="w-full bg-[#0f172a] text-white font-bold py-4 rounded-lg hover:bg-[#1e293b] transition-all active:scale-95 text-base cursor-pointer">Analizar mi web gratis →</button>
+</div>
+
+<!-- Loading -->
+<div id="audit_loading" style="display:none" class="mt-8 text-center">
+<div style="width:40px;height:40px;border:3px solid #e0e3e8;border-top-color:#fd8b00;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto"></div>
+<p class="text-sm text-[#43474f] mt-3">Analizando tu web... Esto puede tardar 15-30 segundos.</p>
+<style>@keyframes spin{{from{{transform:rotate(0deg)}}to{{transform:rotate(360deg)}}}}</style>
+</div>
+
+<!-- Results -->
+<div id="audit_results" style="display:none" class="mt-8">
+<div class="text-center mb-6">
+<div id="audit_score_ring" style="width:100px;height:100px;border-radius:50%;border:6px solid #e0e3e8;display:flex;align-items:center;justify-content:center;margin:0 auto;position:relative">
+<span id="audit_score" class="font-headline font-black text-3xl text-primary">--</span>
+</div>
+<p class="text-sm text-[#43474f] mt-2 font-bold">Puntuación general</p>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+<div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
+<div id="audit_perf" class="font-headline font-black text-2xl text-primary">--</div>
+<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Rendimiento</p>
+</div>
+<div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
+<div id="audit_seo" class="font-headline font-black text-2xl text-primary">--</div>
+<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">SEO</p>
+</div>
+<div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
+<div id="audit_access" class="font-headline font-black text-2xl text-primary">--</div>
+<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Accesibilidad</p>
+</div>
+<div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
+<div id="audit_bp" class="font-headline font-black text-2xl text-primary">--</div>
+<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Buenas prácticas</p>
+</div>
+</div>
+
+<div class="space-y-3 mb-6">
+<h3 class="font-headline font-bold text-sm text-primary">Métricas clave:</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
+<span id="audit_fcp_icon" style="font-size:1.2rem">⏱</span>
+<div><p class="text-xs font-bold text-primary">First Paint</p><p id="audit_fcp" class="text-xs text-[#43474f]">--</p></div>
+</div>
+<div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
+<span id="audit_lcp_icon" style="font-size:1.2rem">🖼</span>
+<div><p class="text-xs font-bold text-primary">LCP</p><p id="audit_lcp" class="text-xs text-[#43474f]">--</p></div>
+</div>
+<div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
+<span id="audit_cls_icon" style="font-size:1.2rem">📐</span>
+<div><p class="text-xs font-bold text-primary">CLS</p><p id="audit_cls" class="text-xs text-[#43474f]">--</p></div>
+</div>
+</div>
+</div>
+
+<div id="audit_issues" class="space-y-2 mb-6">
+<h3 class="font-headline font-bold text-sm text-primary">Puntos de mejora detectados:</h3>
+<div id="audit_issues_list"></div>
+</div>
+
+<div class="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-5 text-center">
+<p class="text-sm text-[#166534] font-bold">¿Quieres que solucionemos estos problemas?</p>
+<p class="text-xs text-[#43474f] mt-1 mb-3">Te enviaremos un informe detallado con las acciones prioritarias a tu email.</p>
+<a href="{r('/contacto/')}" class="inline-block bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm">Solicitar informe completo gratis →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+function runAudit(){{
+  var url=document.getElementById('audit_url').value.trim();
+  var email=document.getElementById('audit_email').value.trim();
+  var name=document.getElementById('audit_name').value.trim();
+  if(!url){{document.getElementById('audit_url').style.borderColor='#ef4444';return;}}
+  if(!email||!email.includes('@')){{document.getElementById('audit_email').style.borderColor='#ef4444';return;}}
+  if(!url.startsWith('http'))url='https://'+url;
+  document.getElementById('audit_loading').style.display='block';
+  document.getElementById('audit_results').style.display='none';
+  document.getElementById('audit_btn').disabled=true;
+  document.getElementById('audit_btn').textContent='Analizando...';
+
+  var apiUrl='https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='+encodeURIComponent(url)+'&category=performance&category=seo&category=accessibility&category=best-practices&strategy=mobile';
+
+  fetch(apiUrl).then(function(r){{return r.json()}}).then(function(data){{
+    var cats=data.lighthouseResult.categories;
+    var perf=Math.round(cats.performance.score*100);
+    var seo=Math.round(cats.seo.score*100);
+    var access=Math.round(cats.accessibility.score*100);
+    var bp=Math.round(cats['best-practices'].score*100);
+    var avg=Math.round((perf+seo+access+bp)/4);
+
+    function color(s){{return s>=90?'#166534':s>=50?'#ca8a04':'#dc2626'}}
+
+    document.getElementById('audit_score').textContent=avg;
+    document.getElementById('audit_score').style.color=color(avg);
+    document.getElementById('audit_score_ring').style.borderColor=color(avg);
+    document.getElementById('audit_perf').textContent=perf;
+    document.getElementById('audit_perf').style.color=color(perf);
+    document.getElementById('audit_seo').textContent=seo;
+    document.getElementById('audit_seo').style.color=color(seo);
+    document.getElementById('audit_access').textContent=access;
+    document.getElementById('audit_access').style.color=color(access);
+    document.getElementById('audit_bp').textContent=bp;
+    document.getElementById('audit_bp').style.color=color(bp);
+
+    var audits=data.lighthouseResult.audits;
+    var fcp=audits['first-contentful-paint']||{{}};
+    var lcp=audits['largest-contentful-paint']||{{}};
+    var cls=audits['cumulative-layout-shift']||{{}};
+    document.getElementById('audit_fcp').textContent=fcp.displayValue||'--';
+    document.getElementById('audit_lcp').textContent=lcp.displayValue||'--';
+    document.getElementById('audit_cls').textContent=cls.displayValue||'--';
+    document.getElementById('audit_fcp_icon').textContent=fcp.score>=0.9?'✅':fcp.score>=0.5?'⚠️':'❌';
+    document.getElementById('audit_lcp_icon').textContent=lcp.score>=0.9?'✅':lcp.score>=0.5?'⚠️':'❌';
+    document.getElementById('audit_cls_icon').textContent=cls.score>=0.9?'✅':cls.score>=0.5?'⚠️':'❌';
+
+    var issues='';
+    var checks=['render-blocking-resources','uses-optimized-images','uses-text-compression','uses-responsive-images','dom-size','redirects','meta-description','document-title','http-status-code','is-crawlable','robots-txt','hreflang','canonical','structured-data'];
+    checks.forEach(function(k){{
+      var a=audits[k];
+      if(a&&a.score!==null&&a.score<1){{
+        var icon=a.score>=0.5?'⚠️':'❌';
+        issues+='<div class=\"flex items-start gap-2 bg-[#fef2f2] rounded-lg p-3 text-xs\"><span>'+icon+'</span><div><strong class=\"text-[#991b1b]\">'+a.title+'</strong><p class=\"text-[#43474f] mt-0.5\">'+(a.description||'').substring(0,150)+'</p></div></div>';
+      }}
+    }});
+    if(!issues)issues='<p class=\"text-sm text-[#166534]\">✅ No se han detectado problemas críticos. ¡Tu web está bien optimizada!</p>';
+    document.getElementById('audit_issues_list').innerHTML=issues;
+
+    document.getElementById('audit_loading').style.display='none';
+    document.getElementById('audit_results').style.display='block';
+    document.getElementById('audit_btn').textContent='✓ Análisis completado';
+    document.getElementById('audit_btn').style.background='#166534';
+
+    var fd=new FormData();
+    fd.append('email',email);
+    fd.append('nombre',name);
+    fd.append('url_analizada',url);
+    fd.append('rendimiento',perf+'/100');
+    fd.append('seo',seo+'/100');
+    fd.append('accesibilidad',access+'/100');
+    fd.append('buenas_practicas',bp+'/100');
+    fd.append('puntuacion_general',avg+'/100');
+    fd.append('_subject','Lead auditoría web — '+url);
+    fd.append('_template','box');
+    fd.append('_autoresponse','Hola, hemos analizado tu web '+url+'. Puntuación: '+avg+'/100. Nuestro equipo te contactará con un informe detallado y recomendaciones. ¡Gracias por confiar en Comunikoo!');
+    fd.append('_captcha','false');
+    fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd}});
+
+  }}).catch(function(err){{
+    document.getElementById('audit_loading').style.display='none';
+    document.getElementById('audit_btn').textContent='Error — Inténtalo de nuevo';
+    document.getElementById('audit_btn').style.background='#dc2626';
+    document.getElementById('audit_btn').disabled=false;
+    setTimeout(function(){{document.getElementById('audit_btn').textContent='Analizar mi web gratis →';document.getElementById('audit_btn').style.background='#0f172a';document.getElementById('audit_btn').disabled=false;}},3000);
+  }});
+}}
+</script>'''
+
+
 def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sobre tu proyecto?", cta_desc="Rellena el formulario y te contactamos en menos de 24h con una propuesta personalizada. Sin compromiso."):
     r = lambda target: rel(target, current_url)
     subject = f"Lead desde comunikoo.es — {service_name}" if service_name else "Nuevo lead desde comunikoo.es"
@@ -1536,7 +1730,7 @@ def build_service_page(page):
 
 {faq_section}
 
-''' + (roi_calculator_html(current_url, cluster_key, p.get('h1_short', '')) if current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + f'''
+''' + (roi_calculator_html(current_url, cluster_key, p.get('h1_short', '')) if current_url in ['/agencia-seo/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + (web_audit_html(current_url) if current_url in ['/diseno-web/', '/servicios/diseno-web-wordpress/', '/servicios/desarrollo-web/', '/servicios/mantenimiento-web/', '/servicios/mantenimiento-wordpress/', '/servicios/landing-pages/', '/servicios/diseno-web-a-medida/', '/servicios/diseno-web-para-empresas/', '/servicios/agencia-wordpress/', '/servicios/programador-wordpress/'] else '') + f'''
 
 {subpages_section}
 
