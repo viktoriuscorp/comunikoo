@@ -661,7 +661,7 @@ def roi_calculator_html(current_url="/", context_type="general", context_name=""
   document.getElementById(cid+'_roi').textContent=roi+'%';
   document.getElementById(cid+'_monthly').textContent='+'+Math.round(growth*0.6).toLocaleString('es-ES')+'€';
   document.getElementById(cid+'_results').style.display='block';
-  this.textContent='✓ Calculado';this.style.background='#166534';this.disabled=true;
+  this.textContent='✓ Resultado calculado';this.style.background='#001e40';this.style.color='#fff';this.style.boxShadow='none';this.disabled=true;
   var fd=new FormData();
   fd.append('email',emailEl.value);
   fd.append('sector',sector);
@@ -676,7 +676,7 @@ def roi_calculator_html(current_url="/", context_type="general", context_name=""
   fd.append('_autoresponse','Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!');
   fd.append('_captcha','false');
   fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd}});
-" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap cursor-pointer">Calcular mi ROI →</button>
+" style="background:#fd8b00;color:#fff;font-weight:700;padding:.875rem 2rem;border-radius:10px;font-size:.95rem;border:none;cursor:pointer;white-space:nowrap;transition:all .2s;box-shadow:0 4px 14px rgba(253,139,0,.3)">Calcular mi ROI →</button>
 </div>
 </div>
 
@@ -744,7 +744,7 @@ def web_audit_html(current_url="/"):
 <input id="audit_name" type="text" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3" style="font-size:16px" placeholder="Tu nombre">
 </div>
 </div>
-<button id="audit_btn" onclick="runAudit()" class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg cursor-pointer shadow-lg shadow-secondary-container/20">Analizar mi web gratis →</button>
+<button id="audit_btn" onclick="runAudit()" style="width:100%;background:#fd8b00;color:#fff;font-weight:700;padding:1rem;border-radius:10px;font-size:1.1rem;border:none;cursor:pointer;transition:all .2s;box-shadow:0 4px 14px rgba(253,139,0,.3)">Analizar mi web gratis →</button>
 <p class="text-center text-xs text-[#94a3b8] mt-3">Análisis gratuito con Google PageSpeed Insights. Sin compromiso.</p>
 </div>
 
@@ -837,7 +837,7 @@ function runAudit(){{
       document.getElementById('audit_results').style.display='block';
       document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f] mb-3\">Nuestro sistema de análisis está procesando muchas solicitudes. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p><p class=\"text-xs text-[#166534] font-bold\">✓ Tu email ha sido registrado correctamente</p></div>';
       document.getElementById('audit_btn').textContent='✓ Solicitud registrada';
-      document.getElementById('audit_btn').style.background='#166534';
+      document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
       var fd2=new FormData();
       fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
       fd2.append('nota','API no disponible - enviar informe manual');
@@ -895,7 +895,7 @@ function runAudit(){{
     document.getElementById('audit_loading').style.display='none';
     document.getElementById('audit_results').style.display='block';
     document.getElementById('audit_btn').textContent='✓ Análisis completado';
-    document.getElementById('audit_btn').style.background='#166534';
+    document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
 
     var fd=new FormData();
     fd.append('email',email);
@@ -918,7 +918,7 @@ function runAudit(){{
       document.getElementById('audit_results').style.display='block';
       document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f]\">Nuestro sistema de análisis está procesando muchas solicitudes en este momento. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
       document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
-      document.getElementById('audit_btn').style.background='#166534';
+      document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
       var fd2=new FormData();
       fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
       fd2.append('nota','API saturada - enviar informe manual');
@@ -933,7 +933,7 @@ function runAudit(){{
     document.getElementById('audit_results').style.display='block';
     document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente no disponible</p><p class=\"text-xs text-[#43474f]\">Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
     document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
-    document.getElementById('audit_btn').style.background='#166534';
+    document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
     var fd3=new FormData();
     fd3.append('email',email);fd3.append('nombre',name);fd3.append('url_analizada',url);
     fd3.append('nota','Error API - enviar informe manual');

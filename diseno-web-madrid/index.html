@@ -543,7 +543,7 @@ details summary::-webkit-details-marker { display: none; }
   document.getElementById(cid+'_roi').textContent=roi+'%';
   document.getElementById(cid+'_monthly').textContent='+'+Math.round(growth*0.6).toLocaleString('es-ES')+'€';
   document.getElementById(cid+'_results').style.display='block';
-  this.textContent='✓ Calculado';this.style.background='#166534';this.disabled=true;
+  this.textContent='✓ Resultado calculado';this.style.background='#001e40';this.style.color='#fff';this.style.boxShadow='none';this.disabled=true;
   var fd=new FormData();
   fd.append('email',emailEl.value);
   fd.append('sector',sector);
@@ -558,7 +558,7 @@ details summary::-webkit-details-marker { display: none; }
   fd.append('_autoresponse','Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!');
   fd.append('_captcha','false');
   fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd});
-" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap cursor-pointer">Calcular mi ROI →</button>
+" style="background:#fd8b00;color:#fff;font-weight:700;padding:.875rem 2rem;border-radius:10px;font-size:.95rem;border:none;cursor:pointer;white-space:nowrap;transition:all .2s;box-shadow:0 4px 14px rgba(253,139,0,.3)">Calcular mi ROI →</button>
 </div>
 </div>
 
