@@ -500,7 +500,7 @@ def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sob
 <form class="space-y-5" action="https://formsubmit.co/hola@comunikoo.es" method="POST">
 <input type="hidden" name="_subject" value="{subject}">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://comunikoo.es/contacto/?enviado=1">
+<input type="hidden" name="_next" value="https://comunikoo.es/gracias/">
 <input type="hidden" name="_template" value="box">
 <input type="hidden" name="_autoresponse" value="Hola, hemos recibido tu mensaje. Te contactaremos en menos de 24 horas con una propuesta personalizada. ¡Gracias por confiar en Comunikoo!">
 <input type="text" name="_honey" style="display:none">
@@ -2423,7 +2423,7 @@ def build_contact_page():
 <form class="space-y-5" action="https://formsubmit.co/hola@comunikoo.es" method="POST">
 <input type="hidden" name="_subject" value="Nuevo lead desde comunikoo.es">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://comunikoo.es/contacto/?enviado=1">
+<input type="hidden" name="_next" value="https://comunikoo.es/gracias/">
 <input type="hidden" name="_template" value="box">
 <input type="hidden" name="_autoresponse" value="Hola, hemos recibido tu mensaje. Te contactaremos en menos de 24 horas con una propuesta personalizada. ¡Gracias por confiar en Comunikoo!">
 <input type="text" name="_honey" style="display:none">
@@ -2828,6 +2828,28 @@ def main():
         ("Casos de Éxito | Comunikoo", "Descubre cómo hemos ayudado a +487 empresas a crecer con SEO, Google Ads y diseño web. Resultados reales y medibles. Mira nuestros casos.", "/casos-de-exito/", "Casos de Éxito", "<p>Más de 487 proyectos completados con un 98% de satisfacción. Estos son algunos de nuestros casos más destacados.</p>"),
         ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
         ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es · +34 608 721 015</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
+        ("¡Mensaje Enviado! | Comunikoo", "Tu mensaje ha sido enviado correctamente. Te contactaremos en menos de 24 horas.", "/gracias/", "¡Mensaje Enviado!", f"""
+<div style="text-align:center;max-width:600px;margin:0 auto">
+<div style="width:80px;height:80px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem">
+<span class="material-symbols-outlined" style="font-size:2.5rem;color:#2e7d32">check_circle</span>
+</div>
+<h2 style="font-family:Manrope,sans-serif;font-size:1.5rem;font-weight:800;color:#001e40;margin-bottom:1rem">¡Gracias por contactarnos!</h2>
+<p style="font-size:1rem;line-height:1.7;color:#43474f;margin-bottom:1.5rem">Hemos recibido tu mensaje correctamente. Nuestro equipo lo revisará y <strong>te contactaremos en menos de 24 horas</strong> con una propuesta personalizada.</p>
+<div style="background:#f4f6fa;border-radius:12px;padding:1.5rem;margin-bottom:2rem">
+<p style="font-family:Manrope,sans-serif;font-weight:700;color:#001e40;font-size:.9rem;margin-bottom:.75rem">¿Qué pasa ahora?</p>
+<div style="text-align:left;font-size:.85rem;color:#43474f;line-height:1.8">
+<p>1. Recibirás un email de confirmación en tu bandeja de entrada</p>
+<p>2. Nuestro equipo analiza tu caso y prepara una propuesta</p>
+<p>3. Te contactamos en menos de 24h con un plan personalizado</p>
+</div>
+</div>
+<div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+<a href="../index.html" style="background:#001e40;color:#fff;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.9rem;text-decoration:none">Volver al inicio</a>
+<a href="../servicios/index.html" style="background:#fd8b00;color:#603100;padding:.75rem 2rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.9rem;text-decoration:none">Ver servicios</a>
+</div>
+<p style="font-size:.8rem;color:#737780;margin-top:2rem">¿Urgente? Escríbenos a <a href="mailto:hola@comunikoo.es" style="color:#fd8b00">hola@comunikoo.es</a></p>
+</div>
+"""),
         ("Política de Cookies | Comunikoo", "Política de cookies de Comunikoo. Información sobre las cookies que utilizamos, sus finalidades y cómo gestionarlas.", "/politica-de-cookies/", "Política de Cookies", "<p>Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia de navegación y ofrecer contenidos de interés.</p><h2>¿Qué son las cookies?</h2><p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo al visitar un sitio web.</p><h2>Tipos de cookies que usamos</h2><p><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio.</p><p><strong>Cookies analíticas:</strong> nos ayudan a entender cómo interactúan los usuarios con el sitio (Google Analytics).</p>"),
     ]:
         if url not in processed_urls:
