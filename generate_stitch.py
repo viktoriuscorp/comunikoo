@@ -690,8 +690,15 @@ def roi_calculator_html(current_url="/", context_type="general", context_name=""
 <p class="text-xs text-[#43474f] mt-1">beneficio neto/mes</p>
 </div>
 </div>
-<p class="text-xs text-[#43474f] mt-4 text-center">*Estimación basada en datos medios de +487 proyectos. Resultados reales varían según sector y competencia.</p>
-<p class="text-sm text-[#166534] font-bold mt-3 text-center">Te enviaremos un análisis personalizado a tu email.</p>
+<div class="mt-6 bg-white rounded-lg p-5 text-xs text-[#43474f] leading-relaxed space-y-3">
+<p class="font-headline font-bold text-sm text-primary mb-2">¿Cómo interpretamos estos resultados?</p>
+<p><strong class="text-primary">Crecimiento estimado/mes:</strong> Es el incremento mensual en facturación que podrías conseguir aplicando una estrategia de marketing digital profesional. Se calcula en base al estado actual de tu web, tu inversión y los resultados medios que hemos obtenido en más de 487 proyectos similares. No prometemos cifras exactas — cada negocio es diferente — pero estos números reflejan lo que consiguen nuestros clientes de media.</p>
+<p><strong class="text-primary">ROI estimado:</strong> Es el retorno sobre la inversión a 6 meses. Si inviertes X euros al mes durante 6 meses y generas Y euros adicionales, el ROI mide cuánto recuperas por cada euro invertido. Un ROI del 200% significa que por cada euro invertido, recuperas 2 euros de beneficio neto.</p>
+<p><strong class="text-primary">Beneficio neto/mes:</strong> Es lo que te queda después de descontar la inversión en marketing. Es decir: el crecimiento generado menos el coste del servicio. Este es el número que realmente importa para tu cuenta de resultados.</p>
+<p><strong class="text-primary">¿Por qué varían los resultados según el estado de tu web?</strong> Un negocio sin web o con una web antigua tiene más margen de mejora — hay mucho recorrido. Un negocio con web profesional ya optimizada mejora de forma más gradual. En ambos casos, el marketing digital genera retorno positivo, pero el punto de partida influye en la velocidad de crecimiento.</p>
+<p class="text-[10px] text-[#94a3b8]">*Estos cálculos son estimaciones orientativas basadas en datos agregados de nuestros proyectos. Los resultados reales dependen de factores como el sector, la competencia, la calidad del producto/servicio y la inversión sostenida en el tiempo. Para obtener una previsión personalizada y detallada, solicita tu auditoría gratuita.</p>
+</div>
+<p class="text-sm text-[#166534] font-bold mt-4 text-center">Te enviaremos un análisis personalizado a tu email.</p>
 </div>
 </div>
 </div>
@@ -818,6 +825,22 @@ function runAudit(){{
   var apiUrl='https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='+encodeURIComponent(url)+'&category=performance&category=seo&category=accessibility&category=best-practices&strategy=mobile';
 
   fetch(apiUrl).then(function(r){{return r.json()}}).then(function(data){{
+    if(data.error||!data.lighthouseResult){{
+      document.getElementById('audit_loading').style.display='none';
+      document.getElementById('audit_results').style.display='block';
+      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f] mb-3\">Nuestro sistema de análisis está procesando muchas solicitudes. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p><p class=\"text-xs text-[#166534] font-bold\">✓ Tu email ha sido registrado correctamente</p></div>';
+      document.getElementById('audit_btn').textContent='✓ Solicitud registrada';
+      document.getElementById('audit_btn').style.background='#166534';
+      var fd2=new FormData();
+      fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
+      fd2.append('nota','API no disponible - enviar informe manual');
+      fd2.append('_subject','Lead auditoría web — '+url);
+      fd2.append('_template','box');
+      fd2.append('_autoresponse','Hola, hemos recibido tu solicitud de auditoría web para '+url+'. Nuestro equipo te enviará un informe detallado en las próximas 24 horas. Gracias por confiar en Comunikoo.');
+      fd2.append('_captcha','false');
+      fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd2}});
+      return;
+    }}
     var cats=data.lighthouseResult.categories;
     var perf=Math.round(cats.performance.score*100);
     var seo=Math.round(cats.seo.score*100);
@@ -882,12 +905,35 @@ function runAudit(){{
     fd.append('_captcha','false');
     fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd}});
 
+  }}).then(function(data){{
+    if(data.error){{
+      document.getElementById('audit_loading').style.display='none';
+      document.getElementById('audit_results').style.display='block';
+      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f]\">Nuestro sistema de análisis está procesando muchas solicitudes en este momento. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+      document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
+      document.getElementById('audit_btn').style.background='#166534';
+      var fd2=new FormData();
+      fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
+      fd2.append('nota','API saturada - enviar informe manual');
+      fd2.append('_subject','Lead auditoría web (manual) — '+url);
+      fd2.append('_template','box');
+      fd2.append('_autoresponse','Hola, hemos recibido tu solicitud de auditoría web para '+url+'. Nuestro equipo te enviará un informe detallado en las próximas 24 horas. ¡Gracias por confiar en Comunikoo!');
+      fd2.append('_captcha','false');
+      fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd2}});
+    }}
   }}).catch(function(err){{
     document.getElementById('audit_loading').style.display='none';
-    document.getElementById('audit_btn').textContent='Error — Inténtalo de nuevo';
-    document.getElementById('audit_btn').style.background='#dc2626';
-    document.getElementById('audit_btn').disabled=false;
-    setTimeout(function(){{document.getElementById('audit_btn').textContent='Analizar mi web gratis →';document.getElementById('audit_btn').style.background='#0f172a';document.getElementById('audit_btn').disabled=false;}},3000);
+    document.getElementById('audit_results').style.display='block';
+    document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente no disponible</p><p class=\"text-xs text-[#43474f]\">Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+    document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
+    document.getElementById('audit_btn').style.background='#166534';
+    var fd3=new FormData();
+    fd3.append('email',email);fd3.append('nombre',name);fd3.append('url_analizada',url);
+    fd3.append('nota','Error API - enviar informe manual');
+    fd3.append('_subject','Lead auditoría web (manual) — '+url);
+    fd3.append('_template','box');
+    fd3.append('_captcha','false');
+    fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{{method:'POST',body:fd3}});
   }});
 }}
 </script>'''

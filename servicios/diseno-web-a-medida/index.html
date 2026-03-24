@@ -788,6 +788,22 @@ function runAudit(){
   var apiUrl='https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='+encodeURIComponent(url)+'&category=performance&category=seo&category=accessibility&category=best-practices&strategy=mobile';
 
   fetch(apiUrl).then(function(r){return r.json()}).then(function(data){
+    if(data.error||!data.lighthouseResult){
+      document.getElementById('audit_loading').style.display='none';
+      document.getElementById('audit_results').style.display='block';
+      document.getElementById('audit_results').innerHTML='<div class="bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center"><p class="font-headline font-bold text-sm text-[#9a3412] mb-2">Servicio temporalmente saturado</p><p class="text-xs text-[#43474f] mb-3">Nuestro sistema de análisis está procesando muchas solicitudes. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p><p class="text-xs text-[#166534] font-bold">✓ Tu email ha sido registrado correctamente</p></div>';
+      document.getElementById('audit_btn').textContent='✓ Solicitud registrada';
+      document.getElementById('audit_btn').style.background='#166534';
+      var fd2=new FormData();
+      fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
+      fd2.append('nota','API no disponible - enviar informe manual');
+      fd2.append('_subject','Lead auditoría web — '+url);
+      fd2.append('_template','box');
+      fd2.append('_autoresponse','Hola, hemos recibido tu solicitud de auditoría web para '+url+'. Nuestro equipo te enviará un informe detallado en las próximas 24 horas. Gracias por confiar en Comunikoo.');
+      fd2.append('_captcha','false');
+      fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd2});
+      return;
+    }
     var cats=data.lighthouseResult.categories;
     var perf=Math.round(cats.performance.score*100);
     var seo=Math.round(cats.seo.score*100);
@@ -852,12 +868,35 @@ function runAudit(){
     fd.append('_captcha','false');
     fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd});
 
+  }).then(function(data){
+    if(data.error){
+      document.getElementById('audit_loading').style.display='none';
+      document.getElementById('audit_results').style.display='block';
+      document.getElementById('audit_results').innerHTML='<div class="bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center"><p class="font-headline font-bold text-sm text-[#9a3412] mb-2">Servicio temporalmente saturado</p><p class="text-xs text-[#43474f]">Nuestro sistema de análisis está procesando muchas solicitudes en este momento. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+      document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
+      document.getElementById('audit_btn').style.background='#166534';
+      var fd2=new FormData();
+      fd2.append('email',email);fd2.append('nombre',name);fd2.append('url_analizada',url);
+      fd2.append('nota','API saturada - enviar informe manual');
+      fd2.append('_subject','Lead auditoría web (manual) — '+url);
+      fd2.append('_template','box');
+      fd2.append('_autoresponse','Hola, hemos recibido tu solicitud de auditoría web para '+url+'. Nuestro equipo te enviará un informe detallado en las próximas 24 horas. ¡Gracias por confiar en Comunikoo!');
+      fd2.append('_captcha','false');
+      fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd2});
+    }
   }).catch(function(err){
     document.getElementById('audit_loading').style.display='none';
-    document.getElementById('audit_btn').textContent='Error — Inténtalo de nuevo';
-    document.getElementById('audit_btn').style.background='#dc2626';
-    document.getElementById('audit_btn').disabled=false;
-    setTimeout(function(){document.getElementById('audit_btn').textContent='Analizar mi web gratis →';document.getElementById('audit_btn').style.background='#0f172a';document.getElementById('audit_btn').disabled=false;},3000);
+    document.getElementById('audit_results').style.display='block';
+    document.getElementById('audit_results').innerHTML='<div class="bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center"><p class="font-headline font-bold text-sm text-[#9a3412] mb-2">Servicio temporalmente no disponible</p><p class="text-xs text-[#43474f]">Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+    document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
+    document.getElementById('audit_btn').style.background='#166534';
+    var fd3=new FormData();
+    fd3.append('email',email);fd3.append('nombre',name);fd3.append('url_analizada',url);
+    fd3.append('nota','Error API - enviar informe manual');
+    fd3.append('_subject','Lead auditoría web (manual) — '+url);
+    fd3.append('_template','box');
+    fd3.append('_captcha','false');
+    fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd3});
   });
 }
 </script>
