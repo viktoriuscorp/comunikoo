@@ -1770,8 +1770,8 @@ def build_service_page(page):
 </section>
 
 <!-- NAV PILLS -->
-<section class="py-4 px-6 lg:px-8 border-b border-outline-variant/10 sticky top-[72px] bg-white/95 backdrop-blur-md z-30 shadow-sm">
-<div class="max-w-7xl mx-auto flex gap-3 overflow-x-auto scrollbar-hide justify-center py-1">
+<section style="position:sticky;top:73px;z-index:40;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:1rem 1.5rem">
+<div style="max-width:1280px;margin:0 auto;display:flex;gap:.75rem;overflow-x:auto;justify-content:center;padding:.25rem 0" class="scrollbar-hide">
 {nav_pills}
 </div>
 </section>
