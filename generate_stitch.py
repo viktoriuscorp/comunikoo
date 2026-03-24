@@ -486,6 +486,198 @@ def footer_html(current_url="/"):
 </footer>'''
 
 
+def roi_calculator_html(current_url="/", context_type="general", context_name=""):
+    """Interactive ROI calculator as lead magnet. Adapts to service, vertical or geo context."""
+    r = lambda target: rel(target, current_url)
+
+    # Adapt title/subtitle by context
+    CALC_COPY = {
+        'seo': {
+            'title': '¿Cuánto podrías facturar con SEO?',
+            'subtitle': 'Calcula el retorno estimado de invertir en posicionamiento web para tu negocio.',
+            'metric': 'tráfico orgánico',
+        },
+        'web': {
+            'title': '¿Cuánto te cuesta NO tener una web profesional?',
+            'subtitle': 'Descubre cuántos clientes podrías estar perdiendo sin una web optimizada.',
+            'metric': 'conversiones web',
+        },
+        'ads': {
+            'title': '¿Es rentable Google Ads para tu negocio?',
+            'subtitle': 'Calcula el ROAS estimado de tus campañas de publicidad online.',
+            'metric': 'retorno en publicidad',
+        },
+        'social': {
+            'title': '¿Cuánto negocio generas desde redes sociales?',
+            'subtitle': 'Descubre el potencial de las redes sociales para captar clientes en tu sector.',
+            'metric': 'leads desde redes',
+        },
+        'ecommerce': {
+            'title': '¿Cuánto más podría facturar tu tienda online?',
+            'subtitle': 'Calcula el impacto de optimizar tu ecommerce con SEO, publicidad y CRO.',
+            'metric': 'ventas online',
+        },
+        'restaurantes': {
+            'title': '¿Cuántas reservas online podrías conseguir?',
+            'subtitle': 'Calcula el impacto del marketing digital en la ocupación de tu restaurante.',
+            'metric': 'reservas mensuales',
+        },
+        'hoteles': {
+            'title': '¿Cuánto ahorrarías en comisiones OTA?',
+            'subtitle': 'Calcula cuántas reservas directas podrías generar con marketing digital.',
+            'metric': 'reservas directas',
+        },
+        'clinicas': {
+            'title': '¿Cuántos pacientes nuevos podrías captar?',
+            'subtitle': 'Calcula el impacto del marketing digital en tu clínica.',
+            'metric': 'pacientes nuevos/mes',
+        },
+        'abogados': {
+            'title': '¿Cuántos clientes nuevos podrías captar online?',
+            'subtitle': 'Descubre el potencial del marketing digital para tu despacho de abogados.',
+            'metric': 'consultas nuevas/mes',
+        },
+        'inmobiliarias': {
+            'title': '¿Cuántos leads de compradores podrías generar?',
+            'subtitle': 'Calcula el impacto del marketing digital en tu agencia inmobiliaria.',
+            'metric': 'leads cualificados/mes',
+        },
+        'gimnasios': {
+            'title': '¿Cuántos socios nuevos podrías captar al mes?',
+            'subtitle': 'Calcula el impacto del marketing digital en tu gimnasio.',
+            'metric': 'socios nuevos/mes',
+        },
+        'ecommerce_vertical': {
+            'title': '¿Cuánto más podría facturar tu tienda online?',
+            'subtitle': 'Calcula el crecimiento estimado con una estrategia de marketing digital completa.',
+            'metric': 'facturación mensual',
+        },
+        'geo_barcelona': {
+            'title': f'¿Cuánto podrías crecer con marketing digital en Barcelona?',
+            'subtitle': f'Calcula el ROI estimado para tu negocio en el mercado barcelonés.',
+            'metric': 'crecimiento estimado',
+        },
+        'geo_madrid': {
+            'title': f'¿Cuánto podrías crecer con marketing digital en Madrid?',
+            'subtitle': f'Calcula el ROI estimado para tu negocio en el mercado madrileño.',
+            'metric': 'crecimiento estimado',
+        },
+        'general': {
+            'title': '¿Cuánto podrías crecer con marketing digital?',
+            'subtitle': 'Calcula el retorno estimado de invertir en marketing digital para tu negocio.',
+            'metric': 'crecimiento estimado',
+        },
+    }
+
+    copy = CALC_COPY.get(context_type, CALC_COPY['general'])
+    calc_id = f"calc_{context_type.replace(' ', '_')}"
+
+    return f'''
+<section class="py-20 lg:py-24 px-6 lg:px-8 bg-primary" id="calculadora">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Calculadora gratuita</span>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white">{copy['title']}</h2>
+<p class="text-on-primary-container mt-3 max-w-xl mx-auto">{copy['subtitle']}</p>
+</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-2xl" id="{calc_id}">
+<div class="space-y-6" id="{calc_id}_form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Sector</label>
+<select id="{calc_id}_sector" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="restaurante">Restaurante / Hostelería</option>
+<option value="clinica">Clínica / Salud</option>
+<option value="ecommerce">Ecommerce / Tienda online</option>
+<option value="servicios" selected>Servicios profesionales</option>
+<option value="legal">Abogados / Legal</option>
+<option value="inmobiliaria">Inmobiliaria</option>
+<option value="gimnasio">Gimnasio / Fitness</option>
+<option value="b2b">Empresa B2B</option>
+<option value="otro">Otro sector</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Facturación mensual actual</label>
+<select id="{calc_id}_revenue" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="5000">Menos de 10.000€</option>
+<option value="15000">10.000€ - 25.000€</option>
+<option value="40000" selected>25.000€ - 50.000€</option>
+<option value="75000">50.000€ - 100.000€</option>
+<option value="150000">100.000€ - 250.000€</option>
+<option value="350000">Más de 250.000€</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Tienes página web?</label>
+<select id="{calc_id}_web" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="no">No tengo web</option>
+<option value="old">Sí, pero antigua o lenta</option>
+<option value="ok" selected>Sí, web actualizada</option>
+<option value="good">Sí, web profesional optimizada</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Inviertes en marketing digital?</label>
+<select id="{calc_id}_invest" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="0" selected>No, nada</option>
+<option value="300">Menos de 500€/mes</option>
+<option value="750">500€ - 1.000€/mes</option>
+<option value="2000">1.000€ - 3.000€/mes</option>
+<option value="5000">Más de 3.000€/mes</option>
+</select>
+</div>
+</div>
+
+<div class="border-t border-[#e0e3e8] pt-5">
+<p class="text-xs font-bold text-primary uppercase tracking-wider mb-3">Introduce tu email para ver el resultado</p>
+<form class="flex gap-3 flex-wrap" action="https://formsubmit.co/hola@comunikoo.es" method="POST" onsubmit="document.getElementById('{calc_id}_results').style.display='block'">
+<input type="hidden" name="_subject" value="Lead calculadora ROI — {context_name or context_type}">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://comunikoo.es/gracias/">
+<input type="hidden" name="_template" value="box">
+<input type="hidden" name="_autoresponse" value="Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!">
+<input type="text" name="_honey" style="display:none">
+<input type="hidden" name="contexto" value="{context_name or context_type}">
+<input name="email" required type="email" class="flex-1 min-w-[200px] bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com">
+<button type="submit" onclick="
+  var cid='{calc_id}';
+  var rev=parseInt(document.getElementById(cid+'_revenue').value);
+  var inv=parseInt(document.getElementById(cid+'_invest').value);
+  var web=document.getElementById(cid+'_web').value;
+  var mult=(web==='no'?3.5:web==='old'?2.8:web==='ok'?2.2:1.8);
+  mult=mult*(inv===0?1.3:inv<500?1.15:1.0);
+  var growth=Math.round(rev*mult-rev);
+  var roi=Math.round((growth/(inv>0?inv:990))*100);
+  document.getElementById(cid+'_growth').textContent=growth.toLocaleString('es-ES');
+  document.getElementById(cid+'_roi').textContent=roi+'%';
+  document.getElementById(cid+'_results').style.display='block';
+" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap">Calcular mi ROI →</button>
+</form>
+</div>
+
+<div id="{calc_id}_results" style="display:none" class="mt-6 bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-6">
+<p class="font-headline font-bold text-sm text-[#166534] mb-4">Estimación de resultados en 6 meses:</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="text-center bg-white rounded-lg p-4">
+<div class="font-headline font-black text-2xl text-[#166534]">+<span id="{calc_id}_growth">0</span>€</div>
+<p class="text-xs text-[#43474f] mt-1">{copy['metric']} estimado/mes</p>
+</div>
+<div class="text-center bg-white rounded-lg p-4">
+<div class="font-headline font-black text-2xl text-[#166534]"><span id="{calc_id}_roi">0</span></div>
+<p class="text-xs text-[#43474f] mt-1">ROI estimado</p>
+</div>
+</div>
+<p class="text-xs text-[#43474f] mt-4 text-center">*Estimación basada en datos medios de nuestros +487 proyectos. Resultados reales varían según sector y competencia. Te enviaremos un análisis personalizado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>'''
+
+
 def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sobre tu proyecto?", cta_desc="Rellena el formulario y te contactamos en menos de 24h con una propuesta personalizada. Sin compromiso."):
     r = lambda target: rel(target, current_url)
     subject = f"Lead desde comunikoo.es — {service_name}" if service_name else "Nuevo lead desde comunikoo.es"
@@ -1326,6 +1518,8 @@ def build_service_page(page):
 
 {faq_section}
 
+''' + (roi_calculator_html(current_url, cluster_key, p.get('h1_short', '')) if current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + f'''
+
 {subpages_section}
 
 {siblings_section}
@@ -1524,12 +1718,28 @@ def build_vertical_page(page):
         if vu != current_url:
             vert_pills += f'<a href="{r(vu)}" class="px-4 py-2 rounded-full bg-white border border-black/[.06] shadow-[0_1px_4px_rgba(0,0,0,.05)] text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all no-underline">{vn}</a>\n'
 
+    # Map vertical to calculator context
+    VERT_CALC = {
+        'restaurantes': 'restaurantes', 'hoteles': 'hoteles',
+        'clinicas-dentales': 'clinicas', 'clinicas-esteticas': 'clinicas',
+        'psicologos': 'clinicas', 'veterinarias': 'clinicas',
+        'abogados': 'abogados', 'asesorias': 'abogados',
+        'inmobiliarias': 'inmobiliarias', 'gimnasios': 'gimnasios',
+        'ecommerce': 'ecommerce_vertical', 'empresas-b2b': 'general',
+        'empresas-de-reformas': 'general', 'autoescuelas': 'general',
+        'talleres-de-coches': 'general', 'academias': 'general',
+    }
+    vert_slug = current_url.replace('/marketing-para-', '').strip('/')
+    vert_calc_type = VERT_CALC.get(vert_slug, 'general')
+
     body_end = f'''{vert_pills}
 </div>
 </div>
 </section>
 
 {faq_section}
+
+''' + roi_calculator_html(current_url, vert_calc_type, p.get('sector_name', '')) + f'''
 
 <!-- CTA -->
 <section class="bg-primary py-24 px-6 lg:px-8">
@@ -1700,6 +1910,8 @@ def build_geo_page(page):
 </section>
 
 {faq_section}
+
+''' + roi_calculator_html(current_url, 'geo_barcelona' if 'barcelona' in current_url else 'geo_madrid', p.get('service_name', '')) + f'''
 
 <!-- CTA FINAL -->
 <section class="bg-primary py-24 px-6 lg:px-8">
@@ -2188,6 +2400,8 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </div>
 </div>
 </section>
+
+''' + roi_calculator_html(current_url, 'general', 'Marketing Digital') + f'''
 
 <!-- FAQ -->
 <section class="py-28 px-6 lg:px-8 max-w-7xl mx-auto">

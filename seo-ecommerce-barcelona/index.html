@@ -389,6 +389,111 @@ details summary::-webkit-details-marker { display: none; }
 </div>
 </section>
 
+
+<section class="py-20 lg:py-24 px-6 lg:px-8 bg-primary" id="calculadora">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Calculadora gratuita</span>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white">¿Cuánto podrías crecer con marketing digital en Barcelona?</h2>
+<p class="text-on-primary-container mt-3 max-w-xl mx-auto">Calcula el ROI estimado para tu negocio en el mercado barcelonés.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-2xl" id="calc_geo_barcelona">
+<div class="space-y-6" id="calc_geo_barcelona_form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Sector</label>
+<select id="calc_geo_barcelona_sector" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="restaurante">Restaurante / Hostelería</option>
+<option value="clinica">Clínica / Salud</option>
+<option value="ecommerce">Ecommerce / Tienda online</option>
+<option value="servicios" selected>Servicios profesionales</option>
+<option value="legal">Abogados / Legal</option>
+<option value="inmobiliaria">Inmobiliaria</option>
+<option value="gimnasio">Gimnasio / Fitness</option>
+<option value="b2b">Empresa B2B</option>
+<option value="otro">Otro sector</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Facturación mensual actual</label>
+<select id="calc_geo_barcelona_revenue" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="5000">Menos de 10.000€</option>
+<option value="15000">10.000€ - 25.000€</option>
+<option value="40000" selected>25.000€ - 50.000€</option>
+<option value="75000">50.000€ - 100.000€</option>
+<option value="150000">100.000€ - 250.000€</option>
+<option value="350000">Más de 250.000€</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Tienes página web?</label>
+<select id="calc_geo_barcelona_web" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="no">No tengo web</option>
+<option value="old">Sí, pero antigua o lenta</option>
+<option value="ok" selected>Sí, web actualizada</option>
+<option value="good">Sí, web profesional optimizada</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Inviertes en marketing digital?</label>
+<select id="calc_geo_barcelona_invest" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="0" selected>No, nada</option>
+<option value="300">Menos de 500€/mes</option>
+<option value="750">500€ - 1.000€/mes</option>
+<option value="2000">1.000€ - 3.000€/mes</option>
+<option value="5000">Más de 3.000€/mes</option>
+</select>
+</div>
+</div>
+
+<div class="border-t border-[#e0e3e8] pt-5">
+<p class="text-xs font-bold text-primary uppercase tracking-wider mb-3">Introduce tu email para ver el resultado</p>
+<form class="flex gap-3 flex-wrap" action="https://formsubmit.co/hola@comunikoo.es" method="POST" onsubmit="document.getElementById('calc_geo_barcelona_results').style.display='block'">
+<input type="hidden" name="_subject" value="Lead calculadora ROI — SEO Ecommerce">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://comunikoo.es/gracias/">
+<input type="hidden" name="_template" value="box">
+<input type="hidden" name="_autoresponse" value="Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!">
+<input type="text" name="_honey" style="display:none">
+<input type="hidden" name="contexto" value="SEO Ecommerce">
+<input name="email" required type="email" class="flex-1 min-w-[200px] bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com">
+<button type="submit" onclick="
+  var cid='calc_geo_barcelona';
+  var rev=parseInt(document.getElementById(cid+'_revenue').value);
+  var inv=parseInt(document.getElementById(cid+'_invest').value);
+  var web=document.getElementById(cid+'_web').value;
+  var mult=(web==='no'?3.5:web==='old'?2.8:web==='ok'?2.2:1.8);
+  mult=mult*(inv===0?1.3:inv<500?1.15:1.0);
+  var growth=Math.round(rev*mult-rev);
+  var roi=Math.round((growth/(inv>0?inv:990))*100);
+  document.getElementById(cid+'_growth').textContent=growth.toLocaleString('es-ES');
+  document.getElementById(cid+'_roi').textContent=roi+'%';
+  document.getElementById(cid+'_results').style.display='block';
+" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap">Calcular mi ROI →</button>
+</form>
+</div>
+
+<div id="calc_geo_barcelona_results" style="display:none" class="mt-6 bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-6">
+<p class="font-headline font-bold text-sm text-[#166534] mb-4">Estimación de resultados en 6 meses:</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="text-center bg-white rounded-lg p-4">
+<div class="font-headline font-black text-2xl text-[#166534]">+<span id="calc_geo_barcelona_growth">0</span>€</div>
+<p class="text-xs text-[#43474f] mt-1">crecimiento estimado estimado/mes</p>
+</div>
+<div class="text-center bg-white rounded-lg p-4">
+<div class="font-headline font-black text-2xl text-[#166534]"><span id="calc_geo_barcelona_roi">0</span></div>
+<p class="text-xs text-[#43474f] mt-1">ROI estimado</p>
+</div>
+</div>
+<p class="text-xs text-[#43474f] mt-4 text-center">*Estimación basada en datos medios de nuestros +487 proyectos. Resultados reales varían según sector y competencia. Te enviaremos un análisis personalizado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <!-- CTA FINAL -->
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
