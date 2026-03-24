@@ -450,44 +450,62 @@ details summary::-webkit-details-marker { display: none; }
 
 <div class="border-t border-[#e0e3e8] pt-5">
 <p class="text-xs font-bold text-primary uppercase tracking-wider mb-3">Introduce tu email para ver el resultado</p>
-<form class="flex gap-3 flex-wrap" action="https://formsubmit.co/hola@comunikoo.es" method="POST" onsubmit="document.getElementById('calc_geo_barcelona_results').style.display='block'">
-<input type="hidden" name="_subject" value="Lead calculadora ROI — Gestión Redes Sociales">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://comunikoo.es/gracias/">
-<input type="hidden" name="_template" value="box">
-<input type="hidden" name="_autoresponse" value="Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!">
-<input type="text" name="_honey" style="display:none">
-<input type="hidden" name="contexto" value="Gestión Redes Sociales">
-<input name="email" required type="email" class="flex-1 min-w-[200px] bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com">
-<button type="submit" onclick="
+<div class="flex gap-3 flex-wrap">
+<input id="calc_geo_barcelona_email" required type="email" class="flex-1 min-w-[200px] bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com">
+<button onclick="
   var cid='calc_geo_barcelona';
+  var emailEl=document.getElementById(cid+'_email');
+  if(!emailEl.value||!emailEl.value.includes('@')){emailEl.style.borderColor='#ef4444';return;}
+  emailEl.style.borderColor='#e0e3e8';
   var rev=parseInt(document.getElementById(cid+'_revenue').value);
   var inv=parseInt(document.getElementById(cid+'_invest').value);
   var web=document.getElementById(cid+'_web').value;
+  var sector=document.getElementById(cid+'_sector').value;
   var mult=(web==='no'?3.5:web==='old'?2.8:web==='ok'?2.2:1.8);
   mult=mult*(inv===0?1.3:inv<500?1.15:1.0);
   var growth=Math.round(rev*mult-rev);
   var roi=Math.round((growth/(inv>0?inv:990))*100);
   document.getElementById(cid+'_growth').textContent=growth.toLocaleString('es-ES');
   document.getElementById(cid+'_roi').textContent=roi+'%';
+  document.getElementById(cid+'_monthly').textContent='+'+Math.round(growth*0.15).toLocaleString('es-ES')+'€';
   document.getElementById(cid+'_results').style.display='block';
-" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap">Calcular mi ROI →</button>
-</form>
+  this.textContent='✓ Calculado';this.style.background='#166534';this.disabled=true;
+  var fd=new FormData();
+  fd.append('email',emailEl.value);
+  fd.append('sector',sector);
+  fd.append('facturacion',rev);
+  fd.append('inversion_actual',inv);
+  fd.append('tiene_web',web);
+  fd.append('roi_estimado',roi+'%');
+  fd.append('crecimiento_estimado',growth+'€/mes');
+  fd.append('contexto','Gestión Redes Sociales');
+  fd.append('_subject','Lead calculadora ROI — Gestión Redes Sociales');
+  fd.append('_template','box');
+  fd.append('_autoresponse','Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!');
+  fd.append('_captcha','false');
+  fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd});
+" class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm whitespace-nowrap cursor-pointer">Calcular mi ROI →</button>
+</div>
 </div>
 
 <div id="calc_geo_barcelona_results" style="display:none" class="mt-6 bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-6">
-<p class="font-headline font-bold text-sm text-[#166534] mb-4">Estimación de resultados en 6 meses:</p>
-<div class="grid grid-cols-2 gap-4">
-<div class="text-center bg-white rounded-lg p-4">
+<p class="font-headline font-bold text-sm text-[#166534] mb-4">Tu estimación de resultados en 6 meses:</p>
+<div class="grid grid-cols-3 gap-4">
+<div class="text-center bg-white rounded-lg p-4 shadow-sm">
 <div class="font-headline font-black text-2xl text-[#166534]">+<span id="calc_geo_barcelona_growth">0</span>€</div>
 <p class="text-xs text-[#43474f] mt-1">crecimiento estimado estimado/mes</p>
 </div>
-<div class="text-center bg-white rounded-lg p-4">
+<div class="text-center bg-white rounded-lg p-4 shadow-sm">
 <div class="font-headline font-black text-2xl text-[#166534]"><span id="calc_geo_barcelona_roi">0</span></div>
 <p class="text-xs text-[#43474f] mt-1">ROI estimado</p>
 </div>
+<div class="text-center bg-white rounded-lg p-4 shadow-sm">
+<div class="font-headline font-black text-2xl text-[#166534]"><span id="calc_geo_barcelona_monthly">0</span></div>
+<p class="text-xs text-[#43474f] mt-1">beneficio neto/mes</p>
 </div>
-<p class="text-xs text-[#43474f] mt-4 text-center">*Estimación basada en datos medios de nuestros +487 proyectos. Resultados reales varían según sector y competencia. Te enviaremos un análisis personalizado.</p>
+</div>
+<p class="text-xs text-[#43474f] mt-4 text-center">*Estimación basada en datos medios de +487 proyectos. Resultados reales varían según sector y competencia.</p>
+<p class="text-sm text-[#166534] font-bold mt-3 text-center">Te enviaremos un análisis personalizado a tu email.</p>
 </div>
 </div>
 </div>
