@@ -68,6 +68,11 @@ details summary::-webkit-details-marker { display: none; }
   .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
 }
 
+/* Prevent iOS zoom on input focus */
+@media(max-width:767px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
 /* Nav pills scrollable on mobile */
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
