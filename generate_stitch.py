@@ -486,6 +486,71 @@ def footer_html(current_url="/"):
 </footer>'''
 
 
+def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sobre tu proyecto?", cta_desc="Rellena el formulario y te contactamos en menos de 24h con una propuesta personalizada. Sin compromiso."):
+    r = lambda target: rel(target, current_url)
+    subject = f"Lead desde comunikoo.es — {service_name}" if service_name else "Nuevo lead desde comunikoo.es"
+    return f'''
+<section class="py-20 lg:py-24 px-6 lg:px-8 bg-[#f0f4f8]" id="formulario">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">{cta_title}</h2>
+<p class="text-on-surface-variant mt-3 max-w-xl mx-auto">{cta_desc}</p>
+</div>
+<div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg shadow-primary/5">
+<form class="space-y-5" action="https://formsubmit.co/hola@comunikoo.es" method="POST">
+<input type="hidden" name="_subject" value="{subject}">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://comunikoo.es/contacto/?enviado=1">
+<input type="hidden" name="_template" value="box">
+<input type="hidden" name="_autoresponse" value="Hola, hemos recibido tu mensaje. Te contactaremos en menos de 24 horas con una propuesta personalizada. ¡Gracias por confiar en Comunikoo!">
+<input type="text" name="_honey" style="display:none">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Nombre *</label>
+<input name="nombre" required class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="Tu nombre" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Email *</label>
+<input name="email" required class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="tu@email.com" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Teléfono</label>
+<div class="flex gap-2">
+<select name="prefijo" class="bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-2 py-3 text-sm w-[100px] flex-shrink-0">
+<option value="+34">🇪🇸 +34</option>
+<option value="+33">🇫🇷 +33</option>
+<option value="+44">🇬🇧 +44</option>
+<option value="+49">🇩🇪 +49</option>
+<option value="+39">🇮🇹 +39</option>
+<option value="+351">🇵🇹 +351</option>
+<option value="+1">🇺🇸 +1</option>
+<option value="+52">🇲🇽 +52</option>
+<option value="+54">🇦🇷 +54</option>
+<option value="+57">🇨🇴 +57</option>
+<option value="+56">🇨🇱 +56</option>
+</select>
+<input name="telefono" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="600 000 000" type="tel">
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Web actual</label>
+<input name="web" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="miweb.es" type="text">
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Mensaje *</label>
+<textarea name="mensaje" required class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="Cuéntanos sobre tu proyecto y tus objetivos..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-base" type="submit">Solicitar auditoría gratuita →</button>
+<p class="text-[11px] text-on-surface-variant text-center">Sin compromiso · Respuesta en menos de 24h · <a href="{r("/politica-de-privacidad/")}" class="underline">Política de privacidad</a></p>
+</form>
+</div>
+</div>
+</section>'''
+
+
 def breadcrumb_html(items, current_url="/"):
     r = lambda target: rel(target, current_url)
     parts = ['<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb">']
@@ -1279,10 +1344,11 @@ def build_service_page(page):
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")} →</a>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")} →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
+''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + '''
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
@@ -1469,9 +1535,10 @@ def build_vertical_page(page):
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-white mb-6">{p.get("cta_title", "¿Empezamos?")}</h2>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
+''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if (current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] or current_url.startswith('/marketing-para-')) else '') + f'''
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
@@ -2143,10 +2210,12 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Estimación de resultados a 6 meses</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
+<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicitar auditoría gratuita →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24 horas. Sin llamadas no deseadas.</p>
 </div>
 </section>
+
+''' + inline_form_html(current_url, 'Marketing Digital', '¿Listo para hacer crecer tu negocio?', 'Cuéntanos sobre tu proyecto y te enviamos una propuesta personalizada en menos de 24h. Sin compromiso.') + '''
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
@@ -2346,12 +2415,18 @@ def build_contact_page():
 </section>
 
 <!-- FORM + INFO -->
-<section class="py-8 px-6 lg:px-8 max-w-7xl mx-auto">
-<div class="bg-surface-container-lowest rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-[3fr_2fr] shadow-2xl shadow-primary/5">
+<section class="py-8 px-6 lg:px-8 max-w-5xl mx-auto">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl shadow-primary/5">
 <div class="p-10 md:p-14">
 <h2 class="font-headline font-bold text-2xl text-primary mb-2">Envíanos un mensaje</h2>
 <p class="text-on-surface-variant text-sm mb-8">Rellena el formulario y te contactamos con una propuesta a medida.</p>
-<form class="space-y-5" action="https://formspree.io/f/xdkopgvq" method="POST">
+<form class="space-y-5" action="https://formsubmit.co/hola@comunikoo.es" method="POST">
+<input type="hidden" name="_subject" value="Nuevo lead desde comunikoo.es">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://comunikoo.es/contacto/?enviado=1">
+<input type="hidden" name="_template" value="box">
+<input type="hidden" name="_autoresponse" value="Hola, hemos recibido tu mensaje. Te contactaremos en menos de 24 horas con una propuesta personalizada. ¡Gracias por confiar en Comunikoo!">
+<input type="text" name="_honey" style="display:none">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 <div class="space-y-2">
 <label class="text-sm font-bold text-primary uppercase tracking-wider">Nombre *</label>
@@ -2365,11 +2440,26 @@ def build_contact_page():
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 <div class="space-y-2">
 <label class="text-sm font-bold text-primary uppercase tracking-wider">Teléfono</label>
-<input name="telefono" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="+34 600 000 000" type="tel">
+<div class="flex gap-2">
+<select name="prefijo" class="bg-surface-container-low border-none rounded-lg px-2 py-3.5 text-sm w-[100px] flex-shrink-0 focus:ring-2 focus:ring-secondary-container">
+<option value="+34">🇪🇸 +34</option>
+<option value="+33">🇫🇷 +33</option>
+<option value="+44">🇬🇧 +44</option>
+<option value="+49">🇩🇪 +49</option>
+<option value="+39">🇮🇹 +39</option>
+<option value="+351">🇵🇹 +351</option>
+<option value="+1">🇺🇸 +1</option>
+<option value="+52">🇲🇽 +52</option>
+<option value="+54">🇦🇷 +54</option>
+<option value="+57">🇨🇴 +57</option>
+<option value="+56">🇨🇱 +56</option>
+</select>
+<input name="telefono" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="600 000 000" type="tel">
+</div>
 </div>
 <div class="space-y-2">
 <label class="text-sm font-bold text-primary uppercase tracking-wider">Web actual</label>
-<input name="web" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="tuweb.es" type="url">
+<input name="web" class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="miweb.es" type="text">
 </div>
 </div>
 <div class="space-y-2">
@@ -2394,32 +2484,40 @@ def build_contact_page():
 <p class="text-xs text-on-surface-variant text-center">Al enviar aceptas nuestra <a href="{r('/politica-de-privacidad/')}" class="underline">política de privacidad</a>.</p>
 </form>
 </div>
-<div class="bg-primary p-10 md:p-14 lg:p-16 text-white flex flex-col justify-between">
-<div>
-<h3 class="font-headline font-bold text-xl mb-10">¿Prefieres escribirnos directamente?</h3>
-<div class="space-y-8">
-<a href="mailto:hola@comunikoo.es" class="flex items-center gap-5 text-on-primary-container hover:text-white transition-colors group">
-<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-container/30 transition-colors"><span class="material-symbols-outlined text-secondary-container">mail</span></div>
-<div><p class="font-bold text-white text-sm">Email</p><p class="text-on-primary-container text-sm mt-0.5">hola@comunikoo.es</p></div>
+
+<!-- INFO CARDS (below form, horizontal) -->
+<div class="bg-primary p-8 md:p-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+<a href="mailto:hola@comunikoo.es" class="flex items-center gap-4 text-on-primary-container hover:text-white transition-colors group">
+<div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary-container/30 transition-colors"><span class="material-symbols-outlined text-secondary-container">mail</span></div>
+<div><p class="font-bold text-white text-sm">Email</p><p class="text-on-primary-container text-xs mt-0.5">hola@comunikoo.es</p></div>
 </a>
-<div class="flex items-center gap-5 text-on-primary-container">
-<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">schedule</span></div>
-<div><p class="font-bold text-white text-sm">Horario</p><p class="text-on-primary-container text-sm mt-0.5">Lunes a Viernes, 9:00 - 20:00</p></div>
+<div class="flex items-center gap-4 text-on-primary-container">
+<div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">schedule</span></div>
+<div><p class="font-bold text-white text-sm">Horario</p><p class="text-on-primary-container text-xs mt-0.5">Lunes a Viernes, 9:00 - 20:00</p></div>
 </div>
-<div class="flex items-center gap-5 text-on-primary-container">
-<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">location_on</span></div>
-<div><p class="font-bold text-white text-sm">Ubicación</p><p class="text-on-primary-container text-sm mt-0.5">Barcelona, España</p></div>
+<div class="flex items-center gap-4 text-on-primary-container">
+<div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-secondary-container">location_on</span></div>
+<div><p class="font-bold text-white text-sm">Ubicación</p><p class="text-on-primary-container text-xs mt-0.5">Barcelona, España</p></div>
 </div>
 </div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
+<div class="bg-white/10 rounded-lg p-4 text-center">
+<span class="text-secondary-container font-bold text-lg">✓</span>
+<p class="text-white text-xs font-bold mt-1">Análisis web y SEO</p>
 </div>
-<div class="bg-white/10 rounded-xl p-6 mt-12">
-<p class="text-white font-headline font-bold text-sm mb-4">¿Qué incluye la auditoría gratuita?</p>
-<ul class="text-on-primary-container text-sm space-y-3">
-<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Análisis de tu web y SEO actual</li>
-<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Estudio de tu competencia directa</li>
-<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Oportunidades de crecimiento</li>
-<li class="flex items-start gap-3"><span class="text-secondary-container mt-0.5">✓</span> Propuesta personalizada con presupuesto</li>
-</ul>
+<div class="bg-white/10 rounded-lg p-4 text-center">
+<span class="text-secondary-container font-bold text-lg">✓</span>
+<p class="text-white text-xs font-bold mt-1">Estudio competencia</p>
+</div>
+<div class="bg-white/10 rounded-lg p-4 text-center">
+<span class="text-secondary-container font-bold text-lg">✓</span>
+<p class="text-white text-xs font-bold mt-1">Oportunidades</p>
+</div>
+<div class="bg-white/10 rounded-lg p-4 text-center">
+<span class="text-secondary-container font-bold text-lg">✓</span>
+<p class="text-white text-xs font-bold mt-1">Propuesta + presupuesto</p>
+</div>
 </div>
 </div>
 </div>
