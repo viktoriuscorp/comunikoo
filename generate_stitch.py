@@ -1825,57 +1825,50 @@ def build_service_page(page):
 # ============================================================
 
 def render_sector_stats(p, current_url):
-    """Render sector stats as prose with orange highlighted numbers on white card"""
+    """Render sector stats as floating metrics (taste-skill: no boxes, orange numbers, whitespace)"""
     stats_html = p.get("sector_stats", "")
     if not stats_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
-    # Extract key stats: find <strong>NUMBER</strong> patterns
     stats = _re.findall(r'<strong>([\d.,]+[%€M+]*(?:\s*[a-záéíóúñ€]+)?)</strong>', stats_html)
-    # Build stat cards if we found enough numbers
     stat_cards = ''
     if len(stats) >= 3:
-        # Get labels from surrounding text
         parts = _re.split(r'<strong>[\d.,]+[%€M+]*(?:\s*[a-záéíóúñ€]+)?</strong>', stats_html)
         labels = []
-        for part in parts[1:]:  # skip text before first stat
+        for part in parts[1:]:
             clean = _re.sub(r'<[^>]+>', ' ', part).strip()
-            # Take first phrase as label
             label = clean.split('.')[0].strip().strip(',').strip()
-            if len(label) > 60:
-                label = label[:57] + '...'
+            if len(label) > 50:
+                label = label[:47] + '...'
             labels.append(label)
         grid_cols = 'grid-cols-2 md:grid-cols-4' if len(stats) >= 4 else 'grid-cols-3'
         for i, stat in enumerate(stats[:4]):
             label = labels[i] if i < len(labels) else ''
-            stat_cards += f'''<div class="text-center p-6">
-<div class="font-headline font-extrabold text-3xl md:text-4xl text-secondary-container mb-2">{stat}</div>
-<p class="text-sm text-on-surface-variant">{label}</p>
+            stat_cards += f'''<div class="text-center py-8">
+<div class="font-headline font-extrabold text-4xl md:text-5xl tracking-tighter text-[#fd8b00] mb-3">{stat}</div>
+<p class="text-sm text-[#44474e] max-w-[18ch] mx-auto leading-snug">{label}</p>
 </div>'''
-        stat_cards = f'<div class="grid {grid_cols} gap-4 mb-8">{stat_cards}</div>'
-    # Also render the full prose with highlighted numbers
-    styled = _re.sub(r'<strong>([\d.,]+[%€M+]*[^<]{0,15})</strong>',
-        r'<strong class="text-secondary-container font-headline">\1</strong>',
+        stat_cards = f'<div class="grid {grid_cols} gap-2">{stat_cards}</div>'
+    styled = _re.sub(r'<strong>([\d.,]+[%€M+]*[^<]{{0,15}})</strong>',
+        r'<strong class="text-[#fd8b00] font-headline">\1</strong>',
         stats_html)
     styled = auto_link(styled, current_url, max_links=2)
     return f'''
-<section class="py-20 px-6 lg:px-8">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-10">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de {sector} en cifras</h2>
+<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12">
+<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Datos del sector</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">El sector de {sector} en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
 {stat_cards}
-<div class="text-base text-on-surface-variant leading-relaxed">{styled}</div>
-</div>
+<div class="mt-10 text-base text-[#44474e] leading-relaxed max-w-[65ch] mx-auto">{styled}</div>
 </div>
 </section>'''
 
 
 def render_strategy_blocks(p, current_url):
-    """Render strategy as accordions — title visible, content expandable"""
+    """Render strategy as clean accordions (taste-skill: tinted shadows, no borders, generous spacing)"""
     strategy_html = p.get("strategy_detailed", "")
     if not strategy_html:
         return ""
@@ -1883,7 +1876,6 @@ def render_strategy_blocks(p, current_url):
     sector = p.get("sector_name", "tu sector")
     parts = _re.split(r'<h3[^>]*>(.*?)</h3>', strategy_html)
     items = []
-    icons = ['search', 'ads_click', 'share', 'mail', 'language', 'analytics', 'campaign', 'trending_up']
     for i in range(1, len(parts), 2):
         if i + 1 >= len(parts):
             break
@@ -1891,27 +1883,25 @@ def render_strategy_blocks(p, current_url):
         if len(title) > 55:
             title = title.split(':')[0].strip() if ':' in title else title[:52] + '...'
         content = auto_link(parts[i + 1].strip(), current_url, max_links=2)
-        idx = (i // 2)
-        icon = icons[idx % len(icons)]
-        step = idx + 1
-        items.append(f'''<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
-<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+        step = (i // 2) + 1
+        items.append(f'''<details class="bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,5,17,.04)] group">
+<summary class="flex items-center gap-5 p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-11 h-11 rounded-xl bg-[#001e40] flex items-center justify-center flex-shrink-0">
 <span class="text-white font-headline font-bold text-sm">{step:02d}</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary flex-1">{title}</h3>
-<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+<h3 class="font-headline font-bold text-lg text-[#001e40] flex-1 tracking-tight">{title}</h3>
+<span class="text-[#74777f] transition-transform group-open:rotate-180 text-xl">&#9662;</span>
 </summary>
-<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4">{content}</div>
+<div class="px-6 pb-6 text-base text-[#44474e] leading-relaxed max-w-[65ch]">{content}</div>
 </details>''')
     return f'''
-<section class="py-20 px-6 lg:px-8">
-<div class="max-w-3xl mx-auto">
-<div class="text-center mb-12">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para {sector}</h2>
+<section class="py-24 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-14">
+<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Nuestra metodología</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">Estrategia para {sector}</h2>
 </div>
-<div class="space-y-3">
+<div class="space-y-4">
 {"".join(items)}
 </div>
 </div>
@@ -1919,33 +1909,32 @@ def render_strategy_blocks(p, current_url):
 
 
 def render_case_study(p, current_url):
-    """Render case study as clean card with narrative only (no extracted metrics)"""
+    """Render case study: clean narrative with section headers (taste-skill: tonal layering, no heavy borders)"""
     case_html = p.get("case_study", "")
     if not case_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
-    # Clean narrative — structure with clear section headers
     clean_case = _re.sub(r'<h3[^>]*>.*?</h3>', '', case_html)
-    # Make section headers stand out
-    clean_case = _re.sub(
-        r'<strong>(Situaci[oó]n|Problema|Soluci[oó]n[^<]*|Resultado[^<]*)[:\s]*</strong>[:\s]*',
-        r'</p><h3 class="font-headline font-bold text-lg text-primary mt-6 mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center flex-shrink-0"><span class="text-secondary-container text-sm font-bold">✦</span></span>\1</h3><p class="text-on-surface-variant leading-relaxed">',
-        clean_case
-    )
+    section_icons = {'Situaci': '01', 'Problema': '02', 'Soluci': '03', 'Resultado': '04'}
+    for prefix, num in section_icons.items():
+        clean_case = _re.sub(
+            rf'<strong>({prefix}[oó]?n?[^<]*)[:\s]*</strong>[:\s]*',
+            rf'</p><div class="flex items-center gap-3 mt-8 mb-3"><div class="w-9 h-9 rounded-lg bg-[#001e40] flex items-center justify-center flex-shrink-0"><span class="text-white font-headline font-bold text-xs">{num}</span></div><h3 class="font-headline font-bold text-lg tracking-tight text-[#001e40]">\1</h3></div><p class="text-[#44474e] leading-relaxed max-w-[65ch]">',
+            clean_case
+        )
     clean_case = auto_link(clean_case, current_url, max_links=2)
     return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
-<div class="text-center mb-12">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Resultados reales en {sector}</h2>
+<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-14">
+<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Caso de éxito real</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">Resultados reales en {sector}</h2>
 </div>
-<div class="bg-white rounded-2xl p-6 md:p-10 shadow-[0_4px_24px_rgba(0,0,0,.07)] border border-black/[.04]">
+<div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
 <div class="text-base leading-relaxed">{clean_case}</div>
-<div class="text-center mt-8 pt-6 border-t border-black/[.06]">
-<a href="{rel('/contacto/', current_url)}" class="inline-block bg-primary text-white px-8 py-3.5 rounded-xl font-bold hover:bg-primary-container transition-all">Quiero resultados así →</a>
-</div>
+<div class="mt-10 pt-8" style="border-top:1px solid rgba(0,5,17,.06)">
+<a href="{rel('/contacto/', current_url)}" class="inline-block bg-[#fd8b00] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#e67a00] transition-all active:scale-[.98]">Quiero resultados así</a>
 </div>
 </div>
 </div>
