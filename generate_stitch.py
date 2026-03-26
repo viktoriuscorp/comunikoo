@@ -1819,6 +1819,200 @@ def build_service_page(page):
 
 
 # ============================================================
+# VERTICAL PAGE — VISUAL SECTION RENDERERS
+# ============================================================
+
+def render_sector_stats(p, current_url):
+    """Render sector stats as visual stat cards instead of prose"""
+    stats_html = p.get("sector_stats", "")
+    if not stats_html:
+        return ""
+
+    import re as _re
+    sector = p.get("sector_name", "tu sector")
+
+    # Extract numbers and their context from the HTML
+    text = _re.sub(r'<[^>]+>', ' ', stats_html)
+
+    # Find stat patterns: numbers with context
+    stat_patterns = _re.findall(r'(\d[\d.,]+[%€BM+]*)\s*(?:de\s+)?([^.,]+)', text)
+
+    # Build stat cards (max 4)
+    cards = []
+    icons = ['trending_up', 'groups', 'store', 'search', 'payments', 'phone_android', 'language', 'star']
+    for i, (num, context) in enumerate(stat_patterns[:4]):
+        ctx = context.strip()[:60]
+        icon = icons[i % len(icons)]
+        cards.append(f'''<div class="bg-white rounded-2xl p-6 md:p-8 shadow-[0_2px_12px_rgba(0,0,0,.06)] border border-black/[.04] text-center">
+<div class="w-14 h-14 rounded-xl bg-secondary-container/20 flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-secondary-container" style="font-size:28px">{icon}</span>
+</div>
+<div class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-2">{num.strip()}</div>
+<p class="text-sm text-on-surface-variant">{ctx}</p>
+</div>''')
+
+    # If we couldn't extract cards, fall back to prose but styled
+    if len(cards) < 2:
+        linked = auto_link(stats_html, current_url, max_links=3)
+        return f'''
+<section class="py-20 px-6 lg:px-8 bg-[#f4f6fa]">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-10 text-center">El sector de <span class="text-secondary-container">{sector}</span> en cifras</h2>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg text-on-surface-variant leading-relaxed">{linked}</div>
+</div>
+</section>'''
+
+    grid_cols = 'md:grid-cols-2' if len(cards) <= 2 else 'md:grid-cols-2 lg:grid-cols-4' if len(cards) == 4 else 'md:grid-cols-3'
+
+    # Remaining text as context paragraph
+    remaining = _re.sub(r'\d[\d.,]+[%€BM+]*\s*(?:de\s+)?[^.,]+[.,]?', '', text).strip()
+    remaining_p = f'<p class="text-center text-on-surface-variant max-w-3xl mx-auto mt-8 leading-relaxed">{remaining[:300]}</p>' if remaining and len(remaining) > 50 else ''
+
+    return f'''
+<section class="py-20 px-6 lg:px-8 bg-[#f4f6fa]">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-12 text-center">El sector de <span class="text-secondary-container">{sector}</span> en cifras</h2>
+<div class="grid grid-cols-1 {grid_cols} gap-6">
+{"".join(cards)}
+</div>
+{remaining_p}
+</div>
+</section>'''
+
+
+def render_strategy_blocks(p, current_url):
+    """Render strategy as alternating blocks with icons, not prose"""
+    strategy_html = p.get("strategy_detailed", "")
+    if not strategy_html:
+        return ""
+
+    import re as _re
+    sector = p.get("sector_name", "tu sector")
+
+    # Split by H3 tags to create blocks
+    parts = _re.split(r'<h3[^>]*>(.*?)</h3>', strategy_html)
+
+    blocks = []
+    icons = ['search', 'ads_click', 'share', 'email', 'web', 'analytics', 'campaign', 'trending_up']
+    bg_colors = ['bg-white', 'bg-[#f4f6fa]']
+
+    # First part (before any H3) = intro
+    intro_text = _re.sub(r'<[^>]+>', '', parts[0]).strip() if parts[0].strip() else ''
+
+    # Process H3 + content pairs
+    for i in range(1, len(parts), 2):
+        if i + 1 >= len(parts):
+            break
+        title = parts[i].strip()
+        content = parts[i + 1].strip()
+        icon = icons[(i // 2) % len(icons)]
+        bg = bg_colors[(i // 2) % 2]
+
+        # Extract bullet points if any
+        bullets = _re.findall(r'<li>(.*?)</li>', content, _re.DOTALL)
+        prose = _re.sub(r'<ul>.*?</ul>', '', content, flags=_re.DOTALL)
+        prose = _re.sub(r'</?p>', '', prose).strip()
+
+        # Alternate: text-left on even, text-right on odd
+        is_even = (i // 2) % 2 == 0
+
+        bullet_html = ''
+        if bullets:
+            bullet_items = ''.join(f'<li class="flex items-start gap-3"><span class="text-secondary-container mt-1">✓</span><span>{b.strip()}</span></li>' for b in bullets[:6])
+            bullet_html = f'<ul class="space-y-3 text-sm text-on-surface-variant">{bullet_items}</ul>'
+
+        linked_prose = auto_link(prose, current_url, max_links=2) if prose else ''
+        prose_html = f'<div class="text-on-surface-variant leading-relaxed mb-6">{linked_prose}</div>' if linked_prose else ''
+
+        order_text = 'lg:order-1' if is_even else 'lg:order-2'
+        order_visual = 'lg:order-2' if is_even else 'lg:order-1'
+
+        blocks.append(f'''
+<div class="py-16 px-6 lg:px-8 {bg}">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="{order_text}">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-container" style="font-size:24px">{icon}</span>
+</div>
+<h3 class="font-headline font-bold text-xl md:text-2xl text-primary">{title}</h3>
+</div>
+{prose_html}
+{bullet_html}
+</div>
+<div class="{order_visual}">
+<div class="bg-gradient-to-br from-primary/5 to-secondary-container/10 rounded-2xl p-10 flex items-center justify-center" style="min-height:280px">
+<span class="material-symbols-outlined text-primary/20" style="font-size:120px">{icon}</span>
+</div>
+</div>
+</div>
+</div>''')
+
+    intro_html = f'<p class="text-center text-lg text-on-surface-variant max-w-3xl mx-auto mb-4 leading-relaxed">{intro_text[:300]}</p>' if intro_text else ''
+
+    return f'''
+<section>
+<div class="py-20 px-6 lg:px-8 bg-white">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-6">Estrategia de marketing digital para <span class="text-secondary-container">{sector}</span></h2>
+{intro_html}
+</div>
+</div>
+{"".join(blocks)}
+</section>'''
+
+
+def render_case_study(p, current_url):
+    """Render case study as a visual card with metrics, not prose"""
+    case_html = p.get("case_study", "")
+    if not case_html:
+        return ""
+
+    import re as _re
+    sector = p.get("sector_name", "tu sector")
+
+    text = _re.sub(r'<[^>]+>', ' ', case_html)
+
+    # Extract metrics (numbers with %, x, €, etc.)
+    metrics = _re.findall(r'(\+?\d[\d.,]*[%x€]+(?:\s*(?:de\s+)?[a-záéíóú\s]{3,30})?)', text)
+
+    # Build metric cards
+    metric_cards = []
+    for m in metrics[:4]:
+        parts = m.strip().split(' ', 1)
+        number = parts[0]
+        label = parts[1] if len(parts) > 1 else ''
+        metric_cards.append(f'''<div class="text-center">
+<div class="font-headline font-extrabold text-2xl md:text-3xl text-secondary-container">{number}</div>
+<p class="text-xs text-white/70 mt-1">{label[:40]}</p>
+</div>''')
+
+    metrics_grid = f'''<div class="grid grid-cols-2 md:grid-cols-{min(len(metric_cards), 4)} gap-6 mb-8">
+{"".join(metric_cards)}
+</div>''' if metric_cards else ''
+
+    # Clean narrative (remove raw numbers we already extracted)
+    narrative = auto_link(case_html, current_url, max_links=2)
+
+    return f'''
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-12 text-center">Caso de éxito real</h2>
+<div class="bg-primary rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-size:20px">emoji_events</span>
+</div>
+<span class="font-headline font-bold text-lg">Marketing para {sector}</span>
+</div>
+{metrics_grid}
+<div class="bg-white/10 rounded-2xl p-6 md:p-8 text-white/90 leading-relaxed text-sm prose-case">{narrative}</div>
+</div>
+</div>
+</section>'''
+
+
+# ============================================================
 # VERTICAL (SECTOR) PAGE BUILDER
 # ============================================================
 def build_vertical_page(page):
@@ -1898,25 +2092,9 @@ def build_vertical_page(page):
 </div>
 </section>
 
-{f"""
-<!-- SECTOR STATS -->
-<section class="sec-block bg-[#f4f6fa]">
-<div class="container">
-<div class="sec-heading"><h2>El sector de {p.get("sector_name", "tu sector")} en cifras</h2><div class="bar"></div></div>
-<div class="prose-block">{auto_link(p.get("sector_stats", ""), current_url, max_links=3)}</div>
-</div>
-</section>
-""" if p.get("sector_stats") else ""}
+{render_sector_stats(p, current_url)}
 
-{f"""
-<!-- STRATEGY DETAILED -->
-<section class="sec-block">
-<div class="container">
-<div class="sec-heading"><h2>Estrategia de marketing digital para {p.get("sector_name", "tu sector")}</h2><div class="bar"></div></div>
-<div class="prose-block">{auto_link(p.get("strategy_detailed", ""), current_url, max_links=5)}</div>
-</div>
-</section>
-""" if p.get("strategy_detailed") else ""}
+{render_strategy_blocks(p, current_url)}
 
 <!-- CTA MID -->
 <section class="py-16 px-6 lg:px-8 bg-primary">
@@ -1927,15 +2105,7 @@ def build_vertical_page(page):
 </div>
 </section>
 
-{f"""
-<!-- CASE STUDY -->
-<section class="sec-block bg-[#f4f6fa]">
-<div class="container">
-<div class="sec-heading"><h2>Caso de éxito: marketing para {p.get("sector_name", "tu sector")}</h2><div class="bar"></div></div>
-<div class="prose-block">{auto_link(p.get("case_study", ""), current_url, max_links=3)}</div>
-</div>
-</section>
-""" if p.get("case_study") else ""}
+{render_case_study(p, current_url)}
 
 {testimonial}
 
