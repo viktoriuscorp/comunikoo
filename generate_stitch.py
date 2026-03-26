@@ -696,18 +696,18 @@ def roi_calculator_html(current_url="/", context_type="general", context_name=""
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 <div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
 <div class="font-headline font-black text-3xl md:text-2xl text-[#166534]">+<span id="{calc_id}_growth">0</span>€</div>
-<p class="text-sm md:text-xs text-[#43474f] mt-2">{copy['metric']} estimado/mes</p>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">{copy['metric']} estimado/mes</p>
 </div>
 <div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
 <div class="font-headline font-black text-3xl md:text-2xl text-[#166534]"><span id="{calc_id}_roi">0</span></div>
-<p class="text-sm md:text-xs text-[#43474f] mt-2">ROI estimado</p>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">ROI estimado</p>
 </div>
 <div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
 <div class="font-headline font-black text-3xl md:text-2xl text-[#166534]"><span id="{calc_id}_monthly">0</span></div>
-<p class="text-sm md:text-xs text-[#43474f] mt-2">beneficio neto/mes</p>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">beneficio neto/mes</p>
 </div>
 </div>
-<div class="mt-8 bg-white rounded-xl p-5 md:p-6 -mx-2 md:mx-0 text-[#43474f] leading-relaxed space-y-4">
+<div class="mt-8 bg-white rounded-xl p-5 md:p-6 -mx-2 md:mx-0 text-on-surface-variant leading-relaxed space-y-4">
 <p class="font-headline font-bold text-base md:text-sm text-primary mb-3">¿Cómo interpretamos estos resultados?</p>
 <p class="text-sm"><strong class="text-primary">Crecimiento estimado/mes:</strong> Es el incremento mensual en facturación que podrías conseguir aplicando una estrategia de marketing digital profesional. Se calcula en base al estado actual de tu web, tu inversión y los resultados medios que hemos obtenido en más de 487 proyectos similares.</p>
 <p class="text-sm"><strong class="text-primary">ROI estimado:</strong> Es el retorno sobre la inversión a 6 meses. Si inviertes X euros al mes durante 6 meses y generas Y euros adicionales, el ROI mide cuánto recuperas por cada euro invertido. Un ROI del 200% significa que por cada euro invertido, recuperas 2 euros de beneficio neto.</p>
@@ -762,7 +762,7 @@ def web_audit_html(current_url="/"):
 <!-- Loading -->
 <div id="audit_loading" style="display:none" class="mt-8 text-center">
 <div style="width:40px;height:40px;border:3px solid #e0e3e8;border-top-color:#fd8b00;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto"></div>
-<p class="text-sm text-[#43474f] mt-3">Analizando tu web... Esto puede tardar 15-30 segundos.</p>
+<p class="text-sm text-on-surface-variant mt-3">Analizando tu web... Esto puede tardar 15-30 segundos.</p>
 <style>@keyframes spin{{from{{transform:rotate(0deg)}}to{{transform:rotate(360deg)}}}}</style>
 </div>
 
@@ -772,25 +772,25 @@ def web_audit_html(current_url="/"):
 <div id="audit_score_ring" style="width:100px;height:100px;border-radius:50%;border:6px solid #e0e3e8;display:flex;align-items:center;justify-content:center;margin:0 auto;position:relative">
 <span id="audit_score" class="font-headline font-black text-3xl text-primary">--</span>
 </div>
-<p class="text-sm text-[#43474f] mt-2 font-bold">Puntuación general</p>
+<p class="text-sm text-on-surface-variant mt-2 font-bold">Puntuación general</p>
 </div>
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
 <div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
 <div id="audit_perf" class="font-headline font-black text-2xl text-primary">--</div>
-<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Rendimiento</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Rendimiento</p>
 </div>
 <div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
 <div id="audit_seo" class="font-headline font-black text-2xl text-primary">--</div>
-<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">SEO</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">SEO</p>
 </div>
 <div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
 <div id="audit_access" class="font-headline font-black text-2xl text-primary">--</div>
-<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Accesibilidad</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Accesibilidad</p>
 </div>
 <div class="bg-[#f5f7fa] rounded-xl p-4 text-center">
 <div id="audit_bp" class="font-headline font-black text-2xl text-primary">--</div>
-<p class="text-[10px] text-[#43474f] uppercase tracking-wider mt-1">Buenas prácticas</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Buenas prácticas</p>
 </div>
 </div>
 
@@ -799,15 +799,15 @@ def web_audit_html(current_url="/"):
 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 <div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
 <span id="audit_fcp_icon" style="font-size:1.2rem">⏱</span>
-<div><p class="text-xs font-bold text-primary">First Paint</p><p id="audit_fcp" class="text-xs text-[#43474f]">--</p></div>
+<div><p class="text-xs font-bold text-primary">First Paint</p><p id="audit_fcp" class="text-xs text-on-surface-variant">--</p></div>
 </div>
 <div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
 <span id="audit_lcp_icon" style="font-size:1.2rem">🖼</span>
-<div><p class="text-xs font-bold text-primary">LCP</p><p id="audit_lcp" class="text-xs text-[#43474f]">--</p></div>
+<div><p class="text-xs font-bold text-primary">LCP</p><p id="audit_lcp" class="text-xs text-on-surface-variant">--</p></div>
 </div>
 <div class="flex items-center gap-3 bg-[#f5f7fa] rounded-lg p-3">
 <span id="audit_cls_icon" style="font-size:1.2rem">📐</span>
-<div><p class="text-xs font-bold text-primary">CLS</p><p id="audit_cls" class="text-xs text-[#43474f]">--</p></div>
+<div><p class="text-xs font-bold text-primary">CLS</p><p id="audit_cls" class="text-xs text-on-surface-variant">--</p></div>
 </div>
 </div>
 </div>
@@ -819,8 +819,8 @@ def web_audit_html(current_url="/"):
 
 <div class="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-5 text-center">
 <p class="text-sm text-[#166534] font-bold">¿Quieres que solucionemos estos problemas?</p>
-<p class="text-xs text-[#43474f] mt-1 mb-3">Te enviaremos un informe detallado con las acciones prioritarias a tu email.</p>
-<a href="{r('/contacto/')}" class="inline-block bg-[#fd8b00] text-white font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm">Solicitar informe completo gratis →</a>
+<p class="text-xs text-on-surface-variant mt-1 mb-3">Te enviaremos un informe detallado con las acciones prioritarias a tu email.</p>
+<a href="{r('/contacto/')}" class="inline-block bg-secondary-container text-white font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm">Solicitar informe completo gratis →</a>
 </div>
 </div>
 </div>
@@ -846,7 +846,7 @@ function runAudit(){{
     if(data.error||!data.lighthouseResult){{
       document.getElementById('audit_loading').style.display='none';
       document.getElementById('audit_results').style.display='block';
-      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f] mb-3\">Nuestro sistema de análisis está procesando muchas solicitudes. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p><p class=\"text-xs text-[#166534] font-bold\">✓ Tu email ha sido registrado correctamente</p></div>';
+      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-on-surface-variant mb-3\">Nuestro sistema de análisis está procesando muchas solicitudes. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p><p class=\"text-xs text-[#166534] font-bold\">✓ Tu email ha sido registrado correctamente</p></div>';
       document.getElementById('audit_btn').textContent='✓ Solicitud registrada';
       document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
       var fd2=new FormData();
@@ -897,7 +897,7 @@ function runAudit(){{
       var a=audits[k];
       if(a&&a.score!==null&&a.score<1){{
         var icon=a.score>=0.5?'⚠️':'❌';
-        issues+='<div class=\"flex items-start gap-2 bg-[#fef2f2] rounded-lg p-3 text-xs\"><span>'+icon+'</span><div><strong class=\"text-[#991b1b]\">'+a.title+'</strong><p class=\"text-[#43474f] mt-0.5\">'+(a.description||'').substring(0,150)+'</p></div></div>';
+        issues+='<div class=\"flex items-start gap-2 bg-[#fef2f2] rounded-lg p-3 text-xs\"><span>'+icon+'</span><div><strong class=\"text-[#991b1b]\">'+a.title+'</strong><p class=\"text-on-surface-variant mt-0.5\">'+(a.description||'').substring(0,150)+'</p></div></div>';
       }}
     }});
     if(!issues)issues='<p class=\"text-sm text-[#166534]\">✅ No se han detectado problemas críticos. ¡Tu web está bien optimizada!</p>';
@@ -927,7 +927,7 @@ function runAudit(){{
     if(data.error){{
       document.getElementById('audit_loading').style.display='none';
       document.getElementById('audit_results').style.display='block';
-      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-[#43474f]\">Nuestro sistema de análisis está procesando muchas solicitudes en este momento. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+      document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente saturado</p><p class=\"text-xs text-on-surface-variant\">Nuestro sistema de análisis está procesando muchas solicitudes en este momento. Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
       document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
       document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
       var fd2=new FormData();
@@ -942,7 +942,7 @@ function runAudit(){{
   }}).catch(function(err){{
     document.getElementById('audit_loading').style.display='none';
     document.getElementById('audit_results').style.display='block';
-    document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente no disponible</p><p class=\"text-xs text-[#43474f]\">Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
+    document.getElementById('audit_results').innerHTML='<div class=\"bg-[#fff7ed] border border-[#fed7aa] rounded-xl p-6 text-center\"><p class=\"font-headline font-bold text-sm text-[#9a3412] mb-2\">Servicio temporalmente no disponible</p><p class=\"text-xs text-on-surface-variant\">Hemos registrado tu solicitud y <strong>te enviaremos el informe completo a tu email en las próximas 24 horas</strong>.</p></div>';
     document.getElementById('audit_btn').textContent='✓ Solicitud enviada';
     document.getElementById('audit_btn').style.background='#001e40';document.getElementById('audit_btn').style.boxShadow='none';
     var fd3=new FormData();
@@ -1014,7 +1014,7 @@ def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sob
 <label class="text-xs font-bold text-primary uppercase tracking-wider">Mensaje *</label>
 <textarea name="mensaje" required class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="Cuéntanos sobre tu proyecto y tus objetivos..." rows="4"></textarea>
 </div>
-<button class="w-full bg-[#fd8b00] text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-base" type="submit">Solicitar auditoría gratuita →</button>
+<button class="w-full bg-secondary-container text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-base" type="submit">Solicitar auditoría gratuita →</button>
 <p class="text-[11px] text-on-surface-variant text-center">Sin compromiso · Respuesta en menos de 24h · <a href="{r("/politica-de-privacidad/")}" class="underline">Política de privacidad</a></p>
 </form>
 </div>
@@ -1256,7 +1256,7 @@ def build_service_page(page):
         c = cs[seed % 3]
         return f'<svg viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto rounded-xl"><rect width="{w}" height="{h}" rx="12" fill="{c[2]}"/><rect x="{w//5}" y="{h//4}" width="{w//3}" height="{h//3}" rx="8" fill="{c[0]}" opacity=".1"/><circle cx="{w*2//3}" cy="{h//3}" r="{h//5}" fill="{c[1]}" opacity=".12"/><rect x="{w//6}" y="{h*2//3}" width="{w*2//3}" height="3" rx="2" fill="{c[0]}" opacity=".08"/></svg>'
 
-    BG = ['', 'bg-[#f2f4f7]', '', 'bg-[#edf1f7]', '', 'bg-[#f7f5f0]']
+    BG = ['', 'bg-surface-container-low', '', 'bg-[#edf1f7]', '', 'bg-[#f7f5f0]']
 
     def detect_layout(section_index, title, items, raw_html):
         t = title.lower()
@@ -1574,7 +1574,7 @@ def build_service_page(page):
 </a>\n'''
 
     related_section = f'''
-<section class="bg-[#f2f4f7] sec-block">
+<section class="bg-surface-container-low sec-block">
 <div class="container">
 <div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
 <div class="card-grid g3">
@@ -1601,9 +1601,9 @@ def build_service_page(page):
     # --- NAV PILLS ---
     nav_pills = ''
     for s in sections_data:
-        nav_pills += f'<a href="#{s["id"]}" class="px-5 py-2.5 rounded-full bg-[#f2f4f7] border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">{s["nav_label"]}</a>\n'
+        nav_pills += f'<a href="#{s["id"]}" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">{s["nav_label"]}</a>\n'
     if faqs:
-        nav_pills += '<a href="#faq" class="px-5 py-2.5 rounded-full bg-[#f2f4f7] border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>\n'
+        nav_pills += '<a href="#faq" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>\n'
 
     # --- SUB-PAGES GRID (for parent pages that have sub-pages) ---
     subpages_section = ''
@@ -1749,7 +1749,7 @@ def build_service_page(page):
 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
-<a class="bg-[#fd8b00] text-white px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
+<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
 <a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
 </div>
 </div>
@@ -1772,7 +1772,7 @@ def build_service_page(page):
 <div class="max-w-3xl mx-auto text-center">
 <p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">{solution_text}</h2>
-<a class="inline-block bg-[#fd8b00] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="{r('/contacto/')}">Cuéntanos tu caso →</a>
+<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="{r('/contacto/')}">Cuéntanos tu caso →</a>
 </div>
 </section>
 
@@ -1817,7 +1817,7 @@ def build_service_page(page):
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")} →</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")} →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
@@ -1855,23 +1855,23 @@ def render_sector_stats(p, current_url):
         for i, stat in enumerate(stats[:4]):
             label = labels[i] if i < len(labels) else ''
             stat_cards += f'''<div class="text-center py-8">
-<div class="font-headline font-extrabold text-4xl md:text-5xl tracking-tighter text-[#fd8b00] mb-3">{stat}</div>
-<p class="text-sm text-[#44474e] max-w-[18ch] mx-auto leading-snug">{label}</p>
+<div class="font-headline font-extrabold text-4xl md:text-5xl tracking-tighter text-secondary-container mb-3">{stat}</div>
+<p class="text-sm text-on-surface-variant max-w-[18ch] mx-auto leading-snug">{label}</p>
 </div>'''
         stat_cards = f'<div class="grid {grid_cols} gap-2">{stat_cards}</div>'
     styled = _re.sub(r'<strong>([\d.,]+[%€M+]*[^<]{{0,15}})</strong>',
-        r'<strong class="text-[#fd8b00] font-headline">\1</strong>',
+        r'<strong class="text-secondary-container font-headline">\1</strong>',
         stats_html)
     styled = auto_link(styled, current_url, max_links=2)
     return f'''
-<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
+<section class="py-24 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-5xl mx-auto">
 <div class="text-center mb-12">
-<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Datos del sector</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">El sector de {sector} en cifras</h2>
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/10 text-secondary-container font-bold text-xs uppercase tracking-[.12em] mb-4">Datos del sector</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-primary">El sector de {sector} en cifras</h2>
 </div>
 {stat_cards}
-<div class="mt-10 text-base text-[#44474e] leading-relaxed max-w-[65ch] mx-auto">{styled}</div>
+<div class="mt-10 text-base text-on-surface-variant leading-relaxed max-w-[65ch] mx-auto">{styled}</div>
 </div>
 </section>'''
 
@@ -1895,20 +1895,20 @@ def render_strategy_blocks(p, current_url):
         step = (i // 2) + 1
         items.append(f'''<details class="bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,5,17,.04)] group">
 <summary class="flex items-center gap-5 p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-<div class="w-11 h-11 rounded-xl bg-[#001e40] flex items-center justify-center flex-shrink-0">
+<div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
 <span class="text-white font-headline font-bold text-sm">{step:02d}</span>
 </div>
-<h3 class="font-headline font-bold text-lg text-[#001e40] flex-1 tracking-tight">{title}</h3>
+<h3 class="font-headline font-bold text-lg text-primary flex-1 tracking-tight">{title}</h3>
 <span class="text-[#74777f] transition-transform group-open:rotate-180 text-xl">&#9662;</span>
 </summary>
-<div class="px-6 pb-6 text-base text-[#44474e] leading-relaxed max-w-[65ch]">{content}</div>
+<div class="px-6 pb-6 text-base text-on-surface-variant leading-relaxed max-w-[65ch]">{content}</div>
 </details>''')
     return f'''
 <section class="py-24 px-6 lg:px-8">
 <div class="max-w-4xl mx-auto">
 <div class="text-center mb-14">
-<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Nuestra metodología</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">Estrategia para {sector}</h2>
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/10 text-secondary-container font-bold text-xs uppercase tracking-[.12em] mb-4">Nuestra metodología</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-primary">Estrategia para {sector}</h2>
 </div>
 <div class="space-y-4">
 {"".join(items)}
@@ -1929,21 +1929,21 @@ def render_case_study(p, current_url):
     for prefix, num in section_icons.items():
         clean_case = _re.sub(
             rf'<strong>({prefix}[oó]?n?[^<]*)[:\s]*</strong>[:\s]*',
-            rf'</p><div class="flex items-center gap-3 mt-8 mb-3"><div class="w-9 h-9 rounded-lg bg-[#001e40] flex items-center justify-center flex-shrink-0"><span class="text-white font-headline font-bold text-xs">{num}</span></div><h3 class="font-headline font-bold text-lg tracking-tight text-[#001e40]">\1</h3></div><p class="text-[#44474e] leading-relaxed max-w-[65ch]">',
+            rf'</p><div class="flex items-center gap-3 mt-8 mb-3"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center flex-shrink-0"><span class="text-white font-headline font-bold text-xs">{num}</span></div><h3 class="font-headline font-bold text-lg tracking-tight text-primary">\1</h3></div><p class="text-on-surface-variant leading-relaxed max-w-[65ch]">',
             clean_case
         )
     clean_case = auto_link(clean_case, current_url, max_links=2)
     return f'''
-<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
+<section class="py-24 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-4xl mx-auto">
 <div class="text-center mb-14">
-<span class="inline-block px-4 py-1.5 rounded-full bg-[#fd8b00]/10 text-[#fd8b00] font-bold text-xs uppercase tracking-[.12em] mb-4">Caso de éxito real</span>
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-[#001e40]">Resultados reales en {sector}</h2>
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/10 text-secondary-container font-bold text-xs uppercase tracking-[.12em] mb-4">Caso de éxito real</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl tracking-tighter text-primary">Resultados reales en {sector}</h2>
 </div>
 <div class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
 <div class="text-base leading-relaxed">{clean_case}</div>
 <div class="mt-10 pt-8" style="border-top:1px solid rgba(0,5,17,.06)">
-<a href="{rel('/contacto/', current_url)}" class="inline-block bg-[#fd8b00] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#e67a00] transition-all active:scale-[.98]">Quiero resultados así</a>
+<a href="{rel('/contacto/', current_url)}" class="inline-block bg-secondary-container text-white px-8 py-4 rounded-xl font-bold text-lg hover:hover:bg-secondary transition-all active:scale-[.98]">Quiero resultados así</a>
 </div>
 </div>
 </div>
@@ -2017,7 +2017,7 @@ def build_vertical_page(page):
 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <p class="font-headline font-extrabold text-xl md:text-2xl text-secondary-container mt-8">{p.get("hook_stat", "")}</p>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95 mt-8" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95 mt-8" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
 </section>
 
 <!-- SERVICES GRID -->
@@ -2039,7 +2039,7 @@ def build_vertical_page(page):
 <div class="max-w-2xl mx-auto text-center">
 <h2 class="font-headline font-bold text-2xl text-white mb-4">{p.get("cta_title", "¿Empezamos?")}</h2>
 <p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu negocio. Sin compromiso.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
 
@@ -2048,7 +2048,7 @@ def build_vertical_page(page):
 {testimonial}
 
 <!-- SERVICIOS RELACIONADOS PARA ESTE SECTOR -->
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
+<section class="py-20 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-5xl mx-auto">
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4 text-center">Servicios de marketing digital para {p.get("sector_name", "tu sector")}</h2>
 <p class="text-on-surface-variant text-center max-w-2xl mx-auto mb-10">Combinamos diferentes canales de marketing digital para maximizar los resultados en tu sector.</p>
@@ -2121,7 +2121,7 @@ def build_vertical_page(page):
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-white mb-6">{p.get("cta_title", "¿Empezamos?")}</h2>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
 ''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if (current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] or current_url.startswith('/marketing-para-')) else '') + f'''
@@ -2251,7 +2251,7 @@ def build_geo_page(page):
 <h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{auto_link(p.get("intro", ""), current_url, max_links=2)}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
-<a class="bg-[#fd8b00] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita en {city}</a>
+<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita en {city}</a>
 <a class="px-8 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-white transition-all" href="{r(parent_url)}">Ver servicio completo</a>
 </div>
 </div>
@@ -2278,7 +2278,7 @@ def build_geo_page(page):
 </section>
 
 <!-- SERVICES IN CITY -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>Servicios de {svc_name} en {city}</h2><div class="bar"></div></div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -2289,7 +2289,7 @@ def build_geo_page(page):
 
 {f"""
 <!-- MARKET ANALYSIS -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>El mercado de {svc_name_lower} en {city}</h2><div class="bar"></div></div>
 <div class="prose-block">{auto_link(geo_data.get('market_analysis', ''), current_url, max_links=3)}</div>
@@ -2312,13 +2312,13 @@ def build_geo_page(page):
 <div class="max-w-2xl mx-auto text-center">
 <h2 class="font-headline font-bold text-2xl text-white mb-4">¿Necesitas {svc_name_lower} en {city}?</h2>
 <p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu proyecto. Sin compromiso.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">Solicitar auditoría gratis</a>
+<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">Solicitar auditoría gratis</a>
 </div>
 </section>
 
 {f"""
 <!-- CASE STUDY LOCAL -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>Caso de éxito: {svc_name_lower} en {city}</h2><div class="bar"></div></div>
 <div class="prose-block">{auto_link(geo_data.get('case_study', ''), current_url, max_links=2)}</div>
@@ -2346,7 +2346,7 @@ def build_geo_page(page):
 </section>
 
 <!-- ZONES -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>Zonas de {city} donde trabajamos</h2><div class="bar"></div></div>
 <div class="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
@@ -2372,7 +2372,7 @@ def build_geo_page(page):
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Buscas {svc_name_lower} en {city}?</h2>
 <p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu proyecto y te decimos exactamente qué hacer para crecer en {city}.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita — sin compromiso</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita — sin compromiso</a>
 </div>
 </section>
 </main>
@@ -2545,7 +2545,7 @@ Agencia de Marketing Digital en Barcelona — <span class="text-secondary-contai
 Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Google Ads y redes sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación. Sin permanencia. Dashboard en tiempo real.
 </p>
 <div class="flex flex-wrap gap-4 mt-8 justify-center">
-<a class="bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
+<a class="bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
 <a class="px-10 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-surface-container-low transition-all" href="{r('/servicios/')}">Ver servicios</a>
 </div>
 </div>
@@ -2596,7 +2596,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">¿Te suena esto?</p>
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Tu competencia aparece en Google antes que tú. Tus clientes potenciales los encuentran a ellos, no a ti.</h2>
 <p class="text-on-primary-container text-base mb-8 max-w-xl mx-auto">Cada día que pasa sin una estrategia digital, estás regalando clientes. Nosotros lo cambiamos.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
 <p class="text-on-primary-container/60 text-xs mt-4">Sin compromiso. Te respondemos en menos de 24h.</p>
 </div>
 </section>
@@ -2648,7 +2648,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4">¿Quieres saber exactamente qué está fallando en tu marketing digital?</h2>
 <p class="text-on-surface-variant text-base max-w-xl mx-auto mb-6">Te hacemos una auditoría completa de tu web, tu SEO, tu publicidad y tus redes sociales. Gratis. Sin letra pequeña. En 48h tienes un informe con acciones concretas para mejorar.</p>
 <div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-[#fd8b00] text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
+<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
 </div>
 <div class="flex flex-wrap justify-center gap-6 mt-6 text-xs text-on-surface-variant">
 <span class="flex items-center gap-1">✓ Sin compromiso</span>
@@ -2733,7 +2733,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-base">Mientras tú dudas, tu competencia está captando los clientes que deberían ser tuyos. Empezamos en menos de 48 horas.</p>
 </div>
 <div class="flex-shrink-0">
-<a class="inline-block bg-[#fd8b00] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95 whitespace-nowrap" href="{r('/contacto/')}">Empezar ahora →</a>
+<a class="inline-block bg-secondary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95 whitespace-nowrap" href="{r('/contacto/')}">Empezar ahora →</a>
 </div>
 </div>
 </section>
@@ -2801,7 +2801,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="font-headline font-black text-5xl md:text-6xl text-primary mb-4">487+</p>
 <h2 class="font-headline font-bold text-2xl text-primary mb-4">empresas ya han confiado en nosotros para hacer crecer su negocio</h2>
 <p class="text-on-surface-variant text-base mb-8 max-w-xl mx-auto">Desde startups hasta empresas consolidadas. En más de 30 sectores diferentes. ¿Será el tuyo el siguiente caso de éxito?</p>
-<a class="inline-block bg-[#fd8b00] text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero ser el próximo caso de éxito</a>
+<a class="inline-block bg-secondary-container text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero ser el próximo caso de éxito</a>
 </div>
 </section>
 
@@ -2878,7 +2878,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Estimación de resultados a 6 meses</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicitar auditoría gratuita →</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicitar auditoría gratuita →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24 horas. Sin llamadas no deseadas.</p>
 </div>
 </section>
@@ -2939,7 +2939,7 @@ def build_about_page():
 </section>
 
 <!-- VALORES -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>Lo que nos define</h2><div class="bar"></div></div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -2972,19 +2972,19 @@ def build_about_page():
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto mt-12">
 <div class="text-center">
-<div class="w-20 h-20 rounded-full bg-[#f2f4f7] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">search</span></div>
+<div class="w-20 h-20 rounded-full bg-surface-container-low mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">search</span></div>
 <p class="font-headline font-bold text-sm text-primary">Consultores SEO</p>
 </div>
 <div class="text-center">
-<div class="w-20 h-20 rounded-full bg-[#f2f4f7] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">ads_click</span></div>
+<div class="w-20 h-20 rounded-full bg-surface-container-low mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">ads_click</span></div>
 <p class="font-headline font-bold text-sm text-primary">Expertos SEM</p>
 </div>
 <div class="text-center">
-<div class="w-20 h-20 rounded-full bg-[#f2f4f7] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">web</span></div>
+<div class="w-20 h-20 rounded-full bg-surface-container-low mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">web</span></div>
 <p class="font-headline font-bold text-sm text-primary">Diseñadores Web</p>
 </div>
 <div class="text-center">
-<div class="w-20 h-20 rounded-full bg-[#f2f4f7] mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">share</span></div>
+<div class="w-20 h-20 rounded-full bg-surface-container-low mx-auto mb-3 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">share</span></div>
 <p class="font-headline font-bold text-sm text-primary">Social Media</p>
 </div>
 </div>
@@ -2992,7 +2992,7 @@ def build_about_page():
 </section>
 
 <!-- METODOLOGÍA -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container">
 <div class="sec-heading"><h2>Cómo trabajamos</h2><div class="bar"></div></div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -3045,7 +3045,7 @@ def build_about_page():
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Quieres conocernos?</h2>
 <p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita y descubre qué podemos hacer por tu negocio. Sin compromiso, sin permanencia.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita</a>
 </div>
 </section>
 </main>
@@ -3148,7 +3148,7 @@ def build_contact_page():
 <label class="text-sm font-bold text-primary uppercase tracking-wider">Mensaje *</label>
 <textarea name="mensaje" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Cuéntanos sobre tu proyecto, tus objetivos y tu presupuesto aproximado..." rows="4"></textarea>
 </div>
-<button class="w-full bg-[#fd8b00] text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Solicitar auditoría gratuita</button>
+<button class="w-full bg-secondary-container text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Solicitar auditoría gratuita</button>
 <p class="text-xs text-on-surface-variant text-center">Al enviar aceptas nuestra <a href="{r('/politica-de-privacidad/')}" class="underline">política de privacidad</a>.</p>
 </form>
 </div>
@@ -3192,7 +3192,7 @@ def build_contact_page():
 </section>
 
 <!-- FAQ -->
-<section class="sec-block bg-[#f2f4f7]">
+<section class="sec-block bg-surface-container-low">
 <div class="container" style="max-width:700px">
 <div class="sec-heading"><h2>Preguntas frecuentes</h2><div class="bar"></div></div>
 {faq_html([
@@ -3307,12 +3307,12 @@ def build_blog_index():
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que apliquemos estas estrategias en tu negocio?</h2>
 <p class="text-on-primary-container text-base mb-8">Solicita tu auditoría gratuita y te mostramos qué podemos hacer por ti.</p>
-<a class="inline-block bg-[#fd8b00] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
 </div>
 </section>
 
 <!-- SERVICIOS -->
-<section class="py-16 px-6 lg:px-8 bg-[#f2f4f7]">
+<section class="py-16 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-5xl mx-auto text-center">
 <h2 class="font-headline font-bold text-xl text-primary mb-8">Nuestros servicios de marketing digital</h2>
 <div class="flex flex-wrap justify-center gap-3">
