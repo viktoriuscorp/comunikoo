@@ -24,82 +24,84 @@ details summary::-webkit-details-marker { display: none; }
 .mega-trigger:hover > .mega-panel { display: block; }
 .mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
 
-/* ── Container: wider to match home page feel (max-w-7xl = 1280px) ── */
-.container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-@media(min-width:1024px) { .container { padding: 0 2rem; } }
+/* ══ DESIGN SYSTEM: Mediterranean Minimalist Editorial (Stitch) ══ */
 
-/* ── Section blocks with generous spacing like home ── */
-.sec-block { padding: 5rem 0; }
-@media(min-width:768px) { .sec-block { padding: 6.5rem 0; } }
+/* ── Container: generous, editorial width ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+@media(min-width:1024px) { .container { padding: 0 3rem; } }
 
-/* ── Cards: matching home card style ── */
-.svc-card { background: #fff; border-radius: 12px; padding: 2.5rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); border: 1px solid rgba(0,0,0,.04); text-align: center; transition: all .3s ease; }
-.svc-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,.1); transform: translateY(-3px); }
-.svc-card .svc-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; }
-.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.05rem; font-weight: 700; color: #001e40; margin-bottom: .5rem; }
-.svc-card p { font-size: .9rem; line-height: 1.7; color: #43474f; margin: 0; }
+/* ── Sections: 7rem spacing = premium breathing room ── */
+.sec-block { padding: 5.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 7rem 0; } }
 
-/* ── Card grid: wider, matching home grid ── */
-.card-grid { display: grid; gap: 1.5rem; margin: 0 auto; }
+/* ── Cards: NO borders (Stitch rule). Tonal layering only ── */
+.svc-card { background: #ffffff; border-radius: 16px; padding: 2.5rem 2rem; box-shadow: 0 24px 48px rgba(0,5,17,.06); border: none; text-align: center; transition: all .4s cubic-bezier(.25,.46,.45,.94); }
+.svc-card:hover { box-shadow: 0 32px 64px rgba(0,5,17,.1); transform: translateY(-4px); }
+.svc-card .svc-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #000511; margin-bottom: .5rem; letter-spacing: -.01em; }
+.svc-card p { font-size: .92rem; line-height: 1.75; color: #44474e; margin: 0; }
+
+/* ── Card grid: wider, balanced ── */
+.card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1080px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 1080px; }
-.card-grid.g5 > * { width: calc(33.33% - 1rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1080px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
 @media(max-width:767px) {
-  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1rem !important; }
+  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
-  .svc-card { padding: 1.5rem 1.25rem !important; }
-  .svc-card h3 { font-size: .95rem !important; }
-  .svc-card p { font-size: .85rem !important; line-height: 1.6 !important; }
+  .svc-card { padding: 1.75rem 1.5rem !important; }
+  .svc-card h3 { font-size: 1rem !important; }
+  .svc-card p { font-size: .88rem !important; line-height: 1.7 !important; }
   .svc-card .svc-icon { width: 48px !important; height: 48px !important; }
-  .sec-block { padding: 2.5rem 0 !important; }
-  .sec-heading h2 { font-size: 1.4rem !important; }
-  .sec-intro { font-size: .9rem !important; }
-  .prose-block { font-size: .9rem !important; }
-  .prose-block h3 { font-size: 1rem !important; }
+  .sec-block { padding: 3rem 0 !important; }
+  .sec-heading h2 { font-size: 1.5rem !important; }
+  .sec-intro { font-size: .92rem !important; }
+  .prose-block { font-size: .92rem !important; }
+  .prose-block h3 { font-size: 1.05rem !important; }
   .container { padding: 0 1.25rem !important; }
   [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
   [style*="grid-template-columns:repeat"] { grid-template-columns: 1fr !important; }
   [style*="display:grid;grid-template-columns:repeat"] { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
 }
 @media(max-width:400px) {
-  .card-grid { grid-template-columns: 1fr !important; max-width: 320px !important; margin-inline: auto !important; }
+  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; margin-inline: auto !important; }
 }
 
-/* Prevent iOS zoom on input focus */
+/* Prevent iOS zoom */
 @media(max-width:767px) {
   input, select, textarea { font-size: 16px !important; }
 }
 
-/* Nav pills scrollable on mobile */
+/* Nav pills */
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 
-/* Hero & body text responsive */
+/* Responsive typography */
 @media(max-width:767px) {
-  .font-headline.text-3xl { font-size: 1.5rem !important; }
-  .font-headline.text-4xl { font-size: 1.75rem !important; }
+  .font-headline.text-3xl { font-size: 1.6rem !important; }
+  .font-headline.text-4xl { font-size: 1.85rem !important; }
   p.text-base { font-size: .95rem !important; }
   p.text-lg { font-size: 1rem !important; }
 }
 
-/* ── Prose: wider, matching home text sizes ── */
-.prose-block { max-width: 840px; margin: 0 auto; }
-.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.25rem; font-weight: 700; color: #001e40; margin: 2.5rem 0 .75rem; display: flex; align-items: center; gap: .5rem; }
-.prose-block p { font-size: 1rem; line-height: 1.8; color: #43474f; margin-bottom: 1.25rem; }
+/* ── Prose: editorial left-aligned text (Stitch rule: never center long text) ── */
+.prose-block { max-width: 800px; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 700; color: #000511; margin: 2.75rem 0 .75rem; letter-spacing: -.01em; }
+.prose-block p { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: 1.25rem; }
 .prose-block ul { padding-left: 1.5rem; margin: 1.25rem 0; }
-.prose-block li { font-size: 1rem; line-height: 1.8; color: #43474f; margin-bottom: .5rem; }
-.prose-block strong { color: #001e40; font-weight: 600; }
-.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 2px; }
+.prose-block li { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: .5rem; }
+.prose-block strong { color: #000511; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .prose-block a:hover { color: #fd8b00; }
 
-/* ── Section heading: larger, matching home H2s ── */
-.sec-heading { text-align: center; margin-bottom: 3rem; }
-.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 1.85rem; font-weight: 800; color: #001e40; margin: 0; }
-@media(min-width:768px) { .sec-heading h2 { font-size: 2.5rem; } }
-.sec-heading .bar { width: 60px; height: 4px; background: #fd8b00; margin: 1rem auto 0; border-radius: 2px; }
+/* ── Section heading: editorial, with more top-margin than bottom (Stitch rule) ── */
+.sec-heading { text-align: center; margin-bottom: 3.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 800; color: #000511; margin: 0; letter-spacing: -.02em; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2.75rem; } }
+.sec-heading .bar { width: 48px; height: 3px; background: #fd8b00; margin: 1.25rem auto 0; border-radius: 2px; }
 
 /* ── Intro paragraph: wider, larger text ── */
 .sec-intro { max-width: 720px; margin: 0 auto 3rem; text-align: center; font-size: 1.05rem; line-height: 1.75; color: #43474f; }
@@ -307,7 +309,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 <!-- SERVICES IN CITY -->
-<section class="sec-block bg-[#f4f6fa]">
+<section class="sec-block bg-[#f2f4f7]">
 <div class="container">
 <div class="sec-heading"><h2>Servicios de Diseño Web en Madrid</h2><div class="bar"></div></div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -319,7 +321,7 @@ details summary::-webkit-details-marker { display: none; }
 
 
 <!-- MARKET ANALYSIS -->
-<section class="sec-block bg-[#f4f6fa]">
+<section class="sec-block bg-[#f2f4f7]">
 <div class="container">
 <div class="sec-heading"><h2>El mercado de diseño web en Madrid</h2><div class="bar"></div></div>
 <div class="prose-block"><h3>El mercado del <a href="/diseno-web/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">diseño web</a> en Madrid</h3>
@@ -362,7 +364,7 @@ details summary::-webkit-details-marker { display: none; }
 
 
 <!-- CASE STUDY LOCAL -->
-<section class="sec-block bg-[#f4f6fa]">
+<section class="sec-block bg-[#f2f4f7]">
 <div class="container">
 <div class="sec-heading"><h2>Caso de éxito: diseño web en Madrid</h2><div class="bar"></div></div>
 <div class="prose-block"><h3>Caso de éxito: consultora de RRHH en Salamanca</h3>
@@ -409,7 +411,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 <!-- ZONES -->
-<section class="sec-block bg-[#f4f6fa]">
+<section class="sec-block bg-[#f2f4f7]">
 <div class="container">
 <div class="sec-heading"><h2>Zonas de Madrid donde trabajamos</h2><div class="bar"></div></div>
 <div class="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
