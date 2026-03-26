@@ -1823,190 +1823,169 @@ def build_service_page(page):
 # ============================================================
 
 def render_sector_stats(p, current_url):
-    """Render sector stats as visual stat cards instead of prose"""
+    """Render sector stats as premium stat cards"""
     stats_html = p.get("sector_stats", "")
     if not stats_html:
         return ""
-
     import re as _re
     sector = p.get("sector_name", "tu sector")
-
-    # Extract numbers and their context from the HTML
     text = _re.sub(r'<[^>]+>', ' ', stats_html)
-
-    # Find stat patterns: numbers with context
-    stat_patterns = _re.findall(r'(\d[\d.,]+[%€BM+]*)\s*(?:de\s+)?([^.,]+)', text)
-
-    # Build stat cards (max 4)
+    # Extract number+context pairs
+    stat_patterns = _re.findall(r'(\d[\d.,]+[%€BM+]*)\s*(?:de\s+)?([^.,]{5,60})', text)
+    colors = ['from-[#001e40] to-[#003366]', 'from-[#fd8b00] to-[#e67e00]', 'from-[#001e40] to-[#003366]', 'from-[#fd8b00] to-[#e67e00]']
+    text_colors = ['text-white', 'text-white', 'text-white', 'text-white']
     cards = []
-    icons = ['trending_up', 'groups', 'store', 'search', 'payments', 'phone_android', 'language', 'star']
-    for i, (num, context) in enumerate(stat_patterns[:4]):
-        ctx = context.strip()[:60]
-        icon = icons[i % len(icons)]
-        cards.append(f'''<div class="bg-white rounded-2xl p-6 md:p-8 shadow-[0_2px_12px_rgba(0,0,0,.06)] border border-black/[.04] text-center">
-<div class="w-14 h-14 rounded-xl bg-secondary-container/20 flex items-center justify-center mx-auto mb-4">
-<span class="material-symbols-outlined text-secondary-container" style="font-size:28px">{icon}</span>
-</div>
-<div class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-2">{num.strip()}</div>
-<p class="text-sm text-on-surface-variant">{ctx}</p>
+    for i, (num, ctx) in enumerate(stat_patterns[:4]):
+        c = colors[i % 4]
+        tc = text_colors[i % 4]
+        cards.append(f'''<div class="bg-gradient-to-br {c} rounded-2xl p-8 {tc} relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-8 translate-x-8"></div>
+<div class="font-headline font-extrabold text-4xl md:text-5xl mb-3">{num.strip()}</div>
+<p class="text-sm opacity-80 leading-relaxed">{ctx.strip()}</p>
 </div>''')
-
-    # If we couldn't extract cards, fall back to prose but styled
     if len(cards) < 2:
         linked = auto_link(stats_html, current_url, max_links=3)
-        return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f4f6fa]">
+        return f'''<section class="py-24 px-6 lg:px-8 bg-[#f4f6fa]">
 <div class="max-w-4xl mx-auto">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-10 text-center">El sector de <span class="text-secondary-container">{sector}</span> en cifras</h2>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg text-on-surface-variant leading-relaxed">{linked}</div>
-</div>
-</section>'''
-
-    grid_cols = 'md:grid-cols-2' if len(cards) <= 2 else 'md:grid-cols-2 lg:grid-cols-4' if len(cards) == 4 else 'md:grid-cols-3'
-
-    # Remaining text as context paragraph
-    remaining = _re.sub(r'\d[\d.,]+[%€BM+]*\s*(?:de\s+)?[^.,]+[.,]?', '', text).strip()
-    remaining_p = f'<p class="text-center text-on-surface-variant max-w-3xl mx-auto mt-8 leading-relaxed">{remaining[:300]}</p>' if remaining and len(remaining) > 50 else ''
-
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-10 text-center">El sector en cifras</h2>
+<div class="bg-white rounded-2xl p-10 shadow-lg text-on-surface-variant leading-relaxed">{linked}</div>
+</div></section>'''
     return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f4f6fa]">
+<section class="py-24 px-6 lg:px-8 bg-[#f4f6fa]">
 <div class="max-w-5xl mx-auto">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-12 text-center">El sector de <span class="text-secondary-container">{sector}</span> en cifras</h2>
-<div class="grid grid-cols-1 {grid_cols} gap-6">
+<div class="text-center mb-14">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de {sector} en cifras</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 {"".join(cards)}
 </div>
-{remaining_p}
 </div>
 </section>'''
 
 
 def render_strategy_blocks(p, current_url):
-    """Render strategy as alternating blocks with icons, not prose"""
+    """Render strategy as numbered cards in a clean grid"""
     strategy_html = p.get("strategy_detailed", "")
     if not strategy_html:
         return ""
-
     import re as _re
     sector = p.get("sector_name", "tu sector")
-
-    # Split by H3 tags to create blocks
     parts = _re.split(r'<h3[^>]*>(.*?)</h3>', strategy_html)
-
-    blocks = []
-    icons = ['search', 'ads_click', 'share', 'email', 'web', 'analytics', 'campaign', 'trending_up']
-    bg_colors = ['bg-white', 'bg-[#f4f6fa]']
-
-    # First part (before any H3) = intro
     intro_text = _re.sub(r'<[^>]+>', '', parts[0]).strip() if parts[0].strip() else ''
-
-    # Process H3 + content pairs
+    cards = []
+    icons = ['search', 'ads_click', 'share', 'mail', 'language', 'analytics', 'campaign', 'trending_up', 'smartphone', 'groups']
     for i in range(1, len(parts), 2):
         if i + 1 >= len(parts):
             break
         title = parts[i].strip()
         content = parts[i + 1].strip()
-        icon = icons[(i // 2) % len(icons)]
-        bg = bg_colors[(i // 2) % 2]
-
-        # Extract bullet points if any
+        idx = (i // 2)
+        icon = icons[idx % len(icons)]
+        # Extract first paragraph as summary
+        first_p = _re.search(r'<p>(.*?)</p>', content, _re.DOTALL)
+        summary = _re.sub(r'<[^>]+>', '', first_p.group(1)).strip()[:200] if first_p else ''
+        # Extract bullets
         bullets = _re.findall(r'<li>(.*?)</li>', content, _re.DOTALL)
-        prose = _re.sub(r'<ul>.*?</ul>', '', content, flags=_re.DOTALL)
-        prose = _re.sub(r'</?p>', '', prose).strip()
-
-        # Alternate: text-left on even, text-right on odd
-        is_even = (i // 2) % 2 == 0
-
         bullet_html = ''
         if bullets:
-            bullet_items = ''.join(f'<li class="flex items-start gap-3"><span class="text-secondary-container mt-1">✓</span><span>{b.strip()}</span></li>' for b in bullets[:6])
-            bullet_html = f'<ul class="space-y-3 text-sm text-on-surface-variant">{bullet_items}</ul>'
-
-        linked_prose = auto_link(prose, current_url, max_links=2) if prose else ''
-        prose_html = f'<div class="text-on-surface-variant leading-relaxed mb-6">{linked_prose}</div>' if linked_prose else ''
-
-        order_text = 'lg:order-1' if is_even else 'lg:order-2'
-        order_visual = 'lg:order-2' if is_even else 'lg:order-1'
-
-        blocks.append(f'''
-<div class="py-16 px-6 lg:px-8 {bg}">
-<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="{order_text}">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-secondary-container" style="font-size:24px">{icon}</span>
+            items = ''.join(f'<li class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="text-secondary-container font-bold mt-0.5">→</span><span>{_re.sub("<[^>]+>", "", b).strip()}</span></li>' for b in bullets[:4])
+            bullet_html = f'<ul class="mt-4 space-y-2">{items}</ul>'
+        cards.append(f'''<div class="bg-white rounded-2xl p-7 shadow-[0_2px_16px_rgba(0,0,0,.06)] border border-black/[.04] hover:shadow-[0_8px_30px_rgba(0,0,0,.1)] hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4 mb-5">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white" style="font-size:22px">{icon}</span>
 </div>
-<h3 class="font-headline font-bold text-xl md:text-2xl text-primary">{title}</h3>
+<div>
+<span class="text-xs font-bold text-secondary-container uppercase tracking-widest">Paso {idx + 1}</span>
+<h3 class="font-headline font-bold text-lg text-primary leading-tight">{title}</h3>
 </div>
-{prose_html}
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">{auto_link(summary, current_url, max_links=1)}</p>
 {bullet_html}
-</div>
-<div class="{order_visual}">
-<div class="bg-gradient-to-br from-primary/5 to-secondary-container/10 rounded-2xl p-10 flex items-center justify-center" style="min-height:280px">
-<span class="material-symbols-outlined text-primary/20" style="font-size:120px">{icon}</span>
-</div>
-</div>
-</div>
 </div>''')
-
-    intro_html = f'<p class="text-center text-lg text-on-surface-variant max-w-3xl mx-auto mb-4 leading-relaxed">{intro_text[:300]}</p>' if intro_text else ''
-
+    intro_html = f'<p class="text-center text-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">{intro_text[:250]}</p>' if intro_text else ''
+    grid_class = 'md:grid-cols-2 lg:grid-cols-3' if len(cards) >= 3 else 'md:grid-cols-2'
     return f'''
-<section>
-<div class="py-20 px-6 lg:px-8 bg-white">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-6">Estrategia de marketing digital para <span class="text-secondary-container">{sector}</span></h2>
+<section class="py-24 px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-14">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-4">Estrategia de marketing para {sector}</h2>
 {intro_html}
 </div>
+<div class="grid grid-cols-1 {grid_class} gap-6">
+{"".join(cards)}
 </div>
-{"".join(blocks)}
+</div>
 </section>'''
 
 
 def render_case_study(p, current_url):
-    """Render case study as a visual card with metrics, not prose"""
+    """Render case study as premium two-column layout"""
     case_html = p.get("case_study", "")
     if not case_html:
         return ""
-
     import re as _re
     sector = p.get("sector_name", "tu sector")
-
     text = _re.sub(r'<[^>]+>', ' ', case_html)
-
-    # Extract metrics (numbers with %, x, €, etc.)
-    metrics = _re.findall(r'(\+?\d[\d.,]*[%x€]+(?:\s*(?:de\s+)?[a-záéíóú\s]{3,30})?)', text)
-
-    # Build metric cards
-    metric_cards = []
-    for m in metrics[:4]:
-        parts = m.strip().split(' ', 1)
-        number = parts[0]
-        label = parts[1] if len(parts) > 1 else ''
-        metric_cards.append(f'''<div class="text-center">
-<div class="font-headline font-extrabold text-2xl md:text-3xl text-secondary-container">{number}</div>
-<p class="text-xs text-white/70 mt-1">{label[:40]}</p>
+    # Extract metrics
+    metrics = _re.findall(r'(\+?\d[\d.,]*[%x€]+)', text)
+    metric_labels = _re.findall(r'(\+?\d[\d.,]*[%x€]+)\s+([\w\sáéíóúñ]{3,40})', text)
+    # Build 4 metric cards
+    mcards = []
+    seen = set()
+    for num, label in metric_labels[:4]:
+        if num not in seen:
+            seen.add(num)
+            mcards.append(f'''<div class="bg-white rounded-xl p-5 text-center shadow-[0_2px_8px_rgba(0,0,0,.06)]">
+<div class="font-headline font-extrabold text-2xl md:text-3xl text-primary">{num}</div>
+<p class="text-xs text-on-surface-variant mt-1 leading-tight">{label.strip()[:35]}</p>
 </div>''')
-
-    metrics_grid = f'''<div class="grid grid-cols-2 md:grid-cols-{min(len(metric_cards), 4)} gap-6 mb-8">
-{"".join(metric_cards)}
-</div>''' if metric_cards else ''
-
-    # Clean narrative (remove raw numbers we already extracted)
-    narrative = auto_link(case_html, current_url, max_links=2)
-
+    metrics_html = f'''<div class="grid grid-cols-2 gap-4 mb-8">{"".join(mcards)}</div>''' if mcards else ''
+    # Split narrative into sections
+    sections_map = [
+        ('Situación', 'apartment', _re.search(r'(?:Situaci[oó]n|Contexto)[:\s]*(.*?)(?=Problema|$)', text, _re.DOTALL)),
+        ('Problema', 'error', _re.search(r'Problema[:\s]*(.*?)(?=Soluci[oó]n|$)', text, _re.DOTALL)),
+        ('Solución', 'lightbulb', _re.search(r'Soluci[oó]n[^:]*[:\s]*(.*?)(?=Resultado|$)', text, _re.DOTALL)),
+        ('Resultados', 'trending_up', _re.search(r'Resultado[^:]*[:\s]*(.*?)$', text, _re.DOTALL)),
+    ]
+    narrative_blocks = ''
+    for label, icon, match in sections_map:
+        if match:
+            content = match.group(1).strip()[:300]
+            if content:
+                narrative_blocks += f'''<div class="flex gap-4 mb-6">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-secondary-container" style="font-size:20px">{icon}</span>
+</div>
+<div>
+<h4 class="font-bold text-primary text-sm uppercase tracking-wide mb-1">{label}</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">{content}</p>
+</div>
+</div>'''
+    if not narrative_blocks:
+        narrative_blocks = f'<div class="text-sm text-on-surface-variant leading-relaxed">{auto_link(case_html, current_url, max_links=2)}</div>'
     return f'''
-<section class="py-20 px-6 lg:px-8">
-<div class="max-w-5xl mx-auto">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-12 text-center">Caso de éxito real</h2>
-<div class="bg-primary rounded-3xl p-8 md:p-12 text-white shadow-2xl">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
-<span class="material-symbols-outlined text-on-secondary-container" style="font-size:20px">emoji_events</span>
+<section class="py-24 px-6 lg:px-8 bg-[#f4f6fa]">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-14">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Resultados reales en {sector}</h2>
 </div>
-<span class="font-headline font-bold text-lg">Marketing para {sector}</span>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+<div class="lg:col-span-2">
+{metrics_html}
+<div class="bg-gradient-to-br from-primary to-primary-container rounded-2xl p-8 text-white text-center">
+<span class="material-symbols-outlined mb-3" style="font-size:40px;opacity:.8">emoji_events</span>
+<p class="font-headline font-bold text-lg mb-2">Marketing para {sector}</p>
+<p class="text-sm text-white/70">Caso verificable con datos reales</p>
+<a href="{rel('/contacto/', current_url)}" class="inline-block mt-6 bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-secondary transition-all">Quiero resultados así</a>
 </div>
-{metrics_grid}
-<div class="bg-white/10 rounded-2xl p-6 md:p-8 text-white/90 leading-relaxed text-sm prose-case">{narrative}</div>
+</div>
+<div class="lg:col-span-3 bg-white rounded-2xl p-8 shadow-[0_2px_16px_rgba(0,0,0,.06)]">
+{narrative_blocks}
+</div>
 </div>
 </div>
 </section>'''
