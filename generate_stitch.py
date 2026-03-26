@@ -1825,43 +1825,25 @@ def build_service_page(page):
 # ============================================================
 
 def render_sector_stats(p, current_url):
-    """Render sector stats as premium stat cards"""
+    """Render sector stats as clean prose with highlighted numbers (Stitch: no extracted metrics)"""
     stats_html = p.get("sector_stats", "")
     if not stats_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
-    text = _re.sub(r'<[^>]+>', ' ', stats_html)
-    # Extract number+context pairs
-    stat_patterns = _re.findall(r'(\d[\d.,]+[%€BM+]*)\s*(?:de\s+)?([^.,]{5,60})', text)
-    colors = ['from-[#001e40] to-[#003366]', 'from-[#fd8b00] to-[#e67e00]', 'from-[#001e40] to-[#003366]', 'from-[#fd8b00] to-[#e67e00]']
-    text_colors = ['text-white', 'text-white', 'text-white', 'text-white']
-    cards = []
-    for i, (num, ctx) in enumerate(stat_patterns[:4]):
-        c = colors[i % 4]
-        tc = text_colors[i % 4]
-        cards.append(f'''<div class="bg-gradient-to-br {c} rounded-2xl p-8 {tc} relative overflow-hidden">
-<div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-8 translate-x-8"></div>
-<div class="font-headline font-extrabold text-4xl md:text-5xl mb-3">{num.strip()}</div>
-<p class="text-sm opacity-80 leading-relaxed">{ctx.strip()}</p>
-</div>''')
-    if len(cards) < 2:
-        linked = auto_link(stats_html, current_url, max_links=3)
-        return f'''<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-4xl mx-auto">
-<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary mb-10 text-center">El sector en cifras</h2>
-<div class="bg-white rounded-2xl p-10 shadow-lg text-on-surface-variant leading-relaxed">{linked}</div>
-</div></section>'''
+    # Style the HTML content: make numbers stand out in orange
+    styled = _re.sub(r'<strong>([\d.,]+[%€+]*[^<]{0,5})</strong>',
+        r'<span class="font-headline font-extrabold text-2xl text-secondary-container">\1</span>',
+        stats_html)
+    styled = auto_link(styled, current_url, max_links=2)
     return f'''
-<section class="py-24 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-5xl mx-auto">
-<div class="text-center mb-14">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de {sector} en cifras</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-{"".join(cards)}
-</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed">{styled}</div>
 </div>
 </section>'''
 
