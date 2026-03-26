@@ -1928,39 +1928,30 @@ def render_strategy_blocks(p, current_url):
 
 
 def render_case_study(p, current_url):
-    """Render case study as clean card with metrics + narrative"""
+    """Render case study as clean card with narrative only (no extracted metrics)"""
     case_html = p.get("case_study", "")
     if not case_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
-    text = _re.sub(r'<[^>]+>', ' ', case_html)
-    # Extract metrics with labels
-    metric_labels = _re.findall(r'(\+?\d[\d.,]*[%x€]+)\s+([\w\sáéíóúñ,]{3,40})', text)
-    mcards = []
-    seen = set()
-    for num, label in metric_labels[:4]:
-        if num not in seen:
-            seen.add(num)
-            mcards.append(f'''<div class="text-center">
-<div class="font-headline font-extrabold text-3xl text-secondary-container">{num}</div>
-<p class="text-xs text-on-surface-variant mt-1">{label.strip()[:30]}</p>
-</div>''')
-    metrics_html = f'<div class="flex justify-around py-6 border-y border-black/[.06] my-6">{"".join(mcards)}</div>' if mcards else ''
-    # Clean narrative — keep original HTML but strip h3 and make it readable
+    # Clean narrative — structure with clear section headers
     clean_case = _re.sub(r'<h3[^>]*>.*?</h3>', '', case_html)
-    clean_case = _re.sub(r'<strong>(Situaci[oó]n|Problema|Soluci[oó]n[^<]*|Resultado[^<]*)</strong>[:\s]*', r'<br><span class="font-bold text-primary text-base">\1:</span> ', clean_case)
+    # Make section headers stand out
+    clean_case = _re.sub(
+        r'<strong>(Situaci[oó]n|Problema|Soluci[oó]n[^<]*|Resultado[^<]*)[:\s]*</strong>[:\s]*',
+        r'</p><h3 class="font-headline font-bold text-lg text-primary mt-6 mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center flex-shrink-0"><span class="text-secondary-container text-sm font-bold">✦</span></span>\1</h3><p class="text-on-surface-variant leading-relaxed">',
+        clean_case
+    )
     clean_case = auto_link(clean_case, current_url, max_links=2)
     return f'''
-<section class="py-20 px-6 lg:px-8">
-<div class="max-w-4xl mx-auto">
+<section class="py-20 px-6 lg:px-8 bg-[#f8f9fb]">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Resultados reales en {sector}</h2>
 </div>
 <div class="bg-white rounded-2xl p-6 md:p-10 shadow-[0_4px_24px_rgba(0,0,0,.07)] border border-black/[.04]">
-{metrics_html}
-<div class="text-base text-on-surface-variant leading-relaxed space-y-3">{clean_case}</div>
+<div class="text-base leading-relaxed">{clean_case}</div>
 <div class="text-center mt-8 pt-6 border-t border-black/[.06]">
 <a href="{rel('/contacto/', current_url)}" class="inline-block bg-primary text-white px-8 py-3.5 rounded-xl font-bold hover:bg-primary-container transition-all">Quiero resultados así →</a>
 </div>
