@@ -282,7 +282,7 @@ details[open] summary {{ color: #000511; }}
 
 def nav_html(current_url="/"):
     r = lambda target: rel(target, current_url)
-    return f'''<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-lg border-b border-outline-variant/15" style="box-shadow:0 1px 8px rgba(0,0,0,.04)">
+    return f'''<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[24px] border-b border-[#c4c6cf]/10" style="box-shadow:0 1px 12px rgba(0,5,17,.03)">
 <div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
 <a href="{r('/')}" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
 <div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
@@ -820,7 +820,7 @@ def web_audit_html(current_url="/"):
 <div class="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-5 text-center">
 <p class="text-sm text-[#166534] font-bold">¿Quieres que solucionemos estos problemas?</p>
 <p class="text-xs text-[#43474f] mt-1 mb-3">Te enviaremos un informe detallado con las acciones prioritarias a tu email.</p>
-<a href="{r('/contacto/')}" class="inline-block bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm">Solicitar informe completo gratis →</a>
+<a href="{r('/contacto/')}" class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white font-bold px-6 py-3 rounded-lg hover:bg-secondary transition-all active:scale-95 text-sm">Solicitar informe completo gratis →</a>
 </div>
 </div>
 </div>
@@ -1014,7 +1014,7 @@ def inline_form_html(current_url="/", service_name="", cta_title="¿Hablamos sob
 <label class="text-xs font-bold text-primary uppercase tracking-wider">Mensaje *</label>
 <textarea name="mensaje" required class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-transparent text-sm" placeholder="Cuéntanos sobre tu proyecto y tus objetivos..." rows="4"></textarea>
 </div>
-<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-base" type="submit">Solicitar auditoría gratuita →</button>
+<button class="w-full bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-base" type="submit">Solicitar auditoría gratuita →</button>
 <p class="text-[11px] text-on-surface-variant text-center">Sin compromiso · Respuesta en menos de 24h · <a href="{r("/politica-de-privacidad/")}" class="underline">Política de privacidad</a></p>
 </form>
 </div>
@@ -1749,7 +1749,7 @@ def build_service_page(page):
 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
-<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
+<a class="bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">{p.get("cta_button_short", "Auditoría gratis")}</a>
 <a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
 </div>
 </div>
@@ -1772,7 +1772,7 @@ def build_service_page(page):
 <div class="max-w-3xl mx-auto text-center">
 <p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">{solution_text}</h2>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="{r('/contacto/')}">Cuéntanos tu caso →</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="{r('/contacto/')}">Cuéntanos tu caso →</a>
 </div>
 </section>
 
@@ -1817,7 +1817,7 @@ def build_service_page(page):
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")} →</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")} →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
@@ -2017,7 +2017,7 @@ def build_vertical_page(page):
 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{p.get("intro", "")}</p>
 <p class="font-headline font-extrabold text-xl md:text-2xl text-secondary-container mt-8">{p.get("hook_stat", "")}</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95 mt-8" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95 mt-8" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
 </section>
 
 <!-- SERVICES GRID -->
@@ -2039,7 +2039,7 @@ def build_vertical_page(page):
 <div class="max-w-2xl mx-auto text-center">
 <h2 class="font-headline font-bold text-2xl text-white mb-4">{p.get("cta_title", "¿Empezamos?")}</h2>
 <p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu negocio. Sin compromiso.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
 
@@ -2121,7 +2121,7 @@ def build_vertical_page(page):
 <section class="bg-primary py-24 px-6 lg:px-8">
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-white mb-6">{p.get("cta_title", "¿Empezamos?")}</h2>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
 ''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if (current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] or current_url.startswith('/marketing-para-')) else '') + f'''
@@ -2251,7 +2251,7 @@ def build_geo_page(page):
 <h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">{p["h1"]}</h1>
 <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">{auto_link(p.get("intro", ""), current_url, max_links=2)}</p>
 <div class="flex flex-wrap gap-4 justify-center mt-8">
-<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita en {city}</a>
+<a class="bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita en {city}</a>
 <a class="px-8 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-white transition-all" href="{r(parent_url)}">Ver servicio completo</a>
 </div>
 </div>
@@ -2312,7 +2312,7 @@ def build_geo_page(page):
 <div class="max-w-2xl mx-auto text-center">
 <h2 class="font-headline font-bold text-2xl text-white mb-4">¿Necesitas {svc_name_lower} en {city}?</h2>
 <p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu proyecto. Sin compromiso.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">Solicitar auditoría gratis</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="{r('/contacto/')}">Solicitar auditoría gratis</a>
 </div>
 </section>
 
@@ -2372,7 +2372,7 @@ def build_geo_page(page):
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Buscas {svc_name_lower} en {city}?</h2>
 <p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu proyecto y te decimos exactamente qué hacer para crecer en {city}.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita — sin compromiso</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita — sin compromiso</a>
 </div>
 </section>
 </main>
@@ -2545,7 +2545,7 @@ Agencia de Marketing Digital en Barcelona — <span class="text-secondary-contai
 Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Google Ads y redes sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación. Sin permanencia. Dashboard en tiempo real.
 </p>
 <div class="flex flex-wrap gap-4 mt-8 justify-center">
-<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
+<a class="bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
 <a class="px-10 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-surface-container-low transition-all" href="{r('/servicios/')}">Ver servicios</a>
 </div>
 </div>
@@ -2596,7 +2596,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">¿Te suena esto?</p>
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Tu competencia aparece en Google antes que tú. Tus clientes potenciales los encuentran a ellos, no a ti.</h2>
 <p class="text-on-primary-container text-base mb-8 max-w-xl mx-auto">Cada día que pasa sin una estrategia digital, estás regalando clientes. Nosotros lo cambiamos.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
 <p class="text-on-primary-container/60 text-xs mt-4">Sin compromiso. Te respondemos en menos de 24h.</p>
 </div>
 </section>
@@ -2648,7 +2648,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4">¿Quieres saber exactamente qué está fallando en tu marketing digital?</h2>
 <p class="text-on-surface-variant text-base max-w-xl mx-auto mb-6">Te hacemos una auditoría completa de tu web, tu SEO, tu publicidad y tus redes sociales. Gratis. Sin letra pequeña. En 48h tienes un informe con acciones concretas para mejorar.</p>
 <div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
+<a class="bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
 </div>
 <div class="flex flex-wrap justify-center gap-6 mt-6 text-xs text-on-surface-variant">
 <span class="flex items-center gap-1">✓ Sin compromiso</span>
@@ -2733,7 +2733,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-base">Mientras tú dudas, tu competencia está captando los clientes que deberían ser tuyos. Empezamos en menos de 48 horas.</p>
 </div>
 <div class="flex-shrink-0">
-<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95 whitespace-nowrap" href="{r('/contacto/')}">Empezar ahora →</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95 whitespace-nowrap" href="{r('/contacto/')}">Empezar ahora →</a>
 </div>
 </div>
 </section>
@@ -2801,7 +2801,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="font-headline font-black text-5xl md:text-6xl text-primary mb-4">487+</p>
 <h2 class="font-headline font-bold text-2xl text-primary mb-4">empresas ya han confiado en nosotros para hacer crecer su negocio</h2>
 <p class="text-on-surface-variant text-base mb-8 max-w-xl mx-auto">Desde startups hasta empresas consolidadas. En más de 30 sectores diferentes. ¿Será el tuyo el siguiente caso de éxito?</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero ser el próximo caso de éxito</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero ser el próximo caso de éxito</a>
 </div>
 </section>
 
@@ -2878,7 +2878,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Estimación de resultados a 6 meses</p>
 <p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container font-bold">✓</span> Sin compromiso ni permanencia</p>
 </div>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicitar auditoría gratuita →</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicitar auditoría gratuita →</a>
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24 horas. Sin llamadas no deseadas.</p>
 </div>
 </section>
@@ -3045,7 +3045,7 @@ def build_about_page():
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Quieres conocernos?</h2>
 <p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita y descubre qué podemos hacer por tu negocio. Sin compromiso, sin permanencia.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita</a>
 </div>
 </section>
 </main>
@@ -3148,7 +3148,7 @@ def build_contact_page():
 <label class="text-sm font-bold text-primary uppercase tracking-wider">Mensaje *</label>
 <textarea name="mensaje" required class="w-full bg-surface-container-low border-none rounded-lg px-5 py-3.5 focus:ring-2 focus:ring-secondary-container" placeholder="Cuéntanos sobre tu proyecto, tus objetivos y tu presupuesto aproximado..." rows="4"></textarea>
 </div>
-<button class="w-full bg-secondary-container text-on-secondary-container font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Solicitar auditoría gratuita</button>
+<button class="w-full bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white font-bold py-4 rounded-lg hover:bg-secondary transition-all active:scale-95 text-lg" type="submit">Solicitar auditoría gratuita</button>
 <p class="text-xs text-on-surface-variant text-center">Al enviar aceptas nuestra <a href="{r('/politica-de-privacidad/')}" class="underline">política de privacidad</a>.</p>
 </form>
 </div>
@@ -3307,7 +3307,7 @@ def build_blog_index():
 <div class="max-w-3xl mx-auto text-center">
 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que apliquemos estas estrategias en tu negocio?</h2>
 <p class="text-on-primary-container text-base mb-8">Solicita tu auditoría gratuita y te mostramos qué podemos hacer por ti.</p>
-<a class="inline-block bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
+<a class="inline-block bg-gradient-to-br from-[#ca6e00] to-[#ffb77d] text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
 </div>
 </section>
 
