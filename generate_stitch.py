@@ -200,11 +200,11 @@ details summary::-webkit-details-marker {{ display: none; }}
 /* ── Card grid: wider, balanced ── */
 .card-grid {{ display: grid; gap: 1.75rem; margin: 0 auto; }}
 .card-grid.g2 {{ grid-template-columns: repeat(2,1fr); max-width: 720px; }}
-.card-grid.g3 {{ grid-template-columns: repeat(3,1fr); max-width: 1100px; }}
+.card-grid.g3 {{ grid-template-columns: repeat(3,1fr); max-width: 1200px; }}
 .card-grid.g4 {{ grid-template-columns: repeat(2,1fr); max-width: 720px; }}
-.card-grid.g5 {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }}
+.card-grid.g5 {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }}
 .card-grid.g5 > * {{ width: calc(33.33% - 1.25rem); min-width: 240px; }}
-.card-grid.g6 {{ grid-template-columns: repeat(3,1fr); max-width: 1100px; }}
+.card-grid.g6 {{ grid-template-columns: repeat(3,1fr); max-width: 1200px; }}
 @media(max-width:767px) {{
   .card-grid {{ grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }}
   .card-grid.g5 > * {{ width: 100% !important; min-width: 0 !important; }}
@@ -1825,87 +1825,94 @@ def build_service_page(page):
 # ============================================================
 
 def render_sector_stats(p, current_url):
-    """Render sector stats as clean prose with highlighted numbers (Stitch: no extracted metrics)"""
+    """Render sector stats as prose with orange highlighted numbers on white card"""
     stats_html = p.get("sector_stats", "")
     if not stats_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
-    # Style the HTML content: make numbers stand out in orange
-    styled = _re.sub(r'<strong>([\d.,]+[%€+]*[^<]{0,5})</strong>',
-        r'<span class="font-headline font-extrabold text-2xl text-secondary-container">\1</span>',
+    # Extract key stats: find <strong>NUMBER</strong> patterns
+    stats = _re.findall(r'<strong>([\d.,]+[%€M+]*(?:\s*[a-záéíóúñ€]+)?)</strong>', stats_html)
+    # Build stat cards if we found enough numbers
+    stat_cards = ''
+    if len(stats) >= 3:
+        # Get labels from surrounding text
+        parts = _re.split(r'<strong>[\d.,]+[%€M+]*(?:\s*[a-záéíóúñ€]+)?</strong>', stats_html)
+        labels = []
+        for part in parts[1:]:  # skip text before first stat
+            clean = _re.sub(r'<[^>]+>', ' ', part).strip()
+            # Take first phrase as label
+            label = clean.split('.')[0].strip().strip(',').strip()
+            if len(label) > 60:
+                label = label[:57] + '...'
+            labels.append(label)
+        grid_cols = 'grid-cols-2 md:grid-cols-4' if len(stats) >= 4 else 'grid-cols-3'
+        for i, stat in enumerate(stats[:4]):
+            label = labels[i] if i < len(labels) else ''
+            stat_cards += f'''<div class="text-center p-6">
+<div class="font-headline font-extrabold text-3xl md:text-4xl text-secondary-container mb-2">{stat}</div>
+<p class="text-sm text-on-surface-variant">{label}</p>
+</div>'''
+        stat_cards = f'<div class="grid {grid_cols} gap-4 mb-8">{stat_cards}</div>'
+    # Also render the full prose with highlighted numbers
+    styled = _re.sub(r'<strong>([\d.,]+[%€M+]*[^<]{0,15})</strong>',
+        r'<strong class="text-secondary-container font-headline">\1</strong>',
         stats_html)
     styled = auto_link(styled, current_url, max_links=2)
     return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de {sector} en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed">{styled}</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+{stat_cards}
+<div class="text-base text-on-surface-variant leading-relaxed">{styled}</div>
+</div>
 </div>
 </section>'''
 
 
 def render_strategy_blocks(p, current_url):
-    """Render strategy as clean numbered cards — title + 3 short bullets only"""
+    """Render strategy as accordions — title visible, content expandable"""
     strategy_html = p.get("strategy_detailed", "")
     if not strategy_html:
         return ""
     import re as _re
     sector = p.get("sector_name", "tu sector")
     parts = _re.split(r'<h3[^>]*>(.*?)</h3>', strategy_html)
-    cards = []
-    icons = ['search', 'ads_click', 'share', 'mail', 'language', 'analytics', 'campaign', 'trending_up', 'smartphone', 'groups']
+    items = []
+    icons = ['search', 'ads_click', 'share', 'mail', 'language', 'analytics', 'campaign', 'trending_up']
     for i in range(1, len(parts), 2):
         if i + 1 >= len(parts):
             break
         title = _re.sub(r'<[^>]+>', '', parts[i]).strip()
-        # Shorten title if too long
-        if len(title) > 45:
-            title = title.split(':')[0].strip() if ':' in title else title[:42] + '...'
-        content = parts[i + 1].strip()
+        if len(title) > 55:
+            title = title.split(':')[0].strip() if ':' in title else title[:52] + '...'
+        content = auto_link(parts[i + 1].strip(), current_url, max_links=2)
         idx = (i // 2)
         icon = icons[idx % len(icons)]
-        # Extract bullet titles only (text before colon, max 40 chars)
-        bullets = _re.findall(r'<li>(.*?)</li>', content, _re.DOTALL)
-        bullet_items = ''
-        if bullets:
-            short = []
-            for b in bullets[:4]:
-                bt = _re.sub(r'<[^>]+>', '', b).strip()
-                label = bt.split(':')[0].strip() if ':' in bt else bt.split('.')[0].strip()
-                if label and len(label) > 3:
-                    short.append(label[:45])
-            if short:
-                items = ''.join(f'<li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>{s}</li>' for s in short)
-                bullet_items = f'<ul class="space-y-2 mt-3">{items}</ul>'
-        # If no bullets, extract first sentence as one-liner
-        if not bullet_items:
-            first_p = _re.search(r'<p>(.*?)</p>', content, _re.DOTALL)
-            if first_p:
-                raw = _re.sub(r'<[^>]+>', '', first_p.group(1)).strip()
-                sentence = _re.split(r'[.!?]', raw)[0].strip()
-                if sentence:
-                    bullet_items = f'<p class="text-sm text-on-surface-variant mt-3">{sentence[:120]}.</p>'
-        cards.append(f'''<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-white" style="font-size:20px">{icon}</span>
+        step = idx + 1
+        items.append(f'''<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">{step:02d}</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">{title}</h3>
-{bullet_items}
-</div>''')
-    grid_class = 'md:grid-cols-2 lg:grid-cols-3' if len(cards) >= 3 else 'md:grid-cols-2'
+<h3 class="font-headline font-bold text-base text-primary flex-1">{title}</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4">{content}</div>
+</details>''')
     return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para {sector}</h2>
 </div>
-<div class="grid grid-cols-1 {grid_class} gap-5">
-{"".join(cards)}
+<div class="space-y-3">
+{"".join(items)}
 </div>
 </div>
 </section>'''
@@ -1928,7 +1935,7 @@ def render_case_study(p, current_url):
     )
     clean_case = auto_link(clean_case, current_url, max_links=2)
     return f'''
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>

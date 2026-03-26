@@ -44,11 +44,11 @@ details summary::-webkit-details-marker { display: none; }
 /* ── Card grid: wider, balanced ── */
 .card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }
 .card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 @media(max-width:767px) {
   .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
@@ -336,61 +336,116 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de ecommerce en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed"><strong>El <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a> en España facturó más de 84.000 millones de euros en 2025</strong>, con un crecimiento interanual del 12%. <strong>Solo el 3% de las <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tiendas online</a> españolas son realmente rentables</strong>, lo que demuestra la importancia de una estrategia profesional. <strong>La tasa media de conversión del ecommerce en España es del 1,8%</strong>, muy por debajo del 3-4% de las tiendas optimizadas profesionalmente. <strong>El 70% de los carritos de compra se abandonan antes de finalizar el pago</strong>, representando millones de euros en ventas perdidas cada año.</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+
+<div class="text-base text-on-surface-variant leading-relaxed"><strong>El <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a> en España facturó más de 84.000 millones de euros en 2025</strong>, con un crecimiento interanual del 12%. <strong>Solo el 3% de las <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tiendas online</a> españolas son realmente rentables</strong>, lo que demuestra la importancia de una estrategia profesional. <strong>La tasa media de conversión del ecommerce en España es del 1,8%</strong>, muy por debajo del 3-4% de las tiendas optimizadas profesionalmente. <strong>El 70% de los carritos de compra se abandonan antes de finalizar el pago</strong>, representando millones de euros en ventas perdidas cada año.</div>
+</div>
 </div>
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para ecommerce</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+<div class="space-y-3">
+<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">01</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Estrategia de Marketing Digital 360 para E...</h3>
-<p class="text-sm text-on-surface-variant mt-3">El ecommerce no es simplemente poner productos online.</p>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Estrategia de Marketing Digital 360 para Ecommerce</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a> no es simplemente poner productos online. Es un ecosistema complejo donde el tráfico, la conversión, el ticket medio y la retención deben trabajar al unísono. En Comunikoo diseñamos estrategias que abordan cada pilar del crecimiento ecommerce con tácticas probadas y medibles.</p></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">02</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">SEO para Ecommerce</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Arquitectura web optimizada para rastreo</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Páginas de categoría como activos SEO</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Fichas de producto únicas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Blog estratégico de contenido comercial</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">SEO para Ecommerce: La Base del Tráfico Rentable</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El SEO es el canal con mayor ROI a medio-largo plazo para <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tiendas online</a>. Pero el SEO <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a> tiene reglas propias que lo diferencian del SEO convencional:</p>
+<ul>
+<li><strong>Arquitectura web optimizada para rastreo:</strong> Estructura de categorías y subcategorías diseñada para que Google indexe eficientemente miles de productos. Gestión de faceted navigation, paginación, URLs canónicas y evitación de contenido duplicado entre variantes de producto.</li>
+<li><strong>Páginas de categoría como activos SEO:</strong> Las categorías no son simples listados. Las enriquecemos con texto optimizado, filtros útiles, comparativas y guías de compra que posicionan para keywords transaccionales de alto volumen como "comprar zapatillas running" o "camisetas hombre baratas".</li>
+<li><strong>Fichas de producto únicas:</strong> Descripciones originales (nunca copiadas del fabricante), con especificaciones técnicas, beneficios para el usuario, fotos optimizadas con alt text y schema markup de Product con precio, disponibilidad y valoraciones para rich snippets.</li>
+<li><strong>Blog estratégico de contenido comercial:</strong> Artículos tipo "mejores [producto] de 2026", guías de compra, comparativas y tutoriales que capturan tráfico informacional y lo canalizan hacia la compra. El blog puede representar el 40-60% del tráfico orgánico de un ecommerce.</li>
+<li><strong>SEO técnico específico:</strong> Velocidad de carga (Core Web Vitals), optimización de imágenes con WebP y AVIF, lazy loading, CDN, gestión de productos agotados (301 vs noindex), sitemap XML dinámico y optimización del crawl budget.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">03</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Google Shopping y Performance Max</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Optimización del feed de Merchant Center</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas Shopping estándar segmentadas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Performance Max con señales de audiencia</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Remarketing dinámico</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Google Shopping y Performance Max</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p><a href="/servicios/google-shopping/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Shopping</a> es el canal de pago más rentable para <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a>. Tus productos aparecen con foto, precio y nombre de tienda directamente en los resultados de búsqueda:</p>
+<ul>
+<li><strong>Optimización del feed de Merchant Center:</strong> Títulos de producto optimizados con keywords relevantes, descripciones enriquecidas, categorización correcta según la taxonomía de Google, GTINs verificados, imágenes de alta calidad y precios actualizados en tiempo real.</li>
+<li><strong>Campañas Shopping estándar segmentadas:</strong> Segmentación por categoría de producto, margen de beneficio y rendimiento histórico. Productos estrella con pujas agresivas, productos de cola larga con pujas conservadoras.</li>
+<li><strong>Performance Max con señales de audiencia:</strong> Campañas automatizadas de Google que combinan Shopping, Display, YouTube, Discover y Gmail. Configuración con señales de audiencia específicas para guiar el algoritmo.</li>
+<li><strong>Remarketing dinámico:</strong> El usuario que vio un producto específico ve ese mismo producto en banners por toda la web. Altísima tasa de conversión porque el interés ya está demostrado.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">04</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Meta Ads para Ecommerce</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Catálogo dinámico de productos</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas Advantage+ Shopping</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Retargeting por comportamiento</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Audiencias lookalike de compradores</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Meta Ads para Ecommerce</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Mientras Google captura demanda existente, Meta Ads genera demanda nueva. Es el canal ideal para productos visuales y compras por impulso:</p>
+<ul>
+<li><strong>Catálogo dinámico de productos:</strong> Conexión del catálogo de tu tienda con Meta para anuncios que muestran automáticamente los productos más relevantes a cada usuario.</li>
+<li><strong>Campañas Advantage+ Shopping:</strong> El formato automatizado de Meta para <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a> que optimiza creatividades, audiencias y pujas usando inteligencia artificial con resultados superiores a las campañas manuales.</li>
+<li><strong><a href="/agencia-google-ads/remarketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Retargeting</a> por comportamiento:</strong> Visitantes que vieron productos, añadieron al carrito o iniciaron checkout reciben anuncios personalizados con esos productos exactos.</li>
+<li><strong>Audiencias lookalike de compradores:</strong> Meta encuentra usuarios similares a tus mejores clientes y les muestra tus productos. Es la forma más eficiente de escalar la adquisición.</li>
+<li><strong>Contenido UGC (User Generated Content):</strong> Anuncios con formato de reseña o unboxing creados por clientes reales que generan hasta 4x más conversiones que los anuncios de marca tradicionales.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">05</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Email Marketing y Automatización</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Flujo de bienvenida</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Carrito abandonado</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Post-compra</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Winback de clientes inactivos</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Email Marketing y Automatización</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El email genera 42 euros por cada euro invertido en <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a>. Es el canal más rentable y el más subestimado:</p>
+<ul>
+<li><strong>Flujo de bienvenida:</strong> Secuencia de 4-5 emails para nuevos suscriptores con presentación de marca, bestsellers, código de descuento para primera compra y social proof.</li>
+<li><strong>Carrito abandonado:</strong> Secuencia de 3 emails (1h, 24h, 72h después del abandono) con recordatorio del producto, urgencia y posible incentivo. Recupera entre el 5% y 15% de los carritos abandonados.</li>
+<li><strong>Post-compra:</strong> Confirmación, seguimiento del envío, solicitud de reseña, cross-sell de productos complementarios y programa de referidos.</li>
+<li><strong>Winback de clientes inactivos:</strong> Campañas para clientes que no compran desde hace 60, 90 o 120 días con ofertas personalizadas según su historial.</li>
+<li><strong>Segmentación avanzada con Klaviyo:</strong> Segmentos dinámicos basados en comportamiento de compra (frecuencia, ticket medio, categorías), engagement con emails y navegación en la web.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">06</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">CRO: Optimización de la Tasa de Conversión</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Test A/B en fichas de producto</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Optimización del checkout</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Análisis de heatmaps y grabaciones de sesión </li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Popups inteligentes de salida con descuento p</li></ul>
-</div>
+<h3 class="font-headline font-bold text-base text-primary flex-1">CRO: Optimización de la Tasa de Conversión</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Aumentar la conversión del 1,8% al 3% duplica tus ventas sin aumentar el tráfico. El <a href="/servicios/optimizacion-cro/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">CRO</a> es el multiplicador silencioso del <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a>:</p>
+<ul>
+<li>Test A/B en fichas de producto: orden de imágenes, formato de precio, botón de compra, descripciones y llamadas a la acción</li>
+<li>Optimización del checkout: reducción de pasos, guest checkout, múltiples métodos de pago incluyendo Bizum, Apple Pay y PayPal</li>
+<li>Análisis de heatmaps y grabaciones de sesión con Hotjar para detectar puntos de fricción</li>
+<li>Popups inteligentes de salida con descuento para reducir abandono</li>
+<li>Social proof en tiempo real: indicadores de popularidad y ventas recientes que generan urgencia</li>
+</ul></div>
+</details>
 </div>
 </div>
 </section>
@@ -405,7 +460,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>

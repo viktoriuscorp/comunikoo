@@ -44,11 +44,11 @@ details summary::-webkit-details-marker { display: none; }
 /* ── Card grid: wider, balanced ── */
 .card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }
 .card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 @media(max-width:767px) {
   .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
@@ -322,67 +322,130 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de academias en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed"><strong>El sector de la formación no reglada en España factura más de 5.500 millones de euros anuales</strong>, incluyendo academias de idiomas, formación profesional, academias de oposiciones y centros de refuerzo escolar. <strong>El 85% de los futuros alumnos investigan online antes de matricularse</strong>, comparando centros, leyendo reseñas y buscando opiniones en <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a>. <strong>Las academias de idiomas representan el 40% del mercado de formación no reglada</strong>, con una demanda creciente de inglés, pero también de chino, alemán y francés. <strong>La tasa de abandono medio en academias es del 30% antes de completar el curso</strong>, lo que convierte la retención en un factor crítico de rentabilidad.</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+
+<div class="text-base text-on-surface-variant leading-relaxed"><strong>El sector de la formación no reglada en España factura más de 5.500 millones de euros anuales</strong>, incluyendo academias de idiomas, formación profesional, academias de oposiciones y centros de refuerzo escolar. <strong>El 85% de los futuros alumnos investigan online antes de matricularse</strong>, comparando centros, leyendo reseñas y buscando opiniones en <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a>. <strong>Las academias de idiomas representan el 40% del mercado de formación no reglada</strong>, con una demanda creciente de inglés, pero también de chino, alemán y francés. <strong>La tasa de abandono medio en academias es del 30% antes de completar el curso</strong>, lo que convierte la retención en un factor crítico de rentabilidad.</div>
+</div>
 </div>
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para academias</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+<div class="space-y-3">
+<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">01</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Estrategia de Marketing Digital para Acade...</h3>
-<p class="text-sm text-on-surface-variant mt-3">Las academias operan en un mercado con alta estacionalidad (septiembre y enero son los picos) y un valor de cliente que .</p>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Estrategia de Marketing Digital para Academias y Cen...</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Las academias operan en un mercado con alta estacionalidad (septiembre y enero son los picos) y un valor de cliente que se mide en mensualidades acumuladas durante meses o años. Un alumno que permanece 12 meses vale 10-20 veces más que el coste de captarlo. En Comunikoo diseñamos estrategias que llenan las aulas durante todo el año y maximizan la permanencia de cada alumno.</p></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">02</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">SEO por Tipo de Curso y Nivel</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Landing pages por curso y nivel</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Contenido educativo de valor</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Páginas de resultados y estadísticas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Schema markup educativo</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">SEO por Tipo de Curso y Nivel</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El futuro alumno busca con mucha especificidad: no busca "academia" sino "curso de inglés B2 en [ciudad]" o "academia de oposiciones auxiliar administrativo". Tu <a href="/agencia-seo/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">estrategia SEO</a> debe cubrir esa granularidad:</p>
+<ul>
+<li><strong><a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Landing pages</a> por curso y nivel:</strong> Una página optimizada para cada combinación de materia + nivel + modalidad: "curso inglés B1 presencial [ciudad]", "clases de alemán A2 online", "academia oposiciones justicia [ciudad]". Cada página con programa del curso, horarios, precios, metodología y testimonios específicos.</li>
+<li><strong>Contenido educativo de valor:</strong> Blog con recursos gratuitos que demuestran tu expertise: "cómo preparar el B2 de inglés en 6 meses", "temario actualizado oposiciones [convocatoria]", "mejores métodos de estudio para [materia]". Este contenido atrae tráfico masivo de personas en fase de investigación.</li>
+<li><strong>Páginas de resultados y estadísticas:</strong> Tasa de aprobados en oposiciones, resultados de exámenes oficiales (Cambridge, DELE, Goethe), porcentaje de alumnos que alcanzan sus objetivos. Los datos concretos son más persuasivos que cualquier eslogan.</li>
+<li><strong>Schema markup educativo:</strong> Datos estructurados de Course y EducationalOrganization que permiten a Google mostrar información enriquecida en los resultados de búsqueda.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">03</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Google Ads Estacional</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Septiembre (julio-septiembre)</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Enero (diciembre-enero)</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Junio (mayo-junio)</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas siempre activas</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Google Ads Estacional</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>La demanda de formación tiene patrones estacionales muy marcados. Las campañas deben anticiparse a cada pico:</p>
+<ul>
+<li><strong>Septiembre (julio-septiembre):</strong> El pico más importante. Campañas de "nuevo curso" que arrancan en julio con early bird y se intensifican en agosto-septiembre. Keywords de inicio de curso, matrículas y primeras clases.</li>
+<li><strong>Enero (diciembre-enero):</strong> Propósitos de año nuevo, "este año aprendo inglés". Campañas motivacionales con ofertas de matrícula. También pico para oposiciones por nuevas convocatorias.</li>
+<li><strong>Junio (mayo-junio):</strong> Cursos intensivos de verano, refuerzo escolar para recuperaciones, preparación de exámenes oficiales de septiembre. Campañas específicas de cursos de verano.</li>
+<li><strong>Campañas siempre activas:</strong> Con presupuesto reducido para captar la demanda constante. Siempre hay personas que buscan formación fuera de los picos estacionales.</li>
+<li><strong><a href="/agencia-google-ads/remarketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Remarketing</a> educativo:</strong> El alumno que visita tu web puede tardar semanas en decidirse. Campañas de remarketing con testimonios, ofertas de clase de prueba y últimas plazas que mantienen tu academia presente.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">04</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Redes Sociales Educativas</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Instagram para alumnos jóvenes (16-30)</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Facebook para padres de alumnos menores</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>LinkedIn para formación profesional</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>TikTok para academias de idiomas</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Redes Sociales Educativas</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Las academias tienen públicos muy diversos que requieren estrategias de <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a> diferenciadas:</p>
+<ul>
+<li><strong>Instagram para alumnos jóvenes (16-30):</strong> Contenido de la vida del centro: clases en acción, actividades, eventos, intercambios culturales (academias de idiomas), logros de alumnos, tips educativos en formato Reels. Tono cercano y motivacional.</li>
+<li><strong>Facebook para padres de alumnos menores:</strong> Comunicación más formal, información sobre el centro, metodología, horarios, actividades extraescolares. Grupos de padres para crear comunidad. <a href="/servicios/agencia-facebook-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Facebook Ads</a> dirigido a padres con hijos en edad escolar de la zona.</li>
+<li><strong>LinkedIn para formación profesional:</strong> Si ofreces cursos profesionales, MBA, formación empresarial o idiomas para profesionales, LinkedIn es tu canal. Publicaciones sobre desarrollo profesional, tendencias del mercado laboral y casos de éxito de antiguos alumnos.</li>
+<li><strong>TikTok para academias de idiomas:</strong> Contenido educativo viral: mini-clases de vocabulario, errores comunes en inglés, pronunciación, cultura del país. Las academias de idiomas que publican en TikTok ven incrementos del 40-60% en consultas.</li>
+<li><strong>YouTube para contenido largo:</strong> Clases demo, webinars informativos, tours del centro y testimonios de alumnos. Ideal para que el potencial alumno pruebe tu metodología antes de matricularse.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">05</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Web con Catálogo de Cursos y Matrícula Online</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Catálogo de cursos estructurado</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Sistema de matrícula online</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Test de nivel online</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Chat en vivo y WhatsApp</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Web con Catálogo de Cursos y Matrícula Online</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>La web de una academia debe funcionar como un catálogo completo de cursos con sistema de conversión integrado:</p>
+<ul>
+<li><strong>Catálogo de cursos estructurado:</strong> Cada curso con su página: programa detallado, objetivos, duración, horarios disponibles, precio, perfil del profesor, modalidad (presencial, online, híbrido) y plazas disponibles.</li>
+<li><strong>Sistema de matrícula online:</strong> Formulario de solicitud de información o matrícula directa con pasarela de pago. Cada paso que se ahorra al alumno aumenta la tasa de conversión.</li>
+<li><strong>Test de nivel online:</strong> Para academias de idiomas, un test de nivel interactivo que el usuario completa y recibe su resultado con recomendación de curso. Genera leads cualificados y demuestra profesionalidad.</li>
+<li><strong>Chat en vivo y WhatsApp:</strong> El futuro alumno tiene preguntas específicas sobre horarios, nivel o precios. Un chat que responda en tiempo real puede ser la diferencia entre matrícula y abandono.</li>
+<li><strong>Clase de prueba gratuita:</strong> CTA principal de la web. Una clase de prueba gratuita reduce la barrera de entrada y permite al alumno experimentar la metodología antes de comprometerse.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">06</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Retención de Alumnos</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Onboarding digital</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Comunicación de progreso</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Eventos y actividades extra</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Programa de referidos</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Retención de Alumnos: Maximizar el Lifetime Value</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El verdadero negocio de una academia está en la retención. Un alumno que permanece 2 años vale 24 mensualidades, no solo la matrícula:</p>
+<ul>
+<li><strong>Onboarding digital:</strong> Secuencia de emails las primeras 2 semanas: bienvenida, recursos del curso, presentación del profesor, grupo de WhatsApp de la clase, acceso a plataforma digital. Las primeras semanas determinan si el alumno se queda.</li>
+<li><strong>Comunicación de progreso:</strong> Informes periódicos al alumno (y a los padres si es menor) sobre su evolución, logros y áreas de mejora. El alumno que ve progreso continúa; el que no lo percibe abandona.</li>
+<li><strong>Eventos y actividades extra:</strong> Conversaciones en inglés, clubs de lectura, salidas culturales, workshops temáticos. Las actividades extra crean comunidad y vínculo emocional con el centro.</li>
+<li><strong>Programa de referidos:</strong> Descuento en la mensualidad para el alumno que trae a un amigo. Es el canal de captación más rentable y los alumnos referidos tienen mayor retención porque ya conocen el centro a través de su amigo.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">07</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Email Marketing Educativo: Nutrir y Convertir</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Secuencia de nurturing para leads que piden i</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Newsletter mensual con contenido educativo de</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de renovación antes de que termine e</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de reactivación para antiguos alumno</li></ul>
-</div>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Email Marketing Educativo: Nutrir y Convertir</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El email es un canal de alta eficacia para academias tanto para captar como para retener:</p>
+<ul>
+<li>Secuencia de nurturing para leads que piden información pero no se matriculan: testimonios, clase de prueba, ofertas de matrícula</li>
+<li><a href="/email-marketing/newsletter-empresas/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Newsletter</a> mensual con contenido educativo de valor: tips de estudio, recursos gratuitos, novedades del centro</li>
+<li>Campañas de renovación antes de que termine el trimestre o el curso</li>
+<li>Campañas de reactivación para antiguos alumnos que abandonaron</li>
+</ul></div>
+</details>
 </div>
 </div>
 </section>
@@ -397,7 +460,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>

@@ -44,11 +44,11 @@ details summary::-webkit-details-marker { display: none; }
 /* ── Card grid: wider, balanced ── */
 .card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }
 .card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 @media(max-width:767px) {
   .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
@@ -329,61 +329,112 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de inmobiliarias en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed"><strong>En 2025 se registraron más de 640.000 operaciones de compraventa de vivienda en España</strong>, consolidando la recuperación del mercado inmobiliario. <strong>El 95% de los compradores inician su búsqueda de vivienda en internet</strong>, principalmente en portales como Idealista y Fotocasa. <strong>El precio medio del metro cuadrado subió un 7,5% interanual</strong>, generando mayor actividad de compraventa e inversión. <strong>Las inmobiliarias que invierten en marketing digital captan un 3x más de leads cualificados</strong> que aquellas que dependen exclusivamente de portales inmobiliarios.</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+
+<div class="text-base text-on-surface-variant leading-relaxed"><strong>En 2025 se registraron más de 640.000 operaciones de compraventa de vivienda en España</strong>, consolidando la recuperación del mercado inmobiliario. <strong>El 95% de los compradores inician su búsqueda de vivienda en internet</strong>, principalmente en portales como Idealista y Fotocasa. <strong>El precio medio del metro cuadrado subió un 7,5% interanual</strong>, generando mayor actividad de compraventa e inversión. <strong>Las inmobiliarias que invierten en marketing digital captan un 3x más de leads cualificados</strong> que aquellas que dependen exclusivamente de portales inmobiliarios.</div>
+</div>
 </div>
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para inmobiliarias</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+<div class="space-y-3">
+<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">01</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Estrategia de Marketing Digital Integral p...</h3>
-<p class="text-sm text-on-surface-variant mt-3">El sector inmobiliario tiene particularidades que lo diferencian de cualquier otro negocio: el ciclo de decisión del com.</p>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Estrategia de Marketing Digital Integral para Inmobi...</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El sector inmobiliario tiene particularidades que lo diferencian de cualquier otro negocio: el ciclo de decisión del comprador es largo (3-6 meses), el ticket medio es el más alto que una persona pagará en su vida, y la confianza es absolutamente decisiva. Una estrategia de marketing digital para inmobiliarias debe abordar cada fase del embudo con tácticas específicas.</p></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">02</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Captación de Propietarios Vendedores</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Landing pages de valoración gratuita</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Google Ads para captación</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Facebook e Instagram Ads geolocalizados</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de buzoneo digital</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Captación de Propietarios Vendedores</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Sin propiedades en cartera, no hay negocio. La captación de propietarios que quieren vender es la fase más importante y la más compleja. En Comunikoo desarrollamos campañas multicanal específicas para captación:</p>
+<ul>
+<li><strong>Landing pages de valoración gratuita:</strong> Páginas optimizadas con formulario donde el propietario introduce la dirección y recibe una valoración orientativa de su inmueble. Utilizamos APIs de datos inmobiliarios para dar estimaciones realistas que generan confianza.</li>
+<li><strong><a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Ads</a> para captación:</strong> Campañas segmentadas por zona con keywords como "vender piso en [barrio]", "cuánto vale mi casa", "valoración de vivienda gratis". El CPC es competitivo pero el valor de un mandato de venta (comisión media de 6.000-15.000€) justifica la inversión.</li>
+<li><strong>Facebook e Instagram Ads geolocalizados:</strong> Campañas dirigidas a propietarios de vivienda en zonas objetivo específicas, con mensajes sobre el momento óptimo del mercado para vender y la valoración gratuita como gancho.</li>
+<li><strong>Campañas de buzoneo digital:</strong> Combinación de retargeting geolocalizado + <a href="/email-marketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">email marketing</a> a bases de datos segmentadas por código postal y perfil demográfico.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">03</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">SEO Inmobiliario</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Páginas de zona</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Fichas de propiedad optimizadas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Blog de mercado inmobiliario</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Guías de barrio y lifestyle</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">SEO Inmobiliario</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El SEO inmobiliario requiere una arquitectura web muy específica. No se trata solo de posicionar "inmobiliaria Madrid" sino de crear un ecosistema de contenidos que cubra todas las búsquedas relevantes:</p>
+<ul>
+<li><strong>Páginas de zona:</strong> Creamos páginas detalladas para cada barrio o urbanización donde operas, con datos de precios por m², infraestructuras (colegios, transporte, comercios), fotos del entorno y listado de propiedades disponibles. Posicionan para "pisos en venta en [barrio]" y generan tráfico altamente cualificado.</li>
+<li><strong>Fichas de propiedad optimizadas:</strong> Cada inmueble tiene una URL indexable con título optimizado, descripción única, fotos con alt text, plano, tour virtual y datos del entorno. La ficha incluye schema markup de RealEstateListing para rich snippets en Google.</li>
+<li><strong>Blog de mercado inmobiliario:</strong> Artículos sobre evolución de precios en tu zona, guías de compraventa, novedades fiscales (ITP, plusvalía), consejos para compradores primerizos y análisis de mercado local.</li>
+<li><strong>Guías de barrio y lifestyle:</strong> Contenido que va más allá del inmueble: mejores restaurantes del barrio, colegios cercanos, actividades de ocio, transporte público. El comprador no solo compra un piso, compra un estilo de vida.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">04</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Tours Virtuales y Video Marketing Inmobili...</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Tours virtuales 360° con Matterport</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Reels y TikToks de propiedades</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Vídeos de drone para propiedades premium</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Canal de YouTube de la inmobiliaria</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Tours Virtuales y Video Marketing Inmobiliario</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El contenido visual es decisivo en inmobiliaria. Los inmuebles con tour virtual reciben un 87% más de visitas que los que solo tienen fotos:</p>
+<ul>
+<li><strong>Tours virtuales 360° con Matterport:</strong> Recreación digital del inmueble que permite al comprador recorrerlo desde su sofá. Reduce visitas innecesarias y cualifica mejor al comprador.</li>
+<li><strong>Reels y TikToks de propiedades:</strong> Vídeos cortos de 30-60 segundos mostrando los puntos fuertes de cada propiedad. El formato vertical genera alcance orgánico masivo y viralidad.</li>
+<li><strong>Vídeos de drone para propiedades premium:</strong> Para chalets, fincas y propiedades de alto valor, vídeos aéreos que muestran la propiedad, el entorno y las vistas.</li>
+<li><strong>Canal de YouTube de la inmobiliaria:</strong> Vídeos de propiedades, análisis de mercado, consejos de compraventa y recorridos por zonas. YouTube es el segundo buscador del mundo y los vídeos inmobiliarios tienen excelente engagement.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">05</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">CRM Inmobiliario y Automatización del Segu...</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Integración con CRM inmobiliario</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Email nurturing automatizado</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Alertas de nuevas propiedades</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>WhatsApp Business y chatbot</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">CRM Inmobiliario y Automatización del Seguimiento</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El buyer journey inmobiliario es largo. Un lead que pide información hoy puede comprar dentro de 6 meses. Sin un sistema de seguimiento automatizado, pierdes esos leads:</p>
+<ul>
+<li><strong>Integración con CRM inmobiliario:</strong> Conectamos tu web con herramientas como Inmovilla, Witei o HubSpot para que cada lead se registre automáticamente con su origen, intereses y fase del embudo.</li>
+<li><strong>Email nurturing automatizado:</strong> Secuencias de emails segmentadas según el perfil del comprador: nuevas propiedades que encajan con sus criterios, informes de mercado de su zona de interés, consejos de financiación hipotecaria.</li>
+<li><strong>Alertas de nuevas propiedades:</strong> Sistema automatizado que notifica al comprador cuando entra una propiedad que encaja con sus criterios de búsqueda.</li>
+<li><strong>WhatsApp Business y chatbot:</strong> Integración de WhatsApp Business con respuestas automatizadas para primeras consultas y derivación a agente para consultas cualificadas.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">06</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Publicidad en Portales Inmobiliarios</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Análisis de rendimiento por portal y ajuste d</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Optimización de fichas en portales</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Uso estratégico de destacados y subidas de po</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Migración progresiva de presupuesto de portal</li></ul>
-</div>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Publicidad en Portales Inmobiliarios</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Idealista, Fotocasa y pisos.com son canales necesarios pero cada vez más caros. En Comunikoo optimizamos tu inversión en portales:</p>
+<ul>
+<li>Análisis de rendimiento por portal y ajuste de inversión según resultados reales</li>
+<li>Optimización de fichas en portales: títulos que captan atención, descripciones persuasivas, fotos profesionales ordenadas estratégicamente</li>
+<li>Uso estratégico de destacados y subidas de posición para propiedades clave</li>
+<li>Migración progresiva de presupuesto de portales a canales propios (web + SEO + Ads) para reducir dependencia y costes a medio plazo</li>
+</ul></div>
+</details>
 </div>
 </div>
 </section>
@@ -398,7 +449,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>

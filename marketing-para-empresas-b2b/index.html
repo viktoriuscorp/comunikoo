@@ -44,11 +44,11 @@ details summary::-webkit-details-marker { display: none; }
 /* ── Card grid: wider, balanced ── */
 .card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }
 .card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 @media(max-width:767px) {
   .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
@@ -329,61 +329,114 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de empresas B2B en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed"><strong>El 67% del buyer journey B2B se completa online antes de que el comprador contacte con ventas</strong>, según estudios de Gartner. <strong>Las empresas B2B españolas que invierten en marketing digital generan un 3,5x más de leads cualificados</strong> que las que dependen solo del equipo comercial tradicional. <strong><a href="/community-manager/gestion-linkedin/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">LinkedIn</a> concentra el 80% del tráfico de leads B2B en <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a></strong>, siendo la plataforma imprescindible para cualquier estrategia B2B en España. <strong>El contenido de autoridad (whitepapers, casos de estudio, webinars) genera un 67% más de leads que la publicidad directa</strong> en entornos B2B.</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+
+<div class="text-base text-on-surface-variant leading-relaxed"><strong>El 67% del buyer journey B2B se completa online antes de que el comprador contacte con ventas</strong>, según estudios de Gartner. <strong>Las empresas B2B españolas que invierten en marketing digital generan un 3,5x más de leads cualificados</strong> que las que dependen solo del equipo comercial tradicional. <strong><a href="/community-manager/gestion-linkedin/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">LinkedIn</a> concentra el 80% del tráfico de leads B2B en <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a></strong>, siendo la plataforma imprescindible para cualquier estrategia B2B en España. <strong>El contenido de autoridad (whitepapers, casos de estudio, webinars) genera un 67% más de leads que la publicidad directa</strong> en entornos B2B.</div>
+</div>
 </div>
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para empresas B2B</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+<div class="space-y-3">
+<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">01</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Estrategia de Marketing Digital para Empre...</h3>
-<p class="text-sm text-on-surface-variant mt-3">El marketing B2B opera bajo reglas fundamentalmente diferentes al B2C.</p>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Estrategia de Marketing Digital para Empresas B2B</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El marketing B2B opera bajo reglas fundamentalmente diferentes al B2C. Los ciclos de venta son largos (3-12 meses), las decisiones implican a múltiples personas dentro del comité de compra, los tickets son altos y la relación comercial se mide en años. En Comunikoo diseñamos estrategias B2B que generan pipeline cualificado de forma predecible, construyen autoridad de marca y aceleran el ciclo de ventas.</p></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">02</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">LinkedIn como Plataforma Central de la Est...</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Perfil de empresa optimizado</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Social selling del equipo directivo</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>LinkedIn Ads con segmentación quirúrgica</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Lead Gen Forms nativas</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">LinkedIn como Plataforma Central de la Estrategia B2B</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p><a href="/community-manager/gestion-linkedin/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">LinkedIn</a> no es solo una red social para B2B, es el ecosistema donde se toman decisiones de compra empresariales. Una estrategia LinkedIn completa abarca múltiples dimensiones:</p>
+<ul>
+<li><strong>Perfil de empresa optimizado:</strong> Página de empresa con descripción orientada a la propuesta de valor, showcase pages por línea de servicio, y publicaciones regulares que demuestren expertise sectorial.</li>
+<li><strong>Social selling del equipo directivo:</strong> Los perfiles personales de CEO, directores comerciales y expertos técnicos son activos de marketing. Optimizamos sus perfiles y definimos una estrategia de publicación y engagement que posiciona a la empresa como referente a través de sus personas.</li>
+<li><strong>LinkedIn Ads con segmentación quirúrgica:</strong> Sponsored Content, Message Ads e InMail dirigidos a los cargos exactos que toman decisiones de compra. Segmentación por cargo (Director de IT, CFO, Head of Operations), sector, tamaño de empresa y ubicación geográfica.</li>
+<li><strong>Lead Gen Forms nativas:</strong> Formularios de captación integrados en LinkedIn que se autocompletan con los datos del perfil del usuario. Tasas de conversión 2-3x superiores a <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">landing pages</a> externas porque eliminan la fricción.</li>
+<li><strong>LinkedIn Newsletter:</strong> Publicación periódica de contenido de valor que llega directamente a los suscriptores sin filtros algorítmicos. Excelente para construir una audiencia B2B propietaria dentro de LinkedIn.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">03</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">SEO B2B: Capturando Demanda de Alto Valor</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Páginas de solución por caso de uso</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Contenido de comparativa y alternativas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Centro de recursos y knowledge base</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>SEO técnico B2B</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">SEO B2B: Capturando Demanda de Alto Valor</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El SEO B2B se centra en keywords con volumen moderado pero intención comercial altísima y tickets elevados:</p>
+<ul>
+<li><strong>Páginas de solución por caso de uso:</strong> En lugar de simples páginas de servicios, creamos páginas optimizadas para cómo el cliente busca: "software de gestión de almacenes", "consultoría de transformación digital para pymes", "proveedor de packaging sostenible". Cada página responde a una necesidad específica del comprador.</li>
+<li><strong>Contenido de comparativa y alternativas:</strong> Páginas tipo "[tu empresa] vs [competidor]", "alternativas a [solución conocida]", "mejores [software/servicios] para [sector]". Capturan búsquedas de compradores en fase de evaluación.</li>
+<li><strong>Centro de recursos y knowledge base:</strong> Hub de contenido con guías técnicas, documentación, calculadoras de ROI y herramientas gratuitas que atraen tráfico cualificado y demuestran capacidad técnica.</li>
+<li><strong><a href="/agencia-seo/seo-tecnico/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">SEO técnico</a> B2B:</strong> Optimización de velocidad, estructura de datos, FAQ schema para búsquedas informacionales y Organization schema para reforzar la autoridad de marca ante Google.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">04</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Marketing de Contenidos B2B</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Whitepapers e informes sectoriales</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Casos de estudio detallados</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Webinars y eventos online</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Podcast B2B sectorial</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Marketing de Contenidos B2B</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>En B2B, el contenido no es un complemento: es el motor principal de generación de demanda. Los compradores B2B consumen una media de 13 piezas de contenido antes de contactar con un proveedor:</p>
+<ul>
+<li><strong>Whitepapers e informes sectoriales:</strong> Documentos técnicos de 15-30 páginas que analizan tendencias, retos y soluciones del sector del cliente. Se ofrecen como descarga a cambio de datos de contacto. Cada whitepaper es un imán de leads cualificados.</li>
+<li><strong>Casos de estudio detallados:</strong> Documentos que narran el problema del cliente, la solución implementada y los resultados obtenidos con datos concretos. Es la pieza de contenido más influyente en la decisión de compra B2B.</li>
+<li><strong>Webinars y eventos online:</strong> Presentaciones en directo sobre temas técnicos del sector con expertos internos e invitados. Generan leads cualificados, posicionan como referentes y crean oportunidades de networking.</li>
+<li><strong>Podcast B2B sectorial:</strong> Formato en auge que permite entrevistas con líderes del sector, análisis de tendencias y conversaciones con clientes. Construye audiencia y autoridad a largo plazo.</li>
+<li><strong>Vídeos de demostración y tutoriales:</strong> Contenido que muestra el producto o servicio en acción, resuelve dudas técnicas y acelera la fase de evaluación del comprador.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">05</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">ABM (Account Based Marketing)</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Identificación de cuentas objetivo</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Contenido personalizado por cuenta</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas multi-touch coordinadas</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Medición por cuenta, no por lead</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">ABM (Account Based Marketing)</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Para empresas B2B con mercados objetivo definidos y tickets altos, el ABM invierte el funnel tradicional y permite una aproximación de precisión:</p>
+<ul>
+<li><strong>Identificación de cuentas objetivo:</strong> Selección de las empresas ideales basándose en firmographics (sector, tamaño, facturación), technographics (tecnología que usan) e intent data (señales de que están investigando soluciones como la tuya).</li>
+<li><strong>Contenido personalizado por cuenta:</strong> <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Landing pages</a>, presentaciones y propuestas adaptadas a los retos específicos de cada empresa objetivo.</li>
+<li><strong>Campañas multi-touch coordinadas:</strong> <a href="/community-manager/gestion-linkedin/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">LinkedIn</a> Ads dirigidos a empleados de la empresa objetivo + email personalizado + contenido relevante + llamada comercial. Todos los touchpoints coordinados para maximizar impacto.</li>
+<li><strong>Medición por cuenta, no por lead:</strong> El éxito se mide por engagement de la cuenta objetivo (visitas web, descargas, interacciones en LinkedIn, reuniones conseguidas) no por volumen de leads genéricos.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">06</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Lead Nurturing y Automatización del Funnel...</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Secuencias de email automatizadas adaptadas a</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Lead scoring basado en comportamiento</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Integración CRM-marketing (HubSpot, Salesforc</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Alertas automáticas al equipo comercial cuand</li></ul>
-</div>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Lead Nurturing y Automatización del Funnel B2B</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El ciclo de venta B2B es largo. La automatización del nurturing es esencial para mantener la relación con el prospecto durante meses sin saturar al equipo comercial:</p>
+<ul>
+<li>Secuencias de email automatizadas adaptadas a la fase del funnel (awareness, consideration, decision)</li>
+<li>Lead scoring basado en comportamiento: visitas a páginas clave, descargas de contenido, asistencia a webinars, interacciones en emails</li>
+<li>Integración CRM-marketing (HubSpot, Salesforce, Pipedrive) para trazabilidad completa del lead desde el primer touchpoint hasta el cierre</li>
+<li>Alertas automáticas al equipo comercial cuando un lead alcanza el umbral de SQL (Sales Qualified Lead)</li>
+</ul></div>
+</details>
 </div>
 </div>
 </section>
@@ -398,7 +451,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>

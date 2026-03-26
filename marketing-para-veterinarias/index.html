@@ -44,11 +44,11 @@ details summary::-webkit-details-marker { display: none; }
 /* ── Card grid: wider, balanced ── */
 .card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
 .card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 .card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 720px; }
-.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1100px; }
+.card-grid.g5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem; max-width: 1200px; }
 .card-grid.g5 > * { width: calc(33.33% - 1.25rem); min-width: 240px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1100px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
 @media(max-width:767px) {
   .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
   .card-grid.g5 > * { width: 100% !important; min-width: 0 !important; }
@@ -322,61 +322,110 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
-<div class="max-w-3xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-10">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Datos del sector</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">El sector de veterinarias en cifras</h2>
 </div>
-<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)] text-base text-on-surface-variant leading-relaxed"><strong>España cuenta con más de 28 millones de mascotas registradas</strong>, siendo el tercer país de Europa con más animales de compañía. <strong>El sector veterinario factura más de 1.800 millones de euros anuales</strong> y crece un 7-8% interanual, impulsado por la humanización de las mascotas. <strong>El 68% de los dueños buscan veterinario en <a href="/servicios/agencia-seo-local/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Maps</a> cuando necesitan atención urgente</strong>, y el 55% eligen clínica por reseñas online y cercanía. <strong>El gasto medio por mascota en servicios veterinarios es de 250€ al año</strong>, con tratamientos especializados que superan los 1.500€.</div>
+<div class="bg-white rounded-2xl p-8 md:p-10 shadow-[0_24px_48px_rgba(0,5,17,.06)]">
+
+<div class="text-base text-on-surface-variant leading-relaxed"><strong>España cuenta con más de 28 millones de mascotas registradas</strong>, siendo el tercer país de Europa con más animales de compañía. <strong>El sector veterinario factura más de 1.800 millones de euros anuales</strong> y crece un 7-8% interanual, impulsado por la humanización de las mascotas. <strong>El 68% de los dueños buscan veterinario en <a href="/servicios/agencia-seo-local/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Maps</a> cuando necesitan atención urgente</strong>, y el 55% eligen clínica por reseñas online y cercanía. <strong>El gasto medio por mascota en servicios veterinarios es de 250€ al año</strong>, con tratamientos especializados que superan los 1.500€.</div>
+</div>
 </div>
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
-<div class="max-w-5xl mx-auto">
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Nuestra metodología</span>
 <h2 class="font-headline font-extrabold text-3xl md:text-4xl text-primary">Estrategia para veterinarias</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-<div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+<div class="space-y-3">
+<details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">01</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">SEO Local Hiperenfocado para Clínicas Vete...</h3>
-<p class="text-sm text-on-surface-variant mt-3">El marketing veterinario es inherentemente local.</p>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a9 9 0 1 0 5.5 16.1"/><path d="m11 11 5 5"/><path d="m16 16 4.5 4.5"/><circle cx="11" cy="11" r="3"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">SEO Local Hiperenfocado para Clínicas Veterinarias</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El marketing veterinario es inherentemente local. El dueño busca un veterinario cerca de su casa, no al otro lado de la ciudad. En Comunikoo diseñamos una estrategia de <a href="/servicios/agencia-seo-local/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">SEO local</a> optimizada para captar dueños de mascotas en tu radio de influencia (3-5 km).</p></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">02</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Google Business Profile</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Categorías y servicios</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Fotos que generan confianza</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Atributos específicos</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Publicaciones semanales</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m8.6 10.5 6.8-4"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Google Business Profile: Tu Escaparate Veterinario</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>La ficha de Google es el activo digital más importante para una veterinaria. El 72% de las primeras interacciones empiezan en <a href="/servicios/agencia-seo-local/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Maps</a>. Optimizamos:</p>
+<ul>
+<li><strong>Categorías y servicios:</strong> Categoría principal "Clínica veterinaria" + secundarias (hospital veterinario, urgencias, peluquería canina). Lista completa: consultas, vacunaciones, cirugía, radiología, ecografía, dental, dermatología, hospitalización.</li>
+<li><strong>Fotos que generan confianza:</strong> Equipo veterinario con mascotas, instalaciones modernas, quirófano, sala de espera. Las fichas con más de 20 fotos reciben un 42% más de solicitudes de ruta.</li>
+<li><strong>Atributos específicos:</strong> Accesibilidad, aparcamiento, urgencias 24h, peluquería canina. Google muestra estos atributos y ayudan a diferenciarte.</li>
+<li><strong>Publicaciones semanales:</strong> Consejos de salud animal, campañas de vacunación, alertas estacionales, nuevos servicios.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">03</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Estrategia de Contenido para Veterinarias</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Guías estacionales</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Artículos por especie y problema</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Páginas de servicios especializados</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Estrategia de Contenido para Veterinarias</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Los dueños buscan constantemente información sobre la salud de sus animales. Creamos contenido que responde a sus preguntas y los lleva a tu clínica:</p>
+<ul>
+<li><strong>Guías estacionales:</strong> "Cómo proteger a tu perro de la leishmaniosis", "Procesionaria del pino: peligros y prevención", "Golpe de calor en perros", "Viajar con tu mascota en verano". Se posicionan meses antes de cada temporada de búsqueda.</li>
+<li><strong>Artículos por especie y problema:</strong> "Mi perro no come: causas y cuándo ir al veterinario", "Gato con diarrea: cuándo preocuparse", "Vacunas obligatorias para perros en España". Tráfico constante de largo recorrido.</li>
+<li><strong>Páginas de servicios especializados:</strong> Si ofreces ecografía, cirugía laparoscópica, rehabilitación o dermatología, creamos páginas específicas que posicionan con mucha menos competencia.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">04</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Redes Sociales para Veterinarias</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Historias de pacientes</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Contenido educativo</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Equipo veterinario</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Colaboraciones con protectoras</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Redes Sociales para Veterinarias</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>Las mascotas son el contenido con mayor engagement en <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a>. Las veterinarias tienen una ventaja natural enorme:</p>
+<ul>
+<li><strong>Historias de pacientes:</strong> Mascotas recuperadas, adopciones exitosas, cachorritos en primera consulta. Engagement 3-5 veces superior a cualquier otro sector.</li>
+<li><strong>Contenido educativo:</strong> Tips de cuidado animal en Reel/TikTok: "Cómo limpiar las orejas de tu perro", "Señales de dolor en tu gato", "Alimentos prohibidos para perros". Se comparte masivamente.</li>
+<li><strong>Equipo veterinario:</strong> Veterinarios y auxiliares con sus propias mascotas. "Un día en la clínica". Humanizar al equipo genera confianza.</li>
+<li><strong>Colaboraciones con protectoras:</strong> Adopciones, campañas de esterilización, jornadas solidarias. Visibilidad, buen karma de marca y nuevas audiencias.</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">05</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Google Ads para Veterinarias</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de urgencias</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de servicios especializados</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas de primeras consultas</li></ul>
-</div><div class="bg-white rounded-2xl p-6 shadow-[0_2px_12px_rgba(0,0,0,.05)] border border-black/[.04] hover:shadow-[0_8px_24px_rgba(0,0,0,.08)] hover:-translate-y-1 transition-all">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center mb-4">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.2 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.2 8.9 8.3 12 2"/></svg></span>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Google Ads para Veterinarias</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p><a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Ads</a> para veterinarias tiene dos enfoques principales:</p>
+<ul>
+<li><strong>Campañas de urgencias:</strong> "Urgencias veterinarias [ciudad]", "veterinario abierto ahora", "veterinario 24 horas". Tasa de conversión del 15-25%. Funcionan 24/7 con extensiones de llamada y ubicación.</li>
+<li><strong>Campañas de servicios especializados:</strong> "Ecografía veterinaria [ciudad]", "cirugía veterinaria perros", "dermatólogo veterinario". CPCs bajos, competencia limitada, ticket medio alto.</li>
+<li><strong>Campañas de primeras consultas:</strong> "Veterinario cerca de mí", "clínica veterinaria [barrio]", "vacunas perro cachorro". Captan clientes que se convierten en recurrentes (valor de vida: 5-8 años de media).</li>
+</ul></div>
+</details><details class="bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,.04)] border border-black/[.04] group">
+<summary class="flex items-center gap-4 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center flex-shrink-0">
+<span class="text-white font-headline font-bold text-sm">06</span>
 </div>
-<h3 class="font-headline font-bold text-base text-primary mb-1">Email y SMS Marketing</h3>
-<ul class="space-y-2 mt-3"><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Recordatorios de vacunación</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Recordatorios de desparasitación</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Campañas estacionales</li><li class="text-on-surface-variant text-sm flex items-center gap-2"><span class="text-secondary-container">✓</span>Cumpleaños de la mascota</li></ul>
-</div>
+<h3 class="font-headline font-bold text-base text-primary flex-1">Email y SMS Marketing</h3>
+<span class="text-on-surface-variant transition-transform group-open:rotate-180">▾</span>
+</summary>
+<div class="px-5 pb-5 pt-0 text-sm text-on-surface-variant leading-relaxed border-t border-black/[.04] mt-0 pt-4"><p>El email y SMS son excepcionalmente efectivos en veterinaria porque los servicios son recurrentes y predecibles:</p>
+<ul>
+<li><strong>Recordatorios de vacunación:</strong> SMS/email automático 2 semanas antes de cada vacuna. Enlace para cita online. Tasa de apertura superior al 80%.</li>
+<li><strong>Recordatorios de desparasitación:</strong> Cada 3-4 meses según protocolo de la clínica.</li>
+<li><strong>Campañas estacionales:</strong> Leishmaniosis en marzo, anti-procesionaria en febrero, dental en octubre. Cada campaña genera un 10-15% de facturación adicional.</li>
+<li><strong>Cumpleaños de la mascota:</strong> Email personalizado con felicitación e incentivo (descuento en peluquería, pack de snacks). Fideliza y genera boca a boca positivo.</li>
+</ul></div>
+</details>
 </div>
 </div>
 </section>
@@ -391,7 +440,7 @@ details summary::-webkit-details-marker { display: none; }
 </section>
 
 
-<section class="py-20 px-6 lg:px-8 bg-[#f7f9fc]">
+<section class="py-20 px-6 lg:px-8 bg-[#f2f4f7]">
 <div class="max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Caso de éxito real</span>
