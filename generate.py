@@ -930,7 +930,7 @@ for pg in [
     ("/servicios/gestion-redes-sociales/", "Gestión de Redes Sociales | Estrategia + Ejecución — Comunikoo", "Servicio integral de gestión de redes sociales: estrategia, contenido y análisis.", "Gestión de Redes Sociales — Estrategia y Resultados para Tu Marca", "Gestión Redes"),
     ("/servicios/social-media-marketing/", "Social Media Marketing | Redes con ROI — Comunikoo", "Social media marketing orientado a resultados. Convierte tus redes en canal de ventas.", "Social Media Marketing — Convierte Tus Redes en Canal de Ventas", "Social Media"),
     ("/servicios/marketing-de-contenidos/", "Marketing de Contenidos | Contenido que Posiciona — Comunikoo", "Marketing de contenidos: blog, vídeo, infografías y lead magnets que atraen y convierten.", "Marketing de Contenidos — Atrae, Posiciona y Convierte", "Marketing Contenidos"),
-    ("/email-marketing/", "Email Marketing | Campañas que Generan Ventas — Comunikoo", "Email marketing profesional: newsletter, automatizaciones y campañas. El canal con mayor ROI.", "Email Marketing — El Canal con Mayor ROI del Marketing Digital", "Email Marketing"),
+    ("/email-marketing/", "Agencia Email Marketing | Campañas que Generan Ventas — Comunikoo", "Agencia de email marketing profesional: newsletter, automatizaciones, campañas y estrategia. El canal con mayor ROI del marketing digital. Sin permanencia.", "Agencia Email Marketing — El Canal con Mayor ROI del Marketing Digital", "Email Marketing"),
     ("/servicios/inbound-marketing/", "Inbound Marketing | Atrae Clientes con Valor — Comunikoo", "Inbound marketing: atraemos clientes con contenido, SEO, email y automatización.", "Inbound Marketing — Atrae Clientes con Valor", "Inbound Marketing"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio profesional con resultados medibles y reporting mensual.", sections=[sec("que-es", "Qué es", f"¿Qué es {pg[4].lower()} y por qué lo necesitas?"), sec("servicios", "Servicios", f"Nuestros servicios de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito")], faqs=[("¿Cuánto cuesta este servicio?", "Solicita presupuesto personalizado sin compromiso."), ("¿En cuánto tiempo veo resultados?", "Depende del servicio y tu punto de partida. Te informamos con plazos realistas."), ("¿Puedo cancelar cuando quiera?", "Sí, sin permanencia.")]))
@@ -955,6 +955,42 @@ for pg in [
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Profesional especializado con experiencia verificable y resultados reales.", sections=[sec("que-es", "Qué es", f"¿Por qué contratar un {pg[4].lower()}?"), sec("servicios", "Servicios", f"Qué hago como {pg[4].lower()}"), sec("portfolio", "Portfolio", "Proyectos y resultados")], faqs=[("¿Cuánto cuesta?", "Solicita presupuesto personalizado sin compromiso."), ("¿Qué garantías tengo?", "Trabajamos con contrato, plazos claros y entregables definidos.")]))
 
+# --- OPORTUNIDAD 2: DISEÑO WEB PARA [SECTOR] (1400 vol combinado, intent comercial) ---
+for pg in [
+    ("/servicios/diseno-web-para-abogados/", "Diseño Web para Abogados | Webs que Captan Clientes — Comunikoo", "Diseño web para abogados y despachos: webs profesionales que transmiten confianza y captan clientes. Portfolio real.", "Diseño Web para Abogados — Webs que Transmiten Confianza y Captan Clientes", "Diseño Web Abogados"),
+    ("/servicios/diseno-web-para-inmobiliarias/", "Diseño Web para Inmobiliarias | Portal Inmobiliario — Comunikoo", "Diseño web para inmobiliarias: portales con buscador de propiedades, CRM integrado y captación de leads.", "Diseño Web para Inmobiliarias — Tu Portal con Buscador de Propiedades", "Diseño Web Inmobiliarias"),
+    ("/servicios/diseno-web-para-restaurantes/", "Diseño Web para Restaurantes | Carta Digital + Reservas — Comunikoo", "Diseño web para restaurantes: carta digital, sistema de reservas, fotos profesionales y SEO local.", "Diseño Web para Restaurantes — Carta Digital y Reservas Online", "Diseño Web Restaurantes"),
+    ("/servicios/diseno-web-para-dentistas/", "Diseño Web para Dentistas | Clínicas Dentales — Comunikoo", "Diseño web para clínicas dentales: webs que generan confianza, cita online y SEO local.", "Diseño Web para Dentistas — Webs que Llenan Tu Agenda", "Diseño Web Dentistas"),
+    ("/servicios/diseno-web-para-pymes/", "Diseño Web para Pymes | Profesional y Asequible — Comunikoo", "Diseño web para pymes: webs profesionales adaptadas a tu presupuesto. WordPress, responsive y SEO incluido.", "Diseño Web para Pymes — Profesional sin Arruinarte", "Diseño Web Pymes"),
+    ("/servicios/diseno-web-para-psicologos/", "Diseño Web para Psicólogos | KD 1 — Comunikoo", "Diseño web para psicólogos: webs que transmiten cercanía, reserva online y contenido que posiciona.", "Diseño Web para Psicólogos — Webs que Conectan con Tus Pacientes", "Diseño Web Psicólogos"),
+    ("/servicios/diseno-web-para-emprendedores/", "Diseño Web para Emprendedores | Tu Primera Web — Comunikoo", "Diseño web para emprendedores: webs rápidas, económicas y preparadas para crecer. Lanzamiento en 2 semanas.", "Diseño Web para Emprendedores — Lanza Tu Web en 2 Semanas", "Diseño Web Emprendedores"),
+    ("/servicios/diseno-web-para-hoteles/", "Diseño Web para Hoteles | Más Reservas Directas — Comunikoo", "Diseño web para hoteles: motor de reservas, galería, multiidioma y SEO. Reduce comisiones de OTAs.", "Diseño Web para Hoteles — Más Reservas Directas, Menos Comisiones", "Diseño Web Hoteles"),
+    ("/servicios/diseno-web-para-terapeutas/", "Diseño Web para Terapeutas | Consultas Online — Comunikoo", "Diseño web para terapeutas y profesionales de la salud: reserva online, blog y contenido ético.", "Diseño Web para Terapeutas — Webs que Transmiten Profesionalidad", "Diseño Web Terapeutas"),
+    ("/servicios/diseno-web-para-autonomos/", "Diseño Web para Autónomos | Económica y Profesional — Comunikoo", "Diseño web para autónomos: presencia online profesional desde 800€. WordPress, SEO y responsive.", "Diseño Web para Autónomos — Presencia Online Profesional", "Diseño Web Autónomos"),
+]:
+    ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio de diseño web especializado por sector.", sections=[sec("que-es", "Qué es", f"¿Por qué necesitas un diseño web especializado?"), sec("servicios", "Qué incluye", f"Qué incluye nuestro servicio de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("portfolio", "Portfolio", "Ejemplos reales de proyectos")], faqs=[("¿Cuánto cuesta el diseño web?", "Depende de la complejidad. Webs corporativas desde 2.000€, con tienda online desde 3.500€. Presupuesto cerrado tras analizar requisitos."), ("¿Cuánto tardáis en entregar?", "Web corporativa: 3-4 semanas. Tienda online: 5-8 semanas. Siempre con plazos claros."), ("¿Incluye SEO?", "Sí, todas nuestras webs incluyen SEO técnico y on-page de base.")]))
+
+# --- OPORTUNIDAD 4: AGENCIA DE MARKETING BARCELONA (880 vol, KD 27) ---
+ALL_PAGES.append(svc(
+    "/agencia-marketing-barcelona/",
+    "Agencia de Marketing Barcelona | Resultados Medibles — Comunikoo",
+    "Agencia de marketing en Barcelona con equipo local. SEO, Google Ads, diseño web, redes sociales. +487 proyectos. Sin permanencia. Auditoría gratuita.",
+    "Agencia de Marketing en Barcelona — Resultados Medibles, Sin Permanencia",
+    "Agencia Marketing Barcelona",
+    "Equipo local en Barcelona con conocimiento del mercado catalán. Estrategias a medida para empresas barcelonesas.",
+    sections=[
+        sec("que-es", "Qué hacemos", "Servicios de marketing digital en Barcelona"),
+        sec("servicios", "Servicios", "SEO, Google Ads, diseño web, redes sociales y más"),
+        sec("proceso", "Proceso", "Nuestro proceso de trabajo"),
+        sec("resultados", "Resultados", "Casos de éxito en Barcelona"),
+    ],
+    faqs=[
+        ("¿Tenéis oficina en Barcelona?", "Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."),
+        ("¿Cuánto cuesta contratar una agencia de marketing?", "Depende de los servicios. Desde 500€/mes para SEO básico hasta planes integrales. Siempre sin permanencia."),
+        ("¿Trabajáis solo en Barcelona?", "No, trabajamos con empresas de toda España. Pero nuestra base está en Barcelona y conocemos el mercado local a fondo."),
+    ],
+))
+
 # --- VERTICALES ---
 VERTICALS = [
     ("/marketing-para-restaurantes/", "Marketing para Restaurantes | Llena Tu Local — Comunikoo", "Marketing digital para restaurantes: SEO local, Google Maps, redes sociales y campañas. Especialistas en hostelería.", "Marketing para Restaurantes — Estrategias Digitales para Llenar Tu Local", "Marketing Restaurantes", "restaurantes", "El 90% busca restaurante en Google antes de ir."),
@@ -973,6 +1009,17 @@ VERTICALS = [
     ("/marketing-para-academias/", "Marketing para Academias | Captación Alumnos — Comunikoo", "Marketing digital para academias: SEO, Google Ads y web con matrícula online.", "Marketing para Academias — Captación de Alumnos Online", "Marketing Academias", "academias", "La captación de alumnos se ha digitalizado."),
     ("/marketing-para-ecommerce/", "Marketing para Ecommerce | Estrategia 360 — Comunikoo", "Marketing digital para ecommerce: SEO + Ads + email + CRO. Escala tu tienda online.", "Marketing para Ecommerce — Estrategia 360 para Escalar", "Marketing Ecommerce", "ecommerce", "Solo el 3% de tiendas online son rentables."),
     ("/marketing-para-empresas-b2b/", "Marketing B2B | Leads Cualificados — Comunikoo", "Marketing digital para empresas B2B: LinkedIn, SEO, contenido y generación de leads.", "Marketing B2B — Generación de Leads Cualificados", "Marketing B2B", "empresas B2B", "El contenido de valor es el rey en B2B."),
+    # --- OPORTUNIDAD 1: PYMES (KD 4, 1600 vol combinado) ---
+    ("/marketing-para-pymes/", "Marketing Digital para Pymes | Resultados Reales — Comunikoo", "Marketing digital para pymes: SEO, Google Ads, web y redes sociales. Estrategias adaptadas a presupuestos de pequeñas empresas. Sin permanencia.", "Marketing Digital para Pymes — Estrategias que Caben en Tu Presupuesto", "Marketing Pymes", "pymes y pequeñas empresas", "El 70% de pymes que invierten en marketing digital crecen un 30%."),
+    # --- OPORTUNIDAD 6: NUEVOS SECTORES ---
+    ("/marketing-para-farmacias/", "Marketing para Farmacias | Más Clientes — Comunikoo", "Marketing digital para farmacias y ópticas: SEO local, Google Maps, redes sociales y campañas de captación.", "Marketing para Farmacias — Más Clientes en Tu Zona", "Marketing Farmacias", "farmacias", "El 65% de consumidores busca farmacia cerca en Google."),
+    ("/marketing-para-fisioterapeutas/", "Marketing para Fisioterapeutas | Más Pacientes — Comunikoo", "Marketing digital para fisioterapeutas: web profesional, SEO local y Google Ads. Captación ética de pacientes.", "Marketing para Fisioterapeutas — Conecta con Pacientes que Te Necesitan", "Marketing Fisioterapeutas", "fisioterapeutas", "La fisioterapia privada crece un 12% anual."),
+    ("/marketing-para-nutricionistas/", "Marketing para Nutricionistas | Más Pacientes — Comunikoo", "Marketing digital para nutricionistas y dietistas: web, SEO, contenido y captación online.", "Marketing para Nutricionistas — Más Pacientes para Tu Consulta", "Marketing Nutricionistas", "nutricionistas", "El interés por la nutrición se ha disparado un 40%."),
+    ("/marketing-para-peluquerias/", "Marketing para Peluquerías | Más Citas — Comunikoo", "Marketing digital para peluquerías y centros de estética: Google Maps, redes sociales e Instagram.", "Marketing para Peluquerías — Agenda Completa Todo el Año", "Marketing Peluquerías", "peluquerías y centros de estética", "Instagram es el escaparate de tu peluquería."),
+    ("/marketing-para-coaches/", "Marketing para Coaches | Más Clientes — Comunikoo", "Marketing digital para coaches y terapeutas: web profesional, SEO, contenido y embudos de captación.", "Marketing para Coaches — Atrae Clientes que Valoran Tu Trabajo", "Marketing Coaches", "coaches y profesionales del desarrollo personal", "El coaching en España crece un 20% anual."),
+    ("/marketing-para-arquitectos/", "Marketing para Arquitectos | Más Proyectos — Comunikoo", "Marketing digital para estudios de arquitectura: portfolio web, SEO y captación de proyectos.", "Marketing para Arquitectos — Proyectos que Llegan Solos", "Marketing Arquitectos", "arquitectos y estudios de arquitectura", "El 85% de clientes busca arquitecto en Google."),
+    ("/marketing-para-agencias-de-viajes/", "Marketing para Agencias de Viajes | Más Reservas — Comunikoo", "Marketing digital para agencias de viajes: SEO, Google Ads, redes sociales y campañas estacionales.", "Marketing para Agencias de Viajes — Más Reservas Online", "Marketing Viajes", "agencias de viajes", "El turismo se ha recuperado y la competencia online es feroz."),
+    ("/marketing-para-centros-de-formacion/", "Marketing para Centros de Formación | Más Matrículas — Comunikoo", "Marketing digital para centros de formación y academias: SEO, Google Ads y captación de alumnos.", "Marketing para Centros de Formación — Más Matrículas Online", "Marketing Formación", "centros de formación", "La formación online compite con la presencial: destaca."),
 ]
 
 for v in VERTICALS:
@@ -1065,6 +1112,59 @@ for slug, svc_name, full_name_bcn in GEO_SERVICES_BCN:
         faqs=[
             (f"¿Cuánto cuesta {svc_name.lower()} en Madrid?", "Solicita presupuesto personalizado sin compromiso."),
             ("¿Tenéis equipo en Madrid?", "Sí, contamos con presencia activa en Madrid y atendemos clientes en toda la Comunidad de Madrid."),
+        ],
+    ))
+
+# --- OPORTUNIDAD 5: GEO PAGES VALENCIA Y SEVILLA ---
+VLC_ZONES = ["Ciutat Vella", "Eixample", "Ruzafa", "Benimaclet", "Campanar", "Patraix", "Jesús", "Poblats Marítims", "L'Olivereta", "Torrent"]
+SVQ_ZONES = ["Centro", "Triana", "Nervión", "Macarena", "Los Remedios", "Santa Cruz", "San Pablo", "Bermejales", "Este-Alcosa", "Dos Hermanas"]
+
+GEO_SERVICES_VLC = [
+    ("agencia-marketing-digital", "Agencia Marketing Digital", "Agencia Marketing Digital Valencia"),
+    ("agencia-seo", "Agencia SEO", "Agencia SEO Valencia"),
+    ("diseno-web", "Diseño Web", "Diseño Web Valencia"),
+    ("google-ads", "Google Ads", "Google Ads Valencia"),
+    ("community-manager", "Community Manager", "Community Manager Valencia"),
+    ("tienda-online", "Tienda Online", "Tienda Online Valencia"),
+]
+
+for slug, svc_name, full_name in GEO_SERVICES_VLC:
+    url = f"/{slug}-valencia/"
+    ALL_PAGES.append(geo(
+        url,
+        f"{full_name} | Agencia Local — Comunikoo",
+        f"{full_name}: equipo profesional, resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.",
+        f"{full_name} — Agencia con Presencia en Valencia",
+        full_name, f"Servicio de {svc_name.lower()} en Valencia con conocimiento del mercado valenciano.",
+        "Valencia", svc_name, VLC_ZONES,
+        [{"url": _national_url(slug), "label": f"{svc_name} (nacional)"}],
+        faqs=[
+            (f"¿Cuánto cuesta {svc_name.lower()} en Valencia?", "Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos."),
+            ("¿Tenéis presencia en Valencia?", "Sí, atendemos clientes en Valencia y toda la Comunitat Valenciana."),
+            (f"¿Trabajáis solo en Valencia ciudad?", "No, también trabajamos con empresas de Alicante, Castellón y toda la Comunitat."),
+        ],
+    ))
+
+GEO_SERVICES_SVQ = [
+    ("agencia-marketing-digital", "Agencia Marketing Digital", "Agencia Marketing Digital Sevilla"),
+    ("agencia-seo", "Agencia SEO", "Agencia SEO Sevilla"),
+    ("diseno-web", "Diseño Web", "Diseño Web Sevilla"),
+    ("google-ads", "Google Ads", "Google Ads Sevilla"),
+]
+
+for slug, svc_name, full_name in GEO_SERVICES_SVQ:
+    url = f"/{slug}-sevilla/"
+    ALL_PAGES.append(geo(
+        url,
+        f"{full_name} | Presencia en Sevilla — Comunikoo",
+        f"{full_name}: resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.",
+        f"{full_name} — Presencia Activa en Sevilla",
+        full_name, f"Servicio de {svc_name.lower()} en Sevilla con conocimiento del mercado andaluz.",
+        "Sevilla", svc_name, SVQ_ZONES,
+        [{"url": _national_url(slug), "label": f"{svc_name} (nacional)"}],
+        faqs=[
+            (f"¿Cuánto cuesta {svc_name.lower()} en Sevilla?", "Solicita presupuesto personalizado sin compromiso."),
+            ("¿Tenéis equipo en Sevilla?", "Sí, atendemos clientes en Sevilla y toda Andalucía."),
         ],
     ))
 

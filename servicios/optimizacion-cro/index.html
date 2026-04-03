@@ -1,120 +1,13 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-WCHWH6J2KC';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WCHWH6J2KC')},3000);</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CRO | Optimización de Conversión Web — Comunikoo</title>
 <meta name="description" content="Optimización de conversión (CRO) con +52% de mejora media. Auditoría CRO, A/B testing, optimización de formularios y landing pages. +60 proyectos. Sin permanencia.">
 <link rel="canonical" href="https://comunikoo.es/servicios/optimizacion-cro/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../../css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-
-<style>
-.icon-inline { display: inline-flex; align-items: center; vertical-align: middle; }
-details summary { cursor: pointer; }
-details summary::-webkit-details-marker { display: none; }
-
-/* Mega menu: no gap between trigger and dropdown */
-.mega-trigger { position: relative; }
-.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
-.mega-trigger:hover > .mega-panel { display: block; }
-.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
-
-/* ══ DESIGN SYSTEM: Mediterranean Minimalist Editorial ══ */
-/* taste-skill + Stitch: No borders. Tonal layering. Navy-tinted shadows. */
-/* Off-black: #000511. Accent (sparingly): #fd8b00. Body: #44474e. */
-
-/* ── Container: max-w-[1400px] per taste-skill Rule ── */
-.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
-@media(min-width:1024px) { .container { padding: 0 3rem; } }
-
-/* ── Sections: 7rem = premium breathing room (taste-skill VISUAL_DENSITY 4) ── */
-.sec-block { padding: 5.5rem 0; }
-@media(min-width:768px) { .sec-block { padding: 7rem 0; } }
-
-/* ── Cards: tonal layering, navy-tinted diffusion shadow, no borders ── */
-.svc-card { background: #ffffff; border-radius: 1rem; padding: 2.5rem 2rem; box-shadow: 0 20px 40px -15px rgba(0,5,17,.05); border: none; text-align: center; transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s cubic-bezier(.16,1,.3,1); }
-.svc-card:hover { box-shadow: 0 32px 64px -20px rgba(0,5,17,.1); transform: translateY(-3px); }
-.svc-card:active { transform: translateY(-1px); }
-.svc-card .svc-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; }
-.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #000511; margin-bottom: .5rem; letter-spacing: -.02em; }
-.svc-card p { font-size: .92rem; line-height: 1.75; color: #44474e; margin: 0; max-width: 32ch; margin-inline: auto; }
-
-/* ── Card grid: CSS Grid (taste-skill: Grid over Flex-Math) ── */
-.card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
-.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
-.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
-.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
-.card-grid.g5 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
-.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
-@media(max-width:767px) {
-  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
-  .svc-card { padding: 2rem 1.5rem !important; }
-  .svc-card h3 { font-size: 1rem !important; }
-  .svc-card p { font-size: .88rem !important; line-height: 1.7 !important; max-width: none !important; }
-  .svc-card .svc-icon { width: 48px !important; height: 48px !important; }
-  .sec-block { padding: 3.5rem 0 !important; }
-  .sec-heading h2 { font-size: 1.6rem !important; }
-  .sec-intro { font-size: .92rem !important; }
-  .prose-block { font-size: .92rem !important; }
-  .prose-block h3 { font-size: 1.1rem !important; }
-  .container { padding: 0 1.25rem !important; }
-  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
-  [style*="grid-template-columns:repeat"] { grid-template-columns: 1fr !important; }
-}
-@media(max-width:400px) {
-  .card-grid { grid-template-columns: 1fr !important; }
-}
-
-/* iOS zoom prevention */
-@media(max-width:767px) {
-  input, select, textarea { font-size: 16px !important; }
-}
-
-/* Nav pills */
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-
-/* Responsive type scale */
-@media(max-width:767px) {
-  .font-headline.text-3xl { font-size: 1.6rem !important; }
-  .font-headline.text-4xl { font-size: 1.85rem !important; }
-  p.text-base { font-size: .95rem !important; }
-  p.text-lg { font-size: 1rem !important; }
-}
-
-/* ── Prose: left-aligned, max 65ch (taste-skill Rule 1) ── */
-.prose-block { max-width: 65ch; margin: 0 auto; }
-.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.35rem; font-weight: 700; color: #000511; margin: 3rem 0 .75rem; letter-spacing: -.02em; }
-.prose-block p { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: 1.25rem; }
-.prose-block ul { padding-left: 1.5rem; margin: 1.25rem 0; }
-.prose-block li { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: .5rem; }
-.prose-block strong { color: #000511; font-weight: 600; }
-.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .2s; }
-.prose-block a:hover { color: #fd8b00; }
-
-/* ── Section heading: tracking-tighter, generous top-margin (Stitch rule) ── */
-.sec-heading { text-align: center; margin-bottom: 3.5rem; }
-.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 800; color: #000511; margin: 0; letter-spacing: -.03em; }
-@media(min-width:768px) { .sec-heading h2 { font-size: 2.75rem; } }
-.sec-heading .bar { width: 48px; height: 3px; background: #fd8b00; margin: 1.25rem auto 0; border-radius: 2px; }
-
-/* ── Intro: centered, constrained width ── */
-.sec-intro { max-width: 65ch; margin: 0 auto 3rem; text-align: center; font-size: 1.05rem; line-height: 1.75; color: #44474e; }
-
-/* ── Buttons: tactile feedback (taste-skill Rule 5) ── */
-.btn-primary { transition: all .3s cubic-bezier(.16,1,.3,1); }
-.btn-primary:active { transform: translateY(-1px) scale(.98); }
-
-/* ── FAQ accordion: clean, no borders (Stitch No-Line Rule) ── */
-details { transition: all .3s; }
-details summary { transition: color .2s; }
-details[open] summary { color: #000511; }
-</style>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css?v=6">
 <meta property="og:title" content="CRO | Optimización de Conversión Web — Comunikoo">
 <meta property="og:description" content="Optimización de conversión (CRO) con +52% de mejora media. Auditoría CRO, A/B testing, optimización de formularios y landing pages. +60 proyectos. Sin permanencia.">
 <meta property="og:url" content="https://comunikoo.es/servicios/optimizacion-cro/">
@@ -127,297 +20,209 @@ details[open] summary { color: #000511; }
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta un servicio de CRO?","acceptedAnswer":{"@type":"Answer","text":"Nuestro servicio de CRO parte desde 690€/mes para auditoría + optimizaciones priorizadas y hasta 1.490€/mes para programa completo con A/B testing continuo, investigación de usuarios y reuniones mensuales. El ROI suele ser positivo desde el primer o segundo mes."}},{"@type":"Question","name":"¿Cuánto tiempo tarda el CRO en dar resultados?","acceptedAnswer":{"@type":"Answer","text":"Los quick wins (mejoras evidentes de usabilidad, formularios, CTAs) se implementan en las primeras 2-3 semanas. Los tests A/B necesitan 2-4 semanas para alcanzar significancia estadística. Un programa completo de CRO muestra mejoras constantes a partir del segundo mes."}},{"@type":"Question","name":"¿Necesito mucho tráfico para hacer CRO?","acceptedAnswer":{"@type":"Answer","text":"Para A/B testing riguroso, necesitas al menos 5.000-10.000 visitantes mensuales en la página que quieres optimizar. Con menos tráfico, aplicamos optimizaciones basadas en análisis heurístico, mejores prácticas y datos cualitativos (mapas de calor, grabaciones). Los resultados también son significativos."}},{"@type":"Question","name":"¿El CRO funciona para webs de servicios o solo para ecommerce?","acceptedAnswer":{"@type":"Answer","text":"El CRO funciona para cualquier web con un objetivo de conversión: formularios de contacto, solicitudes de presupuesto, descargas, registros, llamadas telefónicas. De hecho, nuestro portfolio incluye más proyectos de servicios que de ecommerce. Para CRO específico de tiendas online, consulta nuestro servicio de CRO ecommerce."}},{"@type":"Question","name":"¿Qué herramientas usáis para CRO?","acceptedAnswer":{"@type":"Answer","text":"GA4 para análisis cuantitativo, Hotjar y Microsoft Clarity para mapas de calor y grabaciones, VWO o AB Tasty para tests A/B, y herramientas de encuestas on-site para feedback cualitativo. También usamos herramientas propias de priorización y documentación de experimentos."}},{"@type":"Question","name":"¿El CRO puede afectar negativamente al SEO?","acceptedAnswer":{"@type":"Answer","text":"No si se hace bien. De hecho, el CRO suele mejorar el SEO porque Google valora las señales de experiencia de usuario: velocidad, tiempo en página, tasa de interacción. Coordinamos los cambios de CRO con la estrategia SEO para asegurar que no haya conflictos."}},{"@type":"Question","name":"¿Cuántos tests A/B podéis ejecutar al mes?","acceptedAnswer":{"@type":"Answer","text":"Depende del tráfico de tu web. Con 20.000+ visitas mensuales, ejecutamos 2-4 tests al mes. Con menos tráfico, los tests necesitan más tiempo para alcanzar significancia, así que priorizamos calidad sobre cantidad. Cada test está documentado con hipótesis, resultados y aprendizajes."}},{"@type":"Question","name":"¿Qué pasa si un test A/B pierde?","acceptedAnswer":{"@type":"Answer","text":"Un test que pierde no es un fracaso — es un aprendizaje. Documentamos por qué creemos que no funcionó y esa información mejora las siguientes hipótesis. Nuestro win rate del 78% demuestra que la mayoría de nuestros tests generan mejoras, pero los que no, igualmente aportan conocimiento valioso sobre tus usuarios."}}]}
 </script>
 </head>
-<body class="bg-surface font-body text-on-background">
-<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[24px] border-b border-[#c4c6cf]/10" style="box-shadow:0 1px 12px rgba(0,5,17,.03)">
-<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
-<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
-<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../index.html">Inicio</a>
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
-<div class="mega-trigger">
-<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
-<div class="mega-panel">
-<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
-<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-seo/index.html">Agencia SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
+<body>
+<a href="#main" class="skip">Ir al contenido</a>
+
+<header class="hdr">
+<div class="hdr-in">
+<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
+<nav>
+<ul class="nav">
+<li class="nav-item"><a href="/servicios/">Servicios</a>
+<div class="nav-dropdown">
+<div class="nav-dropdown-col">
+<h4>SEO</h4>
+<a href="/agencia-seo/">Agencia SEO</a>
+<a href="/servicios/agencia-seo-local/">SEO Local</a>
+<a href="/servicios/consultoria-seo/">Consultoría SEO</a>
+<a href="/servicios/auditoria-seo/">Auditoría SEO</a>
+<a href="/servicios/posicionamiento-web/">Posicionamiento Web</a>
+<a href="/servicios/linkbuilding/">Linkbuilding</a>
 </div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../diseno-web/index.html">Diseño Web</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../tienda-online/index.html">Tiendas Online</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
+<div class="nav-dropdown-col">
+<h4>Diseño Web</h4>
+<a href="/diseno-web/">Diseño Web</a>
+<a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a>
+<a href="/tienda-online/">Tiendas Online</a>
+<a href="/servicios/desarrollo-web/">Desarrollo Web</a>
+<a href="/servicios/landing-pages/">Landing Pages</a>
+<a href="/servicios/mantenimiento-web/">Mantenimiento Web</a>
+<a href="/servicios/optimizacion-cro/">CRO</a>
 </div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-google-ads/index.html">Google Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
+<div class="nav-dropdown-col">
+<h4>Publicidad</h4>
+<a href="/agencia-google-ads/">Google Ads</a>
+<a href="/servicios/agencia-facebook-ads/">Facebook Ads</a>
+<a href="/servicios/instagram-ads/">Instagram Ads</a>
+<a href="/servicios/agencia-meta-ads/">Meta Ads</a>
+<a href="/servicios/youtube-ads/">YouTube Ads</a>
+<a href="/servicios/publicidad-en-google/">Publicidad Google</a>
+<a href="/servicios/google-shopping/">Google Shopping</a>
 </div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../community-manager/index.html">Community Manager</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../email-marketing/index.html">Email Marketing</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
+<div class="nav-dropdown-col">
+<h4>Redes Sociales</h4>
+<a href="/community-manager/">Community Manager</a>
+<a href="/servicios/gestion-redes-sociales/">Gestión Redes</a>
+<a href="/servicios/marketing-de-contenidos/">Marketing Contenidos</a>
+<a href="/email-marketing/">Email Marketing</a>
 </div>
 </div>
+</li>
+<li class="nav-item"><a href="#">Sectores</a>
+<div class="nav-dropdown" style="min-width:520px;grid-template-columns:repeat(3,1fr)">
+<div class="nav-dropdown-col">
+<h4>Hostelería y Salud</h4>
+<a href="/marketing-para-restaurantes/">Restaurantes</a>
+<a href="/marketing-para-hoteles/">Hoteles</a>
+<a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a>
+<a href="/marketing-para-clinicas-esteticas/">Clínicas Estéticas</a>
+<a href="/marketing-para-psicologos/">Psicólogos</a>
+<a href="/marketing-para-veterinarias/">Veterinarias</a>
+</div>
+<div class="nav-dropdown-col">
+<h4>Servicios y Local</h4>
+<a href="/marketing-para-abogados/">Abogados</a>
+<a href="/marketing-para-asesorias/">Asesorías</a>
+<a href="/marketing-para-inmobiliarias/">Inmobiliarias</a>
+<a href="/marketing-para-empresas-de-reformas/">Reformas</a>
+<a href="/marketing-para-autoescuelas/">Autoescuelas</a>
+<a href="/marketing-para-talleres-de-coches/">Talleres</a>
+</div>
+<div class="nav-dropdown-col">
+<h4>Empresas</h4>
+<a href="/marketing-para-ecommerce/">Ecommerce</a>
+<a href="/marketing-para-empresas-b2b/">Empresas B2B</a>
+<a href="/marketing-para-gimnasios/">Gimnasios</a>
+<a href="/marketing-para-academias/">Academias</a>
 </div>
 </div>
-</div>
-<div class="mega-trigger">
-<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
-<div class="mega-panel">
-<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
-<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
-</div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
-</div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
-</div>
-<div>
-<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../blog/index.html">Blog</a>
-<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../contacto/index.html">Contacto</a>
-<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
-</div>
-<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
-</button>
-</div>
+</li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/nosotros/">Nosotros</a></li>
+</ul>
 </nav>
-<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
-<div class="flex justify-between items-center px-6 py-5 border-b">
-<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
-<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+<a href="/contacto/" class="btn btn-p hdr-cta">Auditoría gratis</a>
+<button class="hamburger" aria-label="Abrir menú">
+<span></span><span></span><span></span>
 </button>
 </div>
-<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
+</header>
 
-<details style="border-bottom:1px solid #e5e7eb">
-<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
-<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
-<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-seo/index.html">Agencia SEO</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
-<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../diseno-web/index.html">Diseño Web</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../tienda-online/index.html">Tiendas Online</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
-<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-google-ads/index.html">Google Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
-<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../community-manager/index.html">Community Manager</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../email-marketing/index.html">Email Marketing</a>
-</div>
-</details>
+<div class="mobile-nav-overlay" aria-hidden="true"></div>
+<nav class="mobile-nav" aria-label="Menú móvil">
+<button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
+<ul>
+<li><a href="/servicios/">Servicios</a></li>
+<li><a href="/agencia-seo/">Agencia SEO</a></li>
+<li><a href="/diseno-web/">Diseño Web</a></li>
+<li><a href="/agencia-google-ads/">Google Ads</a></li>
+<li><a href="/community-manager/">Community Manager</a></li>
+<li><a href="/tienda-online/">Tiendas Online</a></li>
+<li><a href="#">Sectores</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/nosotros/">Nosotros</a></li>
+<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
+<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
+<li><a href="/contacto/" class="btn btn-primary" style="margin-top:1rem">Contacto</a></li>
+</ul>
+</nav>
 
-<details style="border-bottom:1px solid #e5e7eb">
-<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
-<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
-</div>
-</details>
+<main id="main">
 
-<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
-<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../blog/index.html">Blog</a>
-<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
 
-<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
-</div>
-</div>
-<main class="pt-20">
-
-<!-- HERO -->
-<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
-<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
-<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><span class="text-primary font-semibold">CRO Optimización Conversión</span></nav>
-<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">CRO Optimización Conversión</span>
-<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">CRO — Optimización de la Tasa de Conversión de Tu Web</h1>
-<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Aumentamos la tasa de conversión de tu web una media del 52% con metodología basada en datos. Auditoría CRO, A/B testing y optimización continua. Más de 60 proyectos completados con un win rate del 78% en nuestros tests.</p>
-<div class="flex flex-wrap gap-4 justify-center mt-8">
-<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Auditoría CRO gratis</a>
-<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
-</div>
-</div>
-<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
-<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
-</section>
-
-<!-- PAIN POINTS — Conexión emocional -->
-<section id="problema" class="bg-[#fdf6f3] py-16 px-6 lg:px-8 scroll-mt-20">
-<div style="max-width:700px;margin:0 auto">
-<p style="text-align:center;font-family:Manrope,sans-serif;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#c0392b;margin-bottom:1rem">¿Te identificas con alguno de estos problemas?</p>
-<div style="display:flex;flex-direction:column;gap:1.5rem">
-<div class="flex gap-4 items-start">
-<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
-<div>
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web no transmite la profesionalidad de tu negocio</h3>
-<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Los visitantes juzgan tu empresa en 3 segundos. Una web anticuada genera desconfianza y pierdes clientes antes de que lean una sola línea.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
-<div>
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web es lenta y los usuarios se van</h3>
-<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">El 53% de los usuarios abandona si la web tarda más de 3 segundos en cargar. Google también te penaliza por ello.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
-<div>
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu web no genera contactos ni ventas</h3>
-<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Tener visitas sin conversiones es quemar dinero. Tu web debe estar diseñada para vender, no solo para informar.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
-<div>
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Dependes de un técnico para cada pequeño cambio</h3>
-<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Cada vez que quieres cambiar un texto o subir una imagen, tienes que esperar días y pagar. Eso se acabó.</p>
-</div>
-</div>
-<div class="flex gap-4 items-start">
-<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
-<div>
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">No sabes por dónde empezar con tu web</h3>
-<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Briefing, diseño, desarrollo, textos, SEO, hosting... Te acompañamos en todo el proceso sin que tengas que preocuparte de nada.</p>
-</div>
-</div>
-
+<!-- HERO: Landing style -->
+<section class="sec-hero" style="padding-bottom:var(--s12)">
+<div class="wrap tc" style="position:relative;z-index:1">
+<nav class="breadcrumbs wrap" aria-label="Breadcrumb">
+<a href="/">Inicio</a>
+<span>›</span>
+<a href="/servicios/">Servicios</a>
+<span>›</span>
+<span aria-current="page">CRO Optimización Conversión</span>
+</nav>
+<div class="pill anim" style="margin-bottom:var(--s5)">CRO Optimización Conversión</div>
+<h1 class="anim" style="max-width:20ch;margin:0 auto">CRO — Optimización de la Tasa de Conversión de Tu Web</h1>
+<p class="anim" style="font-size:var(--ts-lg);color:var(--text-sub);margin:var(--s5) auto 0;max-width:55ch">Aumentamos la tasa de conversión de tu web una media del 52% con metodología basada en datos. Auditoría CRO, A/B testing y optimización continua. Más de 60 proyectos completados con un win rate del 78% en nuestros tests.</p>
+<div class="anim" style="display:flex;gap:var(--s4);justify-content:center;margin-top:var(--s8);flex-wrap:wrap">
+<a href="/contacto/" class="btn btn-p btn-lg">Auditoría CRO gratis</a>
+<a href="#servicios" class="btn btn-o btn-lg">Ver servicios</a>
 </div>
 </div>
 </section>
 
-<!-- SOLUTION BRIDGE — De problema a solución -->
-<section class="bg-primary py-14 px-6 lg:px-8">
-<div class="max-w-3xl mx-auto text-center">
-<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
-<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Una web profesional no es un gasto, es tu mejor comercial — trabaja para ti 24/7, 365 días al año. Diseñamos webs que transmiten confianza en 3 segundos, cargan en menos de 2 y convierten visitantes en clientes reales.</h2>
-<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="../../contacto/index.html">Cuéntanos tu caso →</a>
-</div>
-</section>
-
-<!-- STATS -->
-<section class="bg-surface border-y border-outline-variant/15 py-10">
-<div class="max-w-5xl mx-auto px-6 lg:px-8">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
-<div class="text-center md:text-left ">
-<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+52%</div>
-<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">aumento medio conversión</p>
-</div>
-<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
-<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+60</div>
-<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">proyectos CRO</p>
-</div>
-<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
-<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">340+</div>
-<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">tests A/B ejecutados</p>
-</div>
-<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
-<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">78%</div>
-<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">win rate</p>
-</div>
-
+<!-- STATS BAR -->
+<section class="sec-alt" style="padding:var(--s10) 0">
+<div class="wrap">
+<div class="bento bento-4 anim">
+<div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">+52%</div><div class="st-l">aumento medio conversión</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">+60</div><div class="st-l">proyectos CRO</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">340+</div><div class="st-l">tests A/B ejecutados</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">78%</div><div class="st-l">win rate</div></div>
 </div>
 </div>
 </section>
 
-<!-- NAV PILLS -->
-<section style="position:sticky;top:73px;z-index:40;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:1rem 1.5rem">
-<div style="max-width:1280px;margin:0 auto;display:flex;gap:.75rem;overflow-x:auto;justify-content:center;padding:.25rem 0" class="scrollbar-hide">
-<a href="#por-que" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué CRO</a>
-<a href="#servicios" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Servicios CRO</a>
-<a href="#proceso" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Proceso</a>
-<a href="#resultados" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
-<a href="#diferencias" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué nosotros</a>
-<a href="#faq" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
+<!-- MAIN CONTENT: Sidebar + Content -->
+<section class="sec" style="padding-top:var(--s12)">
+<div class="pg">
+<aside class="pg-side">
+<nav>
+<ul class="side-nav">
+<li><a href="#por-que">Por qué CRO</a></li>
+<li><a href="#servicios">Servicios CRO</a></li>
+<li><a href="#proceso">Proceso</a></li>
+<li><a href="#resultados">Resultados</a></li>
+<li><a href="#diferencias">Por qué nosotros</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</nav>
+<div class="side-stats">
+<div class="ss"><div class="st-n tg">+52%</div><div class="st-l">aumento medio conversión</div></div>
+<div class="ss"><div class="st-n tg">+60</div><div class="st-l">proyectos CRO</div></div>
+<div class="ss"><div class="st-n tg">340+</div><div class="st-l">tests A/B ejecutados</div></div>
+<div class="ss"><div class="st-n tg">78%</div><div class="st-l">win rate</div></div>
 
 </div>
-</section>
+<a href="/contacto/" class="btn btn-p" style="width:100%;justify-content:center;margin-top:var(--s6)">Auditoría CRO gratis</a>
+</aside>
+<div class="pg-main">
+<h2 id="por-que" class="mt0">¿Por qué la optimización de la tasa de conversión (CRO) transforma tu negocio?</h2>
 
-<!-- CONTENT BLOCKS -->
+<p>Cada día, miles de personas visitan tu web. Pero <strong>la inmensa mayoría se van sin hacer nada</strong>: sin comprar, sin rellenar un formulario, sin llamar. La tasa de conversión media en España es del 2-3% para webs de servicios y del 1,5-2% para ecommerce. Eso significa que el 97-98% de tu tráfico se desperdicia.</p>
 
-<section id="por-que" class=" sec-block scroll-mt-20">
-<div class="container">
-<div class="sec-heading"><h2>¿Por qué la optimización de la tasa de conversión (CRO) transforma tu negocio?</h2><div class="bar"></div></div>
+<p>El CRO (Conversion Rate Optimization) es la disciplina que se dedica a <strong>aumentar el porcentaje de visitantes que realizan la acción que tú quieres</strong>: comprar, pedir presupuesto, llamar, suscribirse, descargar. Cada punto de mejora en la conversión se traduce directamente en más ingresos con el mismo tráfico.</p>
 
-<div class="card-grid g3"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>La matemática irrefutable del CRO</h3><p>Supongamos que tu web recibe 20.000 visitas al mes y convierte al 2% con un valor medio de 150€ por conversión.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span></div><h3>CRO vs. más tráfico: ¿qué es más rentable?</h3><p>La mayoría de negocios invierten todo su presupuesto en atraer más tráfico.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg></span></div><h3>¿Qué se puede optimizar con CRO?</h3><p>El CRO no se limita a cambiar colores de botones.</p></div>
-</div>
+<h3>La matemática irrefutable del CRO</h3>
+<p>Supongamos que tu web recibe 20.000 visitas al mes y convierte al 2% con un valor medio de 150€ por conversión:</p>
+<ul>
+<li>Situación actual: 400 conversiones/mes = <strong>60.000€/mes</strong></li>
+<li>Con CRO al 3%: 600 conversiones/mes = <strong>90.000€/mes (+30.000€)</strong></li>
+<li>Con CRO al 4%: 800 conversiones/mes = <strong>120.000€/mes (+60.000€)</strong></li>
+</ul>
+<p><strong>30.000€ adicionales al mes sin gastar ni un euro más en captación de tráfico</strong>. Eso es el poder del CRO.</p>
 
-</div>
-</section>
+<h3>CRO vs. más tráfico: ¿qué es más rentable?</h3>
+<p>La mayoría de negocios invierten todo su presupuesto en atraer más tráfico: más SEO, más Google Ads, más redes sociales. Pero <strong>duplicar tu tráfico cuesta mucho dinero. Duplicar tu conversión suele costar una fracción</strong>.</p>
 
-<section id="servicios" class="bg-surface-container-low sec-block scroll-mt-20">
-<div class="container">
-<div class="sec-heading"><h2>Nuestros servicios de optimización de conversión (CRO)</h2><div class="bar"></div></div>
+<p>Además, el CRO tiene un efecto multiplicador: cuando mejoras tu conversión, <strong>todos tus canales de captación rinden más</strong>. Tu Google Ads genera más leads, tu SEO genera más ventas, tus campañas de email convierten más. Es la optimización más eficiente que puedes hacer.</p>
 
-<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span></div><h3>Auditoría CRO integral</h3><p>El punto de partida de cualquier proyecto de CRO.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span></div><h3>Programa de experimentación continua</h3><p>El CRO no es un proyecto de una vez — es un proceso continuo de mejora:.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-6"/></svg></span></div><h3>Optimización de formularios y procesos de conversión</h3><p>Los formularios son donde se cierra la conversión.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.2 6.2a2.1 2.1 0 0 1-3-3l6.2-6.2a6 6 0 0 1 7.9-7.9z"/></svg></span></div><h3>Optimización de <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">landing pages</a> y páginas clave</h3><p>Analizamos y optimizamos las páginas que más impactan en tu conversión:.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span></div><h3>Personalización y segmentación web</h3><p>No todos los visitantes son iguales.</p></div>
-</div>
-<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span> Auditoría CRO integral — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El punto de partida de cualquier proyecto de CRO. Analizamos tu web desde múltiples ángulos:</p>
+<h3>¿Qué se puede optimizar con CRO?</h3>
+<p>El CRO no se limita a cambiar colores de botones. Abarca toda la experiencia del usuario en tu web:</p>
+<ul>
+<li><strong>Páginas de aterrizaje</strong>: propuesta de valor, headline, CTAs</li>
+<li><strong>Formularios</strong>: número de campos, diseño, copy del botón, validación</li>
+<li><strong>Navegación y arquitectura</strong>: facilidad para encontrar lo que buscan</li>
+<li><strong>Contenido persuasivo</strong>: copy que resuelve objeciones y motiva la acción</li>
+<li><strong>Social proof</strong>: testimonios, reseñas, casos de éxito, logos de clientes</li>
+<li><strong>Velocidad y rendimiento</strong>: cada segundo de carga reduce la conversión</li>
+<li><strong>Experiencia móvil</strong>: el 60-70% del tráfico es móvil</li>
+<li><strong>Checkout y procesos de compra</strong>: fricción mínima, máxima claridad</li>
+</ul>
+
+<h2 id="servicios">Nuestros servicios de optimización de conversión (CRO)</h2>
+
+<p>Ofrecemos un servicio de CRO completo basado en investigación, experimentación y datos:</p>
+
+<h3>Auditoría CRO integral</h3>
+<p>El punto de partida de cualquier proyecto de CRO. Analizamos tu web desde múltiples ángulos:</p>
 <ul>
 <li><strong>Análisis cuantitativo</strong>: embudos de conversión en GA4, páginas de salida, comportamiento por segmento y dispositivo</li>
 <li><strong>Análisis cualitativo</strong>: mapas de calor, grabaciones de sesión, encuestas on-site</li>
@@ -425,12 +230,10 @@ details[open] summary { color: #000511; }
 <li><strong>Análisis técnico</strong>: velocidad, Core Web Vitals, errores, compatibilidad cross-device</li>
 <li><strong>Benchmarking</strong>: comparativa con competidores y mejores prácticas del sector</li>
 </ul>
-<p>El resultado: un <strong>informe de más de 30 páginas con hallazgos prioritarios, hipótesis de mejora y un roadmap de optimización</strong>.</p></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Programa de experimentación continua — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>El CRO no es un proyecto de una vez — es un proceso continuo de mejora:</p>
+<p>El resultado: un <strong>informe de más de 30 páginas con hallazgos prioritarios, hipótesis de mejora y un roadmap de optimización</strong>.</p>
+
+<h3>Programa de experimentación continua</h3>
+<p>El CRO no es un proyecto de una vez — es un proceso continuo de mejora:</p>
 <ul>
 <li>Priorización de hipótesis con framework ICE (Impact, Confidence, Ease)</li>
 <li>Diseño de tests A/B y multivariante rigurosos</li>
@@ -438,12 +241,10 @@ details[open] summary { color: #000511; }
 <li>Análisis estadístico con mínimo 95% de confianza</li>
 <li>Documentación de todos los experimentos y aprendizajes</li>
 <li>Ciclo mensual: 2-4 tests por mes según el tráfico disponible</li>
-</ul></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-6"/></svg></span> Optimización de formularios y procesos de conversión — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Los formularios son donde se cierra la conversión. Optimizamos cada aspecto:</p>
+</ul>
+
+<h3>Optimización de formularios y procesos de conversión</h3>
+<p>Los formularios son donde se cierra la conversión. Optimizamos cada aspecto:</p>
 <ul>
 <li>Número y tipo de campos (menos campos = más conversiones, pero con equilibrio)</li>
 <li>Diseño y posición del formulario en la página</li>
@@ -451,106 +252,85 @@ details[open] summary { color: #000511; }
 <li>Validación en tiempo real y mensajes de error claros</li>
 <li>Página de confirmación con siguiente paso claro</li>
 <li>Formularios multistep para procesos complejos</li>
-</ul></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.2 6.2a2.1 2.1 0 0 1-3-3l6.2-6.2a6 6 0 0 1 7.9-7.9z"/></svg></span> Optimización de <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">landing pages</a> y páginas clave — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Analizamos y optimizamos las páginas que más impactan en tu conversión:</p>
+</ul>
+
+<h3>Optimización de landing pages y páginas clave</h3>
+<p>Analizamos y optimizamos las páginas que más impactan en tu conversión:</p>
 <ul>
 <li>Headlines y propuestas de valor que capturan la atención</li>
 <li>Estructura de contenido que guía al usuario hacia la acción</li>
 <li>CTAs con copy persuasivo, diseño destacado y posición estratégica</li>
 <li>Social proof: testimonios, casos de éxito, cifras de credibilidad</li>
 <li>Eliminación de distracciones y elementos que no aportan valor</li>
-</ul></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span> Personalización y segmentación web — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No todos los visitantes son iguales. Implementamos personalización:</p>
+</ul>
+
+<h3>Personalización y segmentación web</h3>
+<p>No todos los visitantes son iguales. Implementamos personalización:</p>
 <ul>
-<li>Contenido dinámico según la fuente de tráfico (<a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Ads</a>, orgánico, redes)</li>
+<li>Contenido dinámico según la fuente de tráfico (Google Ads, orgánico, redes)</li>
 <li>Mensajes diferentes para visitantes nuevos vs. recurrentes</li>
 <li>Ofertas segmentadas por comportamiento de navegación</li>
 <li>Geolocalización: contenido adaptado por ubicación</li>
-</ul></div>
-</details>
-</div>
-<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
-<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Solicita tu auditoría gratuita — sin compromiso</p>
-<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
-Auditoría CRO gratis →</a>
-</div>
-</div>
-</section>
+</ul>
 
-<section id="proceso" class=" sec-block scroll-mt-20">
-<div class="container">
-<div class="sec-heading"><h2>Nuestro proceso de optimización CRO paso a paso</h2><div class="bar"></div></div>
+<h2 id="proceso">Nuestro proceso de optimización CRO paso a paso</h2>
 
-<div class="card-grid g4"><div class="svc-card">
-<div class="svc-icon" style="background:#001e40;color:#fff">01</div>
-<h3>Investigación y diagnóstico</h3>
-<p>Recopilamos datos cuantitativos y cualitativos para entender qué hacen los usuarios en tu web.</p>
+<p>Seguimos el método científico aplicado al marketing digital: observar, hipotizar, experimentar, medir, aprender y repetir.</p>
+
+<div class="steps">
+<div class="step">
+<div class="step-num">01</div>
+<div><h4>Investigación y diagnóstico</h4>
+<p>Recopilamos datos cuantitativos y cualitativos para entender qué hacen los usuarios en tu web, dónde se pierden y por qué no convierten. Usamos GA4, Hotjar, Microsoft Clarity, encuestas y análisis heurístico. El resultado es una lista de problemas y oportunidades ordenados por impacto.</p></div>
 </div>
-<div class="svc-card">
-<div class="svc-icon" style="background:#001e40;color:#fff">02</div>
-<h3>Hipótesis y priorización</h3>
-<p>Formulamos hipótesis de mejora concretas: "Si hacemos X, esperamos Y porque Z".</p>
+<div class="step">
+<div class="step-num">02</div>
+<div><h4>Hipótesis y priorización</h4>
+<p>Formulamos hipótesis de mejora concretas: "Si hacemos X, esperamos Y porque Z". Priorizamos con el framework ICE para empezar siempre por los cambios con mayor potencial de impacto y menor esfuerzo de implementación.</p></div>
 </div>
-<div class="svc-card">
-<div class="svc-icon" style="background:#001e40;color:#fff">03</div>
-<h3>Experimentación (A/B testing)</h3>
-<p>Diseñamos las variantes, las implementamos y lanzamos los tests A/B.</p>
+<div class="step">
+<div class="step-num">03</div>
+<div><h4>Experimentación (A/B testing)</h4>
+<p>Diseñamos las variantes, las implementamos y lanzamos los tests A/B. Cada test corre el tiempo necesario para alcanzar significancia estadística (mínimo 95% de confianza). Monitorizamos en tiempo real para detectar anomalías.</p></div>
 </div>
-<div class="svc-card">
-<div class="svc-icon" style="background:#001e40;color:#fff">04</div>
-<h3>Análisis, implementación y aprendizaje</h3>
-<p>Analizamos los resultados con rigor.</p>
+<div class="step">
+<div class="step-num">04</div>
+<div><h4>Análisis, implementación y aprendizaje</h4>
+<p>Analizamos los resultados con rigor. Los ganadores se implementan permanentemente. Los perdedores generan aprendizajes que mejoran las siguientes hipótesis. El ciclo se repite cada mes, generando una mejora acumulativa constante.</p></div>
 </div>
 </div>
 
+<h2 id="resultados">Resultados reales de nuestros proyectos de CRO</h2>
+
+<p>Estos son resultados de proyectos de optimización de conversión que hemos ejecutado en diferentes sectores:</p>
+
+<div class="stats" style="margin:var(--space-8) 0">
+<div><div class="stat-number text-success">+52%</div><div class="stat-label">aumento medio en tasa de conversión</div></div>
+<div><div class="stat-number text-success">+60</div><div class="stat-label">proyectos CRO completados</div></div>
+<div><div class="stat-number text-success">340+</div><div class="stat-label">tests A/B ejecutados</div></div>
+<div><div class="stat-number text-success">78%</div><div class="stat-label">win rate en nuestros tests</div></div>
 </div>
-</section>
 
-<section id="resultados" class="bg-[#edf1f7] sec-block scroll-mt-20">
-<div class="container">
-<div class="sec-heading"><h2>Resultados reales de nuestros proyectos de CRO</h2><div class="bar"></div></div>
-
-<div class="card-grid g4" style="margin-bottom:2.5rem"><div class="svc-card">
-<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+52%</div>
-<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio en tasa de conversión</p></div>
-<div class="svc-card">
-<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+60</div>
-<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">proyectos CRO completados</p></div>
-<div class="svc-card">
-<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">340+</div>
-<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tests A/B ejecutados</p></div>
-<div class="svc-card">
-<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">78%</div>
-<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">win rate en nuestros tests</p></div>
-</div><div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Empresa de formación online — +127% de conversiones</h3>
-<div class="prose-block" style="max-width:none;margin:0"><p>Una plataforma de formación online cuya <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">landing page</a> de curso principal convertía al 3,2%:</p>
+<h3>Caso: Empresa de formación online — +127% de conversiones</h3>
+<p>Una plataforma de formación online cuya landing page de curso principal convertía al 3,2%:</p>
 <ul>
 <li>Tasa de conversión subió del <strong>3,2% al 7,3%</strong> (+127%)</li>
 <li>Leads mensuales pasaron de <strong>640 a 1.460</strong> sin aumentar tráfico</li>
-<li>CPA en <a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Ads</a> se redujo un <strong>56%</strong></li>
+<li>CPA en Google Ads se redujo un <strong>56%</strong></li>
 <li>Cambios clave: nuevo headline basado en investigación de usuario, testimonios en vídeo, formulario simplificado de 7 a 3 campos</li>
-</ul></div></div>
-<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Despacho de abogados — +85% de solicitudes de consulta</h3>
-<div class="prose-block" style="max-width:none;margin:0"><p>Un despacho de abogados que generaba el 60% de sus nuevos clientes a través de su web:</p>
+</ul>
+
+<h3>Caso: Despacho de abogados — +85% de solicitudes de consulta</h3>
+<p>Un despacho de abogados que generaba el 60% de sus nuevos clientes a través de su web:</p>
 <ul>
 <li>Solicitudes de consulta aumentaron un <strong>85%</strong></li>
 <li>El formulario pasó de <strong>8 campos a 4</strong> sin perder calidad de leads</li>
 <li>Se añadieron <strong>testimonios de clientes reales</strong> junto al formulario</li>
 <li>El CTA cambió de "Enviar" a <strong>"Solicitar mi consulta gratuita"</strong> (+34% en tasa de clic)</li>
-</ul></div></div>
-<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
-<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: SaaS B2B — De 1,8% a 4,1% de conversión en pricing page</h3>
-<div class="prose-block" style="max-width:none;margin:0"><p>Una empresa SaaS cuya página de precios era el principal punto de fuga:</p>
+</ul>
+
+<h3>Caso: SaaS B2B — De 1,8% a 4,1% de conversión en pricing page</h3>
+<p>Una empresa SaaS cuya página de precios era el principal punto de fuga:</p>
 <ul>
 <li>Conversión de la pricing page subió del <strong>1,8% al 4,1%</strong></li>
 <li><strong>FAQ section</strong> añadida debajo de los planes redujo las consultas de ventas un 23%</li>
@@ -559,265 +339,135 @@ Auditoría CRO gratis →</a>
 </ul>
 
 <p style="margin-top:var(--space-6)"><em>"Comunikoo convirtió nuestra web de un folleto digital a una máquina de generar clientes. Los datos no mienten: más del doble de conversiones con el mismo tráfico."</em></p>
-<p class="text-muted">— Pablo Navarro, CEO, plataforma de formación online, Barcelona</p></div></div>
-<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);border-left:4px solid #fd8b00">
-<p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"Comunikoo convirtió nuestra web de un folleto digital a una máquina de generar clientes. Los datos no mienten: más del doble de conversiones con el mismo tráfico."</p>
-<p style="font-size:.8rem;color:#737780;margin:0">— +127% de conversiones</h3>
-<p>Una plataforma de formación online cuya <a href="/servicios/landing-pages/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">landing page</a> de curso principal convertía al 3,2%:</p></div>
-<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
-<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Habla con un experto sobre tu proyecto</p>
-<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
-Auditoría CRO gratis →</a>
-</div>
-</div>
-</section>
+<p class="text-muted">— Pablo Navarro, CEO, plataforma de formación online, Barcelona</p>
 
-<section id="diferencias" class=" sec-block scroll-mt-20">
-<div class="container">
-<div class="sec-heading"><h2>¿Por qué elegir Comunikoo para tu optimización CRO?</h2><div class="bar"></div></div>
+<h2 id="diferencias">¿Por qué elegir Comunikoo para tu optimización CRO?</h2>
 
-<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>Metodología científica, no opiniones</h3><p>No hacemos cambios basados en "lo que nos parece mejor".</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span></div><h3>Win rate del 78% en nuestros tests</h3><p>La media del sector en A/B testing es un win rate del 20-30%.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg></span></div><h3>Experiencia multisector</h3><p>Hemos optimizado webs en más de 20 sectores.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg></span></div><h3>Integración con captación de tráfico</h3><p>No solo optimizamos la conversión — también gestionamos SEO, Google Ads y redes sociales.</p></div>
-<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span></div><h3>Impacto medible en euros</h3><p>No medimos el CRO en "mejora de experiencia de usuario".</p></div>
-</div>
-<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span> Metodología científica, no opiniones — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No hacemos cambios basados en "lo que nos parece mejor". <strong>Cada hipótesis nace de datos, cada cambio se valida con un test A/B</strong> y cada decisión se toma con significancia estadística. Si los datos dicen que un cambio no mejora, no se implementa — por mucho que "quede más bonito".</p></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span> Win rate del 78% en nuestros tests — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>La media del sector en A/B testing es un win rate del 20-30%. <strong>Nuestro win rate es del 78%</strong>. ¿Por qué? Porque invertimos más tiempo en investigación y formulación de hipótesis. Cuando llegamos al test, tenemos una base sólida de datos que respalda cada cambio.</p></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg></span> Experiencia multisector — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Hemos optimizado webs en más de 20 sectores: formación, legal, salud, <a href="/servicios/agencia-ecommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">ecommerce</a>, SaaS, servicios profesionales, inmobiliario y más. <strong>Esa experiencia transversal nos permite aplicar aprendizajes de un sector a otro</strong> y encontrar soluciones que competidores monofoco no ven.</p></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg></span> Integración con captación de tráfico — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No solo optimizamos la conversión — también gestionamos SEO, <a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Ads</a> y <a href="/servicios/gestion-redes-sociales/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">redes sociales</a>. <strong>Coordinamos el CRO con tus campañas de captación</strong> para que cada mejora en conversión se traduzca inmediatamente en más resultados de todos tus canales.</p></div>
-</details>
-<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
-<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span> Impacto medible en euros — Leer más</summary>
-<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No medimos el CRO en "mejora de experiencia de usuario". <strong>Lo medimos en euros adicionales generados</strong>. Cada mes puedes ver exactamente cuántos leads, ventas o ingresos adicionales ha producido la optimización. Si no genera impacto económico, no tiene sentido.</p></div>
-</details>
-</div>
+<p>El CRO serio requiere una combinación poco habitual de análisis de datos, psicología del consumidor y conocimiento técnico.</p>
 
-</div>
-</section>
+<h3>Metodología científica, no opiniones</h3>
+<p>No hacemos cambios basados en "lo que nos parece mejor". <strong>Cada hipótesis nace de datos, cada cambio se valida con un test A/B</strong> y cada decisión se toma con significancia estadística. Si los datos dicen que un cambio no mejora, no se implementa — por mucho que "quede más bonito".</p>
 
+<h3>Win rate del 78% en nuestros tests</h3>
+<p>La media del sector en A/B testing es un win rate del 20-30%. <strong>Nuestro win rate es del 78%</strong>. ¿Por qué? Porque invertimos más tiempo en investigación y formulación de hipótesis. Cuando llegamos al test, tenemos una base sólida de datos que respalda cada cambio.</p>
 
+<h3>Experiencia multisector</h3>
+<p>Hemos optimizado webs en más de 20 sectores: formación, legal, salud, ecommerce, SaaS, servicios profesionales, inmobiliario y más. <strong>Esa experiencia transversal nos permite aplicar aprendizajes de un sector a otro</strong> y encontrar soluciones que competidores monofoco no ven.</p>
 
-<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
-<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
-</div>
-<div class="space-y-4 max-w-3xl mx-auto">
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Cuánto cuesta un servicio de CRO?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">Nuestro servicio de CRO parte desde 690€/mes para auditoría + optimizaciones priorizadas y hasta 1.490€/mes para programa completo con A/B testing continuo, investigación de usuarios y reuniones mensuales. El ROI suele ser positivo desde el primer o segundo mes.</p>
+<h3>Integración con captación de tráfico</h3>
+<p>No solo optimizamos la conversión — también gestionamos SEO, Google Ads y redes sociales. <strong>Coordinamos el CRO con tus campañas de captación</strong> para que cada mejora en conversión se traduzca inmediatamente en más resultados de todos tus canales.</p>
+
+<h3>Impacto medible en euros</h3>
+<p>No medimos el CRO en "mejora de experiencia de usuario". <strong>Lo medimos en euros adicionales generados</strong>. Cada mes puedes ver exactamente cuántos leads, ventas o ingresos adicionales ha producido la optimización. Si no genera impacto económico, no tiene sentido.</p>
+
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq">
+<details>
+<summary>¿Cuánto cuesta un servicio de CRO?</summary>
+<p>Nuestro servicio de CRO parte desde 690€/mes para auditoría + optimizaciones priorizadas y hasta 1.490€/mes para programa completo con A/B testing continuo, investigación de usuarios y reuniones mensuales. El ROI suele ser positivo desde el primer o segundo mes.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Cuánto tiempo tarda el CRO en dar resultados?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">Los quick wins (mejoras evidentes de usabilidad, formularios, CTAs) se implementan en las primeras 2-3 semanas. Los tests A/B necesitan 2-4 semanas para alcanzar significancia estadística. Un programa completo de CRO muestra mejoras constantes a partir del segundo mes.</p>
+<details>
+<summary>¿Cuánto tiempo tarda el CRO en dar resultados?</summary>
+<p>Los quick wins (mejoras evidentes de usabilidad, formularios, CTAs) se implementan en las primeras 2-3 semanas. Los tests A/B necesitan 2-4 semanas para alcanzar significancia estadística. Un programa completo de CRO muestra mejoras constantes a partir del segundo mes.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Necesito mucho tráfico para hacer CRO?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">Para A/B testing riguroso, necesitas al menos 5.000-10.000 visitantes mensuales en la página que quieres optimizar. Con menos tráfico, aplicamos optimizaciones basadas en análisis heurístico, mejores prácticas y datos cualitativos (mapas de calor, grabaciones). Los resultados también son significativos.</p>
+<details>
+<summary>¿Necesito mucho tráfico para hacer CRO?</summary>
+<p>Para A/B testing riguroso, necesitas al menos 5.000-10.000 visitantes mensuales en la página que quieres optimizar. Con menos tráfico, aplicamos optimizaciones basadas en análisis heurístico, mejores prácticas y datos cualitativos (mapas de calor, grabaciones). Los resultados también son significativos.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿El CRO funciona para webs de servicios o solo para ecommerce?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">El CRO funciona para cualquier web con un objetivo de conversión: formularios de contacto, solicitudes de presupuesto, descargas, registros, llamadas telefónicas. De hecho, nuestro portfolio incluye más proyectos de servicios que de ecommerce. Para CRO específico de tiendas online, consulta nuestro servicio de CRO ecommerce.</p>
+<details>
+<summary>¿El CRO funciona para webs de servicios o solo para ecommerce?</summary>
+<p>El CRO funciona para cualquier web con un objetivo de conversión: formularios de contacto, solicitudes de presupuesto, descargas, registros, llamadas telefónicas. De hecho, nuestro portfolio incluye más proyectos de servicios que de ecommerce. Para CRO específico de tiendas online, consulta nuestro servicio de CRO ecommerce.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Qué herramientas usáis para CRO?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">GA4 para análisis cuantitativo, Hotjar y Microsoft Clarity para mapas de calor y grabaciones, VWO o AB Tasty para tests A/B, y herramientas de encuestas on-site para feedback cualitativo. También usamos herramientas propias de priorización y documentación de experimentos.</p>
+<details>
+<summary>¿Qué herramientas usáis para CRO?</summary>
+<p>GA4 para análisis cuantitativo, Hotjar y Microsoft Clarity para mapas de calor y grabaciones, VWO o AB Tasty para tests A/B, y herramientas de encuestas on-site para feedback cualitativo. También usamos herramientas propias de priorización y documentación de experimentos.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿El CRO puede afectar negativamente al SEO?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">No si se hace bien. De hecho, el CRO suele mejorar el SEO porque Google valora las señales de experiencia de usuario: velocidad, tiempo en página, tasa de interacción. Coordinamos los cambios de CRO con la estrategia SEO para asegurar que no haya conflictos.</p>
+<details>
+<summary>¿El CRO puede afectar negativamente al SEO?</summary>
+<p>No si se hace bien. De hecho, el CRO suele mejorar el SEO porque Google valora las señales de experiencia de usuario: velocidad, tiempo en página, tasa de interacción. Coordinamos los cambios de CRO con la estrategia SEO para asegurar que no haya conflictos.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Cuántos tests A/B podéis ejecutar al mes?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">Depende del tráfico de tu web. Con 20.000+ visitas mensuales, ejecutamos 2-4 tests al mes. Con menos tráfico, los tests necesitan más tiempo para alcanzar significancia, así que priorizamos calidad sobre cantidad. Cada test está documentado con hipótesis, resultados y aprendizajes.</p>
+<details>
+<summary>¿Cuántos tests A/B podéis ejecutar al mes?</summary>
+<p>Depende del tráfico de tu web. Con 20.000+ visitas mensuales, ejecutamos 2-4 tests al mes. Con menos tráfico, los tests necesitan más tiempo para alcanzar significancia, así que priorizamos calidad sobre cantidad. Cada test está documentado con hipótesis, resultados y aprendizajes.</p>
 </details>
-<details class="bg-surface-container-lowest p-6 rounded-xl group">
-<summary class="font-headline font-bold text-primary flex justify-between items-center">
-¿Qué pasa si un test A/B pierde?
-<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-</summary>
-<p class="text-on-surface-variant mt-4 leading-relaxed">Un test que pierde no es un fracaso — es un aprendizaje. Documentamos por qué creemos que no funcionó y esa información mejora las siguientes hipótesis. Nuestro win rate del 78% demuestra que la mayoría de nuestros tests generan mejoras, pero los que no, igualmente aportan conocimiento valioso sobre tus usuarios.</p>
+<details>
+<summary>¿Qué pasa si un test A/B pierde?</summary>
+<p>Un test que pierde no es un fracaso — es un aprendizaje. Documentamos por qué creemos que no funcionó y esa información mejora las siguientes hipótesis. Nuestro win rate del 78% demuestra que la mayoría de nuestros tests generan mejoras, pero los que no, igualmente aportan conocimiento valioso sobre tus usuarios.</p>
 </details>
 </div>
+<div class="cta-b" style="margin-top:var(--s16)">
+<h2>¿Quieres que tu web convierta más visitantes en clientes?</h2>
+<p>Analizamos tu web y te decimos exactamente dónde estás perdiendo conversiones. Auditoría CRO gratuita.</p>
+<a href="/contacto/" class="btn btn-w btn-lg">Solicita tu auditoría CRO gratuita</a>
 </div>
-</section>
-
-
-
-
-
-
-
-
-<section class="bg-surface-container-low sec-block">
-<div class="container">
-<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
-<div class="card-grid g3">
-<a href="../../diseno-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">Diseño Web</h3>
-</a>
-<a href="../../servicios/diseno-web-wordpress/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">WordPress</h3>
-</a>
-<a href="../../servicios/desarrollo-web/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">Desarrollo Web</h3>
-</a>
-<a href="../../servicios/landing-pages/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">Landing Pages</h3>
-</a>
-<a href="../../agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">Agencia SEO</h3>
-</a>
-<a href="../../servicios/agencia-seo-local/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
-<h3 style="font-size:.8rem">SEO Local</h3>
-</a>
 
 </div>
-<div style="margin-top:2.5rem">
-<div class="sec-heading"><h2 style="font-size:1.1rem">Sectores donde aplicamos este servicio</h2><div class="bar"></div></div>
-<div class="card-grid g6" style="margin-top:1.5rem">
-<a href="../../marketing-para-restaurantes/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Restaurantes</h3>
-</a>
-<a href="../../marketing-para-hoteles/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Hoteles</h3>
-</a>
-<a href="../../marketing-para-clinicas-dentales/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Clínicas Dentales</h3>
-</a>
-<a href="../../marketing-para-clinicas-esteticas/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Clínicas Estéticas</h3>
-</a>
-<a href="../../marketing-para-abogados/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Abogados</h3>
-</a>
-<a href="../../marketing-para-inmobiliarias/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
-<h3 style="font-size:.75rem">Inmobiliarias</h3>
-</a>
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- CTA FINAL — Detalle de lo que incluye -->
-<section class="bg-primary py-24 px-6 lg:px-8">
-<div class="max-w-3xl mx-auto text-center">
-<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">Da el primer paso</p>
-<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Quieres que tu web convierta más visitantes en clientes?</h2>
-<p class="text-on-primary-container text-base mb-6">Analizamos tu web y te decimos exactamente dónde estás perdiendo conversiones. Auditoría CRO gratuita.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-md mx-auto mb-8 text-left">
-<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Análisis completo de tu situación</p>
-<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Estudio de tu competencia</p>
-<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
-<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
-</div>
-<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicita tu auditoría CRO gratuita →</a>
-<p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
 
 </main>
-<footer class="bg-primary w-full py-16 px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
-<div class="space-y-4 lg:col-span-1">
-<div class="text-xl font-black text-secondary-container">Comunikoo</div>
-<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+
+<footer class="ft">
+<div class="ft-grid">
+<div class="ft-info">
+<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
+<p>Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p>📍 Aragó 4, Barcelona 08015</p>
+<p>📞 <a href="tel:+34608721015">+34 608 721 015</a></p>
+<p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
 </div>
-<div class="space-y-3">
-<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-seo/index.html">Agencia SEO</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../diseno-web/index.html">Diseño Web</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-google-ads/index.html">Google Ads</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../community-manager/index.html">Community Manager</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../tienda-online/index.html">Tiendas Online</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../email-marketing/index.html">Email Marketing</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<div>
+<h4>Servicios</h4>
+<ul>
+<li><a href="/agencia-seo/">Agencia SEO</a></li>
+<li><a href="/servicios/agencia-seo-local/">SEO Local</a></li>
+<li><a href="/diseno-web/">Diseño Web</a></li>
+<li><a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a></li>
+<li><a href="/tienda-online/">Tiendas Online</a></li>
+<li><a href="/agencia-google-ads/">Google Ads</a></li>
+<li><a href="/servicios/agencia-facebook-ads/">Facebook Ads</a></li>
+<li><a href="/community-manager/">Community Manager</a></li>
+<li><a href="/email-marketing/">Email Marketing</a></li>
+<li><a href="/servicios/branding/">Branding</a></li>
+</ul>
 </div>
-<div class="space-y-3">
-<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+<div>
+<h4>Ciudades</h4>
+<ul>
+<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
+<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
+</ul>
+<h4 style="margin-top:1.5rem">Recursos</h4>
+<ul>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/casos-de-exito/">Casos de Éxito</a></li>
+</ul>
 </div>
-<div class="space-y-3">
-<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
-<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
-</div>
-<div class="space-y-3">
-<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+<div>
+<h4>Sectores</h4>
+<ul>
+<li><a href="/marketing-para-restaurantes/">Restaurantes</a></li>
+<li><a href="/marketing-para-hoteles/">Hoteles</a></li>
+<li><a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a></li>
+<li><a href="/marketing-para-abogados/">Abogados</a></li>
+<li><a href="/marketing-para-inmobiliarias/">Inmobiliarias</a></li>
+<li><a href="/marketing-para-gimnasios/">Gimnasios</a></li>
+<li><a href="/marketing-para-ecommerce/">Ecommerce</a></li>
+<li><a href="/marketing-para-empresas-b2b/">B2B</a></li>
+</ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
-<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
-<div class="flex gap-4 text-on-primary-container/60 text-sm">
-<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
-<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
-<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
+<div class="ft-btm">
+<span>&copy; 2026 Comunikoo. Todos los derechos reservados.</span>
+<div>
+<a href="/politica-de-privacidad/">Privacidad</a> ·
+<a href="/aviso-legal/">Aviso Legal</a> ·
+<a href="/politica-de-cookies/">Cookies</a> ·
+<a href="/sitemap.xml">Sitemap</a>
 </div>
 </div>
 </footer>
-</body></html>
+
+<script defer src="/js/main.js"></script>
+</body>
+</html>
