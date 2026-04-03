@@ -451,6 +451,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://comunikoo.es/precios-diseno-web/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://comunikoo.es/servicios/agencia-ecommerce/</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -500,6 +506,12 @@
   </url>
   <url>
     <loc>https://comunikoo.es/servicios/agencia-seo-local/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/agencia-seo-para-pymes/</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -775,7 +787,73 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://comunikoo.es/servicios/seo-para-abogados/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-autonomos/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-clinicas-dentales/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-clinicas/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-dentistas/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://comunikoo.es/servicios/seo-para-ecommerce/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-empresas/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-hoteles/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-inmobiliarias/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-pymes/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-restaurantes/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://comunikoo.es/servicios/seo-para-startups/</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

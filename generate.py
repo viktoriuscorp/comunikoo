@@ -955,6 +955,45 @@ for pg in [
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Profesional especializado con experiencia verificable y resultados reales.", sections=[sec("que-es", "Qué es", f"¿Por qué contratar un {pg[4].lower()}?"), sec("servicios", "Servicios", f"Qué hago como {pg[4].lower()}"), sec("portfolio", "Portfolio", "Proyectos y resultados")], faqs=[("¿Cuánto cuesta?", "Solicita presupuesto personalizado sin compromiso."), ("¿Qué garantías tengo?", "Trabajamos con contrato, plazos claros y entregables definidos.")]))
 
+# --- OPORTUNIDAD 7: SEO PARA [SECTOR] (2560 vol combinado, intent comercial) ---
+for pg in [
+    ("/servicios/seo-para-abogados/", "SEO para Abogados | Posiciona Tu Despacho — Comunikoo", "SEO para abogados y despachos: posicionamiento en Google que genera consultas. Resultados medibles desde el primer mes.", "SEO para Abogados — Que Te Encuentren Quienes Necesitan un Abogado", "SEO Abogados"),
+    ("/servicios/seo-para-pymes/", "SEO para Pymes | Posicionamiento Asequible — Comunikoo", "SEO para pymes: posicionamiento en Google adaptado a presupuestos de pequeñas empresas. Sin permanencia. Resultados reales.", "SEO para Pymes — Posicionamiento en Google sin Arruinarte", "SEO Pymes"),
+    ("/servicios/seo-para-clinicas-dentales/", "SEO para Clínicas Dentales | Más Pacientes — Comunikoo", "SEO para clínicas dentales: posicionamiento local en Google, Google Maps y captación de pacientes online.", "SEO para Clínicas Dentales — Aparece Cuando Buscan Dentista", "SEO Clínicas Dentales"),
+    ("/servicios/seo-para-empresas/", "SEO para Empresas | Estrategia Corporativa — Comunikoo", "SEO para empresas: estrategia de posicionamiento corporativo en Google. Auditoría, contenido y linkbuilding.", "SEO para Empresas — Posicionamiento Corporativo en Google", "SEO Empresas"),
+    ("/servicios/seo-para-dentistas/", "SEO para Dentistas | Más Pacientes Online — Comunikoo", "SEO para dentistas: posicionamiento local, Google Maps y estrategia de contenido dental que atrae pacientes.", "SEO para Dentistas — Que Te Encuentren en Google", "SEO Dentistas"),
+    ("/servicios/seo-para-restaurantes/", "SEO para Restaurantes | SEO Local + Maps — Comunikoo", "SEO para restaurantes: posicionamiento local, Google Maps, reseñas y ficha de negocio optimizada.", "SEO para Restaurantes — Aparece Primero en Google Maps", "SEO Restaurantes"),
+    ("/servicios/seo-para-inmobiliarias/", "SEO para Inmobiliarias | Leads de Compradores — Comunikoo", "SEO para inmobiliarias: posicionamiento de propiedades, zonas y servicios inmobiliarios en Google.", "SEO para Inmobiliarias — Leads Orgánicos de Compradores y Vendedores", "SEO Inmobiliarias"),
+    ("/servicios/seo-para-startups/", "SEO para Startups | Crecimiento Orgánico — Comunikoo", "SEO para startups: estrategia de crecimiento orgánico escalable. Product-led SEO y contenido técnico.", "SEO para Startups — Crecimiento Orgánico Escalable", "SEO Startups"),
+    ("/servicios/seo-para-hoteles/", "SEO para Hoteles | Reservas Directas — Comunikoo", "SEO para hoteles: posicionamiento orgánico que genera reservas directas y reduce dependencia de OTAs.", "SEO para Hoteles — Más Reservas Directas desde Google", "SEO Hoteles"),
+    ("/servicios/seo-para-clinicas/", "SEO para Clínicas | Posicionamiento Médico — Comunikoo", "SEO para clínicas médicas y centros de salud: posicionamiento local, reputación online y captación de pacientes.", "SEO para Clínicas — Posicionamiento Médico en Google", "SEO Clínicas"),
+    ("/servicios/seo-para-autonomos/", "SEO para Autónomos | Visibilidad Online — Comunikoo", "SEO para autónomos: posicionamiento en Google asequible y efectivo. Compite con los grandes desde tu presupuesto.", "SEO para Autónomos — Compite en Google sin Ser una Gran Empresa", "SEO Autónomos"),
+    ("/servicios/agencia-seo-para-pymes/", "Agencia SEO para Pymes | Especialistas — Comunikoo", "Agencia SEO especializada en pymes: planes desde 400€/mes. Posicionamiento real, reporting mensual y sin permanencia.", "Agencia SEO para Pymes — Planes Adaptados a Tu Presupuesto", "Agencia SEO Pymes"),
+]:
+    ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio de SEO especializado por sector.", sections=[sec("que-es", "Qué es", f"¿Por qué necesitas SEO especializado en tu sector?"), sec("servicios", "Qué incluye", f"Qué incluye nuestro servicio de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito en tu sector")], faqs=[("¿Cuánto cuesta el SEO?", "Planes desde 400€/mes para pymes. El precio depende de la competencia en tu sector y tus objetivos. Presupuesto cerrado."), ("¿Cuándo veré resultados?", "Los primeros resultados aparecen entre 2-4 meses. El SEO es una inversión a medio plazo con retorno acumulativo."), ("¿Qué garantías ofrecéis?", "No garantizamos posiciones (nadie puede), pero sí reporting transparente, mejoras medibles y trabajo constante.")]))
+
+# --- OPORTUNIDAD 8: PRECIOS DISEÑO WEB (740 vol combinado) ---
+ALL_PAGES.append(svc(
+    "/precios-diseno-web/",
+    "Precios Diseño Web 2026 | Cuánto Cuesta una Web — Comunikoo",
+    "¿Cuánto cuesta un diseño web? Precios diseño web 2026: web corporativa desde 2.000€, tienda online desde 3.500€, web a medida desde 5.000€. Presupuesto sin compromiso.",
+    "Precios Diseño Web 2026 — Cuánto Cuesta una Página Web Profesional",
+    "Precios Diseño Web",
+    "Guía completa de precios de diseño web en España. Transparencia total: qué incluye cada plan y cuánto cuesta.",
+    sections=[
+        sec("precios", "Precios", "Nuestros planes y precios de diseño web"),
+        sec("que-incluye", "Qué incluye", "Qué está incluido en cada plan"),
+        sec("comparativa", "Comparativa", "Comparativa de precios del mercado"),
+        sec("proceso", "Proceso", "Cómo trabajamos"),
+    ],
+    faqs=[
+        ("¿Cuánto cuesta una página web profesional?", "Web corporativa: 2.000-5.000€. Tienda online: 3.500-12.000€. Web a medida: desde 5.000€. Siempre presupuesto cerrado."),
+        ("¿Por qué hay tanta diferencia de precios?", "Depende de la complejidad: número de páginas, funcionalidades, integraciones, diseño personalizado vs plantilla, etc."),
+        ("¿Hay costes mensuales?", "El hosting + mantenimiento básico parte de 30€/mes. El mantenimiento premium con soporte y actualizaciones desde 90€/mes."),
+        ("¿Cuánto cuesta una web WordPress?", "Una web WordPress profesional cuesta entre 1.500€ y 8.000€ dependiendo de la complejidad y funcionalidades."),
+    ],
+))
+
 # --- OPORTUNIDAD 2: DISEÑO WEB PARA [SECTOR] (1400 vol combinado, intent comercial) ---
 for pg in [
     ("/servicios/diseno-web-para-abogados/", "Diseño Web para Abogados | Webs que Captan Clientes — Comunikoo", "Diseño web para abogados y despachos: webs profesionales que transmiten confianza y captan clientes. Portfolio real.", "Diseño Web para Abogados — Webs que Transmiten Confianza y Captan Clientes", "Diseño Web Abogados"),
