@@ -3,6 +3,13 @@
 # URL encontrada en Google
 /agencia-marketing-restaurantes/ /marketing-para-restaurantes/ 301
 
+# URLs rotas detectadas en auditoría (abril 2026)
+/agencia-marketing-digital-barcelona-precios-2026/ /agencia-marketing-digital-barcelona/ 301
+/servicios/agencia-marketing-digital/ /servicios/estrategia-digital/ 301
+/servicios/disenador-web/ /diseno-web/ 301
+/servicios/google-ads/ /agencia-google-ads/ 301
+/servicios/seo-ecommerce/ /servicios/seo-para-ecommerce/ 301
+
 # Posts antiguos del blog WordPress
 /seo-local-conseguir-clientes/ /servicios/agencia-seo-local/ 301
 /seo-local-conseguir-clientes /servicios/agencia-seo-local/ 301
@@ -94,10 +101,8 @@
 /quienes-somos/ /nosotros/ 301
 /contact/ /contacto/ 301
 /contacta/ /contacto/ 301
-/presupuesto/ /contacto/ 301
 /portfolio/ /nosotros/ 301
 /trabajos/ /nosotros/ 301
-/casos-de-exito/ /nosotros/ 301
 /privacidad/ /politica-de-privacidad/ 301
 /cookies/ /politica-de-cookies/ 301
 /legal/ /aviso-legal/ 301

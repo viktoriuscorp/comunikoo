@@ -1016,6 +1016,22 @@ GEO_SERVICES_BCN = [
     ("desarrollo-web", "Desarrollo Web", "Desarrollo Web Barcelona"),
 ]
 
+# Mapping for slugs whose national page is NOT at /servicios/{slug}/
+GEO_NATIONAL_URL_OVERRIDES = {
+    "agencia-marketing-digital": "/servicios/estrategia-digital/",
+    "agencia-seo": "/agencia-seo/",
+    "diseno-web": "/diseno-web/",
+    "disenador-web": "/diseno-web/",
+    "community-manager": "/community-manager/",
+    "google-ads": "/agencia-google-ads/",
+    "tienda-online": "/tienda-online/",
+    "seo-ecommerce": "/servicios/seo-para-ecommerce/",
+}
+
+def _national_url(slug):
+    """Return the correct national URL for a geo service slug."""
+    return GEO_NATIONAL_URL_OVERRIDES.get(slug, f"/servicios/{slug}/")
+
 for slug, svc_name, full_name in GEO_SERVICES_BCN:
     url = f"/{slug}-barcelona/"
     ALL_PAGES.append(geo(
@@ -1025,7 +1041,7 @@ for slug, svc_name, full_name in GEO_SERVICES_BCN:
         f"{full_name} — Expertos Locales en la Ciudad Condal",
         full_name, f"Servicio de {svc_name.lower()} en Barcelona con equipo local y conocimiento del mercado barcelonés.",
         "Barcelona", svc_name, BCN_ZONES,
-        [{"url": f"/servicios/{slug.replace('-barcelona','')}/", "label": f"{svc_name} (nacional)"}],
+        [{"url": _national_url(slug), "label": f"{svc_name} (nacional)"}],
         faqs=[
             (f"¿Cuánto cuesta {svc_name.lower()} en Barcelona?", "Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos."),
             ("¿Tenéis oficina en Barcelona?", "Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."),
@@ -1045,7 +1061,7 @@ for slug, svc_name, full_name_bcn in GEO_SERVICES_BCN:
         f"{full_name} — Presencia Activa en la Capital",
         full_name, f"Servicio de {svc_name.lower()} en Madrid con conocimiento del mercado madrileño.",
         "Madrid", svc_name, MAD_ZONES,
-        [{"url": f"/servicios/{slug.replace('-madrid','')}/", "label": f"{svc_name} (nacional)"}],
+        [{"url": _national_url(slug), "label": f"{svc_name} (nacional)"}],
         faqs=[
             (f"¿Cuánto cuesta {svc_name.lower()} en Madrid?", "Solicita presupuesto personalizado sin compromiso."),
             ("¿Tenéis equipo en Madrid?", "Sí, contamos con presencia activa en Madrid y atendemos clientes en toda la Comunidad de Madrid."),
