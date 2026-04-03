@@ -952,6 +952,7 @@ for pg in [
     ("/gestor-google-ads/", "Gestor Google Ads | Gestión Diaria — Comunikoo", "Gestor de Google Ads dedicado. Optimización diaria de campañas y reporting.", "Gestor Google Ads — Gestión Operativa de Tus Campañas", "Gestor Google Ads"),
     ("/experto-sem/", "Experto SEM | Publicidad en Buscadores — Comunikoo", "Experto SEM: publicidad en Google, Bing y buscadores. Estrategia multimotor.", "Experto SEM — Publicidad en Buscadores que Maximiza Tu Inversión", "Experto SEM"),
     ("/freelance-sem/", "Freelance SEM | Gestión PPC — Comunikoo", "Freelance SEM profesional: gestión de campañas en Google Ads y Bing Ads. Trato directo.", "Freelance SEM — Campañas con Trato Directo", "Freelance SEM"),
+    ("/community-manager-freelance/", "Community Manager Freelance | Gestión Redes — Comunikoo", "Community manager freelance profesional: gestión de redes sociales con trato directo. Instagram, TikTok, LinkedIn. Desde 350€/mes.", "Community Manager Freelance — Gestión Profesional con Trato Directo", "Community Manager Freelance"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Profesional especializado con experiencia verificable y resultados reales.", sections=[sec("que-es", "Qué es", f"¿Por qué contratar un {pg[4].lower()}?"), sec("servicios", "Servicios", f"Qué hago como {pg[4].lower()}"), sec("portfolio", "Portfolio", "Proyectos y resultados")], faqs=[("¿Cuánto cuesta?", "Solicita presupuesto personalizado sin compromiso."), ("¿Qué garantías tengo?", "Trabajamos con contrato, plazos claros y entregables definidos.")]))
 
@@ -1047,7 +1048,7 @@ VERTICALS = [
     ("/marketing-para-gimnasios/", "Marketing para Gimnasios | Más Socios — Comunikoo", "Marketing digital para gimnasios: SEO local, campañas y retención. Más socios todo el año.", "Marketing para Gimnasios — Más Socios Todo el Año", "Marketing Gimnasios", "gimnasios", "Más socios todo el año, no solo en enero."),
     ("/marketing-para-academias/", "Marketing para Academias | Captación Alumnos — Comunikoo", "Marketing digital para academias: SEO, Google Ads y web con matrícula online.", "Marketing para Academias — Captación de Alumnos Online", "Marketing Academias", "academias", "La captación de alumnos se ha digitalizado."),
     ("/marketing-para-ecommerce/", "Marketing para Ecommerce | Estrategia 360 — Comunikoo", "Marketing digital para ecommerce: SEO + Ads + email + CRO. Escala tu tienda online.", "Marketing para Ecommerce — Estrategia 360 para Escalar", "Marketing Ecommerce", "ecommerce", "Solo el 3% de tiendas online son rentables."),
-    ("/marketing-para-empresas-b2b/", "Marketing B2B | Leads Cualificados — Comunikoo", "Marketing digital para empresas B2B: LinkedIn, SEO, contenido y generación de leads.", "Marketing B2B — Generación de Leads Cualificados", "Marketing B2B", "empresas B2B", "El contenido de valor es el rey en B2B."),
+    ("/marketing-para-empresas-b2b/", "Marketing B2B | Estrategia y Leads Cualificados — Comunikoo", "Marketing B2B: estrategia digital para empresas B2B. LinkedIn, SEO, contenido y generación de leads cualificados.", "Marketing B2B — Estrategia Digital y Generación de Leads", "Marketing B2B", "empresas B2B", "El contenido de valor es el rey en B2B."),
     # --- OPORTUNIDAD 1: PYMES (KD 4, 1600 vol combinado) ---
     ("/marketing-para-pymes/", "Marketing Digital para Pymes | Resultados Reales — Comunikoo", "Marketing digital para pymes: SEO, Google Ads, web y redes sociales. Estrategias adaptadas a presupuestos de pequeñas empresas. Sin permanencia.", "Marketing Digital para Pymes — Estrategias que Caben en Tu Presupuesto", "Marketing Pymes", "pymes y pequeñas empresas", "El 70% de pymes que invierten en marketing digital crecen un 30%."),
     # --- OPORTUNIDAD 6: NUEVOS SECTORES ---
@@ -1058,7 +1059,7 @@ VERTICALS = [
     ("/marketing-para-coaches/", "Marketing para Coaches | Más Clientes — Comunikoo", "Marketing digital para coaches y terapeutas: web profesional, SEO, contenido y embudos de captación.", "Marketing para Coaches — Atrae Clientes que Valoran Tu Trabajo", "Marketing Coaches", "coaches y profesionales del desarrollo personal", "El coaching en España crece un 20% anual."),
     ("/marketing-para-arquitectos/", "Marketing para Arquitectos | Más Proyectos — Comunikoo", "Marketing digital para estudios de arquitectura: portfolio web, SEO y captación de proyectos.", "Marketing para Arquitectos — Proyectos que Llegan Solos", "Marketing Arquitectos", "arquitectos y estudios de arquitectura", "El 85% de clientes busca arquitecto en Google."),
     ("/marketing-para-agencias-de-viajes/", "Marketing para Agencias de Viajes | Más Reservas — Comunikoo", "Marketing digital para agencias de viajes: SEO, Google Ads, redes sociales y campañas estacionales.", "Marketing para Agencias de Viajes — Más Reservas Online", "Marketing Viajes", "agencias de viajes", "El turismo se ha recuperado y la competencia online es feroz."),
-    ("/marketing-para-centros-de-formacion/", "Marketing para Centros de Formación | Más Matrículas — Comunikoo", "Marketing digital para centros de formación y academias: SEO, Google Ads y captación de alumnos.", "Marketing para Centros de Formación — Más Matrículas Online", "Marketing Formación", "centros de formación", "La formación online compite con la presencial: destaca."),
+    ("/marketing-para-centros-de-formacion/", "Marketing Educativo | Centros de Formación — Comunikoo", "Marketing educativo para centros de formación, academias y escuelas: SEO, Google Ads y captación de alumnos online.", "Marketing Educativo — Más Matrículas para Tu Centro de Formación", "Marketing Educativo", "centros de formación y academias", "La formación online compite con la presencial: destaca."),
 ]
 
 for v in VERTICALS:
@@ -1162,7 +1163,7 @@ GEO_SERVICES_VLC = [
     ("agencia-marketing-digital", "Agencia Marketing Digital", "Agencia Marketing Digital Valencia"),
     ("agencia-seo", "Agencia SEO", "Agencia SEO Valencia"),
     ("diseno-web", "Diseño Web", "Diseño Web Valencia"),
-    ("google-ads", "Google Ads", "Google Ads Valencia"),
+    ("google-ads", "Google Ads", "Agencia Google Ads Valencia"),
     ("community-manager", "Community Manager", "Community Manager Valencia"),
     ("tienda-online", "Tienda Online", "Tienda Online Valencia"),
 ]
@@ -1188,7 +1189,7 @@ GEO_SERVICES_SVQ = [
     ("agencia-marketing-digital", "Agencia Marketing Digital", "Agencia Marketing Digital Sevilla"),
     ("agencia-seo", "Agencia SEO", "Agencia SEO Sevilla"),
     ("diseno-web", "Diseño Web", "Diseño Web Sevilla"),
-    ("google-ads", "Google Ads", "Google Ads Sevilla"),
+    ("google-ads", "Google Ads", "Agencia Google Ads Sevilla"),
 ]
 
 for slug, svc_name, full_name in GEO_SERVICES_SVQ:
