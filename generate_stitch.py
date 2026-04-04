@@ -296,11 +296,11 @@ def nav_html(current_url="/"):
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-seo/')}">Agencia SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-seo-local/')}">SEO Local</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/consultoria-seo/')}">Consultoría SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/auditoria-seo/')}">Auditoría SEO</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/posicionamiento-web/')}">Posicionamiento Web</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/linkbuilding/')}">Linkbuilding</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-seo-local/')}">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/consultoria-seo/')}">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/auditoria-seo/')}">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/posicionamiento-web/')}">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/linkbuilding/')}">Linkbuilding</a>
 </div>
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
@@ -308,17 +308,17 @@ def nav_html(current_url="/"):
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/diseno-web-wordpress/')}">WordPress</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/tienda-online/')}">Tiendas Online</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/landing-pages/')}">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/landing-pages/')}">Landing Pages</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/mantenimiento-web/')}">Mantenimiento Web</a>
 </div>
 <div>
 <h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-google-ads/')}">Google Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/agencia-meta-ads/')}">Meta Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/instagram-ads/')}">Instagram Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/youtube-ads/')}">YouTube Ads</a>
-<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/publicidad-en-google/')}">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-facebook-ads/')}">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/agencia-meta-ads/')}">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/instagram-ads/')}">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/youtube-ads/')}">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/publicidad-en-google/')}">Publicidad Google</a>
 <a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="{r('/servicios/google-shopping/')}">Google Shopping</a>
 </div>
 <div>
@@ -393,9 +393,9 @@ def nav_html(current_url="/"):
 <div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-seo/')}">Agencia SEO</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-seo-local/')}">SEO Local</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/consultoria-seo/')}">Consultoría SEO</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/posicionamiento-web/')}">Posicionamiento Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-seo-local/')}">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/consultoria-seo/')}">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/posicionamiento-web/')}">Posicionamiento Web</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/diseno-web/')}">Diseño Web</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/diseno-web-wordpress/')}">WordPress</a>
@@ -403,9 +403,9 @@ def nav_html(current_url="/"):
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-google-ads/')}">Google Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/agencia-meta-ads/')}">Meta Ads</a>
-<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/servicios/instagram-ads/')}">Instagram Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-facebook-ads/')}">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/agencia-meta-ads/')}">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/instagram-ads/')}">Instagram Ads</a>
 <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/community-manager/')}">Community Manager</a>
 <a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="{r('/email-marketing/')}">Email Marketing</a>
@@ -454,9 +454,9 @@ def footer_html(current_url="/"):
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/tienda-online/')}">Tiendas Online</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/email-marketing/')}">Email Marketing</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/branding/')}">Branding</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/agencia-facebook-ads/')}">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-facebook-ads/')}">Facebook Ads</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/desarrollo-web/')}">Desarrollo Web</a>
-<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/servicios/landing-pages/')}">Landing Pages</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/landing-pages/')}">Landing Pages</a>
 </div>
 <div class="space-y-3">
 <h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
@@ -1091,35 +1091,35 @@ import re as _re
 LINK_MAP = [
     ("agencia SEO", "/agencia-seo/"), ("agencia de SEO", "/agencia-seo/"), ("posicionamiento SEO", "/agencia-seo/"), ("estrategia SEO", "/agencia-seo/"),
     ("diseño web", "/diseno-web/"), ("diseño de páginas web", "/diseno-web/"), ("desarrollo web", "/servicios/desarrollo-web/"),
-    ("Google Ads", "/agencia-google-ads/"), ("campañas de Google", "/agencia-google-ads/"), ("publicidad en Google", "/servicios/publicidad-en-google/"),
+    ("Google Ads", "/agencia-google-ads/"), ("campañas de Google", "/agencia-google-ads/"), ("publicidad en Google", "/publicidad-en-google/"),
     ("community manager", "/community-manager/"), ("gestión de redes sociales", "/servicios/gestion-redes-sociales/"), ("redes sociales", "/servicios/gestion-redes-sociales/"),
     ("tienda online", "/tienda-online/"), ("tiendas online", "/tienda-online/"), ("ecommerce", "/servicios/agencia-ecommerce/"),
     ("email marketing", "/email-marketing/"), ("marketing por email", "/email-marketing/"),
     ("SEO on page", "/agencia-seo/seo-on-page/"), ("SEO on-page", "/agencia-seo/seo-on-page/"),
     ("SEO off page", "/agencia-seo/seo-off-page/"), ("SEO off-page", "/agencia-seo/seo-off-page/"),
-    ("link building", "/servicios/linkbuilding/"), ("linkbuilding", "/servicios/linkbuilding/"), ("backlinks", "/servicios/linkbuilding/"),
+    ("link building", "/linkbuilding/"), ("linkbuilding", "/linkbuilding/"), ("backlinks", "/linkbuilding/"),
     ("SEO técnico", "/agencia-seo/seo-tecnico/"), ("keyword research", "/agencia-seo/keyword-research/"), ("palabras clave", "/agencia-seo/keyword-research/"),
     ("contenidos SEO", "/agencia-seo/contenidos-seo/"), ("migración SEO", "/agencia-seo/migracion-seo/"),
-    ("auditoría SEO", "/servicios/auditoria-seo/"), ("consultoría SEO", "/servicios/consultoria-seo/"),
-    ("SEO local", "/servicios/agencia-seo-local/"), ("posicionamiento web", "/servicios/posicionamiento-web/"), ("posicionamiento en Google", "/servicios/posicionamiento-web/"),
+    ("auditoría SEO", "/auditoria-seo/"), ("consultoría SEO", "/consultoria-seo/"),
+    ("SEO local", "/agencia-seo-local/"), ("posicionamiento web", "/posicionamiento-web/"), ("posicionamiento en Google", "/posicionamiento-web/"),
     ("campañas de búsqueda", "/agencia-google-ads/campanas-search/"), ("campañas de display", "/agencia-google-ads/campanas-display/"),
     ("Google Shopping", "/servicios/google-shopping/"), ("Performance Max", "/agencia-google-ads/campanas-performance-max/"),
     ("remarketing", "/agencia-google-ads/remarketing/"), ("retargeting", "/agencia-google-ads/remarketing/"),
-    ("Facebook Ads", "/servicios/agencia-facebook-ads/"), ("Meta Ads", "/servicios/agencia-meta-ads/"),
-    ("Instagram Ads", "/servicios/instagram-ads/"), ("YouTube Ads", "/servicios/youtube-ads/"), ("publicidad en redes", "/servicios/publicidad-redes-sociales/"),
-    ("WordPress", "/servicios/diseno-web-wordpress/"), ("landing page", "/servicios/landing-pages/"), ("landing pages", "/servicios/landing-pages/"),
+    ("Facebook Ads", "/agencia-facebook-ads/"), ("Meta Ads", "/agencia-meta-ads/"),
+    ("Instagram Ads", "/instagram-ads/"), ("YouTube Ads", "/youtube-ads/"), ("publicidad en redes", "/publicidad-redes-sociales/"),
+    ("WordPress", "/servicios/diseno-web-wordpress/"), ("landing page", "/landing-pages/"), ("landing pages", "/landing-pages/"),
     ("mantenimiento web", "/servicios/mantenimiento-web/"), ("diseño web corporativo", "/diseno-web/diseno-web-corporativo/"),
     ("diseño responsive", "/diseno-web/diseno-web-responsive/"), ("diseño UX", "/diseno-web/diseno-ux-ui/"),
     ("experiencia de usuario", "/diseno-web/diseno-ux-ui/"), ("rediseño web", "/diseno-web/rediseno-web/"),
     ("Instagram", "/community-manager/gestion-instagram/"), ("LinkedIn", "/community-manager/gestion-linkedin/"), ("TikTok", "/community-manager/gestion-tiktok/"),
     ("creación de contenido", "/community-manager/creacion-contenido-redes/"), ("estrategia de redes", "/community-manager/estrategia-redes-sociales/"),
-    ("marketing de contenidos", "/servicios/marketing-de-contenidos/"), ("inbound marketing", "/servicios/inbound-marketing/"), ("branding", "/servicios/branding/"),
+    ("marketing de contenidos", "/servicios/marketing-de-contenidos/"), ("inbound marketing", "/inbound-marketing/"), ("branding", "/servicios/branding/"),
     ("Shopify", "/servicios/agencia-shopify/"), ("WooCommerce", "/servicios/agencia-woocommerce/"), ("PrestaShop", "/servicios/agencia-prestashop/"),
-    ("ficha de producto", "/servicios/agencia-ecommerce/optimizacion-ficha-producto/"), ("SEO para ecommerce", "/servicios/seo-para-ecommerce/"),
+    ("ficha de producto", "/servicios/agencia-ecommerce/optimizacion-ficha-producto/"), ("SEO para ecommerce", "/seo-para-ecommerce/"),
     ("CRO", "/servicios/optimizacion-cro/"), ("optimización de conversión", "/servicios/optimizacion-cro/"),
     ("automatización de email", "/email-marketing/automatizacion-email/"), ("newsletter", "/email-marketing/newsletter-empresas/"), ("Mailchimp", "/email-marketing/email-marketing-mailchimp/"),
     ("analítica web", "/servicios/analitica-web/"), ("estrategia digital", "/servicios/estrategia-digital/"),
-    ("Google Business Profile", "/servicios/agencia-seo-local/"), ("Google Maps", "/servicios/agencia-seo-local/"),
+    ("Google Business Profile", "/agencia-seo-local/"), ("Google Maps", "/agencia-seo-local/"),
     ("marketing para restaurantes", "/marketing-para-restaurantes/"), ("marketing para hoteles", "/marketing-para-hoteles/"),
     ("marketing para clínicas dentales", "/marketing-para-clinicas-dentales/"), ("marketing para abogados", "/marketing-para-abogados/"),
     ("marketing para inmobiliarias", "/marketing-para-inmobiliarias/"), ("marketing para ecommerce", "/marketing-para-ecommerce/"),
@@ -1473,12 +1473,12 @@ def build_service_page(page):
     SERVICE_CLUSTERS = {
         'seo': [
             ("Agencia SEO", "/agencia-seo/"),
-            ("SEO Local", "/servicios/agencia-seo-local/"),
-            ("Auditoría SEO", "/servicios/auditoria-seo/"),
-            ("Consultoría SEO", "/servicios/consultoria-seo/"),
-            ("Posicionamiento Web", "/servicios/posicionamiento-web/"),
-            ("Linkbuilding", "/servicios/linkbuilding/"),
-            ("SEO Ecommerce", "/servicios/seo-para-ecommerce/"),
+            ("SEO Local", "/agencia-seo-local/"),
+            ("Auditoría SEO", "/auditoria-seo/"),
+            ("Consultoría SEO", "/consultoria-seo/"),
+            ("Posicionamiento Web", "/posicionamiento-web/"),
+            ("Linkbuilding", "/linkbuilding/"),
+            ("SEO Ecommerce", "/seo-para-ecommerce/"),
             ("Marketing Contenidos", "/servicios/marketing-de-contenidos/"),
             ("Analítica Web", "/servicios/analitica-web/"),
         ],
@@ -1486,7 +1486,7 @@ def build_service_page(page):
             ("Diseño Web", "/diseno-web/"),
             ("WordPress", "/servicios/diseno-web-wordpress/"),
             ("Desarrollo Web", "/servicios/desarrollo-web/"),
-            ("Landing Pages", "/servicios/landing-pages/"),
+            ("Landing Pages", "/landing-pages/"),
             ("Mantenimiento Web", "/servicios/mantenimiento-web/"),
             ("Diseño a Medida", "/servicios/diseno-web-a-medida/"),
             ("Web para Empresas", "/servicios/diseno-web-para-empresas/"),
@@ -1494,21 +1494,21 @@ def build_service_page(page):
         ],
         'ads': [
             ("Google Ads", "/agencia-google-ads/"),
-            ("Facebook Ads", "/servicios/agencia-facebook-ads/"),
-            ("Meta Ads", "/servicios/agencia-meta-ads/"),
-            ("Instagram Ads", "/servicios/instagram-ads/"),
-            ("YouTube Ads", "/servicios/youtube-ads/"),
-            ("Publicidad Google", "/servicios/publicidad-en-google/"),
+            ("Facebook Ads", "/agencia-facebook-ads/"),
+            ("Meta Ads", "/agencia-meta-ads/"),
+            ("Instagram Ads", "/instagram-ads/"),
+            ("YouTube Ads", "/youtube-ads/"),
+            ("Publicidad Google", "/publicidad-en-google/"),
             ("Google Shopping", "/servicios/google-shopping/"),
-            ("Landing Pages", "/servicios/landing-pages/"),
+            ("Landing Pages", "/landing-pages/"),
         ],
         'social': [
             ("Community Manager", "/community-manager/"),
             ("Gestión Redes", "/servicios/gestion-redes-sociales/"),
             ("Social Media", "/servicios/social-media-marketing/"),
-            ("Publicidad Redes", "/servicios/publicidad-redes-sociales/"),
+            ("Publicidad Redes", "/publicidad-redes-sociales/"),
             ("Marketing Contenidos", "/servicios/marketing-de-contenidos/"),
-            ("Inbound Marketing", "/servicios/inbound-marketing/"),
+            ("Inbound Marketing", "/inbound-marketing/"),
             ("Email Marketing", "/email-marketing/"),
             ("Branding", "/servicios/branding/"),
         ],
@@ -1518,7 +1518,7 @@ def build_service_page(page):
             ("Shopify", "/servicios/agencia-shopify/"),
             ("WooCommerce", "/servicios/agencia-woocommerce/"),
             ("PrestaShop", "/servicios/agencia-prestashop/"),
-            ("SEO Ecommerce", "/servicios/seo-para-ecommerce/"),
+            ("SEO Ecommerce", "/seo-para-ecommerce/"),
             ("Google Shopping", "/servicios/google-shopping/"),
             ("Email Ecommerce", "/servicios/email-marketing-ecommerce/"),
         ],
@@ -1805,7 +1805,7 @@ def build_service_page(page):
 
 {faq_section}
 
-''' + (roi_calculator_html(current_url, cluster_key, p.get('h1_short', '')) if current_url in ['/agencia-seo/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + (web_audit_html(current_url) if current_url in ['/diseno-web/', '/servicios/diseno-web-wordpress/', '/servicios/desarrollo-web/', '/servicios/mantenimiento-web/', '/servicios/mantenimiento-wordpress/', '/servicios/landing-pages/', '/servicios/diseno-web-a-medida/', '/servicios/diseno-web-para-empresas/', '/servicios/agencia-wordpress/', '/servicios/programador-wordpress/'] else '') + f'''
+''' + (roi_calculator_html(current_url, cluster_key, p.get('h1_short', '')) if current_url in ['/agencia-seo/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + (web_audit_html(current_url) if current_url in ['/diseno-web/', '/servicios/diseno-web-wordpress/', '/servicios/desarrollo-web/', '/servicios/mantenimiento-web/', '/servicios/mantenimiento-wordpress/', '/landing-pages/', '/servicios/diseno-web-a-medida/', '/servicios/diseno-web-para-empresas/', '/servicios/agencia-wordpress/', '/servicios/programador-wordpress/'] else '') + f'''
 
 {subpages_section}
 
@@ -2062,7 +2062,7 @@ def build_vertical_page(page):
 <p class="text-on-surface-variant text-center max-w-2xl mx-auto mb-10">Combinamos diferentes canales de marketing digital para maximizar los resultados en tu sector.</p>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 <a href="{r('/agencia-seo/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO y Posicionamiento</h3><p style="font-size:.7rem">Posiciona tu negocio en Google</p></a>
-<a href="{r('/servicios/agencia-seo-local/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO Local</h3><p style="font-size:.7rem">Google Maps y pack local</p></a>
+<a href="{r('/agencia-seo-local/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">SEO Local</h3><p style="font-size:.7rem">Google Maps y pack local</p></a>
 <a href="{r('/diseno-web/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Diseño Web</h3><p style="font-size:.7rem">Web profesional que convierte</p></a>
 <a href="{r('/agencia-google-ads/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Google Ads</h3><p style="font-size:.7rem">Clientes desde el primer día</p></a>
 <a href="{r('/community-manager/')}" class="svc-card" style="padding:1.25rem;text-decoration:none"><h3 style="font-size:.8rem">Redes Sociales</h3><p style="font-size:.7rem">Contenido que conecta</p></a>
@@ -2429,19 +2429,19 @@ def build_home():
 
     seo_services = [
         ("Agencia SEO", "Posicionamiento web orgánico en Google", "/agencia-seo/"),
-        ("SEO Local", "Google Maps y pack local para negocios", "/servicios/agencia-seo-local/"),
-        ("Consultoría SEO", "Asesoramiento estratégico SEO experto", "/servicios/consultoria-seo/"),
-        ("Auditoría SEO", "Diagnóstico completo de tu web", "/servicios/auditoria-seo/"),
-        ("Posicionamiento Web", "Primeras posiciones en buscadores", "/servicios/posicionamiento-web/"),
-        ("Linkbuilding", "Backlinks de calidad para autoridad", "/servicios/linkbuilding/"),
-        ("SEO para Ecommerce", "SEO especializado en tiendas online", "/servicios/seo-para-ecommerce/"),
+        ("SEO Local", "Google Maps y pack local para negocios", "/agencia-seo-local/"),
+        ("Consultoría SEO", "Asesoramiento estratégico SEO experto", "/consultoria-seo/"),
+        ("Auditoría SEO", "Diagnóstico completo de tu web", "/auditoria-seo/"),
+        ("Posicionamiento Web", "Primeras posiciones en buscadores", "/posicionamiento-web/"),
+        ("Linkbuilding", "Backlinks de calidad para autoridad", "/linkbuilding/"),
+        ("SEO para Ecommerce", "SEO especializado en tiendas online", "/seo-para-ecommerce/"),
     ]
 
     web_services = [
         ("Diseño Web", "Webs profesionales que convierten", "/diseno-web/"),
         ("WordPress", "Diseño web en WordPress a medida", "/servicios/diseno-web-wordpress/"),
         ("Desarrollo Web", "Programación a medida y APIs", "/servicios/desarrollo-web/"),
-        ("Landing Pages", "Páginas de alta conversión", "/servicios/landing-pages/"),
+        ("Landing Pages", "Páginas de alta conversión", "/landing-pages/"),
         ("Mantenimiento Web", "Soporte técnico y seguridad", "/servicios/mantenimiento-web/"),
         ("Diseño Web a Medida", "Sin plantillas, diseño único", "/servicios/diseno-web-a-medida/"),
         ("Diseño Web Empresas", "Webs corporativas profesionales", "/servicios/diseno-web-para-empresas/"),
@@ -2451,13 +2451,13 @@ def build_home():
 
     ads_services = [
         ("Google Ads", "Campañas rentables en Google", "/agencia-google-ads/"),
-        ("Facebook Ads", "Publicidad en Facebook", "/servicios/agencia-facebook-ads/"),
-        ("Meta Ads", "Ecosistema Meta completo", "/servicios/agencia-meta-ads/"),
-        ("Instagram Ads", "Publicidad visual en Instagram", "/servicios/instagram-ads/"),
-        ("YouTube Ads", "Publicidad en video", "/servicios/youtube-ads/"),
-        ("Publicidad en Google", "Anúnciate en Google", "/servicios/publicidad-en-google/"),
+        ("Facebook Ads", "Publicidad en Facebook", "/agencia-facebook-ads/"),
+        ("Meta Ads", "Ecosistema Meta completo", "/agencia-meta-ads/"),
+        ("Instagram Ads", "Publicidad visual en Instagram", "/instagram-ads/"),
+        ("YouTube Ads", "Publicidad en video", "/youtube-ads/"),
+        ("Publicidad en Google", "Anúnciate en Google", "/publicidad-en-google/"),
         ("Google Shopping", "Tus productos en Google", "/servicios/google-shopping/"),
-        ("Social Ads", "Publicidad en redes sociales", "/servicios/publicidad-redes-sociales/"),
+        ("Social Ads", "Publicidad en redes sociales", "/publicidad-redes-sociales/"),
         ("Publicidad Ecommerce", "Campañas para tiendas online", "/servicios/publicidad-tiendas-online/"),
     ]
 
@@ -2478,7 +2478,7 @@ def build_home():
         ("Email Marketing", "Campañas con el mayor ROI", "/email-marketing/"),
         ("Marketing de Contenidos", "Contenido que posiciona", "/servicios/marketing-de-contenidos/"),
         ("Social Media Marketing", "Redes con ROI", "/servicios/social-media-marketing/"),
-        ("Inbound Marketing", "Atrae clientes con valor", "/servicios/inbound-marketing/"),
+        ("Inbound Marketing", "Atrae clientes con valor", "/inbound-marketing/"),
     ]
 
     branding_services = [
@@ -2857,7 +2857,7 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p>Una <strong>agencia de marketing digital</strong> es una empresa especializada en ayudar a negocios a crecer a través de canales online. A diferencia de las agencias de publicidad tradicional, una agencia de marketing digital trabaja exclusivamente en el entorno digital: buscadores como Google, redes sociales, email, páginas web y plataformas de publicidad online.</p>
 <p>Los principales servicios que ofrece una <strong>agencia de marketing digital en Barcelona</strong> como Comunikoo incluyen el <a href="{r('/agencia-seo/')}">posicionamiento SEO</a> para aparecer en los primeros resultados de Google de forma orgánica, el <a href="{r('/diseno-web/')}">diseño web profesional</a> orientado a conversión, las <a href="{r('/agencia-google-ads/')}">campañas de Google Ads</a> para generar clientes de forma inmediata, la <a href="{r('/community-manager/')}">gestión de redes sociales</a> para construir comunidad y marca, y el <a href="{r('/email-marketing/')}">email marketing</a> para fidelizar y recuperar clientes.</p>
 <p>El valor de contratar una agencia de marketing digital frente a hacerlo internamente radica en la especialización, la experiencia acumulada en múltiples proyectos y sectores, y el acceso a herramientas profesionales que de otra forma tendrían un coste prohibitivo. Una buena agencia de marketing digital no solo ejecuta acciones, sino que diseña una <a href="{r('/servicios/estrategia-digital/')}">estrategia digital</a> integral que alinea todos los canales hacia los objetivos de negocio del cliente.</p>
-<p>En el contexto actual, donde más del 90 por ciento de los procesos de compra empiezan con una búsqueda en Google, contar con una agencia de marketing digital competente no es un lujo: es una necesidad para cualquier empresa que quiera competir. Desde pymes locales que necesitan <a href="{r('/servicios/agencia-seo-local/')}">SEO local</a> hasta <a href="{r('/marketing-para-ecommerce/')}">tiendas online</a> que buscan escalar sus ventas, el marketing digital es el motor de crecimiento más potente y medible que existe.</p>
+<p>En el contexto actual, donde más del 90 por ciento de los procesos de compra empiezan con una búsqueda en Google, contar con una agencia de marketing digital competente no es un lujo: es una necesidad para cualquier empresa que quiera competir. Desde pymes locales que necesitan <a href="{r('/agencia-seo-local/')}">SEO local</a> hasta <a href="{r('/marketing-para-ecommerce/')}">tiendas online</a> que buscan escalar sus ventas, el marketing digital es el motor de crecimiento más potente y medible que existe.</p>
 <p>Comunikoo es una agencia de marketing digital en Barcelona con más de 487 proyectos completados, un 98 por ciento de satisfacción y un enfoque radical en resultados medibles. Trabajamos sin permanencia, con dashboard en tiempo real y un equipo senior que conoce tu sector. Si buscas una <strong>agencia de marketing digital</strong> que hable el idioma de tu negocio y no solo de métricas, <a href="{r('/contacto/')}">contacta con nosotros</a>.</p>
 </div>
 </div>
@@ -3223,21 +3223,21 @@ def build_services_index():
 
     services_list = [
         ("Agencia SEO", "Posicionamiento web orgánico", "/agencia-seo/"),
-        ("SEO Local", "Google Maps y pack local", "/servicios/agencia-seo-local/"),
-        ("Consultoría SEO", "Asesoramiento estratégico", "/servicios/consultoria-seo/"),
-        ("Auditoría SEO", "Diagnóstico completo", "/servicios/auditoria-seo/"),
-        ("Posicionamiento Web", "Primeras posiciones", "/servicios/posicionamiento-web/"),
-        ("Linkbuilding", "Backlinks de calidad", "/servicios/linkbuilding/"),
+        ("SEO Local", "Google Maps y pack local", "/agencia-seo-local/"),
+        ("Consultoría SEO", "Asesoramiento estratégico", "/consultoria-seo/"),
+        ("Auditoría SEO", "Diagnóstico completo", "/auditoria-seo/"),
+        ("Posicionamiento Web", "Primeras posiciones", "/posicionamiento-web/"),
+        ("Linkbuilding", "Backlinks de calidad", "/linkbuilding/"),
         ("Diseño Web", "Webs profesionales", "/diseno-web/"),
         ("Diseño WordPress", "WordPress a medida", "/servicios/diseno-web-wordpress/"),
         ("Tiendas Online", "Ecommerce que vende", "/tienda-online/"),
         ("Desarrollo Web", "Programación a medida", "/servicios/desarrollo-web/"),
-        ("Landing Pages", "Páginas de conversión", "/servicios/landing-pages/"),
+        ("Landing Pages", "Páginas de conversión", "/landing-pages/"),
         ("Mantenimiento Web", "Soporte técnico", "/servicios/mantenimiento-web/"),
         ("Google Ads", "Campañas rentables", "/agencia-google-ads/"),
-        ("Facebook Ads", "Publicidad en Facebook", "/servicios/agencia-facebook-ads/"),
-        ("Meta Ads", "Ecosistema Meta completo", "/servicios/agencia-meta-ads/"),
-        ("Instagram Ads", "Publicidad visual", "/servicios/instagram-ads/"),
+        ("Facebook Ads", "Publicidad en Facebook", "/agencia-facebook-ads/"),
+        ("Meta Ads", "Ecosistema Meta completo", "/agencia-meta-ads/"),
+        ("Instagram Ads", "Publicidad visual", "/instagram-ads/"),
         ("Community Manager", "Gestión de redes", "/community-manager/"),
         ("Email Marketing", "El canal con más ROI", "/email-marketing/"),
         ("Branding", "Identidad de marca", "/servicios/branding/"),
