@@ -476,14 +476,22 @@ def footer_html(current_url="/"):
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-academias/')}">Academias</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-empresas-de-reformas/')}">Reformas</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-talleres-de-coches/')}">Talleres</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-pymes/')}">Pymes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-farmacias/')}">Farmacias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-fisioterapeutas/')}">Fisioterapeutas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-arquitectos/')}">Arquitectos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/marketing-para-peluquerias/')}">Peluquerías</a>
 </div>
 <div class="space-y-3">
 <h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-marketing-digital-barcelona/')}">Barcelona</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-marketing-digital-madrid/')}">Madrid</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-marketing-digital-valencia/')}">Valencia</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/agencia-marketing-digital-sevilla/')}">Sevilla</a>
 <h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/nosotros/')}">Nosotros</a>
 <a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/contacto/')}">Contacto</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="{r('/precios-diseno-web/')}">Precios</a>
 </div>
 <div class="space-y-3">
 <h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
