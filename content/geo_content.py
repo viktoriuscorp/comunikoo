@@ -148,6 +148,125 @@ GEO_CONTENT = {
                  'Tenemos experiencia en prácticamente todos los sectores, pero en Madrid somos especialmente fuertes en servicios profesionales (abogados, consultoras, asesores), salud privada (clínicas, centros médicos, dentistas), e-commerce, inmobiliario, tecnología/SaaS y hostelería premium. Cada sector tiene sus particularidades en el mercado madrileño y las conocemos a fondo.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>Análisis del mercado SEO en Valencia</h3>
+<p>Valencia es la <strong>tercera ciudad más grande de España</strong>, con más de 800.000 habitantes y un área metropolitana que supera los 1,5 millones. Su tejido empresarial concentra más de 180.000 empresas activas, con una presencia especialmente fuerte en turismo, hostelería, tecnología, cerámica industrial y comercio exterior vinculado a su puerto — el quinto más importante de Europa en tráfico de contenedores.</p>
+<p>El <strong>mercado SEO en Valencia</strong> está en plena fase de crecimiento. Aunque la competencia digital es significativamente menor que en Barcelona o Madrid — entre un 40% y un 60% menos según nuestros análisis —, cada vez más empresas valencianas invierten en posicionamiento orgánico. Esto genera una ventana de oportunidad estratégica: posicionar ahora es más rápido, más barato y más rentable que hacerlo cuando el mercado se sature.</p>
+<p>El <strong>Distrito Digital de Valencia</strong>, ubicado en la Marina de Empresas junto al puerto, se ha convertido en un polo de atracción para startups tecnológicas y empresas digitales. Zonas como Ruzafa, Ciutat Vella y el Eixample concentran negocios de hostelería premium y comercio local con alto potencial de captación orgánica. La Ciudad de las Artes y las Ciencias y el entorno de la Marina Real generan un volumen de búsquedas turísticas que muchos negocios locales aún no están capitalizando.</p>
+<p>El <strong>coste medio de una campaña SEO en Valencia</strong> oscila entre 500€ y 1.800€ mensuales, lo que representa una inversión considerablemente menor que en Madrid o Barcelona con retornos proporcionalmente superiores. El ROI medio de nuestros clientes en Valencia alcanza el 5,1x: cada euro invertido genera 5,1€ en ingresos atribuibles al tráfico orgánico.</p>''',
+
+            'local_strategy': '''<h3>Estrategia SEO local para posicionar tu negocio en Valencia</h3>
+<p>El posicionamiento SEO en Valencia requiere una <strong>estrategia adaptada a las particularidades del mercado valenciano</strong>. La ciudad tiene una identidad muy marcada, con zonas comerciales diferenciadas y un consumidor local que valora la cercanía y el arraigo territorial.</p>
+<p>Nuestra metodología SEO para Valencia se estructura en cuatro pilares:</p>
+<ul>
+<li><strong>Auditoría técnica completa:</strong> Analizamos más de 200 factores técnicos de tu web, con especial atención a Core Web Vitals y rendimiento móvil. El 74% de las búsquedas en Valencia se realizan desde smartphones, lo que hace la optimización mobile-first imprescindible.</li>
+<li><strong>Investigación de keywords local:</strong> Mapeamos las búsquedas reales de los valencianos, incluyendo variaciones por zona (Ruzafa, Benimaclet, Campanar, Poblats Marítims, Ciutat Vella), términos en valenciano y long tails con intención comercial. La menor competencia permite atacar keywords de alto volumen que en Madrid serían prohibitivas.</li>
+<li><strong>Contenido con relevancia local:</strong> Creamos contenido que conecta con el mercado valenciano — referencias al ecosistema empresarial local, al Distrito Digital, a eventos como las Fallas o la Valencia Digital Summit, y a las necesidades específicas de sectores fuertes como turismo, hostelería y agroexportación.</li>
+<li><strong>Link building en medios valencianos:</strong> Construimos autoridad con enlaces en medios locales como Las Provincias, Levante-EMV, Valencia Plaza y directorios empresariales de la Comunitat Valenciana. La Cámara de Comercio de Valencia y asociaciones sectoriales locales son fuentes de enlaces de alto valor para el SEO local.</li>
+</ul>
+<p>El <strong>SEO local en Valencia</strong> tiene un componente clave: el Google Business Profile. Optimizamos tu ficha para aparecer en el Local Pack para búsquedas con intención local. En Valencia, donde muchos negocios aún no tienen su ficha optimizada, esta es una de las formas más rápidas de ganar visibilidad.</p>
+<p>Para negocios con varias ubicaciones en el área metropolitana — Valencia ciudad, Paterna, Torrent, Sagunto, Gandía — diseñamos estrategias multi-local que maximizan cobertura sin canibalización.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: restaurante en Ruzafa</h3>
+<p>Un restaurante de cocina mediterránea contemporánea en el barrio de Ruzafa nos contactó con apenas 90 visitas orgánicas mensuales y sin presencia en el Local Pack de Google para ninguna búsqueda relevante.</p>
+<p><strong>Diagnóstico:</strong> Web sin optimizar (velocidad de carga de 7,4s en móvil), sin fichas de Google Business Profile, contenido genérico sin keywords locales y cero estrategia de reseñas online.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Rediseño técnico con Core Web Vitals optimizados (LCP reducido a 1,6s)</li>
+<li>Creación de 12 páginas optimizadas (restaurante Ruzafa, cocina mediterránea Valencia, cenas grupo Valencia, etc.)</li>
+<li>Optimización completa de Google Business Profile con estrategia activa de reseñas</li>
+<li>Link building en guías gastronómicas valencianas y medios locales</li>
+</ul>
+<p><strong>Resultados a 9 meses:</strong> Tráfico orgánico de 90 a 2.800 visitas/mes (+3.011%). Top 3 para 14 keywords comerciales. 68 reservas mensuales atribuibles al SEO. Google Business Profile con 247 reseñas y nota media de 4,8. ROI del proyecto: 7,2x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de SEO que ofrecemos en Valencia</h3>
+<p>Como <strong>agencia SEO en Valencia</strong>, ofrecemos servicios de posicionamiento orgánico adaptados al mercado valenciano:</p>
+<ul>
+<li><strong>SEO On-Page:</strong> Optimización completa de títulos, meta descripciones, encabezados, contenido, imágenes, enlazado interno y datos estructurados. Cada página se optimiza para un cluster de keywords con intención de búsqueda definida.</li>
+<li><strong>SEO Técnico:</strong> Auditoría y corrección de problemas de rastreo, indexación, velocidad, arquitectura web, canonicalización y rendimiento móvil. Especial atención a webs multiidioma castellano-valenciano.</li>
+<li><strong>SEO Local Valencia:</strong> Optimización de Google Business Profile, gestión de citas NAP en directorios locales, estrategia de reseñas, posicionamiento en el Local Pack y landing pages por zonas de Valencia.</li>
+<li><strong>Link Building:</strong> Construcción de autoridad mediante enlaces en medios valencianos, guest posting, digital PR en medios de la Comunitat Valenciana y colaboraciones con instituciones locales.</li>
+<li><strong>SEO de Contenidos:</strong> Estrategia editorial basada en gaps de contenido, creación de contenido de autoridad y optimización de silos temáticos para el mercado valenciano.</li>
+<li><strong>Analítica SEO:</strong> Configuración de GA4, Search Console, dashboards personalizados y seguimiento de conversiones atribuidas al canal orgánico.</li>
+</ul>
+<p>Todos nuestros servicios SEO en Valencia incluyen <strong>informe mensual detallado</strong>, acceso a dashboard en tiempo real y contacto directo con tu consultor SEO asignado.</p>''',
+
+            'why_local_matters': '''<h3>Por qué contratar una agencia SEO en Valencia</h3>
+<p>Valencia tiene un mercado digital con características propias que una agencia externa difícilmente puede captar. <strong>¿Por qué elegir una agencia SEO con presencia en Valencia?</strong> Porque conocemos el terreno.</p>
+<p>Sabemos que el perfil del consumidor en Ruzafa es distinto al de Campanar o Benimaclet. Conocemos los medios locales donde conseguir enlaces de valor, las asociaciones empresariales relevantes y los patrones de búsqueda de los valencianos — incluidas las búsquedas en valenciano, que representan un porcentaje creciente en sectores como educación, cultura y servicios públicos.</p>
+<p>Además, la <strong>menor competencia digital en Valencia</strong> respecto a Madrid o Barcelona significa que una estrategia SEO bien ejecutada puede generar resultados más rápidos y con menor inversión. Es el momento perfecto para posicionarte antes de que el mercado se sature.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta contratar una agencia SEO en Valencia?",
+                 "Nuestros planes SEO en Valencia comienzan en 500€/mes para proyectos locales y pueden alcanzar 2.000€/mes para sectores competitivos o e-commerce. La inversión es menor que en Madrid o Barcelona debido a la menor competencia, pero los resultados son igual de sólidos. Realizamos una auditoría gratuita antes de presupuestar."),
+                ("¿Cuánto tarda en posicionar un negocio en Valencia?",
+                 "Gracias a la menor competencia digital en Valencia, los primeros resultados suelen verse antes que en ciudades más saturadas. En nuestra experiencia, los movimientos iniciales se notan entre las 4 y 10 semanas, con resultados significativos entre los 3 y 5 meses. Sectores muy competitivos como turismo o inmobiliaria pueden requerir 6-9 meses para posiciones top 3."),
+                ("¿Trabajáis SEO en valenciano además de castellano?",
+                 "Sí. Implementamos estrategias bilingües con contenido nativo en valenciano y castellano, hreflang correctamente configurado y optimización de keywords en ambos idiomas. En sectores como educación, cultura y administración, las búsquedas en valenciano representan una oportunidad significativa."),
+                ("¿Qué sectores trabajáis en Valencia?",
+                 "Tenemos experiencia en los sectores más fuertes del mercado valenciano: turismo y hostelería, tecnología y startups del Distrito Digital, cerámica e industria, agroexportación, comercio local, salud privada, inmobiliaria y servicios profesionales. Cada sector tiene dinámicas propias en Valencia y las conocemos a fondo."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>Análisis del mercado SEO en Sevilla</h3>
+<p>Sevilla es la <strong>capital de Andalucía</strong> y la cuarta ciudad más grande de España, con más de 700.000 habitantes y un área metropolitana que supera los 1,5 millones. Su tejido empresarial está compuesto por más de 120.000 empresas activas, con una presencia dominante en turismo, hostelería, servicios, aeronáutica (Airbus tiene una de sus principales plantas en la ciudad) y agroindustria — especialmente aceite de oliva y derivados.</p>
+<p>El <strong>mercado SEO en Sevilla</strong> se encuentra en una fase de adopción acelerada. La competencia digital es notablemente inferior a la de Madrid, Barcelona o incluso Valencia — entre un 50% y un 70% menor según nuestros datos internos. Esto supone una <strong>oportunidad estratégica de primer orden</strong>: posicionar ahora en Sevilla es más rápido, más asequible y genera ventajas competitivas difíciles de replicar cuando el mercado madure.</p>
+<p>El <strong>Parque Tecnológico Cartuja</strong>, heredero de la Expo 92, alberga más de 460 empresas y 16.000 profesionales, consolidándose como el mayor polo de innovación del sur de España. Zonas como el Centro histórico, Triana, Nervión y Los Remedios concentran el comercio local premium y los servicios profesionales con mayor potencial de captación orgánica.</p>
+<p>El <strong>coste medio de una campaña SEO en Sevilla</strong> oscila entre 400€ y 1.500€ mensuales, significativamente inferior al de otras capitales. El ROI medio de nuestros clientes en Sevilla alcanza el 5,6x, impulsado por la menor competencia y los costes operativos más bajos de la región.</p>
+<p>La <strong>estacionalidad turística</strong> es un factor clave en Sevilla. La Semana Santa y la Feria de Abril generan picos de búsquedas que afectan a hostelería, comercio, moda y servicios turísticos. Una estrategia SEO inteligente anticipa estos picos con contenido estacional optimizado meses antes.</p>''',
+
+            'local_strategy': '''<h3>Estrategia SEO local para posicionar tu negocio en Sevilla</h3>
+<p>Posicionar un negocio en Sevilla requiere una <strong>estrategia SEO que entienda las particularidades del mercado andaluz</strong>. El consumidor sevillano tiene hábitos de búsqueda propios, valora la cercanía y la confianza, y se mueve en un ecosistema digital todavía con mucho margen de crecimiento.</p>
+<p>Nuestra metodología SEO para Sevilla se basa en cuatro ejes:</p>
+<ul>
+<li><strong>Auditoría técnica exhaustiva:</strong> Revisamos más de 200 factores técnicos de tu web. En Sevilla, donde muchos competidores tienen webs técnicamente deficientes, una optimización técnica sólida puede ser suficiente para superar a la mayoría en los rankings.</li>
+<li><strong>Research de keywords con enfoque local:</strong> Identificamos las búsquedas reales de los sevillanos, segmentando por zonas (Centro, Triana, Nervión, Macarena, Los Remedios) y por el área metropolitana (Dos Hermanas, Alcalá de Guadaíra, Bormujos, Tomares). En Sevilla existen keywords de alto volumen con competencia sorprendentemente baja — oportunidades que una agencia que no conozca el mercado local pasaría por alto.</li>
+<li><strong>Contenido con ADN sevillano:</strong> Creamos contenido que conecta con el mercado local — referencias al ecosistema empresarial del Parque Cartuja, a la estacionalidad turística, a eventos como FIBES y a las necesidades específicas de sectores fuertes como turismo, aeronáutica y agroalimentación.</li>
+<li><strong>Link building en medios andaluces:</strong> Construimos autoridad con enlaces en medios como Diario de Sevilla, ABC Sevilla, Sevilla Directo y portales sectoriales andaluces. La CEC (Confederación de Empresarios de Sevilla) y asociaciones locales son fuentes de enlaces de alto impacto.</li>
+</ul>
+<p>El <strong>SEO local en Sevilla</strong> tiene un potencial enorme sin explotar. Muchos negocios sevillanos aún no tienen su Google Business Profile optimizado — ni siquiera reclamado. Esto significa que con una optimización profesional puedes dominar el Local Pack en tu sector con relativa facilidad.</p>
+<p>Para negocios con presencia en varios puntos del área metropolitana — Sevilla, Dos Hermanas, Alcalá de Guadaíra, Mairena del Aljarafe — diseñamos estrategias multi-sede eficientes.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: hotel boutique en el Centro de Sevilla</h3>
+<p>Un hotel boutique de 28 habitaciones en el casco histórico de Sevilla nos contactó con apenas 120 visitas orgánicas mensuales y una dependencia total de OTAs (Booking, Expedia) para sus reservas.</p>
+<p><strong>Diagnóstico:</strong> Web lenta (6,8s en móvil), sin contenido optimizado para keywords de turismo en Sevilla, Google Business Profile básico y sin estrategia de contenidos ni link building.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Optimización técnica completa (LCP reducido a 1,9s)</li>
+<li>Creación de 18 páginas optimizadas (hotel centro Sevilla, alojamiento Semana Santa Sevilla, hotel cerca Catedral Sevilla, etc.)</li>
+<li>Blog con 6 artículos/mes sobre turismo en Sevilla, guías de barrios y eventos</li>
+<li>Link building en guías de viaje, blogs de turismo andaluz y medios locales</li>
+</ul>
+<p><strong>Resultados a 10 meses:</strong> Tráfico orgánico de 120 a 3.400 visitas/mes (+2.733%). Top 3 para 16 keywords turísticas. Reservas directas (sin OTA): de 8% a 34% del total. Ahorro en comisiones OTA: 2.800€/mes. ROI del proyecto: 8,4x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de SEO que ofrecemos en Sevilla</h3>
+<p>Como <strong>agencia SEO en Sevilla</strong>, ofrecemos servicios de posicionamiento orgánico diseñados para el mercado andaluz:</p>
+<ul>
+<li><strong>SEO On-Page:</strong> Optimización de títulos, meta descripciones, encabezados, contenido, imágenes, enlazado interno y datos estructurados adaptados a las búsquedas del mercado sevillano.</li>
+<li><strong>SEO Técnico:</strong> Auditoría y resolución de problemas de rastreo, indexación, velocidad, arquitectura web y rendimiento móvil. En Sevilla, donde muchos competidores tienen webs técnicamente pobres, esto marca una diferencia inmediata.</li>
+<li><strong>SEO Local Sevilla:</strong> Optimización de Google Business Profile, gestión de citas NAP, estrategia de reseñas, Local Pack y landing pages geolocalizadas por barrios y zonas de Sevilla.</li>
+<li><strong>Link Building:</strong> Construcción de autoridad en medios andaluces y nacionales, digital PR, colaboraciones con instituciones sevillanas y asociaciones empresariales.</li>
+<li><strong>SEO de Contenidos:</strong> Estrategia editorial adaptada al mercado sevillano, contenido estacional (Semana Santa, Feria, temporada turística) y optimización de silos temáticos.</li>
+<li><strong>Analítica SEO:</strong> GA4, Search Console, dashboards personalizados y seguimiento de conversiones con atribución al canal orgánico.</li>
+</ul>
+<p>Todos nuestros servicios SEO en Sevilla incluyen <strong>informe mensual detallado</strong>, dashboard en tiempo real y contacto directo con tu consultor SEO asignado.</p>''',
+
+            'why_local_matters': '''<h3>Por qué contratar una agencia SEO con presencia en Sevilla</h3>
+<p>Sevilla tiene un ecosistema empresarial con dinámicas propias que solo se entienden desde dentro. <strong>¿Por qué elegir una agencia SEO que conozca Sevilla?</strong> Porque la diferencia entre una estrategia genérica y una adaptada al mercado sevillano puede multiplicar tus resultados.</p>
+<p>Conocemos las diferencias entre posicionar un negocio en Triana, en Nervión o en Los Remedios. Sabemos cuáles son los medios locales donde conseguir enlaces de valor, las asociaciones empresariales relevantes y los patrones de búsqueda de los sevillanos — incluida la fuerte estacionalidad turística que afecta a múltiples sectores.</p>
+<p>La <strong>menor competencia digital en Sevilla</strong> es, paradójicamente, su mayor ventaja. Las empresas que inviertan en SEO profesional ahora construirán posiciones dominantes que serán muy difíciles de desbancar cuando la competencia reaccione. Es una ventana de oportunidad que no durará para siempre.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta contratar una agencia SEO en Sevilla?",
+                 "Nuestros planes SEO en Sevilla comienzan en 400€/mes para proyectos locales y pueden alcanzar 1.500€/mes para sectores competitivos. La inversión es la más accesible de las grandes capitales españolas, con un ROI proporcionalmente superior gracias a la menor competencia. Hacemos auditoría gratuita antes de presupuestar."),
+                ("¿Cuánto tarda el SEO en dar resultados en Sevilla?",
+                 "La menor competencia digital en Sevilla permite ver resultados antes que en otras ciudades. Los primeros movimientos se notan entre las 3 y 8 semanas. Resultados significativos llegan entre los 3 y 5 meses. El sector turístico, el más competitivo en Sevilla, puede requerir 6-8 meses para posiciones top 3."),
+                ("¿Trabajáis con la estacionalidad turística de Sevilla?",
+                 "Es uno de nuestros diferenciadores. Planificamos el contenido y las campañas de link building con meses de anticipación a los picos estacionales — Semana Santa, Feria de Abril, temporada alta turística (marzo-junio, septiembre-noviembre). Esto permite capturar el tráfico estacional cuando más valor genera."),
+                ("¿Qué sectores trabajáis en Sevilla?",
+                 "Somos especialmente fuertes en los sectores clave del mercado sevillano: turismo y hostelería, servicios profesionales (abogados, consultores), salud privada, aeronáutica y proveedores industriales, agroindustria, inmobiliaria y comercio local. Cada sector tiene dinámicas propias en Sevilla y las conocemos a fondo."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -276,6 +395,108 @@ GEO_CONTENT = {
                  'Sí, y es una de nuestras especialidades. Gestionamos estrategias multi-sede para cadenas, franquicias y negocios con varios puntos de atención en Madrid. Cada sede tiene su propio Google Business Profile, sus propias citaciones, su propia estrategia de reseñas y sus landing pages específicas. La clave es evitar la canibalización entre sedes y maximizar la cobertura geográfica total.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado del SEO local en Valencia: datos y oportunidades</h3>
+<p>Valencia es una ciudad de <strong>barrios con personalidad marcada</strong>, y eso influye directamente en cómo los valencianos buscan negocios locales. Las búsquedas "cerca de mí" han crecido un 290% en el área metropolitana de Valencia en los últimos 4 años, y las búsquedas que incluyen nombre de barrio (por ejemplo, "peluquería Ruzafa", "fisioterapeuta Benimaclet", "restaurante Ciutat Vella") suponen ya el 24% de las búsquedas locales.</p>
+<p>El <strong>SEO local en Valencia</strong> presenta una oportunidad excepcional: la mayoría de negocios locales apenas tienen presencia digital optimizada. Según nuestros análisis, solo el 18% de los negocios locales en Valencia tienen su Google Business Profile correctamente optimizado, frente al 35% de Barcelona. Esto significa que con una estrategia profesional puedes dominar el Local Pack de tu zona y sector con relativa facilidad.</p>
+<p>Las zonas con mayor volumen de búsquedas locales son <strong>Ciutat Vella, Eixample, Ruzafa, Benimaclet y Campanar</strong>, pero los Poblats Marítims y el entorno de la Ciudad de las Artes presentan nichos menos explotados con alto potencial turístico. El puerto y la Marina Real generan búsquedas específicas que muchos negocios cercanos no están captando.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de SEO local para negocios en Valencia</h3>
+<p>El SEO local en Valencia requiere un enfoque que tenga en cuenta la <strong>estructura de barrios y distritos de la ciudad</strong>, los patrones de búsqueda de los valencianos y las oportunidades que genera la menor competencia digital respecto a Madrid o Barcelona.</p>
+<p>Nuestra metodología de SEO local para Valencia incluye:</p>
+<ul>
+<li><strong>Google Business Profile profesional:</strong> Optimización completa de tu ficha — categorías, atributos, descripción con keywords, fotos geoetiquetadas, publicaciones semanales y estrategia activa de reseñas. En Valencia, donde la mayoría de fichas están sin optimizar, esto genera resultados inmediatos.</li>
+<li><strong>Citaciones NAP consistentes:</strong> Verificamos y corregimos tu presencia en los principales directorios locales valencianos y nacionales. Nombre, Dirección y Teléfono consistentes en todas las plataformas.</li>
+<li><strong>Landing pages por zona:</strong> Creamos páginas específicas optimizadas para cada barrio o zona donde operas — Ruzafa, Benimaclet, Campanar, Poblats Marítims, Eixample — con contenido único y relevante para cada ubicación.</li>
+<li><strong>Estrategia de reseñas:</strong> Implementamos un sistema para generar reseñas genuinas de forma constante. Las reseñas son el segundo factor de ranking en el Local Pack y la mayoría de negocios en Valencia las dejan al azar.</li>
+</ul>
+<p>Para negocios con varias sedes en el área metropolitana — Valencia, Paterna, Torrent, Mislata, Burjassot — diseñamos estrategias multi-sede que maximizan la cobertura sin canibalización entre fichas.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: clínica estética en Eixample de Valencia</h3>
+<p>Una clínica de estética y bienestar en el Eixample de Valencia nos contactó sin presencia en el Local Pack y con solo 8 reseñas en Google. Recibían menos de 5 llamadas mensuales desde Google.</p>
+<p><strong>Acciones implementadas:</strong></p>
+<ul>
+<li>Optimización completa del Google Business Profile con 14 categorías y atributos relevantes</li>
+<li>Creación de 8 landing pages por zona y tratamiento (estética Eixample Valencia, depilación láser Valencia, etc.)</li>
+<li>Estrategia de reseñas que generó 156 reseñas en 8 meses</li>
+<li>Citaciones NAP en 45 directorios locales y sectoriales</li>
+</ul>
+<p><strong>Resultados a 8 meses:</strong> Aparición en el Local Pack para 22 búsquedas locales. Llamadas desde Google: de 5 a 74 mensuales (+1.380%). Visitas a la web desde la ficha: 420/mes. Nota media en Google: 4,9 con 164 reseñas. Incremento de facturación atribuible: +38%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de SEO local en Valencia</h3>
+<p>Nuestros servicios de <strong>SEO local en Valencia</strong> están diseñados para que tu negocio domine las búsquedas locales en tu zona:</p>
+<ul>
+<li><strong>Optimización de Google Business Profile:</strong> Configuración profesional de todas las funcionalidades — categorías, atributos, preguntas y respuestas, productos, servicios, publicaciones semanales y fotos geoetiquetadas.</li>
+<li><strong>Gestión de reseñas:</strong> Estrategia para generar reseñas genuinas de forma constante, con respuestas profesionales a todas las reseñas y monitorización de la reputación online.</li>
+<li><strong>Citaciones y directorios:</strong> Presencia consistente en los principales directorios locales de Valencia y portales sectoriales relevantes.</li>
+<li><strong>Landing pages locales:</strong> Páginas optimizadas para cada zona de Valencia donde opera tu negocio, con contenido único y schema LocalBusiness.</li>
+<li><strong>Reporting local:</strong> Informes mensuales con métricas de visibilidad local, posiciones en Local Pack, llamadas, rutas y clics desde Google Business Profile.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>La importancia del SEO local para negocios en Valencia</h3>
+<p>El <strong>46% de las búsquedas en Google tienen intención local</strong>, y en una ciudad como Valencia — con una estructura de barrios bien definida y un consumidor que valora la proximidad — el SEO local es la herramienta más rentable para captar clientes en tu zona de influencia.</p>
+<p>Valencia ofrece una ventaja competitiva clara: la <strong>adopción del SEO local es todavía baja</strong>. Mientras que en Madrid y Barcelona la mayoría de negocios ya compiten por el Local Pack, en Valencia aún hay sectores enteros donde una optimización profesional te da ventaja inmediata. Los negocios que se posicionen ahora construirán una ventaja difícil de superar.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta el SEO local en Valencia?",
+                 "Nuestros planes de SEO local en Valencia comienzan en 350€/mes e incluyen la optimización completa de Google Business Profile, gestión de reseñas, citaciones y reporting mensual. Para negocios multi-sede o sectores muy competitivos, los planes pueden llegar a 1.200€/mes."),
+                ("¿Cuánto tarda en funcionar el SEO local en Valencia?",
+                 "El SEO local suele dar resultados más rápidos que el SEO orgánico tradicional. En Valencia, donde la competencia es menor, los primeros resultados en el Local Pack pueden verse en 4-8 semanas. En 3-4 meses ya tendrás una presencia consolidada para tus búsquedas objetivo."),
+                ("¿Optimizáis el Google Business Profile en valenciano?",
+                 "Sí. Adaptamos la ficha para captar búsquedas en valenciano, que representan un porcentaje relevante en sectores como educación, cultura y servicios de proximidad. Publicamos contenido en ambos idiomas para maximizar la captación."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado del SEO local en Sevilla: datos y oportunidades</h3>
+<p>Sevilla es una ciudad con una <strong>fuerte identidad de barrio</strong> que se refleja en cómo los sevillanos buscan negocios locales. Zonas como el Centro, Triana, Nervión, la Macarena y Los Remedios tienen personalidades comerciales muy diferenciadas. Las búsquedas locales del tipo "cerca de mí" han crecido un 260% en Sevilla en los últimos 4 años.</p>
+<p>El <strong>SEO local en Sevilla</strong> presenta la mayor oportunidad sin explotar de las grandes capitales españolas. Solo el 14% de los negocios sevillanos tienen su Google Business Profile correctamente optimizado. Esto significa que con una estrategia profesional puedes dominar el Local Pack de tu sector con una inversión mínima comparada con otras ciudades.</p>
+<p>La <strong>estacionalidad turística</strong> añade una capa adicional al SEO local en Sevilla. Semana Santa, Feria de Abril y la temporada alta turística (marzo-junio, septiembre-noviembre) generan picos de búsquedas locales que los negocios preparados pueden capitalizar. Hostelería, comercio, alojamiento y servicios turísticos son los más afectados.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de SEO local para negocios en Sevilla</h3>
+<p>El SEO local en Sevilla requiere un enfoque que combine el <strong>conocimiento del mercado sevillano</strong> con técnicas avanzadas de posicionamiento local adaptadas a una ciudad donde la competencia digital es todavía baja.</p>
+<p>Nuestra metodología incluye:</p>
+<ul>
+<li><strong>Google Business Profile profesional:</strong> Optimización completa de la ficha con categorías específicas, atributos, fotos geoetiquetadas de calidad, publicaciones semanales y gestión activa de reseñas. En Sevilla, donde la mayoría de fichas están desactualizadas o sin reclamar, esto genera impacto inmediato.</li>
+<li><strong>Citaciones NAP en directorios locales:</strong> Presencia consistente en directorios sevillanos, andaluces y nacionales. Cámaras de comercio, asociaciones de comerciantes de barrio y portales sectoriales locales.</li>
+<li><strong>Landing pages por barrios:</strong> Páginas optimizadas para Centro, Triana, Nervión, Macarena, Los Remedios y zonas del área metropolitana (Dos Hermanas, Alcalá de Guadaíra, Bormujos, Tomares).</li>
+<li><strong>Estrategia de reseñas:</strong> Sistema para generar reseñas genuinas de forma continua — el factor diferencial más infravalorado en el mercado sevillano.</li>
+</ul>
+<p>Para negocios con presencia en la corona metropolitana diseñamos estrategias multi-sede que cubren Sevilla capital y los municipios circundantes sin canibalización.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: despacho de abogados en Nervión</h3>
+<p>Un despacho de abogados en Nervión con 3 socios nos contactó sin presencia en Google Maps y con solo 4 reseñas. Su web recibía 40 visitas mensuales y no generaba ningún lead cualificado.</p>
+<p><strong>Acciones implementadas:</strong></p>
+<ul>
+<li>Creación y optimización del Google Business Profile desde cero</li>
+<li>6 landing pages locales (abogado Sevilla, abogado Nervión, divorcio Sevilla, herencias Sevilla, etc.)</li>
+<li>Estrategia de reseñas con protocolo post-servicio</li>
+<li>Citaciones NAP en 38 directorios jurídicos y locales</li>
+</ul>
+<p><strong>Resultados a 7 meses:</strong> Local Pack para 18 búsquedas. Llamadas desde Google: de 0 a 42 mensuales. Solicitudes de consulta desde la web: 28/mes. Google Business Profile con 87 reseñas y nota 4,9. Incremento de nuevos clientes: +52%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de SEO local en Sevilla</h3>
+<p>Nuestros servicios de <strong>SEO local en Sevilla</strong> están diseñados para posicionar tu negocio como referente en tu zona:</p>
+<ul>
+<li><strong>Google Business Profile:</strong> Configuración y optimización profesional — categorías, atributos, servicios, productos, publicaciones y fotos geoetiquetadas.</li>
+<li><strong>Gestión de reseñas:</strong> Estrategia para generar reseñas de calidad, respuestas profesionales y monitorización de la reputación online.</li>
+<li><strong>Citaciones y directorios:</strong> Presencia en directorios locales de Sevilla, portales andaluces y plataformas sectoriales.</li>
+<li><strong>Landing pages por barrios:</strong> Páginas para Centro, Triana, Nervión, Macarena, Los Remedios y municipios del área metropolitana.</li>
+<li><strong>Reporting local:</strong> Informes con visibilidad local, posiciones en Local Pack, llamadas, rutas y conversiones desde la ficha de Google.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>La importancia del SEO local para negocios en Sevilla</h3>
+<p>Sevilla es una ciudad donde el <strong>boca a boca digital</strong> — reseñas en Google, visibilidad en Maps, presencia en búsquedas locales — está reemplazando al boca a boca tradicional como principal fuente de captación de clientes para negocios locales.</p>
+<p>La ventaja de invertir en SEO local en Sevilla ahora es clara: la <strong>competencia es mínima</strong>. La mayoría de negocios no han optimizado su presencia local en Google, lo que permite a los que sí lo hagan captar una cuota desproporcionada de las búsquedas locales. Es la estrategia con mejor relación coste-resultado para cualquier negocio con clientela local en Sevilla.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta el SEO local en Sevilla?",
+                 "Nuestros planes de SEO local en Sevilla comienzan en 300€/mes para negocios con una sede e incluyen Google Business Profile, reseñas, citaciones y reporting. Para multi-sede o sectores competitivos como hostelería o salud, los planes alcanzan los 1.000€/mes."),
+                ("¿Cuánto tarda en funcionar el SEO local en Sevilla?",
+                 "En Sevilla, donde la competencia local es la más baja de las grandes capitales, los resultados son especialmente rápidos. Los primeros resultados en el Local Pack pueden verse en 3-6 semanas. En 2-3 meses tendrás una presencia local consolidada."),
+                ("¿Trabajáis con la estacionalidad de Sevilla?",
+                 "Sí, es uno de nuestros puntos fuertes. Planificamos publicaciones en Google Business Profile, contenido estacional y campañas de reseñas anticipándonos a Semana Santa, Feria de Abril y la temporada turística alta para maximizar la captación en los picos de búsqueda."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -392,6 +613,110 @@ GEO_CONTENT = {
                  'Trabajamos principalmente con WordPress para webs corporativas y blogs, WooCommerce y Shopify para e-commerce, y desarrollo a medida con React/Next.js para proyectos que requieren funcionalidades avanzadas. Elegimos la tecnología más adecuada para cada proyecto — nunca forzamos una solución tecnológica que no encaje.'),
                 ('¿Puedo ver webs que hayáis diseñado para empresas en Madrid?',
                  'Por supuesto. Tenemos un portfolio con más de 80 proyectos web realizados para empresas de Madrid en sectores como consultoría, salud, legal, inmobiliaria, retail, tecnología y hostelería. Durante la reunión inicial te mostramos trabajos relevantes para tu sector y tipo de proyecto.'),
+            ],
+        },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado del diseño web en Valencia</h3>
+<p>Valencia se ha consolidado como uno de los <strong>polos tecnológicos emergentes de España</strong>. El Distrito Digital, la Marina de Empresas y un creciente ecosistema de startups han elevado la demanda de diseño web profesional en la ciudad. Más de 180.000 empresas activas — de las cuales un porcentaje cada vez mayor necesita presencia digital de calidad — generan un mercado en plena expansión.</p>
+<p>El <strong>diseño web en Valencia</strong> atraviesa una fase de profesionalización. Mientras que hace unos años muchas empresas se conformaban con webs básicas o plantillas genéricas, hoy el nivel de exigencia ha subido significativamente. Los sectores de turismo, hostelería, tecnología y exportación lideran la demanda de webs profesionales con enfoque en conversión, velocidad y experiencia de usuario.</p>
+<p>La <strong>ventaja competitiva</strong> de invertir en diseño web profesional en Valencia es doble: los costes de desarrollo son un 20-30% menores que en Madrid o Barcelona, y el impacto en el negocio es igual de potente. Una web profesional optimizada es la base sobre la que se construye cualquier estrategia de marketing digital efectiva.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de diseño web para negocios en Valencia</h3>
+<p>Diseñar una web para un negocio en Valencia no es solo cuestión de estética — es crear una <strong>herramienta de captación y conversión</strong> adaptada al mercado valenciano. Nuestro enfoque combina diseño de primer nivel con optimización técnica y orientación a resultados.</p>
+<p>Nuestra metodología para proyectos web en Valencia incluye:</p>
+<ul>
+<li><strong>Estrategia y arquitectura:</strong> Definimos la estructura de la web basándonos en las búsquedas reales de tu público objetivo en Valencia. Cada página tiene un propósito claro y una keyword objetivo.</li>
+<li><strong>Diseño UX/UI orientado a conversión:</strong> Interfaces que guían al visitante hacia la acción — solicitar presupuesto, llamar, reservar o comprar. Con especial atención al diseño mobile-first, ya que el 74% del tráfico en Valencia es desde móvil.</li>
+<li><strong>Desarrollo optimizado:</strong> HTML semántico, CSS optimizado, JavaScript mínimo, imágenes en AVIF/WebP, Core Web Vitals perfectos. Tu web carga en menos de 2 segundos.</li>
+<li><strong>SEO integrado desde el diseño:</strong> Cada web que diseñamos incluye SEO on-page integrado — no es un añadido posterior. Estructura de URLs, schema markup, enlazado interno y contenido optimizado desde el día uno.</li>
+</ul>
+<p>Para negocios del <strong>sector turístico y hostelero</strong> — uno de los más fuertes en Valencia — diseñamos webs con sistemas de reservas integrados, galerías optimizadas y contenido multiidioma (castellano, valenciano, inglés) que captan tanto tráfico local como turístico internacional.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: startup tecnológica en el Distrito Digital</h3>
+<p>Una startup SaaS del Distrito Digital de Valencia necesitaba una web corporativa que transmitiera profesionalidad y generara demos de su producto.</p>
+<p><strong>Solución:</strong></p>
+<ul>
+<li>Web corporativa con diseño editorial minimalista y animaciones sutiles</li>
+<li>Arquitectura de 18 páginas optimizadas para keywords del sector</li>
+<li>Sistema de reserva de demos integrado con calendario</li>
+<li>Blog técnico con 4 artículos/mes para posicionamiento informacional</li>
+</ul>
+<p><strong>Resultados:</strong> Tiempo de carga: 1,3 segundos. PageSpeed: 98/100. Solicitudes de demo: de 4 a 32 mensuales (+700%). Tráfico orgánico: de 0 a 1.800 visitas/mes en 6 meses. Tasa de conversión: 4,2%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de diseño web en Valencia</h3>
+<p>Nuestros servicios de <strong>diseño web en Valencia</strong> cubren todo el espectro de necesidades digitales:</p>
+<ul>
+<li><strong>Web corporativa:</strong> Diseño profesional orientado a conversión, optimizado para SEO y con rendimiento técnico impecable. Desde 8 páginas hasta proyectos de 50+.</li>
+<li><strong>Tienda online:</strong> E-commerce completo con pasarela de pago, gestión de inventario, logística y optimización de fichas de producto para Google Shopping.</li>
+<li><strong>Landing pages:</strong> Páginas de captación de alta conversión para campañas de Google Ads, redes sociales o lanzamientos de producto.</li>
+<li><strong>Rediseño web:</strong> Modernización de webs existentes manteniendo el SEO acumulado, mejorando la conversión y actualizando la imagen de marca.</li>
+<li><strong>Mantenimiento:</strong> Planes de mantenimiento mensual con actualizaciones, copias de seguridad, monitorización de rendimiento y soporte técnico.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué diseñar tu web con una agencia en Valencia</h3>
+<p>Una agencia de diseño web en Valencia entiende las <strong>particularidades del mercado local</strong>. Conocemos los sectores que mueven la economía valenciana, los hábitos digitales de los consumidores de la zona y las expectativas específicas de cada tipo de negocio.</p>
+<p>Además, trabajar con una agencia local permite <strong>reuniones presenciales</strong> para las fases clave del proyecto — briefing, presentación de diseño, revisiones y entrega. Esto reduce errores de comunicación y acelera los plazos. Nuestra experiencia con empresas del Distrito Digital, hostelería de Ruzafa y comercio de Ciutat Vella nos da un conocimiento local que marca la diferencia.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta diseñar una web profesional en Valencia?",
+                 "Una web corporativa profesional en Valencia parte de 2.500€ para proyectos estándar (8-12 páginas) y puede alcanzar 8.000€+ para proyectos complejos con funcionalidades avanzadas. Tiendas online desde 4.000€. Siempre presupuestamos a medida tras entender tu proyecto."),
+                ("¿Cuánto tarda en diseñarse una web en Valencia?",
+                 "Web corporativa estándar: 4-6 semanas. Tienda online: 6-10 semanas. Proyectos complejos: 10-14 semanas. Incluye todas las fases: estrategia, diseño, desarrollo, contenido, testing y lanzamiento."),
+                ("¿Incluís SEO en el diseño web?",
+                 "Sí, siempre. Cada web que diseñamos incluye SEO on-page integrado: arquitectura optimizada, URLs limpias, schema markup, meta tags, velocidad optimizada y contenido preparado para posicionar. No es un extra, es parte del proceso."),
+                ("¿Diseñáis webs multiidioma para turismo?",
+                 "Sí. Para negocios turísticos y de hostelería en Valencia diseñamos webs en castellano, valenciano e inglés (y más idiomas si es necesario), con hreflang correctamente implementado y contenido adaptado a cada mercado."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado del diseño web en Sevilla</h3>
+<p>El mercado del diseño web en Sevilla está experimentando un <strong>crecimiento acelerado</strong> impulsado por la digitalización del tejido empresarial andaluz. Con más de 120.000 empresas activas, Sevilla genera una demanda creciente de webs profesionales — especialmente en turismo, hostelería, servicios profesionales y el ecosistema tecnológico del Parque Cartuja.</p>
+<p>El <strong>nivel de digitalización en Sevilla</strong> todavía está por debajo de la media de las grandes capitales, lo que genera una oportunidad doble: muchas empresas necesitan su primera web profesional o un rediseño urgente de la actual. Los negocios que inviertan ahora en una web de calidad partirán con ventaja cuando la competencia digital se intensifique.</p>
+<p>Los <strong>costes de diseño web en Sevilla</strong> son un 25-35% menores que en Madrid o Barcelona, lo que permite acceder a webs de primer nivel con presupuestos más contenidos. Esto, combinado con el potencial de captación digital sin explotar, convierte la inversión en diseño web en una de las más rentables para negocios sevillanos.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de diseño web para negocios en Sevilla</h3>
+<p>Diseñar una web para el mercado sevillano requiere entender las <strong>dinámicas locales</strong>: la importancia del sector turístico, la estacionalidad de muchos negocios y las expectativas del consumidor andaluz.</p>
+<p>Nuestra metodología para proyectos web en Sevilla:</p>
+<ul>
+<li><strong>Estrategia de conversión:</strong> Cada web se diseña con objetivos de negocio claros. Definimos la arquitectura basándonos en las búsquedas reales de tu público en Sevilla y diseñamos los flujos de conversión.</li>
+<li><strong>Diseño UX/UI premium:</strong> Interfaces que transmiten profesionalidad y guían al visitante hacia la acción. Diseño mobile-first con atención especial a la velocidad de carga — el 72% del tráfico en Sevilla es móvil.</li>
+<li><strong>Desarrollo técnico optimizado:</strong> Webs ligeras, rápidas y semánticas que cumplen todos los requisitos de Core Web Vitals para posicionar en Google.</li>
+<li><strong>Contenido estratégico:</strong> Redacción profesional de todo el contenido de la web, optimizado para SEO y adaptado al mercado sevillano.</li>
+</ul>
+<p>Para el <strong>sector turístico y hostelero de Sevilla</strong> — uno de los motores económicos de la ciudad — diseñamos webs con reservas online, galerías de alta calidad, contenido multiidioma y optimización específica para captar turismo nacional e internacional.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: empresa de eventos en Triana</h3>
+<p>Una empresa de organización de eventos corporativos en Triana nos contactó con una web obsoleta que no generaba leads. Dependían exclusivamente del boca a boca tradicional.</p>
+<p><strong>Solución:</strong></p>
+<ul>
+<li>Web completa con portfolio visual de eventos realizados</li>
+<li>12 páginas de servicio optimizadas (eventos corporativos Sevilla, catering Sevilla, team building Andalucía, etc.)</li>
+<li>Sistema de solicitud de presupuesto en 3 pasos</li>
+<li>Blog con contenido sobre organización de eventos en Sevilla</li>
+</ul>
+<p><strong>Resultados:</strong> PageSpeed: 96/100. Tiempo de carga: 1,5s. Solicitudes de presupuesto: de 2 a 24 mensuales (+1.100%). Tráfico orgánico: de 60 a 1.400 visitas/mes en 7 meses. El 40% de los nuevos clientes llegaron a través de la web.</p>''',
+
+            'detailed_services': '''<h3>Servicios de diseño web en Sevilla</h3>
+<p>Nuestros servicios de <strong>diseño web en Sevilla</strong> cubren todas las necesidades digitales del mercado sevillano:</p>
+<ul>
+<li><strong>Web corporativa:</strong> Diseño profesional con foco en conversión, SEO integrado y rendimiento técnico óptimo. Proyectos desde 8 hasta 50+ páginas.</li>
+<li><strong>Tienda online:</strong> E-commerce completo con pasarela de pago, logística, catálogo de productos y optimización para Google Shopping.</li>
+<li><strong>Landing pages:</strong> Páginas de captación de alta conversión para campañas de publicidad o lanzamientos.</li>
+<li><strong>Rediseño web:</strong> Actualización de webs existentes con mejora de rendimiento, conversión e imagen de marca sin perder el SEO acumulado.</li>
+<li><strong>Mantenimiento:</strong> Planes mensuales con actualizaciones, backups, monitorización y soporte técnico continuo.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué diseñar tu web con una agencia que conozca Sevilla</h3>
+<p>Una agencia que conoce Sevilla entiende que el <strong>diseño web para un negocio turístico en el Centro</strong> tiene necesidades radicalmente diferentes a las de una empresa aeronáutica en Cartuja o un despacho profesional en Nervión.</p>
+<p>Conocemos los sectores que mueven la economía sevillana, los hábitos digitales del consumidor andaluz y las oportunidades específicas que ofrece un mercado en plena digitalización. Además, ofrecemos <strong>reuniones presenciales</strong> en todas las fases del proyecto — algo que valoran especialmente las empresas sevillanas, acostumbradas a relaciones comerciales cercanas y de confianza.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta diseñar una web en Sevilla?",
+                 "Una web corporativa profesional en Sevilla parte de 2.000€ para proyectos estándar y puede alcanzar 7.000€+ para proyectos complejos. Tiendas online desde 3.500€. Los costes son un 25-35% menores que en Madrid o Barcelona, con la misma calidad de resultado."),
+                ("¿Cuánto tarda en hacerse una web profesional?",
+                 "Web corporativa estándar: 4-6 semanas. E-commerce: 6-10 semanas. Proyectos con funcionalidades especiales: 10-14 semanas. Incluye estrategia, diseño, desarrollo, contenido, testing y lanzamiento."),
+                ("¿Las webs que diseñáis están optimizadas para SEO?",
+                 "Siempre. El SEO on-page está integrado en nuestro proceso de diseño: arquitectura web optimizada, velocidad de carga, schema markup, contenido optimizado y estructura preparada para posicionar. No es un servicio aparte."),
             ],
         },
     },
@@ -525,6 +850,110 @@ GEO_CONTENT = {
                  'Configuramos tracking completo de conversiones: formularios, llamadas (con call tracking), WhatsApp, compras, descargas y cualquier acción de valor para tu negocio. Cada conversión se atribuye a la campaña, grupo de anuncios y keyword específicos. Recibes un informe mensual con métricas de negocio (leads, ventas, CPA, ROAS) y acceso permanente al dashboard en tiempo real.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado de Google Ads en Valencia</h3>
+<p>El mercado de <strong>publicidad en Google Ads en Valencia</strong> presenta una de las mejores relaciones coste-resultado de España. Con más de 180.000 empresas activas y una competencia publicitaria significativamente menor que en Madrid o Barcelona, los CPCs (coste por clic) en Valencia son entre un 25% y un 45% más bajos para la mayoría de sectores.</p>
+<p>Los sectores con mayor inversión en Google Ads en Valencia son <strong>turismo, hostelería, inmobiliaria, salud privada y tecnología</strong>. El Distrito Digital y el ecosistema startup valenciano han incrementado la demanda de campañas SEM profesionales, especialmente para empresas B2B que necesitan generar leads cualificados rápidamente.</p>
+<p>El <strong>volumen de búsquedas comerciales en Valencia</strong> es lo suficientemente alto como para generar resultados significativos, pero con una fracción de la inversión necesaria en mercados más saturados. Nuestros clientes en Valencia obtienen un ROAS (retorno sobre la inversión publicitaria) medio de 5,8x, frente al 3,9x de media en Madrid.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de Google Ads para negocios en Valencia</h3>
+<p>Gestionar campañas de Google Ads en Valencia requiere un enfoque que <strong>aproveche las ventajas competitivas del mercado valenciano</strong>: CPCs más bajos, menor competencia y nichos sin explotar.</p>
+<p>Nuestra metodología para Google Ads en Valencia:</p>
+<ul>
+<li><strong>Investigación de mercado local:</strong> Analizamos los CPCs reales, la competencia y el volumen de búsquedas para tu sector en Valencia. Identificamos oportunidades que otras agencias genéricas pasan por alto.</li>
+<li><strong>Estructura de campañas por zona:</strong> Segmentamos geográficamente por distritos de Valencia (Ciutat Vella, Ruzafa, Eixample, Benimaclet, Campanar) y área metropolitana para ajustar pujas y mensajes.</li>
+<li><strong>Landing pages optimizadas:</strong> Cada campaña tiene landing pages diseñadas para maximizar la conversión, con mensajes adaptados al público valenciano y CTA claros.</li>
+<li><strong>Optimización continua:</strong> Revisamos campañas semanalmente — ajuste de pujas, negativización de keywords, test de anuncios, optimización de Quality Score y ampliación de grupos de anuncios.</li>
+</ul>
+<p>Para negocios estacionales — muy comunes en Valencia por el turismo — diseñamos estrategias con <strong>presupuestos dinámicos</strong> que se intensifican en temporada alta (Fallas, verano, Navidad) y se optimizan para eficiencia en temporada baja.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: clínica dental en Campanar</h3>
+<p>Una clínica dental en Campanar invertía 1.200€/mes en Google Ads sin seguimiento de conversiones ni optimización profesional. Generaba 8 llamadas mensuales con un coste por lead de 150€.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Reestructuración completa de campañas por servicio y zona</li>
+<li>Creación de 6 landing pages optimizadas para conversión</li>
+<li>Implementación de tracking de llamadas y formularios</li>
+<li>Optimización semanal con test A/B de anuncios</li>
+</ul>
+<p><strong>Resultados a 6 meses:</strong> Mismo presupuesto (1.200€/mes), 34 llamadas mensuales (+325%). Coste por lead reducido de 150€ a 35€ (-77%). 22 primeras citas mensuales. ROAS: 6,4x. Quality Score medio: 8,2/10.</p>''',
+
+            'detailed_services': '''<h3>Servicios de Google Ads en Valencia</h3>
+<p>Nuestros servicios de <strong>Google Ads en Valencia</strong> cubren todas las modalidades publicitarias:</p>
+<ul>
+<li><strong>Campañas de Search:</strong> Anuncios en los resultados de búsqueda de Google para keywords comerciales de tu sector en Valencia.</li>
+<li><strong>Google Shopping:</strong> Campañas de producto para e-commerce con optimización de feed y estrategia de pujas por rentabilidad.</li>
+<li><strong>Display y Remarketing:</strong> Banners en la red de display de Google para branding y retargeting de visitantes que no convirtieron.</li>
+<li><strong>YouTube Ads:</strong> Campañas de vídeo segmentadas por audiencia, intereses y ubicación en Valencia.</li>
+<li><strong>Performance Max:</strong> Campañas multi-canal con optimización automatizada por machine learning de Google.</li>
+</ul>
+<p>Todos nuestros servicios incluyen <strong>configuración de tracking</strong>, informes semanales con métricas clave y reuniones mensuales de optimización.</p>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar Google Ads con una agencia en Valencia</h3>
+<p>Google Ads en Valencia tiene particularidades que una agencia genérica no conoce. Los <strong>CPCs varían significativamente entre zonas</strong> de la ciudad, la estacionalidad turística afecta a las pujas, y los patrones de búsqueda del consumidor valenciano tienen matices que solo se entienden con experiencia local.</p>
+<p>Nuestro conocimiento del mercado valenciano nos permite <strong>identificar oportunidades que otras agencias pasan por alto</strong> — keywords de menor competencia con alta intención comercial, nichos infraexplotados y segmentaciones geográficas que maximizan el ROI. Esto se traduce en campañas más eficientes y un coste por lead significativamente menor.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta gestionar Google Ads en Valencia?",
+                 "Nuestro fee de gestión comienza en 400€/mes (sin incluir el presupuesto publicitario). Para e-commerce o campañas multi-producto, desde 600€/mes. El presupuesto publicitario mínimo recomendado en Valencia es de 800€/mes, aunque depende del sector y los objetivos."),
+                ("¿Cuánto tarda en dar resultados Google Ads en Valencia?",
+                 "Google Ads genera resultados desde el primer día de activación. Sin embargo, la optimización para alcanzar el máximo rendimiento requiere 4-8 semanas de datos y ajustes. En Valencia, donde los CPCs son más bajos, el punto de rentabilidad se alcanza más rápido que en mercados más caros."),
+                ("¿Gestionáis campañas de Google Ads para turismo en Valencia?",
+                 "Sí, es una de nuestras especialidades. Gestionamos campañas para hoteles, restaurantes, experiencias turísticas y ocio en Valencia con segmentación por idioma, ubicación del usuario y temporalidad. Adaptamos presupuestos a la estacionalidad (Fallas, verano, puentes)."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado de Google Ads en Sevilla</h3>
+<p>Sevilla ofrece el <strong>mercado de Google Ads más rentable de las grandes capitales españolas</strong>. Los CPCs son entre un 35% y un 55% más bajos que en Madrid para la mayoría de sectores, lo que permite generar leads y ventas con presupuestos significativamente menores.</p>
+<p>Los sectores con mayor inversión en Google Ads en Sevilla son <strong>turismo, hostelería, servicios profesionales, salud privada e inmobiliaria</strong>. La estacionalidad marcada de Sevilla (Semana Santa, Feria, temporada turística) genera picos de demanda publicitaria que las empresas preparadas pueden aprovechar con campañas optimizadas.</p>
+<p>La <strong>competencia publicitaria en Sevilla</strong> es todavía baja en muchos sectores. Esto significa que los primeros anunciantes que inviertan con una estrategia profesional captarán tráfico de alta calidad a costes muy competitivos. Nuestros clientes en Sevilla obtienen un ROAS medio de 6,2x — el más alto de las ciudades donde operamos.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de Google Ads para negocios en Sevilla</h3>
+<p>Las campañas de Google Ads en Sevilla deben diseñarse para <strong>maximizar el ROI aprovechando la baja competencia</strong> y los costes publicitarios reducidos del mercado sevillano.</p>
+<p>Nuestra metodología:</p>
+<ul>
+<li><strong>Análisis de mercado local:</strong> Estudiamos CPCs reales, competencia y volumen de búsquedas en Sevilla para tu sector. Identificamos las keywords con mejor ratio volumen/competencia/intención comercial.</li>
+<li><strong>Segmentación geográfica inteligente:</strong> Campañas segmentadas por zonas de Sevilla (Centro, Triana, Nervión, Los Remedios, Macarena) y área metropolitana para personalizar mensajes y ajustar pujas.</li>
+<li><strong>Estacionalidad integrada:</strong> Diseñamos calendarios de inversión que se intensifican antes y durante los picos estacionales — Semana Santa, Feria de Abril, temporada turística, Navidad — y optimizan eficiencia en periodos valle.</li>
+<li><strong>Landing pages de alta conversión:</strong> Cada campaña cuenta con landing pages específicas diseñadas para convertir tráfico sevillano en clientes reales.</li>
+</ul>
+<p>Para negocios del <strong>sector turístico y hostelero</strong> — el motor económico de Sevilla — gestionamos campañas multiidioma (español, inglés, francés, alemán) que captan tanto turismo nacional como internacional.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: hotel en el Centro de Sevilla</h3>
+<p>Un hotel de 45 habitaciones en el centro de Sevilla dependía al 90% de OTAs y quería aumentar las reservas directas a través de Google Ads.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Campañas de Search segmentadas por temporada y tipo de viajero</li>
+<li>Campañas de marca para captar búsquedas del nombre del hotel</li>
+<li>Landing pages con motor de reservas directo y descuento por reserva directa</li>
+<li>Remarketing a visitantes que no completaron la reserva</li>
+</ul>
+<p><strong>Resultados a 8 meses:</strong> Reservas directas: de 10% a 38% del total. Coste por reserva via Ads: 12€ (vs 45€ de comisión OTA media). ROAS: 8,7x. Ahorro en comisiones OTA: 3.200€/mes. Inversión publicitaria: 1.500€/mes.</p>''',
+
+            'detailed_services': '''<h3>Servicios de Google Ads en Sevilla</h3>
+<p>Nuestros servicios de <strong>Google Ads en Sevilla</strong> incluyen:</p>
+<ul>
+<li><strong>Campañas Search:</strong> Anuncios en resultados de búsqueda para keywords comerciales de tu sector en Sevilla y Andalucía.</li>
+<li><strong>Google Shopping:</strong> Campañas para e-commerce con optimización de feed de productos y pujas por rentabilidad.</li>
+<li><strong>Display y Remarketing:</strong> Campañas de branding y retargeting en la red de display de Google.</li>
+<li><strong>YouTube Ads:</strong> Publicidad en vídeo con segmentación avanzada para el mercado sevillano.</li>
+<li><strong>Campañas estacionales:</strong> Estrategias específicas para Semana Santa, Feria de Abril y temporada turística con presupuestos dinámicos.</li>
+</ul>
+<p>Incluimos <strong>tracking completo de conversiones</strong>, informes semanales y optimización continua de campañas.</p>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar Google Ads con conocimiento del mercado sevillano</h3>
+<p>Google Ads en Sevilla tiene dinámicas únicas que una agencia sin experiencia local desconoce. La <strong>estacionalidad extrema</strong> — con picos brutales en Semana Santa y Feria — exige una gestión de presupuestos experta. Los CPCs varían hasta un 200% entre temporada alta y baja en sectores turísticos.</p>
+<p>Nuestro conocimiento del mercado sevillano nos permite <strong>anticipar estos ciclos</strong>, preparar campañas con antelación y captar tráfico de máximo valor cuando la demanda se dispara. Esto, combinado con los CPCs generalmente bajos de Sevilla, genera un ROI que difícilmente encontrarás en mercados más saturados.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta gestionar Google Ads en Sevilla?",
+                 "Fee de gestión desde 350€/mes. Presupuesto publicitario mínimo recomendado: 600€/mes en Sevilla. Para sectores turísticos en temporada alta, recomendamos incrementar el presupuesto un 50-100% para maximizar la captación en los picos de demanda."),
+                ("¿Google Ads funciona bien para turismo en Sevilla?",
+                 "Excepcionalmente bien. La combinación de alta demanda turística y CPCs bajos en Sevilla genera campañas muy rentables. Gestionamos campañas multiidioma para hoteles, restaurantes, experiencias y servicios turísticos con ROAS medios superiores a 7x."),
+                ("¿Cómo gestionáis la estacionalidad en las campañas de Sevilla?",
+                 "Con planificación anticipada. Preparamos campañas y landing pages específicas semanas antes de cada pico estacional. Ajustamos presupuestos dinámicamente — incrementamos inversión en los periodos de mayor demanda y optimizamos eficiencia en temporada baja. Esto maximiza el ROI anual de tu inversión publicitaria."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -647,6 +1076,108 @@ GEO_CONTENT = {
                  'Depende de la plataforma y el sector. Recomendaciones generales: Instagram 4-5 posts/semana + stories diarios + 2-3 reels/semana. LinkedIn 3-4 posts/semana. TikTok 4-5 vídeos/semana. Facebook 3-4 posts/semana. Más importante que la cantidad es la consistencia y la calidad — mejor 4 posts excelentes que 7 mediocres.'),
                 ('¿Puedo ver resultados de vuestro trabajo en redes sociales?',
                  'Por supuesto. Tenemos más de 40 clientes activos de redes sociales en Madrid y podemos mostrarte ejemplos reales de nuestro trabajo, métricas de crecimiento y casos de éxito en sectores como hostelería, retail, fitness, salud, servicios profesionales y e-commerce.'),
+            ],
+        },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado de redes sociales en Valencia</h3>
+<p>Valencia tiene una de las <strong>comunidades digitales más activas de España</strong>. Con más de 800.000 habitantes y una población joven vinculada al ecosistema universitario y tech, las redes sociales son un canal fundamental para negocios que quieren conectar con el consumidor valenciano.</p>
+<p>Los sectores con mayor potencial en redes sociales en Valencia son <strong>hostelería y gastronomía</strong> (Ruzafa se ha convertido en un fenómeno de Instagram), <strong>moda y lifestyle</strong>, turismo, eventos y el ecosistema startup. El auge de foodie culture en Valencia genera un volumen de contenido y engagement enorme que los negocios pueden capitalizar.</p>
+<p>La <strong>inversión en social media marketing en Valencia</strong> está creciendo a un ritmo del 22% anual, pero muchas empresas todavía gestionan sus redes de forma amateur o inconsistente. Esto abre una oportunidad clara para los negocios que apuesten por una gestión profesional con estrategia, contenido de calidad y paid social optimizado.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de redes sociales para negocios en Valencia</h3>
+<p>Gestionar redes sociales en Valencia requiere entender la <strong>cultura digital de la ciudad</strong> y crear contenido que conecte con la identidad valenciana.</p>
+<p>Nuestra metodología:</p>
+<ul>
+<li><strong>Estrategia de contenido local:</strong> Creamos contenido que conecta con la vida valenciana — referencias a las Fallas, la cultura gastronómica, el Distrito Digital, la playa, el estilo de vida mediterráneo. Contenido que resuena, no publicaciones genéricas.</li>
+<li><strong>Gestión multi-plataforma:</strong> Instagram (el canal rey en Valencia para hostelería y lifestyle), Facebook, LinkedIn (fuerte en el ecosistema tech), TikTok y Google Business Profile.</li>
+<li><strong>Social Ads:</strong> Campañas de publicidad en Meta Ads y LinkedIn Ads con segmentación local por zonas de Valencia, intereses y comportamientos.</li>
+<li><strong>Community management:</strong> Gestión activa de la comunidad — respuesta a comentarios, mensajes, gestión de reseñas y generación de UGC (contenido generado por usuarios).</li>
+</ul>
+<p>Para negocios de <strong>hostelería en Ruzafa, Ciutat Vella o El Cabanyal</strong> — sectores donde Instagram es el principal canal de captación — diseñamos estrategias de contenido visual con fotografía profesional, reels y stories que generan visitas al local.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: restaurante en El Cabanyal</h3>
+<p>Un restaurante de cocina marinera en El Cabanyal nos contactó con 340 seguidores en Instagram y sin presencia en otras redes. El 100% de sus clientes venían por proximidad o boca a boca.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Estrategia de contenido visual: 4 publicaciones/semana + stories diarias</li>
+<li>Fotografía gastronómica profesional mensual</li>
+<li>Colaboraciones con 8 microinfluencers gastronómicos de Valencia</li>
+<li>Campañas de Meta Ads geolocalizadas en un radio de 5 km</li>
+</ul>
+<p><strong>Resultados a 6 meses:</strong> Instagram: de 340 a 4.200 seguidores. Alcance mensual: 85.000 impresiones. Reservas atribuibles a redes: 38/semana. Incremento de facturación: +28%. Coste de adquisición por cliente via social: 3,40€.</p>''',
+
+            'detailed_services': '''<h3>Servicios de redes sociales en Valencia</h3>
+<p>Nuestros servicios de <strong>community management y social media en Valencia</strong>:</p>
+<ul>
+<li><strong>Gestión de redes sociales:</strong> Estrategia, creación de contenido, publicación y monitorización en Instagram, Facebook, LinkedIn y TikTok.</li>
+<li><strong>Social Ads:</strong> Campañas de publicidad en Meta Ads y LinkedIn Ads con segmentación local, creatividades optimizadas y optimización continua.</li>
+<li><strong>Contenido visual:</strong> Fotografía profesional, diseño gráfico, producción de reels y vídeo corto adaptado a cada plataforma.</li>
+<li><strong>Influencer marketing:</strong> Colaboraciones con creadores de contenido e influencers locales de Valencia para amplificar el alcance de tu marca.</li>
+<li><strong>Reporting:</strong> Informes mensuales con métricas de alcance, engagement, crecimiento, tráfico web y conversiones desde redes sociales.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar redes sociales con una agencia en Valencia</h3>
+<p>Las redes sociales son un canal donde la <strong>autenticidad local es clave</strong>. Una agencia que conoce Valencia crea contenido que resuena con el público local — las referencias culturales correctas, el tono adecuado, los hashtags relevantes, los influencers del ecosistema valenciano.</p>
+<p>Además, para negocios de hostelería y comercio local, la <strong>cercanía física</strong> es fundamental: sesiones de fotografía in situ, cobertura de eventos, conocimiento de primera mano del producto y el local. Esto se traduce en contenido más auténtico, más engagement y más clientes reales.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta un community manager en Valencia?",
+                 "Nuestros planes de gestión de redes sociales en Valencia comienzan en 450€/mes (2 redes, 12 publicaciones/mes) y pueden alcanzar 1.500€/mes para gestión premium multi-plataforma con social ads y producción de contenido audiovisual incluida."),
+                ("¿Qué redes sociales funcionan mejor en Valencia?",
+                 "Depende del sector: Instagram es imprescindible para hostelería, moda y lifestyle. LinkedIn funciona muy bien para B2B y el ecosistema tech del Distrito Digital. TikTok está creciendo rápido entre el público joven. Facebook sigue siendo relevante para negocios locales que apuntan a un público de 35-55 años."),
+                ("¿Incluís publicidad en redes sociales?",
+                 "Sí. Gestionamos campañas de Meta Ads (Instagram y Facebook) y LinkedIn Ads con segmentación local en Valencia. El presupuesto publicitario es adicional al fee de gestión. En Valencia, los CPCs en Meta Ads son un 30-40% menores que en Madrid, lo que permite resultados sólidos con presupuestos moderados."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado de redes sociales en Sevilla</h3>
+<p>Sevilla tiene una <strong>cultura social intrínseca</strong> que se traslada al mundo digital con fuerza. La pasión sevillana por la gastronomía, las tradiciones, la moda flamenca y la vida social genera un volumen de actividad en redes sociales superior a la media nacional por habitante.</p>
+<p>Los sectores con mayor potencial en redes sociales en Sevilla son <strong>hostelería y gastronomía</strong> (las tapas sevillanas son un fenómeno viral), <strong>moda</strong> (especialmente moda flamenca y complementos), turismo, eventos y cultura. La Semana Santa y la Feria de Abril generan picos de contenido y engagement que multiplican la visibilidad de las marcas presentes.</p>
+<p>A pesar del potencial, <strong>muchos negocios sevillanos gestionan sus redes de forma amateur</strong> — publicaciones irregulares, sin estrategia y sin inversión publicitaria. Esto crea una oportunidad enorme para los negocios que apuesten por una gestión profesional: destacar en redes en Sevilla es hoy más fácil y más rentable que en ciudades con mayor competencia digital.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de redes sociales para negocios en Sevilla</h3>
+<p>La gestión de redes sociales en Sevilla debe <strong>conectar con la identidad y el ritmo de la ciudad</strong>. El consumidor sevillano valora la autenticidad, la cercanía y el contenido que refleja su cultura.</p>
+<p>Nuestra metodología:</p>
+<ul>
+<li><strong>Contenido con ADN sevillano:</strong> Creamos contenido que conecta con la vida en Sevilla — la cultura de la tapa, las tradiciones, el río Guadalquivir, Triana, la vida en la calle. Contenido auténtico que genera engagement real, no publicaciones genéricas.</li>
+<li><strong>Calendario estacional:</strong> Planificamos el contenido alrededor de los grandes eventos sevillanos — Semana Santa, Feria de Abril, Navidad, puentes y temporada turística — para maximizar la visibilidad en los momentos de mayor actividad social.</li>
+<li><strong>Social Ads local:</strong> Campañas en Meta Ads con segmentación precisa por zonas de Sevilla, intereses y comportamientos del público andaluz.</li>
+<li><strong>Colaboraciones locales:</strong> Partnerships con influencers y creadores de contenido sevillanos que aportan credibilidad y alcance local.</li>
+</ul>
+<p>Para negocios de <strong>hostelería y turismo en Sevilla</strong> diseñamos estrategias que captan tanto público local como turistas nacionales e internacionales que buscan experiencias sevillanas auténticas.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: tienda de moda flamenca en Triana</h3>
+<p>Una tienda de moda flamenca en Triana nos contactó con 820 seguidores en Instagram y ventas online casi inexistentes. Toda su facturación dependía de la venta en tienda física.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Estrategia de contenido visual: lookbooks, detrás de cámaras del taller, stories de pruebas de vestidos</li>
+<li>Cobertura de Semana Santa y Feria con contenido en tiempo real</li>
+<li>Colaboraciones con 6 influencers de moda flamenca y cultura sevillana</li>
+<li>Campañas de Meta Ads segmentadas (Sevilla, Andalucía, España)</li>
+</ul>
+<p><strong>Resultados a 8 meses:</strong> Instagram: de 820 a 12.400 seguidores. Ventas online: de 0 a 8.400€/mes. Engagement rate: 5,8% (vs media del sector 1,8%). Facturación de Feria: +45% respecto al año anterior. El 22% de los nuevos clientes en tienda llegaron por Instagram.</p>''',
+
+            'detailed_services': '''<h3>Servicios de redes sociales en Sevilla</h3>
+<p>Nuestros servicios de <strong>social media marketing en Sevilla</strong>:</p>
+<ul>
+<li><strong>Gestión de redes:</strong> Estrategia, contenido, publicación y monitorización en Instagram, Facebook, LinkedIn y TikTok adaptados al mercado sevillano.</li>
+<li><strong>Social Ads:</strong> Campañas de publicidad en Meta Ads y LinkedIn Ads con segmentación local en Sevilla y Andalucía.</li>
+<li><strong>Producción de contenido:</strong> Fotografía, vídeo, reels y stories profesionales. Cobertura de eventos y momentos clave de tu negocio.</li>
+<li><strong>Influencer marketing:</strong> Colaboraciones con creadores de contenido sevillanos y andaluces relevantes para tu sector.</li>
+<li><strong>Cobertura estacional:</strong> Contenido específico para Semana Santa, Feria de Abril, Navidad y temporada turística.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar redes sociales con conocimiento del mercado sevillano</h3>
+<p>En Sevilla, las redes sociales son una extensión de la <strong>vida social de la ciudad</strong>. El contenido que funciona tiene que ser auténtico, cercano y conectar con la identidad sevillana. Una agencia que no conoce Sevilla creará contenido genérico que no resonará con el público local.</p>
+<p>Además, la <strong>estacionalidad sevillana</strong> es un factor clave en redes sociales. Los picos de Semana Santa y Feria generan oportunidades de visibilidad que hay que planificar con semanas de antelación. Conocer el calendario sevillano, los influencers relevantes y las tendencias locales marca la diferencia entre una presencia que genera negocio y otra que pasa desapercibida.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta un community manager en Sevilla?",
+                 "Planes desde 400€/mes (2 redes, 12 publicaciones) hasta 1.400€/mes para gestión completa con social ads, producción audiovisual y cobertura de eventos. Los costes en Sevilla son un 20-30% menores que en Madrid con igual calidad de servicio."),
+                ("¿Gestionáis redes sociales para negocios de moda flamenca?",
+                 "Sí, es una de nuestras especialidades en Sevilla. Creamos estrategias de contenido visual específicas para moda flamenca, complementos y accesorios — con especial foco en los picos de Semana Santa y Feria, que concentran el 40% de las ventas anuales del sector."),
+                ("¿Cubrís Semana Santa y Feria de Abril en redes?",
+                 "Sí. Planificamos y ejecutamos estrategias de contenido específicas para ambos eventos — el mayor momento de visibilidad para negocios sevillanos. Incluye contenido previo de anticipación, cobertura en tiempo real con stories y reels, y contenido posterior de resumen y engagement."),
             ],
         },
     },
@@ -776,6 +1307,109 @@ GEO_CONTENT = {
                  'Sí. Ofrecemos sesiones de fotografía de producto profesional en Madrid — tanto en estudio como en localizaciones. La calidad de las fotos de producto es uno de los factores que más impacta en la tasa de conversión de un e-commerce. Incluimos retoque, optimización de peso para web y formatos para redes sociales.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado del e-commerce en Valencia</h3>
+<p>Valencia se está consolidando como un <strong>polo emergente del comercio electrónico en España</strong>. Su posición estratégica — con uno de los puertos más importantes de Europa y excelentes conexiones logísticas — la convierte en una base ideal para tiendas online que necesitan eficiencia en distribución.</p>
+<p>Los sectores con mayor crecimiento en e-commerce en Valencia son <strong>alimentación y productos gourmet</strong> (la huerta valenciana es un activo único), cerámica y artesanía, moda, tecnología y productos para el hogar. El auge del Distrito Digital ha impulsado la creación de startups de e-commerce con modelos innovadores.</p>
+<p>La <strong>ventaja competitiva de Valencia</strong> para el e-commerce es clara: costes operativos menores que en Madrid o Barcelona, infraestructura logística de primer nivel (puerto, aeropuerto, autopistas) y acceso a un ecosistema tech en crecimiento que facilita la contratación de talento digital.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de e-commerce para negocios en Valencia</h3>
+<p>Lanzar o hacer crecer una tienda online desde Valencia requiere una <strong>estrategia que combine tecnología, marketing digital y optimización logística</strong>.</p>
+<p>Nuestro enfoque:</p>
+<ul>
+<li><strong>Desarrollo técnico optimizado:</strong> Tiendas online rápidas, seguras y preparadas para escalar. Arquitectura de categorías y fichas de producto optimizadas para SEO y conversión.</li>
+<li><strong>SEO para e-commerce:</strong> Posicionamiento orgánico de categorías y productos con keywords comerciales del mercado valenciano y nacional.</li>
+<li><strong>Google Shopping y Social Commerce:</strong> Campañas de producto en Google Shopping y catálogos en Instagram/Facebook Shopping para maximizar la visibilidad de tus productos.</li>
+<li><strong>Optimización de conversión:</strong> Test A/B, optimización del checkout, estrategias de carrito abandonado y personalización de la experiencia de compra.</li>
+</ul>
+<p>Para negocios de <strong>alimentación y productos valencianos</strong> — aceite, vino, cerámica, artesanía — diseñamos tiendas que comunican la autenticidad del producto y captan tanto mercado nacional como exportación.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: tienda de cerámica artesanal valenciana</h3>
+<p>Un taller de cerámica artesanal en Manises necesitaba una tienda online para vender sus productos a nivel nacional e internacional. Solo vendían en tienda física y ferias.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Tienda online con 180 productos, fotografía profesional y descripciones SEO</li>
+<li>Campañas de Google Shopping en España y Europa</li>
+<li>Estrategia de contenido: blog sobre cerámica valenciana, historia del taller, procesos artesanales</li>
+<li>Instagram Shopping con catálogo integrado</li>
+</ul>
+<p><strong>Resultados a 10 meses:</strong> Ventas online: de 0 a 14.200€/mes. Tráfico orgánico: 3.800 visitas/mes. Pedidos internacionales: 28% del total (Francia, Alemania, UK). Tasa de conversión: 2,8%. ROAS en Google Shopping: 5,4x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de e-commerce en Valencia</h3>
+<p>Nuestros servicios de <strong>tienda online y e-commerce en Valencia</strong>:</p>
+<ul>
+<li><strong>Desarrollo de tienda online:</strong> Diseño y desarrollo de e-commerce optimizado para conversión, velocidad y SEO.</li>
+<li><strong>SEO para e-commerce:</strong> Posicionamiento orgánico de categorías, fichas de producto y contenido de blog para captar tráfico cualificado.</li>
+<li><strong>Google Shopping:</strong> Configuración y gestión profesional de campañas de producto con optimización de feed y pujas.</li>
+<li><strong>Email marketing:</strong> Automatizaciones de carrito abandonado, secuencias post-compra y newsletters de producto.</li>
+<li><strong>Analítica e-commerce:</strong> Tracking avanzado de conversiones, análisis de embudo, atribución de ventas y dashboards en tiempo real.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué montar tu e-commerce con una agencia en Valencia</h3>
+<p>Valencia ofrece ventajas logísticas y operativas que una agencia local puede ayudarte a explotar. Conocemos las <strong>empresas de logística y fulfillment de la zona</strong>, las pasarelas de pago que mejor funcionan para el mercado español y europeo, y las particularidades del consumidor valenciano online.</p>
+<p>Para negocios que venden <strong>productos valencianos</strong> (cerámica, alimentación, artesanía), sabemos cómo comunicar la autenticidad y el valor del origen, convirtiendo "hecho en Valencia" en un argumento de venta poderoso tanto en el mercado nacional como en exportación.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta montar una tienda online en Valencia?",
+                 "Una tienda online profesional en Valencia parte de 4.000€ para catálogos de hasta 100 productos y puede alcanzar 12.000€+ para e-commerce complejos con funcionalidades avanzadas. Incluye diseño, desarrollo, SEO on-page y configuración de pasarela de pago."),
+                ("¿Qué plataforma recomendáis para e-commerce?",
+                 "Depende del proyecto. Para tiendas medianas, WooCommerce ofrece la mejor relación flexibilidad/coste. Para proyectos que necesitan escalar rápido, Shopify es ideal. Para catálogos grandes (+5.000 productos) o necesidades B2B, PrestaShop o soluciones headless. Siempre recomendamos basándonos en tu caso específico."),
+                ("¿Gestionáis Google Shopping para tiendas en Valencia?",
+                 "Sí. Configuramos y optimizamos campañas de Google Shopping con feed de productos optimizado, estructura de campañas por categoría y margen, y reporting de ROAS por producto. Fee de gestión desde 500€/mes adicionales al presupuesto publicitario."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado del e-commerce en Sevilla</h3>
+<p>El comercio electrónico en Sevilla está viviendo un <strong>momento de crecimiento acelerado</strong>. El tejido empresarial sevillano — históricamente más orientado al comercio físico — está adoptando la venta online como canal complementario o incluso principal. Los sectores con mayor potencial son <strong>agroalimentación</strong> (aceite de oliva, vinos, productos ibéricos), moda flamenca, turismo experiencial y artesanía.</p>
+<p>La <strong>ventaja de Sevilla</strong> para el e-commerce es su posición como capital del sur de España, con infraestructura logística en mejora constante y costes operativos competitivos. Además, muchos productos sevillanos y andaluces tienen un valor de marca asociado al origen que funciona excepcionalmente bien en ventas online — tanto a nivel nacional como internacional.</p>
+<p>A pesar del potencial, <strong>la competencia en e-commerce en Sevilla es todavía baja</strong>. Muchos sectores no tienen presencia online profesional, lo que permite a los primeros en digitalizarse captar una cuota de mercado significativa.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de e-commerce para negocios en Sevilla</h3>
+<p>Crear una tienda online exitosa desde Sevilla requiere una estrategia que <strong>capitalice las fortalezas del mercado andaluz</strong>.</p>
+<p>Nuestro enfoque:</p>
+<ul>
+<li><strong>Desarrollo e-commerce optimizado:</strong> Tiendas rápidas, seguras y diseñadas para convertir. Arquitectura pensada para SEO y experiencia de usuario.</li>
+<li><strong>Storytelling de producto:</strong> Para productos andaluces (aceite, vino, artesanía, moda flamenca), el storytelling del origen es un multiplicador de conversión. Diseñamos la experiencia de compra alrededor de la historia del producto.</li>
+<li><strong>SEO + Paid:</strong> Combinamos posicionamiento orgánico de categorías y productos con campañas de Google Shopping y Social Commerce para maximizar la captación.</li>
+<li><strong>Logística y operaciones:</strong> Asesoramiento sobre las mejores soluciones logísticas para envíos desde Sevilla, tanto nacionales como internacionales.</li>
+</ul>
+<p>Para negocios del <strong>sector agroalimentario andaluz</strong> — aceite de oliva, productos ibéricos, vinos, conservas — diseñamos tiendas que convierten el origen en un argumento de venta premium.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: tienda de aceite de oliva premium</h3>
+<p>Una almazara familiar de la provincia de Sevilla quería vender su aceite de oliva virgen extra directamente al consumidor final, eliminando intermediarios.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Tienda online con diseño premium centrado en el storytelling del producto y la finca</li>
+<li>SEO para keywords de alto valor (aceite de oliva virgen extra premium, aceite picual, etc.)</li>
+<li>Google Shopping en España, Francia, Alemania e Italia</li>
+<li>Email marketing con secuencias de fidelización y suscripción recurrente</li>
+</ul>
+<p><strong>Resultados a 12 meses:</strong> Ventas online: de 0 a 18.600€/mes. Margen bruto: +40% vs venta a distribuidores. Pedidos internacionales: 35% (Francia y Alemania). Suscripciones recurrentes: 124 clientes activos. Tasa de recompra: 62%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de e-commerce en Sevilla</h3>
+<p>Nuestros servicios de <strong>tienda online en Sevilla</strong>:</p>
+<ul>
+<li><strong>Desarrollo de tienda online:</strong> E-commerce profesional optimizado para conversión, velocidad y SEO.</li>
+<li><strong>SEO para e-commerce:</strong> Posicionamiento orgánico de categorías y productos para captar tráfico cualificado.</li>
+<li><strong>Google Shopping:</strong> Campañas de producto profesionales con optimización de feed y pujas por rentabilidad.</li>
+<li><strong>Social Commerce:</strong> Catálogos en Instagram y Facebook Shopping integrados con tu tienda.</li>
+<li><strong>Email marketing:</strong> Automatizaciones de carrito abandonado, secuencias de fidelización y newsletters.</li>
+<li><strong>Internacionalización:</strong> Configuración multi-idioma y multi-moneda para vender productos andaluces en Europa.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué montar tu e-commerce con una agencia que conozca Sevilla</h3>
+<p>Los productos sevillanos y andaluces tienen un <strong>valor de marca asociado al origen</strong> que, bien comunicado, multiplica las conversiones online. Una agencia que conoce el mercado sabe cómo transmitir la autenticidad de una almazara, un taller de artesanía o una marca de moda flamenca de forma que conecte emocionalmente con el comprador.</p>
+<p>Además, conocemos la <strong>infraestructura logística del sur de España</strong>, las mejores opciones de fulfillment y las particularidades del envío de productos alimentarios o delicados. Esto se traduce en operaciones más eficientes y menos problemas post-venta.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta montar una tienda online en Sevilla?",
+                 "Tienda online profesional desde 3.500€ para catálogos de hasta 100 productos. E-commerce complejos con funcionalidades avanzadas desde 10.000€. Incluye diseño, desarrollo, SEO on-page, configuración de pagos y formación para gestión del catálogo."),
+                ("¿Podéis ayudar a vender productos andaluces online?",
+                 "Es una de nuestras especialidades. Hemos ayudado a almazaras, bodegas, productores de ibéricos y artesanos sevillanos a vender directamente al consumidor final — tanto en España como en Europa. El storytelling del origen andaluz es un multiplicador de conversión que sabemos explotar."),
+                ("¿Gestionáis envíos internacionales desde Sevilla?",
+                 "Asesoramos sobre las mejores soluciones logísticas para envíos nacionales e internacionales desde Sevilla. Para productos alimentarios, configuramos tiendas con opciones de envío refrigerado y embalaje especializado. Integramos la tienda con las principales empresas de logística."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -889,6 +1523,106 @@ GEO_CONTENT = {
                  'Sí. Hemos migrado webs desde Joomla, Drupal, Wix, Squarespace, Blogger y sistemas propietarios. La migración incluye traspaso de contenido, redirecciones 301 para mantener el SEO, adaptación del diseño y verificación exhaustiva post-migración. Nunca pierdes posiciones en Google si la migración se hace bien.'),
                 ('¿Ofrecéis hosting para WordPress?',
                  'Recomendamos proveedores de hosting premium que hemos testado y validado (SiteGround, Cloudways, Kinsta), y nos encargamos de la configuración y optimización. Si prefieres que gestionemos el hosting directamente, ofrecemos planes de hosting gestionado que incluyen el mantenimiento técnico completo.'),
+            ],
+        },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado de WordPress en Valencia</h3>
+<p>WordPress sigue siendo el <strong>CMS más utilizado en Valencia</strong>, con más del 40% de las webs de empresas valencianas construidas sobre esta plataforma. Sin embargo, la mayoría de instalaciones presentan problemas de rendimiento, seguridad y actualización que limitan su potencial como herramienta de negocio.</p>
+<p>La demanda de <strong>servicios profesionales de WordPress en Valencia</strong> está creciendo, impulsada por empresas que necesitan webs más rápidas, más seguras y mejor optimizadas para SEO. Los sectores de turismo, hostelería, servicios profesionales y el ecosistema startup del Distrito Digital lideran esta demanda.</p>
+<p>El <strong>coste de desarrollo WordPress en Valencia</strong> es un 20-30% menor que en Madrid o Barcelona, lo que permite acceder a desarrollo profesional de primer nivel con presupuestos más contenidos.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de desarrollo WordPress para negocios en Valencia</h3>
+<p>Nuestro enfoque para proyectos WordPress en Valencia combina <strong>desarrollo técnico de alto nivel con optimización para negocio</strong>:</p>
+<ul>
+<li><strong>Desarrollo a medida:</strong> Temas personalizados desde cero — no plantillas modificadas. Código limpio, optimizado para velocidad y preparado para escalar.</li>
+<li><strong>Optimización de rendimiento:</strong> Core Web Vitals perfectos, caché avanzada, CDN, optimización de base de datos y lazy loading.</li>
+<li><strong>Seguridad profesional:</strong> Hardening de WordPress, firewall, monitorización de vulnerabilidades, copias de seguridad automatizadas y protocolo de respuesta ante incidentes.</li>
+<li><strong>SEO técnico:</strong> Arquitectura de URLs, schema markup, velocidad de carga y estructura de contenido optimizados para posicionar.</li>
+</ul>
+<p>Para <strong>migraciones desde otras plataformas</strong> — muy comunes en Valencia, donde muchos negocios tienen webs obsoletas — garantizamos la conservación del SEO acumulado y una transición sin pérdida de tráfico.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: academia de formación en Benimaclet</h3>
+<p>Una academia de idiomas en Benimaclet tenía un WordPress lento (12 segundos de carga), hackeado dos veces en un año y que apenas convertía visitas en matrículas.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Rediseño completo con tema a medida optimizado para velocidad</li>
+<li>Sistema de reserva de clases de prueba integrado</li>
+<li>Migración a hosting premium con CDN y caché avanzada</li>
+<li>SEO on-page para 15 páginas de servicio (academia inglés Valencia, clases francés Benimaclet, etc.)</li>
+</ul>
+<p><strong>Resultados:</strong> Tiempo de carga: de 12s a 1,4s. PageSpeed: 97/100. Solicitudes de clase de prueba: de 6 a 38 mensuales (+533%). Tráfico orgánico: +180% en 6 meses. Cero incidentes de seguridad desde la migración.</p>''',
+
+            'detailed_services': '''<h3>Servicios de WordPress en Valencia</h3>
+<p>Nuestros servicios de <strong>WordPress profesional en Valencia</strong>:</p>
+<ul>
+<li><strong>Desarrollo WordPress a medida:</strong> Temas y plugins personalizados, sin plantillas genéricas.</li>
+<li><strong>Optimización de velocidad:</strong> Core Web Vitals, caché, CDN, optimización de imágenes y base de datos.</li>
+<li><strong>Seguridad WordPress:</strong> Hardening, firewall, monitorización, backups y protocolo de respuesta.</li>
+<li><strong>Mantenimiento WordPress:</strong> Actualizaciones, copias de seguridad, monitorización y soporte técnico mensual.</li>
+<li><strong>Migraciones:</strong> De cualquier plataforma a WordPress o de WordPress obsoleto a WordPress optimizado, sin pérdida de SEO.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué contratar un especialista WordPress en Valencia</h3>
+<p>WordPress es una herramienta poderosa, pero <strong>mal configurada es un problema</strong>. En Valencia, donde muchos negocios tienen instalaciones WordPress antiguas, lentas o vulnerables, un especialista local puede diagnosticar y resolver problemas rápidamente — incluyendo reuniones presenciales para entender tu negocio y tus necesidades.</p>
+<p>Nuestro conocimiento del mercado valenciano nos permite además diseñar webs WordPress que conecten con tu público local y estén optimizadas para las búsquedas que los valencianos realmente hacen.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta un desarrollo WordPress profesional en Valencia?",
+                 "Un WordPress a medida en Valencia parte de 2.500€ para webs corporativas estándar y puede alcanzar 8.000€+ para proyectos complejos con funcionalidades avanzadas. Mantenimiento WordPress profesional desde 120€/mes."),
+                ("¿Podéis arreglar un WordPress lento o hackeado?",
+                 "Sí. Ofrecemos servicios de optimización de velocidad (garantizamos LCP por debajo de 2,5s) y limpieza de WordPress hackeados con implementación de medidas de seguridad avanzadas para evitar futuras intrusiones."),
+                ("¿Recomendáis WordPress o una web estática?",
+                 "Depende del proyecto. WordPress es ideal si necesitas actualizar contenido con frecuencia, gestionar un blog o tener una tienda online. Para webs corporativas que apenas cambian, una web estática ofrece mejor rendimiento y menor mantenimiento. Siempre recomendamos la opción que mejor se ajuste a tus necesidades reales."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado de WordPress en Sevilla</h3>
+<p>En Sevilla, WordPress domina el panorama web con más del <strong>45% de las webs empresariales</strong> construidas sobre esta plataforma. Sin embargo, la mayoría son instalaciones antiguas, con plantillas genéricas, plugins obsoletos y problemas graves de rendimiento y seguridad.</p>
+<p>La demanda de <strong>servicios profesionales de WordPress en Sevilla</strong> está creciendo a medida que más empresas entienden que una web lenta o insegura les está costando clientes y posiciones en Google. Los sectores de turismo, servicios profesionales y comercio local lideran esta demanda de profesionalización.</p>
+<p>Los <strong>costes de desarrollo WordPress en Sevilla</strong> son los más competitivos de las grandes capitales españolas, lo que permite acceder a desarrollo de primer nivel con presupuestos muy ajustados.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de WordPress para negocios en Sevilla</h3>
+<p>Nuestro enfoque para WordPress en Sevilla:</p>
+<ul>
+<li><strong>Desarrollo profesional:</strong> Temas personalizados desde cero, código limpio y optimizado, sin plantillas genéricas ni constructores visuales pesados.</li>
+<li><strong>Velocidad y rendimiento:</strong> Optimización de Core Web Vitals, caché avanzada, CDN y compresión de recursos. En Sevilla, donde muchos competidores tienen webs lentas, la velocidad es un diferenciador inmediato.</li>
+<li><strong>Seguridad:</strong> Hardening, firewall, monitorización 24/7, backups diarios y protocolo de respuesta ante incidentes.</li>
+<li><strong>SEO integrado:</strong> Arquitectura web, schema markup, velocidad y estructura de contenido optimizados para posicionar en el mercado sevillano.</li>
+</ul>
+<p>Para negocios sevillanos con <strong>WordPress obsoleto o hackeado</strong> — un problema más común de lo que parece — ofrecemos servicios de rescate y modernización que transforman una web problemática en una herramienta de negocio efectiva.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: clínica fisioterapia en Nervión</h3>
+<p>Una clínica de fisioterapia en Nervión tenía un WordPress con un tema comprado en ThemeForest, velocidad de carga de 9 segundos y que había sido hackeado con spam farmacéutico invisible para el usuario pero detectado por Google.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Limpieza completa del hackeo y desindexación del spam en Google</li>
+<li>Rediseño con tema a medida optimizado para velocidad</li>
+<li>10 páginas de servicio optimizadas (fisioterapia Nervión, rehabilitación Sevilla, etc.)</li>
+<li>Implementación de seguridad avanzada y mantenimiento mensual</li>
+</ul>
+<p><strong>Resultados:</strong> Tiempo de carga: de 9s a 1,6s. Penalización de Google levantada en 3 semanas. Tráfico orgánico: de 85 (post-hackeo) a 1.900 visitas/mes en 7 meses. Solicitudes de cita: 32/mes desde la web. Cero incidentes de seguridad.</p>''',
+
+            'detailed_services': '''<h3>Servicios de WordPress en Sevilla</h3>
+<p>Nuestros servicios de <strong>WordPress en Sevilla</strong>:</p>
+<ul>
+<li><strong>Desarrollo a medida:</strong> Temas y plugins personalizados, código limpio y optimizado.</li>
+<li><strong>Optimización de velocidad:</strong> Core Web Vitals, caché, CDN, compresión y optimización de base de datos.</li>
+<li><strong>Seguridad:</strong> Hardening, firewall, monitorización, backups automatizados y respuesta ante hackeos.</li>
+<li><strong>Mantenimiento:</strong> Planes mensuales con actualizaciones, copias de seguridad y soporte técnico.</li>
+<li><strong>Rescate de WordPress:</strong> Limpieza de hackeos, recuperación de penalizaciones de Google y modernización de instalaciones obsoletas.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué contar con un especialista WordPress en Sevilla</h3>
+<p>El problema más común de WordPress en Sevilla es el <strong>abandono técnico</strong> — webs que se crearon hace años y nunca se han actualizado, optimizado ni securizado. Un especialista local puede hacer una auditoría presencial, entender tu negocio y resolver los problemas de raíz.</p>
+<p>Además, conocemos las necesidades específicas del mercado sevillano — webs turísticas multiidioma, webs de hostelería con sistema de reservas, webs corporativas que necesitan transmitir confianza y profesionalidad en un mercado donde la relación personal sigue siendo fundamental.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta un WordPress profesional en Sevilla?",
+                 "WordPress a medida desde 2.000€ para webs corporativas. Proyectos complejos desde 6.000€. Mantenimiento profesional desde 100€/mes. Los costes en Sevilla son los más competitivos de las grandes capitales españolas."),
+                ("¿Podéis limpiar un WordPress hackeado en Sevilla?",
+                 "Sí. Ofrecemos servicio urgente de limpieza de hackeos WordPress con tiempo de respuesta de 24-48 horas. Incluye limpieza completa, desindexación de spam, implementación de seguridad avanzada y monitorización durante 3 meses."),
+                ("¿Merece la pena mantener WordPress o es mejor cambiar?",
+                 "WordPress sigue siendo excelente para webs que necesitan actualización frecuente de contenido, blog activo o tienda online. Si tu web es corporativa y apenas cambia, una web estática puede ser más eficiente. Evaluamos tu caso y recomendamos la mejor opción sin compromiso."),
             ],
         },
     },
@@ -1012,6 +1746,107 @@ GEO_CONTENT = {
                  'Sí, ofrecemos servicios de community management y gestión de contenido orgánico como servicio complementario a la publicidad en Meta. Las campañas de pago funcionan mejor cuando el perfil orgánico está activo y cuidado — genera confianza en los usuarios que ven tu anuncio y visitan tu perfil antes de decidir.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado de Facebook Ads en Valencia</h3>
+<p>Facebook e Instagram Ads (Meta Ads) son <strong>canales publicitarios clave para negocios en Valencia</strong>. Con CPMs un 25-35% menores que en Madrid y una base de usuarios activa y diversa, Valencia ofrece una de las mejores relaciones coste-resultado en publicidad social de España.</p>
+<p>Los sectores que más se benefician de Meta Ads en Valencia son <strong>hostelería y restauración</strong> (el boom gastronómico de Valencia es especialmente viral en Instagram), retail, moda, formación, salud y bienestar. El turismo también genera campañas de alto rendimiento, especialmente durante Fallas, verano y puentes festivos.</p>
+<p>La <strong>segmentación por zonas</strong> de Valencia permite crear campañas hiper-locales — anuncios diferentes para público en Ruzafa, Benimaclet, Campanar o El Cabanyal — que maximizan la relevancia y minimizan el coste por resultado.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de Meta Ads para negocios en Valencia</h3>
+<p>Gestionar campañas de Meta Ads en Valencia requiere entender el <strong>comportamiento del consumidor valenciano en redes sociales</strong>.</p>
+<p>Nuestro enfoque:</p>
+<ul>
+<li><strong>Segmentación local inteligente:</strong> Audiencias por zona de Valencia, intereses, comportamientos y lookalikes basados en tus mejores clientes.</li>
+<li><strong>Creatividades que conectan:</strong> Anuncios con referencias locales, fotografía de calidad y mensajes que resuenan con el público valenciano.</li>
+<li><strong>Embudo completo:</strong> Campañas de awareness, consideración y conversión coordinadas para guiar al usuario desde el descubrimiento hasta la acción.</li>
+<li><strong>Testing y optimización:</strong> Test A/B constante de creatividades, audiencias, copies y ubicaciones para maximizar el ROAS.</li>
+</ul>
+<p>Para negocios de <strong>hostelería en Valencia</strong> — donde Instagram es el canal rey — diseñamos campañas de alcance local con creatividades visuales que generan visitas al local.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: cadena de gimnasios en Valencia</h3>
+<p>Una cadena de 3 gimnasios en Valencia (Eixample, Campanar y Paterna) necesitaba incrementar las inscripciones mensuales reduciendo el coste de adquisición.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Campañas segmentadas por zona (3 km alrededor de cada centro)</li>
+<li>Creatividades con vídeo de las instalaciones y testimonios de socios</li>
+<li>Lead ads con formulario simplificado (nombre + teléfono)</li>
+<li>Secuencia de remarketing para leads que no convirtieron</li>
+</ul>
+<p><strong>Resultados a 5 meses:</strong> 184 leads cualificados mensuales. Coste por lead: 6,80€ (vs 18€ anterior). Tasa de conversión lead→inscripción: 32%. Nuevas altas atribuibles a Meta Ads: 59/mes. ROAS: 4,8x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de Facebook e Instagram Ads en Valencia</h3>
+<p>Nuestros servicios de <strong>Meta Ads en Valencia</strong>:</p>
+<ul>
+<li><strong>Campañas de leads:</strong> Lead ads optimizados para captar datos de contacto de clientes potenciales en Valencia.</li>
+<li><strong>Campañas de tráfico y conversión:</strong> Anuncios que llevan tráfico cualificado a tu web o tienda online.</li>
+<li><strong>Remarketing:</strong> Campañas de retargeting para recuperar visitantes que no convirtieron.</li>
+<li><strong>Instagram Ads:</strong> Campañas de imagen, vídeo, stories y reels optimizadas para engagement y conversión.</li>
+<li><strong>Producción de creatividades:</strong> Diseño gráfico, edición de vídeo y copywriting para anuncios de alto rendimiento.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar Meta Ads con una agencia en Valencia</h3>
+<p>Meta Ads en Valencia tiene particularidades que afectan directamente al rendimiento de las campañas. Los <strong>CPMs varían entre zonas</strong>, las preferencias de contenido del público valenciano son diferentes a las de Madrid o Barcelona, y la estacionalidad (Fallas, verano, puentes) afecta significativamente a los costes y resultados.</p>
+<p>Una agencia que conoce Valencia crea <strong>creatividades más relevantes</strong>, segmenta mejor y optimiza los presupuestos teniendo en cuenta los ciclos locales. Esto se traduce en un coste por resultado menor y un ROAS superior.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta gestionar Facebook Ads en Valencia?",
+                 "Fee de gestión desde 400€/mes. Presupuesto publicitario mínimo recomendado: 600€/mes. En Valencia, los CPMs son un 25-35% menores que en Madrid, lo que permite resultados sólidos con presupuestos moderados."),
+                ("¿Facebook o Instagram? ¿Cuál funciona mejor en Valencia?",
+                 "Instagram es el canal dominante para negocios de hostelería, moda, fitness y lifestyle en Valencia. Facebook sigue siendo relevante para público de 35-60 años y para negocios B2C con tickets medios-altos. Lo ideal es combinar ambos con Meta Ads y dejar que el algoritmo optimice la distribución."),
+                ("¿Incluís la creación de los anuncios?",
+                 "Sí. Nuestro servicio incluye la producción de creatividades — diseño gráfico, edición de vídeo corto, copywriting y adaptación a todos los formatos (feed, stories, reels). No te pedimos que nos des los materiales ya hechos."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado de Facebook Ads en Sevilla</h3>
+<p>Sevilla ofrece un <strong>mercado de Meta Ads con costes excepcionalmente bajos</strong> y un potencial de segmentación local muy atractivo. Los CPMs en Sevilla son entre un 35% y un 50% menores que en Madrid, lo que permite a negocios locales ejecutar campañas de publicidad social rentables incluso con presupuestos modestos.</p>
+<p>Los sectores con mayor potencial en Meta Ads en Sevilla son <strong>hostelería, moda flamenca, turismo, eventos, belleza y servicios locales</strong>. La cultura visual de Sevilla — Semana Santa, Feria, arquitectura, gastronomía — genera contenido publicitario con un atractivo visual superior a la media, lo que mejora las tasas de engagement y reduce los costes por resultado.</p>
+<p>A pesar de este potencial, <strong>muchos negocios sevillanos no invierten en publicidad social</strong> o lo hacen sin estrategia (impulsando publicaciones sin objetivos). Esto deja el campo libre para los negocios que inviertan con profesionalidad.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de Meta Ads para negocios en Sevilla</h3>
+<p>Las campañas de Meta Ads en Sevilla deben <strong>conectar con la identidad visual y cultural de la ciudad</strong> para maximizar el engagement y la conversión.</p>
+<p>Nuestro enfoque:</p>
+<ul>
+<li><strong>Creatividades con identidad sevillana:</strong> Anuncios que reflejan la estética y la cultura de Sevilla — no creatividades genéricas. El público sevillano conecta con contenido auténtico y cercano.</li>
+<li><strong>Segmentación hiper-local:</strong> Audiencias por barrios de Sevilla y área metropolitana, con mensajes y ofertas adaptadas a cada zona.</li>
+<li><strong>Calendario estacional:</strong> Campañas específicas antes y durante Semana Santa, Feria de Abril, puentes y temporada turística para captar los picos de demanda.</li>
+<li><strong>Embudo de conversión:</strong> Awareness → Consideración → Conversión con remarketing para maximizar el valor de cada euro invertido.</li>
+</ul>''',
+
+            'case_study': '''<h3>Caso de éxito: restaurante de tapas en Triana</h3>
+<p>Un restaurante de tapas en Triana con 60 plazas quería llenar mesas entre semana, cuando la ocupación bajaba al 40%.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Campañas de alcance local (radio 4 km) con creatividades de platos estrella</li>
+<li>Oferta exclusiva "menú entre semana" solo capturable via el anuncio</li>
+<li>Vídeos cortos del chef preparando tapas + ambiente del local</li>
+<li>Remarketing a personas que interactuaron con los anuncios</li>
+</ul>
+<p><strong>Resultados a 4 meses:</strong> Ocupación entre semana: de 40% a 78%. Coste por cliente captado: 2,90€. Ticket medio: 24€. ROAS: 8,3x. Inversión mensual: 450€. Incremento de facturación entre semana: +62%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de Facebook e Instagram Ads en Sevilla</h3>
+<p>Nuestros servicios de <strong>Meta Ads en Sevilla</strong>:</p>
+<ul>
+<li><strong>Campañas de leads:</strong> Captación de datos de clientes potenciales en Sevilla con lead ads optimizados.</li>
+<li><strong>Campañas de tráfico y conversión:</strong> Anuncios para generar visitas a tu web o tienda online.</li>
+<li><strong>Remarketing:</strong> Retargeting inteligente para convertir visitantes en clientes.</li>
+<li><strong>Campañas estacionales:</strong> Estrategias específicas para Semana Santa, Feria y temporada turística.</li>
+<li><strong>Producción de creatividades:</strong> Diseño, vídeo, copy y adaptación a todos los formatos de Meta.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué gestionar Meta Ads con conocimiento del mercado sevillano</h3>
+<p>El éxito en Meta Ads en Sevilla depende de la <strong>autenticidad del contenido</strong> y el conocimiento de los ciclos locales. Los picos de Semana Santa y Feria pueden multiplicar por 3 los costes publicitarios si no se planifican con antelación — o generar retornos excepcionales si se anticipan correctamente.</p>
+<p>Una agencia que conoce Sevilla sabe qué creatividades funcionan, qué tono usar, cuándo invertir más y cuándo optimizar eficiencia. Esto marca la diferencia entre campañas que generan negocio y campañas que solo generan métricas vanidosas.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta gestionar Meta Ads en Sevilla?",
+                 "Fee de gestión desde 350€/mes. Presupuesto publicitario mínimo recomendado: 500€/mes. En Sevilla, los costes por resultado son los más bajos de las grandes capitales, lo que permite campañas rentables con presupuestos ajustados."),
+                ("¿Funcionan los Meta Ads para turismo en Sevilla?",
+                 "Excepcionalmente bien. Creamos campañas multiidioma segmentadas por mercados emisores (España, UK, Francia, Alemania) con creatividades que muestran el atractivo de Sevilla. Para hoteles, experiencias y restaurantes turísticos, el ROAS medio supera el 6x."),
+                ("¿Hacéis campañas para Feria de Abril y Semana Santa?",
+                 "Sí. Preparamos campañas específicas con semanas de antelación — creatividades adaptadas, audiencias segmentadas, presupuestos incrementados y landing pages temporales. Son los momentos de mayor visibilidad y captación del año para negocios sevillanos."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -1133,6 +1968,108 @@ GEO_CONTENT = {
                  'Si ya tienes campañas activas con problemas, los primeros resultados de la optimización se notan en 2-4 semanas. Si empezamos de cero, las campañas generan tráfico y primeros datos desde el día 1, con optimización progresiva durante las primeras 4-6 semanas hasta alcanzar rendimiento estable. La mejora continua es constante durante los primeros 3 meses.'),
             ],
         },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado de especialistas Google en Valencia</h3>
+<p>La demanda de <strong>especialistas certificados en Google en Valencia</strong> está creciendo a medida que más empresas entienden que Google es el canal de captación más importante para su negocio. Desde SEO hasta Google Ads, pasando por Analytics y Google Business Profile, las empresas valencianas necesitan profesionales que dominen todo el ecosistema Google.</p>
+<p>Valencia presenta un mercado donde la <strong>sofisticación en el uso de herramientas Google</strong> varía enormemente. Mientras que las startups del Distrito Digital manejan Analytics y Ads con soltura, muchas pymes y negocios tradicionales apenas usan las herramientas básicas. Esto crea oportunidades tanto para servicios avanzados como para acompañamiento integral.</p>
+<p>El <strong>ecosistema tech valenciano</strong> — Distrito Digital, Lanzadera, StartUPV — genera una demanda creciente de especialistas en Google Analytics 4, Tag Manager, Data Studio y optimización avanzada de campañas que requieren un nivel de expertise difícil de encontrar fuera del circuito especializado.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de servicios Google para negocios en Valencia</h3>
+<p>Nuestro enfoque como especialistas Google en Valencia cubre <strong>todo el ecosistema de herramientas Google</strong>:</p>
+<ul>
+<li><strong>Google Search Console + SEO:</strong> Monitorización y optimización de la presencia de tu web en los resultados de búsqueda de Google, con foco en keywords del mercado valenciano.</li>
+<li><strong>Google Ads integral:</strong> Search, Shopping, Display, YouTube y Performance Max — campañas diseñadas para el mercado valenciano con optimización continua.</li>
+<li><strong>Google Analytics 4:</strong> Implementación avanzada con eventos personalizados, embudos de conversión, audiences y reporting automatizado.</li>
+<li><strong>Google Business Profile:</strong> Optimización completa para el Local Pack en Valencia — categorías, reseñas, publicaciones y seguimiento de rendimiento.</li>
+</ul>
+<p>Para empresas del <strong>Distrito Digital y startups tech</strong> ofrecemos servicios avanzados de analítica, atribución multicanal y optimización de conversiones que van más allá de la gestión básica.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: SaaS del Distrito Digital de Valencia</h3>
+<p>Una startup SaaS B2B del Distrito Digital necesitaba una estrategia integral en Google para generar demos cualificadas de su producto.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Implementación de GA4 avanzado con tracking de micro-conversiones y scoring de leads</li>
+<li>Campañas de Google Ads (Search + Display remarketing) segmentadas por buyer persona</li>
+<li>SEO de contenidos con 8 artículos/mes para captar tráfico informacional</li>
+<li>Dashboards personalizados con atribución multicanal</li>
+</ul>
+<p><strong>Resultados a 8 meses:</strong> Demos solicitadas: de 12 a 68 mensuales (+467%). Coste por demo (Ads): 34€. Tráfico orgánico: de 200 a 4.600 visitas/mes. Pipeline de ventas desde canales Google: 180.000€/mes. LTV/CAC ratio: 4,2x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de especialista Google en Valencia</h3>
+<p>Como <strong>especialistas Google en Valencia</strong> ofrecemos:</p>
+<ul>
+<li><strong>Google Ads:</strong> Gestión integral de campañas Search, Shopping, Display, YouTube y Performance Max.</li>
+<li><strong>SEO:</strong> Posicionamiento orgánico en Google con estrategia adaptada al mercado valenciano.</li>
+<li><strong>Google Analytics 4:</strong> Implementación avanzada, eventos personalizados, embudos y reporting automatizado.</li>
+<li><strong>Google Business Profile:</strong> Optimización y gestión profesional para el Local Pack de Valencia.</li>
+<li><strong>Google Tag Manager:</strong> Implementación de tracking avanzado sin dependencia de desarrollo.</li>
+<li><strong>Formación Google:</strong> Workshops y formación in-company para equipos que quieran dominar las herramientas Google.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué necesitas un especialista Google en Valencia</h3>
+<p>Google controla el <strong>90% de las búsquedas en España</strong>. Para cualquier negocio en Valencia, dominar el ecosistema Google — desde el SEO hasta los Ads, pasando por Analytics y el Business Profile — es la inversión en marketing digital con mayor retorno.</p>
+<p>Un especialista Google en Valencia entiende las particularidades del mercado local — qué keywords buscan los valencianos, cuánto cuestan los clics en cada sector, qué competidores luchan por las mismas posiciones — y diseña estrategias que maximizan cada euro invertido.</p>''',
+
+            'extra_faqs': [
+                ("¿Qué certificaciones de Google tenéis?",
+                 "Nuestro equipo cuenta con certificaciones actualizadas en Google Ads (Search, Display, Shopping, Video, Measurement), Google Analytics y Google Tag Manager. Además, somos Google Partners, lo que implica cumplir con los estándares de rendimiento y gasto que exige Google."),
+                ("¿Podéis auditar mis campañas de Google Ads actuales?",
+                 "Sí. Realizamos auditorías gratuitas de Google Ads donde analizamos la estructura de campañas, quality scores, keywords, pujas, landing pages y tracking de conversiones. Te presentamos un informe con oportunidades de mejora concretas y cuantificadas."),
+                ("¿Ofrecéis formación en Google Analytics para empresas en Valencia?",
+                 "Sí. Ofrecemos workshops y formación in-company en GA4, Google Ads y Google Tag Manager adaptados al nivel de tu equipo. Desde sesiones básicas de 4 horas hasta programas avanzados de varias jornadas."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado de especialistas Google en Sevilla</h3>
+<p>La demanda de <strong>especialistas en Google en Sevilla</strong> crece a medida que el tejido empresarial andaluz acelera su digitalización. Desde pymes que necesitan visibilidad en Google hasta empresas del Parque Cartuja que requieren analítica avanzada, el abanico de necesidades es amplio.</p>
+<p>El mercado sevillano se caracteriza por una <strong>brecha digital significativa</strong>: por un lado, empresas tecnológicas del Parque Cartuja con necesidades sofisticadas de analítica y optimización; por otro, miles de pymes y negocios locales que apenas usan Google Business Profile. Ambos segmentos necesitan especialistas, pero con enfoques muy diferentes.</p>
+<p>Los <strong>costes de servicios Google profesionales en Sevilla</strong> son los más competitivos de las grandes capitales, lo que democratiza el acceso a servicios que antes solo estaban al alcance de empresas grandes en Madrid o Barcelona.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de servicios Google para negocios en Sevilla</h3>
+<p>Nuestros servicios como especialistas Google en Sevilla:</p>
+<ul>
+<li><strong>Google Search + SEO:</strong> Posicionamiento orgánico en Google para el mercado sevillano y andaluz, con keywords locales y contenido adaptado.</li>
+<li><strong>Google Ads optimizado:</strong> Campañas de Search, Shopping, Display y YouTube con CPCs competitivos y segmentación local en Sevilla.</li>
+<li><strong>Google Analytics 4:</strong> Implementación profesional con tracking de conversiones, embudos personalizados y reporting automatizado.</li>
+<li><strong>Google Business Profile:</strong> Optimización para dominar el Local Pack en Sevilla — el canal de captación local más infravalorado.</li>
+</ul>
+<p>Para empresas del <strong>Parque Tecnológico Cartuja</strong> ofrecemos servicios avanzados de analítica, atribución y optimización de conversiones que requieren un expertise especializado.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: cadena de ópticas en Sevilla</h3>
+<p>Una cadena de 4 ópticas en Sevilla (Centro, Nervión, Los Remedios, Dos Hermanas) no estaba captando clientes desde Google y dependía exclusivamente de la ubicación física y el boca a boca.</p>
+<p><strong>Acciones:</strong></p>
+<ul>
+<li>Optimización de 4 fichas de Google Business Profile con estrategia de reseñas</li>
+<li>Campañas de Google Ads segmentadas por zona y servicio</li>
+<li>SEO local con landing pages para cada ubicación y servicio</li>
+<li>GA4 con tracking de llamadas, citas y rutas desde Google Maps</li>
+</ul>
+<p><strong>Resultados a 9 meses:</strong> Llamadas desde Google: de 18 a 142 mensuales (total 4 centros). Citas online: 86/mes. Visibilidad en Local Pack: top 3 para 34 búsquedas. ROAS de Google Ads: 5,8x. Incremento de facturación atribuible a Google: +34%.</p>''',
+
+            'detailed_services': '''<h3>Servicios de especialista Google en Sevilla</h3>
+<p>Como <strong>especialistas Google en Sevilla</strong>:</p>
+<ul>
+<li><strong>Google Ads:</strong> Gestión profesional de campañas Search, Shopping, Display, YouTube y Performance Max.</li>
+<li><strong>SEO:</strong> Posicionamiento orgánico adaptado al mercado sevillano y andaluz.</li>
+<li><strong>Google Analytics 4:</strong> Implementación, eventos personalizados, embudos y dashboards de negocio.</li>
+<li><strong>Google Business Profile:</strong> Optimización y gestión para el Local Pack en Sevilla.</li>
+<li><strong>Google Tag Manager:</strong> Tracking avanzado sin dependencia de desarrollo.</li>
+<li><strong>Formación:</strong> Workshops in-company sobre herramientas Google para equipos sevillanos.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué necesitas un especialista Google en Sevilla</h3>
+<p>En un mercado donde la <strong>competencia digital es todavía baja</strong>, dominar Google supone captar clientes que tu competencia no está captando. Cada búsqueda sin respuesta de tu negocio es un cliente que va a otro — o que simplemente no te encuentra.</p>
+<p>Un especialista con conocimiento del mercado sevillano optimiza cada canal de Google para tu realidad local — las keywords que buscan los sevillanos, los CPCs de tu sector, la competencia real en el Local Pack de tu zona. Esto genera un ROI significativamente superior al de una gestión genérica.</p>''',
+
+            'extra_faqs': [
+                ("¿Qué certificaciones Google tenéis?",
+                 "Certificaciones actualizadas en Google Ads (todos los exámenes), Google Analytics y Google Tag Manager. Somos Google Partners con estándares de rendimiento verificados por Google."),
+                ("¿Hacéis auditorías gratuitas de Google Ads?",
+                 "Sí. Analizamos la estructura, keywords, quality scores, pujas, landing pages y tracking de tus campañas actuales. El informe incluye oportunidades de mejora cuantificadas y un plan de acción priorizado."),
+                ("¿Podéis formar a mi equipo en herramientas Google?",
+                 "Sí. Ofrecemos formación in-company en GA4, Google Ads, Tag Manager y Search Console adaptada al nivel y necesidades de tu equipo. Desde sesiones de iniciación hasta programas avanzados de varias jornadas."),
+            ],
+        },
     },
 
     # =========================================================================
@@ -1252,6 +2189,108 @@ GEO_CONTENT = {
                  'Sí. Trabajamos con empresas en Madrid capital y en todo el área metropolitana: Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes, Getafe, Leganés y más. Ofrecemos reuniones presenciales en cualquier punto de la Comunidad de Madrid.'),
                 ('¿Puedo contratar servicios por separado o tienen que ser paquetes?',
                  'Puedes contratar cada servicio por separado: solo desarrollo web, solo Google Shopping, solo SEO. Sin embargo, los mejores resultados se obtienen con una estrategia integrada donde cada canal refuerza a los demás. Te asesoramos sobre la combinación más eficiente para tu presupuesto y objetivos.'),
+            ],
+        },
+        'Valencia': {
+            'market_analysis': '''<h3>El mercado del marketing digital en Valencia</h3>
+<p>Valencia es un <strong>mercado de marketing digital en plena expansión</strong>. Con más de 180.000 empresas activas y un ecosistema tecnológico liderado por el Distrito Digital, la demanda de servicios de marketing digital profesional crece a un ritmo del 20% anual. Los sectores de turismo, hostelería, tech, comercio exterior y salud lideran esta demanda.</p>
+<p>A diferencia de Madrid y Barcelona, donde el mercado está saturado de agencias, <strong>Valencia presenta una menor densidad competitiva</strong> en el sector del marketing digital. Esto beneficia a las empresas valencianas: menos intermediarios, más atención personalizada y costes más accesibles sin sacrificar calidad.</p>
+<p>La <strong>transformación digital del tejido empresarial valenciano</strong> está creando una demanda creciente de servicios integrales — no solo SEO o Ads aislados, sino estrategias de marketing digital completas que integren todos los canales y generen resultados medibles y escalables.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de marketing digital integral en Valencia</h3>
+<p>Nuestro enfoque de marketing digital en Valencia es <strong>integral y orientado a resultados</strong>:</p>
+<ul>
+<li><strong>Auditoría completa:</strong> Analizamos tu presencia digital actual — web, SEO, redes sociales, publicidad, reputación online — e identificamos las oportunidades con mayor impacto en tu negocio.</li>
+<li><strong>Estrategia multicanal:</strong> Diseñamos un plan que integra los canales más rentables para tu sector en Valencia — SEO, Google Ads, Meta Ads, redes sociales, email marketing — con presupuesto optimizado.</li>
+<li><strong>Ejecución y optimización:</strong> Implementamos la estrategia con un equipo especializado en cada canal y optimizamos continuamente basándonos en datos reales de rendimiento.</li>
+<li><strong>Reporting de negocio:</strong> Informes mensuales que hablan de resultados de negocio — leads, ventas, ROI — no de métricas vanidosas.</li>
+</ul>
+<p>Para cada cliente en Valencia diseñamos una combinación de servicios <strong>adaptada a su sector, presupuesto y objetivos</strong>. No vendemos paquetes cerrados — diseñamos estrategias a medida.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: empresa de catering en Valencia</h3>
+<p>Una empresa de catering para eventos en Valencia facturaba 180.000€/año y dependía al 100% de recomendaciones personales. Quería diversificar su captación con marketing digital.</p>
+<p><strong>Estrategia implementada:</strong></p>
+<ul>
+<li>Web nueva con portfolio de eventos y sistema de solicitud de presupuesto</li>
+<li>SEO para keywords de catering en Valencia y provincia</li>
+<li>Google Ads para keywords comerciales de alta intención</li>
+<li>Instagram con contenido visual de eventos realizados</li>
+</ul>
+<p><strong>Resultados a 12 meses:</strong> Facturación: de 180.000€ a 310.000€ (+72%). Solicitudes de presupuesto: 42/mes (vs 8/mes antes). Canal digital: 55% de los nuevos clientes. Inversión total en marketing: 1.800€/mes. ROI: 6,2x.</p>''',
+
+            'detailed_services': '''<h3>Servicios de marketing digital en Valencia</h3>
+<p>Nuestro catálogo de <strong>servicios de marketing digital en Valencia</strong>:</p>
+<ul>
+<li><strong>SEO:</strong> Posicionamiento orgánico en Google con estrategia adaptada al mercado valenciano.</li>
+<li><strong>Google Ads:</strong> Campañas de publicidad en Google con optimización continua y reporting de ROAS.</li>
+<li><strong>Redes sociales:</strong> Gestión profesional de Instagram, Facebook, LinkedIn y TikTok.</li>
+<li><strong>Diseño web:</strong> Webs corporativas y tiendas online orientadas a conversión.</li>
+<li><strong>Email marketing:</strong> Automatizaciones, newsletters y secuencias de venta.</li>
+<li><strong>Consultoría:</strong> Asesoramiento estratégico para equipos internos de marketing.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué elegir una agencia de marketing digital en Valencia</h3>
+<p>Una agencia de marketing digital en Valencia entiende el <strong>ecosistema empresarial valenciano</strong> — los sectores que mueven la economía, los competidores de cada nicho, los medios locales relevantes, los eventos del calendario (Fallas, Valencia Digital Summit) y los hábitos del consumidor valenciano.</p>
+<p>Además, la proximidad permite <strong>reuniones presenciales, visitas a tu negocio y una relación más estrecha</strong> que se traduce en estrategias mejor alineadas con tu realidad. En un sector donde muchas agencias trabajan en remoto con procesos estandarizados, nosotros ofrecemos un servicio personalizado con conocimiento local.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta contratar una agencia de marketing digital en Valencia?",
+                 "Depende del alcance de los servicios. Planes de un solo canal (SEO o Ads) desde 500€/mes. Estrategias integrales multicanal desde 1.500€/mes. Siempre hacemos una propuesta a medida basada en tus objetivos y presupuesto."),
+                ("¿Qué resultados puedo esperar y en cuánto tiempo?",
+                 "Los primeros resultados en canales pagados (Google Ads, Meta Ads) son inmediatos. El SEO genera resultados visibles entre los 3 y 6 meses. Una estrategia integral bien ejecutada suele alcanzar su velocidad de crucero entre los 6 y 9 meses, momento en que los diferentes canales empiezan a reforzarse mutuamente."),
+                ("¿Trabajáis con pymes o solo con empresas grandes?",
+                 "Trabajamos con empresas de todos los tamaños en Valencia, pero nuestro core son pymes y medianas empresas que quieren crecer con marketing digital profesional. Desde autónomos con presupuestos ajustados hasta empresas con equipos de marketing internos que necesitan apoyo especializado."),
+            ],
+        },
+        'Sevilla': {
+            'market_analysis': '''<h3>El mercado del marketing digital en Sevilla</h3>
+<p>Sevilla está viviendo una <strong>revolución digital acelerada</strong>. El tejido empresarial sevillano — históricamente más tradicional — está adoptando el marketing digital a un ritmo sin precedentes, impulsado por la competencia creciente, el auge del e-commerce y la digitalización forzada de los últimos años.</p>
+<p>Con más de 120.000 empresas activas, Sevilla genera una <strong>demanda creciente de servicios de marketing digital</strong> en sectores como turismo, hostelería, servicios profesionales, aeronáutica, agroalimentación e inmobiliaria. El Parque Tecnológico Cartuja actúa como catalizador, atrayendo empresas tech que elevan el nivel de exigencia del mercado.</p>
+<p>La <strong>oportunidad en Sevilla</strong> es excepcional: la competencia en marketing digital es la más baja de las grandes capitales españolas. Las empresas que inviertan ahora en una estrategia digital profesional construirán ventajas competitivas difíciles de replicar cuando el mercado madure.</p>''',
+
+            'local_strategy': '''<h3>Estrategia de marketing digital integral en Sevilla</h3>
+<p>Nuestro enfoque de marketing digital en Sevilla:</p>
+<ul>
+<li><strong>Diagnóstico completo:</strong> Auditamos tu presencia digital — web, SEO, redes, publicidad, reputación — y priorizamos las acciones con mayor impacto inmediato en tu negocio.</li>
+<li><strong>Estrategia a medida:</strong> Diseñamos un plan multicanal adaptado a tu sector, presupuesto y objetivos. No vendemos paquetes cerrados — cada estrategia es única.</li>
+<li><strong>Ejecución con foco local:</strong> Implementamos con un equipo que conoce el mercado sevillano — las keywords, los competidores, los medios, la estacionalidad y las oportunidades que solo se ven desde dentro.</li>
+<li><strong>Reporting orientado a negocio:</strong> Informes mensuales con métricas que importan — leads generados, ventas atribuibles, ROI real por canal.</li>
+</ul>
+<p>Para negocios afectados por la <strong>estacionalidad sevillana</strong> (turismo, hostelería, eventos), diseñamos estrategias que maximizan la captación en temporada alta y mantienen la eficiencia en periodos valle.</p>''',
+
+            'case_study': '''<h3>Caso de éxito: despacho de arquitectura en el Centro</h3>
+<p>Un despacho de arquitectura con 5 arquitectos en el centro de Sevilla no tenía presencia digital y captaba proyectos exclusivamente por contactos personales y concursos públicos.</p>
+<p><strong>Estrategia implementada:</strong></p>
+<ul>
+<li>Web corporativa con portfolio de proyectos y blog de arquitectura</li>
+<li>SEO para keywords de arquitectura en Sevilla y Andalucía</li>
+<li>LinkedIn con contenido de proyectos y thought leadership</li>
+<li>Google Ads para keywords de alta intención comercial</li>
+</ul>
+<p><strong>Resultados a 10 meses:</strong> Solicitudes de proyecto desde canales digitales: de 0 a 12/mes. Proyectos cerrados desde digital: 4/mes (ticket medio 8.000€). Inversión mensual total: 1.400€. ROI: 22x. El canal digital pasó a representar el 35% de la facturación del despacho.</p>''',
+
+            'detailed_services': '''<h3>Servicios de marketing digital en Sevilla</h3>
+<p>Nuestro catálogo de <strong>servicios de marketing digital en Sevilla</strong>:</p>
+<ul>
+<li><strong>SEO:</strong> Posicionamiento orgánico en Google adaptado al mercado sevillano y andaluz.</li>
+<li><strong>Google Ads:</strong> Campañas publicitarias con optimización continua y los CPCs más bajos de las grandes capitales.</li>
+<li><strong>Redes sociales:</strong> Gestión profesional con contenido adaptado a la identidad cultural de Sevilla.</li>
+<li><strong>Diseño web:</strong> Webs corporativas y tiendas online de alto rendimiento.</li>
+<li><strong>Email marketing:</strong> Automatizaciones, newsletters y secuencias de conversión.</li>
+<li><strong>Consultoría:</strong> Asesoramiento estratégico para empresas que inician o quieren escalar su marketing digital.</li>
+</ul>''',
+
+            'why_local_matters': '''<h3>Por qué elegir una agencia de marketing digital que conozca Sevilla</h3>
+<p>El marketing digital en Sevilla tiene particularidades que una agencia genérica no puede captar. La <strong>estacionalidad extrema</strong>, la importancia del turismo, la cultura de la relación personal en los negocios y las dinámicas propias de cada barrio y sector exigen un conocimiento local que marca la diferencia entre resultados mediocres y resultados excepcionales.</p>
+<p>Además, la <strong>oportunidad que ofrece Sevilla ahora mismo</strong> — menor competencia, costes más bajos, mercado en crecimiento — requiere una agencia que sepa identificar y explotar estas ventajas antes de que desaparezcan. Es el momento de invertir en marketing digital en Sevilla.</p>''',
+
+            'extra_faqs': [
+                ("¿Cuánto cuesta contratar una agencia de marketing digital en Sevilla?",
+                 "Planes de un solo canal desde 400€/mes. Estrategias integrales multicanal desde 1.200€/mes. Los costes en Sevilla son los más competitivos de las grandes capitales — un 25-35% menos que en Madrid o Barcelona con igual calidad de servicio."),
+                ("¿Qué resultados puedo esperar?",
+                 "Canales pagados (Ads, Meta): resultados desde la primera semana. SEO: resultados visibles entre 3 y 5 meses. Estrategia integral: velocidad de crucero en 6-8 meses. En Sevilla, la menor competencia permite resultados más rápidos y con menor inversión que en otras capitales."),
+                ("¿Trabajáis con la estacionalidad de Sevilla?",
+                 "Sí. Planificamos estrategias que anticipan y capitalizan los picos de Semana Santa, Feria de Abril y temporada turística. Intensificamos acciones antes de los picos para maximizar la captación en los momentos de mayor demanda y optimizamos eficiencia en temporada baja."),
             ],
         },
     },

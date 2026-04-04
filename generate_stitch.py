@@ -1829,7 +1829,7 @@ def build_service_page(page):
 <p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
 </div>
 </section>
-''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] else '') + '''
+''' + inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) + '''
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
@@ -2132,7 +2132,7 @@ def build_vertical_page(page):
 <a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">{p.get("cta_button", "Auditoría gratuita")}</a>
 </div>
 </section>
-''' + (inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) if (current_url in ['/agencia-seo/', '/diseno-web/', '/agencia-google-ads/', '/community-manager/', '/tienda-online/', '/email-marketing/'] or current_url.startswith('/marketing-para-')) else '') + f'''
+''' + inline_form_html(current_url, p.get('h1_short', ''), p.get('cta_title', '¿Hablamos sobre tu proyecto?')) + f'''
 </main>
 ''' + footer_html(current_url) + '''
 </body></html>'''
