@@ -2543,78 +2543,86 @@ def build_home():
 <main class="pt-20 overflow-x-hidden">
 
 <!-- HERO -->
-<section class="relative min-h-[80vh] flex items-center justify-center px-6 lg:px-8 max-w-7xl mx-auto py-20 lg:py-32">
-<div class="max-w-4xl mx-auto text-center">
-<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high text-primary font-bold text-xs uppercase tracking-widest mb-6">Agencia de Marketing Digital en Barcelona · Google Partner</span>
-<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight">
-Agencia de Marketing Digital en Barcelona — <span class="text-secondary-container">Resultados Medibles, Sin Permanencia</span>
+<section class="relative py-24 lg:py-36 px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-8">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="text-sm font-semibold text-on-surface-variant uppercase tracking-widest">Agencia de Marketing Digital en Barcelona</span>
+</div>
+<h1 class="font-headline font-black text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tighter">
+Posicionamos negocios<br>donde sus clientes<br><span class="text-secondary-container">los buscan</span>
 </h1>
-<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">
-Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Google Ads y redes sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación. Sin permanencia. Dashboard en tiempo real.
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mt-8 leading-relaxed">
+SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanencia. Dashboard en tiempo real.
 </p>
-<div class="flex flex-wrap gap-4 mt-8 justify-center">
-<a class="bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Auditoría gratuita</a>
-<a class="px-10 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-surface-container-low transition-all" href="{r('/servicios/')}">Ver servicios</a>
+<div class="flex flex-wrap gap-4 mt-10">
+<a class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-primary-container transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
+<a class="px-8 py-4 rounded-xl font-bold text-base text-primary border border-outline-variant/30 hover:border-primary hover:bg-surface-container-low transition-all" href="{r('/servicios/')}">Ver servicios</a>
 </div>
+<div class="flex flex-wrap gap-8 mt-12 text-sm text-on-surface-variant">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Google Partner</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>Sin permanencia</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>+487 proyectos</span>
 </div>
-</section>
-
-<!-- TRUST BAR -->
-<section class="py-12 bg-surface-container-lowest border-y border-outline-variant/20">
-<div class="max-w-7xl mx-auto px-6 lg:px-8">
-<p class="text-center text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-8">Confían en nosotros</p>
-<div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-60">
-<span class="font-headline font-black text-xl text-primary">TechStart</span>
-<span class="font-headline font-black text-xl text-primary">ClinicaPro</span>
-<span class="font-headline font-black text-xl text-primary">FoodGroup</span>
-<span class="font-headline font-black text-xl text-primary">LegalPartners</span>
-<span class="font-headline font-black text-xl text-primary">SportLife</span>
-<span class="font-headline font-black text-xl text-primary">HomeDesign</span>
 </div>
 </div>
 </section>
 
 <!-- STATS -->
-<section class="bg-surface-container-low py-20">
-<div class="max-w-7xl mx-auto px-6 lg:px-8">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
-<div class="text-center md:text-left">
+<section class="py-16 border-y border-outline-variant/10">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+<div>
 <div class="font-headline font-black text-4xl lg:text-5xl text-primary tracking-tighter">+320%</div>
-<p class="text-on-tertiary-container font-semibold uppercase tracking-widest text-xs mt-2">tráfico orgánico medio</p>
+<p class="text-on-surface-variant text-sm mt-2">tráfico orgánico medio</p>
 </div>
-<div class="text-center md:text-left md:border-l border-outline-variant/30 md:pl-8">
+<div>
 <div class="font-headline font-black text-4xl lg:text-5xl text-primary tracking-tighter">5.8M€</div>
-<p class="text-on-tertiary-container font-semibold uppercase tracking-widest text-xs mt-2">gestionados en campañas</p>
+<p class="text-on-surface-variant text-sm mt-2">gestionados en campañas</p>
 </div>
-<div class="text-center md:text-left md:border-l border-outline-variant/30 md:pl-8">
+<div>
 <div class="font-headline font-black text-4xl lg:text-5xl text-primary tracking-tighter">98%</div>
-<p class="text-on-tertiary-container font-semibold uppercase tracking-widest text-xs mt-2">clientes satisfechos</p>
+<p class="text-on-surface-variant text-sm mt-2">clientes satisfechos</p>
 </div>
-<div class="text-center md:text-left md:border-l border-outline-variant/30 md:pl-8">
+<div>
 <div class="font-headline font-black text-4xl lg:text-5xl text-secondary-container tracking-tighter">487</div>
-<p class="text-on-tertiary-container font-semibold uppercase tracking-widest text-xs mt-2">proyectos entregados</p>
+<p class="text-on-surface-variant text-sm mt-2">proyectos entregados</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- CTA 1: PAIN POINT — ¿Tu competencia te está ganando? -->
-<section class="bg-primary py-16 px-6 lg:px-8">
-<div class="max-w-3xl mx-auto text-center">
-<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">¿Te suena esto?</p>
-<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Tu competencia aparece en Google antes que tú. Tus clientes potenciales los encuentran a ellos, no a ti.</h2>
-<p class="text-on-primary-container text-base mb-8 max-w-xl mx-auto">Cada día que pasa sin una estrategia digital, estás regalando clientes. Nosotros lo cambiamos.</p>
-<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicita tu auditoría gratuita →</a>
-<p class="text-on-primary-container/60 text-xs mt-4">Sin compromiso. Te respondemos en menos de 24h.</p>
+<!-- TRUST BAR -->
+<section class="py-12">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<p class="text-center text-xs uppercase tracking-widest text-on-surface-variant/50 mb-8">Confían en nosotros</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+<span class="font-headline font-bold text-lg text-primary/20">TechStart</span>
+<span class="font-headline font-bold text-lg text-primary/20">ClinicaPro</span>
+<span class="font-headline font-bold text-lg text-primary/20">FoodGroup</span>
+<span class="font-headline font-bold text-lg text-primary/20">LegalPartners</span>
+<span class="font-headline font-bold text-lg text-primary/20">SportLife</span>
+<span class="font-headline font-bold text-lg text-primary/20">HomeDesign</span>
+</div>
+</div>
+</section>
+
+<!-- PAIN POINT -->
+<section class="py-24 px-6 lg:px-8" style="background:linear-gradient(135deg,#001e40 0%,#001030 100%)">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline font-black text-3xl md:text-4xl text-white leading-tight mb-6">Tu competencia aparece en Google antes que tú.<br>Tus clientes los encuentran a ellos.</h2>
+<p class="text-white/60 text-lg max-w-xl mx-auto mb-10">Cada día sin estrategia digital es un día que tu competencia te adelanta. Podemos cambiarlo.</p>
+<a class="inline-block bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
 </div>
 </section>
 
 <!-- SERVICES MAIN 6 -->
-<section class="py-28 px-6 lg:px-8 max-w-7xl mx-auto">
-<div class="mb-16 text-center max-w-3xl mx-auto">
-<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-6">Servicios de Marketing Digital — Todo lo que Tu Negocio Necesita</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">En Comunikoo ofrecemos todos los servicios de marketing digital que tu empresa necesita para crecer online. Desde el posicionamiento en Google hasta la gestión de redes sociales, pasando por el diseño web y las campañas de publicidad. Todo bajo un mismo equipo, con una estrategia integrada que maximiza cada euro invertido.</p>
-<div class="h-1.5 w-24 bg-secondary-container mx-auto mt-6"></div>
+<section class="py-28 px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16 max-w-2xl">
+<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-4">Servicios</p>
+<h2 class="font-headline font-black text-4xl md:text-5xl text-primary leading-tight tracking-tight">Todo lo que tu negocio necesita para crecer online</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <a href="{r('/agencia-seo/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
@@ -2648,30 +2656,27 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed text-sm">Automatizaciones, newsletters y campañas de email que convierten. El canal digital con mayor retorno de inversión. Segmentación avanzada, flows automatizados y diseño profesional.</p>
 </a>
 </div>
+</div>
 </section>
 
-<!-- CTA 2: BENEFIT — Resultados en semanas -->
-<section class="py-16 px-6 lg:px-8">
-<div class="max-w-4xl mx-auto bg-[#f0f4ff] rounded-2xl p-10 md:p-14 text-center">
-<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary mb-4">¿Quieres saber exactamente qué está fallando en tu marketing digital?</h2>
-<p class="text-on-surface-variant text-base max-w-xl mx-auto mb-6">Te hacemos una auditoría completa de tu web, tu SEO, tu publicidad y tus redes sociales. Gratis. Sin letra pequeña. En 48h tienes un informe con acciones concretas para mejorar.</p>
-<div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Quiero mi auditoría gratis</a>
-</div>
-<div class="flex flex-wrap justify-center gap-6 mt-6 text-xs text-on-surface-variant">
-<span class="flex items-center gap-1">✓ Sin compromiso</span>
-<span class="flex items-center gap-1">✓ Respuesta en 24h</span>
-<span class="flex items-center gap-1">✓ Sin permanencia</span>
+<!-- CTA 2 -->
+<section class="py-20 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto bg-surface-container-low rounded-2xl p-10 md:p-16">
+<h2 class="font-headline font-bold text-2xl md:text-3xl text-primary mb-4 text-center">¿Quieres saber qué está fallando en tu marketing digital?</h2>
+<p class="text-on-surface-variant text-center max-w-lg mx-auto mb-8">Auditoría completa de tu web, SEO, publicidad y redes sociales. Gratis. En 48h tienes un informe con acciones concretas.</p>
+<div class="text-center">
+<a class="inline-block bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-container transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratis →</a>
 </div>
 </div>
 </section>
 
 <!-- WHY COMUNIKOO -->
-<section class="py-28 px-6 lg:px-8 bg-surface-container-low">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16 max-w-3xl mx-auto">
-<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-6">¿Por Qué Elegir Comunikoo como Tu Agencia de Marketing Digital?</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">No somos una agencia de marketing digital más. En Comunikoo nos diferenciamos por nuestro enfoque en resultados reales, transparencia total y un compromiso genuino con el crecimiento de tu negocio. Estas son las razones por las que más de 487 empresas han confiado en nosotros.</p>
+<section class="py-28 px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16 max-w-2xl">
+<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-4">Por qué Comunikoo</p>
+<h2 class="font-headline font-black text-4xl md:text-5xl text-primary leading-tight tracking-tight">No somos una agencia más</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mt-4">Resultados reales, transparencia total y compromiso con tu crecimiento. Por eso +487 empresas confían en nosotros.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="bg-surface-container-lowest p-8 rounded-xl">
@@ -2704,10 +2709,12 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 </section>
 
 <!-- METHODOLOGY -->
-<section class="py-28 px-6 lg:px-8 max-w-7xl mx-auto">
-<div class="text-center mb-16 max-w-3xl mx-auto">
-<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-6">Cómo Trabajamos — Metodología Probada en +487 Proyectos</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">Nuestra metodología de trabajo ha sido refinada a lo largo de más de 487 proyectos de marketing digital. Cada fase está diseñada para maximizar resultados y minimizar riesgos. Así es como convertimos tu inversión en crecimiento real.</p>
+<section class="py-28 px-6 lg:px-8 bg-surface-container-low">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16 max-w-2xl">
+<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-4">Proceso</p>
+<h2 class="font-headline font-black text-4xl md:text-5xl text-primary leading-tight tracking-tight">Cómo trabajamos</h2>
+<p class="text-on-surface-variant text-lg mt-4">Metodología refinada en +487 proyectos. Cada fase maximiza resultados.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="text-center">
