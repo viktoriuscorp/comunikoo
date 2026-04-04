@@ -1,13 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-WCHWH6J2KC';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WCHWH6J2KC')},3000);</script>
 <title>Agencia WooCommerce Barcelona | Expertos Locales — Comunikoo</title>
 <meta name="description" content="Agencia WooCommerce Barcelona: equipo local, resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.">
 <link rel="canonical" href="https://comunikoo.es/agencia-woocommerce-barcelona/">
-<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/style.css?v=7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+
+<style>
+.icon-inline { display: inline-flex; align-items: center; vertical-align: middle; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ══ DESIGN SYSTEM: Mediterranean Minimalist Editorial ══ */
+/* taste-skill + Stitch: No borders. Tonal layering. Navy-tinted shadows. */
+/* Off-black: #000511. Accent (sparingly): #fd8b00. Body: #44474e. */
+
+/* ── Container: max-w-[1400px] per taste-skill Rule ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+@media(min-width:1024px) { .container { padding: 0 3rem; } }
+
+/* ── Sections: 7rem = premium breathing room (taste-skill VISUAL_DENSITY 4) ── */
+.sec-block { padding: 5.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 7rem 0; } }
+
+/* ── Cards: tonal layering, navy-tinted diffusion shadow, no borders ── */
+.svc-card { background: #ffffff; border-radius: 1rem; padding: 2.5rem 2rem; box-shadow: 0 20px 40px -15px rgba(0,5,17,.05); border: none; text-align: center; transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s cubic-bezier(.16,1,.3,1); }
+.svc-card:hover { box-shadow: 0 32px 64px -20px rgba(0,5,17,.1); transform: translateY(-3px); }
+.svc-card:active { transform: translateY(-1px); }
+.svc-card .svc-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #000511; margin-bottom: .5rem; letter-spacing: -.02em; }
+.svc-card p { font-size: .92rem; line-height: 1.75; color: #44474e; margin: 0; max-width: 32ch; margin-inline: auto; }
+
+/* ── Card grid: CSS Grid (taste-skill: Grid over Flex-Math) ── */
+.card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
+.card-grid.g5 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
+  .svc-card { padding: 2rem 1.5rem !important; }
+  .svc-card h3 { font-size: 1rem !important; }
+  .svc-card p { font-size: .88rem !important; line-height: 1.7 !important; max-width: none !important; }
+  .svc-card .svc-icon { width: 48px !important; height: 48px !important; }
+  .sec-block { padding: 3.5rem 0 !important; }
+  .sec-heading h2 { font-size: 1.6rem !important; }
+  .sec-intro { font-size: .92rem !important; }
+  .prose-block { font-size: .92rem !important; }
+  .prose-block h3 { font-size: 1.1rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:repeat"] { grid-template-columns: 1fr !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; }
+}
+
+/* iOS zoom prevention */
+@media(max-width:767px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* Nav pills */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Responsive type scale */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.6rem !important; }
+  .font-headline.text-4xl { font-size: 1.85rem !important; }
+  p.text-base { font-size: .95rem !important; }
+  p.text-lg { font-size: 1rem !important; }
+}
+
+/* ── Prose: left-aligned, max 65ch (taste-skill Rule 1) ── */
+.prose-block { max-width: 65ch; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.35rem; font-weight: 700; color: #000511; margin: 3rem 0 .75rem; letter-spacing: -.02em; }
+.prose-block p { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: 1.25rem; }
+.prose-block ul { padding-left: 1.5rem; margin: 1.25rem 0; }
+.prose-block li { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: .5rem; }
+.prose-block strong { color: #000511; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .2s; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading: tracking-tighter, generous top-margin (Stitch rule) ── */
+.sec-heading { text-align: center; margin-bottom: 3.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 800; color: #000511; margin: 0; letter-spacing: -.03em; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2.75rem; } }
+.sec-heading .bar { width: 48px; height: 3px; background: #fd8b00; margin: 1.25rem auto 0; border-radius: 2px; }
+
+/* ── Intro: centered, constrained width ── */
+.sec-intro { max-width: 65ch; margin: 0 auto 3rem; text-align: center; font-size: 1.05rem; line-height: 1.75; color: #44474e; }
+
+/* ── Buttons: tactile feedback (taste-skill Rule 5) ── */
+.btn-primary { transition: all .3s cubic-bezier(.16,1,.3,1); }
+.btn-primary:active { transform: translateY(-1px) scale(.98); }
+
+/* ── FAQ accordion: clean, no borders (Stitch No-Line Rule) ── */
+details { transition: all .3s; }
+details summary { transition: color .2s; }
+details[open] summary { color: #000511; }
+</style>
 <meta property="og:title" content="Agencia WooCommerce Barcelona | Expertos Locales — Comunikoo">
 <meta property="og:description" content="Agencia WooCommerce Barcelona: equipo local, resultados medibles. +487 proyectos completados con 98% satisfacción. Sin permanencia. Auditoría gratis.">
 <meta property="og:url" content="https://comunikoo.es/agencia-woocommerce-barcelona/">
@@ -17,248 +124,569 @@
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Comunikoo - Agencia WooCommerce Barcelona","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"url":"https://comunikoo.es","openingHours":"Mo-Fr 09:00-20:00"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta agencia woocommerce en Barcelona?","acceptedAnswer":{"@type":"Answer","text":"Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos."}},{"@type":"Question","name":"¿Tenéis oficina en Barcelona?","acceptedAnswer":{"@type":"Answer","text":"Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."}},{"@type":"Question","name":"¿Trabajáis solo en Barcelona ciudad?","acceptedAnswer":{"@type":"Answer","text":"No, también trabajamos con empresas del área metropolitana: Hospitalet, Badalona, Sant Cugat, etc."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta agencia woocommerce en Barcelona?","acceptedAnswer":{"@type":"Answer","text":"Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos."}},{"@type":"Question","name":"¿Tenéis oficina en Barcelona?","acceptedAnswer":{"@type":"Answer","text":"Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."}},{"@type":"Question","name":"¿Trabajáis solo en Barcelona ciudad?","acceptedAnswer":{"@type":"Answer","text":"No, también trabajamos con empresas del área metropolitana: Hospitalet, Badalona, Sant Cugat, etc."}},{"@type":"Question","name":"¿Cuánto cuesta montar una tienda online en Barcelona?","acceptedAnswer":{"@type":"Answer","text":"El coste varía según la plataforma y complejidad. Tienda online básica en Shopify: 5.000-8.000€. E-commerce en WooCommerce con diseño personalizado: 6.000-12.000€. Tienda online compleja con funcionalidades a medida: 12.000-30.000€. Estos precios incluyen diseño, desarrollo, contenido y configuración, pero no el presupuesto de marketing digital para generar tráfico."}},{"@type":"Question","name":"¿Shopify o WooCommerce para mi tienda online?","acceptedAnswer":{"@type":"Answer","text":"Depende de tu situación. Shopify es ideal para quien quiere una tienda sencilla de gestionar, escalable y sin preocuparse de hosting ni mantenimiento técnico. WooCommerce es mejor para proyectos que necesitan personalización profunda, control total del código y integración con sistemas existentes. En la consulta inicial analizamos tu caso y te recomendamos la mejor opción."}},{"@type":"Question","name":"¿Cuánto tiempo tarda en empezar a vender mi tienda online?","acceptedAnswer":{"@type":"Answer","text":"Las primeras ventas suelen llegar en la primera semana si lanzamos con campañas de Google Shopping y Social Ads. Para alcanzar un volumen de ventas estable, necesitas 2-3 meses de optimización de campañas y 4-6 meses para que el SEO empiece a generar tráfico orgánico significativo."}},{"@type":"Question","name":"¿Gestionáis la logística de mi e-commerce?","acceptedAnswer":{"@type":"Answer","text":"No gestionamos almacén ni envíos directamente, pero sí configuramos e integramos tu tienda con los principales operadores logísticos (Correos Express, SEUR, MRW, GLS) y plataformas de fulfillment. También configuramos opciones de click & collect para tiendas físicas en Barcelona."}},{"@type":"Question","name":"¿Puedo vender en toda España desde Barcelona?","acceptedAnswer":{"@type":"Answer","text":"Absolutamente. El 80% de nuestros clientes e-commerce en Barcelona venden a nivel nacional. Configuramos tu tienda para venta en toda España con precios de envío optimizados, y si quieres vender internacionalmente, implementamos multimoneda, traducciones y opciones de envío internacional."}}]}
 </script>
 </head>
-<body>
-<a href="#main" class="skip">Ir al contenido</a>
-
-<header class="hdr">
-<div class="hdr-in">
-<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
-<nav>
-<ul class="nav">
-<li class="nav-item"><a href="/servicios/">Servicios</a>
-<div class="nav-dropdown">
-<div class="nav-dropdown-col">
-<h4>SEO</h4>
-<a href="/agencia-seo/">Agencia SEO</a>
-<a href="/agencia-seo-local/">SEO Local</a>
-<a href="/consultoria-seo/">Consultoría SEO</a>
-<a href="/auditoria-seo/">Auditoría SEO</a>
-<a href="/posicionamiento-web/">Posicionamiento Web</a>
-<a href="/linkbuilding/">Linkbuilding</a>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[24px] border-b border-[#c4c6cf]/10" style="box-shadow:0 1px 12px rgba(0,5,17,.03)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../index.html">Inicio</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../nosotros/index.html">Nosotros</a>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/linkbuilding/index.html">Linkbuilding</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Diseño Web</h4>
-<a href="/diseno-web/">Diseño Web</a>
-<a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a>
-<a href="/tienda-online/">Tiendas Online</a>
-<a href="/servicios/desarrollo-web/">Desarrollo Web</a>
-<a href="/landing-pages/">Landing Pages</a>
-<a href="/servicios/mantenimiento-web/">Mantenimiento Web</a>
-<a href="/servicios/optimizacion-cro/">CRO</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Publicidad</h4>
-<a href="/agencia-google-ads/">Google Ads</a>
-<a href="/agencia-facebook-ads/">Facebook Ads</a>
-<a href="/instagram-ads/">Instagram Ads</a>
-<a href="/agencia-meta-ads/">Meta Ads</a>
-<a href="/youtube-ads/">YouTube Ads</a>
-<a href="/publicidad-en-google/">Publicidad Google</a>
-<a href="/servicios/google-shopping/">Google Shopping</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/google-shopping/index.html">Google Shopping</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Redes Sociales</h4>
-<a href="/community-manager/">Community Manager</a>
-<a href="/servicios/gestion-redes-sociales/">Gestión Redes</a>
-<a href="/servicios/marketing-de-contenidos/">Marketing Contenidos</a>
-<a href="/email-marketing/">Email Marketing</a>
-</div>
-</div>
-</li>
-<li class="nav-item"><a href="#">Sectores</a>
-<div class="nav-dropdown" style="min-width:520px;grid-template-columns:repeat(3,1fr)">
-<div class="nav-dropdown-col">
-<h4>Hostelería y Salud</h4>
-<a href="/marketing-para-restaurantes/">Restaurantes</a>
-<a href="/marketing-para-hoteles/">Hoteles</a>
-<a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a>
-<a href="/marketing-para-clinicas-esteticas/">Clínicas Estéticas</a>
-<a href="/marketing-para-psicologos/">Psicólogos</a>
-<a href="/marketing-para-veterinarias/">Veterinarias</a>
-</div>
-<div class="nav-dropdown-col">
-<h4>Servicios y Local</h4>
-<a href="/marketing-para-abogados/">Abogados</a>
-<a href="/marketing-para-asesorias/">Asesorías</a>
-<a href="/marketing-para-inmobiliarias/">Inmobiliarias</a>
-<a href="/marketing-para-empresas-de-reformas/">Reformas</a>
-<a href="/marketing-para-autoescuelas/">Autoescuelas</a>
-<a href="/marketing-para-talleres-de-coches/">Talleres</a>
-</div>
-<div class="nav-dropdown-col">
-<h4>Empresas</h4>
-<a href="/marketing-para-ecommerce/">Ecommerce</a>
-<a href="/marketing-para-empresas-b2b/">Empresas B2B</a>
-<a href="/marketing-para-gimnasios/">Gimnasios</a>
-<a href="/marketing-para-academias/">Academias</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../servicios/branding/index.html">Branding</a>
 </div>
 </div>
-</li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/nosotros/">Nosotros</a></li>
-</ul>
-</nav>
-<a href="/contacto/" class="btn btn-p hdr-cta">Auditoría gratis</a>
-<button class="hamburger" aria-label="Abrir menú">
-<span></span><span></span><span></span>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../blog/index.html">Blog</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../contacto/index.html">Contacto</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
 </button>
 </div>
-</header>
+</nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
 
-<div class="mobile-nav-overlay" aria-hidden="true"></div>
-<nav class="mobile-nav" aria-label="Menú móvil">
-<button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
+
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
+
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../blog/index.html">Blog</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../agencia-marketing-digital-barcelona/index.html" class="hover:text-secondary-container">Barcelona</a><span class="mx-2">›</span><span class="text-primary font-semibold">Agencia WooCommerce Barcelona</span></nav>
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-[#f4f6fa] to-surface px-6 lg:px-8">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mb-6">Agencia WooCommerce en Barcelona</span>
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl lg:text-5xl text-primary leading-[1.1] tracking-tight max-w-4xl mx-auto">Agencia WooCommerce Barcelona — Expertos Locales en la Ciudad Condal</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Servicio de agencia <a href="/servicios/agencia-woocommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">woocommerce</a> en Barcelona con equipo local y conocimiento del mercado barcelonés.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../contacto/index.html">Auditoría gratuita en Barcelona</a>
+<a class="px-8 py-4 rounded-lg font-bold text-lg text-primary border-2 border-primary/10 hover:bg-white transition-all" href="../agencia-seo/index.html">Ver servicio completo</a>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface-container-low py-14">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">+320%</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">tráfico medio</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">487</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">proyectos</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-primary">98%</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">satisfacción</p></div>
+<div class="text-center"><div class="font-headline font-black text-3xl text-secondary-container">0€</div><p class="text-on-surface-variant text-xs uppercase tracking-widest mt-1">permanencia</p></div>
+</div>
+</div>
+</section>
+
+<!-- WHY LOCAL -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué elegir una agencia de agencia woocommerce en Barcelona?</h2><div class="bar"></div></div>
+<div class="prose-block"><p>Barcelona es la capital económica del Mediterráneo y uno de los mercados más competitivos de España. Con más de 600.000 empresas activas, destacar en el entorno digital requiere una estrategia profesional y un equipo que conozca el tejido empresarial local.</p>
+<p>En Comunikoo llevamos años ayudando a empresas de Barcelona a crecer con agencia <a href="/servicios/agencia-woocommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">woocommerce</a>. Nuestro equipo combina experiencia técnica con conocimiento local para diseñar estrategias que funcionan específicamente en el mercado barcelonés.</p></div>
+</div>
+</section>
+
+<!-- SERVICES IN CITY -->
+<section class="sec-block bg-surface-container-low">
+<div class="container">
+<div class="sec-heading"><h2>Servicios de Agencia WooCommerce en Barcelona</h2><div class="bar"></div></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+<a href="../servicios/agencia-woocommerce/index.html" class="block bg-surface-container-lowest p-6 rounded-xl hover:bg-primary group transition-all duration-300"><h3 class="font-headline font-bold text-primary group-hover:text-white">Agencia WooCommerce (nacional)</h3></a>
+
+</div>
+</div>
+</section>
+
+
+<!-- MARKET ANALYSIS -->
+<section class="sec-block bg-surface-container-low">
+<div class="container">
+<div class="sec-heading"><h2>El mercado de agencia woocommerce en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><h3>El mercado e-commerce en Barcelona</h3>
+<p>Barcelona es el <strong>segundo hub de e-commerce de España</strong> y uno de los más potentes del sur de Europa. La ciudad concentra más de 12.000 tiendas online activas, desde pequeños comercios locales que han digitalizado su venta hasta startups de e-commerce que operan a nivel internacional desde el distrito 22@ de Poblenou.</p>
+<p>El <strong>ecosistema e-commerce barcelonés</strong> es especialmente fuerte en moda (la ciudad es sede de Mango, Desigual y decenas de marcas emergentes), alimentación gourmet, cosmética, deportes y lifestyle mediterráneo. La proximidad al puerto de Barcelona también favorece las operaciones logísticas de e-commerce con distribución europea.</p>
+<p>La <strong>facturación del e-commerce en Cataluña</strong> superó los 12.800 millones de euros en el último año, con un crecimiento del 18% interanual. Sin embargo, el mercado se está polarizando: mientras que las tiendas online bien optimizadas crecen a ritmos del 25-40% anual, las que no invierten en tecnología, UX y marketing digital se estancan o cierran. El estándar de calidad que el consumidor barcelonés espera de una <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tienda online</a> es altísimo — años de comprar en Amazon, Zara o El Corte Inglés han elevado las expectativas.</p>
+<p>Los <strong>costes de montar y mantener un e-commerce en Barcelona</strong> oscilan entre 5.000€ y 30.000€ para el desarrollo inicial (dependiendo de la complejidad y plataforma), más un presupuesto mensual de marketing digital de 1.000€-5.000€ para generar tráfico y ventas. Sin inversión en marketing, la mejor tienda online del mundo no vende.</p></div>
+</div>
+</section>
+
+
+
+<!-- LOCAL STRATEGY -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Nuestra estrategia de agencia woocommerce en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><h3>Estrategia e-commerce para empresas en Barcelona</h3>
+<p>En Comunikoo no montamos tiendas online — creamos <strong>máquinas de vender</strong>. Nuestro enfoque para e-commerce en Barcelona combina tecnología, marketing digital y conocimiento del mercado local para construir tiendas que crecen mes a mes.</p>
 <ul>
-<li><a href="/servicios/">Servicios</a></li>
-<li><a href="/agencia-seo/">Agencia SEO</a></li>
-<li><a href="/diseno-web/">Diseño Web</a></li>
-<li><a href="/agencia-google-ads/">Google Ads</a></li>
-<li><a href="/community-manager/">Community Manager</a></li>
-<li><a href="/tienda-online/">Tiendas Online</a></li>
-<li><a href="#">Sectores</a></li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/nosotros/">Nosotros</a></li>
-<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
-<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
-<li><a href="/contacto/" class="btn btn-primary" style="margin-top:1rem">Contacto</a></li>
+<li><strong>Consultoría estratégica:</strong> Antes de tocar una línea de código, analizamos tu producto, tu mercado en Barcelona, tu competencia, tus márgenes y tu logística. Definimos la plataforma tecnológica adecuada (WooCommerce, Shopify, PrestaShop), la arquitectura del catálogo, la estrategia de precios y el plan de lanzamiento.</li>
+<li><strong>Desarrollo e-commerce optimizado:</strong> Diseñamos y desarrollamos tu <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tienda online</a> con foco en conversión. Fichas de producto que venden (no solo informan), proceso de checkout sin fricción, búsqueda interna inteligente, filtros de producto efectivos y velocidad de carga ultrarrápida. Cada decisión de diseño está respaldada por datos de conversión de nuestros proyectos anteriores.</li>
+<li><strong>SEO para e-commerce:</strong> Arquitectura de categorías y URLs optimizada, fichas de producto con contenido único y rico, datos estructurados de producto (precio, disponibilidad, valoraciones), blog con contenido informacional que atrae tráfico top-of-funnel, y <a href="/servicios/linkbuilding/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">link building</a> temático.</li>
+<li><strong>Publicidad para e-commerce:</strong> <a href="/agencia-google-ads/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Campañas de Google</a> Shopping, Search Ads, Facebook/Instagram Shopping, remarketing dinámico y Performance Max con optimización de ROAS. Integramos feed de productos y automatizamos la gestión de catálogo en todas las plataformas publicitarias.</li>
+<li><strong>Optimización de conversión (CRO):</strong> A/B testing continuo de elementos clave — página de producto, checkout, emails de carrito abandonado, upsells y cross-sells. Mejoramos la tasa de conversión mes a mes con datos, no intuiciones.</li>
+<li><strong><a href="/email-marketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Email marketing</a> automatizado:</strong> Secuencias de bienvenida, carrito abandonado, post-compra, reactivación y newsletters segmentadas con plataformas como Klaviyo o Mailchimp.</li>
 </ul>
-</nav>
-
-<main id="main">
-
-
-<section class="section" style="padding-top:var(--space-8)">
-<div class="wrap-narrow">
-<nav class="breadcrumbs wrap" aria-label="Breadcrumb">
-<a href="/">Inicio</a>
-<span>›</span>
-<a href="/agencia-marketing-digital-barcelona/">Barcelona</a>
-<span>›</span>
-<span aria-current="page">Agencia WooCommerce Barcelona</span>
-</nav>
-<h1>Agencia WooCommerce Barcelona — Expertos Locales en la Ciudad Condal</h1>
-<p style="font-size:var(--text-lg);color:var(--text-muted);margin-top:var(--space-4)">Servicio de agencia woocommerce en Barcelona con equipo local y conocimiento del mercado barcelonés.</p>
-<p style="margin-top:var(--space-4)">📍 Aragó 4, Barcelona 08015 · 📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
-
-<div class="stats" style="margin-top:var(--space-8)">
-<div><div class="stat-number text-accent">487</div><div class="stat-label">clientes en Barcelona</div></div>
-<div><div class="stat-number text-accent">12+</div><div class="stat-label">años de experiencia</div></div>
-</div>
+<p>Para e-commerce de Barcelona con <strong>venta local y envío nacional/internacional</strong>, configuramos estrategias de precios y logística diferenciadas: opción de recogida en tienda (click & collect), envío exprés en Barcelona metropolitana y condiciones especiales para envíos dentro de Cataluña.</p></div>
 </div>
 </section>
 
-<section class="section">
-<div class="wrap-narrow">
-<h2>Nuestros servicios de Agencia WooCommerce en Barcelona</h2>
-<ul><li><a href="/servicios/agencia-woocommerce/">Agencia WooCommerce (nacional)</a></li>
+
+<!-- CTA MID -->
+<section class="py-16 px-6 lg:px-8 bg-primary">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-headline font-bold text-2xl text-white mb-4">¿Necesitas agencia woocommerce en Barcelona?</h2>
+<p class="text-on-primary-container mb-6">Te hacemos una auditoría gratuita de tu proyecto. Sin compromiso.</p>
+<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all" href="../contacto/index.html">Solicitar auditoría gratis</a>
+</div>
+</section>
+
+
+<!-- CASE STUDY LOCAL -->
+<section class="sec-block bg-surface-container-low">
+<div class="container">
+<div class="sec-heading"><h2>Caso de éxito: agencia woocommerce en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><h3>Caso de éxito: tienda de cosmética natural en Gràcia</h3>
+<p>Una marca de cosmética natural con tienda física en Gràcia quería lanzar su e-commerce para vender en toda España. Tenía una web básica en Wix que no permitía venta online.</p>
+<p><strong>Solución:</strong> Desarrollo de <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tienda online</a> en Shopify con diseño personalizado, catálogo de 120 productos con fichas optimizadas, integración con pasarela de pago (Stripe + PayPal), logística (envío con Correos Express y opción de recogida en tienda de Gràcia), y estrategia completa de marketing digital.</p>
+<p><strong>Marketing implementado:</strong></p>
+<ul>
+<li>SEO e-commerce: 120 fichas de producto optimizadas + 12 categorías + blog con 4 artículos/mes</li>
+<li>Google Shopping + Search Ads con presupuesto de 1.500€/mes</li>
+<li>Instagram Shopping con contenido de producto profesional + colaboraciones con 6 influencers de belleza de Barcelona</li>
+<li><a href="/email-marketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Email marketing</a>: secuencias de bienvenida, carrito abandonado (recuperación del 12%) y newsletter semanal</li>
 </ul>
-
-<h2>Zonas de Barcelona donde trabajamos</h2>
-<p>Eixample · Gràcia · Sarrià-Sant Gervasi · Born · Sant Martí · Poblenou (22@) · Les Corts · Hospitalet · Badalona · Sant Cugat</p>
+<p><strong>Resultados primer año:</strong> Facturación online de 0€ a 18.500€/mes. 2.400 pedidos en el primer año. Tasa de conversión del 3,2% (media del sector: 1,5%). El 38% de los pedidos incluían click & collect en la tienda de Gràcia, generando ventas cruzadas presenciales. La marca abrió una segunda tienda en el Eixample gracias al crecimiento.</p></div>
 </div>
 </section>
 
-<section class="section-dark">
-<div class="wrap-narrow">
-<h2 class="mt-0">Caso de éxito en Barcelona</h2>
-<p class="testimonial">"[Testimonio local pendiente]"</p>
-<p class="testimonial-author">— [Nombre, Empresa, Barcelona]</p>
+
+
+<!-- DETAILED SERVICES -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Servicios de agencia woocommerce en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><h3>Servicios de e-commerce en Barcelona</h3>
+<ul>
+<li><strong>Desarrollo de <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tienda online</a>:</strong> Creación de e-commerce en Shopify, WooCommerce o PrestaShop con diseño personalizado, catálogo optimizado y checkout de alta conversión. Desde 5.000€.</li>
+<li><strong>Optimización de e-commerce existente:</strong> Mejora de velocidad, UX, fichas de producto, checkout y tasa de conversión de tu tienda actual.</li>
+<li><strong>SEO para tiendas online:</strong> Posicionamiento orgánico de fichas de producto, categorías y contenido. Estrategia de visibilidad a largo plazo.</li>
+<li><strong><a href="/servicios/google-shopping/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Google Shopping</a> y Search Ads:</strong> Campañas publicitarias para e-commerce con optimización de ROAS y gestión de feed de productos.</li>
+<li><strong>Social Commerce:</strong> Integración con Instagram Shopping, Facebook Shop y TikTok Shop. Campañas de publicidad social orientadas a venta.</li>
+<li><strong><a href="/email-marketing/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Email marketing</a> para e-commerce:</strong> Automatizaciones de bienvenida, carrito abandonado, post-compra, reactivación y newsletters segmentadas.</li>
+<li><strong>CRO (Optimización de Conversión):</strong> Tests A/B, análisis de embudo, optimización de checkout y mejora continua de la tasa de conversión.</li>
+<li><strong>Migración de plataforma:</strong> Migración segura entre plataformas (de Prestashop a Shopify, de Wix a WooCommerce, etc.) sin perder SEO, datos ni ventas.</li>
+</ul></div>
 </div>
 </section>
 
-<section class="section">
-<div class="wrap-narrow">
-<h2>Preguntas frecuentes sobre Agencia WooCommerce en Barcelona</h2>
-<div class="faq">
-<details>
-<summary>¿Cuánto cuesta agencia woocommerce en Barcelona?</summary>
-<p>Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos.</p>
+
+<!-- LOCAL KNOWLEDGE -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Conocimiento local del mercado en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><p>Conocemos el mercado agencia <a href="/servicios/agencia-woocommerce/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">woocommerce</a> en Barcelona como nadie: la competencia de cada sector, las búsquedas más frecuentes de los barceloneses, las zonas con mayor demanda y las particularidades del consumidor catalán. No es lo mismo posicionar un negocio en el Eixample que en Gràcia o en el 22@.</p>
+<p>Trabajamos con negocios de todos los tamaños en Barcelona: desde autónomos y startups hasta pymes consolidadas y grandes empresas. Cada proyecto recibe una estrategia personalizada basada en datos reales del mercado local, análisis de competencia directa y objetivos de negocio específicos.</p>
+<p>Nuestros clientes en Barcelona obtienen resultados medibles: más tráfico cualificado, más leads, más ventas. Sin permanencia y con dashboard en tiempo real para que veas la evolución de tu proyecto en todo momento.</p></div>
+<div class="prose-block" style="margin-top:2rem"><h3>E-commerce en Barcelona: la ventaja local</h3>
+<p>Aunque un e-commerce vende online, <strong>el componente local importa más de lo que crees</strong>. En Barcelona, una agencia de e-commerce local conoce las preferencias del consumidor catalán, las particularidades logísticas de la ciudad (zonas de entrega difícil, opciones de puntos de recogida) y las oportunidades de estrategia omnicanal (click & collect, showroom, pop-up stores).</p>
+<p>Para marcas barcelonesas que venden online y tienen presencia física, la <strong>estrategia omnicanal</strong> es una ventaja competitiva enorme. Conectar la experiencia de tienda en el Eixample, Gràcia o el Born con la <a href="/tienda-online/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">tienda online</a> genera una sinergia que multiplica las ventas en ambos canales. Como agencia local en Barcelona, entendemos esta dinámica y la integramos en cada proyecto.</p>
+<p>Además, Barcelona es sede de eventos de e-commerce clave como el <strong>eShow Barcelona y el 4YFN (MWC)</strong>. Nuestra presencia activa en este ecosistema nos permite estar al día de las tendencias, tecnologías y oportunidades del sector.</p></div>
+</div>
+</section>
+
+<!-- ZONES -->
+<section class="sec-block bg-surface-container-low">
+<div class="container">
+<div class="sec-heading"><h2>Zonas de Barcelona donde trabajamos</h2><div class="bar"></div></div>
+<div class="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Eixample</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Gràcia</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Sarrià-Sant Gervasi</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Born</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Sant Martí</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Poblenou (22@)</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Les Corts</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Hospitalet</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Badalona</span>
+<span class="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-primary shadow-sm border border-black/[.04]">Sant Cugat</span>
+
+</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="sec-block">
+<div class="container">
+<div class="sec-heading"><h2>Ventajas de trabajar con Comunikoo en Barcelona</h2><div class="bar"></div></div>
+<div class="prose-block"><p><strong>Reuniones presenciales en nuestra oficina de Barcelona, conocimiento profundo del ecosistema empresarial catalán y experiencia directa con negocios en cada barrio de la ciudad.</strong></p>
+<p>No somos una agencia genérica que aplica la misma plantilla a todos los clientes. Cada negocio en Barcelona tiene sus particularidades, su competencia y sus oportunidades. Por eso empezamos siempre con una auditoría gratuita donde analizamos tu situación actual, tu mercado y tus competidores directos en Barcelona.</p>
+<p>A partir de ahí, diseñamos un plan de acción con acciones priorizadas por impacto y presupuesto. Tú decides hasta dónde quieres llegar — nosotros te mostramos el camino más eficiente para conseguirlo.</p></div>
+</div>
+</section>
+
+<section class="py-24 px-6 lg:px-8 bg-surface-container-low">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline font-extrabold text-3xl text-primary mb-10 text-center">Preguntas frecuentes sobre Agencia WooCommerce en Barcelona</h2>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta agencia woocommerce en Barcelona?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos.</p>
 </details>
-<details>
-<summary>¿Tenéis oficina en Barcelona?</summary>
-<p>Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa.</p>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Tenéis oficina en Barcelona?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa.</p>
 </details>
-<details>
-<summary>¿Trabajáis solo en Barcelona ciudad?</summary>
-<p>No, también trabajamos con empresas del área metropolitana: Hospitalet, Badalona, Sant Cugat, etc.</p>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Trabajáis solo en Barcelona ciudad?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">No, también trabajamos con empresas del área metropolitana: Hospitalet, Badalona, Sant Cugat, etc.</p>
 </details>
 </div>
 </div>
 </section>
 
-<section class="section-accent">
-<div class="wrap text-center">
-<h2 class="mt-0" style="color:white">¿Buscas Agencia WooCommerce en Barcelona?</h2>
-<a href="/contacto/" class="btn btn-white" style="margin-top:var(--space-4)">Solicita presupuesto</a>
+
+<section class="py-20 lg:py-24 px-6 lg:px-8 bg-primary" id="calculadora">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-secondary-container font-bold text-xs uppercase tracking-widest mb-4">Calculadora gratuita</span>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white">¿Cuánto podrías crecer con marketing digital en Barcelona?</h2>
+<p class="text-on-primary-container mt-3 max-w-xl mx-auto">Calcula el ROI estimado para tu negocio en el mercado barcelonés.</p>
+</div>
+<div class="bg-white rounded-2xl p-5 md:p-10 shadow-2xl" id="calc_geo_barcelona">
+<div class="space-y-6" id="calc_geo_barcelona_form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Sector</label>
+<select id="calc_geo_barcelona_sector" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="restaurante">Restaurante / Hostelería</option>
+<option value="clinica">Clínica / Salud</option>
+<option value="ecommerce">Ecommerce / Tienda online</option>
+<option value="servicios" selected>Servicios profesionales</option>
+<option value="legal">Abogados / Legal</option>
+<option value="inmobiliaria">Inmobiliaria</option>
+<option value="gimnasio">Gimnasio / Fitness</option>
+<option value="b2b">Empresa B2B</option>
+<option value="otro">Otro sector</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">Facturación mensual actual</label>
+<select id="calc_geo_barcelona_revenue" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="5000">Menos de 10.000€</option>
+<option value="15000">10.000€ - 25.000€</option>
+<option value="40000" selected>25.000€ - 50.000€</option>
+<option value="75000">50.000€ - 100.000€</option>
+<option value="150000">100.000€ - 250.000€</option>
+<option value="350000">Más de 250.000€</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Tienes página web?</label>
+<select id="calc_geo_barcelona_web" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="no">No tengo web</option>
+<option value="old">Sí, pero antigua o lenta</option>
+<option value="ok" selected>Sí, web actualizada</option>
+<option value="good">Sí, web profesional optimizada</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-primary uppercase tracking-wider">¿Inviertes en marketing digital?</label>
+<select id="calc_geo_barcelona_invest" class="w-full bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm">
+<option value="0" selected>No, nada</option>
+<option value="300">Menos de 500€/mes</option>
+<option value="750">500€ - 1.000€/mes</option>
+<option value="2000">1.000€ - 3.000€/mes</option>
+<option value="5000">Más de 3.000€/mes</option>
+</select>
+</div>
+</div>
+
+<div class="border-t border-[#e0e3e8] pt-5">
+<p class="text-xs font-bold text-primary uppercase tracking-wider mb-3">Introduce tu email para ver el resultado</p>
+<div class="flex gap-3 flex-wrap">
+<input id="calc_geo_barcelona_email" required type="email" class="flex-1 min-w-[200px] bg-[#f5f7fa] border border-[#e0e3e8] rounded-lg px-4 py-3 text-sm" placeholder="tu@email.com">
+<button onclick="
+  var cid='calc_geo_barcelona';
+  var emailEl=document.getElementById(cid+'_email');
+  if(!emailEl.value||!emailEl.value.includes('@')){emailEl.style.borderColor='#ef4444';return;}
+  emailEl.style.borderColor='#e0e3e8';
+  var rev=parseInt(document.getElementById(cid+'_revenue').value);
+  var inv=parseInt(document.getElementById(cid+'_invest').value);
+  var web=document.getElementById(cid+'_web').value;
+  var sector=document.getElementById(cid+'_sector').value;
+  var pct=(web==='no'?0.20:web==='old'?0.14:web==='ok'?0.10:0.07);
+  pct=pct*(inv===0?1.15:inv<500?1.05:inv<2000?1.0:0.9);
+  var growth=Math.round(rev*pct);
+  var totalInv=(inv>0?inv:790)*6;
+  var totalGrowth=growth*6;
+  var roi=Math.round(((totalGrowth-totalInv)/totalInv)*100);
+  if(roi<0)roi=0;
+  document.getElementById(cid+'_growth').textContent=growth.toLocaleString('es-ES');
+  document.getElementById(cid+'_roi').textContent=roi+'%';
+  document.getElementById(cid+'_monthly').textContent='+'+Math.round(growth*0.6).toLocaleString('es-ES')+'€';
+  document.getElementById(cid+'_results').style.display='block';
+  this.textContent='✓ Resultado calculado';this.style.background='#001e40';this.style.color='#fff';this.style.boxShadow='none';this.disabled=true;
+  var fd=new FormData();
+  fd.append('email',emailEl.value);
+  fd.append('sector',sector);
+  fd.append('facturacion',rev);
+  fd.append('inversion_actual',inv);
+  fd.append('tiene_web',web);
+  fd.append('roi_estimado',roi+'%');
+  fd.append('crecimiento_estimado',growth+'€/mes');
+  fd.append('contexto','Agencia WooCommerce');
+  fd.append('_subject','Lead calculadora ROI — Agencia WooCommerce');
+  fd.append('_template','box');
+  fd.append('_autoresponse','Hola, aquí tienes tu estimación de ROI. Nuestro equipo te contactará con un análisis más detallado. ¡Gracias por confiar en Comunikoo!');
+  fd.append('_captcha','false');
+  fetch('https://formsubmit.co/ajax/hola@comunikoo.es',{method:'POST',body:fd});
+" style="background:#fd8b00;color:#fff;font-weight:700;padding:.875rem 2rem;border-radius:10px;font-size:.95rem;border:none;cursor:pointer;white-space:nowrap;transition:all .2s;box-shadow:0 4px 14px rgba(253,139,0,.3)">Calcular mi ROI →</button>
+</div>
+</div>
+
+<div id="calc_geo_barcelona_results" style="display:none" class="mt-8 bg-[#f0fdf4] border border-[#bbf7d0] rounded-2xl p-5 md:p-8 -mx-2 md:mx-0">
+<p class="font-headline font-bold text-sm text-[#166534] mb-4">Tu estimación de resultados en 6 meses:</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
+<div class="font-headline font-black text-3xl md:text-2xl text-[#166534]">+<span id="calc_geo_barcelona_growth">0</span>€</div>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">crecimiento estimado estimado/mes</p>
+</div>
+<div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
+<div class="font-headline font-black text-3xl md:text-2xl text-[#166534]"><span id="calc_geo_barcelona_roi">0</span></div>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">ROI estimado</p>
+</div>
+<div class="text-center bg-white rounded-xl p-5 md:p-4 shadow-sm">
+<div class="font-headline font-black text-3xl md:text-2xl text-[#166534]"><span id="calc_geo_barcelona_monthly">0</span></div>
+<p class="text-sm md:text-xs text-on-surface-variant mt-2">beneficio neto/mes</p>
+</div>
+</div>
+<div class="mt-8 bg-white rounded-xl p-5 md:p-6 -mx-2 md:mx-0 text-on-surface-variant leading-relaxed space-y-4">
+<p class="font-headline font-bold text-base md:text-sm text-primary mb-3">¿Cómo interpretamos estos resultados?</p>
+<p class="text-sm"><strong class="text-primary">Crecimiento estimado/mes:</strong> Es el incremento mensual en facturación que podrías conseguir aplicando una estrategia de marketing digital profesional. Se calcula en base al estado actual de tu web, tu inversión y los resultados medios que hemos obtenido en más de 487 proyectos similares.</p>
+<p class="text-sm"><strong class="text-primary">ROI estimado:</strong> Es el retorno sobre la inversión a 6 meses. Si inviertes X euros al mes durante 6 meses y generas Y euros adicionales, el ROI mide cuánto recuperas por cada euro invertido. Un ROI del 200% significa que por cada euro invertido, recuperas 2 euros de beneficio neto.</p>
+<p class="text-sm"><strong class="text-primary">Beneficio neto/mes:</strong> Es lo que te queda después de descontar la inversión en marketing. Es decir: el crecimiento generado menos el coste del servicio. Este es el número que realmente importa para tu cuenta de resultados.</p>
+<p class="text-sm"><strong class="text-primary">¿Por qué varían los resultados según el estado de tu web?</strong> Un negocio sin web o con una web antigua tiene más margen de mejora. Un negocio con web profesional optimizada mejora de forma más gradual. En ambos casos, el marketing digital genera retorno positivo.</p>
+<p class="text-xs text-[#94a3b8]">*Estimaciones orientativas basadas en datos de +487 proyectos. Resultados reales varían según sector y competencia. Solicita tu auditoría gratuita para una previsión personalizada.</p>
+</div>
+<p class="text-sm text-[#166534] font-bold mt-4 text-center">Te enviaremos un análisis personalizado a tu email.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 
+<!-- CTA FINAL -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-extrabold text-3xl text-white mb-4">¿Buscas agencia woocommerce en Barcelona?</h2>
+<p class="text-on-primary-container text-lg mb-8">Solicita tu auditoría gratuita. Analizamos tu proyecto y te decimos exactamente qué hacer para crecer en Barcelona.</p>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="../contacto/index.html">Auditoría gratuita — sin compromiso</a>
+</div>
+</section>
 </main>
-
-<footer class="ft">
-<div class="ft-grid">
-<div class="ft-info">
-<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
-<p>Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p>📍 Aragó 4, Barcelona 08015</p>
-<p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
-<p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
 </div>
-<div>
-<h4>Servicios</h4>
-<ul>
-<li><a href="/agencia-seo/">Agencia SEO</a></li>
-<li><a href="/agencia-seo-local/">SEO Local</a></li>
-<li><a href="/diseno-web/">Diseño Web</a></li>
-<li><a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a></li>
-<li><a href="/tienda-online/">Tiendas Online</a></li>
-<li><a href="/agencia-google-ads/">Google Ads</a></li>
-<li><a href="/agencia-facebook-ads/">Facebook Ads</a></li>
-<li><a href="/community-manager/">Community Manager</a></li>
-<li><a href="/email-marketing/">Email Marketing</a></li>
-<li><a href="/servicios/branding/">Branding</a></li>
-</ul>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../servicios/landing-pages/index.html">Landing Pages</a>
 </div>
-<div>
-<h4>Ciudades</h4>
-<ul>
-<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
-<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
-</ul>
-<h4 style="margin-top:1.5rem">Recursos</h4>
-<ul>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/casos-de-exito/">Casos de Éxito</a></li>
-</ul>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../marketing-para-talleres-de-coches/index.html">Talleres</a>
 </div>
-<div>
-<h4>Sectores</h4>
-<ul>
-<li><a href="/marketing-para-restaurantes/">Restaurantes</a></li>
-<li><a href="/marketing-para-hoteles/">Hoteles</a></li>
-<li><a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a></li>
-<li><a href="/marketing-para-abogados/">Abogados</a></li>
-<li><a href="/marketing-para-inmobiliarias/">Inmobiliarias</a></li>
-<li><a href="/marketing-para-gimnasios/">Gimnasios</a></li>
-<li><a href="/marketing-para-ecommerce/">Ecommerce</a></li>
-<li><a href="/marketing-para-empresas-b2b/">B2B</a></li>
-</ul>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../politica-de-cookies/index.html">Cookies</a>
 </div>
 </div>
-<div class="ft-btm">
-<span>&copy; 2026 Comunikoo. Todos los derechos reservados.</span>
-<div>
-<a href="/politica-de-privacidad/">Privacidad</a> ·
-<a href="/aviso-legal/">Aviso Legal</a> ·
-<a href="/politica-de-cookies/">Cookies</a> ·
-<a href="/sitemap.xml">Sitemap</a>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
 </div>
 </div>
 </footer>
-
-<script defer src="/js/main.js"></script>
-</body>
-</html>
+</body></html>

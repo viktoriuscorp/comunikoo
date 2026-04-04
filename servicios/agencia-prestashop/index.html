@@ -1,14 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Agencia PrestaShop | Expertos en Desarrollo PrestaShop — Comunikoo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-WCHWH6J2KC';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WCHWH6J2KC')},3000);</script>
+<title>Agencia PrestaShop | Expertos en Desarrollo PrestaShop</title>
 <meta name="description" content="Agencia PrestaShop especializada en diseño, desarrollo y migración. +45 tiendas. Módulos a medida, integraciones con ERP. Presupuesto sin compromiso.">
 <link rel="canonical" href="https://comunikoo.es/servicios/agencia-prestashop/">
-<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/style.css?v=7">
-<meta property="og:title" content="Agencia PrestaShop | Expertos en Desarrollo PrestaShop — Comunikoo">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+
+<style>
+.icon-inline { display: inline-flex; align-items: center; vertical-align: middle; }
+details summary { cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+
+/* Mega menu: no gap between trigger and dropdown */
+.mega-trigger { position: relative; }
+.mega-trigger > .mega-panel { display: none; position: fixed; left: 0; right: 0; top: 72px; z-index: 100; }
+.mega-trigger:hover > .mega-panel { display: block; }
+.mega-panel::before { content: ''; position: absolute; top: -20px; left: 0; right: 0; height: 20px; }
+
+/* ══ DESIGN SYSTEM: Mediterranean Minimalist Editorial ══ */
+/* taste-skill + Stitch: No borders. Tonal layering. Navy-tinted shadows. */
+/* Off-black: #000511. Accent (sparingly): #fd8b00. Body: #44474e. */
+
+/* ── Container: max-w-[1400px] per taste-skill Rule ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+@media(min-width:1024px) { .container { padding: 0 3rem; } }
+
+/* ── Sections: 7rem = premium breathing room (taste-skill VISUAL_DENSITY 4) ── */
+.sec-block { padding: 5.5rem 0; }
+@media(min-width:768px) { .sec-block { padding: 7rem 0; } }
+
+/* ── Cards: tonal layering, navy-tinted diffusion shadow, no borders ── */
+.svc-card { background: #ffffff; border-radius: 1rem; padding: 2.5rem 2rem; box-shadow: 0 20px 40px -15px rgba(0,5,17,.05); border: none; text-align: center; transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s cubic-bezier(.16,1,.3,1); }
+.svc-card:hover { box-shadow: 0 32px 64px -20px rgba(0,5,17,.1); transform: translateY(-3px); }
+.svc-card:active { transform: translateY(-1px); }
+.svc-card .svc-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.2rem; }
+.svc-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: #000511; margin-bottom: .5rem; letter-spacing: -.02em; }
+.svc-card p { font-size: .92rem; line-height: 1.75; color: #44474e; margin: 0; max-width: 32ch; margin-inline: auto; }
+
+/* ── Card grid: CSS Grid (taste-skill: Grid over Flex-Math) ── */
+.card-grid { display: grid; gap: 1.75rem; margin: 0 auto; }
+.card-grid.g2 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
+.card-grid.g3 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+.card-grid.g4 { grid-template-columns: repeat(2,1fr); max-width: 760px; }
+.card-grid.g5 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+.card-grid.g6 { grid-template-columns: repeat(3,1fr); max-width: 1200px; }
+@media(max-width:767px) {
+  .card-grid { grid-template-columns: 1fr !important; max-width: 100% !important; gap: 1.25rem !important; }
+  .svc-card { padding: 2rem 1.5rem !important; }
+  .svc-card h3 { font-size: 1rem !important; }
+  .svc-card p { font-size: .88rem !important; line-height: 1.7 !important; max-width: none !important; }
+  .svc-card .svc-icon { width: 48px !important; height: 48px !important; }
+  .sec-block { padding: 3.5rem 0 !important; }
+  .sec-heading h2 { font-size: 1.6rem !important; }
+  .sec-intro { font-size: .92rem !important; }
+  .prose-block { font-size: .92rem !important; }
+  .prose-block h3 { font-size: 1.1rem !important; }
+  .container { padding: 0 1.25rem !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns:repeat"] { grid-template-columns: 1fr !important; }
+}
+@media(max-width:400px) {
+  .card-grid { grid-template-columns: 1fr !important; }
+}
+
+/* iOS zoom prevention */
+@media(max-width:767px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* Nav pills */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Responsive type scale */
+@media(max-width:767px) {
+  .font-headline.text-3xl { font-size: 1.6rem !important; }
+  .font-headline.text-4xl { font-size: 1.85rem !important; }
+  p.text-base { font-size: .95rem !important; }
+  p.text-lg { font-size: 1rem !important; }
+}
+
+/* ── Prose: left-aligned, max 65ch (taste-skill Rule 1) ── */
+.prose-block { max-width: 65ch; margin: 0 auto; }
+.prose-block h3 { font-family: 'Manrope', sans-serif; font-size: 1.35rem; font-weight: 700; color: #000511; margin: 3rem 0 .75rem; letter-spacing: -.02em; }
+.prose-block p { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: 1.25rem; }
+.prose-block ul { padding-left: 1.5rem; margin: 1.25rem 0; }
+.prose-block li { font-size: 1rem; line-height: 1.8; color: #44474e; margin-bottom: .5rem; }
+.prose-block strong { color: #000511; font-weight: 600; }
+.prose-block a { color: #904d00; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .2s; }
+.prose-block a:hover { color: #fd8b00; }
+
+/* ── Section heading: tracking-tighter, generous top-margin (Stitch rule) ── */
+.sec-heading { text-align: center; margin-bottom: 3.5rem; }
+.sec-heading h2 { font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 800; color: #000511; margin: 0; letter-spacing: -.03em; }
+@media(min-width:768px) { .sec-heading h2 { font-size: 2.75rem; } }
+.sec-heading .bar { width: 48px; height: 3px; background: #fd8b00; margin: 1.25rem auto 0; border-radius: 2px; }
+
+/* ── Intro: centered, constrained width ── */
+.sec-intro { max-width: 65ch; margin: 0 auto 3rem; text-align: center; font-size: 1.05rem; line-height: 1.75; color: #44474e; }
+
+/* ── Buttons: tactile feedback (taste-skill Rule 5) ── */
+.btn-primary { transition: all .3s cubic-bezier(.16,1,.3,1); }
+.btn-primary:active { transform: translateY(-1px) scale(.98); }
+
+/* ── FAQ accordion: clean, no borders (Stitch No-Line Rule) ── */
+details { transition: all .3s; }
+details summary { transition: color .2s; }
+details[open] summary { color: #000511; }
+</style>
+<meta property="og:title" content="Agencia PrestaShop | Expertos en Desarrollo PrestaShop">
 <meta property="og:description" content="Agencia PrestaShop especializada en diseño, desarrollo y migración. +45 tiendas. Módulos a medida, integraciones con ERP. Presupuesto sin compromiso.">
 <meta property="og:url" content="https://comunikoo.es/servicios/agencia-prestashop/">
 <meta property="og:type" content="website">
@@ -20,301 +127,418 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta desarrollar una tienda PrestaShop?","acceptedAnswer":{"@type":"Answer","text":"Nuestros proyectos PrestaShop parten desde 3.500€ para tiendas estándar hasta 15.000€+ para proyectos complejos con desarrollo de módulos custom e integraciones con ERP. El precio incluye diseño, desarrollo, configuración, SEO técnico, formación y 3 meses de soporte."}},{"@type":"Question","name":"¿PrestaShop es gratuito?","acceptedAnswer":{"@type":"Answer","text":"El software PrestaShop es gratuito y open source. Los costes asociados son: hosting (desde 20€/mes), tema profesional (100-250€), y módulos premium según necesidades (desde 30€ hasta 300€ por módulo). El coste total de infraestructura depende de la complejidad de tu proyecto."}},{"@type":"Question","name":"¿PrestaShop o Shopify? ¿Qué es mejor?","acceptedAnswer":{"@type":"Answer","text":"Depende de tus necesidades. Shopify es mejor si quieres simplicidad y rapidez de lanzamiento. PrestaShop es mejor si necesitas gestión avanzada de catálogo, B2B, multitienda, personalización profunda o ser dueño de tu código. Te asesoramos gratuitamente para elegir."}},{"@type":"Question","name":"¿Puedo migrar de PrestaShop 1.6 o 1.7 a PrestaShop 8?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es muy recomendable hacerlo. Las versiones antiguas tienen vulnerabilidades de seguridad y no son compatibles con módulos modernos. Migramos tu tienda completa preservando productos, clientes, pedidos y SEO."}},{"@type":"Question","name":"¿PrestaShop es bueno para tiendas grandes?","acceptedAnswer":{"@type":"Answer","text":"Sí. PrestaShop está diseñado para gestionar catálogos grandes. Tenemos clientes con más de 10.000 productos funcionando perfectamente. La clave está en un hosting adecuado, una configuración optimizada y módulos bien seleccionados."}},{"@type":"Question","name":"¿Puedo vender en varios idiomas con PrestaShop?","acceptedAnswer":{"@type":"Answer","text":"Sí. PrestaShop tiene soporte multiidioma y multimoneda nativo. Puedes traducir toda tu tienda, gestionar precios por divisa y configurar impuestos por país. Es una de las plataformas más preparadas para venta internacional en Europa."}},{"@type":"Question","name":"¿PrestaShop es seguro?","acceptedAnswer":{"@type":"Answer","text":"PrestaShop es seguro si se mantiene actualizado y bien configurado. Las versiones antiguas (1.6, 1.7) tienen vulnerabilidades conocidas. Con PrestaShop 8, actualizaciones regulares y un plan de mantenimiento profesional, tu tienda está protegida."}},{"@type":"Question","name":"¿Ofrecéis soporte y mantenimiento para PrestaShop?","acceptedAnswer":{"@type":"Answer","text":"Sí. Nuestros planes de mantenimiento PrestaShop incluyen actualizaciones de seguridad, copias de seguridad diarias, monitorización de rendimiento, soporte técnico prioritario y pequeñas modificaciones mensuales. Desde 190€/mes."}}]}
 </script>
 </head>
-<body>
-<a href="#main" class="skip">Ir al contenido</a>
-
-<header class="hdr">
-<div class="hdr-in">
-<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
-<nav>
-<ul class="nav">
-<li class="nav-item"><a href="/servicios/">Servicios</a>
-<div class="nav-dropdown">
-<div class="nav-dropdown-col">
-<h4>SEO</h4>
-<a href="/agencia-seo/">Agencia SEO</a>
-<a href="/agencia-seo-local/">SEO Local</a>
-<a href="/consultoria-seo/">Consultoría SEO</a>
-<a href="/auditoria-seo/">Auditoría SEO</a>
-<a href="/posicionamiento-web/">Posicionamiento Web</a>
-<a href="/linkbuilding/">Linkbuilding</a>
+<body class="bg-surface font-body text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[24px] border-b border-[#c4c6cf]/10" style="box-shadow:0 1px 12px rgba(0,5,17,.03)">
+<div class="flex justify-between items-center px-6 lg:px-8 py-5 max-w-7xl mx-auto">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<div class="hidden lg:flex gap-10 items-center font-headline font-bold text-sm tracking-tight">
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../index.html">Inicio</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../nosotros/index.html">Nosotros</a>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="../../servicios/index.html">Servicios</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2.5rem 0">
+<div style="max-width:960px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">SEO</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/auditoria-seo/index.html">Auditoría SEO</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/linkbuilding/index.html">Linkbuilding</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Diseño Web</h4>
-<a href="/diseno-web/">Diseño Web</a>
-<a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a>
-<a href="/tienda-online/">Tiendas Online</a>
-<a href="/servicios/desarrollo-web/">Desarrollo Web</a>
-<a href="/landing-pages/">Landing Pages</a>
-<a href="/servicios/mantenimiento-web/">Mantenimiento Web</a>
-<a href="/servicios/optimizacion-cro/">CRO</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Diseño Web</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../diseno-web/index.html">Diseño Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/mantenimiento-web/index.html">Mantenimiento Web</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Publicidad</h4>
-<a href="/agencia-google-ads/">Google Ads</a>
-<a href="/agencia-facebook-ads/">Facebook Ads</a>
-<a href="/instagram-ads/">Instagram Ads</a>
-<a href="/agencia-meta-ads/">Meta Ads</a>
-<a href="/youtube-ads/">YouTube Ads</a>
-<a href="/publicidad-en-google/">Publicidad Google</a>
-<a href="/servicios/google-shopping/">Google Shopping</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Publicidad</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/youtube-ads/index.html">YouTube Ads</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/publicidad-en-google/index.html">Publicidad Google</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/google-shopping/index.html">Google Shopping</a>
 </div>
-<div class="nav-dropdown-col">
-<h4>Redes Sociales</h4>
-<a href="/community-manager/">Community Manager</a>
-<a href="/servicios/gestion-redes-sociales/">Gestión Redes</a>
-<a href="/servicios/marketing-de-contenidos/">Marketing Contenidos</a>
-<a href="/email-marketing/">Email Marketing</a>
-</div>
-</div>
-</li>
-<li class="nav-item"><a href="#">Sectores</a>
-<div class="nav-dropdown" style="min-width:520px;grid-template-columns:repeat(3,1fr)">
-<div class="nav-dropdown-col">
-<h4>Hostelería y Salud</h4>
-<a href="/marketing-para-restaurantes/">Restaurantes</a>
-<a href="/marketing-para-hoteles/">Hoteles</a>
-<a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a>
-<a href="/marketing-para-clinicas-esteticas/">Clínicas Estéticas</a>
-<a href="/marketing-para-psicologos/">Psicólogos</a>
-<a href="/marketing-para-veterinarias/">Veterinarias</a>
-</div>
-<div class="nav-dropdown-col">
-<h4>Servicios y Local</h4>
-<a href="/marketing-para-abogados/">Abogados</a>
-<a href="/marketing-para-asesorias/">Asesorías</a>
-<a href="/marketing-para-inmobiliarias/">Inmobiliarias</a>
-<a href="/marketing-para-empresas-de-reformas/">Reformas</a>
-<a href="/marketing-para-autoescuelas/">Autoescuelas</a>
-<a href="/marketing-para-talleres-de-coches/">Talleres</a>
-</div>
-<div class="nav-dropdown-col">
-<h4>Empresas</h4>
-<a href="/marketing-para-ecommerce/">Ecommerce</a>
-<a href="/marketing-para-empresas-b2b/">Empresas B2B</a>
-<a href="/marketing-para-gimnasios/">Gimnasios</a>
-<a href="/marketing-para-academias/">Academias</a>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Redes Sociales</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../community-manager/index.html">Community Manager</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/gestion-redes-sociales/index.html">Gestión Redes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../email-marketing/index.html">Email Marketing</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/marketing-de-contenidos/index.html">Marketing Contenidos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../servicios/branding/index.html">Branding</a>
 </div>
 </div>
-</li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/nosotros/">Nosotros</a></li>
-</ul>
-</nav>
-<a href="/contacto/" class="btn btn-p hdr-cta">Auditoría gratis</a>
-<button class="hamburger" aria-label="Abrir menú">
-<span></span><span></span><span></span>
+</div>
+</div>
+</div>
+<div class="mega-trigger">
+<a class="text-primary hover:text-secondary-container transition-colors py-4 inline-block" href="#">Sectores</a>
+<div class="mega-panel">
+<div style="background:#fff;border-top:2px solid #fd8b00;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:2rem 0">
+<div style="max-width:800px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem">
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Salud</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Hostelería</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-academias/index.html">Academias</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Servicios</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+</div>
+<div>
+<h4 style="font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#737780;margin-bottom:1rem;font-weight:700">Empresas</h4>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-sm text-primary hover:text-secondary-container py-1.5 font-medium" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../blog/index.html">Blog</a>
+<a class="text-primary hover:text-secondary-container transition-colors py-2" href="../../contacto/index.html">Contacto</a>
+<a class="bg-primary text-on-primary px-7 py-2.5 rounded-lg hover:bg-primary-container transition-all active:scale-95" href="../../contacto/index.html">Auditoría gratis</a>
+</div>
+<button class="lg:hidden text-primary" id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></span>
 </button>
 </div>
-</header>
-
-<div class="mobile-nav-overlay" aria-hidden="true"></div>
-<nav class="mobile-nav" aria-label="Menú móvil">
-<button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-<ul>
-<li><a href="/servicios/">Servicios</a></li>
-<li><a href="/agencia-seo/">Agencia SEO</a></li>
-<li><a href="/diseno-web/">Diseño Web</a></li>
-<li><a href="/agencia-google-ads/">Google Ads</a></li>
-<li><a href="/community-manager/">Community Manager</a></li>
-<li><a href="/tienda-online/">Tiendas Online</a></li>
-<li><a href="#">Sectores</a></li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/nosotros/">Nosotros</a></li>
-<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
-<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
-<li><a href="/contacto/" class="btn btn-primary" style="margin-top:1rem">Contacto</a></li>
-</ul>
 </nav>
+<div id="mobile-menu" class="hidden fixed inset-0 z-[200] bg-white lg:hidden">
+<div class="flex justify-between items-center px-6 py-5 border-b">
+<a href="../../index.html" class="text-2xl font-black tracking-tighter text-primary">Comunikoo</a>
+<button onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+</button>
+</div>
+<div class="px-6 py-6 overflow-y-auto" style="max-height:calc(100vh - 75px)">
 
-<main id="main">
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Servicios <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.5rem 0 .25rem">SEO</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-seo-local/index.html">SEO Local</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/consultoria-seo/index.html">Consultoría SEO</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/posicionamiento-web/index.html">Posicionamiento Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Diseño Web</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../diseno-web/index.html">Diseño Web</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/diseno-web-wordpress/index.html">WordPress</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../tienda-online/index.html">Tiendas Online</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Publicidad</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/agencia-meta-ads/index.html">Meta Ads</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../servicios/instagram-ads/index.html">Instagram Ads</a>
+<p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#737780;font-weight:700;margin:.75rem 0 .25rem">Redes Sociales</p>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../community-manager/index.html">Community Manager</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../email-marketing/index.html">Email Marketing</a>
+</div>
+</details>
 
+<details style="border-bottom:1px solid #e5e7eb">
+<summary style="padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;display:flex;justify-content:space-between;align-items:center;cursor:pointer">Sectores <span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+<div style="padding:0 0 1rem .75rem;display:flex;flex-direction:column;gap:.25rem">
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a style="font-size:.9rem;color:#001e40;padding:.35rem 0;text-decoration:none" href="../../marketing-para-empresas-b2b/index.html">Empresas B2B</a>
+</div>
+</details>
 
-<!-- HERO: Landing style -->
-<section class="sec-hero" style="padding-bottom:var(--s12)">
-<div class="wrap tc" style="position:relative;z-index:1">
-<nav class="breadcrumbs wrap" aria-label="Breadcrumb">
-<a href="/">Inicio</a>
-<span>›</span>
-<a href="/servicios/">Servicios</a>
-<span>›</span>
-<span aria-current="page">Agencia PrestaShop</span>
-</nav>
-<div class="pill anim" style="margin-bottom:var(--s5)">Agencia PrestaShop</div>
-<h1 class="anim" style="max-width:20ch;margin:0 auto">Agencia PrestaShop — Tiendas Online Potentes Para Vender Más</h1>
-<p class="anim" style="font-size:var(--ts-lg);color:var(--text-sub);margin:var(--s5) auto 0;max-width:55ch">Somos una agencia PrestaShop especializada en crear y optimizar tiendas online para negocios con catálogos grandes y operaciones complejas. Más de 45 proyectos completados, desarrollo de módulos a medida e integraciones con ERPs empresariales.</p>
-<div class="anim" style="display:flex;gap:var(--s4);justify-content:center;margin-top:var(--s8);flex-wrap:wrap">
-<a href="/contacto/" class="btn btn-p btn-lg">Presupuesto gratis</a>
-<a href="#servicios" class="btn btn-o btn-lg">Ver servicios</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../nosotros/index.html">Nosotros</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../blog/index.html">Blog</a>
+<a style="display:block;padding:1rem 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1rem;color:#001e40;text-decoration:none;border-bottom:1px solid #e5e7eb" href="../../contacto/index.html">Contacto</a>
+
+<a style="display:block;background:#001e40;color:#fff;text-align:center;font-family:Manrope,sans-serif;font-weight:700;padding:1rem;border-radius:10px;margin-top:1.5rem;text-decoration:none;font-size:1rem" href="../../contacto/index.html">Auditoría gratuita</a>
+</div>
+</div>
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-surface-container-low to-surface px-6 lg:px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto py-16 lg:py-24 text-center relative z-10">
+<nav class="max-w-7xl mx-auto px-6 lg:px-8 pt-4 pb-2 text-sm text-on-surface-variant" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-secondary-container">Inicio</a><span class="mx-2">›</span><a href="../../servicios/index.html" class="hover:text-secondary-container">Servicios</a><span class="mx-2">›</span><span class="text-primary font-semibold">Agencia PrestaShop</span></nav>
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/80 border border-outline-variant/20 text-primary font-bold text-xs uppercase tracking-widest mt-6 mb-6">Agencia PrestaShop</span>
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.08] tracking-tight max-w-4xl mx-auto">Agencia PrestaShop — Tiendas Online Potentes Para Vender Más</h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mt-6 leading-relaxed">Somos una agencia PrestaShop especializada en crear y optimizar tiendas online para negocios con catálogos grandes y operaciones complejas. Más de 45 proyectos completados, desarrollo de módulos a medida e integraciones con ERPs empresariales.</p>
+<div class="flex flex-wrap gap-4 justify-center mt-8">
+<a class="bg-secondary-container text-white px-8 py-4 rounded-lg font-bold shadow-xl shadow-secondary-container/20 hover:bg-secondary transition-all active:scale-95" href="../../contacto/index.html">Presupuesto gratis</a>
+<a class="px-8 py-4 rounded-lg font-bold text-primary border-2 border-primary/10 hover:bg-white transition-all" href="#problema">¿Te suena esto? ↓</a>
+</div>
+</div>
+<div class="absolute top-10 right-10 w-64 h-64 bg-secondary-container/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+
+<!-- PAIN POINTS — Conexión emocional -->
+<section id="problema" class="bg-[#fdf6f3] py-16 px-6 lg:px-8 scroll-mt-20">
+<div style="max-width:700px;margin:0 auto">
+<p style="text-align:center;font-family:Manrope,sans-serif;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#c0392b;margin-bottom:1rem">¿Te identificas con alguno de estos problemas?</p>
+<div style="display:flex;flex-direction:column;gap:1.5rem">
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Tu tienda online no vende lo que debería</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">El 97% de los visitantes se van sin comprar. Con optimización de fichas, CRO y SEO cambiamos esa cifra.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Dependes de marketplaces y pagas comisiones altas</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Amazon y otros se llevan un 15-30% de cada venta. Tu tienda propia te da el control, el margen y los datos de tus clientes.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">No sabes por qué los usuarios abandonan el carrito</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">El 70% de los carritos se abandonan. Con automatizaciones de email y optimización del checkout, recuperamos una parte significativa.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">No sabes si elegir Shopify, WooCommerce o PrestaShop</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Cada plataforma tiene sus ventajas según tu caso. Te asesoramos para que elijas la que mejor se adapta a tu negocio y presupuesto.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:#fff1f0;display:flex;align-items:center;justify-content:center;font-size:1.2rem">✗</div>
+<div>
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .25rem">Vendes pero no consigues escalar tu facturación</h3>
+<p style="font-size:.85rem;line-height:1.7;color:#43474f;margin:0">Escalar un ecommerce requiere SEO, publicidad, email marketing y logística optimizada trabajando en conjunto. No canales sueltos.</p>
+</div>
+</div>
+
 </div>
 </div>
 </section>
 
-<!-- STATS BAR -->
-<section class="sec-alt" style="padding:var(--s10) 0">
-<div class="wrap">
-<div class="bento bento-4 anim">
-<div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">+45</div><div class="st-l">tiendas PrestaShop</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">+190%</div><div class="st-l">aumento ventas medio</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">2,1s</div><div class="st-l">velocidad de carga</div></div><div class="gc tc" style="padding:var(--s6)"><div class="st-n tg">-45%</div><div class="st-l">menos abandono carrito</div></div>
+<!-- SOLUTION BRIDGE — De problema a solución -->
+<section class="bg-primary py-14 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-3">La solución</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">Tu tienda online puede facturar mucho más de lo que factura hoy. Optimizamos cada paso del funnel — desde que el usuario te encuentra hasta que completa la compra — para que cada visita cuente.</h2>
+<a class="inline-block bg-secondary-container text-white px-8 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95 mt-2" href="../../contacto/index.html">Cuéntanos tu caso →</a>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="bg-surface border-y border-outline-variant/15 py-10">
+<div class="max-w-5xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
+<div class="text-center md:text-left ">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+45</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">tiendas PrestaShop</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">+190%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">aumento ventas medio</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">2,1s</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">velocidad de carga</p>
+</div>
+<div class="text-center md:text-left md:border-l border-outline-variant/20 md:pl-8">
+<div class="font-headline font-black text-3xl lg:text-4xl text-primary tracking-tighter">-45%</div>
+<p class="text-on-surface-variant font-semibold uppercase tracking-widest text-[10px] mt-1">menos abandono carrito</p>
+</div>
+
 </div>
 </div>
 </section>
 
-<!-- MAIN CONTENT: Sidebar + Content -->
-<section class="sec" style="padding-top:var(--s12)">
-<div class="pg">
-<aside class="pg-side">
-<nav>
-<ul class="side-nav">
-<li><a href="#por-que">Por qué PrestaShop</a></li>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#proceso">Proceso</a></li>
-<li><a href="#resultados">Resultados</a></li>
-<li><a href="#diferencias">Por qué nosotros</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-</ul>
-</nav>
-<div class="side-stats">
-<div class="ss"><div class="st-n tg">+45</div><div class="st-l">tiendas PrestaShop</div></div>
-<div class="ss"><div class="st-n tg">+190%</div><div class="st-l">aumento ventas medio</div></div>
-<div class="ss"><div class="st-n tg">2,1s</div><div class="st-l">velocidad de carga</div></div>
-<div class="ss"><div class="st-n tg">-45%</div><div class="st-l">menos abandono carrito</div></div>
+<!-- NAV PILLS -->
+<section style="position:sticky;top:73px;z-index:40;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.04);padding:1rem 1.5rem">
+<div style="max-width:1280px;margin:0 auto;display:flex;gap:.75rem;overflow-x:auto;justify-content:center;padding:.25rem 0" class="scrollbar-hide">
+<a href="#por-que" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué PrestaShop</a>
+<a href="#servicios" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Servicios</a>
+<a href="#proceso" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Proceso</a>
+<a href="#resultados" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Resultados</a>
+<a href="#diferencias" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">Por qué nosotros</a>
+<a href="#faq" class="px-5 py-2.5 rounded-full bg-surface-container-low border border-outline-variant/10 text-sm font-bold text-primary hover:bg-secondary-container hover:text-on-secondary-container hover:border-secondary-container transition-all whitespace-nowrap">FAQ</a>
 
 </div>
-<a href="/contacto/" class="btn btn-p" style="width:100%;justify-content:center;margin-top:var(--s6)">Presupuesto gratis</a>
-</aside>
-<div class="pg-main">
-<h2 id="por-que" class="mt0">¿Por qué PrestaShop sigue siendo una potencia en ecommerce?</h2>
+</section>
 
-<p>PrestaShop es <strong>la plataforma ecommerce open source más utilizada en España y el sur de Europa</strong>. Con más de 300.000 tiendas activas en todo el mundo, sigue siendo la elección preferida de negocios que necesitan un sistema robusto para gestionar catálogos grandes, múltiples almacenes y operaciones complejas.</p>
+<!-- CONTENT BLOCKS -->
 
-<p>Mientras que Shopify simplifica al máximo y WooCommerce depende de WordPress, <strong>PrestaShop fue diseñado desde cero exclusivamente para vender online</strong>. Su panel de administración es uno de los más completos del mercado para la gestión diaria de un ecommerce: inventario, pedidos, clientes, estadísticas, reglas de precio y logística — todo integrado de serie.</p>
+<section id="por-que" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué PrestaShop sigue siendo una potencia en ecommerce?</h2><div class="bar"></div></div>
 
-<h3>PrestaShop: potencia nativa para ecommerce</h3>
-<p>Lo que diferencia a PrestaShop de otras plataformas es su <strong>funcionalidad ecommerce avanzada out-of-the-box</strong>:</p>
+<div class="card-grid g2"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>PrestaShop: potencia nativa para ecommerce</h3><p>Lo que diferencia a PrestaShop de otras plataformas es su funcionalidad ecommerce avanzada out-of-the-box.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span></div><h3>¿Cuándo elegir PrestaShop?</h3><p>PrestaShop es la opción ideal si:.</p></div>
+</div>
+
+</div>
+</section>
+
+<section id="servicios" class="bg-surface-container-low sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Nuestros servicios como agencia PrestaShop</h2><div class="bar"></div></div>
+
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span></div><h3>Diseño y desarrollo de tiendas PrestaShop</h3><p>Creamos tiendas PrestaShop con diseño profesional, código optimizado y experiencia de usuario que convierte.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span></div><h3>Desarrollo de módulos PrestaShop a medida</h3><p>Cuando los módulos del marketplace de PrestaShop no son suficientes, desarrollamos módulos custom.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-6"/></svg></span></div><h3>Migración a PrestaShop 8</h3><p>Si tu tienda está en una versión antigua de PrestaShop (1.6 o 1.7).</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.2 6.2a2.1 2.1 0 0 1-3-3l6.2-6.2a6 6 0 0 1 7.9-7.9z"/></svg></span></div><h3>Optimización de rendimiento PrestaShop</h3><p>PrestaShop puede ser lento si no está bien optimizado.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span></div><h3>SEO para tiendas PrestaShop</h3><p>PrestaShop tiene particularidades SEO que hay que conocer.</p></div>
+</div>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span> Diseño y desarrollo de tiendas PrestaShop — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Creamos tiendas PrestaShop con diseño profesional, código optimizado y experiencia de usuario que convierte:</p>
 <ul>
-<li><strong>Gestión de catálogo avanzada</strong>: atributos, combinaciones, packs, productos virtuales, personalizables</li>
-<li><strong>Reglas de precio flexibles</strong>: descuentos por cantidad, por grupo de clientes, por fecha, por proveedor</li>
-<li><strong>Multitienda</strong>: gestiona varias tiendas desde un solo back-office</li>
-<li><strong>Multiidioma y multimoneda</strong> nativo, ideal para vender en Europa</li>
-<li><strong>Gestión de stocks</strong> con múltiples almacenes y movimientos de inventario</li>
-<li><strong>B2B integrado</strong>: grupos de clientes, precios sin IVA, pedidos mínimos</li>
-</ul>
-
-<h3>¿Cuándo elegir PrestaShop?</h3>
-<p>PrestaShop es la opción ideal si:</p>
-<ul>
-<li>Tu catálogo supera los <strong>5.000 productos</strong> con variantes complejas</li>
-<li>Necesitas <strong>gestión B2B y B2C</strong> desde la misma plataforma</li>
-<li>Vendes en <strong>varios países europeos</strong> con idiomas y monedas diferentes</li>
-<li>Requieres <strong>reglas de precio avanzadas</strong> (por grupo, volumen, temporada)</li>
-<li>Gestionas <strong>múltiples almacenes</strong> o puntos de venta</li>
-<li>Quieres ser <strong>dueño de tu código y tus datos</strong> (open source)</li>
-</ul>
-
-<h2 id="servicios">Nuestros servicios como agencia PrestaShop</h2>
-
-<p>Como <strong>agencia PrestaShop con más de 8 años de experiencia</strong>, dominamos la plataforma en profundidad: desde la configuración inicial hasta el desarrollo de módulos a medida.</p>
-
-<h3>Diseño y desarrollo de tiendas PrestaShop</h3>
-<p>Creamos tiendas PrestaShop con diseño profesional, código optimizado y experiencia de usuario que convierte:</p>
-<ul>
-<li>Diseño UX/UI personalizado orientado a conversión</li>
+<li><a href="/diseno-web/diseno-ux-ui/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Diseño UX</a>/UI personalizado orientado a conversión</li>
 <li>Desarrollo con PrestaShop 8 y las últimas tecnologías (Symfony, Twig)</li>
 <li>Temas custom responsive con rendimiento optimizado</li>
 <li>Configuración avanzada de catálogo, atributos y combinaciones</li>
 <li>Implementación de faceted search para navegación eficiente</li>
-</ul>
-
-<h3>Desarrollo de módulos PrestaShop a medida</h3>
-<p>Cuando los módulos del marketplace de PrestaShop no son suficientes, <strong>desarrollamos módulos custom</strong>:</p>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span> Desarrollo de módulos PrestaShop a medida — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Cuando los módulos del marketplace de PrestaShop no son suficientes, <strong>desarrollamos módulos custom</strong>:</p>
 <ul>
 <li>Módulos de integración con ERPs (SAP, Navision, A3, Holded)</li>
 <li>Conectores con marketplaces (Amazon, eBay, Miravia)</li>
 <li>Módulos de logística y envíos personalizados</li>
 <li>Automatizaciones de procesos de negocio</li>
 <li>Módulos de pago con pasarelas específicas</li>
-</ul>
-
-<h3>Migración a PrestaShop 8</h3>
-<p>Si tu tienda está en una versión antigua de PrestaShop (1.6 o 1.7), <strong>la migración a PrestaShop 8 es crítica</strong> para la seguridad, el rendimiento y la compatibilidad con módulos modernos. Nos encargamos de:</p>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-6"/></svg></span> Migración a PrestaShop 8 — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Si tu tienda está en una versión antigua de PrestaShop (1.6 o 1.7), <strong>la migración a PrestaShop 8 es crítica</strong> para la seguridad, el rendimiento y la compatibilidad con módulos modernos. Nos encargamos de:</p>
 <ul>
 <li>Auditoría de compatibilidad de tema y módulos</li>
 <li>Migración del tema con adaptación a la nueva arquitectura</li>
 <li>Actualización o reemplazo de módulos incompatibles</li>
 <li>Testing exhaustivo post-migración</li>
 <li>Plan de rollback en caso de incidencias</li>
-</ul>
-
-<h3>Optimización de rendimiento PrestaShop</h3>
-<p>PrestaShop puede ser lento si no está bien optimizado. Nuestro equipo técnico lo soluciona:</p>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.2 6.2a2.1 2.1 0 0 1-3-3l6.2-6.2a6 6 0 0 1 7.9-7.9z"/></svg></span> Optimización de rendimiento PrestaShop — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>PrestaShop puede ser lento si no está bien optimizado. Nuestro equipo técnico lo soluciona:</p>
 <ul>
 <li>Optimización de consultas SQL y caché Smarty/Symfony</li>
 <li>Configuración de caché avanzada (Memcached, Redis, Varnish)</li>
 <li>Optimización de imágenes y assets estáticos</li>
 <li>Selección y configuración de hosting optimizado para PrestaShop</li>
 <li>Auditoría y desactivación de módulos que penalizan el rendimiento</li>
-</ul>
-
-<h3>SEO para tiendas PrestaShop</h3>
-<p>PrestaShop tiene particularidades SEO que hay que conocer. Optimizamos tu tienda para posicionar en Google:</p>
+</ul></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span> SEO para tiendas PrestaShop — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>PrestaShop tiene particularidades SEO que hay que conocer. Optimizamos tu tienda para posicionar en Google:</p>
 <ul>
 <li>URLs amigables y estructura de categorías optimizada</li>
 <li>Schema markup de productos, ofertas y breadcrumbs</li>
 <li>Gestión de contenido duplicado y canonical tags</li>
 <li>Optimización de fichas de producto para keywords transaccionales</li>
 <li>Configuración de hreflang para tiendas multiidioma</li>
-</ul>
-
-<h2 id="proceso">Cómo trabajamos tu proyecto PrestaShop</h2>
-
-<p>Nuestro proceso está diseñado para proyectos PrestaShop de cualquier complejidad, desde tiendas estándar hasta implementaciones enterprise:</p>
-
-<div class="steps">
-<div class="step">
-<div class="step-num">01</div>
-<div><h4>Consultoría y especificación técnica</h4>
-<p>Analizamos tu catálogo, tus procesos de negocio y tus integraciones. Definimos la arquitectura de la tienda, los módulos necesarios y las personalizaciones requeridas. Te entregamos un documento funcional completo y presupuesto cerrado.</p></div>
+</ul></div>
+</details>
 </div>
-<div class="step">
-<div class="step-num">02</div>
-<div><h4>Diseño UX/UI y validación</h4>
-<p>Diseñamos la experiencia de compra completa con wireframes y prototipos. Prestamos especial atención a la navegación por categorías, los filtros y la ficha de producto — los elementos críticos para catálogos grandes.</p></div>
-</div>
-<div class="step">
-<div class="step-num">03</div>
-<div><h4>Desarrollo, integraciones y configuración</h4>
-<p>Desarrollo del tema, instalación y configuración de módulos, integraciones con sistemas externos y carga masiva de catálogo. Todo en un entorno de staging para tu revisión continua.</p></div>
-</div>
-<div class="step">
-<div class="step-num">04</div>
-<div><h4>Testing, formación y go-live</h4>
-<p>Testing funcional, de rendimiento y de seguridad. Formación personalizada para tu equipo en el back-office de PrestaShop. Lanzamiento controlado con monitorización y soporte intensivo las primeras semanas.</p></div>
+<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
+<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Solicita tu auditoría gratuita — sin compromiso</p>
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
+Presupuesto gratis →</a>
 </div>
 </div>
+</section>
 
-<h2 id="resultados">Resultados reales de nuestros proyectos PrestaShop</h2>
+<section id="proceso" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Cómo trabajamos tu proyecto PrestaShop</h2><div class="bar"></div></div>
 
-<p>Estos son resultados de tiendas PrestaShop que hemos diseñado, migrado y optimizado:</p>
-
-<div class="stats" style="margin:var(--space-8) 0">
-<div><div class="stat-number text-success">+45</div><div class="stat-label">tiendas PrestaShop desarrolladas</div></div>
-<div><div class="stat-number text-success">+190%</div><div class="stat-label">aumento medio en ventas</div></div>
-<div><div class="stat-number text-success">2,1s</div><div class="stat-label">tiempo medio de carga</div></div>
-<div><div class="stat-number text-success">-45%</div><div class="stat-label">reducción en abandono de carrito</div></div>
+<div class="card-grid g4"><div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">01</div>
+<h3>Consultoría y especificación técnica</h3>
+<p>Analizamos tu catálogo, tus procesos de negocio y tus integraciones.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">02</div>
+<h3><a href="/diseno-web/diseno-ux-ui/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">Diseño UX</a>/UI y validación</h3>
+<p>Diseñamos la experiencia de compra completa con wireframes y prototipos.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">03</div>
+<h3>Desarrollo, integraciones y configuración</h3>
+<p>Desarrollo del tema, instalación y configuración de módulos.</p>
+</div>
+<div class="svc-card">
+<div class="svc-icon" style="background:#001e40;color:#fff">04</div>
+<h3>Testing, formación y go-live</h3>
+<p>Testing funcional, de rendimiento y de seguridad.</p>
+</div>
 </div>
 
-<h3>Caso: Distribuidora industrial — 8.500 productos B2B+B2C</h3>
-<p>Una distribuidora de material industrial con 8.500 referencias que necesitaba vender tanto a profesionales (B2B) como a particulares (B2C) desde la misma plataforma:</p>
+</div>
+</section>
+
+<section id="resultados" class="bg-[#edf1f7] sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>Resultados reales de nuestros proyectos PrestaShop</h2><div class="bar"></div></div>
+
+<div class="card-grid g4" style="margin-bottom:2.5rem"><div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+45</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tiendas PrestaShop desarrolladas</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">+190%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">aumento medio en ventas</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">2,1s</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">tiempo medio de carga</p></div>
+<div class="svc-card">
+<div style="font-family:Manrope,sans-serif;font-weight:800;font-size:2.2rem;color:#fd8b00;margin-bottom:.25rem">-45%</div>
+<p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.04em">reducción en abandono de carrito</p></div>
+</div><div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Distribuidora industrial — 8.500 productos B2B+B2C</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una distribuidora de material industrial con 8.500 referencias que necesitaba vender tanto a profesionales (B2B) como a particulares (B2C) desde la misma plataforma:</p>
 <ul>
 <li><strong>8.500 productos</strong> con gestión de precios diferenciados por grupo de cliente</li>
 <li>Portal B2B con <strong>precios sin IVA, pedidos recurrentes y límites de crédito</strong></li>
 <li>Integración en tiempo real con <strong>SAP Business One</strong></li>
 <li>Facturación online creció un <strong>310%</strong> en 12 meses</li>
-</ul>
-
-<h3>Caso: Tienda de moda multimarca — Migración de PrestaShop 1.6 a 8</h3>
-<p>Una tienda de moda con 4.200 productos que seguía en PrestaShop 1.6 con graves problemas de rendimiento y seguridad:</p>
+</ul></div></div>
+<div style="background:#fff;border-radius:10px;padding:1.75rem;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);max-width:700px;margin:1.25rem auto">
+<h3 style="font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;color:#001e40;margin:0 0 .6rem">Caso: Tienda de moda multimarca — Migración de PrestaShop 1.6 a 8</h3>
+<div class="prose-block" style="max-width:none;margin:0"><p>Una tienda de moda con 4.200 productos que seguía en PrestaShop 1.6 con graves problemas de rendimiento y seguridad:</p>
 <ul>
 <li>Velocidad de carga mejoró de <strong>5,8s a 1,9s</strong></li>
 <li>Tasa de conversión subió del <strong>0,9% al 2,4%</strong></li>
@@ -323,135 +547,265 @@
 </ul>
 
 <p style="margin-top:var(--space-6)"><em>"Teníamos miedo de migrar de versión, pero Comunikoo lo hizo impecable. La tienda ahora vuela y vendemos más que nunca."</em></p>
-<p class="text-muted">— Roberto Fernández, gerente, tienda de moda multimarca, Sevilla</p>
-
-<h2 id="diferencias">¿Por qué Comunikoo como agencia PrestaShop?</h2>
-
-<p>PrestaShop requiere un equipo técnico que conozca la plataforma en profundidad. Esto es lo que nos diferencia:</p>
-
-<h3>Experiencia real con PrestaShop desde 2016</h3>
-<p>No somos una agencia generalista que hizo "un par de proyectos en PrestaShop". <strong>Llevamos más de 45 tiendas PrestaShop desarrolladas</strong>, incluyendo proyectos complejos con catálogos de más de 10.000 productos, integraciones con ERPs y configuraciones multitienda.</p>
-
-<h3>Dominio técnico de Symfony y la arquitectura PrestaShop 8</h3>
-<p>PrestaShop 8 está construido sobre Symfony, el framework PHP más profesional. <strong>Nuestros desarrolladores dominan Symfony, Twig, Doctrine y la arquitectura de módulos de PrestaShop</strong>. Eso nos permite desarrollar soluciones robustas y mantenibles, no parches que se rompen con cada actualización.</p>
-
-<h3>Especialistas en catálogos grandes y operaciones complejas</h3>
-<p>Si tu tienda tiene miles de productos, múltiples almacenes o reglas de precio complejas, estamos en nuestro elemento. <strong>Sabemos cómo configurar PrestaShop para que funcione de forma eficiente</strong> incluso con catálogos masivos y alta concurrencia.</p>
-
-<h3>Soporte y mantenimiento PrestaShop</h3>
-<p>PrestaShop necesita mantenimiento regular: actualizaciones de seguridad, compatibilidad de módulos y optimización de rendimiento. Ofrecemos <strong>planes de mantenimiento mensuales</strong> para que tu tienda siempre esté segura y funcionando al máximo. <a href="/servicios/mantenimiento-web/">Ver planes de mantenimiento</a>.</p>
-
-<h3>Visión de negocio, no solo técnica</h3>
-<p>No nos limitamos a desarrollar lo que nos pides. <strong>Te asesoramos para que tu tienda PrestaShop genere más ventas</strong>: optimización de la experiencia de compra, estrategia SEO, automatización de procesos y análisis de datos para tomar mejores decisiones.</p>
-
-<h2 id="faq">Preguntas frecuentes</h2>
-<div class="faq">
-<details>
-<summary>¿Cuánto cuesta desarrollar una tienda PrestaShop?</summary>
-<p>Nuestros proyectos PrestaShop parten desde 3.500€ para tiendas estándar hasta 15.000€+ para proyectos complejos con desarrollo de módulos custom e integraciones con ERP. El precio incluye diseño, desarrollo, configuración, SEO técnico, formación y 3 meses de soporte.</p>
-</details>
-<details>
-<summary>¿PrestaShop es gratuito?</summary>
-<p>El software PrestaShop es gratuito y open source. Los costes asociados son: hosting (desde 20€/mes), tema profesional (100-250€), y módulos premium según necesidades (desde 30€ hasta 300€ por módulo). El coste total de infraestructura depende de la complejidad de tu proyecto.</p>
-</details>
-<details>
-<summary>¿PrestaShop o Shopify? ¿Qué es mejor?</summary>
-<p>Depende de tus necesidades. Shopify es mejor si quieres simplicidad y rapidez de lanzamiento. PrestaShop es mejor si necesitas gestión avanzada de catálogo, B2B, multitienda, personalización profunda o ser dueño de tu código. Te asesoramos gratuitamente para elegir.</p>
-</details>
-<details>
-<summary>¿Puedo migrar de PrestaShop 1.6 o 1.7 a PrestaShop 8?</summary>
-<p>Sí, y es muy recomendable hacerlo. Las versiones antiguas tienen vulnerabilidades de seguridad y no son compatibles con módulos modernos. Migramos tu tienda completa preservando productos, clientes, pedidos y SEO.</p>
-</details>
-<details>
-<summary>¿PrestaShop es bueno para tiendas grandes?</summary>
-<p>Sí. PrestaShop está diseñado para gestionar catálogos grandes. Tenemos clientes con más de 10.000 productos funcionando perfectamente. La clave está en un hosting adecuado, una configuración optimizada y módulos bien seleccionados.</p>
-</details>
-<details>
-<summary>¿Puedo vender en varios idiomas con PrestaShop?</summary>
-<p>Sí. PrestaShop tiene soporte multiidioma y multimoneda nativo. Puedes traducir toda tu tienda, gestionar precios por divisa y configurar impuestos por país. Es una de las plataformas más preparadas para venta internacional en Europa.</p>
-</details>
-<details>
-<summary>¿PrestaShop es seguro?</summary>
-<p>PrestaShop es seguro si se mantiene actualizado y bien configurado. Las versiones antiguas (1.6, 1.7) tienen vulnerabilidades conocidas. Con PrestaShop 8, actualizaciones regulares y un plan de mantenimiento profesional, tu tienda está protegida.</p>
-</details>
-<details>
-<summary>¿Ofrecéis soporte y mantenimiento para PrestaShop?</summary>
-<p>Sí. Nuestros planes de mantenimiento PrestaShop incluyen actualizaciones de seguridad, copias de seguridad diarias, monitorización de rendimiento, soporte técnico prioritario y pequeñas modificaciones mensuales. Desde 190€/mes.</p>
-</details>
-</div>
-<div class="cta-b" style="margin-top:var(--s16)">
-<h2>¿Necesitas una tienda PrestaShop profesional?</h2>
-<p>Cuéntanos tu proyecto y te enviamos una propuesta técnica con presupuesto cerrado. Sin compromiso.</p>
-<a href="/contacto/" class="btn btn-w btn-lg">Solicita presupuesto PrestaShop</a>
-</div>
-
+<p class="text-muted">— Roberto Fernández, gerente, tienda de moda multimarca, Sevilla</p></div></div>
+<div style="max-width:700px;margin:2rem auto;text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid rgba(0,0,0,.06);border-left:4px solid #fd8b00">
+<p style="font-size:.95rem;font-style:italic;color:#001e40;line-height:1.7;margin:0 0 .75rem">"Teníamos miedo de migrar de versión, pero Comunikoo lo hizo impecable. La tienda ahora vuela y vendemos más que nunca."</p>
+<p style="font-size:.8rem;color:#737780;margin:0">— 8.500 productos B2B+B2C</h3>
+<p>Una distribuidora de material industrial con 8.500 referencias que necesitaba vender tanto a profesionales (B2B) como a particulares (B2C) desde la misma plataforma:</p></div>
+<div style="text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:#001e40;border-radius:12px;max-width:700px;margin-left:auto;margin-right:auto">
+<p style="font-family:Manrope,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 .75rem">Habla con un experto sobre tu proyecto</p>
+<a style="display:inline-flex;align-items:center;gap:.5rem;background:#fd8b00;color:#603100;padding:.85rem 2.5rem;border-radius:8px;font-family:Manrope,sans-serif;font-weight:700;font-size:.95rem;text-decoration:none" href="../../contacto/index.html">
+Presupuesto gratis →</a>
 </div>
 </div>
 </section>
 
-</main>
+<section id="diferencias" class=" sec-block scroll-mt-20">
+<div class="container">
+<div class="sec-heading"><h2>¿Por qué Comunikoo como agencia PrestaShop?</h2><div class="bar"></div></div>
 
-<footer class="ft">
-<div class="ft-grid">
-<div class="ft-info">
-<a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
-<p>Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p>📍 Aragó 4, Barcelona 08015</p>
-<p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
-<p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
+<div class="card-grid g5"><div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div><h3>Experiencia real con PrestaShop desde 2016</h3><p>No somos una agencia generalista que hizo "un par de proyectos en PrestaShop".</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span></div><h3>Dominio técnico de Symfony y la arquitectura PrestaShop 8</h3><p>PrestaShop 8 está construido sobre Symfony, el framework PHP más profesional.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg></span></div><h3>Especialistas en catálogos grandes y operaciones complejas</h3><p>Si tu tienda tiene miles de productos, múltiples almacenes o reglas de precio complejas, estamos en nuestro elemento.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg></span></div><h3>Soporte y mantenimiento PrestaShop</h3><p>PrestaShop necesita mantenimiento regular.</p></div>
+<div class="svc-card"><div class="svc-icon" style="background:#f0f4ff"><span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span></div><h3>Visión de negocio, no solo técnica</h3><p>No nos limitamos a desarrollar lo que nos pides.</p></div>
 </div>
-<div>
-<h4>Servicios</h4>
-<ul>
-<li><a href="/agencia-seo/">Agencia SEO</a></li>
-<li><a href="/agencia-seo-local/">SEO Local</a></li>
-<li><a href="/diseno-web/">Diseño Web</a></li>
-<li><a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a></li>
-<li><a href="/tienda-online/">Tiendas Online</a></li>
-<li><a href="/agencia-google-ads/">Google Ads</a></li>
-<li><a href="/agencia-facebook-ads/">Facebook Ads</a></li>
-<li><a href="/community-manager/">Community Manager</a></li>
-<li><a href="/email-marketing/">Email Marketing</a></li>
-<li><a href="/servicios/branding/">Branding</a></li>
-</ul>
+<div style="max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem"><details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span> Experiencia real con PrestaShop desde 2016 — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No somos una agencia generalista que hizo "un par de proyectos en PrestaShop". <strong>Llevamos más de 45 tiendas PrestaShop desarrolladas</strong>, incluyendo proyectos complejos con catálogos de más de 10.000 productos, integraciones con ERPs y configuraciones multitienda.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></span> Dominio técnico de Symfony y la arquitectura PrestaShop 8 — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>PrestaShop 8 está construido sobre Symfony, el framework PHP más profesional. <strong>Nuestros desarrolladores dominan Symfony, Twig, Doctrine y la arquitectura de módulos de PrestaShop</strong>. Eso nos permite desarrollar soluciones robustas y mantenibles, no parches que se rompen con cada actualización.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg></span> Especialistas en catálogos grandes y operaciones complejas — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>Si tu tienda tiene miles de productos, múltiples almacenes o reglas de precio complejas, estamos en nuestro elemento. <strong>Sabemos cómo configurar PrestaShop para que funcione de forma eficiente</strong> incluso con catálogos masivos y alta concurrencia.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg></span> Soporte y mantenimiento PrestaShop — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>PrestaShop necesita mantenimiento regular: actualizaciones de seguridad, compatibilidad de módulos y optimización de rendimiento. Ofrecemos <strong>planes de mantenimiento mensuales</strong> para que tu tienda siempre esté segura y funcionando al máximo. <a href="/servicios/mantenimiento-web/">Ver planes de mantenimiento</a>.</p></div>
+</details>
+<details style="background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)">
+<summary style="padding:.875rem 1.25rem;font-family:Manrope,sans-serif;font-weight:600;font-size:.82rem;color:#001e40;display:flex;align-items:center;gap:.5rem;cursor:pointer">
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.3 19a9.9 9.9 0 0 1 17.4 0"/></svg></span> Visión de negocio, no solo técnica — Leer más</summary>
+<div class="prose-block" style="padding:.5rem 1.25rem 1rem 2.75rem;max-width:none;margin:0;font-size:.82rem"><p>No nos limitamos a desarrollar lo que nos pides. <strong>Te asesoramos para que tu tienda PrestaShop genere más ventas</strong>: optimización de la experiencia de compra, <a href="/agencia-seo/" style="color:#fd8b00;text-decoration:underline;text-underline-offset:2px">estrategia SEO</a>, automatización de procesos y análisis de datos para tomar mejores decisiones.</p></div>
+</details>
 </div>
-<div>
-<h4>Ciudades</h4>
-<ul>
-<li><a href="/agencia-marketing-digital-barcelona/">Barcelona</a></li>
-<li><a href="/agencia-marketing-digital-madrid/">Madrid</a></li>
-</ul>
-<h4 style="margin-top:1.5rem">Recursos</h4>
-<ul>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/casos-de-exito/">Casos de Éxito</a></li>
-</ul>
+
 </div>
-<div>
-<h4>Sectores</h4>
-<ul>
-<li><a href="/marketing-para-restaurantes/">Restaurantes</a></li>
-<li><a href="/marketing-para-hoteles/">Hoteles</a></li>
-<li><a href="/marketing-para-clinicas-dentales/">Clínicas Dentales</a></li>
-<li><a href="/marketing-para-abogados/">Abogados</a></li>
-<li><a href="/marketing-para-inmobiliarias/">Inmobiliarias</a></li>
-<li><a href="/marketing-para-gimnasios/">Gimnasios</a></li>
-<li><a href="/marketing-para-ecommerce/">Ecommerce</a></li>
-<li><a href="/marketing-para-empresas-b2b/">B2B</a></li>
-</ul>
+</section>
+
+
+
+<section id="faq" class="bg-surface py-20 lg:py-24 px-6 lg:px-8 scroll-mt-20">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-primary">Preguntas frecuentes</h2>
+<div class="h-1 w-16 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Cuánto cuesta desarrollar una tienda PrestaShop?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Nuestros proyectos PrestaShop parten desde 3.500€ para tiendas estándar hasta 15.000€+ para proyectos complejos con desarrollo de módulos custom e integraciones con ERP. El precio incluye diseño, desarrollo, configuración, SEO técnico, formación y 3 meses de soporte.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿PrestaShop es gratuito?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">El software PrestaShop es gratuito y open source. Los costes asociados son: hosting (desde 20€/mes), tema profesional (100-250€), y módulos premium según necesidades (desde 30€ hasta 300€ por módulo). El coste total de infraestructura depende de la complejidad de tu proyecto.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿PrestaShop o Shopify? ¿Qué es mejor?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Depende de tus necesidades. Shopify es mejor si quieres simplicidad y rapidez de lanzamiento. PrestaShop es mejor si necesitas gestión avanzada de catálogo, B2B, multitienda, personalización profunda o ser dueño de tu código. Te asesoramos gratuitamente para elegir.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo migrar de PrestaShop 1.6 o 1.7 a PrestaShop 8?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí, y es muy recomendable hacerlo. Las versiones antiguas tienen vulnerabilidades de seguridad y no son compatibles con módulos modernos. Migramos tu tienda completa preservando productos, clientes, pedidos y SEO.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿PrestaShop es bueno para tiendas grandes?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. PrestaShop está diseñado para gestionar catálogos grandes. Tenemos clientes con más de 10.000 productos funcionando perfectamente. La clave está en un hosting adecuado, una configuración optimizada y módulos bien seleccionados.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Puedo vender en varios idiomas con PrestaShop?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. PrestaShop tiene soporte multiidioma y multimoneda nativo. Puedes traducir toda tu tienda, gestionar precios por divisa y configurar impuestos por país. Es una de las plataformas más preparadas para venta internacional en Europa.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿PrestaShop es seguro?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">PrestaShop es seguro si se mantiene actualizado y bien configurado. Las versiones antiguas (1.6, 1.7) tienen vulnerabilidades conocidas. Con PrestaShop 8, actualizaciones regulares y un plan de mantenimiento profesional, tu tienda está protegida.</p>
+</details>
+<details class="bg-surface-container-lowest p-6 rounded-xl group">
+<summary class="font-headline font-bold text-primary flex justify-between items-center">
+¿Ofrecéis soporte y mantenimiento para PrestaShop?
+<span class="icon-inline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+</summary>
+<p class="text-on-surface-variant mt-4 leading-relaxed">Sí. Nuestros planes de mantenimiento PrestaShop incluyen actualizaciones de seguridad, copias de seguridad diarias, monitorización de rendimiento, soporte técnico prioritario y pequeñas modificaciones mensuales. Desde 190€/mes.</p>
+</details>
 </div>
 </div>
-<div class="ft-btm">
-<span>&copy; 2026 Comunikoo. Todos los derechos reservados.</span>
-<div>
-<a href="/politica-de-privacidad/">Privacidad</a> ·
-<a href="/aviso-legal/">Aviso Legal</a> ·
-<a href="/politica-de-cookies/">Cookies</a> ·
-<a href="/sitemap.xml">Sitemap</a>
+</section>
+
+
+
+
+
+
+
+
+<section class="bg-surface-container-low sec-block">
+<div class="container">
+<div class="sec-heading"><h2 style="font-size:1.3rem">Servicios relacionados</h2><div class="bar"></div></div>
+<div class="card-grid g3">
+<a href="../../tienda-online/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Tienda Online</h3>
+</a>
+<a href="../../servicios/agencia-ecommerce/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Agencia Ecommerce</h3>
+</a>
+<a href="../../servicios/agencia-shopify/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Shopify</h3>
+</a>
+<a href="../../servicios/agencia-woocommerce/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">WooCommerce</h3>
+</a>
+<a href="../../agencia-seo/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">Agencia SEO</h3>
+</a>
+<a href="../../servicios/agencia-seo-local/index.html" class="svc-card" style="padding:1.25rem;text-decoration:none">
+<h3 style="font-size:.8rem">SEO Local</h3>
+</a>
+
+</div>
+<div style="margin-top:2.5rem">
+<div class="sec-heading"><h2 style="font-size:1.1rem">Sectores donde aplicamos este servicio</h2><div class="bar"></div></div>
+<div class="card-grid g6" style="margin-top:1.5rem">
+<a href="../../marketing-para-restaurantes/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Restaurantes</h3>
+</a>
+<a href="../../marketing-para-hoteles/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Hoteles</h3>
+</a>
+<a href="../../marketing-para-clinicas-dentales/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Clínicas Dentales</h3>
+</a>
+<a href="../../marketing-para-clinicas-esteticas/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Clínicas Estéticas</h3>
+</a>
+<a href="../../marketing-para-abogados/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Abogados</h3>
+</a>
+<a href="../../marketing-para-inmobiliarias/index.html" class="svc-card" style="padding:1rem;text-decoration:none">
+<h3 style="font-size:.75rem">Inmobiliarias</h3>
+</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA FINAL — Detalle de lo que incluye -->
+<section class="bg-primary py-24 px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<p class="text-secondary-container font-bold text-sm uppercase tracking-widest mb-4">Da el primer paso</p>
+<h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-4">¿Necesitas una tienda PrestaShop profesional?</h2>
+<p class="text-on-primary-container text-base mb-6">Cuéntanos tu proyecto y te enviamos una propuesta técnica con presupuesto cerrado. Sin compromiso.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-md mx-auto mb-8 text-left">
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Análisis completo de tu situación</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Estudio de tu competencia</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Plan de acción personalizado</p>
+<p class="text-on-primary-container text-sm flex items-start gap-2"><span class="text-secondary-container">✓</span> Sin compromiso ni permanencia</p>
+</div>
+<a class="inline-block bg-secondary-container text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-secondary transition-all active:scale-95" href="#formulario">Solicita presupuesto PrestaShop →</a>
+<p class="text-on-primary-container/50 text-xs mt-4">Respuesta en menos de 24h. Sin llamadas no deseadas.</p>
+</div>
+</section>
+
+</main>
+<footer class="bg-primary w-full py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 max-w-7xl mx-auto">
+<div class="space-y-4 lg:col-span-1">
+<div class="text-xl font-black text-secondary-container">Comunikoo</div>
+<p class="text-on-primary-container text-sm max-w-xs">Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
+<p class="text-on-primary-container text-sm"><a href="mailto:hola@comunikoo.es" class="hover:text-white">hola@comunikoo.es</a></p>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Servicios</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-seo/index.html">Agencia SEO</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../diseno-web/index.html">Diseño Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-google-ads/index.html">Google Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../community-manager/index.html">Community Manager</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../tienda-online/index.html">Tiendas Online</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../email-marketing/index.html">Email Marketing</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/branding/index.html">Branding</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/agencia-facebook-ads/index.html">Facebook Ads</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../servicios/landing-pages/index.html">Landing Pages</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Sectores</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-restaurantes/index.html">Restaurantes</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-hoteles/index.html">Hoteles</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-dentales/index.html">Clínicas Dentales</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-clinicas-esteticas/index.html">Clínicas Estéticas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-psicologos/index.html">Psicólogos</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-veterinarias/index.html">Veterinarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-abogados/index.html">Abogados</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-inmobiliarias/index.html">Inmobiliarias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-ecommerce/index.html">Ecommerce</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-b2b/index.html">B2B</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-gimnasios/index.html">Gimnasios</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-asesorias/index.html">Asesorías</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-autoescuelas/index.html">Autoescuelas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-academias/index.html">Academias</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-empresas-de-reformas/index.html">Reformas</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../marketing-para-talleres-de-coches/index.html">Talleres</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Ciudades</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-barcelona/index.html">Barcelona</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../agencia-marketing-digital-madrid/index.html">Madrid</a>
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mt-6">Recursos</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../nosotros/index.html">Nosotros</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../contacto/index.html">Contacto</a>
+</div>
+<div class="space-y-3">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-privacidad/index.html">Privacidad</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../aviso-legal/index.html">Aviso Legal</a>
+<a class="block text-on-primary-container text-sm hover:text-white transition-all" href="../../politica-de-cookies/index.html">Cookies</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 mt-10 border-t border-white/10 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-on-primary-container/60 text-sm">&copy; 2026 Comunikoo. Todos los derechos reservados.</p>
+<div class="flex gap-4 text-on-primary-container/60 text-sm">
+<a href="../../politica-de-privacidad/index.html" class="hover:text-white">Privacidad</a>
+<a href="../../aviso-legal/index.html" class="hover:text-white">Aviso Legal</a>
+<a href="../../politica-de-cookies/index.html" class="hover:text-white">Cookies</a>
 </div>
 </div>
 </footer>
-
-<script defer src="/js/main.js"></script>
-</body>
-</html>
+</body></html>
