@@ -2543,82 +2543,85 @@ def build_home():
 <main class="pt-20 overflow-x-hidden">
 
 <!-- HERO -->
-<section class="relative overflow-hidden" style="background:linear-gradient(160deg,#001e40 0%,#002d5c 50%,#001030 100%)">
-<div class="absolute inset-0 opacity-[0.04]" style="background-image:radial-gradient(circle at 1px 1px, white 1px, transparent 0);background-size:40px 40px"></div>
-<div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div>
-<span class="inline-block px-4 py-1.5 rounded-full border border-white/20 text-white/70 text-xs font-semibold uppercase tracking-widest mb-8">Agencia de Marketing Digital en Barcelona</span>
-<h1 class="font-headline font-black text-4xl md:text-5xl text-white leading-[1.1] tracking-tight">
+<section class="relative overflow-hidden bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="text-xs font-semibold text-primary tracking-wide">Agencia de Marketing Digital en Barcelona</span>
+</div>
+<h1 class="font-headline font-extrabold text-4xl md:text-[3.25rem] text-primary leading-[1.12] tracking-tight">
 Posicionamos negocios donde sus clientes los buscan
 </h1>
-<p class="text-lg text-white/60 max-w-lg mt-6 leading-relaxed">
-SEO, Diseño Web, Google Ads y Redes Sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación.
+<p class="text-base text-on-surface-variant max-w-lg mt-5 leading-relaxed">
+SEO, Diseño Web, Google Ads y Redes Sociales. Estrategias basadas en datos. Sin permanencia. Dashboard en tiempo real.
 </p>
-<div class="flex flex-wrap gap-4 mt-8">
-<a class="bg-secondary-container text-white px-7 py-3.5 rounded-lg font-bold hover:bg-secondary transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita</a>
-<a class="px-7 py-3.5 rounded-lg font-bold text-white border border-white/20 hover:bg-white/10 transition-all" href="{r('/servicios/')}">Ver servicios</a>
+<div class="flex flex-wrap gap-3 mt-8">
+<a class="bg-primary text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-primary-container transition-all" href="{r('/contacto/')}">Solicitar auditoría gratuita</a>
+<a class="px-6 py-3 rounded-lg font-bold text-sm text-primary border border-primary/15 hover:border-primary/40 transition-all" href="{r('/servicios/')}">Ver servicios</a>
+</div>
+<div class="flex flex-wrap gap-6 mt-8 text-xs text-on-surface-variant/70">
+<span>✓ Google Partner</span>
+<span>✓ Sin permanencia</span>
+<span>✓ +487 proyectos</span>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
-<div class="font-headline font-black text-3xl text-secondary-container">+320%</div>
-<p class="text-white/60 text-sm mt-1">tráfico orgánico</p>
+<div class="lg:col-span-5">
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-primary rounded-2xl p-6 text-center">
+<div class="font-headline font-extrabold text-3xl text-secondary-container leading-none">+320%</div>
+<p class="text-white/50 text-xs mt-2 font-medium">tráfico orgánico</p>
 </div>
-<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
-<div class="font-headline font-black text-3xl text-white">5.8M€</div>
-<p class="text-white/60 text-sm mt-1">gestionados en ads</p>
+<div class="bg-surface-container-low rounded-2xl p-6 text-center">
+<div class="font-headline font-extrabold text-3xl text-primary leading-none">5.8M€</div>
+<p class="text-on-surface-variant/60 text-xs mt-2 font-medium">gestionados en ads</p>
 </div>
-<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
-<div class="font-headline font-black text-3xl text-white">98%</div>
-<p class="text-white/60 text-sm mt-1">satisfacción</p>
+<div class="bg-surface-container-low rounded-2xl p-6 text-center">
+<div class="font-headline font-extrabold text-3xl text-primary leading-none">98%</div>
+<p class="text-on-surface-variant/60 text-xs mt-2 font-medium">satisfacción</p>
 </div>
-<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
-<div class="font-headline font-black text-3xl text-secondary-container">487</div>
-<p class="text-white/60 text-sm mt-1">proyectos</p>
+<div class="bg-primary rounded-2xl p-6 text-center">
+<div class="font-headline font-extrabold text-3xl text-secondary-container leading-none">487</div>
+<p class="text-white/50 text-xs mt-2 font-medium">proyectos</p>
 </div>
 </div>
 </div>
-<div class="flex flex-wrap justify-center gap-8 mt-12 pt-8 border-t border-white/10">
-<span class="text-white/40 text-sm font-medium">Sin permanencia</span>
-<span class="text-white/40 text-sm font-medium">Dashboard en tiempo real</span>
-<span class="text-white/40 text-sm font-medium">Google Partner</span>
-<span class="text-white/40 text-sm font-medium">Equipo senior</span>
 </div>
 </div>
 </section>
 
 <!-- TRUST BAR -->
-<section class="py-10 border-b border-outline-variant/10">
+<section class="py-8 border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-6 lg:px-8">
-<div class="flex flex-wrap justify-center items-center gap-10 md:gap-14">
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">TechStart</span>
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">ClinicaPro</span>
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">FoodGroup</span>
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">LegalPartners</span>
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">SportLife</span>
-<span class="font-headline font-bold text-base text-primary/15 tracking-tight">HomeDesign</span>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">TechStart</span>
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">ClinicaPro</span>
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">FoodGroup</span>
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">LegalPartners</span>
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">SportLife</span>
+<span class="font-headline font-bold text-sm text-primary/12 tracking-tight">HomeDesign</span>
 </div>
 </div>
 </section>
 
 <!-- PAIN POINT -->
-<section class="py-24 px-6 lg:px-8" style="background:linear-gradient(135deg,#001e40 0%,#001030 100%)">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="font-headline font-black text-3xl md:text-4xl text-white leading-tight mb-6">Tu competencia aparece en Google antes que tú.<br>Tus clientes los encuentran a ellos.</h2>
-<p class="text-white/60 text-lg max-w-xl mx-auto mb-10">Cada día sin estrategia digital es un día que tu competencia te adelanta. Podemos cambiarlo.</p>
-<a class="inline-block bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all active:scale-95" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
+<section class="py-20 px-6 lg:px-8 bg-primary">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline font-bold text-2xl md:text-3xl text-white leading-snug">Tu competencia aparece en Google antes que tú. Tus clientes los encuentran a ellos.</h2>
+<p class="text-white/40 text-sm mt-4 max-w-md mx-auto">Cada día sin estrategia digital es un día que pierdes clientes.</p>
+<a class="inline-block bg-white text-primary px-6 py-3 rounded-lg font-bold text-sm mt-8 hover:bg-surface-container-low transition-all" href="{r('/contacto/')}">Solicitar auditoría gratuita →</a>
 </div>
 </section>
 
 <!-- SERVICES MAIN 6 -->
-<section class="py-24 px-6 lg:px-8">
+<section class="py-20 px-6 lg:px-8">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-3">Servicios</p>
-<h2 class="font-headline font-bold text-3xl md:text-4xl text-primary tracking-tight">Todo lo que tu negocio necesita para crecer online</h2>
+<div class="text-center mb-14">
+<h2 class="font-headline font-bold text-3xl text-primary tracking-tight">Servicios</h2>
+<p class="text-on-surface-variant text-sm mt-2 max-w-md mx-auto">Todo lo que tu negocio necesita para crecer online</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 <a href="{r('/agencia-seo/')}" class="bg-white p-8 rounded-xl shadow-[0_2px_12px_rgba(0,0,0,.07)] border border-black/[.06] group hover:bg-primary transition-all duration-500 no-underline">
 <div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-on-secondary-container">search</span></div>
 <h3 class="font-headline font-bold text-xl text-primary mb-3 group-hover:text-white">SEO y Posicionamiento Web</h3>
@@ -2665,12 +2668,11 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Estrategias basadas en datos que 
 </section>
 
 <!-- WHY COMUNIKOO -->
-<section class="py-24 px-6 lg:px-8 bg-surface-container-low">
+<section class="py-20 px-6 lg:px-8 bg-surface-container-low">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-3">Por qué Comunikoo</p>
-<h2 class="font-headline font-bold text-3xl md:text-4xl text-primary tracking-tight">Lo que nos diferencia</h2>
-<p class="text-on-surface-variant text-base max-w-xl mx-auto mt-4">Resultados reales, transparencia total y compromiso con tu crecimiento.</p>
+<div class="text-center mb-14">
+<h2 class="font-headline font-bold text-3xl text-primary tracking-tight">Por qué Comunikoo</h2>
+<p class="text-on-surface-variant text-sm mt-2 max-w-md mx-auto">Resultados reales, transparencia total y compromiso con tu crecimiento.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="bg-surface-container-lowest p-8 rounded-xl">
@@ -2703,12 +2705,11 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Estrategias basadas en datos que 
 </section>
 
 <!-- METHODOLOGY -->
-<section class="py-24 px-6 lg:px-8">
+<section class="py-20 px-6 lg:px-8">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<p class="text-sm font-semibold text-secondary-container uppercase tracking-widest mb-3">Proceso</p>
-<h2 class="font-headline font-bold text-3xl md:text-4xl text-primary tracking-tight">Cómo trabajamos</h2>
-<p class="text-on-surface-variant text-base max-w-lg mx-auto mt-4">Metodología refinada en +487 proyectos. Cada fase maximiza resultados.</p>
+<div class="text-center mb-14">
+<h2 class="font-headline font-bold text-3xl text-primary tracking-tight">Cómo trabajamos</h2>
+<p class="text-on-surface-variant text-sm mt-2 max-w-md mx-auto">Metodología refinada en +487 proyectos.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="text-center">
