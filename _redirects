@@ -47,35 +47,25 @@
 /marketing-inmobiliarias/ /marketing-para-inmobiliarias/ 301
 
 # URLs antiguas confirmadas del WordPress
-/agencia-meta-ads /agencia-meta-ads/ 301
-/agencia-meta-ads/ /agencia-meta-ads/ 301
-/agencia-facebook-ads /agencia-facebook-ads/ 301
-/agencia-facebook-ads/ /agencia-facebook-ads/ 301
-/agencia-seo-local /agencia-seo-local/ 301
-/agencia-seo-local/ /agencia-seo-local/ 301
+# NOTA: NO redirigir URLs que ya existen como páginas en raíz
 /agencia-google-ads-barcelona /google-ads-barcelona/ 301
 /agencia-google-ads-barcelona/ /google-ads-barcelona/ 301
 /diseño-web-barcelona /diseno-web-barcelona/ 301
 /diseño-web-barcelona/ /diseno-web-barcelona/ 301
-/diseno-web-barcelona /diseno-web-barcelona/ 301
 /diseño-web-corporativo /servicios/diseno-web-para-empresas/ 301
 /diseño-web-corporativo/ /servicios/diseno-web-para-empresas/ 301
 /diseno-web-corporativo /servicios/diseno-web-para-empresas/ 301
 /diseno-web-corporativo/ /servicios/diseno-web-para-empresas/ 301
 /web-corporativa/ /diseno-web/diseno-web-corporativo/ 301
 /web-corporativa /diseno-web/diseno-web-corporativo/ 301
-/experto-google-ads /experto-google-ads/ 301
-/experto-google-ads/ /experto-google-ads/ 301
 
-# Servicios (posibles variantes antiguas)
+# Servicios (variantes antiguas — solo las que NO existen como página)
 /seo/ /agencia-seo/ 301
 /seo-barcelona/ /agencia-seo-barcelona/ 301
 /seo-local/ /agencia-seo-local/ 301
 /google-ads/ /agencia-google-ads/ 301
-/posicionamiento-web/ /posicionamiento-web/ 301
 /publicidad-google/ /publicidad-en-google/ 301
 /facebook-ads/ /agencia-facebook-ads/ 301
-/instagram-ads/ /instagram-ads/ 301
 /wordpress/ /servicios/diseno-web-wordpress/ 301
 /branding/ /servicios/branding/ 301
 /redes-sociales/ /servicios/gestion-redes-sociales/ 301
