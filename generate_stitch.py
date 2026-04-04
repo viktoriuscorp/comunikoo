@@ -2200,7 +2200,7 @@ def build_geo_page(page):
         'disenador-web': 'other',
     }
     # Extract slug from URL (e.g., /agencia-seo-barcelona/ → agencia-seo)
-    url_slug = current_url.strip('/').replace('-barcelona', '').replace('-madrid', '')
+    url_slug = current_url.strip('/').replace('-barcelona', '').replace('-madrid', '').replace('-valencia', '').replace('-sevilla', '')
     geo_type = GEO_TYPE_MAP.get(url_slug, 'other')
     geo_data = GEO_CONTENT.get(geo_type, {}).get(city, {})
 
@@ -2217,7 +2217,19 @@ def build_geo_page(page):
             'business_desc': 'Madrid es el mayor mercado empresarial de España, con más de 500.000 empresas y una competencia digital feroz. Posicionar tu negocio en la capital requiere una estrategia agresiva, conocimiento del mercado local y un equipo con experiencia probada.',
             'why_local': f'Entendemos las dinámicas del mercado {svc_name_lower} en Madrid: la intensidad competitiva, los patrones de búsqueda de los madrileños, las diferencias entre zonas (Chamberí, Salamanca, Chamartín, Arganzuela) y el perfil del consumidor capitalino.',
             'advantage': 'Atención personalizada con reuniones presenciales y virtuales, conocimiento del ecosistema empresarial madrileño y resultados probados con empresas de la capital.',
-        }
+        },
+        'Valencia': {
+            'demonym': 'valenciano', 'region': 'Comunitat Valenciana',
+            'business_desc': 'Valencia es la tercera ciudad de España y un polo empresarial en pleno crecimiento digital. Con un tejido de pymes, startups y empresas turísticas en expansión, el mercado valenciano ofrece enormes oportunidades para quienes invierten en marketing digital profesional.',
+            'why_local': f'Conocemos el mercado {svc_name_lower} en Valencia y toda la Comunitat Valenciana: desde el sector turístico y hostelero de la costa hasta las empresas tecnológicas del Distrito Digital, pasando por el comercio tradicional de Ruzafa y el tejido industrial de la periferia.',
+            'advantage': 'Presencia activa en Valencia con atención personalizada, conocimiento del ecosistema empresarial valenciano y experiencia con negocios locales en todos los barrios y comarcas de la Comunitat.',
+        },
+        'Sevilla': {
+            'demonym': 'sevillano', 'region': 'Andalucía',
+            'business_desc': 'Sevilla es el motor económico de Andalucía y una ciudad con un ecosistema empresarial cada vez más digitalizado. El turismo, la hostelería, los servicios profesionales y el comercio local generan una demanda creciente de marketing digital profesional.',
+            'why_local': f'Entendemos el mercado {svc_name_lower} en Sevilla y Andalucía: las particularidades del consumidor andaluz, la estacionalidad turística, la competencia local en cada sector y las oportunidades que otros pasan por alto.',
+            'advantage': 'Atención personalizada para empresas de Sevilla y toda Andalucía, con reuniones por videoconferencia y conocimiento del mercado local andaluz.',
+        },
     }
     cd = CITY_DATA.get(city, CITY_DATA['Barcelona'])
 
