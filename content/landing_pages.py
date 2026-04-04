@@ -1,4 +1,4 @@
-# Content for /servicios/landing-pages/
+# Content for /landing-pages/
 # Full SEO content targeting "landing pages" (2,900 searches/month Spain)
 
 SECTIONS = [
@@ -231,7 +231,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/landing-pages/",
+    "url": "/" + "landing-pages/",
     "title": "Landing Pages Profesionales | Diseño Orientado a Conversión — Comunikoo",
     "meta_desc": "Landing pages profesionales con tasa de conversión media del 8,7%. Copywriting persuasivo, diseño CRO, A/B testing incluido. Desde 590€. Entrega en 5-7 días.",
     "h1": "Landing Pages — Páginas Diseñadas Para Convertir",

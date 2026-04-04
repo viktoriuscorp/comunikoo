@@ -1,4 +1,4 @@
-# Content for /servicios/inbound-marketing/
+# Content for /inbound-marketing/
 # Full SEO content targeting "inbound marketing" (3,600 searches/month Spain)
 
 SECTIONS = [
@@ -203,7 +203,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/inbound-marketing/",
+    "url": "/" + "inbound-marketing/",
     "title": "Inbound Marketing | Contenidos y Automatización",
     "meta_desc": "Inbound marketing profesional: contenido, SEO, lead nurturing y automatización. +340% de leads con un 61% menos de coste. Más de 35 estrategias implementadas.",
     "h1": "Inbound Marketing — Atrae Clientes con Contenido, No con Interrupciones",

@@ -1,4 +1,4 @@
-# Content for /servicios/youtube-ads/
+# Content for /youtube-ads/
 # Full SEO content targeting "youtube ads" (3,600 searches/month Spain)
 
 SECTIONS = [
@@ -178,7 +178,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/youtube-ads/",
+    "url": "/" + "youtube-ads/",
     "title": "YouTube Ads | Publicidad en Vídeo Profesional — Comunikoo",
     "meta_desc": "Gestión profesional de YouTube Ads con producción audiovisual in-house. CPV medio de 0,02€, ROAS de 3,8x en campañas de conversión. Consulta gratuita. Sin permanencia.",
     "h1": "YouTube Ads — Publicidad en Vídeo que Genera Resultados",

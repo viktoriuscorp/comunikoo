@@ -1,4 +1,4 @@
-# Content for /servicios/consultor-google-ads/
+# Content for /consultor-google-ads/
 # Full SEO content targeting "consultor google ads" (590 searches/month Spain)
 
 SECTIONS = [
@@ -176,7 +176,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/consultor-google-ads/",
+    "url": "/" + "consultor-google-ads/",
     "title": "Consultor Google Ads | Consultoría Profesional de Campañas — Comunikoo",
     "meta_desc": "Consultor de Google Ads certificado con +7 años de experiencia. Reducimos tu coste por lead y maximizamos el ROAS de tus campañas. Auditoría gratuita. Sin permanencia.",
     "h1": "Consultor Google Ads — Estrategia y Optimización Profesional",

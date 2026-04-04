@@ -1,4 +1,4 @@
-# Content for /servicios/auditoria-seo/
+# Content for /auditoria-seo/
 # Full SEO content targeting "auditoría SEO" (2,400 searches/month Spain)
 
 SECTIONS = [
@@ -171,7 +171,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/auditoria-seo/",
+    "url": "/" + "auditoria-seo/",
     "title": "Auditoría SEO Profesional | Diagnóstico Completo de tu Web — Comunikoo",
     "meta_desc": "Auditoría SEO completa: técnica, on-page y off-page. Detectamos errores que frenan tu posicionamiento. Informe detallado + plan de acción. Solicítala gratis.",
     "h1": "Auditoría SEO — Descubre Qué Frena el Posicionamiento de Tu Web",

@@ -1,4 +1,4 @@
-# Content for /servicios/linkbuilding/
+# Content for /linkbuilding/
 # Full SEO content targeting "linkbuilding" (2,900 searches/month Spain)
 
 SECTIONS = [
@@ -152,7 +152,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/linkbuilding/",
+    "url": "/" + "linkbuilding/",
     "title": "Linkbuilding Profesional | Backlinks de Calidad para tu Web — Comunikoo",
     "meta_desc": "Servicio de link building con backlinks de calidad que aumentan tu autoridad en Google. Estrategia white hat. Sin enlaces tóxicos. Resultados medibles.",
     "h1": "Link Building — Aumentamos la Autoridad de Tu Web con Backlinks de Calidad",

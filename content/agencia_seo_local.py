@@ -1,4 +1,4 @@
-# Content for /servicios/agencia-seo-local/
+# Content for /agencia-seo-local/
 # Full SEO content targeting "agencia SEO local" (1,900 searches/month Spain)
 
 SECTIONS = [
@@ -165,7 +165,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/agencia-seo-local/",
+    "url": "/" + "agencia-seo-local/",
     "title": "Agencia SEO Local | Posiciona tu Negocio en Google Maps — Comunikoo",
     "meta_desc": "Especialistas en SEO local. Posicionamos tu negocio en Google Maps y el pack local. Más clientes desde búsquedas \"cerca de mí\". Auditoría gratis.",
     "h1": "Agencia de SEO Local — Domina las Búsquedas en Tu Ciudad",

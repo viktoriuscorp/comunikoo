@@ -1,4 +1,4 @@
-# Content for /servicios/agencia-meta-ads/
+# Content for /agencia-meta-ads/
 # Full SEO content targeting "agencia meta ads" (880 searches/month Spain)
 
 SECTIONS = [
@@ -127,7 +127,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/agencia-meta-ads/",
+    "url": "/" + "agencia-meta-ads/",
     "title": "Agencia Meta Ads | Facebook e Instagram Ads",
     "meta_desc": "Agencia Meta Ads: gestionamos campañas en todo el ecosistema Meta (Facebook + Instagram + WhatsApp + Audience Network). Resultados multicanal.",
     "h1": "Agencia Meta Ads — Publicidad en Todo el Ecosistema Meta",

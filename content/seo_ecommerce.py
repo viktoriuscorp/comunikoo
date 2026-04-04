@@ -1,4 +1,4 @@
-# Content for /servicios/seo-para-ecommerce/
+# Content for /seo-para-ecommerce/
 # Full SEO content targeting "SEO para ecommerce" (1,600 searches/month Spain)
 
 SECTIONS = [
@@ -176,7 +176,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/seo-para-ecommerce/",
+    "url": "/" + "seo-para-ecommerce/",
     "title": "SEO para Ecommerce | Posiciona Tu Tienda Online en Google — Comunikoo",
     "meta_desc": "SEO especializado para tiendas online. Posicionamos tus productos y categorías en Google. +300% tráfico orgánico. Shopify, WooCommerce y PrestaShop.",
     "h1": "SEO para Ecommerce — Posiciona Tu Tienda Online y Multiplica Tus Ventas",

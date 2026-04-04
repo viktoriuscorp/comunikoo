@@ -1,4 +1,4 @@
-# Content for /servicios/publicidad-en-google/
+# Content for /publicidad-en-google/
 # Full SEO content targeting "publicidad en google" (4,400 searches/month Spain)
 
 SECTIONS = [
@@ -179,7 +179,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/publicidad-en-google/",
+    "url": "/" + "publicidad-en-google/",
     "title": "Publicidad en Google | Gestión Profesional de Google Ads — Comunikoo",
     "meta_desc": "Publicidad en Google gestionada por especialistas certificados. ROAS medio de 5,6x, más de 5M€ gestionados. Auditoría gratuita. Sin permanencia.",
     "h1": "Publicidad en Google — Anuncios que Generan Clientes Reales",

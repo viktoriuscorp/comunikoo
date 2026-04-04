@@ -1,4 +1,4 @@
-# Content for /servicios/posicionamiento-web/
+# Content for /posicionamiento-web/
 # Full SEO content targeting "posicionamiento web" (8,100 searches/month Spain)
 
 SECTIONS = [
@@ -163,7 +163,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/posicionamiento-web/",
+    "url": "/" + "posicionamiento-web/",
     "title": "Posicionamiento Web | Top Google | Comunikoo",
     "meta_desc": "Servicio de posicionamiento web profesional. Te posicionamos en las primeras posiciones de Google con estrategia SEO probada. +300% tráfico orgánico.",
     "h1": "Posicionamiento Web — Lleva Tu Página a las Primeras Posiciones de Google",

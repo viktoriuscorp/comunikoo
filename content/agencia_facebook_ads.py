@@ -1,4 +1,4 @@
-# Content for /servicios/agencia-facebook-ads/
+# Content for /agencia-facebook-ads/
 # Full SEO content targeting "agencia facebook ads" (1,300 searches/month Spain)
 
 SECTIONS = [
@@ -117,7 +117,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/agencia-facebook-ads/",
+    "url": "/" + "agencia-facebook-ads/",
     "title": "Agencia Facebook Ads | Campañas en Facebook que Convierten — Comunikoo",
     "meta_desc": "Agencia de Facebook Ads especializada. Campañas de captación, retargeting y conversión en Facebook. Segmentación avanzada. Resultados medibles.",
     "h1": "Agencia Facebook Ads — Campañas en Facebook que Generan Clientes Reales",

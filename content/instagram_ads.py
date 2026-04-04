@@ -1,4 +1,4 @@
-# Content for /servicios/instagram-ads/
+# Content for /instagram-ads/
 # Full SEO content targeting "instagram ads" (2,400 searches/month Spain)
 
 SECTIONS = [
@@ -176,7 +176,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/instagram-ads/",
+    "url": "/" + "instagram-ads/",
     "title": "Instagram Ads | Campañas Profesionales en Instagram — Comunikoo",
     "meta_desc": "Gestión profesional de Instagram Ads con ROAS medio de 4,2x. Creatividades que convierten, segmentación precisa y optimización continua. Sin permanencia.",
     "h1": "Instagram Ads — Campañas que Convierten en la Red Social más Visual",

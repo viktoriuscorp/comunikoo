@@ -1,4 +1,4 @@
-# Content for /servicios/publicidad-redes-sociales/
+# Content for /publicidad-redes-sociales/
 # Full SEO content targeting "publicidad en redes sociales" (2,900 searches/month Spain)
 
 SECTIONS = [
@@ -187,7 +187,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/publicidad-redes-sociales/",
+    "url": "/" + "publicidad-redes-sociales/",
     "title": "Publicidad en Redes Sociales | Social Ads Profesional — Comunikoo",
     "meta_desc": "Publicidad en redes sociales profesional: Instagram, Facebook, TikTok, LinkedIn y YouTube Ads. ROAS medio de 3,9x. Equipo creativo in-house. Sin permanencia.",
     "h1": "Publicidad en Redes Sociales — Social Ads que Generan Ventas",

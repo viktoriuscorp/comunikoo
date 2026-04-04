@@ -1,4 +1,4 @@
-# Content for /servicios/consultoria-seo/
+# Content for /consultoria-seo/
 # Full SEO content targeting "consultoría SEO" (1,600 searches/month Spain)
 
 SECTIONS = [
@@ -132,7 +132,7 @@ SIDEBAR_STATS = [
 ]
 
 PAGE_DATA = {
-    "url": "/servicios/consultoria-seo/",
+    "url": "/" + "consultoria-seo/",
     "title": "Consultoría SEO | Asesoramiento Experto en Posicionamiento — Comunikoo",
     "meta_desc": "Consultoría SEO personalizada para tu negocio. Te asesoramos, formamos a tu equipo y diseñamos la estrategia SEO perfecta. Primera consulta gratuita.",
     "h1": "Consultoría SEO — Estrategia Experta para Tu Posicionamiento Web",
