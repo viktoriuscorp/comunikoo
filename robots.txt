@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers — Permitir para GEO/AEO (aparecer en respuestas de IA)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 Sitemap: https://comunikoo.es/sitemap.xml
