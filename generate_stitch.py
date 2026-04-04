@@ -1065,13 +1065,13 @@ def service_schema(name, desc):
     clean_name = name.replace('"', '\\"')
     clean_desc = desc.replace('"', '\\"')
     return f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":"Service","name":"{clean_name}","description":"{clean_desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"}},"telephone":"+34608721015"}},"areaServed":{{"@type":"Country","name":"España"}}}}
+{{"@context":"https://schema.org","@type":"Service","name":"{clean_name}","description":"{clean_desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"}}}},"areaServed":{{"@type":"Country","name":"España"}}}}
 </script>'''
 
 
 def local_business_schema(city, service_name):
     return f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":"LocalBusiness","name":"Comunikoo - {service_name} {city}","address":{{"@type":"PostalAddress","addressLocality":"{city}","addressCountry":"ES"}},"telephone":"+34608721015","url":"https://comunikoo.es","openingHours":"Mo-Fr 09:00-20:00"}}
+{{"@context":"https://schema.org","@type":"LocalBusiness","name":"Comunikoo - {service_name} {city}","address":{{"@type":"PostalAddress","addressLocality":"{city}","addressCountry":"ES"}},"url":"https://comunikoo.es","openingHours":"Mo-Fr 09:00-20:00"}}
 </script>'''
 
 
@@ -2390,7 +2390,7 @@ def build_home():
     r = lambda target: rel(target, current_url)
 
     org_schema = '''<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015","email":"hola@comunikoo.es","sameAs":[]}
+{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"email":"hola@comunikoo.es","sameAs":[]}
 </script>'''
 
     home_faqs = [
@@ -3495,7 +3495,7 @@ def main():
         ("Solicita Presupuesto | Comunikoo", "Pide presupuesto de marketing digital sin compromiso. SEO, diseño web, Google Ads, redes sociales. Respuesta en 24h. Auditoría gratuita incluida.", "/presupuesto/", "Solicita Presupuesto", "<p>Cuéntanos sobre tu proyecto y te enviaremos un presupuesto personalizado en menos de 24 horas. Sin compromiso ni permanencia.</p><h2>¿Qué incluye?</h2><p>Análisis inicial de tu situación, propuesta estratégica y presupuesto detallado. Todo sin coste.</p>"),
         ("Casos de Éxito | Comunikoo", "Descubre cómo hemos ayudado a +487 empresas a crecer con SEO, Google Ads y diseño web. Resultados reales y medibles. Mira nuestros casos.", "/casos-de-exito/", "Casos de Éxito", "<p>Más de 487 proyectos completados con un 98% de satisfacción. Estos son algunos de nuestros casos más destacados.</p>"),
         ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
-        ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es · +34 608 721 015</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
+        ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
         ("¡Mensaje Enviado! | Comunikoo", "Tu mensaje ha sido enviado correctamente. Te contactaremos en menos de 24 horas.", "/gracias/", "¡Mensaje Enviado!", f"""
 <div style="text-align:center;max-width:600px;margin:0 auto">
 <div style="width:80px;height:80px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem">
