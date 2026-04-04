@@ -32,8 +32,8 @@ module.exports = {
         "on-tertiary-container": "#43474f",
       },
       fontFamily: {
-        headline: ["Manrope", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        headline: ["Poppins", "sans-serif"],
+        body: ["Poppins", "sans-serif"],
       },
     },
   },

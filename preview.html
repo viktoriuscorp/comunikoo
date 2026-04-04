@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunikoo — Preview v3 Optilux Level</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #0a1628;
+  --primary-rgb: 10,22,40;
+  --accent: #f97316;
+  --accent-rgb: 249,115,22;
+  --accent-hover: #ea580c;
+  --text: #1e293b;
+  --text-sub: #64748b;
+  --text-muted: #94a3b8;
+  --white: #ffffff;
+  --surface: #f8fafc;
+  --border: rgba(0,0,0,0.06);
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 2px 2px 20px 0px rgba(20,20,20,0.05);
+  --shadow-hover: 0 20px 40px rgba(20,20,20,0.1);
+  --section-pad: 100px;
+  --blur: blur(10px);
+}
+
+body { font-family: 'Poppins', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; line-height: 1.7; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
+a { text-decoration: none; color: inherit; transition: all 0.3s; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Animations */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.anim { animation: fadeInUp 0.8s cubic-bezier(0.16,1,0.3,1) both; }
+.anim-d1 { animation-delay: 0.1s; }
+.anim-d2 { animation-delay: 0.2s; }
+.anim-d3 { animation-delay: 0.3s; }
+.anim-d4 { animation-delay: 0.4s; }
+.anim-d5 { animation-delay: 0.5s; }
+.anim-d6 { animation-delay: 0.6s; }
+.anim-d7 { animation-delay: 0.7s; }
+.anim-d8 { animation-delay: 0.8s; }
+
+/* === HEADER === */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.4s;
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+.logo { font-family: 'Sora'; font-weight: 800; font-size: 1.4rem; color: var(--primary); letter-spacing: -0.04em; }
+.logo em { font-style: normal; color: var(--accent); }
+.nav { display: flex; gap: 28px; align-items: center; list-style: none; }
+.nav a { font-size: 0.88rem; font-weight: 500; color: var(--text-sub); }
+.nav a:hover { color: var(--primary); }
+
+/* Button system */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px; border-radius: var(--radius-sm);
+  font-family: 'Sora'; font-weight: 700; font-size: 0.88rem;
+  border: none; cursor: pointer; transition: all 0.35s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden;
+}
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(var(--accent-rgb),0.3); }
+.btn-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--border); }
+.btn-outline:hover { border-color: var(--primary); }
+.btn-white { background: var(--white); color: var(--primary); }
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,255,255,0.2); }
+.btn-glass { background: rgba(255,255,255,0.1); backdrop-filter: var(--blur); color: var(--white); border: 1px solid rgba(255,255,255,0.15); }
+.btn-glass:hover { background: rgba(255,255,255,0.2); }
+.btn-nav { background: var(--primary); color: var(--white); padding: 10px 20px; font-size: 0.82rem; }
+.btn-nav:hover { background: #132038; }
+
+/* === HERO — Full screen with gradient bg === */
+.hero {
+  position: relative; min-height: 100vh; display: flex; align-items: center;
+  background: linear-gradient(160deg, #0a1628 0%, #0f2440 40%, #0a1628 100%);
+  overflow: hidden; padding: 0 24px;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='0.8' fill='rgba(255,255,255,0.03)'/%3E%3C/svg%3E");
+}
+.hero::after {
+  content: ''; position: absolute; top: -30%; right: -10%; width: 60%; height: 160%;
+  background: radial-gradient(ellipse at center, rgba(var(--accent-rgb),0.08) 0%, transparent 60%);
+}
+.hero-inner {
+  position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%;
+  padding: 140px 0 160px;
+}
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 100px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.72rem; font-weight: 600; color: rgba(255,255,255,0.5);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 24px;
+}
+.hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.hero h1 {
+  font-size: 3.5rem; font-weight: 800; color: var(--white);
+  line-height: 1.08; letter-spacing: -0.03em;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--accent), #fbbf24);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-desc { font-size: 1.05rem; color: rgba(255,255,255,0.45); max-width: 440px; margin-top: 20px; }
+.hero-ctas { display: flex; gap: 12px; margin-top: 32px; }
+.hero-right { display: flex; flex-direction: column; gap: 12px; }
+.hero-right .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Hero glass stat cards */
+.stat-glass {
+  background: rgba(255,255,255,0.05); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius);
+  padding: 28px 24px; text-align: center;
+  transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden;
+}
+.stat-glass::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 50%);
+  border-radius: inherit; pointer-events: none;
+}
+.stat-glass:hover { transform: translateY(-6px); background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+.stat-glass .num {
+  font-family: 'Sora'; font-size: 2.4rem; font-weight: 800;
+  letter-spacing: -0.03em; line-height: 1; color: var(--accent);
+}
+.stat-glass .lbl { font-size: 0.75rem; color: rgba(255,255,255,0.35); margin-top: 8px; font-weight: 500; }
+.stat-glass.wide { grid-column: span 2; display: flex; align-items: center; justify-content: space-between; text-align: left; padding: 20px 28px; }
+.stat-glass.wide .lbl { margin: 0; color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+
+/* Hero bottom glass bar */
+.hero-bar {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.hero-bar-inner {
+  max-width: 1200px; margin: 0 auto; padding: 20px 24px;
+  display: flex; justify-content: center; gap: 48px;
+}
+.hero-bar span {
+  font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.3);
+  display: flex; align-items: center; gap: 8px;
+}
+.hero-bar span::before { content: '✓'; color: var(--accent); font-weight: 700; }
+
+/* === LOGOS === */
+.logos { padding: 40px 0; border-bottom: 1px solid var(--border); }
+.logos-inner { display: flex; justify-content: center; align-items: center; gap: 48px; flex-wrap: wrap; }
+.logos-inner span { font-family: 'Sora'; font-weight: 700; font-size: 0.95rem; color: var(--primary); opacity: 0.08; }
+
+/* === SECTIONS === */
+.sec { padding: var(--section-pad) 0; }
+.sec-header { text-align: center; margin-bottom: 56px; }
+.sec-label {
+  font-family: 'Sora'; font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 12px;
+}
+.sec-title { font-size: 2.5rem; font-weight: 700; color: var(--primary); letter-spacing: -0.025em; }
+.sec-sub { font-size: 1rem; color: var(--text-sub); margin-top: 12px; max-width: 480px; margin-left: auto; margin-right: auto; }
+.sec-dark { background: var(--primary); color: var(--white); }
+.sec-alt { background: var(--surface); }
+
+/* === SERVICE CARDS === */
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.svc-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 36px 28px; transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden;
+}
+.svc-card::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent), #fbbf24);
+  transform: scaleX(0); transition: transform 0.4s; transform-origin: left;
+}
+.svc-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); border-color: rgba(var(--accent-rgb),0.15); }
+.svc-card:hover::before { transform: scaleX(1); }
+.svc-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: rgba(var(--accent-rgb),0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Sora'; font-weight: 800; font-size: 1rem; color: var(--accent);
+  margin-bottom: 20px;
+}
+.svc-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.svc-card p { font-size: 0.88rem; color: var(--text-sub); line-height: 1.65; }
+.svc-link {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;
+  font-family: 'Sora'; font-size: 0.8rem; font-weight: 600; color: var(--accent);
+  transition: gap 0.3s;
+}
+.svc-card:hover .svc-link { gap: 14px; }
+
+/* === ABOUT / SPLIT SECTION === */
+.split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.split-img { position: relative; }
+.split-img .main-img { border-radius: var(--radius); box-shadow: var(--shadow); width: 90%; }
+.split-img .float-img {
+  position: absolute; bottom: -24px; right: 0; width: 50%;
+  border-radius: var(--radius); box-shadow: var(--shadow-hover);
+  border: 4px solid var(--white);
+}
+.split-text .subtitle { font-family: 'Sora'; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 12px; }
+.split-text h2 { font-size: 2.5rem; font-weight: 700; color: var(--primary); letter-spacing: -0.025em; margin-bottom: 16px; }
+.split-text p { color: var(--text-sub); margin-bottom: 20px; }
+.check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin: 20px 0 28px; list-style: none; }
+.check-list li { font-size: 0.9rem; font-weight: 600; color: var(--text); padding-left: 24px; position: relative; }
+.check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
+
+/* === PAIN POINT === */
+.pain {
+  background: var(--primary); padding: 80px 0; text-align: center;
+  position: relative; overflow: hidden;
+}
+.pain::before {
+  content: ''; position: absolute; top: -50%; left: -20%; width: 60%; height: 200%;
+  background: radial-gradient(ellipse, rgba(var(--accent-rgb),0.06) 0%, transparent 60%);
+}
+.pain h2 { font-size: 2.2rem; font-weight: 700; color: var(--white); max-width: 600px; margin: 0 auto; letter-spacing: -0.02em; position: relative; }
+.pain p { color: rgba(255,255,255,0.35); margin-top: 12px; position: relative; }
+
+/* === WHY CARDS === */
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.why-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 32px 28px; transition: all 0.35s; box-shadow: var(--shadow);
+}
+.why-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.why-card .emoji { font-size: 1.8rem; margin-bottom: 16px; display: block; }
+.why-card h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+.why-card p { font-size: 0.85rem; color: var(--text-sub); }
+
+/* === PROCESS === */
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.step {
+  text-align: center; background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 36px 20px;
+  box-shadow: var(--shadow); transition: all 0.35s;
+}
+.step:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.step-num {
+  width: 52px; height: 52px; border-radius: 16px;
+  background: var(--accent); color: var(--white);
+  font-family: 'Sora'; font-weight: 800; font-size: 1.3rem;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;
+}
+.step h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+.step p { font-size: 0.82rem; color: var(--text-sub); }
+
+/* === CASE STUDY === */
+.case {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  box-shadow: var(--shadow);
+}
+.case-quote {
+  font-size: 1.15rem; line-height: 1.75; color: var(--text); font-style: italic;
+  padding-left: 24px; border-left: 3px solid var(--accent);
+}
+.case-author { margin-top: 20px; padding-left: 24px; }
+.case-author strong { display: block; font-weight: 700; color: var(--primary); }
+.case-author span { font-size: 0.82rem; color: var(--text-sub); }
+.case-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.case-metric {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 24px; text-align: center; box-shadow: var(--shadow);
+}
+.case-metric .n { font-family: 'Sora'; font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+.case-metric .l { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
+
+/* === SECTORS === */
+.sectors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.sector {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 24px 16px; text-align: center; transition: all 0.35s; box-shadow: var(--shadow);
+}
+.sector:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow-hover); }
+.sector h4 { font-size: 0.88rem; font-weight: 700; color: var(--primary); }
+.sector p { font-size: 0.72rem; color: var(--text-muted); margin-top: 4px; }
+
+/* === CTA FINAL === */
+.cta-final {
+  background: var(--primary); padding: 100px 0; text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-final::before {
+  content: ''; position: absolute; top: -30%; right: -10%; width: 50%; height: 160%;
+  background: radial-gradient(ellipse, rgba(var(--accent-rgb),0.06) 0%, transparent 60%);
+}
+.cta-final h2 { font-size: 2.5rem; font-weight: 700; color: var(--white); letter-spacing: -0.02em; position: relative; }
+.cta-final p { color: rgba(255,255,255,0.35); margin-top: 10px; position: relative; }
+.cta-checks { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px; margin: 32px 0; font-size: 0.85rem; color: rgba(255,255,255,0.4); position: relative; }
+.cta-checks span::before { content: '✓ '; color: var(--accent); font-weight: 700; }
+
+/* === FOOTER === */
+.footer { background: var(--primary); padding: 64px 0 28px; border-top: 1px solid rgba(255,255,255,0.04); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 32px; }
+.footer .logo { color: var(--white); font-size: 1.3rem; }
+.footer-brand p { color: rgba(255,255,255,0.2); font-size: 0.82rem; margin-top: 10px; line-height: 1.6; }
+.footer h5 { font-family: 'Sora'; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.25); margin-bottom: 14px; }
+.footer a { display: block; color: rgba(255,255,255,0.35); font-size: 0.82rem; padding: 3px 0; }
+.footer a:hover { color: var(--white); }
+.footer-bottom {
+  max-width: 1200px; margin: 40px auto 0; padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  display: flex; justify-content: space-between;
+  font-size: 0.72rem; color: rgba(255,255,255,0.12);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  :root { --section-pad: 72px; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero-grid, .split-grid { grid-template-columns: 1fr; gap: 40px; }
+  .svc-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .case { grid-template-columns: 1fr; }
+  .sectors-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .sec-title { font-size: 2rem; }
+  .hero-bar-inner { gap: 24px; flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  :root { --section-pad: 56px; }
+  .hero { min-height: auto; }
+  .hero-inner { padding: 120px 0 100px; }
+  .hero h1 { font-size: 2rem; }
+  .stat-glass .num { font-size: 1.8rem; }
+  .stat-glass { padding: 20px 16px; }
+  .stat-glass.wide { grid-column: span 2; }
+  .svc-grid, .why-grid, .process-grid { grid-template-columns: 1fr; }
+  .sectors-grid { grid-template-columns: repeat(2, 1fr); }
+  .sec-title { font-size: 1.7rem; }
+  .nav { display: none; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .hero-bar-inner { flex-direction: column; gap: 8px; }
+  .pain h2 { font-size: 1.6rem; }
+  .cta-final h2 { font-size: 1.8rem; }
+  .check-list { grid-template-columns: 1fr; }
+  .split-text h2 { font-size: 1.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-inner">
+  <a href="/" class="logo">Comunikoo<em>.</em></a>
+  <nav class="nav">
+    <a href="/servicios/">Servicios</a>
+    <a href="#">Sectores</a>
+    <a href="/nosotros/">Nosotros</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contacto/">Contacto</a>
+    <a href="/contacto/" class="btn btn-nav">Auditoría gratis</a>
+  </nav>
+</div>
+</header>
+
+<!-- HERO — Full screen dark with glass stats -->
+<section class="hero">
+<div class="hero-inner">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge anim">Agencia de Marketing Digital en Barcelona</div>
+      <h1 class="anim anim-d1">Posicionamos negocios donde sus clientes <em>los buscan</em></h1>
+      <p class="hero-desc anim anim-d3">SEO, Diseño Web, Google Ads y Redes Sociales. Estrategias basadas en datos que multiplican tu visibilidad y facturación.</p>
+      <div class="hero-ctas anim anim-d4">
+        <a href="/contacto/" class="btn btn-primary">Solicitar auditoría gratuita</a>
+        <a href="/servicios/" class="btn btn-glass">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-right anim anim-d5">
+      <div class="row">
+        <div class="stat-glass">
+          <div class="num">+320%</div>
+          <div class="lbl">tráfico orgánico medio</div>
+        </div>
+        <div class="stat-glass">
+          <div class="num">5.8M€</div>
+          <div class="lbl">gestionados en campañas</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="stat-glass">
+          <div class="num">98%</div>
+          <div class="lbl">clientes satisfechos</div>
+        </div>
+        <div class="stat-glass">
+          <div class="num" style="color:var(--white)">487</div>
+          <div class="lbl">proyectos entregados</div>
+        </div>
+      </div>
+      <div class="stat-glass wide">
+        <div class="lbl">Sin permanencia · Dashboard en tiempo real · Google Partner</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hero-bar">
+  <div class="hero-bar-inner">
+    <span>Google Partner</span>
+    <span>Sin permanencia</span>
+    <span>Dashboard tiempo real</span>
+    <span>Equipo senior dedicado</span>
+  </div>
+</div>
+</section>
+
+<!-- LOGOS -->
+<section class="logos">
+<div class="container logos-inner">
+  <span>TechStart</span><span>ClinicaPro</span><span>FoodGroup</span>
+  <span>LegalPartners</span><span>SportLife</span><span>HomeDesign</span>
+</div>
+</section>
+
+<!-- ABOUT — Split layout with overlapping images -->
+<section class="sec">
+<div class="container">
+  <div class="split-grid">
+    <div class="split-img anim">
+      <div class="main-img" style="background:linear-gradient(135deg,#e2e8f0,#f1f5f9);border-radius:var(--radius);height:400px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:0.9rem">Imagen del equipo</div>
+      <div class="float-img" style="background:linear-gradient(135deg,var(--accent),#fbbf24);border-radius:var(--radius);height:180px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.85rem;border:4px solid white;box-shadow:var(--shadow-hover)">+10 años experiencia</div>
+    </div>
+    <div class="split-text">
+      <div class="subtitle anim">Sobre nosotros</div>
+      <h2 class="anim anim-d1">Estrategia digital profesional para hacer crecer tu negocio</h2>
+      <p class="anim anim-d2">Somos una agencia de marketing digital en Barcelona con más de 487 proyectos completados. Nuestro equipo senior diseña estrategias personalizadas que generan resultados reales.</p>
+      <ul class="check-list anim anim-d3">
+        <li>SEO y posicionamiento web</li>
+        <li>Diseño web profesional</li>
+        <li>Google Ads y SEM</li>
+        <li>Community manager</li>
+        <li>Email marketing</li>
+        <li>Tiendas online</li>
+      </ul>
+      <a href="/contacto/" class="btn btn-primary anim anim-d4">Solicitar auditoría gratuita</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec sec-alt">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-label anim">Servicios</div>
+    <h2 class="sec-title anim anim-d1">Todo lo que tu negocio necesita</h2>
+    <p class="sec-sub anim anim-d2">Estrategia integral de marketing digital bajo un mismo equipo</p>
+  </div>
+  <div class="svc-grid">
+    <a href="/agencia-seo/" class="svc-card anim anim-d1">
+      <div class="svc-icon">S</div>
+      <h3>SEO y Posicionamiento Web</h3>
+      <p>Posicionamos tu negocio en las primeras posiciones de Google con estrategia probada.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+    <a href="/diseno-web/" class="svc-card anim anim-d2">
+      <div class="svc-icon">W</div>
+      <h3>Diseño Web Profesional</h3>
+      <p>Webs rápidas, bonitas y que convierten visitantes en clientes.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+    <a href="/agencia-google-ads/" class="svc-card anim anim-d3">
+      <div class="svc-icon">A</div>
+      <h3>Google Ads y SEM</h3>
+      <p>Campañas rentables que generan clientes reales desde el primer día.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+    <a href="/community-manager/" class="svc-card anim anim-d4">
+      <div class="svc-icon">R</div>
+      <h3>Redes Sociales</h3>
+      <p>Community manager, contenido y publicidad en Instagram, Facebook y TikTok.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+    <a href="/tienda-online/" class="svc-card anim anim-d5">
+      <div class="svc-icon">E</div>
+      <h3>Tiendas Online</h3>
+      <p>Shopify, WooCommerce y PrestaShop. Ecommerce listo para vender.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+    <a href="/email-marketing/" class="svc-card anim anim-d6">
+      <div class="svc-icon">M</div>
+      <h3>Email Marketing</h3>
+      <p>Automatizaciones, newsletters y el canal con mayor retorno de inversión.</p>
+      <span class="svc-link">Ver más →</span>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- PAIN POINT -->
+<section class="pain">
+  <div class="container" style="position:relative">
+    <h2 class="anim">Tu competencia aparece en Google antes que tú. Tus clientes los encuentran a ellos.</h2>
+    <p class="anim anim-d1">Cada día sin estrategia digital es un día que pierdes clientes.</p>
+    <a href="/contacto/" class="btn btn-white anim anim-d2" style="margin-top:32px">Solicitar auditoría gratuita →</a>
+  </div>
+</section>
+
+<!-- WHY COMUNIKOO -->
+<section class="sec">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-label">Por qué Comunikoo</div>
+    <h2 class="sec-title">Lo que nos diferencia</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card anim"><span class="emoji">🔓</span><h3>Sin permanencia</h3><p>Mes a mes. Nos ganamos tu confianza con resultados, no con contratos.</p></div>
+    <div class="why-card anim anim-d1"><span class="emoji">📊</span><h3>Dashboard en tiempo real</h3><p>Todas tus métricas accesibles en cualquier momento. Transparencia total.</p></div>
+    <div class="why-card anim anim-d2"><span class="emoji">📈</span><h3>Enfocados en ROI</h3><p>Leads, ventas y facturación. No perseguimos métricas vanidosas.</p></div>
+    <div class="why-card anim anim-d3"><span class="emoji">👥</span><h3>Equipo senior</h3><p>+5 años de experiencia por persona. Nada de becarios ni juniors.</p></div>
+    <div class="why-card anim anim-d4"><span class="emoji">✅</span><h3>+487 proyectos</h3><p>Experiencia real en múltiples sectores y ciudades de España.</p></div>
+    <div class="why-card anim anim-d5"><span class="emoji">🎯</span><h3>Estrategia a medida</h3><p>Sin paquetes cerrados. Diseñamos lo que tu negocio necesita.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec-alt">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-label">Proceso</div>
+    <h2 class="sec-title">Cómo trabajamos</h2>
+    <p class="sec-sub">Metodología refinada en +487 proyectos</p>
+  </div>
+  <div class="process-grid">
+    <div class="step anim"><div class="step-num">1</div><h3>Auditoría</h3><p>Analizamos tu web, competencia y sector a fondo.</p></div>
+    <div class="step anim anim-d1"><div class="step-num">2</div><h3>Estrategia</h3><p>Plan personalizado con objetivos claros y KPIs.</p></div>
+    <div class="step anim anim-d2"><div class="step-num">3</div><h3>Implementación</h3><p>Ejecutamos con equipo senior dedicado a tu proyecto.</p></div>
+    <div class="step anim anim-d3"><div class="step-num">4</div><h3>Reporting</h3><p>Informes mensuales + dashboard en tiempo real.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- CASE STUDY -->
+<section class="sec">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-label">Caso de éxito</div>
+    <h2 class="sec-title">Resultados que hablan</h2>
+  </div>
+  <div class="case">
+    <div>
+      <div class="case-quote">"Pasamos de 200 a 3.400 visitas orgánicas al mes en 6 meses. Comunikoo entiende de negocio, no solo de SEO."</div>
+      <div class="case-author"><strong>María López</strong><span>CEO, Empresa X — Barcelona</span></div>
+    </div>
+    <div class="case-metrics">
+      <div class="case-metric"><div class="n">+1.600%</div><div class="l">tráfico orgánico</div></div>
+      <div class="case-metric"><div class="n">12→1</div><div class="l">posición Google</div></div>
+      <div class="case-metric"><div class="n">34</div><div class="l">leads/mes</div></div>
+      <div class="case-metric"><div class="n">6 meses</div><div class="l">resultados</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SECTORS -->
+<section class="sec sec-alt">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-label">Sectores</div>
+    <h2 class="sec-title">Especialistas en tu sector</h2>
+  </div>
+  <div class="sectors-grid">
+    <a href="/marketing-para-restaurantes/" class="sector"><h4>Restaurantes</h4><p>SEO local + reseñas</p></a>
+    <a href="/marketing-para-clinicas-dentales/" class="sector"><h4>Clínicas Dentales</h4><p>+300% leads</p></a>
+    <a href="/marketing-para-abogados/" class="sector"><h4>Abogados</h4><p>96% busca en Google</p></a>
+    <a href="/marketing-para-inmobiliarias/" class="sector"><h4>Inmobiliarias</h4><p>Leads cualificados</p></a>
+    <a href="/marketing-para-hoteles/" class="sector"><h4>Hoteles</h4><p>Reservas directas</p></a>
+    <a href="/marketing-para-psicologos/" class="sector"><h4>Psicólogos</h4><p>Captación ética</p></a>
+    <a href="/marketing-para-ecommerce/" class="sector"><h4>Ecommerce</h4><p>Estrategia 360</p></a>
+    <a href="/marketing-para-pymes/" class="sector"><h4>Pymes</h4><p>Resultados asequibles</p></a>
+    <a href="/marketing-para-gimnasios/" class="sector"><h4>Gimnasios</h4><p>Más socios</p></a>
+    <a href="/marketing-para-farmacias/" class="sector"><h4>Farmacias</h4><p>SEO local</p></a>
+    <a href="/marketing-para-arquitectos/" class="sector"><h4>Arquitectos</h4><p>Portfolio web</p></a>
+    <a href="/marketing-para-empresas-b2b/" class="sector"><h4>B2B</h4><p>Leads cualificados</p></a>
+  </div>
+</div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+<div class="container" style="position:relative">
+  <h2>¿Listo para hacer crecer<br>tu negocio?</h2>
+  <p>Tu auditoría gratuita incluye análisis completo y plan de acción personalizado.</p>
+  <div class="cta-checks">
+    <span>Análisis SEO completo</span>
+    <span>Estudio de competencia</span>
+    <span>Plan de acción</span>
+    <span>Sin compromiso</span>
+  </div>
+  <a href="/contacto/" class="btn btn-primary" style="padding:16px 36px;font-size:1rem">Solicitar auditoría gratuita →</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Comunikoo<em>.</em></div>
+      <p>Agencia de Marketing Digital en Barcelona. Resultados medibles, sin permanencia.</p>
+      <p style="margin-top:8px"><a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
+    </div>
+    <div>
+      <h5>Servicios</h5>
+      <a href="/agencia-seo/">SEO</a><a href="/diseno-web/">Diseño Web</a><a href="/agencia-google-ads/">Google Ads</a>
+      <a href="/community-manager/">Community Manager</a><a href="/tienda-online/">Tiendas Online</a><a href="/email-marketing/">Email Marketing</a>
+    </div>
+    <div>
+      <h5>Sectores</h5>
+      <a href="/marketing-para-restaurantes/">Restaurantes</a><a href="/marketing-para-clinicas-dentales/">Clínicas</a>
+      <a href="/marketing-para-abogados/">Abogados</a><a href="/marketing-para-inmobiliarias/">Inmobiliarias</a>
+      <a href="/marketing-para-pymes/">Pymes</a><a href="/marketing-para-ecommerce/">Ecommerce</a>
+    </div>
+    <div>
+      <h5>Ciudades</h5>
+      <a href="/agencia-marketing-digital-barcelona/">Barcelona</a><a href="/agencia-marketing-digital-madrid/">Madrid</a>
+      <a href="/agencia-marketing-digital-valencia/">Valencia</a><a href="/agencia-marketing-digital-sevilla/">Sevilla</a>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <a href="/politica-de-privacidad/">Privacidad</a><a href="/aviso-legal/">Aviso Legal</a><a href="/politica-de-cookies/">Cookies</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Comunikoo. Todos los derechos reservados.</span>
+    <span>Hecho con pasión en Barcelona</span>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
