@@ -11,10 +11,10 @@
 /servicios/seo-ecommerce/ /servicios/seo-para-ecommerce/ 301
 
 # Posts antiguos del blog WordPress
-/seo-local-conseguir-clientes/ /servicios/agencia-seo-local/ 301
-/seo-local-conseguir-clientes /servicios/agencia-seo-local/ 301
-/seo-local-para-negocios/ /servicios/agencia-seo-local/ 301
-/seo-local-para-negocios /servicios/agencia-seo-local/ 301
+/seo-local-conseguir-clientes/ /agencia-seo-local/ 301
+/seo-local-conseguir-clientes /agencia-seo-local/ 301
+/seo-local-para-negocios/ /agencia-seo-local/ 301
+/seo-local-para-negocios /agencia-seo-local/ 301
 /precios/ /contacto/ 301
 /precios /contacto/ 301
 /agencia-sem-barcelona/ /google-ads-barcelona/ 301
@@ -47,12 +47,12 @@
 /marketing-inmobiliarias/ /marketing-para-inmobiliarias/ 301
 
 # URLs antiguas confirmadas del WordPress
-/agencia-meta-ads /servicios/agencia-meta-ads/ 301
-/agencia-meta-ads/ /servicios/agencia-meta-ads/ 301
-/agencia-facebook-ads /servicios/agencia-facebook-ads/ 301
-/agencia-facebook-ads/ /servicios/agencia-facebook-ads/ 301
-/agencia-seo-local /servicios/agencia-seo-local/ 301
-/agencia-seo-local/ /servicios/agencia-seo-local/ 301
+/agencia-meta-ads /agencia-meta-ads/ 301
+/agencia-meta-ads/ /agencia-meta-ads/ 301
+/agencia-facebook-ads /agencia-facebook-ads/ 301
+/agencia-facebook-ads/ /agencia-facebook-ads/ 301
+/agencia-seo-local /agencia-seo-local/ 301
+/agencia-seo-local/ /agencia-seo-local/ 301
 /agencia-google-ads-barcelona /google-ads-barcelona/ 301
 /agencia-google-ads-barcelona/ /google-ads-barcelona/ 301
 /diseño-web-barcelona /diseno-web-barcelona/ 301
@@ -64,18 +64,18 @@
 /diseno-web-corporativo/ /servicios/diseno-web-para-empresas/ 301
 /web-corporativa/ /diseno-web/diseno-web-corporativo/ 301
 /web-corporativa /diseno-web/diseno-web-corporativo/ 301
-/experto-google-ads /servicios/experto-google-ads/ 301
-/experto-google-ads/ /servicios/experto-google-ads/ 301
+/experto-google-ads /experto-google-ads/ 301
+/experto-google-ads/ /experto-google-ads/ 301
 
 # Servicios (posibles variantes antiguas)
 /seo/ /agencia-seo/ 301
 /seo-barcelona/ /agencia-seo-barcelona/ 301
-/seo-local/ /servicios/agencia-seo-local/ 301
+/seo-local/ /agencia-seo-local/ 301
 /google-ads/ /agencia-google-ads/ 301
-/posicionamiento-web/ /servicios/posicionamiento-web/ 301
-/publicidad-google/ /servicios/publicidad-en-google/ 301
-/facebook-ads/ /servicios/agencia-facebook-ads/ 301
-/instagram-ads/ /servicios/instagram-ads/ 301
+/posicionamiento-web/ /posicionamiento-web/ 301
+/publicidad-google/ /publicidad-en-google/ 301
+/facebook-ads/ /agencia-facebook-ads/ 301
+/instagram-ads/ /instagram-ads/ 301
 /wordpress/ /servicios/diseno-web-wordpress/ 301
 /branding/ /servicios/branding/ 301
 /redes-sociales/ /servicios/gestion-redes-sociales/ 301
