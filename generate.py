@@ -88,11 +88,11 @@ def header_html():
 <div class="nav-dropdown-col">
 <h4>SEO</h4>
 <a href="/agencia-seo/">Agencia SEO</a>
-<a href="/servicios/agencia-seo-local/">SEO Local</a>
-<a href="/servicios/consultoria-seo/">Consultoría SEO</a>
-<a href="/servicios/auditoria-seo/">Auditoría SEO</a>
-<a href="/servicios/posicionamiento-web/">Posicionamiento Web</a>
-<a href="/servicios/linkbuilding/">Linkbuilding</a>
+<a href="/agencia-seo-local/">SEO Local</a>
+<a href="/consultoria-seo/">Consultoría SEO</a>
+<a href="/auditoria-seo/">Auditoría SEO</a>
+<a href="/posicionamiento-web/">Posicionamiento Web</a>
+<a href="/linkbuilding/">Linkbuilding</a>
 </div>
 <div class="nav-dropdown-col">
 <h4>Diseño Web</h4>
@@ -100,18 +100,18 @@ def header_html():
 <a href="/servicios/diseno-web-wordpress/">Diseño WordPress</a>
 <a href="/tienda-online/">Tiendas Online</a>
 <a href="/servicios/desarrollo-web/">Desarrollo Web</a>
-<a href="/servicios/landing-pages/">Landing Pages</a>
+<a href="/landing-pages/">Landing Pages</a>
 <a href="/servicios/mantenimiento-web/">Mantenimiento Web</a>
 <a href="/servicios/optimizacion-cro/">CRO</a>
 </div>
 <div class="nav-dropdown-col">
 <h4>Publicidad</h4>
 <a href="/agencia-google-ads/">Google Ads</a>
-<a href="/servicios/agencia-facebook-ads/">Facebook Ads</a>
-<a href="/servicios/instagram-ads/">Instagram Ads</a>
-<a href="/servicios/agencia-meta-ads/">Meta Ads</a>
-<a href="/servicios/youtube-ads/">YouTube Ads</a>
-<a href="/servicios/publicidad-en-google/">Publicidad Google</a>
+<a href="/agencia-facebook-ads/">Facebook Ads</a>
+<a href="/instagram-ads/">Instagram Ads</a>
+<a href="/agencia-meta-ads/">Meta Ads</a>
+<a href="/youtube-ads/">YouTube Ads</a>
+<a href="/publicidad-en-google/">Publicidad Google</a>
 <a href="/servicios/google-shopping/">Google Shopping</a>
 </div>
 <div class="nav-dropdown-col">
@@ -896,7 +896,7 @@ for pg in [
     ("/servicios/agencia-ecommerce/", "Agencia Ecommerce | Tiendas Online — Comunikoo", "Agencia ecommerce: diseño, SEO, campañas y CRO para tiendas online. Shopify, WooCommerce y PrestaShop.", "Agencia Ecommerce — Creamos, Optimizamos y Escalamos Tu Tienda Online", "Agencia Ecommerce"),
     ("/tienda-online/", "Crear Tienda Online | Ecommerce Profesional — Comunikoo", "Creamos tu tienda online profesional lista para vender. Diseño, pasarela de pago y SEO incluidos.", "Tienda Online — Tu Ecommerce Listo para Vender desde el Día 1", "Tienda Online"),
     ("/servicios/diseno-tienda-online/", "Diseño Tienda Online | Ecommerce que Vende — Comunikoo", "Diseño de tienda online orientado a conversión. UX/UI que enamora y convierte.", "Diseño de Tienda Online — Un Ecommerce que Enamora y Convierte", "Diseño Tienda Online"),
-    ("/servicios/seo-para-ecommerce/", "SEO para Ecommerce | Posiciona Tu Tienda — Comunikoo", "SEO especializado para tiendas online. Posicionamos tus productos y categorías en Google.", "SEO para Ecommerce — Posiciona Tu Tienda y Multiplica Ventas", "SEO Ecommerce"),
+    ("/seo-para-ecommerce/", "SEO para Ecommerce | Posiciona Tu Tienda — Comunikoo", "SEO especializado para tiendas online. Posicionamos tus productos y categorías en Google.", "SEO para Ecommerce — Posiciona Tu Tienda y Multiplica Ventas", "SEO Ecommerce"),
     ("/servicios/agencia-shopify/", "Agencia Shopify | Partner Shopify España — Comunikoo", "Agencia Shopify Partner. Diseño, desarrollo, migración y optimización de tiendas Shopify.", "Agencia Shopify — Tu Partner para Crear y Escalar en Shopify", "Agencia Shopify"),
     ("/servicios/agencia-woocommerce/", "Agencia WooCommerce | Tiendas WordPress — Comunikoo", "Agencia WooCommerce. Diseño, desarrollo y optimización de tiendas online en WordPress.", "Agencia WooCommerce — WordPress para Tu Tienda Online", "Agencia WooCommerce"),
     ("/servicios/agencia-prestashop/", "Agencia PrestaShop | Desarrollo PrestaShop — Comunikoo", "Agencia PrestaShop. Diseño, desarrollo, módulos a medida y migración.", "Agencia PrestaShop — Desarrollo y Soporte para Tu Tienda", "Agencia PrestaShop"),
@@ -911,7 +911,7 @@ for pg in [
 for pg in [
     ("/agencia-google-ads/", "Agencia Google Ads | Campañas Rentables — Comunikoo", "Agencia Google Ads certificada. Campañas rentables que generan clientes reales. Google Partner. Sin permanencia.", "Agencia Google Ads — Campañas Rentables que Generan Clientes Reales", "Agencia Google Ads"),
     ("/servicios/experto-google-ads/", "Experto Google Ads | Especialista Certificado — Comunikoo", "Expertos Google Ads con certificaciones oficiales y +10 años de experiencia.", "Experto Google Ads — Especialistas que Hacen Rendir Tu Inversión", "Experto Google Ads"),
-    ("/servicios/consultor-google-ads/", "Consultor Google Ads | Asesoría SEM — Comunikoo", "Consultoría Google Ads: auditoría, estrategia y formación para tu equipo.", "Consultor Google Ads — Asesoría Estratégica para Tus Campañas", "Consultor Google Ads"),
+    ("/consultor-google-ads/", "Consultor Google Ads | Asesoría SEM — Comunikoo", "Consultoría Google Ads: auditoría, estrategia y formación para tu equipo.", "Consultor Google Ads — Asesoría Estratégica para Tus Campañas", "Consultor Google Ads"),
     ("/servicios/freelance-google-ads/", "Freelance Google Ads | Trato Directo — Comunikoo", "Freelance Google Ads: gestión con trato directo, sin intermediarios.", "Freelance Google Ads — Trato Directo, Flexibilidad y Resultados", "Freelance Google Ads"),
     ("/servicios/especialista-google-ads/", "Especialista Google Ads | Campañas Avanzadas — Comunikoo", "Especialistas Google Ads para campañas avanzadas y presupuestos grandes.", "Especialista Google Ads — Campañas de Siguiente Nivel", "Especialista Google Ads"),
     ("/servicios/consultor-sem/", "Consultor SEM | Publicidad en Buscadores — Comunikoo", "Consultoría SEM: estrategia de publicidad en Google + Bing. Auditoría y optimización.", "Consultor SEM — Publicidad en Buscadores Multicanal", "Consultor SEM"),
@@ -920,7 +920,7 @@ for pg in [
     ("/servicios/agencia-meta-ads/", "Agencia Meta Ads | Facebook + Instagram + WhatsApp — Comunikoo", "Agencia Meta Ads: campañas en todo el ecosistema Meta. Resultados multicanal.", "Agencia Meta Ads — Publicidad en Todo el Ecosistema Meta", "Agencia Meta Ads"),
     ("/servicios/instagram-ads/", "Instagram Ads | Publicidad en Instagram — Comunikoo", "Campañas de Instagram Ads: stories, reels, feed y shopping. Creatividades que convierten.", "Instagram Ads — Publicidad Visual que Impacta y Convierte", "Instagram Ads"),
     ("/servicios/youtube-ads/", "YouTube Ads | Publicidad en Video — Comunikoo", "Campañas de YouTube Ads: TrueView, Bumper y Discovery. Solo pagas por visualizaciones.", "YouTube Ads — Publicidad en Video que Genera Resultados", "YouTube Ads"),
-    ("/servicios/publicidad-redes-sociales/", "Publicidad en Redes Sociales | Social Ads — Comunikoo", "Campañas de publicidad en redes sociales: Facebook, Instagram, TikTok, LinkedIn y YouTube.", "Publicidad en Redes Sociales — Campañas Multicanal que Convierten", "Social Ads"),
+    ("/publicidad-redes-sociales/", "Publicidad en Redes Sociales | Social Ads — Comunikoo", "Campañas de publicidad en redes sociales: Facebook, Instagram, TikTok, LinkedIn y YouTube.", "Publicidad en Redes Sociales — Campañas Multicanal que Convierten", "Social Ads"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio profesional de publicidad digital con enfoque en ROI.", sections=[sec("que-es", "Qué es", f"¿Por qué necesitas {pg[4].lower()}?"), sec("servicios", "Servicios", f"Nuestros servicios de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito")], faqs=[("¿Cuánto cuesta este servicio?", "Depende de tu presupuesto publicitario y objetivos. Consulta sin compromiso."), ("¿Cuándo veré resultados?", "Con publicidad de pago los resultados son casi inmediatos. La optimización mejora con el tiempo."), ("¿Puedo cancelar cuando quiera?", "Sí, trabajamos sin permanencia.")]))
 
@@ -931,7 +931,7 @@ for pg in [
     ("/servicios/social-media-marketing/", "Social Media Marketing | Redes con ROI — Comunikoo", "Social media marketing orientado a resultados. Convierte tus redes en canal de ventas.", "Social Media Marketing — Convierte Tus Redes en Canal de Ventas", "Social Media"),
     ("/servicios/marketing-de-contenidos/", "Marketing de Contenidos | Contenido que Posiciona — Comunikoo", "Marketing de contenidos: blog, vídeo, infografías y lead magnets que atraen y convierten.", "Marketing de Contenidos — Atrae, Posiciona y Convierte", "Marketing Contenidos"),
     ("/email-marketing/", "Agencia Email Marketing | Campañas que Generan Ventas — Comunikoo", "Agencia de email marketing profesional: newsletter, automatizaciones, campañas y estrategia. El canal con mayor ROI del marketing digital. Sin permanencia.", "Agencia Email Marketing — El Canal con Mayor ROI del Marketing Digital", "Email Marketing"),
-    ("/servicios/inbound-marketing/", "Inbound Marketing | Atrae Clientes con Valor — Comunikoo", "Inbound marketing: atraemos clientes con contenido, SEO, email y automatización.", "Inbound Marketing — Atrae Clientes con Valor", "Inbound Marketing"),
+    ("/inbound-marketing/", "Inbound Marketing | Atrae Clientes con Valor — Comunikoo", "Inbound marketing: atraemos clientes con contenido, SEO, email y automatización.", "Inbound Marketing — Atrae Clientes con Valor", "Inbound Marketing"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio profesional con resultados medibles y reporting mensual.", sections=[sec("que-es", "Qué es", f"¿Qué es {pg[4].lower()} y por qué lo necesitas?"), sec("servicios", "Servicios", f"Nuestros servicios de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito")], faqs=[("¿Cuánto cuesta este servicio?", "Solicita presupuesto personalizado sin compromiso."), ("¿En cuánto tiempo veo resultados?", "Depende del servicio y tu punto de partida. Te informamos con plazos realistas."), ("¿Puedo cancelar cuando quiera?", "Sí, sin permanencia.")]))
 
@@ -958,18 +958,18 @@ for pg in [
 
 # --- OPORTUNIDAD 7: SEO PARA [SECTOR] (2560 vol combinado, intent comercial) ---
 for pg in [
-    ("/servicios/seo-para-abogados/", "SEO para Abogados | Posiciona Tu Despacho — Comunikoo", "SEO para abogados y despachos: posicionamiento en Google que genera consultas. Resultados medibles desde el primer mes.", "SEO para Abogados — Que Te Encuentren Quienes Necesitan un Abogado", "SEO Abogados"),
-    ("/servicios/seo-para-pymes/", "SEO para Pymes | Posicionamiento Asequible — Comunikoo", "SEO para pymes: posicionamiento en Google adaptado a presupuestos de pequeñas empresas. Sin permanencia. Resultados reales.", "SEO para Pymes — Posicionamiento en Google sin Arruinarte", "SEO Pymes"),
-    ("/servicios/seo-para-clinicas-dentales/", "SEO para Clínicas Dentales | Más Pacientes — Comunikoo", "SEO para clínicas dentales: posicionamiento local en Google, Google Maps y captación de pacientes online.", "SEO para Clínicas Dentales — Aparece Cuando Buscan Dentista", "SEO Clínicas Dentales"),
-    ("/servicios/seo-para-empresas/", "SEO para Empresas | Estrategia Corporativa — Comunikoo", "SEO para empresas: estrategia de posicionamiento corporativo en Google. Auditoría, contenido y linkbuilding.", "SEO para Empresas — Posicionamiento Corporativo en Google", "SEO Empresas"),
-    ("/servicios/seo-para-dentistas/", "SEO para Dentistas | Más Pacientes Online — Comunikoo", "SEO para dentistas: posicionamiento local, Google Maps y estrategia de contenido dental que atrae pacientes.", "SEO para Dentistas — Que Te Encuentren en Google", "SEO Dentistas"),
-    ("/servicios/seo-para-restaurantes/", "SEO para Restaurantes | SEO Local + Maps — Comunikoo", "SEO para restaurantes: posicionamiento local, Google Maps, reseñas y ficha de negocio optimizada.", "SEO para Restaurantes — Aparece Primero en Google Maps", "SEO Restaurantes"),
-    ("/servicios/seo-para-inmobiliarias/", "SEO para Inmobiliarias | Leads de Compradores — Comunikoo", "SEO para inmobiliarias: posicionamiento de propiedades, zonas y servicios inmobiliarios en Google.", "SEO para Inmobiliarias — Leads Orgánicos de Compradores y Vendedores", "SEO Inmobiliarias"),
-    ("/servicios/seo-para-startups/", "SEO para Startups | Crecimiento Orgánico — Comunikoo", "SEO para startups: estrategia de crecimiento orgánico escalable. Product-led SEO y contenido técnico.", "SEO para Startups — Crecimiento Orgánico Escalable", "SEO Startups"),
-    ("/servicios/seo-para-hoteles/", "SEO para Hoteles | Reservas Directas — Comunikoo", "SEO para hoteles: posicionamiento orgánico que genera reservas directas y reduce dependencia de OTAs.", "SEO para Hoteles — Más Reservas Directas desde Google", "SEO Hoteles"),
-    ("/servicios/seo-para-clinicas/", "SEO para Clínicas | Posicionamiento Médico — Comunikoo", "SEO para clínicas médicas y centros de salud: posicionamiento local, reputación online y captación de pacientes.", "SEO para Clínicas — Posicionamiento Médico en Google", "SEO Clínicas"),
+    ("/seo-para-abogados/", "SEO para Abogados | Posiciona Tu Despacho — Comunikoo", "SEO para abogados y despachos: posicionamiento en Google que genera consultas. Resultados medibles desde el primer mes.", "SEO para Abogados — Que Te Encuentren Quienes Necesitan un Abogado", "SEO Abogados"),
+    ("/seo-para-pymes/", "SEO para Pymes | Posicionamiento Asequible — Comunikoo", "SEO para pymes: posicionamiento en Google adaptado a presupuestos de pequeñas empresas. Sin permanencia. Resultados reales.", "SEO para Pymes — Posicionamiento en Google sin Arruinarte", "SEO Pymes"),
+    ("/seo-para-clinicas-dentales/", "SEO para Clínicas Dentales | Más Pacientes — Comunikoo", "SEO para clínicas dentales: posicionamiento local en Google, Google Maps y captación de pacientes online.", "SEO para Clínicas Dentales — Aparece Cuando Buscan Dentista", "SEO Clínicas Dentales"),
+    ("/seo-para-empresas/", "SEO para Empresas | Estrategia Corporativa — Comunikoo", "SEO para empresas: estrategia de posicionamiento corporativo en Google. Auditoría, contenido y linkbuilding.", "SEO para Empresas — Posicionamiento Corporativo en Google", "SEO Empresas"),
+    ("/seo-para-dentistas/", "SEO para Dentistas | Más Pacientes Online — Comunikoo", "SEO para dentistas: posicionamiento local, Google Maps y estrategia de contenido dental que atrae pacientes.", "SEO para Dentistas — Que Te Encuentren en Google", "SEO Dentistas"),
+    ("/seo-para-restaurantes/", "SEO para Restaurantes | SEO Local + Maps — Comunikoo", "SEO para restaurantes: posicionamiento local, Google Maps, reseñas y ficha de negocio optimizada.", "SEO para Restaurantes — Aparece Primero en Google Maps", "SEO Restaurantes"),
+    ("/seo-para-inmobiliarias/", "SEO para Inmobiliarias | Leads de Compradores — Comunikoo", "SEO para inmobiliarias: posicionamiento de propiedades, zonas y servicios inmobiliarios en Google.", "SEO para Inmobiliarias — Leads Orgánicos de Compradores y Vendedores", "SEO Inmobiliarias"),
+    ("/seo-para-startups/", "SEO para Startups | Crecimiento Orgánico — Comunikoo", "SEO para startups: estrategia de crecimiento orgánico escalable. Product-led SEO y contenido técnico.", "SEO para Startups — Crecimiento Orgánico Escalable", "SEO Startups"),
+    ("/seo-para-hoteles/", "SEO para Hoteles | Reservas Directas — Comunikoo", "SEO para hoteles: posicionamiento orgánico que genera reservas directas y reduce dependencia de OTAs.", "SEO para Hoteles — Más Reservas Directas desde Google", "SEO Hoteles"),
+    ("/seo-para-clinicas/", "SEO para Clínicas | Posicionamiento Médico — Comunikoo", "SEO para clínicas médicas y centros de salud: posicionamiento local, reputación online y captación de pacientes.", "SEO para Clínicas — Posicionamiento Médico en Google", "SEO Clínicas"),
     ("/servicios/seo-para-autonomos/", "SEO para Autónomos | Visibilidad Online — Comunikoo", "SEO para autónomos: posicionamiento en Google asequible y efectivo. Compite con los grandes desde tu presupuesto.", "SEO para Autónomos — Compite en Google sin Ser una Gran Empresa", "SEO Autónomos"),
-    ("/servicios/agencia-seo-para-pymes/", "Agencia SEO para Pymes | Especialistas — Comunikoo", "Agencia SEO especializada en pymes: planes desde 400€/mes. Posicionamiento real, reporting mensual y sin permanencia.", "Agencia SEO para Pymes — Planes Adaptados a Tu Presupuesto", "Agencia SEO Pymes"),
+    ("/agencia-seo-para-pymes/", "Agencia SEO para Pymes | Especialistas — Comunikoo", "Agencia SEO especializada en pymes: planes desde 400€/mes. Posicionamiento real, reporting mensual y sin permanencia.", "Agencia SEO para Pymes — Planes Adaptados a Tu Presupuesto", "Agencia SEO Pymes"),
 ]:
     ALL_PAGES.append(svc(pg[0], pg[1], pg[2], pg[3], pg[4], "Servicio de SEO especializado por sector.", sections=[sec("que-es", "Qué es", f"¿Por qué necesitas SEO especializado en tu sector?"), sec("servicios", "Qué incluye", f"Qué incluye nuestro servicio de {pg[4].lower()}"), sec("proceso", "Proceso", "Nuestro proceso de trabajo"), sec("resultados", "Resultados", "Casos de éxito en tu sector")], faqs=[("¿Cuánto cuesta el SEO?", "Planes desde 400€/mes para pymes. El precio depende de la competencia en tu sector y tus objetivos. Presupuesto cerrado."), ("¿Cuándo veré resultados?", "Los primeros resultados aparecen entre 2-4 meses. El SEO es una inversión a medio plazo con retorno acumulativo."), ("¿Qué garantías ofrecéis?", "No garantizamos posiciones (nadie puede), pero sí reporting transparente, mejoras medibles y trabajo constante.")]))
 
@@ -997,13 +997,13 @@ ALL_PAGES.append(svc(
 
 # --- OPORTUNIDAD 2: DISEÑO WEB PARA [SECTOR] (1400 vol combinado, intent comercial) ---
 for pg in [
-    ("/servicios/diseno-web-para-abogados/", "Diseño Web para Abogados | Webs que Captan Clientes — Comunikoo", "Diseño web para abogados y despachos: webs profesionales que transmiten confianza y captan clientes. Portfolio real.", "Diseño Web para Abogados — Webs que Transmiten Confianza y Captan Clientes", "Diseño Web Abogados"),
-    ("/servicios/diseno-web-para-inmobiliarias/", "Diseño Web para Inmobiliarias | Portal Inmobiliario — Comunikoo", "Diseño web para inmobiliarias: portales con buscador de propiedades, CRM integrado y captación de leads.", "Diseño Web para Inmobiliarias — Tu Portal con Buscador de Propiedades", "Diseño Web Inmobiliarias"),
-    ("/servicios/diseno-web-para-restaurantes/", "Diseño Web para Restaurantes | Carta Digital + Reservas — Comunikoo", "Diseño web para restaurantes: carta digital, sistema de reservas, fotos profesionales y SEO local.", "Diseño Web para Restaurantes — Carta Digital y Reservas Online", "Diseño Web Restaurantes"),
-    ("/servicios/diseno-web-para-dentistas/", "Diseño Web para Dentistas | Clínicas Dentales — Comunikoo", "Diseño web para clínicas dentales: webs que generan confianza, cita online y SEO local.", "Diseño Web para Dentistas — Webs que Llenan Tu Agenda", "Diseño Web Dentistas"),
-    ("/servicios/diseno-web-para-pymes/", "Diseño Web para Pymes | Profesional y Asequible — Comunikoo", "Diseño web para pymes: webs profesionales adaptadas a tu presupuesto. WordPress, responsive y SEO incluido.", "Diseño Web para Pymes — Profesional sin Arruinarte", "Diseño Web Pymes"),
-    ("/servicios/diseno-web-para-psicologos/", "Diseño Web para Psicólogos | KD 1 — Comunikoo", "Diseño web para psicólogos: webs que transmiten cercanía, reserva online y contenido que posiciona.", "Diseño Web para Psicólogos — Webs que Conectan con Tus Pacientes", "Diseño Web Psicólogos"),
-    ("/servicios/diseno-web-para-emprendedores/", "Diseño Web para Emprendedores | Tu Primera Web — Comunikoo", "Diseño web para emprendedores: webs rápidas, económicas y preparadas para crecer. Lanzamiento en 2 semanas.", "Diseño Web para Emprendedores — Lanza Tu Web en 2 Semanas", "Diseño Web Emprendedores"),
+    ("/diseno-web-para-abogados/", "Diseño Web para Abogados | Webs que Captan Clientes — Comunikoo", "Diseño web para abogados y despachos: webs profesionales que transmiten confianza y captan clientes. Portfolio real.", "Diseño Web para Abogados — Webs que Transmiten Confianza y Captan Clientes", "Diseño Web Abogados"),
+    ("/diseno-web-para-inmobiliarias/", "Diseño Web para Inmobiliarias | Portal Inmobiliario — Comunikoo", "Diseño web para inmobiliarias: portales con buscador de propiedades, CRM integrado y captación de leads.", "Diseño Web para Inmobiliarias — Tu Portal con Buscador de Propiedades", "Diseño Web Inmobiliarias"),
+    ("/diseno-web-para-restaurantes/", "Diseño Web para Restaurantes | Carta Digital + Reservas — Comunikoo", "Diseño web para restaurantes: carta digital, sistema de reservas, fotos profesionales y SEO local.", "Diseño Web para Restaurantes — Carta Digital y Reservas Online", "Diseño Web Restaurantes"),
+    ("/diseno-web-para-dentistas/", "Diseño Web para Dentistas | Clínicas Dentales — Comunikoo", "Diseño web para clínicas dentales: webs que generan confianza, cita online y SEO local.", "Diseño Web para Dentistas — Webs que Llenan Tu Agenda", "Diseño Web Dentistas"),
+    ("/diseno-web-para-pymes/", "Diseño Web para Pymes | Profesional y Asequible — Comunikoo", "Diseño web para pymes: webs profesionales adaptadas a tu presupuesto. WordPress, responsive y SEO incluido.", "Diseño Web para Pymes — Profesional sin Arruinarte", "Diseño Web Pymes"),
+    ("/diseno-web-para-psicologos/", "Diseño Web para Psicólogos | KD 1 — Comunikoo", "Diseño web para psicólogos: webs que transmiten cercanía, reserva online y contenido que posiciona.", "Diseño Web para Psicólogos — Webs que Conectan con Tus Pacientes", "Diseño Web Psicólogos"),
+    ("/diseno-web-para-emprendedores/", "Diseño Web para Emprendedores | Tu Primera Web — Comunikoo", "Diseño web para emprendedores: webs rápidas, económicas y preparadas para crecer. Lanzamiento en 2 semanas.", "Diseño Web para Emprendedores — Lanza Tu Web en 2 Semanas", "Diseño Web Emprendedores"),
     ("/servicios/diseno-web-para-hoteles/", "Diseño Web para Hoteles | Más Reservas Directas — Comunikoo", "Diseño web para hoteles: motor de reservas, galería, multiidioma y SEO. Reduce comisiones de OTAs.", "Diseño Web para Hoteles — Más Reservas Directas, Menos Comisiones", "Diseño Web Hoteles"),
     ("/servicios/diseno-web-para-terapeutas/", "Diseño Web para Terapeutas | Consultas Online — Comunikoo", "Diseño web para terapeutas y profesionales de la salud: reserva online, blog y contenido ético.", "Diseño Web para Terapeutas — Webs que Transmiten Profesionalidad", "Diseño Web Terapeutas"),
     ("/servicios/diseno-web-para-autonomos/", "Diseño Web para Autónomos | Económica y Profesional — Comunikoo", "Diseño web para autónomos: presencia online profesional desde 800€. WordPress, SEO y responsive.", "Diseño Web para Autónomos — Presencia Online Profesional", "Diseño Web Autónomos"),
