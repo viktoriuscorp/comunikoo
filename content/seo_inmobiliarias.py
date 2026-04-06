@@ -217,6 +217,6 @@ PAGE_DATA = {
         ("¿Qué incluye el servicio de SEO para inmobiliarias de Comunikoo?",
          "Incluye auditoría técnica completa, keyword research por zonas y tipos de inmueble, optimización on-page de fichas y páginas de zona, creación de contenido local optimizado, link building en medios y directorios del sector, SEO local con Google Business Profile, reporting mensual detallado y dashboard en tiempo real. Todo sin permanencia."),
         ("¿Trabajáis con inmobiliarias de toda España?",
-         "Sí. Trabajamos con inmobiliarias en Barcelona, Madrid, Valencia, Costa Brava, Mallorca y toda España. El SEO local se adapta a las zonas geográficas específicas de cada agencia. Atendemos tanto de forma presencial como remota por videoconferencia."),
+         "Sí. Trabajamos con inmobiliarias en Barcelona, Madrid, Valencia, Costa Brava, Mallorca y toda España. El SEO local se adapta a las zonas geográficas específicas de cada agencia. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
     ],
 }

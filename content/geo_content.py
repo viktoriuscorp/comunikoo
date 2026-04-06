@@ -56,12 +56,12 @@ GEO_CONTENT = {
 <li><strong>SEO para E-commerce:</strong> Optimización de fichas de producto, categorías, filtros, paginación, datos estructurados de producto, integración con Google Merchant Center y estrategia de contenido para tiendas online.</li>
 <li><strong>Analítica SEO:</strong> Configuración avanzada de GA4, Google Search Console, dashboards personalizados, seguimiento de conversiones y atribución de ingresos al canal orgánico.</li>
 </ul>
-<p>Todos nuestros servicios SEO en Barcelona incluyen <strong>reuniones mensuales presenciales</strong> (o por videollamada si lo prefieres), acceso a dashboard en tiempo real, informe mensual detallado y contacto directo con tu consultor SEO asignado. Sin intermediarios, sin call centers — hablas directamente con quien trabaja tu proyecto.</p>''',
+<p>Todos nuestros servicios SEO en Barcelona incluyen <strong>reuniones presenciales o por videollamada</strong>, acceso a dashboard en tiempo real, informe mensual detallado y contacto directo con tu consultor SEO asignado. Sin intermediarios, sin call centers — hablas directamente con quien trabaja tu proyecto.</p>''',
 
             'why_local_matters': '''<h3>Por qué contratar una agencia SEO local en Barcelona</h3>
 <p>Podrías contratar una agencia SEO de cualquier parte de España (o del mundo). Entonces, <strong>¿por qué elegir una agencia SEO en Barcelona?</strong> La respuesta va mucho más allá de la proximidad geográfica.</p>
 <p>Una agencia local conoce el <strong>ecosistema empresarial barcelonés de primera mano</strong>. Sabemos que el tejido empresarial del Eixample es radicalmente diferente al de Poblenou o al de Sant Cugat. Conocemos la competencia real en cada sector, los patrones de búsqueda de los barceloneses (incluidas las búsquedas en catalán), las publicaciones locales donde conseguir enlaces de valor y las particularidades del consumidor catalán.</p>
-<p>Además, ser una agencia en Barcelona nos permite ofrecer <strong>reuniones presenciales</strong> cuando el proyecto lo requiere. Poder sentarse cara a cara con tu equipo de marketing, visitar tu negocio y entender tu operativa sobre el terreno marca una diferencia enorme en la calidad de la estrategia. Nuestras oficinas están en el centro de Barcelona, a 5 minutos andando del metro, y siempre tienes la puerta abierta.</p>
+<p>Además, al estar en Barcelona podemos ofrecerte <strong>reuniones presenciales de seguimiento</strong> siempre que el proyecto lo requiere. Reunirnos cara a cara con tu equipo de marketing y entender tu operativa en profundidad marca una diferencia enorme en la calidad de la estrategia. También trabajamos por videollamada cuando es más práctico — siempre disponibles y sin las limitaciones de una agencia tradicional.</p>
 <p>También participamos activamente en el <strong>ecosistema digital barcelonés</strong>: eventos de networking, meetups de marketing digital, colaboraciones con otras agencias complementarias y formación continua con profesionales de referencia del sector. Esto nos permite estar al día de las tendencias locales y conectarte con oportunidades que una agencia remota simplemente no puede ofrecer.</p>''',
 
             'extra_faqs': [
@@ -124,12 +124,12 @@ GEO_CONTENT = {
 <li><strong>SEO E-commerce:</strong> Optimización avanzada para tiendas online — fichas de producto, categorías, filtros facetados, paginación, rich snippets de producto, integración con Merchant Center y estrategia de contenido transaccional.</li>
 <li><strong>Analítica y Reporting:</strong> GA4 avanzado, GTM, dashboards en Looker Studio, tracking de conversiones, modelos de atribución y reporting mensual con KPIs orientados a negocio.</li>
 </ul>
-<p>Cada cliente en Madrid tiene un <strong>consultor SEO senior asignado</strong> como punto de contacto único. Ofrecemos reuniones presenciales o por videollamada según prefieras, acceso permanente al dashboard de tu proyecto y comunicación directa por email y teléfono. Sin filtros, sin esperas — respuesta en menos de 24 horas garantizada.</p>''',
+<p>Cada cliente en Madrid tiene un <strong>consultor SEO senior asignado</strong> como punto de contacto único. Ofrecemos reuniones presenciales o por videollamada siempre que lo necesites, acceso permanente al dashboard de tu proyecto y comunicación directa por email y teléfono. Sin filtros, sin esperas — respuesta en menos de 24 horas garantizada.</p>''',
 
             'why_local_matters': '''<h3>Por qué elegir una agencia SEO con presencia en Madrid</h3>
 <p>Madrid es un mercado que exige <strong>conocimiento local profundo</strong>. Contratar una agencia SEO que entienda las dinámicas del mercado madrileño no es un lujo — es una necesidad competitiva.</p>
 <p>Conocemos las diferencias entre posicionar un negocio en Salamanca (donde el público es premium y la competencia feroz) y en Arganzuela o Tetuán (donde hay nichos de oportunidad con menor competencia y alta demanda). Sabemos que los madrileños buscan de forma diferente a los barceloneses o valencianos — son más directos, más comparadores y más exigentes con la información que encuentran.</p>
-<p>Nuestra presencia en Madrid nos permite ofrecer <strong>reuniones cara a cara</strong> cuando el proyecto lo necesita. Poder visitar tu negocio, entender tu operativa sobre el terreno y reunirnos con tu equipo presencialmente eleva la calidad de la estrategia a otro nivel. Estamos disponibles para reuniones en nuestras oficinas o en las tuyas — sin coste adicional.</p>
+<p>Ofrecemos <strong>reuniones presenciales o por videollamada</strong> siempre que el proyecto lo necesita. Entender tu operativa en profundidad y reunirnos con tu equipo de forma ágil eleva la calidad de la estrategia a otro nivel. Estamos disponibles para videollamadas de seguimiento cuando las necesites — sin coste adicional.</p>
 <p>Participamos activamente en el <strong>ecosistema digital madrileño</strong>: asistimos a eventos de marketing y tecnología en la capital, mantenemos relaciones con medios y publicaciones locales (clave para el link building), y estamos al tanto de las tendencias y novedades que afectan al mercado madrileño. Esta red de contactos y conocimiento local es un activo que una agencia remota simplemente no puede replicar.</p>
 <p>Además, trabajamos con sectores que tienen una presencia especialmente fuerte en Madrid: <strong>servicios financieros, consultoría, legal, salud privada, inmobiliaria y tecnología</strong>. Nuestra experiencia en estos verticales, combinada con el conocimiento local, nos permite diseñar estrategias SEO que funcionan específicamente en el contexto competitivo de la capital.</p>''',
 
@@ -142,8 +142,8 @@ GEO_CONTENT = {
                  'Sí. Trabajamos con empresas en Madrid capital y en todo el área metropolitana: Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes, Getafe, Leganés, Alcorcón, Móstoles y más. Para negocios con sede en el área metropolitana, creamos estrategias de SEO local específicas que explotan las oportunidades de búsquedas geolocalizadas en cada municipio.'),
                 ('¿Puedo ver casos de éxito de SEO en Madrid?',
                  'Absolutamente. Tenemos más de 90 proyectos SEO activos en la Comunidad de Madrid y podemos mostrarte resultados reales con métricas verificables. Trabajamos con clientes en sectores como despachos de abogados, clínicas, consultoras, e-commerce, inmobiliarias y startups tecnológicas. En la auditoría gratuita te presentamos casos relevantes para tu sector.'),
-                ('¿Ofrecéis reuniones presenciales en Madrid?',
-                 'Sí, sin coste adicional. Podemos reunirnos en nuestras instalaciones o en tu oficina en Madrid. La frecuencia habitual es una reunión presencial mensual de seguimiento, aunque nos adaptamos a las necesidades de cada cliente. Para el día a día, utilizamos email, teléfono y videollamada.'),
+                ('¿Cómo son las reuniones de seguimiento en Madrid?',
+                 'Realizamos reuniones presenciales o por videollamada sin coste adicional. La frecuencia habitual es una reunión mensual de seguimiento, aunque nos adaptamos a las necesidades de cada cliente. Para el día a día, utilizamos email, teléfono y videollamada — siempre con respuesta en menos de 24 horas.'),
                 ('¿Qué sectores trabajáis en Madrid?',
                  'Tenemos experiencia en prácticamente todos los sectores, pero en Madrid somos especialmente fuertes en servicios profesionales (abogados, consultoras, asesores), salud privada (clínicas, centros médicos, dentistas), e-commerce, inmobiliario, tecnología/SaaS y hostelería premium. Cada sector tiene sus particularidades en el mercado madrileño y las conocemos a fondo.'),
             ],
@@ -539,11 +539,11 @@ GEO_CONTENT = {
 <li><strong>Web multilingüe:</strong> Diseño y desarrollo de webs en múltiples idiomas con gestión avanzada de traducciones, SEO internacional y hreflang.</li>
 <li><strong>Mantenimiento web:</strong> Planes de mantenimiento mensual que incluyen actualizaciones, copias de seguridad, seguridad, optimización de velocidad y soporte técnico.</li>
 </ul>
-<p>Cada proyecto en Barcelona incluye <strong>reuniones presenciales</strong> en fase de descubrimiento y presentación de diseño, formación para que puedas gestionar tu web de forma autónoma, y 3 meses de soporte técnico post-lanzamiento incluidos.</p>''',
+<p>Cada proyecto en Barcelona incluye <strong>reuniones presenciales o por videollamada</strong> en fase de descubrimiento y presentación de diseño, formación para que puedas gestionar tu web de forma autónoma, y 3 meses de soporte técnico post-lanzamiento incluidos.</p>''',
 
             'why_local_matters': '''<h3>Ventajas de contratar una agencia de diseño web en Barcelona</h3>
 <p>Barcelona tiene uno de los ecosistemas de diseño web más potentes de Europa. Entonces, ¿por qué elegir Comunikoo? Porque combinamos el <strong>talento creativo barcelonés con una visión estratégica</strong> de negocio que muchos estudios de diseño no tienen.</p>
-<p>Al estar en Barcelona, podemos <strong>reunirnos contigo presencialmente</strong> durante todo el proceso: briefing inicial, presentación de wireframes, revisión de diseño, revisión de contenido y formación post-lanzamiento. Esta cercanía reduce malentendidos, acelera el proyecto y mejora el resultado final.</p>
+<p>Trabajamos contigo <strong>de forma presencial o por videollamada</strong> durante todo el proceso: briefing inicial, presentación de wireframes, revisión de diseño, revisión de contenido y formación post-lanzamiento. Esta comunicación directa reduce malentendidos, acelera el proyecto y mejora el resultado final.</p>
 <p>Conocemos el <strong>mercado barcelonés de primera mano</strong>: sabemos qué espera el consumidor local de una web, qué funciona en cada sector, cómo adaptar el diseño al público catalán e internacional, y qué tendencias de diseño están marcando el estándar en la ciudad. Hemos diseñado webs para negocios en el Eixample, Gràcia, Sarrià, Poblenou, Born, Les Corts, Hospitalet y Sant Cugat — cada zona tiene sus particularidades y su público.</p>
 <p>Además, nuestras webs no son solo bonitas — están diseñadas para <strong>posicionar en Google y convertir visitantes en clientes</strong>. Integramos SEO, rendimiento y conversión desde el primer boceto, no como parche posterior. Esto nos diferencia de estudios de diseño que crean webs visualmente espectaculares pero que no generan negocio.</p>''',
 
@@ -555,7 +555,7 @@ GEO_CONTENT = {
                 ('¿Las webs que diseñáis están optimizadas para SEO?',
                  'Absolutamente. Todas nuestras webs se desarrollan con SEO integrado desde la arquitectura de información: URLs amigables, estructura de encabezados H1-H6, datos estructurados, velocidad optimizada (Core Web Vitals), sitemap XML, robots.txt, meta tags y contenido optimizado para keywords relevantes de tu sector en Barcelona.'),
                 ('¿Puedo actualizar la web yo mismo después?',
-                 'Sí. Trabajamos con WordPress y otros CMS intuitivos que permiten actualizar contenido, fotos y textos sin conocimientos técnicos. Incluimos formación personalizada post-lanzamiento (presencial o videollamada) para que tu equipo sea autónomo. Y si necesitas ayuda, nuestro soporte técnico está disponible.'),
+                 'Sí. Trabajamos con WordPress y otros CMS intuitivos que permiten actualizar contenido, fotos y textos sin conocimientos técnicos. Incluimos formación personalizada post-lanzamiento por videollamada para que tu equipo sea autónomo. Y si necesitas ayuda, nuestro soporte técnico está disponible.'),
                 ('¿Ofrecéis mantenimiento web después del lanzamiento?',
                  'Sí. Ofrecemos planes de mantenimiento mensuales desde 99€/mes que incluyen actualizaciones de WordPress, plugins y temas, copias de seguridad diarias, monitorización de seguridad, optimización de velocidad, certificado SSL y soporte técnico. El mantenimiento es opcional pero altamente recomendable para mantener tu web segura y funcionando al máximo rendimiento.'),
             ],
@@ -595,11 +595,11 @@ GEO_CONTENT = {
 <li><strong>Desarrollo a medida:</strong> Aplicaciones web, plataformas, intranets y proyectos con funcionalidades personalizadas.</li>
 <li><strong>Mantenimiento:</strong> Planes mensuales con actualizaciones, seguridad, backups y soporte técnico. Desde 109€/mes.</li>
 </ul>
-<p>Todos los proyectos en Madrid incluyen <strong>reuniones presenciales</strong> de briefing y presentación, formación para tu equipo y 3 meses de soporte post-lanzamiento.</p>''',
+<p>Todos los proyectos en Madrid incluyen <strong>reuniones presenciales o videollamadas de briefing y presentación</strong>, formación para tu equipo y 3 meses de soporte post-lanzamiento.</p>''',
 
             'why_local_matters': '''<h3>Por qué elegir una agencia de diseño web en Madrid</h3>
 <p>En Madrid hay miles de opciones para diseñar una web. La diferencia de Comunikoo es que <strong>no somos solo diseñadores — somos estrategas de negocio digital</strong>. Cada decisión de diseño está respaldada por datos de mercado, análisis de competencia y objetivos de conversión.</p>
-<p>Al estar en Madrid, podemos <strong>reunirnos contigo siempre que lo necesites</strong>: en tu oficina de Chamberí, Salamanca, Chamartín, en las zonas de negocio de la Castellana o Azca, o en nuestras instalaciones. Esta cercanía es especialmente valiosa en la fase de descubrimiento y diseño, donde la comunicación fluida es clave para un buen resultado.</p>
+<p>Trabajamos contigo <strong>con reuniones presenciales o por videollamada siempre que lo necesites</strong>, con total flexibilidad. Esta comunicación directa es especialmente valiosa en la fase de descubrimiento y diseño, donde la fluidez es clave para un buen resultado.</p>
 <p>Conocemos el <strong>mercado madrileño</strong> y las expectativas de sus consumidores. Sabemos qué funciona en cada sector — desde el diseño premium que esperan los clientes del barrio de Salamanca hasta la eficiencia y claridad que demandan las empresas de Alcobendas o Las Rozas. Nuestras webs están diseñadas para el público que realmente importa: el tuyo, en tu zona de Madrid.</p>''',
 
             'extra_faqs': [
@@ -608,7 +608,7 @@ GEO_CONTENT = {
                 ('¿Cuánto tardáis en hacer una web?',
                  'Web corporativa: 4-6 semanas. Tienda online: 6-10 semanas. Proyectos complejos: 10-16 semanas. Incluye todas las fases: descubrimiento, diseño, desarrollo, contenido, revisiones y lanzamiento. Servicio express disponible para proyectos urgentes.'),
                 ('¿Trabajáis con empresas de todo Madrid?',
-                 'Sí. Trabajamos con empresas en todos los distritos de Madrid (Chamberí, Salamanca, Chamartín, Retiro, Arganzuela, Moncloa, Tetuán, Centro) y en el área metropolitana (Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes). Ofrecemos reuniones presenciales en cualquier punto de la Comunidad de Madrid.'),
+                 'Sí. Trabajamos con empresas en todos los distritos de Madrid (Chamberí, Salamanca, Chamartín, Retiro, Arganzuela, Moncloa, Tetuán, Centro) y en el área metropolitana (Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes). Ofrecemos reuniones presenciales o por videollamada con total flexibilidad horaria.'),
                 ('¿Qué tecnología utilizáis para las webs?',
                  'Trabajamos principalmente con WordPress para webs corporativas y blogs, WooCommerce y Shopify para e-commerce, y desarrollo a medida con React/Next.js para proyectos que requieren funcionalidades avanzadas. Elegimos la tecnología más adecuada para cada proyecto — nunca forzamos una solución tecnológica que no encaje.'),
                 ('¿Puedo ver webs que hayáis diseñado para empresas en Madrid?',
@@ -655,7 +655,7 @@ GEO_CONTENT = {
 
             'why_local_matters': '''<h3>Por qué diseñar tu web con una agencia en Valencia</h3>
 <p>Una agencia de diseño web en Valencia entiende las <strong>particularidades del mercado local</strong>. Conocemos los sectores que mueven la economía valenciana, los hábitos digitales de los consumidores de la zona y las expectativas específicas de cada tipo de negocio.</p>
-<p>Además, trabajar con una agencia local permite <strong>reuniones presenciales</strong> para las fases clave del proyecto — briefing, presentación de diseño, revisiones y entrega. Esto reduce errores de comunicación y acelera los plazos. Nuestra experiencia con empresas del Distrito Digital, hostelería de Ruzafa y comercio de Ciutat Vella nos da un conocimiento local que marca la diferencia.</p>''',
+<p>Además, trabajar con nosotros te garantiza <strong>reuniones presenciales o por videollamada</strong> en las fases clave del proyecto — briefing, presentación de diseño, revisiones y entrega. Esto reduce errores de comunicación y acelera los plazos. Nuestra experiencia con empresas del Distrito Digital, hostelería de Ruzafa y comercio de Ciutat Vella nos da un conocimiento local que marca la diferencia.</p>''',
 
             'extra_faqs': [
                 ("¿Cuánto cuesta diseñar una web profesional en Valencia?",
@@ -708,7 +708,7 @@ GEO_CONTENT = {
 
             'why_local_matters': '''<h3>Por qué diseñar tu web con una agencia que conozca Sevilla</h3>
 <p>Una agencia que conoce Sevilla entiende que el <strong>diseño web para un negocio turístico en el Centro</strong> tiene necesidades radicalmente diferentes a las de una empresa aeronáutica en Cartuja o un despacho profesional en Nervión.</p>
-<p>Conocemos los sectores que mueven la economía sevillana, los hábitos digitales del consumidor andaluz y las oportunidades específicas que ofrece un mercado en plena digitalización. Además, ofrecemos <strong>reuniones presenciales</strong> en todas las fases del proyecto — algo que valoran especialmente las empresas sevillanas, acostumbradas a relaciones comerciales cercanas y de confianza.</p>''',
+<p>Conocemos los sectores que mueven la economía sevillana, los hábitos digitales del consumidor andaluz y las oportunidades específicas que ofrece un mercado en plena digitalización. Además, ofrecemos <strong>reuniones presenciales o por videollamada</strong> en todas las fases del proyecto — manteniendo esa relación cercana y de confianza que valoran especialmente las empresas sevillanas.</p>''',
 
             'extra_faqs': [
                 ("¿Cuánto cuesta diseñar una web en Sevilla?",
@@ -773,7 +773,7 @@ GEO_CONTENT = {
             'why_local_matters': '''<h3>Google Ads en Barcelona: por qué importa la agencia que elijas</h3>
 <p>El éxito de una campaña de Google Ads en Barcelona depende de <strong>dos factores: la calidad de la gestión y el conocimiento del mercado local</strong>. Puedes tener la mejor estructura de campañas del mundo, pero si no entiendes cómo buscan los barceloneses, qué zonas convierten mejor, cuándo suben los CPCs por estacionalidad turística o cómo aprovechar las keywords en catalán, estarás tirando dinero.</p>
 <p>En Comunikoo combinamos <strong>certificación avanzada de Google</strong> con experiencia directa en el mercado publicitario barcelonés. Sabemos que el barrio de Sarrià convierte un 32% más que la media en servicios premium, que las campañas orientadas al 22@ funcionan mejor los martes y miércoles, y que las búsquedas en catalán tienen CPCs un 25% inferiores con tasas de conversión similares.</p>
-<p>Al ser una agencia en Barcelona, ofrecemos <strong>reuniones presenciales mensuales</strong> donde repasamos resultados, ajustamos estrategia y planificamos las próximas semanas. Esta cercanía permite reaccionar rápido a cambios del mercado y mantener tus campañas siempre optimizadas.</p>''',
+<p>Ofrecemos <strong>reuniones presenciales o por videollamada</strong> de seguimiento mensual donde repasamos resultados, ajustamos estrategia y planificamos las próximas semanas. Esta comunicación directa permite reaccionar rápido a cambios del mercado y mantener tus campañas siempre optimizadas.</p>''',
 
             'extra_faqs': [
                 ('¿Cuánto cuesta gestionar Google Ads en Barcelona?',
@@ -1431,7 +1431,7 @@ GEO_CONTENT = {
 <li><strong>Seguridad WordPress:</strong> Implementamos un stack de seguridad completo: firewall WAF, protección contra fuerza bruta, monitorización de malware, actualizaciones automáticas controladas, 2FA para administradores, y hardening de servidor.</li>
 <li><strong>SEO nativo:</strong> Arquitectura de URLs, estructura de encabezados, datos estructurados, sitemap XML, robots.txt, Open Graph y todo lo necesario para que tu web WordPress posicione en Google desde el primer día.</li>
 <li><strong>Plugins a medida:</strong> Si necesitas una funcionalidad que no existe como plugin, la desarrollamos. Integración con CRM, pasarelas de pago, sistemas de reservas, directorios, áreas de cliente — cualquier funcionalidad personalizada.</li>
-<li><strong>Formación y autonomía:</strong> Entregamos cada web con formación personalizada (presencial en Barcelona o por videollamada) para que tu equipo pueda gestionar el contenido de forma autónoma. Documentación incluida.</li>
+<li><strong>Formación y autonomía:</strong> Entregamos cada web con formación personalizada presencial o por videollamada para que tu equipo pueda gestionar el contenido de forma autónoma. Documentación incluida.</li>
 </ul>
 <p>Para empresas en Barcelona con <strong>webs WordPress existentes</strong> que necesitan mejoras, ofrecemos servicios de optimización, rediseño, migración y resolución de problemas técnicos.</p>''',
 
@@ -1455,7 +1455,7 @@ GEO_CONTENT = {
 
             'why_local_matters': '''<h3>Agencia WordPress en Barcelona: la ventaja de la proximidad</h3>
 <p>WordPress es una plataforma potente pero compleja. Cuando algo falla — y en WordPress siempre puede fallar algo (un plugin incompatible, una actualización que rompe algo, un intento de hackeo) — necesitas un equipo que <strong>responda rápido y sepa exactamente qué hacer</strong>.</p>
-<p>Como agencia WordPress en Barcelona, ofrecemos <strong>soporte técnico con tiempos de respuesta garantizados</strong> y la posibilidad de reuniones presenciales para proyectos complejos. Nuestro equipo de desarrollo está en Barcelona y trabaja en horario español — no dependes de un equipo en otra franja horaria que tarda 24h en responder.</p>
+<p>Como agencia WordPress en Barcelona, ofrecemos <strong>soporte técnico con tiempos de respuesta garantizados</strong> y reuniones presenciales o por videollamada para proyectos complejos. Nuestro equipo de desarrollo trabaja en horario español — no dependes de un equipo en otra franja horaria que tarda 24h en responder.</p>
 <p>Además, participamos activamente en la <strong>comunidad WordPress de Barcelona</strong>: asistimos a meetups, contribuimos al ecosistema y estamos al día de las últimas novedades, plugins y mejores prácticas. Este conocimiento se traduce directamente en webs más robustas, seguras y optimizadas para nuestros clientes.</p>''',
 
             'extra_faqs': [
@@ -1509,7 +1509,7 @@ GEO_CONTENT = {
 
             'why_local_matters': '''<h3>Agencia WordPress en Madrid: soporte profesional a tu alcance</h3>
 <p>Tu web WordPress es una <strong>infraestructura crítica de negocio</strong>. Cuando necesitas ayuda — y en algún momento la necesitarás — quieres un equipo profesional que responda rápido, entienda tu negocio y pueda reunirse contigo si es necesario.</p>
-<p>Como agencia WordPress en Madrid, ofrecemos <strong>tiempos de respuesta garantizados</strong> (4 horas para emergencias, 24 horas para consultas), reuniones presenciales para proyectos complejos y un equipo de desarrollo senior que trabaja en horario laboral español. No dependes de tickets internacionales que tardan días en resolverse.</p>
+<p>Como agencia WordPress en Madrid, ofrecemos <strong>tiempos de respuesta garantizados</strong> (4 horas para emergencias, 24 horas para consultas), reuniones presenciales o videollamadas de seguimiento para proyectos complejos y un equipo de desarrollo senior que trabaja en horario laboral español. No dependes de tickets internacionales que tardan días en resolverse.</p>
 <p>Nuestro equipo en Madrid conoce las <strong>necesidades específicas de las empresas de la capital</strong>: cumplimiento normativo (RGPD, LSSI), integraciones con sistemas empresariales, multiidioma para negocios internacionales y el nivel de calidad y profesionalidad que se espera en el mercado madrileño. Cada web que entregamos cumple estos estándares.</p>''',
 
             'extra_faqs': [
@@ -1563,7 +1563,7 @@ GEO_CONTENT = {
 </ul>''',
 
             'why_local_matters': '''<h3>Por qué contratar un especialista WordPress en Valencia</h3>
-<p>WordPress es una herramienta poderosa, pero <strong>mal configurada es un problema</strong>. En Valencia, donde muchos negocios tienen instalaciones WordPress antiguas, lentas o vulnerables, un especialista local puede diagnosticar y resolver problemas rápidamente — incluyendo reuniones presenciales para entender tu negocio y tus necesidades.</p>
+<p>WordPress es una herramienta poderosa, pero <strong>mal configurada es un problema</strong>. En Valencia, donde muchos negocios tienen instalaciones WordPress antiguas, lentas o vulnerables, un especialista local puede diagnosticar y resolver problemas rápidamente — incluyendo reuniones presenciales o por videollamada para entender tu negocio y tus necesidades.</p>
 <p>Nuestro conocimiento del mercado valenciano nos permite además diseñar webs WordPress que conecten con tu público local y estén optimizadas para las búsquedas que los valencianos realmente hacen.</p>''',
 
             'extra_faqs': [
@@ -1613,7 +1613,7 @@ GEO_CONTENT = {
 </ul>''',
 
             'why_local_matters': '''<h3>Por qué contar con un especialista WordPress en Sevilla</h3>
-<p>El problema más común de WordPress en Sevilla es el <strong>abandono técnico</strong> — webs que se crearon hace años y nunca se han actualizado, optimizado ni securizado. Un especialista local puede hacer una auditoría presencial, entender tu negocio y resolver los problemas de raíz.</p>
+<p>El problema más común de WordPress en Sevilla es el <strong>abandono técnico</strong> — webs que se crearon hace años y nunca se han actualizado, optimizado ni securizado. Un especialista puede hacer una auditoría completa en reunión presencial o por videollamada, entender tu negocio y resolver los problemas de raíz.</p>
 <p>Además, conocemos las necesidades específicas del mercado sevillano — webs turísticas multiidioma, webs de hostelería con sistema de reservas, webs corporativas que necesitan transmitir confianza y profesionalidad en un mercado donde la relación personal sigue siendo fundamental.</p>''',
 
             'extra_faqs': [
@@ -1896,7 +1896,7 @@ GEO_CONTENT = {
             'why_local_matters': '''<h3>Consultor Google Ads en Barcelona: experiencia local que importa</h3>
 <p>Un consultor Google Ads en Barcelona no solo gestiona campañas — <strong>entiende el mercado donde compites</strong>. Conoce los CPCs de tu sector en Barcelona, sabe qué zonas convierten mejor, identifica las keywords estacionales por la influencia turística y aprovecha oportunidades que solo alguien con experiencia local detecta.</p>
 <p>En Comunikoo, nuestros consultores de Google Ads en Barcelona tienen una <strong>media de 9 años de experiencia</strong> gestionando campañas en el mercado barcelonés. Este conocimiento acumulado se traduce en campañas más eficientes desde el primer día — no necesitamos meses de "aprendizaje" a tu costa porque ya conocemos el terreno.</p>
-<p>La posibilidad de <strong>reuniones presenciales</strong> es otro diferencial clave. Sentarnos contigo, entender tu negocio en profundidad, visitar tu local o tu oficina en Barcelona — todo esto mejora la calidad de la estrategia y el alineamiento entre tus objetivos y nuestras campañas.</p>''',
+<p>La posibilidad de <strong>reuniones presenciales frecuentes</strong> es otro diferencial clave. Reunirnos contigo en persona o por videollamada, entender tu negocio en profundidad y analizar juntos los datos — todo esto mejora la calidad de la estrategia y el alineamiento entre tus objetivos y nuestras campañas.</p>''',
 
             'extra_faqs': [
                 ('¿Cuánto cobra un consultor de Google Ads en Barcelona?',
@@ -2092,7 +2092,7 @@ GEO_CONTENT = {
 <li><strong>SEO para e-commerce:</strong> Posicionamiento orgánico especializado para tiendas online. Optimización de fichas de producto, categorías, filtros facetados, paginación, datos estructurados de producto, contenido editorial para top-of-funnel y link building temático.</li>
 <li><strong>Diseño web estratégico:</strong> No somos solo diseñadores — somos estrategas digitales que diseñan. Cada decisión visual está respaldada por datos de comportamiento de usuario, objetivos de conversión y mejores prácticas de UX. El resultado: webs que no solo son bonitas, sino que generan negocio.</li>
 </ul>
-<p>Todos nuestros servicios en Barcelona incluyen <strong>reuniones presenciales</strong> en las fases clave del proyecto, formación para tu equipo y soporte post-lanzamiento.</p>''',
+<p>Todos nuestros servicios en Barcelona incluyen <strong>reuniones presenciales o por videollamada</strong> en las fases clave del proyecto, formación para tu equipo y soporte post-lanzamiento.</p>''',
 
             'case_study': '''<h3>Caso de éxito: e-commerce de moda sostenible en Sant Cugat</h3>
 <p>Una marca de moda sostenible con sede en Sant Cugat del Vallès necesitaba un e-commerce de alto nivel que transmitiera los valores de la marca y vendiera eficazmente tanto en España como en Europa.</p>
@@ -2117,7 +2117,7 @@ GEO_CONTENT = {
 </ul>''',
 
             'why_local_matters': '''<h3>Servicios digitales en Barcelona: por qué la proximidad importa</h3>
-<p>Los proyectos de desarrollo web, e-commerce y marketing digital requieren una <strong>comunicación fluida y constante</strong> entre el equipo técnico y el cliente. Estar en Barcelona nos permite reunirnos contigo presencialmente cuando el proyecto lo requiere — en fase de briefing, presentación de diseño, testing y lanzamiento.</p>
+<p>Los proyectos de desarrollo web, e-commerce y marketing digital requieren una <strong>comunicación fluida y constante</strong> entre el equipo técnico y el cliente. Nos reunimos contigo de forma presencial o por videollamada en cada fase clave del proyecto — briefing, presentación de diseño, testing y lanzamiento.</p>
 <p>Además, conocemos el <strong>ecosistema digital barcelonés</strong> como agencia local: las particularidades del consumidor catalán, los canales que funcionan en cada barrio (Eixample, Gràcia, Born, Poblenou, Sarrià), la estacionalidad del mercado y las oportunidades que solo se detectan estando sobre el terreno.</p>
 <p>Para e-commerce con componente local (click & collect, showroom en Barcelona, envío exprés metropolitano), nuestra presencia en la ciudad es un <strong>diferencial operativo real</strong>: entendemos la logística local, las zonas de reparto y las preferencias del comprador barcelonés.</p>''',
 
@@ -2174,7 +2174,7 @@ GEO_CONTENT = {
 </ul>''',
 
             'why_local_matters': '''<h3>Servicios digitales en Madrid: conocimiento local que genera resultados</h3>
-<p>Los proyectos digitales requieren <strong>comunicación constante y alineamiento</strong> entre cliente y equipo técnico. Como agencia en Madrid, ofrecemos reuniones presenciales en cualquier punto de la capital y el área metropolitana, lo que agiliza los proyectos y mejora el resultado final.</p>
+<p>Los proyectos digitales requieren <strong>comunicación constante y alineamiento</strong> entre cliente y equipo técnico. Como agencia online especializada en el mercado madrileño, ofrecemos reuniones presenciales o por videollamada con total flexibilidad, lo que agiliza los proyectos y mejora el resultado final.</p>
 <p>Conocemos las <strong>dinámicas del mercado madrileño</strong>: el perfil del consumidor digital de la capital, los sectores más competitivos, las tendencias de cada zona (Salamanca, Chamberí, Chamartín, Pozuelo, Las Rozas) y las particularidades logísticas para e-commerce local.</p>
 <p>Para negocios con <strong>presencia física en Madrid</strong>, diseñamos estrategias omnicanal que conectan la experiencia online con la tienda/oficina: click & collect, reserva online, cita previa digital y experiencia de marca coherente. La integración entre canales multiplica los resultados de cada uno.</p>''',
 
@@ -2186,7 +2186,7 @@ GEO_CONTENT = {
                 ('¿Podéis gestionar Google Shopping para mi tienda online?',
                  'Sí. Gestionamos campañas de Google Shopping con optimización profesional de feed de productos, estructura de campañas por categoría y margen, pujas inteligentes y reporting de ROAS por producto y categoría. Fee de gestión desde 500€/mes.'),
                 ('¿Trabajáis con empresas de toda la Comunidad de Madrid?',
-                 'Sí. Trabajamos con empresas en Madrid capital y en todo el área metropolitana: Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes, Getafe, Leganés y más. Ofrecemos reuniones presenciales en cualquier punto de la Comunidad de Madrid.'),
+                 'Sí. Trabajamos con empresas en Madrid capital y en todo el área metropolitana: Pozuelo, Las Rozas, Alcobendas, Majadahonda, San Sebastián de los Reyes, Getafe, Leganés y más. Ofrecemos reuniones presenciales o por videollamada con total flexibilidad horaria.'),
                 ('¿Puedo contratar servicios por separado o tienen que ser paquetes?',
                  'Puedes contratar cada servicio por separado: solo desarrollo web, solo Google Shopping, solo SEO. Sin embargo, los mejores resultados se obtienen con una estrategia integrada donde cada canal refuerza a los demás. Te asesoramos sobre la combinación más eficiente para tu presupuesto y objetivos.'),
             ],
@@ -2231,7 +2231,7 @@ GEO_CONTENT = {
 
             'why_local_matters': '''<h3>Por qué elegir una agencia de marketing digital en Valencia</h3>
 <p>Una agencia de marketing digital en Valencia entiende el <strong>ecosistema empresarial valenciano</strong> — los sectores que mueven la economía, los competidores de cada nicho, los medios locales relevantes, los eventos del calendario (Fallas, Valencia Digital Summit) y los hábitos del consumidor valenciano.</p>
-<p>Además, la proximidad permite <strong>reuniones presenciales, visitas a tu negocio y una relación más estrecha</strong> que se traduce en estrategias mejor alineadas con tu realidad. En un sector donde muchas agencias trabajan en remoto con procesos estandarizados, nosotros ofrecemos un servicio personalizado con conocimiento local.</p>''',
+<p>Además, nuestro modelo de trabajo permite <strong>videollamadas frecuentes y una relación cercana</strong> que se traduce en estrategias mejor alineadas con tu realidad. En un sector donde muchas agencias trabajan con procesos estandarizados, nosotros ofrecemos un servicio personalizado con conocimiento del mercado valenciano.</p>''',
 
             'extra_faqs': [
                 ("¿Cuánto cuesta contratar una agencia de marketing digital en Valencia?",

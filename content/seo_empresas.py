@@ -205,7 +205,7 @@ PAGE_DATA = {
         ("¿Cómo medís el ROI del SEO?",
          "Medimos el ROI con datos concretos: tráfico orgánico, leads generados desde Google, tasa de conversión, valor medio por lead y coste de adquisición orgánico vs otros canales. Cada mes recibes un informe con estas métricas y un dashboard en tiempo real. El objetivo es que cada euro invertido en SEO genere un retorno medible."),
         ("¿Trabajáis con empresas de toda España?",
-         "Sí. Trabajamos con empresas en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO se adapta a la zona geográfica y mercado de cada empresa. Atendemos tanto de forma presencial como por videoconferencia, según la preferencia del cliente."),
+         "Sí. Trabajamos con empresas en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO se adapta a la zona geográfica y mercado de cada empresa. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
         ("¿Qué incluye el servicio de SEO empresarial de Comunikoo?",
          "Incluye auditoría técnica completa con más de 200 puntos, keyword research exhaustivo, optimización on-page, estrategia de contenido, link building corporativo, SEO técnico, reporting mensual ejecutivo y dashboard en tiempo real. Para empresas B2B incluimos además estrategia de contenido de expertise y posicionamiento para búsquedas de decisores. Todo sin permanencia."),
     ],

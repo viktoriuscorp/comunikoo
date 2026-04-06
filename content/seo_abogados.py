@@ -178,6 +178,6 @@ PAGE_DATA = {
         ("¿Qué incluye el servicio de SEO para abogados de Comunikoo?",
          "Incluye auditoría técnica completa, keyword research jurídico, optimización on-page de todas las páginas, creación de contenido legal optimizado, link building en medios y directorios jurídicos, SEO local con Google Business Profile, reporting mensual detallado y dashboard en tiempo real. Todo sin permanencia."),
         ("¿Trabajáis con despachos de toda España?",
-         "Sí. Trabajamos con despachos de abogados en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO local se adapta a la zona geográfica de cada despacho. Atendemos tanto de forma presencial como por videoconferencia."),
+         "Sí. Trabajamos con despachos de abogados en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO local se adapta a la zona geográfica de cada despacho. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
     ],
 }

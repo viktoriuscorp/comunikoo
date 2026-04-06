@@ -231,6 +231,6 @@ PAGE_DATA = {
         ("¿Qué incluye el servicio de SEO para hoteles de Comunikoo?",
          "Incluye auditoría técnica completa, keyword research por destino e idioma, optimización on-page de todas las páginas, estrategia de contenido turístico, optimización de Google Business Profile, integración con Google Hotel Ads, link building en medios de turismo, gestión de reseñas, reporting mensual y dashboard en tiempo real. Sin permanencia."),
         ("¿Trabajáis con hoteles de toda España?",
-         "Sí. Trabajamos con hoteles en Barcelona, Madrid, Costa del Sol, Costa Brava, Baleares, Canarias, País Vasco y toda España. También con hoteles que buscan posicionar internacionalmente. Atendemos tanto de forma presencial como remota por videoconferencia."),
+         "Sí. Trabajamos con hoteles en Barcelona, Madrid, Costa del Sol, Costa Brava, Baleares, Canarias, País Vasco y toda España. También con hoteles que buscan posicionar internacionalmente. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
     ],
 }

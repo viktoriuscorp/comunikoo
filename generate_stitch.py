@@ -1073,7 +1073,7 @@ def service_schema(name, desc):
     clean_name = name.replace('"', '\\"')
     clean_desc = desc.replace('"', '\\"')
     return f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":"Service","name":"{clean_name}","description":"{clean_desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"}}}},"areaServed":{{"@type":"Country","name":"España"}}}}
+{{"@context":"https://schema.org","@type":"Service","name":"{clean_name}","description":"{clean_desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","email":"hola@comunikoo.es"}},"areaServed":{{"@type":"Country","name":"España"}}}}
 </script>'''
 
 
@@ -2210,13 +2210,13 @@ def build_geo_page(page):
             'demonym': 'barcelonés', 'region': 'Cataluña',
             'business_desc': 'Barcelona es la capital económica del Mediterráneo y uno de los mercados más competitivos de España. Con más de 600.000 empresas activas, destacar en el entorno digital requiere una estrategia profesional y un equipo que conozca el tejido empresarial local.',
             'why_local': f'Conocemos el mercado {svc_name_lower} en Barcelona como nadie: la competencia de cada sector, las búsquedas más frecuentes de los barceloneses, las zonas con mayor demanda y las particularidades del consumidor catalán. No es lo mismo posicionar un negocio en el Eixample que en Gràcia o en el 22@.',
-            'advantage': 'Reuniones presenciales en nuestra oficina de Barcelona, conocimiento profundo del ecosistema empresarial catalán y experiencia directa con negocios en cada barrio de la ciudad.',
+            'advantage': 'Reuniones presenciales y por videollamada en Barcelona, conocimiento profundo del ecosistema empresarial catalán y experiencia directa con negocios en cada barrio de la ciudad.',
         },
         'Madrid': {
             'demonym': 'madrileño', 'region': 'Comunidad de Madrid',
             'business_desc': 'Madrid es el mayor mercado empresarial de España, con más de 500.000 empresas y una competencia digital feroz. Posicionar tu negocio en la capital requiere una estrategia agresiva, conocimiento del mercado local y un equipo con experiencia probada.',
             'why_local': f'Entendemos las dinámicas del mercado {svc_name_lower} en Madrid: la intensidad competitiva, los patrones de búsqueda de los madrileños, las diferencias entre zonas (Chamberí, Salamanca, Chamartín, Arganzuela) y el perfil del consumidor capitalino.',
-            'advantage': 'Atención personalizada con reuniones presenciales y virtuales, conocimiento del ecosistema empresarial madrileño y resultados probados con empresas de la capital.',
+            'advantage': 'Reuniones presenciales y por videollamada en Madrid, conocimiento del ecosistema empresarial madrileño y resultados probados con empresas de la capital.',
         },
         'Valencia': {
             'demonym': 'valenciano', 'region': 'Comunitat Valenciana',
@@ -2410,7 +2410,7 @@ def build_home():
     r = lambda target: rel(target, current_url)
 
     org_schema = '''<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"email":"hola@comunikoo.es","sameAs":[]}
+{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","email":"hola@comunikoo.es","sameAs":[]}
 </script>'''
 
     home_faqs = [
@@ -2427,7 +2427,7 @@ def build_home():
         ("¿Trabajáis con empresas pequeñas?",
          "Sí, trabajamos con empresas de todos los tamaños: desde autónomos y startups hasta pymes y grandes empresas. Adaptamos la estrategia y el presupuesto a cada caso. Muchos de nuestros mejores casos de éxito son pequeñas empresas que han multiplicado su facturación gracias al marketing digital."),
         ("¿Trabajáis con clientes de toda España?",
-         "Sí, aunque nuestra sede está en Barcelona, trabajamos con clientes de toda España. Atendemos tanto de forma presencial como por videoconferencia. Tenemos presencia activa en Barcelona y Madrid, y gestionamos proyectos en todas las comunidades autónomas."),
+         "Sí, trabajamos con clientes de toda España. En Barcelona ofrecemos reuniones presenciales y por videollamada; para el resto de España, atendemos por videoconferencia. Tenemos presencia activa en Barcelona y Madrid, y gestionamos proyectos en todas las comunidades autónomas con el mismo nivel de cercanía y resultados."),
         ("¿Ofrecéis contrato sin permanencia?",
          "Sí, todos nuestros servicios son sin permanencia. Trabajamos mes a mes y nos ganamos tu confianza con resultados, no con contratos de larga duración. Puedes cancelar en cualquier momento con un preaviso de 30 días. El 98 por ciento de nuestros clientes renuevan porque ven resultados reales."),
     ]
@@ -2853,11 +2853,11 @@ Agencia de marketing digital en Barcelona especializada en SEO, diseño web, Goo
 <a href="{r('/agencia-marketing-digital-madrid/')}" class="bg-surface-container-lowest p-10 rounded-2xl hover:shadow-xl transition-all no-underline">
 <div class="font-headline font-extrabold text-4xl text-primary mb-2">Madrid</div>
 <p class="text-on-surface-variant">Presencia activa en la capital</p>
-<p class="text-on-surface-variant text-sm mt-2">Todos los servicios de nuestra agencia de marketing digital disponibles para empresas en Madrid, con reuniones presenciales y virtuales.</p>
+<p class="text-on-surface-variant text-sm mt-2">Todos los servicios de nuestra agencia de marketing digital disponibles para empresas en Madrid, con reuniones presenciales y por videollamada.</p>
 </a>
 </div>
 <div class="mt-8 text-center">
-<p class="text-on-surface-variant leading-relaxed max-w-3xl mx-auto">Aunque tenemos oficina física en Barcelona, trabajamos con clientes de toda España. Nuestro modelo de trabajo combina reuniones presenciales (cuando es posible) con comunicación digital fluida, dashboard en tiempo real y videollamadas periódicas. No importa dónde esté tu empresa: tendrás el mismo nivel de servicio, atención y resultados.</p>
+<p class="text-on-surface-variant leading-relaxed max-w-3xl mx-auto">Ofrecemos reuniones presenciales y por videollamada en cualquier ciudad de España, con comunicación digital fluida y dashboard en tiempo real para que sigas cada avance de tu proyecto. No importa dónde esté tu empresa: tendrás el mismo nivel de servicio, atención y resultados.</p>
 </div>
 </section>
 
@@ -3219,7 +3219,7 @@ def build_contact_page():
     ("¿Cuánto tardáis en responder?", "Menos de 24 horas en días laborables. Normalmente respondemos en unas pocas horas con una propuesta inicial y un hueco para videollamada."),
     ("¿La auditoría tiene algún coste?", "No, la auditoría inicial es 100% gratuita y sin compromiso. Analizamos tu web, tu competencia y te presentamos las oportunidades que vemos."),
     ("¿Tengo que firmar contrato de permanencia?", "No. Trabajamos mes a mes. Si no estás contento con los resultados, puedes cancelar con 30 días de preaviso. Así de simple."),
-    ("¿Trabajáis con empresas de toda España?", "Sí. Nuestra oficina está en Barcelona pero trabajamos con clientes de toda España. Combinamos reuniones presenciales (cuando es posible) con videollamadas y comunicación fluida por email y chat."),
+    ("¿Trabajáis con empresas de toda España?", "Sí. Nuestra base está en Barcelona, donde ofrecemos reuniones presenciales y por videollamada. Para el resto de España trabajamos por videoconferencia, con comunicación fluida por email y chat. Gestionamos proyectos en todas las comunidades autónomas."),
 ])}
 </div>
 </section>
@@ -3514,8 +3514,8 @@ def main():
     for title, meta, url, h1, content in [
         ("Solicita Presupuesto | Comunikoo", "Pide presupuesto de marketing digital sin compromiso. SEO, diseño web, Google Ads, redes sociales. Respuesta en 24h. Auditoría gratuita incluida.", "/presupuesto/", "Solicita Presupuesto", "<p>Cuéntanos sobre tu proyecto y te enviaremos un presupuesto personalizado en menos de 24 horas. Sin compromiso ni permanencia.</p><h2>¿Qué incluye?</h2><p>Análisis inicial de tu situación, propuesta estratégica y presupuesto detallado. Todo sin coste.</p>"),
         ("Casos de Éxito | Comunikoo", "Descubre cómo hemos ayudado a +487 empresas a crecer con SEO, Google Ads y diseño web. Resultados reales y medibles. Mira nuestros casos.", "/casos-de-exito/", "Casos de Éxito", "<p>Más de 487 proyectos completados con un 98% de satisfacción. Estos son algunos de nuestros casos más destacados.</p>"),
-        ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
-        ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · Aragó 4, Barcelona 08015 · hola@comunikoo.es</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
+        ("Política de Privacidad | Comunikoo", "Política de privacidad de Comunikoo. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD.", "/politica-de-privacidad/", "Política de Privacidad", "<p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales, le informamos sobre el tratamiento de sus datos personales.</p><h2>Responsable del tratamiento</h2><p>Comunikoo · hola@comunikoo.es</p><h2>Finalidad</h2><p>Gestión de consultas, presupuestos y prestación de servicios de marketing digital.</p><h2>Derechos</h2><p>Puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición enviando un email a hola@comunikoo.es.</p>"),
+        ("Aviso Legal | Comunikoo", "Aviso legal de Comunikoo, agencia de marketing digital en Barcelona. Datos identificativos, propiedad intelectual y condiciones de uso.", "/aviso-legal/", "Aviso Legal", "<p>En cumplimiento de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI).</p><h2>Datos identificativos</h2><p>Comunikoo · hola@comunikoo.es</p><h2>Propiedad intelectual</h2><p>Todos los contenidos de este sitio web son propiedad de Comunikoo y están protegidos por las leyes de propiedad intelectual e industrial.</p>"),
         ("¡Mensaje Enviado! | Comunikoo", "Tu mensaje ha sido enviado correctamente. Te contactaremos en menos de 24 horas.", "/gracias/", "¡Mensaje Enviado!", f"""
 <div style="text-align:center;max-width:600px;margin:0 auto">
 <div style="width:80px;height:80px;border-radius:50%;background:#e8f5e9;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem">

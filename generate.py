@@ -192,8 +192,7 @@ def footer_html():
 <div class="ft-info">
 <a href="/" class="logo"><span class="logo-dot"></span>COMUNIKOO</a>
 <p>Agencia de Marketing Digital en Barcelona. Expertos en SEO, SEM y Resultados.</p>
-<p>📍 Aragó 4, Barcelona 08015</p>
-<p>📞 <a href="tel:+34608721015">+34 608 721 015</a></p>
+<p>📧 hola@comunikoo.es</p>
 <p>📧 <a href="mailto:hola@comunikoo.es">hola@comunikoo.es</a></p>
 </div>
 <div>
@@ -285,14 +284,14 @@ def faq_schema(faqs):
 
 def service_schema(name, desc):
     return f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":"Service","name":"{name}","description":"{desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","address":{{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"}},"telephone":"+34608721015"}},"areaServed":{{"@type":"Country","name":"España"}}}}
+{{"@context":"https://schema.org","@type":"Service","name":"{name}","description":"{desc}","provider":{{"@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","email":"hola@comunikoo.es"}},"areaServed":{{"@type":"Country","name":"España"}}}}
 </script>'''
 
 
 def local_business_schema(city, service_name):
-    address = "Aragó 4" if city == "Barcelona" else ""
+    address = ""
     return f'''<script type="application/ld+json">
-{{"@context":"https://schema.org","@type":"LocalBusiness","name":"Comunikoo - {service_name} {city}","address":{{"@type":"PostalAddress","addressLocality":"{city}","addressCountry":"ES"}},"telephone":"+34608721015","url":"https://comunikoo.es","openingHours":"Mo-Fr 09:00-20:00"}}
+{{"@context":"https://schema.org","@type":"LocalBusiness","name":"Comunikoo - {service_name} {city}","address":{{"@type":"PostalAddress","addressLocality":"{city}","addressCountry":"ES"}},"url":"https://comunikoo.es","email":"hola@comunikoo.es","openingHours":"Mo-Fr 09:00-20:00"}}
 </script>'''
 
 
@@ -496,7 +495,7 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanen
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s4)" class="bento-loc">
 <a href="/agencia-marketing-digital-barcelona/" class="card" style="padding:var(--s10);text-decoration:none">
 <div style="font-size:var(--text-3xl);font-weight:800;color:var(--text);margin-bottom:var(--s2)">Barcelona</div>
-<p style="color:var(--text-secondary);margin-bottom:var(--s4)">Oficina central — Aragó 4, 08015</p>
+<p style="color:var(--text-secondary);margin-bottom:var(--s4)">📧 hola@comunikoo.es</p>
 <span class="link-arrow">Servicios en Barcelona</span>
 </a>
 <a href="/agencia-marketing-digital-madrid/" class="card" style="padding:var(--s10);text-decoration:none">
@@ -517,14 +516,14 @@ SEO, Diseño Web, Google Ads y Redes Sociales. Resultados medibles. Sin permanen
 <p>Solicita tu auditoría gratuita. Analizamos tu web y tu competencia sin compromiso.</p>
 <div style="display:flex;gap:var(--s4);justify-content:center;flex-wrap:wrap">
 <a href="/contacto/" class="btn btn-primary btn-lg">Solicita tu auditoría gratuita</a>
-<a href="tel:+34608721015" class="btn btn-outline btn-lg">+34 608 721 015</a>
+<a href="mailto:hola@comunikoo.es" class="btn btn-outline btn-lg">hola@comunikoo.es</a>
 </div>
 </div>
 </div>
 </section>
 '''
     schema = '''<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","address":{"@type":"PostalAddress","streetAddress":"Aragó 4","addressLocality":"Barcelona","postalCode":"08015","addressCountry":"ES"},"telephone":"+34608721015","email":"hola@comunikoo.es","sameAs":[]}
+{"@context":"https://schema.org","@type":"Organization","name":"Comunikoo","url":"https://comunikoo.es","logo":"https://comunikoo.es/img/logo.svg","email":"hola@comunikoo.es","sameAs":[]}
 </script>'''
     return base_html(
         "Agencia de Marketing Digital Barcelona | SEO, Diseño Web y Google Ads — Comunikoo",
@@ -746,7 +745,7 @@ def build_geo_page(page):
 {breadcrumbs}
 <h1>{p["h1"]}</h1>
 <p style="font-size:var(--text-lg);color:var(--text-muted);margin-top:var(--space-4)">{p.get("intro", "")}</p>
-<p style="margin-top:var(--space-4)">📍 {p.get("address", "Aragó 4, Barcelona 08015")} · 📞 <a href="tel:+34608721015">+34 608 721 015</a></p>
+<p style="margin-top:var(--space-4)">📧 hola@comunikoo.es</p>
 
 <div class="stats" style="margin-top:var(--space-8)">
 <div><div class="stat-number text-accent">{p.get("stat1_num", "487")}</div><div class="stat-label">{p.get("stat1_label", "clientes en " + city)}</div></div>
@@ -1025,7 +1024,6 @@ ALL_PAGES.append(svc(
         sec("resultados", "Resultados", "Casos de éxito en Barcelona"),
     ],
     faqs=[
-        ("¿Tenéis oficina en Barcelona?", "Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."),
         ("¿Cuánto cuesta contratar una agencia de marketing?", "Depende de los servicios. Desde 500€/mes para SEO básico hasta planes integrales. Siempre sin permanencia."),
         ("¿Trabajáis solo en Barcelona?", "No, trabajamos con empresas de toda España. Pero nuestra base está en Barcelona y conocemos el mercado local a fondo."),
     ],
@@ -1131,10 +1129,8 @@ for slug, svc_name, full_name in GEO_SERVICES_BCN:
         [{"url": _national_url(slug), "label": f"{svc_name} (nacional)"}],
         faqs=[
             (f"¿Cuánto cuesta {svc_name.lower()} en Barcelona?", "Solicita presupuesto personalizado. Los precios dependen de tu proyecto y objetivos."),
-            ("¿Tenéis oficina en Barcelona?", "Sí, estamos en Aragó 4, Barcelona 08015. Atendemos con cita previa."),
             (f"¿Trabajáis solo en Barcelona ciudad?", "No, también trabajamos con empresas del área metropolitana: Hospitalet, Badalona, Sant Cugat, etc."),
         ],
-        address="Aragó 4, Barcelona 08015",
     ))
 
 # Same for Madrid

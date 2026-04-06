@@ -98,7 +98,7 @@ PAGE_DATA = {
 <p>El <strong>mercado de Barcelona es bilingüe</strong>. Más del 40% de los barceloneses buscan en Google tanto en catalán como en castellano. Una agencia que no trabaja con ambos idiomas está perdiendo cerca de la mitad del mercado potencial. Nuestras estrategias de SEO y contenidos siempre contemplan ambos idiomas, con keyword research independiente para cada uno y contenido adaptado (no simplemente traducido).</p>
 
 <h3>Reuniones presenciales cuando importan</h3>
-<p>El marketing digital se puede gestionar a distancia. Pero hay momentos en los que una reunión presencial marca la diferencia: el kick-off del proyecto, las revisiones de diseño, las presentaciones de resultados trimestrales. Estar en Barcelona nos permite ofrecer esa <strong>cercanía</strong> cuando es necesario, sin que sea un obstáculo logístico ni un coste adicional.</p>
+<p>En Barcelona ofrecemos <strong>reuniones presenciales</strong> para los momentos clave de tu proyecto: kick-off inicial, revisiones de diseño y presentaciones de resultados trimestrales. Para las reuniones de seguimiento habituales trabajamos por videollamada con pantalla compartida, combinando lo mejor de ambos mundos. Tienes <strong>contacto directo</strong> con tu equipo, dashboard en tiempo real y respuesta en menos de 24 horas. Sin intermediarios, sin esperas innecesarias.</p>
 
 <h3>Red de contactos local</h3>
 <p>Años trabajando en el ecosistema empresarial de Barcelona nos han permitido construir una red de contactos que beneficia a nuestros clientes: fotógrafos profesionales, videógrafos, imprentas, organizadores de eventos, influencers locales, medios de comunicación barceloneses y asociaciones empresariales. Cuando tu estrategia necesita un recurso específico, sabemos a quién llamar.</p>
@@ -184,7 +184,7 @@ PAGE_DATA = {
         ("¿Cuánto tarda en dar resultados el marketing digital?",
          "Google Ads genera resultados desde la primera semana. Las redes sociales necesitan 2-3 meses para construir audiencia. El SEO requiere 3-6 meses para posicionar. La estrategia ideal combina canales de impacto rápido con otros de crecimiento sostenido."),
         ("¿Puedo reunirme presencialmente con la agencia?",
-         "Por supuesto. Estamos en Barcelona y ofrecemos reuniones presenciales para el kick-off del proyecto, revisiones importantes y presentaciones de resultados. También trabajamos por videollamada para las reuniones de seguimiento habituales."),
+         "Sí, en Barcelona ofrecemos reuniones presenciales para momentos clave del proyecto — kick-off, revisiones de diseño, presentaciones trimestrales — y también trabajamos por videollamada para las reuniones de seguimiento habituales. Tienes acceso a un dashboard en tiempo real, contacto directo con tu equipo y respuesta en menos de 24 horas."),
         ("¿Cómo mido si la agencia está funcionando?",
          "Cada mes recibes un informe detallado con métricas claras: tráfico, leads, posiciones en Google, coste por lead y ROI por canal. Además tienes acceso a un dashboard en tiempo real. Si en algún momento no estás satisfecho, puedes cancelar sin penalización."),
         ("¿En qué sectores de Barcelona tenéis más experiencia?",

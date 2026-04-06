@@ -233,6 +233,6 @@ PAGE_DATA = {
         ("¿Qué incluye el servicio de SEO para clínicas de Comunikoo?",
          "Incluye auditoría YMYL completa, keyword research sanitario, implementación E-E-A-T (páginas de autor, schema), optimización on-page de todos los servicios, creación de contenido médico con autoría verificable, SEO local con Google Business Profile, link building en medios de salud, gestión de reseñas, reporting mensual y dashboard en tiempo real. Sin permanencia."),
         ("¿Trabajáis con clínicas de toda España?",
-         "Sí. Trabajamos con clínicas en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO se adapta a la especialidad y ubicación de cada centro. Atendemos tanto de forma presencial como remota por videoconferencia."),
+         "Sí. Trabajamos con clínicas en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO se adapta a la especialidad y ubicación de cada centro. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
     ],
 }

@@ -236,6 +236,6 @@ PAGE_DATA = {
         ("¿Qué incluye el servicio de SEO para pymes de Comunikoo?",
          "Incluye auditoría express, keyword research local, optimización on-page de las páginas principales, Google Business Profile completo, estrategia de reseñas, citaciones en directorios, contenido optimizado que genera clientes, link building local, reporting mensual claro y dashboard en tiempo real. Todo sin permanencia."),
         ("¿Trabajáis con pymes de toda España?",
-         "Sí. Trabajamos con pymes en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO local se adapta a la zona geográfica de cada negocio. Atendemos tanto de forma presencial como remota por videoconferencia."),
+         "Sí. Trabajamos con pymes en Barcelona, Madrid, Valencia, Sevilla y toda España. El SEO local se adapta a la zona geográfica de cada negocio. Atendemos de forma presencial o por videoconferencia con contacto directo y dashboard en tiempo real."),
     ],
 }

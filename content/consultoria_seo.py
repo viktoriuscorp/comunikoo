@@ -118,7 +118,7 @@ FAQS = [
      "Sí, por supuesto. La consultoría es un servicio independiente. Te entregamos la estrategia completa y tu equipo la ejecuta. Estaremos disponibles para resolver dudas y supervisar, pero la implementación corre de tu parte. Si en algún momento necesitas que ejecutemos nosotros, podemos activar el servicio de agencia SEO."),
 
     ("¿Ofrecéis formación SEO in-company?",
-     "Sí. Impartimos formaciones SEO adaptadas a empresas: desde workshops de medio día sobre fundamentos SEO para equipos de marketing hasta programas de formación avanzada de varias semanas para equipos técnicos. Todas las formaciones son prácticas, con ejercicios aplicados a la web del cliente, y se pueden impartir presencialmente en Barcelona o en formato online."),
+     "Sí. Impartimos formaciones SEO adaptadas a empresas: desde workshops de medio día sobre fundamentos SEO para equipos de marketing hasta programas de formación avanzada de varias semanas para equipos técnicos. Todas las formaciones son prácticas, con ejercicios aplicados a la web del cliente, y se pueden impartir presencialmente en Barcelona o en formato online por videollamada."),
 
     ("¿Cómo sé si necesito un consultor SEO o una agencia SEO?",
      "Si tienes equipo interno con capacidad de ejecución (desarrolladores, redactores, alguien de marketing) pero les falta dirección SEO, la consultoría es suficiente. Si no tienes equipo o prefieres no dedicar recursos internos al SEO, necesitas una agencia que ejecute por ti. En la sesión de descubrimiento gratuita te ayudamos a decidir qué modelo te conviene más."),
